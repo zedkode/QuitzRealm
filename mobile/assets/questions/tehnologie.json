@@ -1,0 +1,138 @@
+{
+  "id": "tehnologie",
+  "name": "Tehnologie",
+  "questions": [
+    {
+      "id": "teh-01",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă prescurtarea „www”?",
+      "options": ["World Wide Web", "Web World Wide", "Wide World Web", "World Web Wire"],
+      "answer": "World Wide Web",
+      "explanation": "Termenul desemnează sistemul de documente legate prin hyperlinkuri, accesibile prin internet."
+    },
+    {
+      "id": "teh-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fondat compania Microsoft împreună cu Paul Allen?",
+      "options": ["Steve Jobs", "Bill Gates", "Larry Page", "Michael Dell"],
+      "answer": "Bill Gates",
+      "explanation": "Cei doi au fondat Microsoft în 1975, la Albuquerque."
+    },
+    {
+      "id": "teh-03",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câți biți are un octet (byte)?",
+      "answer": "8",
+      "explanation": "Un octet poate reprezenta 256 de valori distincte, de la 0 la 255."
+    },
+    {
+      "id": "teh-04",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce companie deține în prezent sistemul de operare Android?",
+      "options": ["Samsung", "Google", "Meta", "Nokia"],
+      "answer": "Google",
+      "explanation": "Google a cumpărat Android Inc. în 2005 și a lansat primul telefon Android în 2008."
+    },
+    {
+      "id": "teh-05",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce desemnează abrevierea „CPU”?",
+      "options": ["Unitatea centrală de procesare", "Unitatea de control periferic", "Panoul central de utilizare", "Procesorul de culoare"],
+      "answer": "Unitatea centrală de procesare",
+      "explanation": "CPU (Central Processing Unit) execută instrucțiunile programelor."
+    },
+    {
+      "id": "teh-06",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce simbol apare obligatoriu într-o adresă de e-mail?",
+      "options": ["#", "@", "&", "%"],
+      "answer": "@",
+      "explanation": "Simbolul @ separă numele utilizatorului de domeniul serverului de mail."
+    },
+    {
+      "id": "teh-07",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este considerată prima persoană care a scris un algoritm destinat unei mașini?",
+      "options": ["Grace Hopper", "Ada Lovelace", "Katherine Johnson", "Hedy Lamarr"],
+      "answer": "Ada Lovelace",
+      "explanation": "În 1843, Ada Lovelace a descris un algoritm pentru mașina analitică a lui Charles Babbage."
+    },
+    {
+      "id": "teh-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce limbaj de programare a fost creat de Guido van Rossum?",
+      "options": ["Ruby", "Python", "Java", "Perl"],
+      "answer": "Python",
+      "explanation": "Prima versiune a Python a fost lansată în 1991 și pune accent pe lizibilitatea codului."
+    },
+    {
+      "id": "teh-09",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce protocol stă la baza transferului paginilor web?",
+      "options": ["FTP", "SMTP", "HTTP", "SSH"],
+      "answer": "HTTP",
+      "explanation": "HTTP (și varianta securizată HTTPS) transportă cererile și răspunsurile dintre browser și server."
+    },
+    {
+      "id": "teh-10",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce dispozitiv a inventat Alexander Graham Bell?",
+      "options": ["Radioul", "Telefonul", "Telegraful", "Fonograful"],
+      "answer": "Telefonul",
+      "explanation": "Bell a obținut brevetul pentru telefon în 1876."
+    },
+    {
+      "id": "teh-11",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat primul iPhone?",
+      "answer": "2007",
+      "explanation": "Steve Jobs a prezentat primul iPhone în ianuarie 2007, iar vânzările au început în iunie."
+    },
+    {
+      "id": "teh-12",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă „RAM”?",
+      "options": ["Memorie cu acces aleatoriu", "Memorie de rezervă activă", "Registru de acces multiplu", "Modul de arhivare rapidă"],
+      "answer": "Memorie cu acces aleatoriu",
+      "explanation": "RAM este memoria volatilă de lucru: își pierde conținutul la oprirea alimentării."
+    },
+    {
+      "id": "teh-13",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a inventat World Wide Web?",
+      "options": ["Vint Cerf", "Tim Berners-Lee", "Linus Torvalds", "Robert Kahn"],
+      "answer": "Tim Berners-Lee",
+      "explanation": "Berners-Lee a propus sistemul în 1989, în timp ce lucra la CERN."
+    },
+    {
+      "id": "teh-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a inițiat dezvoltarea nucleului sistemului de operare Linux?",
+      "options": ["Richard Stallman", "Linus Torvalds", "Ken Thompson", "Dennis Ritchie"],
+      "answer": "Linus Torvalds",
+      "explanation": "Torvalds a anunțat primul nucleu Linux în 1991, pe când era student la Helsinki."
+    },
+    {
+      "id": "teh-15",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câți octeți are o adresă IPv4?",
+      "answer": "4",
+      "explanation": "O adresă IPv4 are 32 de biți, adică 4 octeți, scriși de obicei ca patru numere separate prin puncte."
+    }
+  ]
+}

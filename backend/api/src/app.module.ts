@@ -1,0 +1,47 @@
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { APP_GUARD } from '@nestjs/core';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { AuthModule } from './auth/auth.module';
+import { CategoriesModule } from './categories/categories.module';
+import { ChatModule } from './chat/chat.module';
+import { CosmeticsModule } from './cosmetics/cosmetics.module';
+import { HealthModule } from './health/health.module';
+import { LeaderboardModule } from './leaderboard/leaderboard.module';
+import { MailModule } from './mail/mail.module';
+import { MatchesModule } from './matches/matches.module';
+import { PrismaModule } from './prisma/prisma.module';
+import { QuestionsModule } from './questions/questions.module';
+import { ReportsModule } from './reports/reports.module';
+import { SocialModule } from './social/social.module';
+import { UsersModule } from './users/users.module';
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    ThrottlerModule.forRoot([
+      {
+        name: 'default',
+        ttl: 60_000,
+        limit: 100,
+      },
+    ]),
+    PrismaModule,
+    MailModule,
+    HealthModule,
+    AuthModule,
+    UsersModule,
+    CategoriesModule,
+    QuestionsModule,
+    MatchesModule,
+    LeaderboardModule,
+    CosmeticsModule,
+    ReportsModule,
+    SocialModule,
+    ChatModule,
+  ],
+  providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
+})
+export class AppModule {}

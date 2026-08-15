@@ -1,0 +1,139 @@
+{
+  "id": "stiinta",
+  "name": "Știință",
+  "questions": [
+    {
+      "id": "sti-01",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce planetă este supranumită „Planeta Roșie”?",
+      "options": ["Venus", "Marte", "Jupiter", "Mercur"],
+      "answer": "Marte",
+      "explanation": "Culoarea vine de la oxidul de fier din solul marțian, adică de la rugină."
+    },
+    {
+      "id": "sti-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic al aurului?",
+      "options": ["Ag", "Au", "Fe", "Go"],
+      "answer": "Au",
+      "explanation": "Simbolul vine de la denumirea latină „aurum”. Ag este argintul."
+    },
+    {
+      "id": "sti-03",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte oase are, în general, scheletul unui adult?",
+      "answer": "206",
+      "explanation": "Nou-născuții au peste 270 de oase, dintre care multe fuzionează în timpul creșterii."
+    },
+    {
+      "id": "sti-04",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care gaz este cel mai abundent în atmosfera Pământului?",
+      "options": ["Oxigenul", "Dioxidul de carbon", "Azotul", "Hidrogenul"],
+      "answer": "Azotul",
+      "explanation": "Azotul reprezintă aproximativ 78% din aer, iar oxigenul circa 21%."
+    },
+    {
+      "id": "sti-05",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este cea mai mare planetă din Sistemul Solar?",
+      "options": ["Saturn", "Neptun", "Jupiter", "Uranus"],
+      "answer": "Jupiter",
+      "explanation": "Jupiter are un diametru de peste 11 ori mai mare decât al Pământului."
+    },
+    {
+      "id": "sti-06",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Prin ce proces transformă plantele lumina în energie?",
+      "options": ["Respirație", "Fotosinteză", "Fermentație", "Osmoză"],
+      "answer": "Fotosinteză",
+      "explanation": "În fotosinteză, planta folosește lumina, apa și dioxidul de carbon și eliberează oxigen."
+    },
+    {
+      "id": "sti-07",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câți cromozomi are o celulă umană normală?",
+      "answer": "46",
+      "explanation": "Sunt 23 de perechi de cromozomi, dintre care o pereche determină sexul."
+    },
+    {
+      "id": "sti-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a formulat teoria relativității?",
+      "options": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"],
+      "answer": "Albert Einstein",
+      "explanation": "Einstein a publicat relativitatea restrânsă în 1905 și pe cea generală în 1915."
+    },
+    {
+      "id": "sti-09",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce moleculă transportă informația genetică a organismelor?",
+      "options": ["ATP", "ADN", "Hemoglobina", "Colagenul"],
+      "answer": "ADN",
+      "explanation": "Acidul dezoxiribonucleic conține instrucțiunile pentru dezvoltarea și funcționarea celulelor."
+    },
+    {
+      "id": "sti-10",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce particulă subatomică are sarcină electrică negativă?",
+      "options": ["Protonul", "Neutronul", "Electronul", "Fotonul"],
+      "answer": "Electronul",
+      "explanation": "Protonul este pozitiv, neutronul este neutru, iar fotonul nu are sarcină electrică."
+    },
+    {
+      "id": "sti-11",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este cel mai dur mineral natural, cu valoarea 10 pe scara Mohs?",
+      "options": ["Cuarțul", "Corindonul", "Diamantul", "Topazul"],
+      "answer": "Diamantul",
+      "explanation": "Scara Mohs măsoară duritatea la zgâriere, iar diamantul ocupă vârful ei."
+    },
+    {
+      "id": "sti-12",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Aproximativ câți kilometri pe secundă parcurge lumina în vid? (în mii)",
+      "answer": "300",
+      "explanation": "Viteza luminii este de aproximativ 299.792 km/s, rotunjită de obicei la 300.000 km/s.",
+      "tolerance": 1
+    },
+    {
+      "id": "sti-13",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a descoperit penicilina?",
+      "options": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Edward Jenner"],
+      "answer": "Alexander Fleming",
+      "explanation": "Fleming a observat, în 1928, că mucegaiul Penicillium distruge culturile de bacterii."
+    },
+    {
+      "id": "sti-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce studiază seismologia?",
+      "options": ["Vulcanii", "Cutremurele", "Ghețarii", "Atmosfera"],
+      "answer": "Cutremurele",
+      "explanation": "Seismologia analizează undele produse de cutremure și structura internă a Pământului."
+    },
+    {
+      "id": "sti-15",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organit celular este considerat „centrala energetică” a celulei?",
+      "options": ["Ribozomul", "Nucleul", "Mitocondria", "Lizozomul"],
+      "answer": "Mitocondria",
+      "explanation": "Mitocondriile produc ATP, molecula care furnizează energie proceselor celulare."
+    }
+  ]
+}

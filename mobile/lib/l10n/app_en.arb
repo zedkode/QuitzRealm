@@ -1,0 +1,302 @@
+{
+  "@@locale": "en",
+  "appTitle": "QuizRealm",
+  "appTagline": "Know. Conquer. Reign.",
+
+  "menuStartCampaign": "Start the campaign",
+  "menuContinueCampaign": "Continue the campaign",
+  "menuAccount": "Player account",
+  "menuHowToPlay": "How to play",
+  "menuTapToEnter": "Touch the seal to enter",
+  "howToPlayTitle": "Laws of the realm",
+  "howToPlayRuleQuestions": "Every assault mixes multiple-choice and numeric questions, against the clock.",
+  "howToPlayRuleStreak": "Consecutive correct answers raise your streak multiplier up to ×3.",
+  "howToPlayRuleStars": "A flawless assault earns 3 stars. Stars unlock new realms.",
+  "howToPlayRuleOffline": "The campaign runs offline, from the verified packs shipped with the game.",
+  "close": "Got it",
+
+  "worldMapEyebrow": "MAP OF THE REALM",
+  "worldMapTitle": "Choose your realm",
+  "worldMapHint": "Tap an unlocked realm to open its assaults.",
+  "levelBadge": "Level {level}",
+  "@levelBadge": {"placeholders": {"level": {"type": "int"}}},
+  "xpProgress": "{current} / {total} XP",
+  "@xpProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "starsCollected": "{earned} of {total} stars",
+  "@starsCollected": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "starsShort": "{earned}/{total}",
+  "@starsShort": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "chapterLockedHint": "Unlocks at {stars} stars",
+  "@chapterLockedHint": {"placeholders": {"stars": {"type": "int"}}},
+  "chapterLockedSemantics": "{chapter}, locked, needs {stars} stars",
+  "@chapterLockedSemantics": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "stars": {"type": "int"}
+    }
+  },
+  "chapterOpenSemantics": "{chapter}, {earned} of {total} stars",
+  "@chapterOpenSemantics": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+
+  "chapterIstorie": "Keep of Chronicles",
+  "chapterRomania": "Carpathian Throne",
+  "chapterGeografie": "Port of Seven Seas",
+  "chapterStiinta": "Crystal Academy",
+  "chapterSport": "Tourney Fields",
+  "chapterTehnologie": "Brass Observatory",
+  "chapterLiteratura": "Hermitage of Manuscripts",
+  "chapterArte": "Bay of Masks",
+  "chapterMituri": "Isle of Wraiths",
+
+  "subjectIstorie": "History",
+  "subjectRomania": "Romania",
+  "subjectGeografie": "Geography",
+  "subjectStiinta": "Science",
+  "subjectSport": "Sport",
+  "subjectTehnologie": "Technology",
+  "subjectLiteratura": "Literature",
+  "subjectArte": "Film and music",
+  "subjectMituri": "Myths and legends",
+
+  "stageOutpost": "The Outpost",
+  "stageCitadel": "The Citadel",
+  "stageThrone": "The Throne Hall",
+  "stageNumber": "Assault {index}",
+  "@stageNumber": {"placeholders": {"index": {"type": "int"}}},
+  "stageSummary": "{questions} questions • {seconds} seconds each",
+  "@stageSummary": {
+    "placeholders": {
+      "questions": {"type": "int"},
+      "seconds": {"type": "int"}
+    }
+  },
+  "stageLockedHint": "Earn a star in the previous assault",
+  "chooseStage": "Choose the assault",
+  "startStage": "Begin the assault",
+
+  "battleHeader": "{chapter} • {stage}",
+  "@battleHeader": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "stage": {"type": "String"}
+    }
+  },
+  "hudScore": "SCORE",
+  "hudRound": "ROUND",
+  "hudStreak": "STREAK",
+  "roundCounter": "{current}/{total}",
+  "@roundCounter": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "streakMultiplier": "×{multiplier}",
+  "@streakMultiplier": {"placeholders": {"multiplier": {"type": "String"}}},
+  "timerSemantics": "{seconds} seconds left",
+  "@timerSemantics": {"placeholders": {"seconds": {"type": "int"}}},
+  "questionLoading": "Preparing the assault…",
+  "questionErrorTitle": "The assault could not start",
+  "noQuestionsTitle": "This realm has no questions",
+  "noQuestionsBody": "The realm's pack could not be read. We never fight with unverified questions.",
+  "retry": "Try again",
+  "difficulty": "Difficulty {level}/5",
+  "@difficulty": {"placeholders": {"level": {"type": "int"}}},
+  "categoryFallback": "Realm archives",
+  "numericHint": "Type your estimate",
+  "submitAnswer": "Confirm answer",
+  "answerOptionSemantics": "Option {letter}: {answer}",
+  "@answerOptionSemantics": {
+    "placeholders": {
+      "letter": {"type": "String"},
+      "answer": {"type": "String"}
+    }
+  },
+  "correctTitle": "Direct hit!",
+  "incorrectTitle": "Attack repelled",
+  "timeoutTitle": "Time is up",
+  "correctAnswerLabel": "Correct answer: {answer}",
+  "@correctAnswerLabel": {"placeholders": {"answer": {"type": "String"}}},
+  "pointsAwarded": "+{points}",
+  "@pointsAwarded": {"placeholders": {"points": {"type": "int"}}},
+  "nextQuestion": "Next question",
+  "finishRound": "See the result",
+  "answerSubmitError": "The verdict could not be obtained. Your attack is kept.",
+  "retryAnswer": "Send the attack again",
+  "leaveBattleTitle": "Abandon the assault?",
+  "leaveBattleBody": "This assault's progress is lost and the realm stays unconquered.",
+  "leaveBattleConfirm": "Abandon",
+  "leaveBattleCancel": "Keep fighting",
+
+  "resultVictoryTitle": "Realm conquered",
+  "resultDefeatTitle": "Assault repelled",
+  "resultVictoryBody": "Your banner flies over {chapter}.",
+  "@resultVictoryBody": {"placeholders": {"chapter": {"type": "String"}}},
+  "resultDefeatBody": "The walls held. Return when you are ready.",
+  "resultScoreLabel": "SCORE",
+  "resultAnswersLabel": "CORRECT",
+  "resultStreakLabel": "BEST STREAK",
+  "resultAnswers": "{correct}/{total}",
+  "@resultAnswers": {
+    "placeholders": {
+      "correct": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "resultXpGained": "+{xp} XP",
+  "@resultXpGained": {"placeholders": {"xp": {"type": "int"}}},
+  "resultLevelUp": "New level: {level}!",
+  "@resultLevelUp": {"placeholders": {"level": {"type": "int"}}},
+  "resultChapterCleared": "You have conquered the whole realm!",
+  "actionRetryStage": "Retry the assault",
+  "actionNextStage": "Next assault",
+  "actionBackToMap": "Back to the map",
+  "starsSemantics": "{earned} of {total} stars",
+  "@starsSemantics": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+
+  "menuDuel": "Online duel",
+  "menuLeaderboard": "Leaderboard",
+  "leaderboardTitle": "Realm leaderboard",
+  "leaderboardPlayerCount": "{total} ranked players",
+  "@leaderboardPlayerCount": {"placeholders": {"total": {"type": "int"}}},
+  "leaderboardEmpty": "Nobody is ranked yet. Play a duel to open the leaderboard.",
+  "leaderboardYourPlace": "YOUR PLACE",
+  "leaderboardPositionLine": "Place {position} • {matches} matches",
+  "@leaderboardPositionLine": {
+    "placeholders": {
+      "position": {"type": "int"},
+      "matches": {"type": "int"}
+    }
+  },
+  "leaderboardRowSemantics": "Place {position}, {username}, {rank}",
+  "@leaderboardRowSemantics": {
+    "placeholders": {
+      "position": {"type": "int"},
+      "username": {"type": "String"},
+      "rank": {"type": "String"}
+    }
+  },
+  "leaderboardErrorTitle": "The leaderboard could not be read",
+  "leaderboardErrorBody": "The server is not responding. The leaderboard needs a connection.",
+  "rankSemantics": "Rank {rank}, {elo} points",
+  "@rankSemantics": {
+    "placeholders": {
+      "rank": {"type": "String"},
+      "elo": {"type": "int"}
+    }
+  },
+  "rankToNext": "{points} more points to the next tier",
+  "@rankToNext": {"placeholders": {"points": {"type": "int"}}},
+  "rankTopReached": "You have reached the realm's highest tier",
+  "duelRankUpdated": "Rank: {rank}",
+  "@duelRankUpdated": {"placeholders": {"rank": {"type": "String"}}},
+  "duelTitle": "1v1 duel",
+  "duelConnecting": "Connecting to the realm…",
+  "duelSearching": "Looking for an opponent",
+  "duelSearchingHint": "Stay tuned: the first round starts as soon as an opponent is found.",
+  "duelCancelSearch": "Cancel the search",
+  "duelNeedAccountTitle": "The duel needs an account",
+  "duelNeedAccountBody": "Online matches are played signed in, so results can count towards the leaderboard.",
+  "duelGoToAccount": "Open the account",
+  "duelRoundCounter": "Round {current} of {total}",
+  "@duelRoundCounter": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "duelYou": "YOU",
+  "duelOpponent": "OPPONENT",
+  "duelWaitingOpponent": "The opponent is still answering…",
+  "duelAnswerSent": "Attack sent",
+  "duelRoundWon": "You took the territory!",
+  "duelRoundLost": "The territory was lost",
+  "duelRoundNeutral": "No territory taken",
+  "duelNextRound": "The next round is starting…",
+  "duelNoAnswer": "no answer",
+  "duelVictory": "Victory",
+  "duelDefeat": "Defeat",
+  "duelDraw": "Draw",
+  "duelFinalLine": "{score} points • {territories} territories",
+  "@duelFinalLine": {
+    "placeholders": {
+      "score": {"type": "int"},
+      "territories": {"type": "int"}
+    }
+  },
+  "duelRematch": "Find another duel",
+  "duelLeave": "Leave the duel",
+  "duelDisconnectedTitle": "Connection lost",
+  "duelDisconnectedBody": "The match server stopped responding. You can try again.",
+  "duelServerErrorTitle": "The match was stopped",
+  "duelVerifyEmailTitle": "Confirm your email address",
+  "duelVerifyEmailBody": "Ranked duels require a verified account. Open the link we emailed you, then try again.",
+  "duelVerifyEmailAction": "Resend the link",
+  "duelVerifyEmailSending": "Sending…",
+  "duelVerifyEmailSent": "We sent you a new confirmation link.",
+  "duelVerifyEmailFailed": "We couldn't send the email. Try again later.",
+  "duelAccountRestrictedTitle": "Restricted account",
+  "duelAccountRestrictedBody": "Your account can't join ranked duels right now.",
+  "duelReconnectingTitle": "Reconnecting you to the match",
+  "duelReconnectingBody": "Your seat is being held. Stay put for a few seconds.",
+  "duelOpponentAwayTitle": "The opponent lost connection",
+  "duelOpponentAwayBody": "{seconds, plural, =1{One second left to come back.} other{{seconds} seconds left to come back.}}",
+  "@duelOpponentAwayBody": {
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "duelOpponentAwayExpired": "The return window expired. The match is closing.",
+  "duelWonByForfeit": "The opponent never came back to the match.",
+
+  "loginEyebrow": "PLAYER ACCOUNT",
+  "loginTitle": "Keep your conquests on every device.",
+  "accountOptionalNote": "The account is optional — the campaign plays without it.",
+  "emailLabel": "Email",
+  "passwordLabel": "Password",
+  "usernameLabel": "Player name",
+  "loginButton": "Enter the realm",
+  "createAccountButton": "Create account",
+  "switchToRegister": "No account? Create one",
+  "switchToLogin": "Already have an account? Sign in",
+  "authGenericError": "Sign-in failed. Check your details and connection.",
+  "fieldRequired": "This field is required.",
+  "passwordHint": "At least 10 characters",
+  "birthDateLabel": "Date of birth",
+  "birthDatePick": "Pick a date",
+  "birthDateHint": "We make sure the game fits your age.",
+  "birthDateTooYoung": "You must be at least {years} to create an account.",
+  "@birthDateTooYoung": {
+    "placeholders": {
+      "years": {"type": "int"}
+    }
+  },
+  "logout": "Sign out",
+  "backLabel": "Back"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "mituri",
+  "name": "Mituri & Legende",
+  "questions": [
+    {
+      "id": "mit-01",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este regele zeilor în mitologia greacă?",
+      "options": ["Poseidon", "Zeus", "Hades", "Apollo"],
+      "answer": "Zeus",
+      "explanation": "Zeus stăpânea cerul și fulgerul, de pe muntele Olimp."
+    },
+    {
+      "id": "mit-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce creatură mitologică are corp de leu, aripi de vultur și cap de vultur?",
+      "options": ["Centaurul", "Griffonul", "Minotaurul", "Chimera"],
+      "answer": "Griffonul",
+      "explanation": "Griffonul era considerat păzitorul comorilor și al aurului."
+    },
+    {
+      "id": "mit-03",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În mitologia nordică, cum se numește ciocanul zeului Thor?",
+      "options": ["Gungnir", "Mjölnir", "Gram", "Draupnir"],
+      "answer": "Mjölnir",
+      "explanation": "Mjölnir se întorcea singur în mâna lui Thor după ce era aruncat."
+    },
+    {
+      "id": "mit-04",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce erou grec a ucis Minotaurul din labirintul din Creta?",
+      "options": ["Perseu", "Tezeu", "Ahile", "Iason"],
+      "answer": "Tezeu",
+      "explanation": "Tezeu a găsit drumul de întoarcere grație firului dat de Ariadna."
+    },
+    {
+      "id": "mit-05",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte munci a trebuit să îndeplinească Hercule?",
+      "answer": "12",
+      "explanation": "Cele douăsprezece munci includ uciderea leului din Nemeea și capturarea lui Cerber."
+    },
+    {
+      "id": "mit-06",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește lumea zeilor din mitologia nordică?",
+      "options": ["Midgard", "Asgard", "Helheim", "Vanaheim"],
+      "answer": "Asgard",
+      "explanation": "Asgard era legat de lumea oamenilor, Midgard, prin curcubeul Bifröst."
+    },
+    {
+      "id": "mit-07",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pasăre mitologică renaște din propria cenușă?",
+      "options": ["Phoenix", "Roc", "Harpia", "Garuda"],
+      "answer": "Phoenix",
+      "explanation": "Legenda pasării Phoenix apare în mai multe culturi, ca simbol al renașterii."
+    },
+    {
+      "id": "mit-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul roman al războiului?",
+      "options": ["Marte", "Jupiter", "Mercur", "Neptun"],
+      "answer": "Marte",
+      "explanation": "Marte îi corespunde zeului grec Ares și a dat numele lunii martie."
+    },
+    {
+      "id": "mit-09",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În legenda regelui Arthur, cum se numește sabia sa?",
+      "options": ["Durandal", "Excalibur", "Joyeuse", "Tyrfing"],
+      "answer": "Excalibur",
+      "explanation": "Excalibur i-ar fi fost dată lui Arthur de Doamna Lacului."
+    },
+    {
+      "id": "mit-10",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce corabie caută Iason și argonauții în mitologia greacă? Mai exact, ce obiect?",
+      "options": ["Lâna de Aur", "Cutia Pandorei", "Mărul discordiei", "Coiful lui Hades"],
+      "answer": "Lâna de Aur",
+      "explanation": "Iason a plecat spre Colhida, cu nava Argo, pentru a recupera Lâna de Aur."
+    },
+    {
+      "id": "mit-11",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În folclorul românesc, cum se numește ființa care păzește comorile și răpește fete din basme?",
+      "options": ["Zburătorul", "Zmeul", "Solomonarul", "Știma apei"],
+      "answer": "Zmeul",
+      "explanation": "Zmeul este antagonistul clasic al lui Făt-Frumos în basmele populare românești."
+    },
+    {
+      "id": "mit-12",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce baladă populară românească povestește sacrificiul necesar ridicării unei mănăstiri?",
+      "options": ["Miorița", "Meșterul Manole", "Toma Alimoș", "Novac"],
+      "answer": "Meșterul Manole",
+      "explanation": "Legenda spune că Manole și-a zidit soția în peretele mănăstirii de la Curtea de Argeș."
+    },
+    {
+      "id": "mit-13",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește evenimentul apocaliptic din mitologia nordică?",
+      "options": ["Ragnarök", "Valhalla", "Yggdrasil", "Fimbulvetr"],
+      "answer": "Ragnarök",
+      "explanation": "Ragnarök este bătălia finală în care mor mulți zei, urmată de renașterea lumii."
+    },
+    {
+      "id": "mit-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În mitologia egipteană, ce zeu are cap de șacal și veghează asupra morților?",
+      "options": ["Horus", "Anubis", "Seth", "Thot"],
+      "answer": "Anubis",
+      "explanation": "Anubis conducea îmbălsămarea și cântărea inima defunctului în judecata sufletelor."
+    },
+    {
+      "id": "mit-15",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește arborele cosmic care leagă lumile în mitologia nordică?",
+      "options": ["Yggdrasil", "Bifröst", "Gjallarhorn", "Sleipnir"],
+      "answer": "Yggdrasil",
+      "explanation": "Yggdrasil este un frasin uriaș ale cărui rădăcini ating cele nouă lumi."
+    }
+  ]
+}

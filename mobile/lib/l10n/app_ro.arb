@@ -1,0 +1,302 @@
+{
+  "@@locale": "ro",
+  "appTitle": "QuizRealm",
+  "appTagline": "Cunoaște. Cucerește. Domnește.",
+
+  "menuStartCampaign": "Începe campania",
+  "menuContinueCampaign": "Continuă campania",
+  "menuAccount": "Cont de jucător",
+  "menuHowToPlay": "Cum se joacă",
+  "menuTapToEnter": "Atinge pecetea pentru a intra",
+  "howToPlayTitle": "Legile regatului",
+  "howToPlayRuleQuestions": "Fiecare asalt înseamnă întrebări grilă și estimări numerice, contra cronometru.",
+  "howToPlayRuleStreak": "Răspunsurile corecte la rând cresc multiplicatorul de serie până la ×3.",
+  "howToPlayRuleStars": "Un asalt perfect îți aduce 3 stele. Stelele deblochează ținuturi noi.",
+  "howToPlayRuleOffline": "Campania se joacă fără internet, din pachetele verificate livrate cu jocul.",
+  "close": "Am înțeles",
+
+  "worldMapEyebrow": "HARTA REGATULUI",
+  "worldMapTitle": "Alege-ți ținutul",
+  "worldMapHint": "Atinge un ținut cucerit pentru a-i deschide asalturile.",
+  "levelBadge": "Nivel {level}",
+  "@levelBadge": {"placeholders": {"level": {"type": "int"}}},
+  "xpProgress": "{current} / {total} XP",
+  "@xpProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "starsCollected": "{earned} din {total} stele",
+  "@starsCollected": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "starsShort": "{earned}/{total}",
+  "@starsShort": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "chapterLockedHint": "Se deschide la {stars} stele",
+  "@chapterLockedHint": {"placeholders": {"stars": {"type": "int"}}},
+  "chapterLockedSemantics": "{chapter}, blocat, necesită {stars} stele",
+  "@chapterLockedSemantics": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "stars": {"type": "int"}
+    }
+  },
+  "chapterOpenSemantics": "{chapter}, {earned} din {total} stele",
+  "@chapterOpenSemantics": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+
+  "chapterIstorie": "Cetatea Cronicilor",
+  "chapterRomania": "Tronul Carpatin",
+  "chapterGeografie": "Portul celor Șapte Mări",
+  "chapterStiinta": "Academia de Cristal",
+  "chapterSport": "Câmpul Turnirului",
+  "chapterTehnologie": "Observatorul de Alamă",
+  "chapterLiteratura": "Schitul Manuscriselor",
+  "chapterArte": "Golful Măștilor",
+  "chapterMituri": "Insula Nălucilor",
+
+  "subjectIstorie": "Istorie",
+  "subjectRomania": "România",
+  "subjectGeografie": "Geografie",
+  "subjectStiinta": "Știință",
+  "subjectSport": "Sport",
+  "subjectTehnologie": "Tehnologie",
+  "subjectLiteratura": "Literatură",
+  "subjectArte": "Film și muzică",
+  "subjectMituri": "Mituri și legende",
+
+  "stageOutpost": "Avanpostul",
+  "stageCitadel": "Cetatea",
+  "stageThrone": "Sala Tronului",
+  "stageNumber": "Asaltul {index}",
+  "@stageNumber": {"placeholders": {"index": {"type": "int"}}},
+  "stageSummary": "{questions} întrebări • {seconds} secunde fiecare",
+  "@stageSummary": {
+    "placeholders": {
+      "questions": {"type": "int"},
+      "seconds": {"type": "int"}
+    }
+  },
+  "stageLockedHint": "Câștigă o stea în asaltul precedent",
+  "chooseStage": "Alege asaltul",
+  "startStage": "Pornește asaltul",
+
+  "battleHeader": "{chapter} • {stage}",
+  "@battleHeader": {
+    "placeholders": {
+      "chapter": {"type": "String"},
+      "stage": {"type": "String"}
+    }
+  },
+  "hudScore": "SCOR",
+  "hudRound": "RUNDĂ",
+  "hudStreak": "SERIE",
+  "roundCounter": "{current}/{total}",
+  "@roundCounter": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "streakMultiplier": "×{multiplier}",
+  "@streakMultiplier": {"placeholders": {"multiplier": {"type": "String"}}},
+  "timerSemantics": "Au rămas {seconds} secunde",
+  "@timerSemantics": {"placeholders": {"seconds": {"type": "int"}}},
+  "questionLoading": "Se pregătește asaltul…",
+  "questionErrorTitle": "Asaltul nu a putut porni",
+  "noQuestionsTitle": "Ținutul e fără întrebări",
+  "noQuestionsBody": "Pachetul acestui ținut nu a putut fi citit. Nu intrăm în luptă cu întrebări neverificate.",
+  "retry": "Încearcă din nou",
+  "difficulty": "Dificultate {level}/5",
+  "@difficulty": {"placeholders": {"level": {"type": "int"}}},
+  "categoryFallback": "Arhivele regatului",
+  "numericHint": "Scrie estimarea ta",
+  "submitAnswer": "Confirmă răspunsul",
+  "answerOptionSemantics": "Varianta {letter}: {answer}",
+  "@answerOptionSemantics": {
+    "placeholders": {
+      "letter": {"type": "String"},
+      "answer": {"type": "String"}
+    }
+  },
+  "correctTitle": "Lovitură reușită!",
+  "incorrectTitle": "Atac respins",
+  "timeoutTitle": "Timpul a expirat",
+  "correctAnswerLabel": "Răspuns corect: {answer}",
+  "@correctAnswerLabel": {"placeholders": {"answer": {"type": "String"}}},
+  "pointsAwarded": "+{points}",
+  "@pointsAwarded": {"placeholders": {"points": {"type": "int"}}},
+  "nextQuestion": "Următoarea întrebare",
+  "finishRound": "Vezi rezultatul",
+  "answerSubmitError": "Verdictul nu a putut fi obținut. Atacul tău este păstrat.",
+  "retryAnswer": "Retrimite atacul",
+  "leaveBattleTitle": "Abandonezi asaltul?",
+  "leaveBattleBody": "Progresul acestui asalt se pierde, iar ținutul rămâne necucerit.",
+  "leaveBattleConfirm": "Abandonează",
+  "leaveBattleCancel": "Continuă lupta",
+
+  "resultVictoryTitle": "Ținut cucerit",
+  "resultDefeatTitle": "Asalt respins",
+  "resultVictoryBody": "Steagul tău flutură peste {chapter}.",
+  "@resultVictoryBody": {"placeholders": {"chapter": {"type": "String"}}},
+  "resultDefeatBody": "Zidurile au ținut. Reia asaltul când ești pregătit.",
+  "resultScoreLabel": "SCOR",
+  "resultAnswersLabel": "CORECTE",
+  "resultStreakLabel": "SERIE MAXIMĂ",
+  "resultAnswers": "{correct}/{total}",
+  "@resultAnswers": {
+    "placeholders": {
+      "correct": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "resultXpGained": "+{xp} XP",
+  "@resultXpGained": {"placeholders": {"xp": {"type": "int"}}},
+  "resultLevelUp": "Nivel nou: {level}!",
+  "@resultLevelUp": {"placeholders": {"level": {"type": "int"}}},
+  "resultChapterCleared": "Ai cucerit tot ținutul!",
+  "actionRetryStage": "Reia asaltul",
+  "actionNextStage": "Asaltul următor",
+  "actionBackToMap": "Înapoi la hartă",
+  "starsSemantics": "{earned} din {total} stele",
+  "@starsSemantics": {
+    "placeholders": {
+      "earned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+
+  "menuDuel": "Duel online",
+  "menuLeaderboard": "Clasament",
+  "leaderboardTitle": "Clasamentul regatului",
+  "leaderboardPlayerCount": "{total} jucători clasați",
+  "@leaderboardPlayerCount": {"placeholders": {"total": {"type": "int"}}},
+  "leaderboardEmpty": "Nu s-a clasat încă nimeni. Joacă un duel ca să deschizi clasamentul.",
+  "leaderboardYourPlace": "LOCUL TĂU",
+  "leaderboardPositionLine": "Locul {position} • {matches} partide",
+  "@leaderboardPositionLine": {
+    "placeholders": {
+      "position": {"type": "int"},
+      "matches": {"type": "int"}
+    }
+  },
+  "leaderboardRowSemantics": "Locul {position}, {username}, {rank}",
+  "@leaderboardRowSemantics": {
+    "placeholders": {
+      "position": {"type": "int"},
+      "username": {"type": "String"},
+      "rank": {"type": "String"}
+    }
+  },
+  "leaderboardErrorTitle": "Clasamentul nu a putut fi citit",
+  "leaderboardErrorBody": "Serverul nu răspunde. Clasamentul are nevoie de conexiune.",
+  "rankSemantics": "Rang {rank}, {elo} puncte",
+  "@rankSemantics": {
+    "placeholders": {
+      "rank": {"type": "String"},
+      "elo": {"type": "int"}
+    }
+  },
+  "rankToNext": "Încă {points} puncte până la treapta următoare",
+  "@rankToNext": {"placeholders": {"points": {"type": "int"}}},
+  "rankTopReached": "Ai atins treapta de vârf a regatului",
+  "duelRankUpdated": "Rang: {rank}",
+  "@duelRankUpdated": {"placeholders": {"rank": {"type": "String"}}},
+  "duelTitle": "Duel 1v1",
+  "duelConnecting": "Ne conectăm la regat…",
+  "duelSearching": "Căutăm un adversar",
+  "duelSearchingHint": "Rămâi pe recepție: prima rundă pornește imediat ce se găsește un adversar.",
+  "duelCancelSearch": "Renunță la căutare",
+  "duelNeedAccountTitle": "Duelul cere un cont",
+  "duelNeedAccountBody": "Partidele online se joacă autentificat, ca rezultatele să poată intra în clasament.",
+  "duelGoToAccount": "Deschide contul",
+  "duelRoundCounter": "Runda {current} din {total}",
+  "@duelRoundCounter": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "duelYou": "TU",
+  "duelOpponent": "ADVERSAR",
+  "duelWaitingOpponent": "Adversarul încă răspunde…",
+  "duelAnswerSent": "Atac trimis",
+  "duelRoundWon": "Ai cucerit teritoriul!",
+  "duelRoundLost": "Teritoriul a fost pierdut",
+  "duelRoundNeutral": "Niciun teritoriu cucerit",
+  "duelNextRound": "Runda următoare pornește…",
+  "duelNoAnswer": "fără răspuns",
+  "duelVictory": "Victorie",
+  "duelDefeat": "Înfrângere",
+  "duelDraw": "Egalitate",
+  "duelFinalLine": "{score} puncte • {territories} teritorii",
+  "@duelFinalLine": {
+    "placeholders": {
+      "score": {"type": "int"},
+      "territories": {"type": "int"}
+    }
+  },
+  "duelRematch": "Caută alt duel",
+  "duelLeave": "Ieși din duel",
+  "duelDisconnectedTitle": "Conexiunea s-a pierdut",
+  "duelDisconnectedBody": "Serverul de partide nu mai răspunde. Poți încerca din nou.",
+  "duelServerErrorTitle": "Partida a fost oprită",
+  "duelVerifyEmailTitle": "Confirmă-ți adresa de email",
+  "duelVerifyEmailBody": "Duelurile clasate cer un cont verificat. Deschide linkul pe care ți l-am trimis pe email, apoi încearcă din nou.",
+  "duelVerifyEmailAction": "Retrimite linkul",
+  "duelVerifyEmailSending": "Se trimite…",
+  "duelVerifyEmailSent": "Ți-am trimis un link nou de confirmare.",
+  "duelVerifyEmailFailed": "Nu am putut trimite emailul. Încearcă mai târziu.",
+  "duelAccountRestrictedTitle": "Cont restricționat",
+  "duelAccountRestrictedBody": "Contul tău nu poate intra acum în duelurile clasate.",
+  "duelReconnectingTitle": "Te reconectăm la partidă",
+  "duelReconnectingBody": "Locul îți este păstrat. Rămâi pe recepție câteva secunde.",
+  "duelOpponentAwayTitle": "Adversarul a pierdut legătura",
+  "duelOpponentAwayBody": "{seconds, plural, =1{Mai are o secundă să revină.} other{Mai are {seconds} secunde să revină.}}",
+  "@duelOpponentAwayBody": {
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "duelOpponentAwayExpired": "Timpul de revenire a expirat. Partida se închide.",
+  "duelWonByForfeit": "Adversarul nu s-a mai întors în partidă.",
+
+  "loginEyebrow": "CONT DE JUCĂTOR",
+  "loginTitle": "Păstrează-ți cuceririle pe orice dispozitiv.",
+  "accountOptionalNote": "Contul este opțional — campania se joacă și fără el.",
+  "emailLabel": "E-mail",
+  "passwordLabel": "Parolă",
+  "usernameLabel": "Nume de jucător",
+  "loginButton": "Intră în regat",
+  "createAccountButton": "Creează contul",
+  "switchToRegister": "Nu ai cont? Creează unul",
+  "switchToLogin": "Ai deja cont? Autentifică-te",
+  "authGenericError": "Autentificarea nu a reușit. Verifică datele și conexiunea.",
+  "fieldRequired": "Acest câmp este obligatoriu.",
+  "passwordHint": "Minimum 10 caractere",
+  "birthDateLabel": "Data nașterii",
+  "birthDatePick": "Alege data",
+  "birthDateHint": "Ne asigurăm că jocul e potrivit vârstei tale.",
+  "birthDateTooYoung": "Trebuie să ai cel puțin {years} ani ca să-ți creezi cont.",
+  "@birthDateTooYoung": {
+    "placeholders": {
+      "years": {"type": "int"}
+    }
+  },
+  "logout": "Deconectare",
+  "backLabel": "Înapoi"
+}

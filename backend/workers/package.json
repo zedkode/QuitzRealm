@@ -1,0 +1,67 @@
+{
+  "name": "workers",
+  "version": "0.0.1",
+  "description": "QuizRealm asynchronous workers",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:e2e": "jest --config ./test/jest-e2e.json --runInBand",
+    "prisma:generate": "node scripts/generate-prisma.mjs",
+    "generate:questions": "ts-node src/cli/generate-questions.ts",
+    "generate:bootstrap": "ts-node src/cli/generate-bootstrap-questions.ts",
+    "recalculate:leaderboard": "ts-node src/cli/recalculate-leaderboard.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.2.0",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.2.0",
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "bullmq": "^6.1.1",
+    "ioredis": "^6.0.0",
+    "pg": "^8.23.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/testing": "^11.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.21.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^17.0.0",
+    "jest": "^30.0.0",
+    "prettier": "^3.4.2",
+    "prisma": "^7.9.1",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": { "^.+\\.(t|j)s$": "ts-jest" },
+    "testEnvironment": "node"
+  },
+  "allowScripts": {
+    "@prisma/engines@7.9.1": true,
+    "msgpackr-extract@3.0.4": true,
+    "prisma@7.9.1": true,
+    "unrs-resolver@1.12.2": true
+  }
+}

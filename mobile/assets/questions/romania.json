@@ -1,0 +1,138 @@
+{
+  "id": "romania",
+  "name": "România",
+  "questions": [
+    {
+      "id": "rom-01",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala României?",
+      "options": ["Cluj-Napoca", "Iași", "București", "Timișoara"],
+      "answer": "București",
+      "explanation": "București este capitala și cel mai populat oraș al țării."
+    },
+    {
+      "id": "rom-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce monedă este folosită în România?",
+      "options": ["Euro", "Leul", "Forintul", "Leva"],
+      "answer": "Leul",
+      "explanation": "Leul românesc (RON) este împărțit în 100 de bani."
+    },
+    {
+      "id": "rom-03",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează sudul României și formează o deltă la vărsare?",
+      "options": ["Mureșul", "Oltul", "Dunărea", "Siretul"],
+      "answer": "Dunărea",
+      "explanation": "Dunărea intră în țară la Baziaș și se varsă în Marea Neagră prin Delta Dunării."
+    },
+    {
+      "id": "rom-04",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte județe are România?",
+      "answer": "41",
+      "explanation": "Pe lângă cele 41 de județe există și municipiul București, cu statut aparte."
+    },
+    {
+      "id": "rom-05",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este cel mai înalt vârf montan din România?",
+      "options": ["Vârful Negoiu", "Vârful Moldoveanu", "Vârful Omu", "Vârful Peleaga"],
+      "answer": "Vârful Moldoveanu",
+      "explanation": "Vârful Moldoveanu, din Munții Făgăraș, are 2.544 de metri."
+    },
+    {
+      "id": "rom-06",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a aderat România la Uniunea Europeană?",
+      "answer": "2007",
+      "explanation": "România a devenit membră a UE pe 1 ianuarie 2007, împreună cu Bulgaria."
+    },
+    {
+      "id": "rom-07",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost domnitorul ales în 1859 atât în Moldova, cât și în Țara Românească?",
+      "options": ["Mihail Kogălniceanu", "Alexandru Ioan Cuza", "Carol I", "Barbu Catargiu"],
+      "answer": "Alexandru Ioan Cuza",
+      "explanation": "Dubla alegere a lui Cuza a realizat Unirea Principatelor Române."
+    },
+    {
+      "id": "rom-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce sculptor român a creat „Coloana fără sfârșit” de la Târgu Jiu?",
+      "options": ["Ion Jalea", "Constantin Brâncuși", "Dimitrie Paciurea", "Oscar Han"],
+      "answer": "Constantin Brâncuși",
+      "explanation": "Ansamblul de la Târgu Jiu include și „Masa tăcerii” și „Poarta sărutului”."
+    },
+    {
+      "id": "rom-09",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce oraș este considerat centrul istoric și academic al Transilvaniei?",
+      "options": ["Brașov", "Cluj-Napoca", "Sibiu", "Alba Iulia"],
+      "answer": "Cluj-Napoca",
+      "explanation": "Cluj-Napoca găzduiește cea mai mare universitate din țară, Babeș-Bolyai."
+    },
+    {
+      "id": "rom-10",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Marea Unire de la Alba Iulia?",
+      "answer": "1918",
+      "explanation": "Pe 1 decembrie 1918, Adunarea Națională de la Alba Iulia a votat unirea Transilvaniei cu România."
+    },
+    {
+      "id": "rom-11",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost primul rege al României?",
+      "options": ["Ferdinand I", "Carol I", "Carol al II-lea", "Mihai I"],
+      "answer": "Carol I",
+      "explanation": "Carol I a domnit din 1866 și a devenit rege în 1881, după proclamarea Regatului."
+    },
+    {
+      "id": "rom-12",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce clădire din București este una dintre cele mai mari clădiri administrative din lume?",
+      "options": ["Ateneul Român", "Palatul Parlamentului", "Palatul Cotroceni", "Casa Presei Libere"],
+      "answer": "Palatul Parlamentului",
+      "explanation": "Construcția are peste 300.000 m² și a fost ridicată în anii 1980."
+    },
+    {
+      "id": "rom-13",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce castel din România este legat, în cultura populară, de legenda lui Dracula?",
+      "options": ["Castelul Peleș", "Castelul Bran", "Castelul Corvinilor", "Cetatea Râșnov"],
+      "answer": "Castelul Bran",
+      "explanation": "Legătura este mai ales turistică; romanul lui Bram Stoker nu descrie efectiv castelul Bran."
+    },
+    {
+      "id": "rom-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce inventator român a brevetat, în 1827, stiloul cu rezervor?",
+      "options": ["Traian Vuia", "Petrache Poenaru", "Henri Coandă", "Aurel Vlaicu"],
+      "answer": "Petrache Poenaru",
+      "explanation": "Poenaru a obținut brevetul la Paris, pentru „condeiul portăreț fără sfârșit”."
+    },
+    {
+      "id": "rom-15",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce zonă a României este inclusă în patrimoniul mondial UNESCO ca rezervație a biosferei?",
+      "options": ["Delta Dunării", "Munții Retezat", "Cheile Bicazului", "Podișul Dobrogei"],
+      "answer": "Delta Dunării",
+      "explanation": "Delta Dunării este rezervație a biosferei și adăpostește peste 300 de specii de păsări."
+    }
+  ]
+}

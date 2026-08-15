@@ -1,0 +1,139 @@
+{
+  "id": "arte",
+  "name": "Film & Muzică",
+  "questions": [
+    {
+      "id": "art-01",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul „Titanic” din 1997?",
+      "options": ["Steven Spielberg", "James Cameron", "Ridley Scott", "Martin Scorsese"],
+      "answer": "James Cameron",
+      "explanation": "Filmul a câștigat 11 premii Oscar, egalând recordul deținut de „Ben-Hur”."
+    },
+    {
+      "id": "art-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce trupă britanică a lansat piesa „Hey Jude”?",
+      "options": ["The Rolling Stones", "The Beatles", "Queen", "The Who"],
+      "answer": "The Beatles",
+      "explanation": "Piesa a fost scrisă de Paul McCartney în 1968, pentru fiul lui John Lennon."
+    },
+    {
+      "id": "art-03",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte corzi are o chitară clasică standard?",
+      "answer": "6",
+      "explanation": "Acordajul standard este Mi-La-Re-Sol-Si-Mi."
+    },
+    {
+      "id": "art-04",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce film sud-coreean a câștigat Oscarul pentru cel mai bun film?",
+      "options": ["Oldboy", "Parasite", "Burning", "The Handmaiden"],
+      "answer": "Parasite",
+      "explanation": "În 2020, „Parasite” a devenit primul film non-englez care a câștigat premiul cel mare."
+    },
+    {
+      "id": "art-05",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus muzica filmelor „Star Wars”?",
+      "options": ["Hans Zimmer", "John Williams", "Ennio Morricone", "Danny Elfman"],
+      "answer": "John Williams",
+      "explanation": "John Williams a compus și coloanele sonore pentru „Indiana Jones” și „Jurassic Park”."
+    },
+    {
+      "id": "art-06",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte clape are un pian standard?",
+      "answer": "88",
+      "explanation": "Cele 88 de clape acoperă șapte octave și un pic, de la La subcontra la Do."
+    },
+    {
+      "id": "art-07",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus Simfonia a IX-a, din care face parte „Oda bucuriei”?",
+      "options": ["Mozart", "Beethoven", "Bach", "Brahms"],
+      "answer": "Beethoven",
+      "explanation": "Beethoven era deja surd când a finalizat simfonia, în 1824."
+    },
+    {
+      "id": "art-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce personaj din universul Marvel a fost interpretat de Robert Downey Jr.?",
+      "options": ["Captain America", "Thor", "Iron Man", "Hulk"],
+      "answer": "Iron Man",
+      "explanation": "Rolul lui Tony Stark a deschis, în 2008, universul cinematografic Marvel."
+    },
+    {
+      "id": "art-09",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este supranumit „Regele muzicii pop”?",
+      "options": ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],
+      "answer": "Michael Jackson",
+      "explanation": "Albumul său „Thriller” rămâne unul dintre cele mai vândute din istorie."
+    },
+    {
+      "id": "art-10",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce oraș găzduiește festivalul de film la care se acordă trofeul Palme d'Or?",
+      "options": ["Veneția", "Berlin", "Cannes", "Toronto"],
+      "answer": "Cannes",
+      "explanation": "Festivalul de la Cannes se desfășoară anual, în mai, pe Coasta de Azur."
+    },
+    {
+      "id": "art-11",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce compozitor român este autorul „Rapsodiilor române”?",
+      "options": ["Ciprian Porumbescu", "George Enescu", "Dinu Lipatti", "Anton Pann"],
+      "answer": "George Enescu",
+      "explanation": "Enescu a compus cele două rapsodii în 1901, inspirându-se din folclorul românesc."
+    },
+    {
+      "id": "art-12",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul „Pulp Fiction”?",
+      "options": ["Quentin Tarantino", "Coen Brothers", "David Fincher", "Paul Thomas Anderson"],
+      "answer": "Quentin Tarantino",
+      "explanation": "Filmul din 1994 a câștigat Palme d'Or la Cannes și Oscarul pentru scenariu original."
+    },
+    {
+      "id": "art-13",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce trupă a lansat albumul „The Dark Side of the Moon”?",
+      "options": ["Led Zeppelin", "Pink Floyd", "Deep Purple", "Genesis"],
+      "answer": "Pink Floyd",
+      "explanation": "Albumul din 1973 a rămas în topurile americane peste 700 de săptămâni."
+    },
+    {
+      "id": "art-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost primul lungmetraj de animație al studioului Disney?",
+      "options": ["Pinocchio", "Bambi", "Albă-ca-Zăpada și cei șapte pitici", "Fantasia"],
+      "answer": "Albă-ca-Zăpada și cei șapte pitici",
+      "explanation": "Filmul a fost lansat în 1937 și a fost primul lungmetraj animat integral color cu sunet."
+    },
+    {
+      "id": "art-15",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare aria „Nessun dorma”?",
+      "options": ["Aida", "Carmen", "Turandot", "Rigoletto"],
+      "answer": "Turandot",
+      "explanation": "Aria aparține operei „Turandot” de Giacomo Puccini, rămasă neterminată la moartea sa."
+    }
+  ]
+}

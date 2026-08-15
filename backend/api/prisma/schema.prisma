@@ -1,0 +1,463 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum QuestionType {
+  MULTIPLE_CHOICE @map("multiple_choice")
+  NUMERIC         @map("numeric")
+}
+
+enum QuestionSource {
+  AI        @map("ai")
+  COMMUNITY @map("community")
+  CURATED   @map("curated")
+}
+
+enum QuestionStatus {
+  PENDING  @map("pending")
+  APPROVED @map("approved")
+  REJECTED @map("rejected")
+  FLAGGED  @map("flagged")
+}
+
+enum MatchMode {
+  CLASSIC @map("classic")
+  BLITZ   @map("blitz")
+  DUO     @map("duo")
+  PRIVATE @map("private")
+}
+
+enum MatchStatus {
+  WAITING   @map("waiting")
+  ACTIVE    @map("active")
+  COMPLETED @map("completed")
+  CANCELLED @map("cancelled")
+}
+
+enum MatchResult {
+  WIN  @map("win")
+  LOSS @map("loss")
+  DRAW @map("draw")
+}
+
+enum CosmeticType {
+  AVATAR   @map("avatar")
+  FRAME    @map("frame")
+  BANNER   @map("banner")
+  MAP_SKIN @map("map_skin")
+}
+
+model User {
+  id                String    @id @default(uuid()) @db.Uuid
+  /// Handle unic, folosit la identificare. Se schimbă rar (vezi cooldown).
+  username          String    @unique @db.VarChar(32)
+  /// Numele afișat în joc și chat; se schimbă liber. Când lipsește, se
+  /// afișează `username`.
+  displayName       String?   @map("display_name") @db.VarChar(32)
+  usernameChangedAt DateTime? @map("username_changed_at")
+  email             String    @unique @db.VarChar(320)
+  emailVerifiedAt   DateTime? @map("email_verified_at")
+  /// Doar data, fără oră: e suficientă pentru age gate și e mai puțin
+  /// identificatoare decât un timestamp complet.
+  birthDate         DateTime? @map("birth_date") @db.Date
+  passwordHash      String?   @map("password_hash")
+  googleId          String?   @unique @map("google_id")
+  avatarId          String?   @map("avatar_id") @db.Uuid
+  frameId           String?   @map("frame_id") @db.Uuid
+  createdAt         DateTime  @default(now()) @map("created_at")
+  eloRating         Int       @default(1000) @map("elo_rating")
+  xp                Int       @default(0)
+  level             Int       @default(1)
+  coins             Int       @default(0)
+  /// Raspunsuri corecte cumulate. Sursa treptei de incredere din 2.5.
+  /// Denormalizat intentionat: altfel fiecare mesaj de chat ar cere un COUNT
+  /// peste `match_events`.
+  correctAnswers    Int       @default(0) @map("correct_answers")
+  /// Mut temporar la chat, pus automat de detectia de spam sau manual de
+  /// moderare. `null` = fara restrictie.
+  chatMutedUntil    DateTime? @map("chat_muted_until")
+
+  createdQuestions   Question[]                @relation("QuestionCreator")
+  reviewedQuestions  Question[]                @relation("QuestionReviewer")
+  matchPlayers       MatchPlayer[]
+  matchEvents        MatchEvent[]
+  inventory          UserInventory[]
+  questionReports    QuestionReport[]
+  sessions           UserSession[]
+  authTokens         AuthToken[]
+  privacy            UserPrivacySettings?
+  friendshipsA       Friendship[]              @relation("FriendshipUserA")
+  friendshipsB       Friendship[]              @relation("FriendshipUserB")
+  friendRequestsSent Friendship[]              @relation("FriendshipRequester")
+  blocksMade         UserBlock[]               @relation("BlockAuthor")
+  blocksReceived     UserBlock[]               @relation("BlockTarget")
+  conversations      ConversationParticipant[]
+  messages           Message[]
+  chatReportsMade    ChatReport[]              @relation("ChatReporter")
+  chatReportsAgainst ChatReport[]              @relation("ChatReported")
+
+  @@map("users")
+}
+
+enum DmPermission {
+  EVERYONE     @map("everyone")
+  FRIENDS_ONLY @map("friends_only")
+  NOBODY       @map("nobody")
+
+  @@map("dm_permission")
+}
+
+enum ProfileVisibility {
+  PUBLIC  @map("public")
+  FRIENDS @map("friends")
+  PRIVATE @map("private")
+
+  @@map("profile_visibility")
+}
+
+/// Setarile de confidentialitate din 2.4 si 4.9. Tabel separat de `users`: se
+/// citesc in alte momente decat profilul de joc si cresc independent.
+model UserPrivacySettings {
+  userId            String            @id @map("user_id") @db.Uuid
+  /// Implicit `friends_only` pentru conturi noi (2.4). Pentru minori e
+  /// **impus**, nu doar implicit - vezi `capabilities.dmPermissionLocked`.
+  dmPermission      DmPermission      @default(FRIENDS_ONLY) @map("dm_permission")
+  profileVisibility ProfileVisibility @default(PUBLIC) @map("profile_visibility")
+  updatedAt         DateTime          @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_privacy_settings")
+}
+
+enum FriendshipStatus {
+  PENDING  @map("pending")
+  ACCEPTED @map("accepted")
+  DECLINED @map("declined")
+
+  @@map("friendship_status")
+}
+
+/// O relatie de prietenie, cu perechea **normalizata** (`userIdA < userIdB`).
+/// Fara normalizare, A-B si B-A ar fi doua randuri pentru aceeasi relatie si
+/// s-ar putea contrazice.
+model Friendship {
+  id            String           @id @default(uuid()) @db.Uuid
+  userIdA       String           @map("user_id_a") @db.Uuid
+  userIdB       String           @map("user_id_b") @db.Uuid
+  status        FriendshipStatus @default(PENDING)
+  /// Cine a trimis cererea; celalalt e cel care accepta sau refuza.
+  requestedById String           @map("requested_by") @db.Uuid
+  createdAt     DateTime         @default(now()) @map("created_at")
+  respondedAt   DateTime?        @map("responded_at")
+
+  userA       User @relation("FriendshipUserA", fields: [userIdA], references: [id], onDelete: Cascade)
+  userB       User @relation("FriendshipUserB", fields: [userIdB], references: [id], onDelete: Cascade)
+  requestedBy User @relation("FriendshipRequester", fields: [requestedById], references: [id], onDelete: Cascade)
+
+  @@unique([userIdA, userIdB])
+  @@index([userIdB, status])
+  @@map("friendships")
+}
+
+/// Blocarea e **directionala**: "A l-a blocat pe B" nu inseamna invers. De
+/// aceea nu sta in `friendships`, unde perechea e normalizata si s-ar pierde
+/// cine pe cine a blocat (abatere constienta de la schita din 2.9).
+model UserBlock {
+  blockerId String   @map("blocker_id") @db.Uuid
+  blockedId String   @map("blocked_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+
+  blocker User @relation("BlockAuthor", fields: [blockerId], references: [id], onDelete: Cascade)
+  blocked User @relation("BlockTarget", fields: [blockedId], references: [id], onDelete: Cascade)
+
+  @@id([blockerId, blockedId])
+  @@index([blockedId])
+  @@map("user_blocks")
+}
+
+enum ConversationType {
+  FRIEND      @map("friend")
+  DM_REQUEST  @map("dm_request")
+  DM_ACCEPTED @map("dm_accepted")
+
+  @@map("conversation_type")
+}
+
+model Conversation {
+  id            String           @id @default(uuid()) @db.Uuid
+  type          ConversationType
+  createdAt     DateTime         @default(now()) @map("created_at")
+  lastMessageAt DateTime?        @map("last_message_at")
+
+  participants ConversationParticipant[]
+  messages     Message[]
+
+  @@index([lastMessageAt])
+  @@map("conversations")
+}
+
+model ConversationParticipant {
+  conversationId String    @map("conversation_id") @db.Uuid
+  userId         String    @map("user_id") @db.Uuid
+  joinedAt       DateTime  @default(now()) @map("joined_at")
+  lastReadAt     DateTime? @map("last_read_at")
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([conversationId, userId])
+  @@index([userId])
+  @@map("conversation_participants")
+}
+
+enum MessageScope {
+  FRIEND @map("friend")
+  DM     @map("dm")
+
+  @@map("message_scope")
+}
+
+/// Doar mesajele persistente. Chatul global e efemer (2.8): traieste in Redis
+/// cu TTL, iar daca e raportat, continutul se copiaza in `chat_reports` -
+/// altfel raportul ar ramane fara dovada dupa expirare.
+model Message {
+  id             String       @id @default(uuid()) @db.Uuid
+  conversationId String       @map("conversation_id") @db.Uuid
+  scope          MessageScope
+  senderId       String       @map("sender_id") @db.Uuid
+  content        String       @db.VarChar(1000)
+  createdAt      DateTime     @default(now()) @map("created_at")
+  flagged        Boolean      @default(false)
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  sender       User         @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  reports      ChatReport[]
+
+  @@index([conversationId, createdAt])
+  @@map("messages")
+}
+
+enum ChatReportResolution {
+  PENDING   @map("pending")
+  DISMISSED @map("dismissed")
+  WARNED    @map("warned")
+  MUTED     @map("muted")
+  BANNED    @map("banned")
+
+  @@map("chat_report_resolution")
+}
+
+model ChatReport {
+  id              String               @id @default(uuid()) @db.Uuid
+  /// `null` pentru mesajele globale, care nu se persista. Continutul e copiat
+  /// in `contentSnapshot` ca raportul sa ramana verificabil.
+  messageId       String?              @map("message_id") @db.Uuid
+  reporterId      String               @map("reporter_id") @db.Uuid
+  reportedUserId  String               @map("reported_user_id") @db.Uuid
+  contentSnapshot String               @map("content_snapshot") @db.VarChar(1000)
+  scope           String               @db.VarChar(20)
+  reason          String               @db.VarChar(500)
+  /// Rapoartele din DM si de la prieteni se revizuiesc primele (2.6):
+  /// contextul privat face hartuirea mai greu de observat din afara.
+  priority        Int                  @default(0)
+  resolution      ChatReportResolution @default(PENDING)
+  createdAt       DateTime             @default(now()) @map("created_at")
+  resolvedAt      DateTime?            @map("resolved_at")
+
+  message      Message? @relation(fields: [messageId], references: [id], onDelete: SetNull)
+  reporter     User     @relation("ChatReporter", fields: [reporterId], references: [id], onDelete: Cascade)
+  reportedUser User     @relation("ChatReported", fields: [reportedUserId], references: [id], onDelete: Cascade)
+
+  @@index([resolution, priority, createdAt])
+  @@map("chat_reports")
+}
+
+/// O sesiune activă = un dispozitiv conectat. Refresh token-ul trăiește aici,
+/// nu pe `users`, ca un login nou să nu deconecteze celelalte dispozitive și
+/// ca fiecare sesiune să poată fi revocată separat.
+model UserSession {
+  id               String    @id @default(uuid()) @db.Uuid
+  userId           String    @map("user_id") @db.Uuid
+  /// Doar hash-ul; token-ul brut nu se stochează niciodată.
+  refreshTokenHash String    @map("refresh_token_hash")
+  deviceLabel      String?   @map("device_label") @db.VarChar(120)
+  /// IP-ul se păstrează doar ca hash: ajunge pentru detecție de abuz, fără a
+  /// ține o dată personală în clar.
+  ipHash           String?   @map("ip_hash") @db.VarChar(64)
+  createdAt        DateTime  @default(now()) @map("created_at")
+  lastSeenAt       DateTime  @default(now()) @map("last_seen_at")
+  expiresAt        DateTime  @map("expires_at")
+  revokedAt        DateTime? @map("revoked_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, revokedAt])
+  @@map("user_sessions")
+}
+
+enum AuthTokenPurpose {
+  EMAIL_VERIFICATION @map("email_verification")
+  PASSWORD_RESET     @map("password_reset")
+
+  @@map("auth_token_purpose")
+}
+
+/// Token-uri cu viață scurtă trimise pe email (verificare, resetare parolă).
+/// Se păstrează hash-ate și se consumă o singură dată.
+model AuthToken {
+  id        String           @id @default(uuid()) @db.Uuid
+  userId    String           @map("user_id") @db.Uuid
+  purpose   AuthTokenPurpose
+  /// Prima jumătate a token-ului, stocată în clar și indexată. Fără ea,
+  /// consumarea unui token ar cere o verificare argon2 pentru fiecare token
+  /// activ — lent prin construcție, deci exploatabil ca DoS.
+  selector  String           @unique @db.VarChar(32)
+  tokenHash String           @map("token_hash")
+  expiresAt DateTime         @map("expires_at")
+  usedAt    DateTime?        @map("used_at")
+  createdAt DateTime         @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, purpose])
+  @@map("auth_tokens")
+}
+
+model Category {
+  id       String  @id @default(uuid()) @db.Uuid
+  name     String  @db.VarChar(100)
+  parentId String? @map("parent_id") @db.Uuid
+  icon     String? @db.VarChar(100)
+
+  parent    Category?  @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
+  children  Category[] @relation("CategoryTree")
+  questions Question[]
+
+  @@unique([name, parentId])
+  @@map("categories")
+}
+
+model Question {
+  id                 String         @id @default(uuid()) @db.Uuid
+  type               QuestionType
+  categoryId         String         @map("category_id") @db.Uuid
+  difficulty         Int
+  text               String
+  options            Json?
+  correctAnswer      String         @map("correct_answer")
+  explanation        String?
+  verificationSource String?        @map("verification_source")
+  source             QuestionSource
+  status             QuestionStatus @default(PENDING)
+  likeCount          Int            @default(0) @map("like_count")
+  dislikeCount       Int            @default(0) @map("dislike_count")
+  timesAsked         Int            @default(0) @map("times_asked")
+  timesCorrect       Int            @default(0) @map("times_correct")
+  language           String         @default("ro") @db.VarChar(10)
+  createdById        String?        @map("created_by") @db.Uuid
+  reviewedById       String?        @map("reviewed_by") @db.Uuid
+  createdAt          DateTime       @default(now()) @map("created_at")
+
+  category   Category         @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  createdBy  User?            @relation("QuestionCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  reviewedBy User?            @relation("QuestionReviewer", fields: [reviewedById], references: [id], onDelete: SetNull)
+  events     MatchEvent[]
+  reports    QuestionReport[]
+
+  @@index([categoryId, difficulty, status, language])
+  @@map("questions")
+}
+
+model Match {
+  id        String      @id @default(uuid()) @db.Uuid
+  mode      MatchMode
+  status    MatchStatus @default(WAITING)
+  mapId     String      @map("map_id") @db.VarChar(100)
+  startedAt DateTime?   @map("started_at")
+  endedAt   DateTime?   @map("ended_at")
+
+  players MatchPlayer[]
+  events  MatchEvent[]
+
+  @@index([status, mode])
+  @@map("matches")
+}
+
+model MatchPlayer {
+  matchId        String      @map("match_id") @db.Uuid
+  userId         String      @map("user_id") @db.Uuid
+  territoriesWon Int         @default(0) @map("territories_won")
+  score          Int         @default(0)
+  result         MatchResult
+  eloDelta       Int         @default(0) @map("elo_delta")
+
+  match Match @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([matchId, userId])
+  @@map("match_players")
+}
+
+model MatchEvent {
+  id                String  @id @default(uuid()) @db.Uuid
+  matchId           String  @map("match_id") @db.Uuid
+  roundNumber       Int     @map("round_number")
+  questionId        String  @map("question_id") @db.Uuid
+  playerId          String  @map("player_id") @db.Uuid
+  answerGiven       String  @map("answer_given")
+  isCorrect         Boolean @map("is_correct")
+  responseTimeMs    Int     @map("response_time_ms")
+  territoryAffected String? @map("territory_affected") @db.VarChar(100)
+
+  match    Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Restrict)
+  player   User     @relation(fields: [playerId], references: [id], onDelete: Restrict)
+
+  @@index([matchId, roundNumber])
+  @@map("match_events")
+}
+
+model Cosmetic {
+  id         String       @id @default(uuid()) @db.Uuid
+  type       CosmeticType
+  name       String       @db.VarChar(100)
+  rarity     String       @db.VarChar(30)
+  priceCoins Int          @default(0) @map("price_coins")
+  priceGems  Int          @default(0) @map("price_gems")
+
+  inventory UserInventory[]
+
+  @@map("cosmetics")
+}
+
+model UserInventory {
+  userId     String   @map("user_id") @db.Uuid
+  cosmeticId String   @map("cosmetic_id") @db.Uuid
+  equipped   Boolean  @default(false)
+  acquiredAt DateTime @default(now()) @map("acquired_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cosmetic Cosmetic @relation(fields: [cosmeticId], references: [id], onDelete: Cascade)
+
+  @@id([userId, cosmeticId])
+  @@map("user_inventory")
+}
+
+model QuestionReport {
+  id         String   @id @default(uuid()) @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  userId     String   @map("user_id") @db.Uuid
+  reason     String
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([questionId, createdAt])
+  @@map("question_reports")
+}

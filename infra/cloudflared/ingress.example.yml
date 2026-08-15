@@ -1,0 +1,43 @@
+# Reguli de ingress pentru Cloudflare Tunnel — partea QuizRealm.
+#
+# NU înlocui config-ul tunelului existent: adaugă doar blocurile de mai jos în
+# lista `ingress`, ÎNAINTE de regula finală `- service: http_status:404`
+# (care trebuie să rămână ultima, altfel restul domeniilor de pe VPS nu mai
+# sunt rutate).
+#
+# Varianta A — cloudflared rulează pe gazdă (systemd):
+#   containerele publică pe 127.0.0.1, deci ținta e localhost.
+
+ingress:
+  - hostname: quizrealmapi.dohotstudio.com
+    service: http://localhost:13000
+
+  - hostname: quizrealmws.dohotstudio.com
+    service: http://localhost:13001
+    originRequest:
+      # Duelul 1v1 e Socket.IO: conexiunea trebuie ținută deschisă mult peste
+      # durata unui request normal.
+      connectTimeout: 30s
+      noHappyEyeballs: true
+
+  # - service: http_status:404   <- regula ta existentă rămâne ultima
+
+# Varianta B — cloudflared rulează ca un container pe acelaşi VPS:
+#   adaugă-l în reţeaua stivei şi ţinteşte numele serviciilor.
+#     docker network connect quizrealm-net <container-cloudflared>
+#   apoi:
+#     - hostname: quizrealmapi.dohotstudio.com
+#       service: http://api:3000
+#     - hostname: quizrealmws.dohotstudio.com
+#       service: http://realtime:3001
+#
+# DNS: fiecare hostname are nevoie de un CNAME proxied (nor portocaliu) către
+#   <TUNNEL-ID>.cfargotunnel.com
+# sau, mai simplu, din CLI pe VPS:
+#   cloudflared tunnel route dns <NUME-TUNEL> quizrealmapi.dohotstudio.com
+#   cloudflared tunnel route dns <NUME-TUNEL> quizrealmws.dohotstudio.com
+#
+# WebSocket-urile trec prin tunel implicit; nu e nevoie de setări speciale în
+# dashboard. Dacă foloseşti Zero Trust / Access pe zona dohotstudio.com, cele
+# două hostname-uri trebuie EXCLUSE din politicile de Access — altfel aplicaţia
+# mobilă primeşte pagina de login Cloudflare în loc de API.

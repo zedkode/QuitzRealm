@@ -1,0 +1,140 @@
+# Stiva QuizRealm pentru VPS. Fișier separat de `docker-compose.yml` (care
+# rămâne pentru dezvoltare locală), ca deployment-ul să nu depindă de setările
+# de pe laptop.
+#
+# Reguli de convieţuire cu alte stive de pe acelaşi VPS:
+#   - proiect propriu (`name: quizrealm`) => containere şi volume prefixate
+#     `quizrealm-*` / `quizrealm_*`, fără suprapunere peste ce există deja;
+#   - reţea proprie, nu `default` partajată;
+#   - postgres/redis/minio NU publică niciun port pe gazdă;
+#   - api/realtime publică doar pe 127.0.0.1, deci nu sunt expuse direct în
+#     internet — accesul public vine exclusiv prin Cloudflare Tunnel.
+#
+# Pornire:  docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+# Oprire:   docker compose -f docker-compose.prod.yml --env-file .env.prod down
+#           (fără `-v`, ca să nu se piardă datele)
+
+name: quizrealm
+
+services:
+  postgres:
+    image: postgres:18.6-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    networks: [quizrealm]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  redis:
+    image: redis:8.8.1-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    networks: [quizrealm]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Rulează migrările înainte de a porni API-ul și se oprește. `api` așteaptă
+  # terminarea lui cu succes, deci schema e mereu la zi la pornire.
+  migrate:
+    build:
+      context: ../backend/api
+    command: ["npx", "prisma", "migrate", "deploy"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [quizrealm]
+    restart: "no"
+
+  api:
+    build:
+      context: ../backend/api
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      REDIS_URL: redis://redis:6379/0
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
+      JWT_ACCESS_EXPIRES_IN: ${JWT_ACCESS_EXPIRES_IN:-15m}
+      JWT_REFRESH_EXPIRES_IN: ${JWT_REFRESH_EXPIRES_IN:-30d}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      GOOGLE_CALLBACK_URL: ${GOOGLE_CALLBACK_URL}
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY}
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL:-https://quizrealmapi.dohotstudio.com}
+      # `resend` trimite prin API-ul resend.com; `console` doar scrie în loguri.
+      MAIL_TRANSPORT: ${MAIL_TRANSPORT:-console}
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      MAIL_FROM: ${MAIL_FROM:-QuizRealm <no-reply@mail.dohotstudio.com>}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:${API_HOST_PORT:-13000}:3000"
+    networks: [quizrealm]
+
+  realtime:
+    build:
+      context: ../backend/realtime
+    restart: unless-stopped
+    environment:
+      PORT: 3001
+      REDIS_URL: redis://redis:6379/0
+      API_BASE_URL: http://api:3000
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET}
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY}
+      ROUND_DURATION_MS: ${ROUND_DURATION_MS:-12000}
+      MATCH_STATE_TTL_SECONDS: ${MATCH_STATE_TTL_SECONDS:-3600}
+      MATCH_TOTAL_ROUNDS: ${MATCH_TOTAL_ROUNDS:-5}
+      RECONNECT_GRACE_MS: ${RECONNECT_GRACE_MS:-75000}
+    depends_on:
+      redis:
+        condition: service_healthy
+      api:
+        condition: service_started
+    ports:
+      - "127.0.0.1:${REALTIME_HOST_PORT:-13001}:3001"
+    networks: [quizrealm]
+
+  # Nefolosit încă în runtime (assets-urile jocului sunt livrate în APK).
+  # Pornește doar la cerere:  docker compose ... --profile assets up -d
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    profiles: ["assets"]
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - minio-data:/data
+    networks: [quizrealm]
+
+networks:
+  quizrealm:
+    name: quizrealm-net
+
+volumes:
+  postgres-data:
+  redis-data:
+  minio-data:

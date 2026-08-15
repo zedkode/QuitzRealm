@@ -1,0 +1,136 @@
+{
+  "id": "sport",
+  "name": "Sport",
+  "questions": [
+    {
+      "id": "spo-01",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă de fotbal?",
+      "answer": "11",
+      "explanation": "Fiecare echipă începe meciul cu 11 jucători, dintre care unul este portarul."
+    },
+    {
+      "id": "spo-02",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce sport se folosește expresia „slam dunk”?",
+      "options": ["Handbal", "Baschet", "Volei", "Rugby"],
+      "answer": "Baschet",
+      "explanation": "Slam dunk înseamnă înscrierea prin introducerea directă a mingii în coș."
+    },
+    {
+      "id": "spo-03",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte inele are simbolul olimpic?",
+      "answer": "5",
+      "explanation": "Cele cinci inele reprezintă continentele locuite, unite de mișcarea olimpică."
+    },
+    {
+      "id": "spo-04",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "La câți ani se organizează Jocurile Olimpice de vară?",
+      "answer": "4",
+      "explanation": "Ciclul olimpic este de patru ani; ediția din 2020 a fost amânată în 2021 din cauza pandemiei."
+    },
+    {
+      "id": "spo-05",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce națională a câștigat Campionatul Mondial de fotbal din 2022?",
+      "options": ["Franța", "Brazilia", "Argentina", "Germania"],
+      "answer": "Argentina",
+      "explanation": "Argentina a învins Franța la loviturile de departajare, în finala de la Lusail."
+    },
+    {
+      "id": "spo-06",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce sport concurează Lewis Hamilton?",
+      "options": ["Motociclism", "Formula 1", "Raliuri", "Ciclism"],
+      "answer": "Formula 1",
+      "explanation": "Hamilton este unul dintre piloții cu cele mai multe titluri mondiale din Formula 1."
+    },
+    {
+      "id": "spo-07",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Turul Franței este o competiție de...",
+      "options": ["Atletism", "Ciclism", "Înot", "Canotaj"],
+      "answer": "Ciclism",
+      "explanation": "Cursa se desfășoară anual, din 1903, iar liderul poartă tricoul galben."
+    },
+    {
+      "id": "spo-08",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În tenis, cum se numește scorul de 40-40?",
+      "options": ["Avantaj", "Egalitate", "Break", "Tie-break"],
+      "answer": "Egalitate",
+      "explanation": "La egalitate (deuce), un jucător trebuie să câștige două puncte consecutive pentru a lua ghemul."
+    },
+    {
+      "id": "spo-09",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce sportiv este supranumit „The Greatest”?",
+      "options": ["Michael Jordan", "Muhammad Ali", "Pelé", "Usain Bolt"],
+      "answer": "Muhammad Ali",
+      "explanation": "Boxerul american Muhammad Ali a fost de trei ori campion mondial la categoria grea."
+    },
+    {
+      "id": "spo-10",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte puncte valorează un touchdown în fotbalul american?",
+      "answer": "6",
+      "explanation": "După touchdown, echipa poate adăuga un punct prin transformare sau două prin acțiune."
+    },
+    {
+      "id": "spo-11",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce club a câștigat cele mai multe trofee în Liga Campionilor?",
+      "options": ["AC Milan", "Bayern München", "Real Madrid", "Liverpool"],
+      "answer": "Real Madrid",
+      "explanation": "Real Madrid domină competiția, cu peste zece trofee câștigate."
+    },
+    {
+      "id": "spo-12",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "La ce ediție a Jocurilor Olimpice a obținut Nadia Comăneci primul 10 din istoria gimnasticii?",
+      "options": ["München 1972", "Montreal 1976", "Moscova 1980", "Los Angeles 1984"],
+      "answer": "Montreal 1976",
+      "explanation": "Nadia Comăneci avea 14 ani când a primit prima notă perfectă acordată vreodată la olimpiadă."
+    },
+    {
+      "id": "spo-13",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce sport se dispută Cupa Davis?",
+      "options": ["Tenis", "Golf", "Scrimă", "Polo"],
+      "answer": "Tenis",
+      "explanation": "Cupa Davis este cea mai importantă competiție pe echipe naționale din tenisul masculin."
+    },
+    {
+      "id": "spo-14",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine deține recordul mondial la 100 de metri plat, masculin?",
+      "options": ["Carl Lewis", "Usain Bolt", "Tyson Gay", "Yohan Blake"],
+      "answer": "Usain Bolt",
+      "explanation": "Bolt a alergat 9,58 secunde la Campionatele Mondiale de la Berlin, în 2009."
+    },
+    {
+      "id": "spo-15",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte seturi trebuie câștigate pentru a lua un meci masculin de Grand Slam la tenis?",
+      "answer": "3",
+      "explanation": "La masculin, meciurile de Grand Slam se joacă în format „cel mai bun din cinci seturi”."
+    }
+  ]
+}
