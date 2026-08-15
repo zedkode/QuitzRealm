@@ -5,7 +5,8 @@
 
 [![Build APK & Release](https://github.com/zedkode/quitzrealm/actions/workflows/build-apk-release.yml/badge.svg)](https://github.com/zedkode/quitzrealm/actions)
 [![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](https://github.com/zedkode/quitzrealm/releases)
-[![License](https://img.shields.io/badge/license-UNLICENSED-red.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
+[![Copyright](https://img.shields.io/badge/copyright-DohotStudio-blue.svg)](LICENSE)
 [![Flutter](https://img.shields.io/badge/Flutter-3.13+-02569B?logo=flutter)](https://flutter.dev)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)](https://nodejs.org)
 
@@ -499,15 +500,28 @@ Descarcă din [GitHub Releases](https://github.com/zedkode/quitzrealm/releases)
 
 ## 📄 License
 
-UNLICENSED — Proiect privat Dohot Studio. Contact pentru permisiune de utilizare.
+**Proprietary License** — © 2024-2026 **DohotStudio**. All Rights Reserved.
+
+This software is proprietary and confidential. Unauthorized access, copying, 
+modification, distribution, or use is strictly prohibited.
+
+👉 [Read Full License](LICENSE)
+
+### Legal Notice
+
+- ✋ **No distribution** — Orice distribuire fără permisiune e interzisă
+- 🔒 **Proprietary code** — Codul sursă e confidențial și protejat
+- ⚖️ **All rights reserved** — Toate drepturile asupra proprietății intelectuale aparțin DohotStudio
+- 📞 **Contact pentru licență** — Pentru utilizare comercială/comercială, contactați DohotStudio
 
 ---
 
 ## 📞 Contact
 
-**Studio:** Dohot Studio  
+**Studio:** DohotStudio  
 **Email:** contact@dohotstudio.com  
-**GitHub:** [@zedkode](https://github.com/zedkode)
+**GitHub:** [@zedkode](https://github.com/zedkode)  
+**License Inquiries:** Contactați studio pentru detalii despre licență
 
 ---
 
