@@ -1,5 +1,8 @@
 # GitHub Actions Workflow — Build APK & Release
 
+**Status:** ✅ Updated 2026-08-15 (Latest Actions)  
+**Actions Versions:** checkout@v4, setup-java@v4, upload-artifact@v4, action-gh-release@v2
+
 ## 📋 Cum Funcționează
 
 **Workflow-ul se declanșează automat la fiecare push pe `main` branch în folder `mobile/`** și:
@@ -124,6 +127,24 @@ if: github.ref == 'refs/heads/main' && success()
 } >> $GITHUB_STEP_SUMMARY
 ```
 - Tabel markdown în GitHub Actions summary tab
+
+### Problem 8: Deprecated GitHub Actions (2024-04-16)
+❌ **Inainte:**
+- `actions/upload-artifact@v3` — Deprecated
+- `actions/setup-java@v3` — Outdated  
+- `softprops/action-gh-release@v1` — Old version
+
+✅ **Acum (2026-08-15):**
+```yaml
+actions/checkout@v4
+actions/setup-java@v4
+actions/upload-artifact@v4
+softprops/action-gh-release@v2
+subosito/flutter-action@v2
+```
+- Toate action-urile sunt la versiuni noi și stable
+- Suport complet pentru Linux/Ubuntu runner-ul GitHub
+- No more deprecation warnings
 
 ---
 
