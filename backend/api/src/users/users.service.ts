@@ -54,6 +54,10 @@ export class UsersService {
         emailVerifiedAt: true,
         birthDate: true,
         createdAt: true,
+        // Panoul web decide din `role` dacă arată intrarea în zona de admin.
+        // Fără el, un administrator real primea „acces refuzat", pentru că
+        // ecranul nu avea de unde ști ce rol are contul.
+        role: true,
         eloRating: true,
         xp: true,
         level: true,
