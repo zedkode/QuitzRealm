@@ -3,8 +3,8 @@
 - [x] Audit backendul NestJS existent și contractele REST/Socket.IO reutilizabile pentru web
 - [x] Definește design system global dark-fantasy: paletă aur/violet/negru, tipografie, particule, tranziții și stări responsive
 - [x] Construiește shell global cu navigație publică, cont, profil și acces admin condiționat de rol (AdminGate verifică rolurile QuizRealm server-side)
-- [ ] Construiește landing page cu CTA de autentificare/înregistrare și statistici live/near-real-time
-- [ ] Integrează autentificarea web prin REST API existent: email/parolă, Google OAuth și TOTP/2FA
+- [x] Construiește landing page cu CTA de autentificare/înregistrare și statistici live/near-real-time
+- [x] Integrează autentificarea web prin REST API existent: email/parolă, Google OAuth și TOTP/2FA
 - [ ] Construiește lobby browser cu listă de moduri, matchmaking și stare Socket.IO
 - [ ] Construiește experiența de meci Duo cu întrebări, timer, scor și hartă teritorială realtime
 - [ ] Construiește experiența de meci Classic cu întrebări, timer, scor și hartă teritorială realtime
@@ -29,7 +29,7 @@
 - [ ] Separă logic modurile Duo, Classic și Blitz pe date reale server-side
 - [ ] Conectează profilul și leaderboard-ul la endpointuri QuizRealm reale, inclusiv leaderboard-ul de prieteni (global/profile conectate; friends view și payload mapping rămân de finalizat)
 - [ ] Protejează efectiv ruta /admin și procedurile cu rol admin (codul este implementat; aplicarea migrațiilor reale rămâne blocată de TLS TiDBCloud)
-- [ ] Implementează operațiile admin reale: user list, ban/unban, force password reset, revoke sessions, report resolution, mute, shadow-ban și question approve/reject
+- [x] Implementează operațiile admin reale: user list, ban/unban, force password reset, revoke sessions, report resolution, mute, shadow-ban și question approve/reject
 
 - [ ] Aplică migrația `20260816153000_admin_roles` pe clusterul TiDBCloud după configurarea transportului TLS; `prisma migrate deploy` a fost blocat de conexiunea insecure
 
@@ -87,3 +87,4 @@
 - [x] Repară build-ul cloud web: pnpm 11 respinge lockfile-ul cu minimumReleaseAge după upgrade-ul dependințelor publicate recent
 - [x] Confirmă buildul cloud web după setarea minimumReleaseAge: 0 și documentează rezultatul din logurile de deployment (deployment reușit; `quizrealm-crkncvwg.manus.space`)
 - [x] Adoptă QuizRealmScaffold pe Achievements, Social și Global Chat și validează testele Flutter sociale
+- [x] Aliniază Game.tsx cu snapshotul realtime NestJS: întrebare/opțiuni/categoryId server-side, round result și emiterea `round:answer`
