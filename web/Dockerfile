@@ -1,14 +1,14 @@
 # syntax=docker/dockerfile:1
 
 # Panoul web QuizRealm (Vite + Express, generat cu Manus). `pnpm`, nu `npm`:
-# lockfile-ul e pnpm și `wouter` are un patch în `patches/`.
+# lockfile-ul e pnpm, iar override-urile și `allowBuilds` stau în
+# `pnpm-workspace.yaml`.
 
 FROM node:22-bookworm-slim AS build
 WORKDIR /app
-ENV CI=1
+ENV CI=1 COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
-COPY package.json pnpm-lock.yaml ./
-COPY patches ./patches
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN pnpm install --frozen-lockfile
 COPY . .
 # URL-urile publice ale backendului intră în bundle la build (Vite le inline-uie
