@@ -12,9 +12,9 @@ import TerritoryHexMap from "@/components/TerritoryHexMap";
 import { AvatarRuneRing, CornerFiligree, HeraldicAvatar, RealmCrest, RuneDivider, TerritoryMapSvg } from "@/components/MedievalSvg";
 
 const modes = [
-  { id: "duo", name: "Duo", subtitle: "Rite of two banners", players: "1 · 1", color: "#8d6bda", icon: Swords },
-  { id: "classic", name: "Classic", subtitle: "Grand province campaign", players: "4 · 8", color: "#e0ba58", icon: Shield },
-  { id: "blitz", name: "Blitz", subtitle: "Lightning lore siege", players: "90 sec", color: "#2bc7b4", icon: Flame },
+  { id: "duo", name: "Duo", subtitle: "Ritul celor două stindarde", players: "1 · 1", color: "#8d6bda", icon: Swords },
+  { id: "classic", name: "Classic", subtitle: "Marea campanie a provinciilor", players: "4 · 8", color: "#e0ba58", icon: Shield },
+  { id: "blitz", name: "Blitz", subtitle: "Asediu fulger de lore", players: "90 sec", color: "#2bc7b4", icon: Flame },
 ] as const;
 
 type Mode = (typeof modes)[number]["id"];
@@ -213,7 +213,7 @@ export default function Game() {
   return <div className="realm-surface min-h-[calc(100vh-72px)]">
     <div className="mx-auto max-w-[1280px] px-5 py-12 lg:px-10">
       <div className="flex flex-wrap items-end justify-between gap-4">
-        <div><div className="eyebrow">War table / matchmaking</div><h1 className="mt-3 font-display text-4xl text-[#f7e7b0]">Raise your banner.</h1><p className="mt-3 text-sm text-[#aaa0ad]">Choose a rite. The realm will pair your sigil with worthy opposition.</p></div>
+        <div><div className="eyebrow">Masa de război / matchmaking</div><h1 className="mt-3 font-display text-4xl text-[#f7e7b0]">Ridică-ți stindardul.</h1><p className="mt-3 text-sm text-[#aaa0ad]">Alege un rit. Tărâmul îți va găsi un adversar pe măsură.</p></div>
         <ConnectionBadge state={connection} />
       </div>
       <RuneDivider className="mt-7 h-7 w-full text-[#e0ba58]" />
@@ -225,15 +225,15 @@ export default function Game() {
               <div className="relative flex h-full flex-col justify-between">
                 <div className="flex items-start justify-between"><div className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-black/20" style={{ color }}><Icon size={21} /></div><span className="rune-chip rounded-full px-2.5 py-1 text-[10px] font-bold text-[#ddd2e4]">{players}</span></div>
                 <div><div className="font-display text-xl text-[#f7e7b0]">{name}</div><div className="mt-2 text-xs text-[#aaa0ad]">{subtitle}</div></div>
-                {mode === id && <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#f5dda0]"><Check size={13} /> Sigil selected</div>}
+                {mode === id && <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#f5dda0]"><Check size={13} /> Sigiliu ales</div>}
               </div>
             </button>)}
           </div>
           <div className="engraved-frame rounded-2xl p-6">
-            <div className="flex items-start justify-between"><div><div className="eyebrow">Summoning rite</div><h2 className="mt-2 text-xl font-bold text-[#f7e7b0]">{queued ? "Reading the constellations…" : "Your war table awaits."}</h2></div><div className={`grid h-12 w-12 place-items-center rounded-xl ${queued ? "animate-pulse bg-[#8d6bda]/20 text-[#d3c0ff]" : "bg-[#e0ba58]/10 text-[#e3c36a]"}`}><Crosshair size={22} /></div></div>
+            <div className="flex items-start justify-between"><div><div className="eyebrow">Ritul de invocare</div><h2 className="mt-2 text-xl font-bold text-[#f7e7b0]">{queued ? "Se citesc constelațiile…" : "Masa ta de război te așteaptă."}</h2></div><div className={`grid h-12 w-12 place-items-center rounded-xl ${queued ? "animate-pulse bg-[#8d6bda]/20 text-[#d3c0ff]" : "bg-[#e0ba58]/10 text-[#e3c36a]"}`}><Crosshair size={22} /></div></div>
             {notice && <div className="mt-4 border border-[#8d6bda]/35 bg-[#8d6bda]/10 px-4 py-3 text-xs text-[#dacbff]">{notice}</div>}
-            <div className="mt-6 grid gap-3 sm:grid-cols-2"><Info label="Rite" value={current.name} /><Info label="Prophecy" value={current.id === "blitz" ? "~12 sec" : "~24 sec"} /></div>
-            <button onClick={toggleQueue} className="sigil-button mt-6 flex w-full items-center justify-center gap-2 rounded-lg px-4 py-3.5 text-sm font-extrabold">{queued ? <><Clock3 size={17} /> Seeking rival…</> : <><Swords size={17} /> Begin matchmaking</>}</button>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2"><Info label="Rit" value={current.name} /><Info label="Profeție" value={current.id === "blitz" ? "~12 sec" : "~24 sec"} /></div>
+            <button onClick={toggleQueue} className="sigil-button mt-6 flex w-full items-center justify-center gap-2 rounded-lg px-4 py-3.5 text-sm font-extrabold">{queued ? <><Clock3 size={17} /> Se caută adversar…</> : <><Swords size={17} /> Începe matchmaking</>}</button>
           </div>
         </div>
         <aside className="space-y-5"><RealmPulse /></aside>
@@ -272,7 +272,7 @@ function RealmPulse() {
 }
 
 function ConnectionBadge({ state }: { state: "connecting" | "connected" | "offline" }) {
-  const text = state === "connected" ? "Realm signal live" : state === "connecting" ? "Tuning sigils…" : "Offline · sign in";
+  const text = state === "connected" ? "Semnal activ" : state === "connecting" ? "Se acordează sigiliile…" : "Offline · autentifică-te";
   return <div className={`flex items-center gap-2 rounded-full border px-3 py-2 text-xs ${state === "connected" ? "border-[#2bc7b4]/30 bg-[#2bc7b4]/8 text-[#a7e7de]" : "border-[#8d6bda]/35 bg-[#8d6bda]/10 text-[#dacbff]"}`}><Radio size={14} />{text}</div>;
 }
 
