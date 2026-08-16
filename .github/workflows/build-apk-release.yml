@@ -1,5 +1,13 @@
 name: Build APK & Release
 
+# Base URL-urile sunt `String.fromEnvironment`, deci intră în binar la
+# compilare și nu se citesc la rulare. Fără ele, APK-ul publicat rămâne pe
+# valorile implicite de emulator (`10.0.2.2`) și nu se poate conecta la nimic
+# de pe un telefon real.
+env:
+  API_BASE_URL: https://quizrealmapi.dohotstudio.com
+  REALTIME_BASE_URL: https://quizrealmws.dohotstudio.com
+
 on:
   push:
     branches:
@@ -89,7 +97,9 @@ jobs:
           echo "🏗️ Building debug APK..."
           flutter build apk --debug \
             --build-name=${{ steps.version.outputs.version }} \
-            --build-number=${{ steps.version.outputs.build_number }}
+            --build-number=${{ steps.version.outputs.build_number }} \
+            --dart-define=API_BASE_URL=${{ env.API_BASE_URL }} \
+            --dart-define=REALTIME_BASE_URL=${{ env.REALTIME_BASE_URL }}
           
           if [ -f "build/app/outputs/flutter-apk/app-debug.apk" ]; then
             echo "✅ Debug APK ready"
@@ -107,7 +117,9 @@ jobs:
           echo "🏗️ Building release APK..."
           flutter build apk --release \
             --build-name=${{ steps.version.outputs.version }} \
-            --build-number=${{ steps.version.outputs.build_number }}
+            --build-number=${{ steps.version.outputs.build_number }} \
+            --dart-define=API_BASE_URL=${{ env.API_BASE_URL }} \
+            --dart-define=REALTIME_BASE_URL=${{ env.REALTIME_BASE_URL }}
           
           if [ -f "build/app/outputs/flutter-apk/app-release.apk" ]; then
             echo "✅ Release APK ready"
