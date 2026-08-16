@@ -38,7 +38,10 @@ dependencies:
   go_router: ^17.5.0
   http: ^1.6.0
   web_socket_channel: ^3.0.3
-  flutter_secure_storage: ^11.0.0
+  # Nu urca la ^11 fără să urci și `compileSdk`: v11 cere API 37, iar AGP 9.1.0
+  # merge până la 36, deci buildul Android cade la verificarea metadatelor AAR.
+  # Codul folosește doar read/write/delete, identice în ambele versiuni.
+  flutter_secure_storage: 10.0.0
   cloudflare_turnstile: ^3.8.1
   flutter_web_auth_2: ^5.0.0
   drift: ^2.34.3
