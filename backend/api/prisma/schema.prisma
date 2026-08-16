@@ -45,10 +45,14 @@ enum MatchResult {
 }
 
 enum CosmeticType {
-  AVATAR   @map("avatar")
-  FRAME    @map("frame")
-  BANNER   @map("banner")
-  MAP_SKIN @map("map_skin")
+  AVATAR     @map("avatar")
+  FRAME      @map("frame")
+  BANNER     @map("banner")
+  MAP_SKIN   @map("map_skin")
+  /// Culoarea/degradeul numelui afisat (owner-plan 4.5).
+  NAME_STYLE @map("name_style")
+  /// Titlul de langa nume (owner-plan 4.5), ex. "Marele Erudit".
+  TITLE      @map("title")
 }
 
 model User {
