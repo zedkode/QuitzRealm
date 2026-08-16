@@ -179,6 +179,33 @@ class _AchievementList extends ConsumerWidget {
           ],
         ),
       ),
+      const SizedBox(height: 12),
+      GameFrame(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text('SHOWCASE DE PROFIL', style: GameText.eyebrow),
+                ),
+                TextButton(
+                  onPressed: () => _chooseShowcase(context, ref),
+                  child: const Text('EDITEAZĂ'),
+                ),
+              ],
+            ),
+            Text(
+              summary.showcase.isEmpty
+                  ? 'Alege până la șase realizări pentru profilul tău public.'
+                  : summary.showcase.map((item) => item.title).join(' · '),
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
+              style: GameText.bodyDim.copyWith(fontSize: 11),
+            ),
+          ],
+        ),
+      ),
       const SizedBox(height: 14),
       for (final item in items)
         Padding(
@@ -187,6 +214,71 @@ class _AchievementList extends ConsumerWidget {
         ),
     ],
   );
+
+  Future<void> _chooseShowcase(BuildContext context, WidgetRef ref) async {
+    final selected = summary.showcase
+        .map((entry) => entry.achievementId)
+        .toSet();
+    final result = await showModalBottomSheet<List<String>>(
+      context: context,
+      backgroundColor: GamePalette.stone800,
+      isScrollControlled: true,
+      builder: (context) => StatefulBuilder(
+        builder: (context, setSheetState) => SafeArea(
+          child: SizedBox(
+            height: MediaQuery.sizeOf(context).height * .72,
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text(
+                    'Alege maximum șase realizări',
+                    style: GameText.heading,
+                  ),
+                ),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      for (final item in items.where((item) => item.isUnlocked))
+                        CheckboxListTile(
+                          value: selected.contains(item.id),
+                          activeColor: GamePalette.gold,
+                          title: Text(item.title, style: GameText.body),
+                          subtitle: Text(
+                            '${item.points} PP',
+                            style: GameText.bodyDim,
+                          ),
+                          onChanged: (checked) {
+                            if (checked == true && selected.length >= 6) return;
+                            setSheetState(() {
+                              if (checked == true) {
+                                selected.add(item.id);
+                              } else {
+                                selected.remove(item.id);
+                              }
+                            });
+                          },
+                        ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(14),
+                  child: GameButton(
+                    label: 'SALVEAZĂ SHOWCASE',
+                    compact: true,
+                    onPressed: () => Navigator.pop(context, selected.toList()),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    if (result == null || !context.mounted) return;
+    await ref.read(achievementsControllerProvider.notifier).setShowcase(result);
+  }
 
   Future<void> _chooseBadge(
     BuildContext context,
