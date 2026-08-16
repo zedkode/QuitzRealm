@@ -5,11 +5,24 @@ import { AuthService } from '../auth/auth.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AdminGuard } from './admin.guard';
+import { OverviewService } from './overview.service';
 
 @Controller('admin')
 @UseGuards(JwtAuthGuard, AdminGuard)
 export class AdminController {
-  constructor(private readonly prisma: PrismaService, private readonly auth: AuthService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly auth: AuthService,
+    private readonly overview: OverviewService,
+  ) {}
+
+  /// Tabloul de bord complet. Fiecare cifră vine dintr-o interogare reală;
+  /// panourile fără sursă de date se întorc marcate `available: false`, nu cu
+  /// zerouri care ar părea măsurători.
+  @Get('overview')
+  getOverview(@Query('days') days = '7') {
+    return this.overview.build(Number(days) || 7);
+  }
 
   @Get('dashboard')
   async dashboard() {

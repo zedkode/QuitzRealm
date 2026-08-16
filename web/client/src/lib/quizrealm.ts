@@ -6,7 +6,10 @@ const ACCESS_KEY = "quizrealm.web.access";
 const REFRESH_KEY = "quizrealm.web.refresh";
 
 export type AuthTokens = { accessToken: string; refreshToken: string };
-export type UserIdentity = { id: string; username: string; displayName?: string | null; email: string; role?: "user" | "admin" };
+/// Rolurile vin din enum-ul Prisma `AdminRole`, deci cu majuscule. Tipul de
+/// dinainte declara minuscule și nu se potrivea cu nimic din ce trimite API-ul.
+export type AccountRole = "USER" | "ADMIN" | "MODERATOR" | "CONTENT_EDITOR" | "SUPPORT";
+export type UserIdentity = { id: string; username: string; displayName?: string | null; email: string; role?: AccountRole };
 export type LoginResult = AuthTokens | { twoFactorRequired: true; challengeToken: string };
 
 function token() { return typeof window === "undefined" ? null : window.localStorage.getItem(ACCESS_KEY); }
@@ -44,6 +47,7 @@ export const quizRealmApi = {
   publicProfile: (username: string) => request<unknown>(`/players/${encodeURIComponent(username)}`),
   profile: () => request<unknown>("/users/me/profile"),
   adminDashboard: () => request<unknown>("/admin/dashboard"),
+  adminOverview: (days = 7) => request<unknown>(`/admin/overview?days=${days}`),
   adminUsers: () => request<unknown>("/admin/users"),
   adminBanUser: (id: string) => request<unknown>(`/admin/users/${id}/ban`, { method: "PATCH" }),
   adminUnbanUser: (id: string) => request<unknown>(`/admin/users/${id}/unban`, { method: "PATCH" }),

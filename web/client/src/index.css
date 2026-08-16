@@ -91,3 +91,78 @@ button:active, a:active { transform: scale(.97); }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
 @media (max-width: 700px) { .territory-map { min-height: 300px; } }
+
+/* --- Panoul de administrare -------------------------------------------- */
+/* Temă proprie, mai rece și mai densă decât restul site-ului: un tablou de
+   bord operațional se citește altfel decât o pagină de prezentare. */
+.admin-root {
+  --admin-bg: #0a0912;
+  --admin-panel: #12111c;
+  --admin-panel-2: #15131f;
+  --admin-line: rgba(255, 255, 255, .065);
+  --admin-text: #e4dcf5;
+  --admin-muted: #8b83a3;
+  --admin-dim: #6f6885;
+  --admin-accent: #7c5cff;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: 'Manrope', sans-serif;
+}
+.admin-sidebar { background: #08070f; border-right: 1px solid var(--admin-line); }
+.admin-logo-mark { background: linear-gradient(145deg, #2a1c4d, #17122a); border: 1px solid rgba(140, 100, 255, .3); color: #c4b0ff; }
+.admin-nav-item {
+  display: flex; align-items: center; gap: .55rem;
+  border-radius: .5rem; padding: .42rem .6rem;
+  font-size: 11.5px; font-weight: 500; color: var(--admin-muted);
+}
+.admin-nav-item:hover { background: rgba(255, 255, 255, .04); color: var(--admin-text); }
+.admin-nav-item.is-active { background: rgba(124, 92, 255, .16); color: #d6c8ff; box-shadow: inset 0 0 0 1px rgba(124, 92, 255, .28); }
+.admin-nav-badge { border-radius: 999px; background: rgba(236, 72, 153, .18); color: #f9a8d4; font-size: 9px; font-weight: 700; padding: .05rem .35rem; }
+.admin-side-card { background: var(--admin-panel); border: 1px solid var(--admin-line); }
+.admin-ghost-button { border: 1px solid var(--admin-line); color: var(--admin-muted); }
+.admin-ghost-button:hover { border-color: rgba(124, 92, 255, .45); color: #d6c8ff; }
+.admin-topbar { background: rgba(10, 9, 18, .92); border-bottom: 1px solid var(--admin-line); backdrop-filter: blur(12px); }
+.admin-search { background: var(--admin-panel); border: 1px solid var(--admin-line); }
+.admin-search:focus-within { border-color: rgba(124, 92, 255, .4); }
+.admin-kbd { background: rgba(255, 255, 255, .05); border: 1px solid var(--admin-line); color: var(--admin-dim); }
+.admin-chip { background: var(--admin-panel); border: 1px solid var(--admin-line); }
+.admin-accent-button { background: linear-gradient(135deg, #7c5cff, #a855f7); color: #fff; box-shadow: 0 4px 14px rgba(124, 92, 255, .3); }
+.admin-accent-button:hover { filter: brightness(1.08); }
+.admin-icon-button { background: var(--admin-panel); border: 1px solid var(--admin-line); color: var(--admin-muted); }
+.admin-icon-button:hover { color: var(--admin-text); }
+.admin-dot-badge {
+  position: absolute; top: -4px; right: -4px; min-width: 14px; height: 14px;
+  display: grid; place-items: center; border-radius: 999px;
+  background: #ec4899; color: #fff; font-size: 8.5px; font-weight: 800;
+  padding: 0 3px; border: 2px solid var(--admin-bg);
+}
+.admin-avatar { background: linear-gradient(145deg, #3b2a6b, #221a3a); border: 1px solid rgba(140, 100, 255, .35); color: #cbb8ff; }
+.admin-panel { background: var(--admin-panel); border: 1px solid var(--admin-line); border-radius: .75rem; }
+.admin-panel-title { font-size: 9.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--admin-dim); }
+.admin-kpi { background: var(--admin-panel); border: 1px solid var(--admin-line); border-radius: .7rem; }
+.admin-kpi:hover { border-color: rgba(124, 92, 255, .28); }
+.admin-select { background: var(--admin-panel-2); border: 1px solid var(--admin-line); color: var(--admin-muted); font-size: 10.5px; border-radius: .4rem; padding: .2rem .5rem; }
+.admin-row-divider { border-top: 1px solid var(--admin-line); }
+/* Marchează panourile care încă nu au sursă de date reală, ca cifrele
+   demonstrative să nu fie confundate cu măsurători. */
+.admin-preview-tag { border: 1px solid rgba(224, 186, 88, .3); background: rgba(224, 186, 88, .1); color: #e8c877; font-size: 8.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-radius: 999px; padding: .1rem .4rem; }
+.admin-nav-scroll { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.12) transparent; }
+.admin-nav-scroll::-webkit-scrollbar { width: 6px; }
+.admin-nav-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 999px; }
+.admin-nav-group {
+  display: flex; align-items: center; gap: .5rem; width: 100%;
+  border-radius: .45rem; padding: .34rem .55rem;
+  font-size: 9.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: #6f6885;
+}
+.admin-nav-group:hover { background: rgba(255,255,255,.035); color: #a99fc4; }
+.admin-nav-group.has-active { color: #b9a3ff; }
+/* Linia verticală leagă vizual copiii de grupul lor; fără ea, o listă de
+   optsprezece secțiuni deschise devine un perete uniform de text. */
+.admin-nav-children { margin-left: .95rem; padding-left: .55rem; border-left: 1px solid rgba(255,255,255,.07); }
+.admin-nav-child {
+  display: block; border-radius: .35rem; padding: .28rem .5rem;
+  font-size: 11px; color: #8b83a3;
+}
+.admin-nav-child:hover { background: rgba(255,255,255,.04); color: #ded6f0; }
+.admin-nav-child.is-active { background: rgba(124,92,255,.16); color: #d6c8ff; }
