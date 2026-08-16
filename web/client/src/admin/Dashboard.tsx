@@ -38,7 +38,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
     <div className="min-w-0">
       <header className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-display text-[26px] leading-none text-[#efe7ff]">Admin Dashboard</h1>
+          <h1 className="text-[21px] font-bold leading-none tracking-tight text-[#efe7ff]">Admin Dashboard</h1>
           <p className="mt-2 flex flex-wrap items-center gap-3 text-[11.5px] text-[var(--admin-muted)]">
             Privire în timp real asupra operațiunilor QuizRealm.
             <span className="flex items-center gap-1.5 text-[var(--admin-dim)]">
@@ -60,19 +60,19 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
 
       <KpiRow data={data} />
 
-      <div className="mt-3 grid gap-3 xl:grid-cols-[minmax(0,1.62fr)_minmax(0,1fr)_minmax(0,1fr)]">
+      <div className="mt-2.5 grid gap-2.5 lg:grid-cols-[minmax(0,1.62fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <ActivityPanel data={data} />
         <RecentActivityPanel data={data} />
         <QuickModerationPanel data={data} />
       </div>
 
-      <div className="mt-3 grid gap-3 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.28fr)_minmax(0,1fr)]">
+      <div className="mt-2.5 grid gap-2.5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.28fr)_minmax(0,1fr)]">
         <CampaignPanel data={data} />
         <WarMapPanel data={data} />
         <ServicesPanel data={data} />
       </div>
 
-      <div className="mt-3 grid gap-3 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,.8fr)]">
+      <div className="mt-2.5 grid gap-2.5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,.8fr)]">
         <TopPlayersPanel data={data} />
         <TransactionsPanel data={data} />
         <AlertsPanel data={data} />
@@ -86,7 +86,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
 function KpiRow({ data }: { data: AdminOverview | null }) {
   const k = data?.kpis;
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:grid-cols-8">
+    <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4 lg:grid-cols-8">
       <Kpi
         icon={<Users size={14} />} tone="violet" label="Active Players"
         value={k ? NUMBER.format(k.activePlayers.value) : "—"}
@@ -147,16 +147,16 @@ function Kpi({ icon, tone, label, value, delta, note, invertDelta, pending }: {
 }) {
   const good = delta ? (invertDelta ? !delta.up : delta.up) : false;
   return (
-    <div className="admin-kpi p-3">
-      <div className="flex items-start justify-between gap-2">
-        <span className={`grid h-7 w-7 shrink-0 place-items-center rounded-lg ${TONES[tone] ?? TONES.violet}`}>
+    <div className="admin-kpi px-2.5 py-2.5">
+      <div className="flex items-center gap-1.5">
+        <span className={`grid h-[22px] w-[22px] shrink-0 place-items-center rounded-md ${TONES[tone] ?? TONES.violet}`}>
           {icon}
         </span>
-        {pending && <span className="admin-preview-tag">soon</span>}
+        <span className="min-w-0 flex-1 truncate text-[9px] leading-tight text-[var(--admin-dim)]">{label}</span>
+        {pending && <span className="admin-preview-tag shrink-0">soon</span>}
       </div>
-      <div className="mt-2.5 text-[10px] text-[var(--admin-dim)]">{label}</div>
-      <div className="mt-0.5 truncate text-[19px] font-bold leading-tight text-[#efe7ff]">{value}</div>
-      <div className="mt-1 flex items-center gap-1 text-[9.5px]">
+      <div className={`mt-1.5 truncate font-bold leading-tight text-[#efe7ff] ${value.length > 11 ? "text-[13px]" : "text-[15.5px]"}`}>{value}</div>
+      <div className="mt-0.5 flex items-center gap-1 text-[9px]">
         {delta && (
           <span className={`flex items-center gap-0.5 font-semibold ${good ? "text-[#34d399]" : "text-[#f87171]"}`}>
             {delta.up ? <TrendingUp size={9} /> : <TrendingDown size={9} />}
@@ -175,7 +175,7 @@ function Panel({ title, action, children, className }: {
   title: string; action?: ReactNode; children: ReactNode; className?: string;
 }) {
   return (
-    <section className={`admin-panel flex flex-col p-3.5 ${className ?? ""}`}>
+    <section className={`admin-panel flex flex-col p-3 ${className ?? ""}`}>
       <div className="mb-3 flex items-center justify-between gap-2">
         <h2 className="admin-panel-title">{title}</h2>
         {action}
@@ -204,7 +204,7 @@ function ActivityPanel({ data }: { data: AdminOverview | null }) {
         </div>
       }
     >
-      <div className="mb-3 flex flex-wrap gap-x-5 gap-y-1.5">
+      <div className="mb-2.5 flex flex-wrap gap-x-3 gap-y-1">
         <Legend colour="#8b5cf6" label="Active Players" value={totals.activePlayers} />
         <Legend colour="#2bc7b4" label="New Players" value={totals.newPlayers} />
         <Legend colour="#e0ba58" label="Matches Played" value={totals.matchesPlayed} />
@@ -219,8 +219,8 @@ function Legend({ colour, label, value }: { colour: string; label: string; value
   return (
     <span className="flex items-center gap-1.5">
       <span className="h-1.5 w-1.5 rounded-full" style={{ background: colour }} />
-      <span className="text-[10px] text-[var(--admin-dim)]">{label}</span>
-      <b className="text-[10.5px] text-[#d9d2ea]">{NUMBER.format(value)}</b>
+      <span className="text-[9px] text-[var(--admin-dim)]">{label}</span>
+      <b className="text-[9.5px] text-[#d9d2ea]">{NUMBER.format(value)}</b>
     </span>
   );
 }
@@ -483,7 +483,7 @@ function TransactionsPanel({ data }: { data: AdminOverview | null }) {
           <div key={row.id} className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_70px_58px] items-center gap-2 py-1.5 text-[11px]">
             <span className="truncate text-[#ded6f0]">{row.player}</span>
             <span className="truncate text-[var(--admin-muted)]">{row.item}</span>
-            <span className="text-right font-semibold text-[#e8c877]">{money(row.priceCents, row.currency)}</span>
+            <span className="text-right font-semibold text-[#e8c877]">{money(row.priceCents, row.currency, 2)}</span>
             <span className="text-right text-[9.5px] text-[var(--admin-dim)]">{row.at ? relative(row.at) : "—"}</span>
           </div>
         ))}
@@ -534,8 +534,8 @@ function deltaOf(current: number, previous: number): { pct: number; up: boolean 
   return { pct: Math.abs(Math.round(change * 10) / 10), up: change >= 0 };
 }
 
-function money(cents: number, currency: string): string {
-  return new Intl.NumberFormat("ro-RO", { style: "currency", currency, maximumFractionDigits: 0 })
+function money(cents: number, currency: string, decimals = 0): string {
+  return new Intl.NumberFormat("ro-RO", { style: "currency", currency, maximumFractionDigits: decimals, minimumFractionDigits: decimals })
     .format(cents / 100);
 }
 

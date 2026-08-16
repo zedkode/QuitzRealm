@@ -9,7 +9,7 @@ const SERIES = [
 ] as const;
 
 const WIDTH = 560;
-const HEIGHT = 168;
+const HEIGHT = 205;
 const PADDING = { top: 8, right: 6, bottom: 20, left: 30 };
 
 /// Graficul de activitate, desenat direct în SVG.
@@ -59,7 +59,7 @@ export default function ActivityChart({ series }: { series: ActivityPoint[] }) {
 
   if (series.length === 0) {
     return (
-      <div className="grid h-[168px] place-items-center text-[10.5px] text-[var(--admin-dim)]">
+      <div className="grid h-[205px] place-items-center text-[10.5px] text-[var(--admin-dim)]">
         Fără date de activitate în perioada selectată.
       </div>
     );

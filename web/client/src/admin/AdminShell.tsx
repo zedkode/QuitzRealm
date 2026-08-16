@@ -59,7 +59,7 @@ function Sidebar({ moderationCount }: { moderationCount?: number }) {
   const toggle = (key: string) => setOpen((previous) => ({ ...previous, [key]: !previous[key] }));
 
   return (
-    <aside className="admin-sidebar hidden w-[216px] shrink-0 flex-col lg:flex">
+    <aside className="admin-sidebar hidden w-[190px] shrink-0 flex-col lg:flex">
       <Link href="/admin" className="flex shrink-0 items-center gap-2.5 px-4 py-[18px]">
         <span className="admin-logo-mark grid h-8 w-8 shrink-0 place-items-center rounded-lg">
           <ScrollText size={16} />
