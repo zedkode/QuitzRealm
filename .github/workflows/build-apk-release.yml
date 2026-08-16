@@ -62,7 +62,8 @@ jobs:
       - name: 🐦 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'
+          # Flutter 3.47.0 include Dart 3.13.0, cerut de pubspec.yaml.
+          flutter-version: '3.47.0'
           channel: 'stable'
           cache: true
 
@@ -72,13 +73,11 @@ jobs:
           flutter pub get
 
       - name: 🔍 Run analyzer
-        continue-on-error: true
         run: |
           cd mobile
           flutter analyze
 
       - name: 🧪 Run tests
-        continue-on-error: true
         run: |
           cd mobile
           flutter test --coverage 2>&1

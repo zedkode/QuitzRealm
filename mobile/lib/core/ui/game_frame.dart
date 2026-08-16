@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../design/quizrealm_tokens.dart';
 import '../theme/app_theme.dart';
 
-/// Panou de piatră cu ramă aurie și nituri în colțuri — containerul standard
-/// al interfeței de joc.
+/// Cadru de compatibilitate pentru ecranele vechi. Păstrează API-ul `GameFrame`,
+/// însă folosește acum rama aurie dublă și suprafețele bleumarin ale QuizRealm.
 class GameFrame extends StatelessWidget {
   const GameFrame({
     required this.child,
@@ -26,63 +27,69 @@ class GameFrame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final border = BorderRadius.circular(radius);
+    final outerRadius = BorderRadius.circular(radius);
+    final innerRadius = BorderRadius.circular(
+      (radius - 3).clamp(0, radius).toDouble(),
+    );
     return Container(
       margin: margin,
       decoration: BoxDecoration(
-        borderRadius: border,
+        borderRadius: outerRadius,
         boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.55),
-            blurRadius: 18,
-            offset: const Offset(0, 8),
+          const BoxShadow(
+            color: Color(0xA6000000),
+            blurRadius: 16,
+            offset: Offset(0, 6),
           ),
           if (glow)
             BoxShadow(
-              color: accent.withValues(alpha: 0.28),
-              blurRadius: 26,
+              color: accent.withValues(alpha: 0.30),
+              blurRadius: 20,
               spreadRadius: 1,
             ),
         ],
       ),
       child: Container(
+        padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
-          borderRadius: border,
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              accent.withValues(alpha: 0.85),
-              accent.withValues(alpha: 0.32),
-              accent.withValues(alpha: 0.7),
-            ],
-          ),
+          borderRadius: outerRadius,
+          gradient: QuizRealmGradients.goldFrame,
         ),
-        padding: const EdgeInsets.all(1.6),
         child: Container(
+          padding: const EdgeInsets.all(1),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(radius - 1.6),
-            gradient: const LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [GamePalette.stone800, GamePalette.stone900],
-            ),
+            borderRadius: innerRadius,
+            color: QuizRealmColors.goldShadow,
           ),
-          child: Stack(
-            children: [
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: CustomPaint(
-                    painter: _FrameDetailPainter(
-                      accent: accent,
-                      radius: radius - 1.6,
-                      rivets: rivets,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: innerRadius,
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  accent.withValues(alpha: 0.16),
+                  QuizRealmColors.surfaceRaised,
+                  QuizRealmColors.surfacePanel,
+                ],
+              ),
+            ),
+            child: Stack(
+              children: [
+                if (rivets)
+                  Positioned.fill(
+                    child: IgnorePointer(
+                      child: CustomPaint(
+                        painter: _FrameDetailPainter(
+                          accent: accent,
+                          radius: (radius - 3).clamp(0, radius).toDouble(),
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-              Padding(padding: padding, child: child),
-            ],
+                Padding(padding: padding, child: child),
+              ],
+            ),
           ),
         ),
       ),
@@ -91,57 +98,55 @@ class GameFrame extends StatelessWidget {
 }
 
 class _FrameDetailPainter extends CustomPainter {
-  const _FrameDetailPainter({
-    required this.accent,
-    required this.radius,
-    required this.rivets,
-  });
+  const _FrameDetailPainter({required this.accent, required this.radius});
 
   final Color accent;
   final double radius;
-  final bool rivets;
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Linie interioară subțire, ca o gravură.
     final inset = RRect.fromRectAndRadius(
       Rect.fromLTWH(5, 5, size.width - 10, size.height - 10),
-      Radius.circular((radius - 4).clamp(0, radius)),
+      Radius.circular((radius - 4).clamp(0, radius).toDouble()),
     );
     canvas.drawRRect(
       inset,
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = 1
-        ..color = accent.withValues(alpha: 0.24),
+        ..color = accent.withValues(alpha: 0.34),
     );
 
-    if (!rivets) return;
-    final rivet = Paint()..color = accent.withValues(alpha: 0.75);
-    final rivetCore = Paint()
-      ..color = GamePalette.stone900.withValues(alpha: 0.8);
-    const offset = 11.0;
-    for (final center in [
-      Offset(offset, offset),
-      Offset(size.width - offset, offset),
-      Offset(offset, size.height - offset),
-      Offset(size.width - offset, size.height - offset),
+    final ornament = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.8
+      ..strokeCap = StrokeCap.round
+      ..color = QuizRealmColors.goldBright.withValues(alpha: 0.8);
+    const insetAmount = 7.0;
+    const arm = 10.0;
+    for (final corner in <(double, double, double, double)>[
+      (insetAmount, insetAmount, 1, 1),
+      (size.width - insetAmount, insetAmount, -1, 1),
+      (insetAmount, size.height - insetAmount, 1, -1),
+      (size.width - insetAmount, size.height - insetAmount, -1, -1),
     ]) {
-      canvas
-        ..drawCircle(center, 3, rivet)
-        ..drawCircle(center, 1.3, rivetCore);
+      final (x, y, dx, dy) = corner;
+      final path = Path()
+        ..moveTo(x + dx * arm, y)
+        ..lineTo(x, y)
+        ..lineTo(x, y + dy * arm);
+      canvas.drawPath(path, ornament);
     }
   }
 
   @override
   bool shouldRepaint(covariant _FrameDetailPainter oldDelegate) {
-    return oldDelegate.accent != accent ||
-        oldDelegate.radius != radius ||
-        oldDelegate.rivets != rivets;
+    return oldDelegate.accent != accent || oldDelegate.radius != radius;
   }
 }
 
-/// Cardul de pergament pe care se citește întrebarea.
+/// Păstrează denumirea veche, dar prezintă întrebarea ca panou de joc
+/// bleumarin, nu ca o foaie de pergament dintr-un alt stil vizual.
 class ParchmentPanel extends StatelessWidget {
   const ParchmentPanel({
     required this.child,
@@ -154,87 +159,21 @@ class ParchmentPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.5),
-            blurRadius: 16,
-            offset: const Offset(0, 7),
-          ),
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(14),
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                GamePalette.parchment,
-                Color(0xFFEFDCB6),
-                GamePalette.parchmentShade,
-              ],
-            ),
-            border: Border.all(color: GamePalette.goldDeep, width: 1.5),
-            borderRadius: BorderRadius.circular(14),
-          ),
-          child: Stack(
-            children: [
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: CustomPaint(painter: const _ParchmentGrainPainter()),
-                ),
-              ),
-              Padding(padding: padding, child: child),
-            ],
-          ),
-        ),
+    return GameFrame(
+      padding: padding,
+      accent: QuizRealmColors.goldBright,
+      glow: true,
+      rivets: true,
+      child: DefaultTextStyle.merge(
+        style: const TextStyle(color: QuizRealmColors.textPrimary),
+        child: child,
       ),
     );
   }
 }
 
-class _ParchmentGrainPainter extends CustomPainter {
-  const _ParchmentGrainPainter();
-
-  // Pete fixe de „uzură” — deterministe, ca să nu clipească la fiecare cadru.
-  static const _stains = <Offset>[
-    Offset(0.12, 0.22),
-    Offset(0.78, 0.14),
-    Offset(0.55, 0.63),
-    Offset(0.24, 0.82),
-    Offset(0.9, 0.72),
-  ];
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = const Color(0x14705520);
-    for (var index = 0; index < _stains.length; index++) {
-      canvas.drawCircle(
-        Offset(_stains[index].dx * size.width, _stains[index].dy * size.height),
-        (index.isEven ? 26 : 17).toDouble(),
-        paint,
-      );
-    }
-    canvas.drawRect(
-      Offset.zero & size,
-      Paint()
-        ..shader = const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Color(0x00000000), Color(0x1A6B4A16)],
-        ).createShader(Offset.zero & size),
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
-}
-
-/// Titlu pe fundal de banderolă, cu capete crestate.
+/// Titlu pe fundal de banderolă, cu capete crestate, pentru rezultate și stări
+/// de turneu. Rama aurie îl menține în aceeași familie cu restul panourilor.
 class RibbonBanner extends StatelessWidget {
   const RibbonBanner({
     required this.text,
@@ -262,6 +201,7 @@ class RibbonBanner extends StatelessWidget {
           style: GameText.heading.copyWith(
             fontSize: 15,
             letterSpacing: 1.1,
+            color: QuizRealmColors.goldLight,
             shadows: const [
               Shadow(color: Color(0x99000000), offset: Offset(0, 1)),
             ],
@@ -299,7 +239,7 @@ class _RibbonPainter extends CustomPainter {
             colors: [
               HSLColor.fromColor(color)
                   .withLightness(
-                    (HSLColor.fromColor(color).lightness + 0.12).clamp(0, 1),
+                    (HSLColor.fromColor(color).lightness + 0.1).clamp(0, 1),
                   )
                   .toColor(),
               color,
@@ -310,8 +250,8 @@ class _RibbonPainter extends CustomPainter {
         body,
         Paint()
           ..style = PaintingStyle.stroke
-          ..strokeWidth = 1.4
-          ..color = GamePalette.gold.withValues(alpha: 0.8),
+          ..strokeWidth = 1.6
+          ..color = QuizRealmColors.gold.withValues(alpha: 0.85),
       );
   }
 

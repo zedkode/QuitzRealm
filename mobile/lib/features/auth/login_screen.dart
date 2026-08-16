@@ -41,6 +41,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
     return Scaffold(
       body: RealmBackdrop(
+        artAsset: 'assets/game/realm_map_v2.png',
+        artOpacity: 0.22,
         child: SafeArea(
           child: SingleChildScrollView(
             padding: const EdgeInsets.fromLTRB(20, 10, 20, 28),

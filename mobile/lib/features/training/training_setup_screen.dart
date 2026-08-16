@@ -40,6 +40,9 @@ class _TrainingSetupScreenState extends ConsumerState<TrainingSetupScreen> {
     final progress = ref.watch(categoryProgressProvider);
 
     return QuizRealmScaffold(
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.24,
+      backdropAccent: QuizRealmColors.electric,
       title: l10n.trainingTitle,
       onBack: () => context.canPop() ? context.pop() : context.go('/'),
       bottomNavigation: HomeNavigation(

@@ -98,6 +98,9 @@ class _TrainingBattleScreenState extends ConsumerState<TrainingBattleScreen> {
     });
 
     return QuizRealmScaffold(
+      backdropAsset: 'assets/game/duel_arena_backdrop.png',
+      backdropOpacity: 0.30,
+      backdropAccent: QuizRealmColors.electric,
       title: l10n.trainingTitle,
       onBack: () => context.canPop() ? context.pop() : context.go('/'),
       body: switch (state.phase) {

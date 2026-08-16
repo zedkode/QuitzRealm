@@ -65,6 +65,8 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
     return Scaffold(
       body: RealmBackdrop(
         accent: GamePalette.arcane,
+        artAsset: 'assets/game/realm_map_v2.png',
+        artOpacity: 0.14,
         child: SafeArea(
           child: Column(
             children: [

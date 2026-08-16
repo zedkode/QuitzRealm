@@ -23,7 +23,11 @@ class AccountScreen extends ConsumerWidget {
 
     if (auth.status == AuthStatus.checking) {
       return const Scaffold(
-        body: RealmBackdrop(child: Center(child: CircularProgressIndicator())),
+        body: RealmBackdrop(
+          artAsset: 'assets/game/realm_map_v2.png',
+          artOpacity: 0.18,
+          child: Center(child: CircularProgressIndicator()),
+        ),
       );
     }
     if (auth.status != AuthStatus.authenticated) {
@@ -32,6 +36,8 @@ class AccountScreen extends ConsumerWidget {
 
     return Scaffold(
       body: RealmBackdrop(
+        artAsset: 'assets/game/realm_map_v2.png',
+        artOpacity: 0.20,
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),

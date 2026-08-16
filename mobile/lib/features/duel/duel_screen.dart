@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/design/gold_frame.dart';
+import '../../core/design/quizrealm_tokens.dart';
 import '../../core/providers/repository_providers.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/ui/game_button.dart';
@@ -73,54 +75,63 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
       },
       child: Scaffold(
         body: RealmBackdrop(
-          accent: GamePalette.crimson,
+          accent: QuizRealmColors.crimson,
+          artAsset: 'assets/game/duel_arena_backdrop.png',
+          artOpacity: 0.9,
           child: SafeArea(
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 6, 14, 4),
-                  child: Row(
-                    children: [
-                      GameIconButton(
-                        symbol: GameSymbol.back,
-                        tooltip: l10n.backLabel,
-                        size: 40,
-                        onPressed: () async {
-                          if (_canLeaveWithoutAsking(state.phase)) {
-                            await ref
-                                .read(duelControllerProvider.notifier)
-                                .leave();
-                            if (context.mounted) context.pop();
-                            return;
-                          }
-                          await _confirmLeave(context, l10n);
-                        },
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          // Titlul urmează modul ales, nu presupune duel:
-                          // altfel o partidă Clasic de patru s-ar anunța
-                          // „Duel 1v1".
-                          widget.preferences.mode == MatchMode.classic
-                              ? l10n.playModeClassic
-                              : l10n.duelTitle,
-                          style: GameText.heading.copyWith(
-                            fontSize: 15,
-                            color: GamePalette.crimson,
+                  padding: const EdgeInsets.fromLTRB(14, 8, 14, 4),
+                  child: GoldFrame(
+                    fill: QuizRealmColors.surfacePanel,
+                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                    corners: true,
+                    child: Row(
+                      children: [
+                        GameIconButton(
+                          symbol: GameSymbol.back,
+                          tooltip: l10n.backLabel,
+                          size: 40,
+                          color: QuizRealmColors.goldBright,
+                          onPressed: () async {
+                            if (_canLeaveWithoutAsking(state.phase)) {
+                              await ref
+                                  .read(duelControllerProvider.notifier)
+                                  .leave();
+                              if (context.mounted) context.pop();
+                              return;
+                            }
+                            await _confirmLeave(context, l10n);
+                          },
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            (widget.preferences.mode == MatchMode.classic
+                                    ? l10n.playModeClassic
+                                    : l10n.duelTitle)
+                                .toUpperCase(),
+                            textAlign: TextAlign.center,
+                            style: QuizRealmTypography.sectionTitle.copyWith(
+                              fontSize: 16,
+                              color: QuizRealmColors.goldBright,
+                            ),
                           ),
                         ),
-                      ),
-                      if (state.matchId != null && _isPlayingPhase(state.phase))
-                        GameIconButton(
-                          key: const Key('duel-chat-open'),
-                          symbol: GameSymbol.chat,
-                          tooltip: l10n.matchChatOpen,
-                          size: 40,
-                          color: GamePalette.arcane,
-                          onPressed: () => _openMatchChat(context),
-                        ),
-                    ],
+                        if (state.matchId != null && _isPlayingPhase(state.phase))
+                          GameIconButton(
+                            key: const Key('duel-chat-open'),
+                            symbol: GameSymbol.chat,
+                            tooltip: l10n.matchChatOpen,
+                            size: 40,
+                            color: QuizRealmColors.electric,
+                            onPressed: () => _openMatchChat(context),
+                          )
+                        else
+                          const SizedBox(width: 40),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(child: _buildBody(context, state)),
@@ -643,15 +654,21 @@ class _DuelRoundView extends StatelessWidget {
             _OpponentAwayBanner(secondsLeft: state.resumeSecondsLeft),
           ],
           const SizedBox(height: 10),
-          ParchmentPanel(
+          GoldFrame(
+            fill: QuizRealmColors.surfaceRaised,
+            borderWidth: QuizRealmBorders.emphasis,
+            glow: true,
+            padding: const EdgeInsets.fromLTRB(18, 22, 18, 22),
             child: Text(
               question.text,
               key: const Key('duel-question-text'),
-              style: const TextStyle(
+              textAlign: TextAlign.center,
+              style: QuizRealmTypography.body.copyWith(
+                fontFamily: QuizRealmTypography.displayFamily,
                 fontSize: 19,
-                height: 1.3,
+                height: 1.32,
                 fontWeight: FontWeight.w700,
-                color: GamePalette.ink,
+                color: QuizRealmColors.goldLight,
               ),
             ),
           ),

@@ -193,6 +193,8 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
     return Scaffold(
       body: RealmBackdrop(
         accent: GamePalette.arcane,
+        artAsset: 'assets/game/realm_map_v2.png',
+        artOpacity: 0.11,
         child: SafeArea(
           child: Column(
             children: [

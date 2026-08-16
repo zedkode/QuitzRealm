@@ -75,6 +75,7 @@ flutter:
   # trebuie declarat explicit, altfel imaginile lipsesc din bundle.
   assets:
     - assets/game/
+    - assets/game/avatars/
     - assets/game/Buttons/ro/
     - assets/game/badges/achievements/
     - assets/game/badges/ranks/

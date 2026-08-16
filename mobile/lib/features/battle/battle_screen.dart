@@ -90,6 +90,8 @@ class _BattleScreenState extends ConsumerState<BattleScreen>
       child: Scaffold(
         body: RealmBackdrop(
           accent: visuals.color,
+          artAsset: 'assets/game/duel_arena_backdrop.png',
+          artOpacity: 0.24,
           child: SafeArea(
             child: Column(
               children: [

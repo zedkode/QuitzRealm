@@ -24,6 +24,8 @@ class QuizRealmScaffold extends StatelessWidget {
     this.padded = true,
     this.scrollable = true,
     this.backdrop,
+    this.backdropAsset,
+    this.backdropOpacity = 0.78,
     this.onRefresh,
     this.backdropAccent = QuizRealmColors.gold,
   });
@@ -57,6 +59,11 @@ class QuizRealmScaffold extends StatelessWidget {
   /// între ele și ce deosebește jocul de o aplicație obișnuită.
   final Widget? backdrop;
 
+  /// Activ ilustrat plasat sub UI, cu aceeași vignetă și particule ca restul
+  /// jocului. Folosește doar imagini cu centru suficient de întunecat pentru text.
+  final String? backdropAsset;
+  final double backdropOpacity;
+
   /// Trage-pentru-reîmprospătare. Doar pe ecranele care chiar reîncarcă de pe
   /// server; pe cele pur locale gestul ar promite ceva ce nu se întâmplă.
   final Future<void> Function()? onRefresh;
@@ -89,6 +96,8 @@ class QuizRealmScaffold extends StatelessWidget {
       backgroundColor: QuizRealmColors.background,
       body: RealmBackdrop(
         accent: backdropAccent,
+        artAsset: backdropAsset,
+        artOpacity: backdropOpacity,
         child: Stack(
           children: [
             if (backdrop != null) Positioned.fill(child: backdrop!),

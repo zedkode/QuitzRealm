@@ -41,6 +41,9 @@ class TitleScreen extends ConsumerWidget {
     final profile = profileAsync.valueOrNull;
 
     return QuizRealmScaffold(
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.34,
+      backdropAccent: QuizRealmColors.electric,
       onRefresh: () async => ref.invalidate(playerProfileProvider),
       header: _Header(profile: profile, progress: progress, l10n: l10n),
       bottomNavigation: HomeNavigation(

@@ -1,104 +1,109 @@
 import 'package:flutter/material.dart';
 
-/// Paleta jocului. Totul pornește de aici: noapte adâncă, piatră, aur și
-/// pergament — un regat medieval-fantasy, nu o aplicație corporate.
+import '../design/quizrealm_tokens.dart';
+
+/// Strat de compatibilitate pentru ecranele care folosesc încă componentele
+/// `Game*`. Toate valorile sunt aliniate la tokenii canonici QuizRealm, astfel
+/// încât migrarea ecranelor poate fi făcută gradual fără două identități vizuale.
 abstract final class GamePalette {
   // Fundal / noapte
-  static const night = Color(0xFF080B1C);
-  static const nightDeep = Color(0xFF04060F);
-  static const dusk = Color(0xFF141A3C);
-  static const twilight = Color(0xFF262E5E);
+  static const night = QuizRealmColors.background;
+  static const nightDeep = QuizRealmColors.backgroundDeep;
+  static const dusk = Color(0xFF03162B);
+  static const twilight = QuizRealmColors.surfaceRaised;
 
-  // Piatră (panouri)
-  static const stone900 = Color(0xFF10152E);
-  static const stone800 = Color(0xFF1A2144);
-  static const stone700 = Color(0xFF242C59);
-  static const stone600 = Color(0xFF343E73);
+  // Suprafețe de joc
+  static const stone900 = QuizRealmColors.surfacePanel;
+  static const stone800 = QuizRealmColors.surfaceRaised;
+  static const stone700 = QuizRealmColors.surfaceRow;
+  static const stone600 = Color(0xFF0A2948);
 
-  // Aur (accent principal)
-  static const gold = Color(0xFFF0B542);
-  static const goldBright = Color(0xFFFFD98A);
-  static const goldDeep = Color(0xFFA9761C);
+  // Aur metalic
+  static const gold = QuizRealmColors.gold;
+  static const goldBright = QuizRealmColors.goldBright;
+  static const goldDeep = QuizRealmColors.goldDeep;
 
-  // Pergament (carduri de întrebare)
-  static const parchment = Color(0xFFF6E7C6);
-  static const parchmentShade = Color(0xFFE4CE9F);
-  static const ink = Color(0xFF3A2A14);
-  static const inkSoft = Color(0xFF6B573A);
+  // Aliasuri păstrate pentru compatibilitatea vechilor panouri de întrebare.
+  static const parchment = QuizRealmColors.surfaceRaised;
+  static const parchmentShade = QuizRealmColors.surfacePanel;
+  static const ink = QuizRealmColors.textPrimary;
+  static const inkSoft = QuizRealmColors.textSecondary;
 
   // Stări de joc
-  static const emerald = Color(0xFF3FCF8E);
-  static const emeraldDeep = Color(0xFF1B7A52);
-  static const crimson = Color(0xFFE4574B);
-  static const crimsonDeep = Color(0xFF8E2A22);
-  static const arcane = Color(0xFF5BC8FF);
-  static const arcaneDeep = Color(0xFF1F5F8B);
-  static const amethyst = Color(0xFF9B6BFF);
+  static const emerald = QuizRealmColors.success;
+  static const emeraldDeep = Color(0xFF1D7A3A);
+  static const crimson = QuizRealmColors.crimson;
+  static const crimsonDeep = QuizRealmColors.crimsonDeep;
+  static const arcane = QuizRealmColors.electric;
+  static const arcaneDeep = QuizRealmColors.royalBlueDeep;
+  static const amethyst = Color(0xFF7A6CFF);
 
-  // Text pe fundal întunecat
-  static const cream = Color(0xFFFFF3DA);
-  static const creamDim = Color(0xFFBFC4E0);
+  // Text
+  static const cream = QuizRealmColors.textPrimary;
+  static const creamDim = QuizRealmColors.textSecondary;
 }
 
-/// Fonturi și stiluri reutilizate în tot jocul.
+/// Stilurile moștenite rămân pentru compatibilitate, dar folosesc acum aceeași
+/// tipografie și aceleași contraste ca sistemul de design curent.
 abstract final class GameText {
   static const display = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w800,
     fontSize: 34,
     height: 1.05,
-    color: GamePalette.cream,
-    letterSpacing: 0.5,
+    color: QuizRealmColors.goldLight,
+    letterSpacing: 1.1,
   );
 
   static const title = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w700,
     fontSize: 22,
     height: 1.15,
-    color: GamePalette.cream,
+    color: QuizRealmColors.goldBright,
+    letterSpacing: 1.2,
   );
 
   static const heading = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w700,
     fontSize: 17,
-    color: GamePalette.cream,
+    color: QuizRealmColors.goldBright,
+    letterSpacing: 0.8,
   );
 
   static const button = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w700,
     fontSize: 15,
-    letterSpacing: 1.1,
+    letterSpacing: 1.4,
   );
 
   static const eyebrow = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w700,
     fontSize: 10.5,
-    letterSpacing: 2.2,
-    color: GamePalette.gold,
+    letterSpacing: 1.9,
+    color: QuizRealmColors.goldBright,
   );
 
   static const body = TextStyle(
     fontSize: 14.5,
     height: 1.4,
-    color: GamePalette.cream,
+    color: QuizRealmColors.textPrimary,
   );
 
   static const bodyDim = TextStyle(
     fontSize: 13.5,
     height: 1.4,
-    color: GamePalette.creamDim,
+    color: QuizRealmColors.textSecondary,
   );
 
-  /// Cifre pentru HUD — lățime fixă, ca să nu „sară” scorul.
   static const numeric = TextStyle(
     fontFamily: 'Cinzel',
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w800,
     fontSize: 18,
-    color: GamePalette.cream,
+    color: QuizRealmColors.textPrimary,
     fontFeatures: [FontFeature.tabularFigures()],
   );
 }
@@ -106,7 +111,6 @@ abstract final class GameText {
 class AppTheme {
   const AppTheme._();
 
-  // Alias-uri păstrate pentru codul și testele existente.
   static const midnight = GamePalette.night;
   static const realmTeal = GamePalette.arcane;
   static const conquestGold = GamePalette.gold;
@@ -115,27 +119,26 @@ class AppTheme {
   static const danger = GamePalette.crimson;
 
   static ThemeData get dark {
-    final scheme =
-        ColorScheme.fromSeed(
-          seedColor: GamePalette.gold,
-          brightness: Brightness.dark,
-          surface: GamePalette.night,
-        ).copyWith(
-          primary: GamePalette.gold,
-          onPrimary: GamePalette.stone900,
-          secondary: GamePalette.arcane,
-          onSecondary: GamePalette.stone900,
-          surfaceContainer: GamePalette.stone800,
-          error: GamePalette.crimson,
-          onSurface: GamePalette.cream,
-        );
+    final scheme = ColorScheme.fromSeed(
+      seedColor: QuizRealmColors.gold,
+      brightness: Brightness.dark,
+      surface: QuizRealmColors.surfacePanel,
+    ).copyWith(
+      primary: QuizRealmColors.gold,
+      onPrimary: QuizRealmColors.textOnGold,
+      secondary: QuizRealmColors.electric,
+      onSecondary: QuizRealmColors.backgroundDeep,
+      surfaceContainer: QuizRealmColors.surfaceRaised,
+      error: QuizRealmColors.crimson,
+      onSurface: QuizRealmColors.textPrimary,
+    );
 
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
       colorScheme: scheme,
-      scaffoldBackgroundColor: GamePalette.night,
-      splashColor: GamePalette.gold.withValues(alpha: 0.12),
+      scaffoldBackgroundColor: QuizRealmColors.background,
+      splashColor: QuizRealmColors.electric.withValues(alpha: 0.16),
       highlightColor: Colors.transparent,
       textTheme: const TextTheme(
         displaySmall: GameText.display,
@@ -148,41 +151,43 @@ class AppTheme {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: GamePalette.stone900,
-        labelStyle: const TextStyle(color: GamePalette.creamDim),
+        fillColor: QuizRealmColors.surfaceRaised,
+        labelStyle: const TextStyle(color: QuizRealmColors.textSecondary),
+        hintStyle: const TextStyle(color: QuizRealmColors.textMuted),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(QuizRealmRadius.md),
+          borderSide: const BorderSide(color: QuizRealmColors.goldDeep),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: GamePalette.gold.withValues(alpha: 0.4)),
+          borderRadius: BorderRadius.circular(QuizRealmRadius.md),
+          borderSide: const BorderSide(color: QuizRealmColors.goldDeep),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: GamePalette.gold, width: 1.6),
+          borderRadius: BorderRadius.circular(QuizRealmRadius.md),
+          borderSide: const BorderSide(color: QuizRealmColors.electric, width: 2),
         ),
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           minimumSize: const Size.fromHeight(52),
-          backgroundColor: GamePalette.gold,
-          foregroundColor: GamePalette.stone900,
-          shape: const BeveledRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(8)),
+          backgroundColor: QuizRealmColors.royalBlueDeep,
+          foregroundColor: QuizRealmColors.goldLight,
+          side: const BorderSide(color: QuizRealmColors.gold, width: 1.5),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(QuizRealmRadius.md),
           ),
           textStyle: GameText.button,
         ),
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: GamePalette.goldBright,
+          foregroundColor: QuizRealmColors.goldBright,
           textStyle: const TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
-      iconTheme: const IconThemeData(color: GamePalette.cream),
+      iconTheme: const IconThemeData(color: QuizRealmColors.goldBright),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: GamePalette.gold,
+        color: QuizRealmColors.electric,
       ),
     );
   }

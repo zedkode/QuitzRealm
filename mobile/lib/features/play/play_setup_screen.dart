@@ -48,6 +48,8 @@ class _PlaySetupScreenState extends ConsumerState<PlaySetupScreen> {
     final l10n = AppLocalizations.of(context);
 
     return QuizRealmScaffold(
+      backdropAsset: 'assets/game/duel_arena_backdrop.png',
+      backdropOpacity: 0.42,
       title: l10n.playTitle,
       onBack: () => context.canPop() ? context.pop() : context.go('/'),
       backdropAccent: QuizRealmColors.crimson,

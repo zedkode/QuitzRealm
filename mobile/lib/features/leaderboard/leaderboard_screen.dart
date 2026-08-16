@@ -24,6 +24,8 @@ class LeaderboardScreen extends ConsumerWidget {
     return Scaffold(
       body: RealmBackdrop(
         accent: GamePalette.goldBright,
+        artAsset: 'assets/game/realm_map_v2.png',
+        artOpacity: 0.22,
         child: SafeArea(
           child: Column(
             children: [

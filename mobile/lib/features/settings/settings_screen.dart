@@ -44,6 +44,9 @@ class SettingsScreen extends ConsumerWidget {
     final profile = ref.watch(playerProfileProvider).valueOrNull;
 
     return QuizRealmScaffold(
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.18,
+      backdropAccent: QuizRealmColors.gold,
       title: l10n.settingsTitle,
       onBack: () => context.canPop() ? context.pop() : context.go('/'),
       header: PlayerIdentityHeader(
