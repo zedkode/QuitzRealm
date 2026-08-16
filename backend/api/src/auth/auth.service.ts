@@ -1,6 +1,7 @@
 import {
   BadRequestException,
   ConflictException,
+  ForbiddenException,
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
@@ -163,12 +164,20 @@ export class AuthService {
         username: true,
         displayName: true,
         role: true,
+        bannedAt: true,
         emailVerifiedAt: true,
         birthDate: true,
       },
     });
     if (!user) {
       throw new UnauthorizedException();
+    }
+    // Contul suspendat e oprit aici, o singură dată, pentru toate rutele
+    // autentificate. Verificat la fiecare cerere pentru că `validateAccessUser`
+    // citește oricum utilizatorul din baza de date: un ban are efect imediat,
+    // nu după ce expiră tokenul curent.
+    if (user.bannedAt !== null) {
+      throw new ForbiddenException('Account suspended.');
     }
     return {
       id: user.id,
@@ -177,6 +186,7 @@ export class AuthService {
       displayName: user.displayName ?? user.username,
       sessionId: payload.sid,
       role: user.role,
+      bannedAt: user.bannedAt,
       capabilities: capabilitiesFor({
         emailVerifiedAt: user.emailVerifiedAt,
         birthDate: user.birthDate,
@@ -584,9 +594,19 @@ export class AuthService {
   }
 
   private async completePrimaryLogin(
-    user: { id: string; email: string; twoFactorEnabledAt: Date | null },
+    user: {
+      id: string;
+      email: string;
+      twoFactorEnabledAt: Date | null;
+      bannedAt?: Date | null;
+    },
     context: SessionContext,
   ): Promise<LoginResult> {
+    // Punctul comun al tuturor căilor de autentificare (parolă și Google), deci
+    // singurul loc unde suspendarea trebuie oprită la emiterea de tokenuri.
+    if (user.bannedAt != null) {
+      throw new ForbiddenException('Account suspended.');
+    }
     if (user.twoFactorEnabledAt === null) {
       return this.startSession(user.id, user.email, context);
     }

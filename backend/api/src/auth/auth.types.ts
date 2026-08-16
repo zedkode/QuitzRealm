@@ -23,6 +23,9 @@ export interface AuthenticatedUser {
   displayName: string;
   sessionId?: string;
   role: AdminRole;
+  /// Suspendarea contului. Verificată la fiecare cerere, nu doar la login:
+  /// altfel un ban ar intra în vigoare abia la expirarea tokenului de acces.
+  bannedAt: Date | null;
   capabilities: AccountCapabilities;
 }
 

@@ -95,6 +95,10 @@ model User {
   xp                Int       @default(0)
   level             Int       @default(1)
   coins             Int       @default(0)
+  /// Moneda premium. Se obține **doar** cumpărând-o cu bani reali; se cheltuie
+  /// pe obiecte din magazin. Ținută separat de `coins` (câștigați în joc) ca o
+  /// eroare de recompensă să nu poată produce niciodată valoare plătită.
+  gems              Int       @default(0)
   /// Raspunsuri corecte cumulate. Sursa treptei de incredere din 2.5.
   /// Denormalizat intentionat: altfel fiecare mesaj de chat ar cere un COUNT
   /// peste `match_events`.
@@ -134,6 +138,12 @@ model User {
   achievements       UserAchievement[]
   achievementBadges  UserBadgeSlot[]
   achievementShowcase UserProfileShowcase[]
+  powerups           UserPowerup[]
+  activePowerups     ActivePowerup[]
+  purchases          Purchase[]
+  ledgerEntries      CurrencyLedger[]
+  adminActions       AdminAuditLog[]           @relation("AuditActor")
+  adminActionsAgainst AdminAuditLog[]          @relation("AuditTargetUser")
 
   @@map("users")
 }
@@ -702,4 +712,242 @@ model QuestionReport {
 
   @@index([questionId, createdAt])
   @@map("question_reports")
+}
+
+// ---------------------------------------------------------------------------
+// Magazin, powerups și plăți
+// ---------------------------------------------------------------------------
+
+/// Unde se aplică efectul. Decide și cine îl execută: `IN_MATCH` e consumat de
+/// `backend/realtime` în timpul partidei, `OUT_OF_MATCH` de core la închiderea
+/// meciului sau la acordarea recompenselor.
+enum PowerupKind {
+  IN_MATCH     @map("in_match")
+  OUT_OF_MATCH @map("out_of_match")
+}
+
+/// Efectul concret. Enum, nu text liber: un powerup necunoscut trebuie să fie
+/// imposibil de creat din panoul de admin, altfel s-ar vinde ceva ce motorul
+/// de joc nu știe să aplice.
+enum PowerupEffect {
+  /// Secunde în plus la runda curentă.
+  EXTRA_TIME         @map("extra_time")
+  /// Elimină două variante greșite.
+  FIFTY_FIFTY        @map("fifty_fifty")
+  /// Dublează punctele rundei.
+  DOUBLE_ROUND_SCORE @map("double_round_score")
+  /// Multiplicator de XP pe durată determinată.
+  XP_MULTIPLIER      @map("xp_multiplier")
+  /// Multiplicator de monede pe durată determinată.
+  COIN_MULTIPLIER    @map("coin_multiplier")
+  /// Păstrează seria de victorii la o înfrângere.
+  STREAK_SHIELD      @map("streak_shield")
+}
+
+enum CurrencyKind {
+  COINS @map("coins")
+  GEMS  @map("gems")
+}
+
+/// De ce s-a mișcat soldul. Fără motiv explicit, un raport financiar n-ar putea
+/// distinge banii încasați de monedele acordate manual de un administrator.
+enum LedgerReason {
+  PURCHASE    @map("purchase")
+  SPEND       @map("spend")
+  ADMIN_GRANT @map("admin_grant")
+  REFUND      @map("refund")
+  REWARD      @map("reward")
+}
+
+enum PurchaseStatus {
+  PENDING  @map("pending")
+  PAID     @map("paid")
+  FAILED   @map("failed")
+  REFUNDED @map("refunded")
+  EXPIRED  @map("expired")
+}
+
+/// Un powerup vandabil. Prețurile stau aici, niciodată la client: clientul
+/// trimite doar ce vrea să cumpere, serverul decide cât costă.
+model Powerup {
+  id          String        @id @default(uuid()) @db.Uuid
+  /// Cheie stabilă folosită de joc și de traduceri, ca la `cosmetics`.
+  code        String        @unique @db.VarChar(64)
+  name        String        @db.VarChar(100)
+  description String        @db.VarChar(500)
+  kind        PowerupKind
+  effect      PowerupEffect
+  /// Mărimea efectului: secunde pentru `EXTRA_TIME`, procent pentru
+  /// multiplicatori. Interpretarea ține de `effect`.
+  magnitude   Int           @default(1)
+  /// Cât ține efectul, pentru cele temporare. `null` = se consumă o dată.
+  durationSeconds Int?      @map("duration_seconds")
+  priceCoins  Int           @default(0) @map("price_coins")
+  priceGems   Int           @default(0) @map("price_gems")
+  /// Scos din magazin fără să fie șters: jucătorii care l-au cumpărat trebuie
+  /// să-l poată folosi în continuare, iar rapoartele vechi trebuie să-l poată
+  /// numi.
+  active      Boolean       @default(true)
+  sortOrder   Int           @default(0) @map("sort_order")
+  createdAt   DateTime      @default(now()) @map("created_at")
+  updatedAt   DateTime      @updatedAt @map("updated_at")
+
+  owners        UserPowerup[]
+  activeGrants  ActivePowerup[]
+
+  @@index([active, sortOrder])
+  @@map("powerups")
+}
+
+/// Câte bucăți deține un jucător dintr-un powerup neconsumat.
+model UserPowerup {
+  userId    String   @map("user_id") @db.Uuid
+  powerupId String   @map("powerup_id") @db.Uuid
+  quantity  Int      @default(0)
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  powerup Powerup @relation(fields: [powerupId], references: [id], onDelete: Restrict)
+
+  @@id([userId, powerupId])
+  @@map("user_powerups")
+}
+
+/// Un powerup temporar activ acum. Separat de inventar: aici contează când
+/// expiră, nu câte bucăți mai sunt.
+model ActivePowerup {
+  id          String   @id @default(uuid()) @db.Uuid
+  userId      String   @map("user_id") @db.Uuid
+  powerupId   String   @map("powerup_id") @db.Uuid
+  activatedAt DateTime @default(now()) @map("activated_at")
+  expiresAt   DateTime @map("expires_at")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  powerup Powerup @relation(fields: [powerupId], references: [id], onDelete: Restrict)
+
+  @@index([userId, expiresAt])
+  @@map("active_powerups")
+}
+
+/// Produsul cumpărat cu bani reali: un pachet de gems.
+///
+/// Singurul lucru din magazin care costă bani. Obiectele se cumpără apoi cu
+/// gems, deci fluxul de plată are un singur tip de tranzacție de verificat.
+model GemPack {
+  id         String  @id @default(uuid()) @db.Uuid
+  code       String  @unique @db.VarChar(64)
+  name       String  @db.VarChar(100)
+  /// Gems livrate, fără bonus.
+  gems       Int
+  /// Gems în plus, pentru pachetele promoționale. Ținut separat ca raportul să
+  /// poată arăta cât s-a dăruit față de cât s-a vândut.
+  bonusGems  Int     @default(0) @map("bonus_gems")
+  /// Preț în cea mai mică unitate a monedei (bani, cenți), niciodată în
+  /// virgulă mobilă: un preț rotunjit greșit e bani pierduți sau încasați în
+  /// plus.
+  priceCents Int     @map("price_cents")
+  currency   String  @default("RON") @db.VarChar(3)
+  /// Identificatorul prețului la procesatorul de plăți. Rămâne `null` până
+  /// când există un cont configurat.
+  providerPriceId String? @map("provider_price_id") @db.VarChar(255)
+  active     Boolean @default(true)
+  sortOrder  Int     @default(0) @map("sort_order")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  purchases Purchase[]
+
+  @@index([active, sortOrder])
+  @@map("gem_packs")
+}
+
+/// O încercare de cumpărare cu bani reali, de la inițiere până la livrare.
+///
+/// Se creează `PENDING` înainte de a trimite jucătorul la plată și devine
+/// `PAID` doar la confirmarea procesatorului. Gems nu se acordă niciodată pe
+/// baza a ceea ce raportează clientul.
+model Purchase {
+  id        String         @id @default(uuid()) @db.Uuid
+  userId    String         @map("user_id") @db.Uuid
+  gemPackId String         @map("gem_pack_id") @db.Uuid
+  provider  String         @default("stub") @db.VarChar(32)
+  /// Sesiunea de plată la procesator. Unic: împiedică procesarea de două ori a
+  /// aceleiași plăți dacă webhookul e livrat repetat.
+  providerSessionId String? @unique @map("provider_session_id") @db.VarChar(255)
+  providerPaymentId String? @map("provider_payment_id") @db.VarChar(255)
+  status    PurchaseStatus @default(PENDING)
+  /// Prețul și cantitatea la momentul cumpărării. Copiate din pachet, nu
+  /// citite prin relație: o schimbare de preț de mâine n-are voie să rescrie
+  /// istoricul financiar de azi.
+  priceCents Int           @map("price_cents")
+  currency   String        @db.VarChar(3)
+  gemsGranted Int          @default(0) @map("gems_granted")
+  failureReason String?    @map("failure_reason") @db.VarChar(500)
+  createdAt  DateTime      @default(now()) @map("created_at")
+  paidAt     DateTime?     @map("paid_at")
+  refundedAt DateTime?     @map("refunded_at")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Restrict)
+  gemPack GemPack @relation(fields: [gemPackId], references: [id], onDelete: Restrict)
+
+  @@index([userId, createdAt])
+  @@index([status, createdAt])
+  @@map("purchases")
+}
+
+/// Fiecare mișcare de monedă, cu soldul rezultat.
+///
+/// Registrul e sursa rapoartelor financiare și singura cale de a răspunde la
+/// întrebarea „de unde are contul acesta atâtea gems". Soldul de pe `users`
+/// rămâne pentru citiri rapide, dar aici e istoria care îl explică.
+model CurrencyLedger {
+  id           String       @id @default(uuid()) @db.Uuid
+  userId       String       @map("user_id") @db.Uuid
+  currency     CurrencyKind
+  /// Pozitiv la intrare, negativ la ieșire.
+  delta        Int
+  balanceAfter Int          @map("balance_after")
+  reason       LedgerReason
+  /// Ce a produs mișcarea: id de achiziție, de obiect, de powerup.
+  referenceType String?     @map("reference_type") @db.VarChar(40)
+  referenceId   String?     @map("reference_id") @db.VarChar(64)
+  /// Cine a provocat mișcarea, când n-a fost jucătorul însuși.
+  actorId      String?      @map("actor_id") @db.Uuid
+  note         String?      @db.VarChar(500)
+  createdAt    DateTime     @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([currency, reason, createdAt])
+  @@map("currency_ledger")
+}
+
+/// Urma fiecărei acțiuni de administrare.
+///
+/// Se scrie înainte ca acțiunea să fie considerată încheiată, ca o operație
+/// care pică pe la jumătate să lase totuși dovada că a fost încercată.
+model AdminAuditLog {
+  id           String   @id @default(uuid()) @db.Uuid
+  actorId      String   @map("actor_id") @db.Uuid
+  actorRole    String   @map("actor_role") @db.VarChar(30)
+  /// Acțiunea, în formă stabilă: `store.powerup.create`, `user.ban`, ...
+  action       String   @db.VarChar(80)
+  targetType   String?  @map("target_type") @db.VarChar(40)
+  targetId     String?  @map("target_id") @db.VarChar(64)
+  targetUserId String?  @map("target_user_id") @db.Uuid
+  /// Ce s-a trimis, fără secrete. Serviciul curăță câmpurile sensibile
+  /// înainte de scriere.
+  payload      Json?
+  ip           String?  @db.VarChar(64)
+  userAgent    String?  @map("user_agent") @db.VarChar(300)
+  success      Boolean  @default(true)
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  actor      User  @relation("AuditActor", fields: [actorId], references: [id], onDelete: Restrict)
+  targetUser User? @relation("AuditTargetUser", fields: [targetUserId], references: [id], onDelete: SetNull)
+
+  @@index([actorId, createdAt])
+  @@index([action, createdAt])
+  @@map("admin_audit_log")
 }
