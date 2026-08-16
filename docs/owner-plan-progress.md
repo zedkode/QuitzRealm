@@ -39,3 +39,16 @@
 | Sugestii de prietenie | Implementat | Jucători întâlniți în partide recente, fără relații/blocări existente și numai cu consimțământ bilateral opt-in; UI mobil pentru preferință și trimiterea cererii. |
 
 **Verdict curent:** punctul 2 este satisfăcut pentru infrastructura de chat și experiența mobilă livrate. Sharding-ul global pe limbă/regiune și panoul de moderare sunt extensii planificate pentru scalare, respectiv punctul 13; fluxul curent păstrează camera globală unică și toate regulile de securitate sunt deja aplicate server-side. Validări efectuate: `npm run build` pentru API și realtime, testele `ChatService` (5/5), `flutter analyze` și testele mobile relevante (36/36).
+
+## 3. Achievements & badges
+
+| Criteriu | Stare | Dovezi / lucru rămas |
+|---|---:|---|
+| Template-uri și instanțiere automată | În implementare | `achievement_templates` și `achievements` sunt în schema Prisma; `AchievementsService.ensureCatalog` extinde idempotent pragurile din catalog. Familiile actuale acoperă răspunsuri corecte, victorii Duo și partide finalizate. Catalogul trebuie extins gradual cu metrici validate suplimentare pentru a atinge volumul planificat. |
+| Progres server-side | Implementat pentru metricile suportate | Persistarea unei partide valide invocă `recordValidatedMatch` în aceeași tranzacție; clientul nu poate acorda progres direct. |
+| Rarități și Prestige Score | Implementat | Raritatea este recalculată din procentul real de deblocări, iar `profileSummary` calculează Prestige Score separat de ELO. Jobul programat de recalculare se va conecta odată cu infrastructura de automatizare. |
+| Badge-uri de achievement | Implementat | Trei sloturi server-side, validare că achievement-ul este deblocat și UI mobil de afișare/echipare. |
+| Showcase de profil | Implementat | Până la șase achievements validate server-side și editor mobil în Sala Prestigiului. |
+| Experiență mobilă | Implementat pentru baza funcțională | Ruta `/realizari`, Sala Prestigiului, progres, raritate, badge-uri și showcase sunt conectate la API și respectă tema dark-fantasy. |
+
+**Verdict curent:** baza funcțională pentru punctul 3 este implementată și validată prin build API și `flutter analyze`. Punctul nu este încă marcat complet: extinderea catalogului către familiile care necesită noi metrici persistate (categorii, acuratețe, streak, viteză, social, cosmetice, evenimente și meta-achievements) trebuie implementată gradual, odată cu sursele lor server-side validate.
