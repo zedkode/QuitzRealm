@@ -11,6 +11,7 @@ import { LeaderboardModule } from './leaderboard/leaderboard.module';
 import { MailModule } from './mail/mail.module';
 import { MatchesModule } from './matches/matches.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { ProfileModule } from './profile/profile.module';
 import { QuestionsModule } from './questions/questions.module';
 import { ReportsModule } from './reports/reports.module';
 import { SocialModule } from './social/social.module';
@@ -41,6 +42,7 @@ import { UsersModule } from './users/users.module';
     ReportsModule,
     SocialModule,
     ChatModule,
+    ProfileModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })
