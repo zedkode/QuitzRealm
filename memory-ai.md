@@ -957,3 +957,39 @@ ce să reușească), iar confirmarea serverului marchează ținta pe hartă.
 Modul Clasic e complet ca reguli și ca interacțiune: capturare → luptă →
 eliminare → clasament pe loc final. Netestat încă pe dispozitiv cu jucători
 reali — telefonul era deconectat la ultima încercare de instalare.
+
+---
+
+## 2026-08-16 (XIV) — Claude — Test pe telefon și release GitHub
+
+### Bug prins pe dispozitiv, nu în teste
+
+Am ales **Clasic cu 4 jucători** pe telefon, iar ecranul de meci anunța
+„Duel 1v1" și „Căutăm un adversar" la singular. `DuelScreen` folosea
+`l10n.duelTitle` fix și un ecran de așteptare care presupunea un singur adversar.
+
+Reparat: titlul urmează modul din `widget.preferences`, iar ecranul de așteptare
+primește numărul de jucători (`classicSearchingTitle` / `classicSearchingBody`).
+Verificat din nou pe telefon: „Clasic", „Căutăm jucători", „Partida pornește când
+se strâng 4 jucători."
+
+Testele nu-l puteau prinde: ecranul primea preferințele corect, dar nu le
+folosea la afișare, iar niciun test nu verifica textul antetului.
+
+### Release
+
+`https://github.com/zedkode/QuitzRealm/releases/tag/v1.4.0%2B2007` — marcat
+**pre-release**, cu `QuizRealm-1.4.0-2007.apk` (88 MB) construit cu endpointurile
+de producție. Notele de lansare spun explicit ce **nu** e gata: ecranele pe stil
+vechi, Clasicul netestat cu 4 jucători reali, mesajele pe polling, secțiunile din
+capturi fără sursă de date.
+
+### De semnalat
+
+- **Repo-ul e public** (`zedkode/QuitzRealm`) deși are `PROPRIETARY_NOTICE.md`.
+  Release-ul face APK-ul descărcabil de oricine.
+- Verificat înainte de urcare: singurele `.env` urmărite sunt `.env.example` cu
+  substituenți; cheia Resend nu apare în niciun fișier urmărit.
+- În repo au fost comise din greșeală artefacte de test:
+  `mobile/test/features/failures/*.png` (imagini de diferență din goldene).
+  Ar trebui șterse și adăugate în `.gitignore`.
