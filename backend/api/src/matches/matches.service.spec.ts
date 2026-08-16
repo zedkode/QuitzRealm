@@ -30,6 +30,7 @@ function classicDto(): RecordMatchDto {
 describe('MatchesService generic persistence', () => {
   const matchCreate = jest.fn();
   const userUpdate = jest.fn();
+  const achievements = { recordValidatedMatch: jest.fn() };
   const prisma = {
     user: { findMany: jest.fn() },
     $transaction: jest.fn(
@@ -40,7 +41,7 @@ describe('MatchesService generic persistence', () => {
         }),
     ),
   } as unknown as PrismaService;
-  const service = new MatchesService(prisma);
+  const service = new MatchesService(prisma, achievements as unknown as any);
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -49,6 +50,7 @@ describe('MatchesService generic persistence', () => {
     );
     matchCreate.mockResolvedValue({ id: 'persisted-match', players: [] });
     userUpdate.mockResolvedValue({});
+    achievements.recordValidatedMatch.mockResolvedValue(undefined);
   });
 
   it('persistă o partidă Clasic cu patru participanți fără a modifica încă ELO', async () => {
