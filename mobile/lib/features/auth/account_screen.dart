@@ -71,6 +71,14 @@ class AccountScreen extends ConsumerWidget {
                   textAlign: TextAlign.center,
                   style: GameText.bodyDim,
                 ),
+                const SizedBox(height: 16),
+                GameButton(
+                  key: const Key('account-achievements-open'),
+                  label: 'SALA PRESTIGIULUI',
+                  icon: GameSymbol.trophy,
+                  compact: true,
+                  onPressed: () => context.push('/realizari'),
+                ),
                 const SizedBox(height: 20),
                 _TwoFactorPanel(
                   onConfigure: () => _showTwoFactorDialog(context, ref),
@@ -161,7 +169,9 @@ class AccountScreen extends ConsumerWidget {
                             if (!context.mounted) return;
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
-                                content: Text('Am trimis un nou link de confirmare.'),
+                                content: Text(
+                                  'Am trimis un nou link de confirmare.',
+                                ),
                               ),
                             );
                           } catch (_) {
@@ -269,9 +279,7 @@ class _SessionRow extends ConsumerWidget {
         color: GamePalette.stone900.withValues(alpha: 0.65),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: session.isCurrent
-              ? GamePalette.gold
-              : GamePalette.stone600,
+          color: session.isCurrent ? GamePalette.gold : GamePalette.stone600,
         ),
       ),
       child: Row(
@@ -279,7 +287,9 @@ class _SessionRow extends ConsumerWidget {
           GameIcon(
             session.isCurrent ? GameSymbol.crown : GameSymbol.shield,
             size: 21,
-            color: session.isCurrent ? GamePalette.goldBright : GamePalette.creamDim,
+            color: session.isCurrent
+                ? GamePalette.goldBright
+                : GamePalette.creamDim,
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -287,7 +297,9 @@ class _SessionRow extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  session.isCurrent ? 'Acest dispozitiv' : (session.deviceLabel ?? 'Dispozitiv necunoscut'),
+                  session.isCurrent
+                      ? 'Acest dispozitiv'
+                      : (session.deviceLabel ?? 'Dispozitiv necunoscut'),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GameText.body,
@@ -300,7 +312,9 @@ class _SessionRow extends ConsumerWidget {
             IconButton(
               tooltip: 'Revocă sesiunea',
               onPressed: () async {
-                await ref.read(authRepositoryProvider).revokeSession(session.id);
+                await ref
+                    .read(authRepositoryProvider)
+                    .revokeSession(session.id);
                 ref.invalidate(accountSessionsProvider);
               },
               icon: const Icon(Icons.close_rounded),
@@ -346,7 +360,9 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
           .startTwoFactorEnrollment(currentPassword: _password.text);
       if (mounted) setState(() => _otpauthUri = uri);
     } catch (_) {
-      if (mounted) setState(() => _error = 'Parola nu a putut iniția configurarea 2FA.');
+      if (mounted) {
+        setState(() => _error = 'Parola nu a putut iniția configurarea 2FA.');
+      }
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -366,7 +382,9 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
           );
       if (mounted) setState(() => _recoveryCodes = codes);
     } catch (_) {
-      if (mounted) setState(() => _error = 'Codul de autentificare nu este valid.');
+      if (mounted) {
+        setState(() => _error = 'Codul de autentificare nu este valid.');
+      }
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -376,7 +394,10 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: GamePalette.stone800,
-      title: Text('Configurează 2FA', style: GameText.title.copyWith(fontSize: 18)),
+      title: Text(
+        'Configurează 2FA',
+        style: GameText.title.copyWith(fontSize: 18),
+      ),
       content: SingleChildScrollView(
         child: _recoveryCodes != null
             ? Column(
@@ -417,15 +438,16 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
                     controller: _password,
                     obscureText: true,
                     enabled: !_loading && _otpauthUri == null,
-                    decoration: const InputDecoration(labelText: 'Parola curentă'),
+                    decoration: const InputDecoration(
+                      labelText: 'Parola curentă',
+                    ),
                   ),
                   if (_otpauthUri != null) ...[
                     const SizedBox(height: 12),
                     SelectableText(_otpauthUri!, style: GameText.bodyDim),
                     TextButton.icon(
-                      onPressed: () => Clipboard.setData(
-                        ClipboardData(text: _otpauthUri!),
-                      ),
+                      onPressed: () =>
+                          Clipboard.setData(ClipboardData(text: _otpauthUri!)),
                       icon: const Icon(Icons.copy_rounded),
                       label: const Text('Copiază URI-ul'),
                     ),
@@ -433,7 +455,9 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
                       controller: _code,
                       keyboardType: TextInputType.number,
                       enabled: !_loading,
-                      decoration: const InputDecoration(labelText: 'Codul TOTP'),
+                      decoration: const InputDecoration(
+                        labelText: 'Codul TOTP',
+                      ),
                     ),
                   ],
                   if (_error != null) ...[
@@ -449,7 +473,9 @@ class _TwoFactorSetupDialogState extends State<_TwoFactorSetupDialog> {
       actions: [
         TextButton(
           onPressed: _loading ? null : () => Navigator.of(context).pop(),
-          child: Text(_recoveryCodes == null ? 'Anulează' : 'Am salvat codurile'),
+          child: Text(
+            _recoveryCodes == null ? 'Anulează' : 'Am salvat codurile',
+          ),
         ),
         if (_recoveryCodes == null)
           FilledButton(
