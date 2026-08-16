@@ -51,14 +51,53 @@ class AchievementProgress {
   }
 }
 
+class EquippedAchievementBadge {
+  const EquippedAchievementBadge({
+    required this.slotIndex,
+    this.achievementId,
+    this.title,
+    this.rarity,
+  });
+
+  final int slotIndex;
+  final String? achievementId;
+  final String? title;
+  final AchievementRarity? rarity;
+
+  static EquippedAchievementBadge fromJson(Map<String, Object?> json) {
+    final achievement = json['achievement'];
+    final rawAchievement = achievement is Map<String, Object?>
+        ? achievement
+        : null;
+    final slot = json['slotIndex'];
+    return EquippedAchievementBadge(
+      slotIndex: slot is num
+          ? slot.round()
+          : int.tryParse(slot?.toString() ?? '') ?? 0,
+      achievementId: rawAchievement?['id']?.toString(),
+      title: rawAchievement?['title']?.toString(),
+      rarity: switch (rawAchievement?['rarity']?.toString()) {
+        'RARE' => AchievementRarity.rare,
+        'EPIC' => AchievementRarity.epic,
+        'LEGENDARY' => AchievementRarity.legendary,
+        'MYTHIC' => AchievementRarity.mythic,
+        'COMMON' => AchievementRarity.common,
+        _ => null,
+      },
+    );
+  }
+}
+
 class AchievementSummary {
   const AchievementSummary({
     required this.prestigeScore,
     required this.unlockedCount,
+    this.badges = const [],
   });
 
   final int prestigeScore;
   final int unlockedCount;
+  final List<EquippedAchievementBadge> badges;
 
   static AchievementSummary fromJson(Map<String, Object?> json) {
     int read(String key) => json[key] is num
@@ -67,6 +106,12 @@ class AchievementSummary {
     return AchievementSummary(
       prestigeScore: read('prestigeScore'),
       unlockedCount: read('unlockedCount'),
+      badges: json['badges'] is List
+          ? (json['badges'] as List)
+                .whereType<Map<String, Object?>>()
+                .map(EquippedAchievementBadge.fromJson)
+                .toList(growable: false)
+          : const [],
     );
   }
 }

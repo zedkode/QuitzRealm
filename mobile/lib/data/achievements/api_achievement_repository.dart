@@ -25,4 +25,16 @@ class ApiAchievementRepository implements AchievementRepository {
     }
     return AchievementSummary.fromJson(payload);
   }
+
+  @override
+  Future<void> setBadgeSlot({
+    required int slotIndex,
+    String? achievementId,
+  }) async {
+    await _api.patch(
+      'achievements/badges',
+      body: {'slotIndex': slotIndex, 'achievementId': ?achievementId},
+      authenticated: true,
+    );
+  }
 }

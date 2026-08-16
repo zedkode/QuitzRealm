@@ -34,6 +34,19 @@ class AchievementsController extends StateNotifier<AchievementsState> {
 
   final Ref _ref;
 
+  Future<void> setBadgeSlot({
+    required int slotIndex,
+    String? achievementId,
+  }) async {
+    await _ref
+        .read(achievementRepositoryProvider)
+        .setBadgeSlot(slotIndex: slotIndex, achievementId: achievementId);
+    final summary = await _ref
+        .read(achievementRepositoryProvider)
+        .fetchSummary();
+    if (mounted) state = state.copyWith(summary: summary);
+  }
+
   Future<void> load() async {
     state = state.copyWith(status: AchievementsStatus.loading);
     try {
