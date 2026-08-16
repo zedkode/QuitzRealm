@@ -20,6 +20,7 @@ abstract final class GamePalette {
 
   // Aur metalic
   static const gold = QuizRealmColors.gold;
+  static const goldLight = QuizRealmColors.goldLight;
   static const goldBright = QuizRealmColors.goldBright;
   static const goldDeep = QuizRealmColors.goldDeep;
 
