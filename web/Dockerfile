@@ -22,12 +22,13 @@ RUN printf 'VITE_QUIZREALM_API_URL=%s\nVITE_QUIZREALM_SOCKET_URL=%s\n' \
 FROM node:22-bookworm-slim AS runtime
 ENV NODE_ENV=production
 WORKDIR /app
-RUN corepack enable
 COPY package.json pnpm-lock.yaml ./
-COPY patches ./patches
-# Serverul e împachetat cu `--packages=external`, deci are nevoie de
-# dependențele de producție la runtime.
-RUN pnpm install --frozen-lockfile --prod && pnpm store prune
+# `esbuild --packages=external` lasă toate importurile nerezolvate, iar
+# `server/_core/index.ts` importă `./vite` la nivel de modul — deci `vite` (o
+# devDependency) e cerut chiar și în producție, unde ramura Vite nu rulează.
+# Un `--prod` ar pica la pornire cu ERR_MODULE_NOT_FOUND, așa că reluăm
+# `node_modules` complet din etapa de build în loc să reinstalăm.
+COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 USER node
 EXPOSE 3000

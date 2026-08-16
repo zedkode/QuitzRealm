@@ -9,6 +9,10 @@
 #   containerele publică pe 127.0.0.1, deci ținta e localhost.
 
 ingress:
+  # Panoul web (landing, arena, profil, leaderboard, admin).
+  - hostname: quitzrealm.dohotstudio.com
+    service: http://localhost:13002
+
   - hostname: quizrealmapi.dohotstudio.com
     service: http://localhost:13000
 
@@ -26,6 +30,8 @@ ingress:
 #   adaugă-l în reţeaua stivei şi ţinteşte numele serviciilor.
 #     docker network connect quizrealm-net <container-cloudflared>
 #   apoi:
+#     - hostname: quitzrealm.dohotstudio.com
+#       service: http://web:3000
 #     - hostname: quizrealmapi.dohotstudio.com
 #       service: http://api:3000
 #     - hostname: quizrealmws.dohotstudio.com
