@@ -41,3 +41,13 @@ Website-ul are acum `minimumReleaseAge: 0` și `allowBuilds.esbuild: true` în `
 ## Diagnosticul deploymentului cloud
 
 După mai multe checkpointuri cu `minimumReleaseAge: 0`, validarea locală continuă să treacă, însă `manus-webdev-logs` returnează `cloudrun service not found`. Diagnosticul este că buildul remote nu creează serviciul sau țintește un serviciu diferit; nu există dovadă de crash runtime. Pentru următoarea sesiune, verifică logurile build din Management UI și numele serviciului/regionii Cloud Run. Configurația repo include acum atât `minimumReleaseAge: 0` în workspace, cât și `minimum-release-age=0` plus `minimumReleaseAge=0` în `.npmrc`.
+
+## Increment web realtime
+
+`Game.tsx` consumă acum snapshotul real emis de NestJS (`match:state`), afișează întrebarea, opțiunile și categoria server-side, urmărește `round:result` și emite `round:answer` cu `matchId` și răspunsul către gateway. Sunt păstrate stările de reconectare, pauză, finalizare și mesajele de sesiune. TypeScript, Vitest și Vite build au trecut după integrare.
+
+## Checkpoint și GitHub finale ale acestui ciclu
+
+Website-ul este publicat la `https://quizrealm-crkncvwg.manus.space`, iar ultimul checkpoint web este `manus-webdev://8956d5c6`. Repository-ul `zedkode/QuitzRealm` este sincronizat pe `main` la commitul `4ff31f6`, care include integrarea Game.tsx cu snapshoturi realtime și sincronizarea upgrade-urilor. Commitul anterior `0e5f008` include configurația cloud pnpm și documentarea deploymentului.
+
+TODO-urile încă deschise sunt intenționate: migrațiile admin/TiDBCloud cer TLS, APK-ul cere Android SDK, leaderboard-ul de prieteni și separarea completă Duo/Classic/Blitz cer endpointuri și payloaduri suplimentare, iar adoptarea vizuală Flutter trebuie extinsă și verificată pe toate ecranele rămase.
