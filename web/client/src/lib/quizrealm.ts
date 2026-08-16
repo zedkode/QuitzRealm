@@ -48,10 +48,12 @@ export const quizRealmApi = {
   adminBanUser: (id: string) => request<unknown>(`/admin/users/${id}/ban`, { method: "PATCH" }),
   adminUnbanUser: (id: string) => request<unknown>(`/admin/users/${id}/unban`, { method: "PATCH" }),
   adminRevokeSessions: (id: string) => request<unknown>(`/admin/users/${id}/revoke-sessions`, { method: "POST" }),
+  adminShadowBan: (id: string, minutes = 60) => request<unknown>(`/admin/users/${id}/shadow-ban`, { method: "PATCH", body: JSON.stringify({ minutes }) }),
   adminForcePasswordReset: (id: string) => request<unknown>(`/admin/users/${id}/force-password-reset`, { method: "POST" }),
   adminChatReports: () => request<unknown>("/admin/reports/chat"),
   adminResolveChatReport: (id: string, resolution: string) => request<unknown>(`/admin/reports/chat/${id}`, { method: "PATCH", body: JSON.stringify({ resolution }) }),
   adminQuestions: (status = "PENDING") => request<unknown>(`/admin/questions?status=${status}`),
+  adminQuestionStats: () => request<unknown>("/admin/questions/stats"),
   adminReviewQuestion: (id: string, status: string) => request<unknown>(`/admin/questions/${id}`, { method: "PATCH", body: JSON.stringify({ status }) }),
   stats: () => request<{ activePlayers: number; matchesToday: number; questionsMastered: number; achievementsUnlocked: number; generatedAt: string }>("/health/stats"),
 };

@@ -44,6 +44,12 @@ export class AdminController {
     return this.prisma.user.update({ where: { id }, data: { bannedAt: null }, select: { id: true, bannedAt: true } });
   }
 
+  @Patch('users/:id/shadow-ban')
+  async shadowBan(@Param('id') id: string, @Body() body: { minutes?: number }) {
+    const minutes = Math.min(Math.max(Number(body.minutes) || 60, 1), 7 * 24 * 60);
+    return this.prisma.user.update({ where: { id }, data: { globalChatShadowBannedUntil: new Date(Date.now() + minutes * 60_000) }, select: { id: true, globalChatShadowBannedUntil: true } });
+  }
+
   @Post('users/:id/revoke-sessions')
   async revokeSessions(@Param('id') id: string) {
     const result = await this.prisma.userSession.updateMany({ where: { userId: id, revokedAt: null }, data: { revokedAt: new Date() } });
@@ -65,6 +71,18 @@ export class AdminController {
   @Patch('reports/chat/:id')
   resolveChatReport(@Param('id') id: string, @Body() body: { resolution: 'DISMISSED' | 'WARNED' | 'MUTED' | 'BANNED' }) {
     return this.prisma.chatReport.update({ where: { id }, data: { resolution: body.resolution, resolvedAt: new Date() } });
+  }
+
+  @Get('questions/stats')
+  async questionStats() {
+    const [categories, approved, pending, rejected, flagged] = await Promise.all([
+      this.prisma.category.count(),
+      this.prisma.question.count({ where: { status: 'APPROVED' } }),
+      this.prisma.question.count({ where: { status: 'PENDING' } }),
+      this.prisma.question.count({ where: { status: 'REJECTED' } }),
+      this.prisma.question.count({ where: { status: 'FLAGGED' } }),
+    ]);
+    return { categories, approved, pending, rejected, flagged };
   }
 
   @Get('questions')

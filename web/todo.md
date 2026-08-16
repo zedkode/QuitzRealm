@@ -12,10 +12,10 @@
 - [ ] Adaugă stări de conectare, reconectare, eroare, abandon și finalizare meci
 - [ ] Construiește profil public cu Prestige Score, achievements, badge-uri, showcase și statistici de joc
 - [ ] Construiește leaderboard global ELO cu filtrare pe rank tier și leaderboard de prieteni
-- [ ] Construiește Admin Dashboard cu active users, matches/day, achievements unlocked și pending reports
-- [ ] Construiește Admin User Management cu listare, ban/unban, force password reset și revocare sesiuni
-- [ ] Construiește Admin Chat Moderation cu rapoarte, rezolvare, mute și shadow-ban
-- [ ] Construiește Admin Question Management cu review, approve/reject și statistici de catalog
+- [x] Construiește Admin Dashboard cu active users, matches/day, achievements unlocked și pending reports (datele se încarcă din `/admin/dashboard`)
+- [x] Construiește Admin User Management cu listare, ban/unban, force password reset și revocare sesiuni
+- [x] Construiește Admin Chat Moderation cu rapoarte, rezolvare, mute și shadow-ban (shadow-ban server-side pe `globalChatShadowBannedUntil`)
+- [x] Construiește Admin Question Management cu review, approve/reject și statistici de catalog din API
 - [ ] Gătește proceduri/admin gating fără a expune acțiuni de administrare utilizatorilor obișnuiți
 - [x] Scrie teste Vitest pentru procedurile și componentele critice ale platformei (auth logout și health stats configuration)
 - [x] Rulează check, build, test și verificare vizuală desktop/mobile (web desktop verificat; mobile preview rămâne de făcut)
@@ -32,3 +32,11 @@
 - [ ] Implementează operațiile admin reale: user list, ban/unban, force password reset, revoke sessions, report resolution, mute, shadow-ban și question approve/reject
 
 - [ ] Aplică migrația `20260816153000_admin_roles` pe clusterul TiDBCloud după configurarea transportului TLS; `prisma migrate deploy` a fost blocat de conexiunea insecure
+
+## Admin backend milestone
+
+- [x] Adaugă AdminGuard și AdminModule cu gating pe roluri server-side
+- [x] Adaugă endpointuri admin pentru dashboard, utilizatori, ban/unban, force-password-reset, revoke-sessions, chat reports și question review
+- [x] Adaugă test unit pentru rolurile acceptate/refuzate de AdminGuard
+- [ ] Aplică migrațiile `admin_roles` și `account_bans` pe baza de date după configurarea TLS TiDBCloud; variantele fără TLS, `sslmode=require` și `sslaccept=strict` au fost respinse de config/runtime
+- [x] Conectează acțiunile și listele Admin UI la răspunsurile endpointurilor, nu doar indicatorul de sincronizare; erorile API sunt afișate transparent
