@@ -45,7 +45,7 @@
 
 - [ ] Rulează validarea Flutter și construiește APK-ul Android de release
 - [ ] Inspectează APK-ul generat și pregătește-l pentru livrare
-- [ ] Sincronizează modificările rămase din website în repository și împinge commitul final pe main
+- [x] Sincronizează modificările rămase din website în repository și împinge commitul final pe main (`af4835a`)
 
 ## Redesign medieval-futurist global
 
@@ -72,8 +72,8 @@
 - [x] Actualizează dependințele Flutter/Dart și pluginurile Android compatibil
 - [x] Rulează check, teste, build web/backend și flutter analyze după upgrade
 - [x] Încearcă buildul APK release după upgrade și documentează orice blocaj extern (Android SDK absent în sandbox)
-- [ ] Împinge toate modificările validate pe GitHub main
-- [ ] Scrie rezumatul de handoff pentru continuarea lucrului de către Claude
+- [x] Împinge toate modificările validate pe GitHub main (commit final `af4835a`)
+- [x] Scrie rezumatul de handoff pentru continuarea lucrului de către Claude (`CLAUDE_HANDOFF.md`)
 
 ## Dependency upgrade and handoff — continuation
 
@@ -85,5 +85,5 @@
 - [x] Actualizează efectiv dependințele NestJS din backend/api și backend/realtime și regenerează lockfile-urile
 - [x] Aliniază și documentează configurația finală pnpm workspace/packageManager pentru web
 - [x] Repară build-ul cloud web: pnpm 11 respinge lockfile-ul cu minimumReleaseAge după upgrade-ul dependințelor publicate recent
-- [ ] Confirmă buildul cloud web după setarea minimumReleaseAge: 0 și documentează rezultatul din logurile de deployment
+- [x] Confirmă buildul cloud web după setarea minimumReleaseAge: 0 și documentează rezultatul din logurile de deployment (deployment reușit; `quizrealm-crkncvwg.manus.space`)
 - [x] Adoptă QuizRealmScaffold pe Achievements, Social și Global Chat și validează testele Flutter sociale

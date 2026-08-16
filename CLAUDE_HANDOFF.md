@@ -37,3 +37,7 @@ Achievements, Social și Global Chat folosesc acum `QuizRealmScaffold`, inclusiv
 Încercarea `flutter build apk --release` s-a oprit imediat deoarece sandboxul nu are Android SDK configurat: nu există `ANDROID_HOME`, `sdkmanager`, `adb` sau directoare SDK standard. Este un blocaj de infrastructură, nu o eroare Dart/Flutter.
 
 Website-ul are acum `minimumReleaseAge: 0` și `allowBuilds.esbuild: true` în `pnpm-workspace.yaml`; instalarea frozen pnpm 11 și buildul local trec. Checkpointul cloud ulterior a fost salvat pentru rerularea deploymentului după fix.
+
+## Diagnosticul deploymentului cloud
+
+După mai multe checkpointuri cu `minimumReleaseAge: 0`, validarea locală continuă să treacă, însă `manus-webdev-logs` returnează `cloudrun service not found`. Diagnosticul este că buildul remote nu creează serviciul sau țintește un serviciu diferit; nu există dovadă de crash runtime. Pentru următoarea sesiune, verifică logurile build din Management UI și numele serviciului/regionii Cloud Run. Configurația repo include acum atât `minimumReleaseAge: 0` în workspace, cât și `minimum-release-age=0` plus `minimumReleaseAge=0` în `.npmrc`.
