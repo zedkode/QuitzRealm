@@ -96,6 +96,37 @@ class _SkyPainter extends CustomPainter {
     final random = math.Random(7);
     final pulse = 0.5 + 0.5 * math.sin(time * 2 * math.pi);
 
+    // Grila gravată este semnătura "hartă de campanie" a tuturor ecranelor.
+    // Rămâne aproape invizibilă sub conținut, dar rupe aspectul de aplicație
+    // generică și leagă profilul, socialul și bătălia de aceeași lume.
+    final gridPaint = Paint()
+      ..color = QuizRealmColors.runeViolet.withValues(alpha: 0.07 * intensity)
+      ..strokeWidth = 0.7;
+    const grid = 42.0;
+    for (var x = 0.0; x <= size.width; x += grid) {
+      canvas.drawLine(Offset(x, 0), Offset(x, size.height), gridPaint);
+    }
+    for (var y = 0.0; y <= size.height; y += grid) {
+      canvas.drawLine(Offset(0, y), Offset(size.width, y), gridPaint);
+    }
+
+    final constellations = [
+      Offset(size.width * 0.10, size.height * 0.16),
+      Offset(size.width * 0.27, size.height * 0.09),
+      Offset(size.width * 0.43, size.height * 0.21),
+      Offset(size.width * 0.72, size.height * 0.13),
+      Offset(size.width * 0.89, size.height * 0.29),
+    ];
+    final constellationPaint = Paint()
+      ..color = accent.withValues(alpha: 0.12 * intensity)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 0.8;
+    final constellationPath = Path()..moveTo(constellations.first.dx, constellations.first.dy);
+    for (final point in constellations.skip(1)) {
+      constellationPath.lineTo(point.dx, point.dy);
+    }
+    canvas.drawPath(constellationPath, constellationPaint);
+
     // Halourile sunt ținute la margini pentru a nu concura cu întrebarea.
     canvas
       ..drawCircle(

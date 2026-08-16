@@ -90,6 +90,12 @@ class _GoldFramePainter extends CustomPainter {
     final outer = RRect.fromRectAndRadius(bounds, Radius.circular(radius));
 
     canvas.drawRRect(outer, Paint()..color = fill);
+    canvas.drawRRect(
+      outer.deflate(1),
+      Paint()
+        ..shader = QuizRealmGradients.engravedObsidian.createShader(bounds)
+        ..color = Colors.white.withValues(alpha: 0.9),
+    );
 
     // Firul exterior: separă rama de fundal, altfel auriul se topește în el.
     canvas.drawRRect(
@@ -132,6 +138,16 @@ class _GoldFramePainter extends CustomPainter {
     drawCorner(size.width - inset, inset, -1, 1);
     drawCorner(inset, size.height - inset, 1, -1);
     drawCorner(size.width - inset, size.height - inset, -1, -1);
+
+    // Sigilii mici în axele ramei: un indiciu cartografic, fără zgomot vizual.
+    final rune = Paint()..color = QuizRealmColors.runeViolet.withValues(alpha: 0.38);
+    for (final point in [Offset(size.width / 2, 5), Offset(size.width / 2, size.height - 5)]) {
+      canvas.save();
+      canvas.translate(point.dx, point.dy);
+      canvas.rotate(0.785398);
+      canvas.drawRect(Rect.fromCenter(center: Offset.zero, width: 4, height: 4), rune);
+      canvas.restore();
+    }
   }
 
   @override

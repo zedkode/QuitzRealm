@@ -34,6 +34,15 @@ abstract final class QuizRealmColors {
   /// Starea selectată (element activ din bara de jos, filă activă).
   static const surfaceSelected = Color(0xFF012252);
 
+  /// Suprafețe și accente pentru noua identitate medieval-futuristă.
+  static const obsidian = Color(0xFF11111A);
+  static const obsidianRaised = Color(0xFF1B1726);
+  static const runeViolet = Color(0xFF8D6BDA);
+  static const runeVioletDeep = Color(0xFF372653);
+  static const astralTeal = Color(0xFF2BC7B4);
+  static const astralTealLight = Color(0xFF9BF4E9);
+  static const parchment = Color(0xFFF5E8C8);
+
   // --- Auriu: accentul metalic ---
 
   /// Reflexul de pe muchia ramei și textul pe fundal auriu.
@@ -224,6 +233,29 @@ abstract final class QuizRealmGradients {
     colors: [Color(0xFF0A3A86), Color(0xFF01204C)],
   );
 
+  /// Metal gravat: reflex de aur, bronz și umbră de obsidian.
+  static const heraldicGold = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFFFFE6A2), Color(0xFFE0AF48), Color(0xFF8D5A21)],
+    stops: [0.0, 0.52, 1.0],
+  );
+
+  /// Suprafață ritualică pentru panouri și carduri de profil.
+  static const engravedObsidian = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF242033), Color(0xFF11111A), Color(0xFF090A10)],
+    stops: [0.0, 0.58, 1.0],
+  );
+
+  /// Energie pentru hartă, avatar și controale active.
+  static const astralCurrent = LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [QuizRealmColors.runeVioletDeep, QuizRealmColors.runeViolet, QuizRealmColors.astralTeal],
+  );
+
   /// Umplerea barelor de progres.
   static const progressFill = LinearGradient(
     begin: Alignment.centerLeft,
@@ -267,6 +299,11 @@ abstract final class QuizRealmShadows {
   /// Strălucirea caldă a unei rame evidențiate.
   static const goldGlow = [
     BoxShadow(color: Color(0x44F6C46B), blurRadius: 16, spreadRadius: 1),
+  ];
+
+  static const runeGlow = [
+    BoxShadow(color: Color(0x668D6BDA), blurRadius: 22, spreadRadius: 1),
+    BoxShadow(color: Color(0x332BC7B4), blurRadius: 36, spreadRadius: 2),
   ];
 }
 

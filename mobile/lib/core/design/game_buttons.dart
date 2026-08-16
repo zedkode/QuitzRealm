@@ -72,16 +72,16 @@ class _PrimaryGameButtonState extends State<PrimaryGameButton> {
                     horizontal: QuizRealmSpacing.md,
                   ),
                   decoration: BoxDecoration(
-                    gradient: QuizRealmGradients.primaryButton,
+                    gradient: QuizRealmGradients.heraldicGold,
                     borderRadius: BorderRadius.circular(QuizRealmRadius.md),
                     border: Border.all(
-                      color: QuizRealmColors.gold,
+                      color: QuizRealmColors.goldLight,
                       width: widget.emphasized
                           ? QuizRealmBorders.emphasis
                           : QuizRealmBorders.frame,
                     ),
                     boxShadow: widget.emphasized && enabled
-                        ? QuizRealmShadows.electricGlow
+                        ? QuizRealmShadows.goldGlow
                         : QuizRealmShadows.panel,
                   ),
                   child: Row(
@@ -90,7 +90,7 @@ class _PrimaryGameButtonState extends State<PrimaryGameButton> {
                         GameIcon(
                           widget.symbol!,
                           size: 24,
-                          color: QuizRealmColors.goldBright,
+                          color: QuizRealmColors.textOnGold,
                         ),
                         const SizedBox(width: QuizRealmSpacing.sm),
                       ],
@@ -102,6 +102,7 @@ class _PrimaryGameButtonState extends State<PrimaryGameButton> {
                           overflow: TextOverflow.ellipsis,
                           style: QuizRealmTypography.buttonLabel.copyWith(
                             fontSize: widget.emphasized ? 20 : 17,
+                            color: QuizRealmColors.textOnGold,
                           ),
                         ),
                       ),
@@ -110,9 +111,7 @@ class _PrimaryGameButtonState extends State<PrimaryGameButton> {
                         GameIcon(
                           GameSymbol.chevronRight,
                           size: 20,
-                          color: widget.emphasized
-                              ? QuizRealmColors.electricGlow
-                              : QuizRealmColors.gold,
+                          color: QuizRealmColors.textOnGold,
                         ),
                       ] else if (widget.symbol != null)
                         // Păstrează eticheta centrată optic față de iconiță.
