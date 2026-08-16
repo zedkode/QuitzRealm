@@ -82,6 +82,8 @@ services:
       MAIL_TRANSPORT: ${MAIL_TRANSPORT:-console}
       RESEND_API_KEY: ${RESEND_API_KEY:-}
       MAIL_FROM: ${MAIL_FROM:-QuizRealm <no-reply@mail.dohotstudio.com>}
+      # Originile browser cărora li se permite CORS. Gol => niciun browser.
+      WEB_APP_ORIGINS: ${WEB_APP_ORIGINS:-}
     depends_on:
       postgres:
         condition: service_healthy
@@ -107,6 +109,7 @@ services:
       MATCH_STATE_TTL_SECONDS: ${MATCH_STATE_TTL_SECONDS:-3600}
       MATCH_TOTAL_ROUNDS: ${MATCH_TOTAL_ROUNDS:-5}
       RECONNECT_GRACE_MS: ${RECONNECT_GRACE_MS:-75000}
+      WEB_APP_ORIGINS: ${WEB_APP_ORIGINS:-}
     depends_on:
       redis:
         condition: service_healthy
@@ -114,6 +117,23 @@ services:
         condition: service_started
     ports:
       - "127.0.0.1:${REALTIME_HOST_PORT:-13001}:3001"
+    networks: [quizrealm]
+
+  # Panoul web (landing, arena, profil, leaderboard, admin). Nu are bază de date
+  # proprie: browserul vorbește direct cu `api` și `realtime` prin hostname-urile
+  # publice, deci URL-urile intră în bundle la build.
+  web:
+    build:
+      context: ../web
+      args:
+        VITE_QUIZREALM_API_URL: ${WEB_API_URL:-https://quizrealmapi.dohotstudio.com}
+        VITE_QUIZREALM_SOCKET_URL: ${WEB_SOCKET_URL:-https://quizrealmws.dohotstudio.com}
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    ports:
+      - "127.0.0.1:${WEB_HOST_PORT:-13002}:3000"
     networks: [quizrealm]
 
   # Nefolosit încă în runtime (assets-urile jocului sunt livrate în APK).

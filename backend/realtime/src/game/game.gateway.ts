@@ -21,11 +21,12 @@ import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { GameService } from './game.service';
 import { MatchProfile, publicMatchProfile } from './match-profile';
 import { MatchmakingService } from './matchmaking.service';
+import { socketCorsOrigin } from '../web-origins';
 
 @WebSocketGateway({
   namespace: '/game',
   transports: ['websocket'],
-  cors: { origin: false },
+  cors: { origin: socketCorsOrigin(), credentials: true },
 })
 @UsePipes(
   new ValidationPipe({

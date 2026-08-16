@@ -20,6 +20,7 @@ import {
   SendMatchReactionDto,
 } from './dto/chat.dto';
 import { ChatService, GLOBAL_ROOM } from './chat.service';
+import { socketCorsOrigin } from '../web-origins';
 
 /// Chatul stă pe același namespace `/game` ca partidele, cu prefixe de
 /// eveniment separate (`chat:*`). Un al doilea namespace ar însemna o a doua
@@ -27,7 +28,7 @@ import { ChatService, GLOBAL_ROOM } from './chat.service';
 @WebSocketGateway({
   namespace: '/game',
   transports: ['websocket'],
-  cors: { origin: false },
+  cors: { origin: socketCorsOrigin(), credentials: true },
 })
 @UsePipes(
   new ValidationPipe({
