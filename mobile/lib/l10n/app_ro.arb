@@ -1013,5 +1013,17 @@
   "playModeClassicSoon": "Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.",
   "@playModeClassicSoon": {
     "description": "Ecranul de pregatire a meciului"
+  },
+  "classicSearchingTitle": "Căutăm jucători",
+  "@classicSearchingTitle": {
+    "description": "Cautare meci Clasic"
+  },
+  "classicSearchingBody": "Partida pornește când se strâng {count} jucători.",
+  "@classicSearchingBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

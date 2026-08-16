@@ -1198,4 +1198,12 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get playModeClassicSoon =>
       'Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.';
+
+  @override
+  String get classicSearchingTitle => 'Căutăm jucători';
+
+  @override
+  String classicSearchingBody(int count) {
+    return 'Partida pornește când se strâng $count jucători.';
+  }
 }

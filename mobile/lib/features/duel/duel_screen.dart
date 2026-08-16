@@ -99,7 +99,12 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
                       const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          l10n.duelTitle,
+                          // Titlul urmează modul ales, nu presupune duel:
+                          // altfel o partidă Clasic de patru s-ar anunța
+                          // „Duel 1v1".
+                          widget.preferences.mode == MatchMode.classic
+                              ? l10n.playModeClassic
+                              : l10n.duelTitle,
                           style: GameText.heading.copyWith(
                             fontSize: 15,
                             color: GamePalette.crimson,
@@ -235,6 +240,9 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
       DuelPhase.idle ||
       DuelPhase.connecting => _DuelStatus(title: l10n.duelConnecting),
       DuelPhase.searching => _SearchingView(
+        playerCount: widget.preferences.mode == MatchMode.classic
+            ? widget.preferences.playerCount
+            : null,
         onCancel: () async {
           await ref.read(duelControllerProvider.notifier).leave();
           if (context.mounted) context.pop();
@@ -1063,9 +1071,12 @@ class _FinalLine extends StatelessWidget {
 }
 
 class _SearchingView extends StatelessWidget {
-  const _SearchingView({required this.onCancel});
+  const _SearchingView({required this.onCancel, this.playerCount});
 
   final VoidCallback onCancel;
+
+  /// Câți jucători se așteaptă la Clasic. `null` la duel, unde e mereu unul.
+  final int? playerCount;
 
   @override
   Widget build(BuildContext context) {
@@ -1079,14 +1090,19 @@ class _SearchingView extends StatelessWidget {
             const _PulsingCrest(),
             const SizedBox(height: 22),
             Text(
-              l10n.duelSearching,
+              playerCount == null
+                  ? l10n.duelSearching
+                  : l10n.classicSearchingTitle,
               key: const Key('duel-searching'),
               textAlign: TextAlign.center,
               style: GameText.title,
             ),
             const SizedBox(height: 10),
             Text(
-              l10n.duelSearchingHint,
+              // La Clasic aștepți mai mulți jucători, nu „un adversar".
+              playerCount == null
+                  ? l10n.duelSearchingHint
+                  : l10n.classicSearchingBody(playerCount!),
               textAlign: TextAlign.center,
               style: GameText.bodyDim,
             ),

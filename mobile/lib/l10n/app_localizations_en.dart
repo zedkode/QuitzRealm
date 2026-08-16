@@ -1193,4 +1193,12 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get playModeClassicSoon =>
       'The server already supports it, but the match screen still shows a single opponent.';
+
+  @override
+  String get classicSearchingTitle => 'Finding players';
+
+  @override
+  String classicSearchingBody(int count) {
+    return 'The match starts once $count players have joined.';
+  }
 }

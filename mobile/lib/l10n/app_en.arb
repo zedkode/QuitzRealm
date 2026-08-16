@@ -1013,5 +1013,17 @@
   "playModeClassicSoon": "The server already supports it, but the match screen still shows a single opponent.",
   "@playModeClassicSoon": {
     "description": "Ecranul de pregatire a meciului"
+  },
+  "classicSearchingTitle": "Finding players",
+  "@classicSearchingTitle": {
+    "description": "Cautare meci Clasic"
+  },
+  "classicSearchingBody": "The match starts once {count} players have joined.",
+  "@classicSearchingBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

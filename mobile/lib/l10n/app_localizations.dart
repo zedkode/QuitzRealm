@@ -2209,6 +2209,18 @@ abstract class AppLocalizations {
   /// In ro, this message translates to:
   /// **'Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.'**
   String get playModeClassicSoon;
+
+  /// Cautare meci Clasic
+  ///
+  /// In ro, this message translates to:
+  /// **'Căutăm jucători'**
+  String get classicSearchingTitle;
+
+  /// No description provided for @classicSearchingBody.
+  ///
+  /// In ro, this message translates to:
+  /// **'Partida pornește când se strâng {count} jucători.'**
+  String classicSearchingBody(int count);
 }
 
 class _AppLocalizationsDelegate
