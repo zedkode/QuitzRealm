@@ -91,12 +91,12 @@ class AchievementsScreen extends ConsumerWidget {
   }
 }
 
-class _AchievementList extends StatelessWidget {
+class _AchievementList extends ConsumerWidget {
   const _AchievementList({required this.items, required this.summary});
   final List<AchievementProgress> items;
   final AchievementSummary summary;
   @override
-  Widget build(BuildContext context) => ListView(
+  Widget build(BuildContext context, WidgetRef ref) => ListView(
     padding: const EdgeInsets.fromLTRB(14, 8, 14, 20),
     children: [
       GameFrame(
@@ -137,37 +137,40 @@ class _AchievementList extends StatelessWidget {
                 return Expanded(
                   child: Padding(
                     padding: EdgeInsets.only(right: slotIndex == 2 ? 0 : 8),
-                    child: Container(
-                      height: 50,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: GamePalette.stone800.withValues(alpha: .72),
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(
-                          color:
-                              (badge?.rarity == AchievementRarity.legendary
-                                      ? GamePalette.gold
-                                      : GamePalette.arcane)
-                                  .withValues(
-                                    alpha: badge?.achievementId == null
-                                        ? .22
-                                        : .7,
-                                  ),
+                    child: GestureDetector(
+                      onTap: () => _chooseBadge(context, ref, slotIndex),
+                      child: Container(
+                        height: 50,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: GamePalette.stone800.withValues(alpha: .72),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color:
+                                (badge?.rarity == AchievementRarity.legendary
+                                        ? GamePalette.gold
+                                        : GamePalette.arcane)
+                                    .withValues(
+                                      alpha: badge?.achievementId == null
+                                          ? .22
+                                          : .7,
+                                    ),
+                          ),
                         ),
+                        child: badge?.achievementId == null
+                            ? const GameIcon(
+                                GameSymbol.lock,
+                                size: 20,
+                                color: GamePalette.stone700,
+                              )
+                            : Text(
+                                badge?.title ?? 'Badge',
+                                maxLines: 2,
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.ellipsis,
+                                style: GameText.eyebrow.copyWith(fontSize: 9),
+                              ),
                       ),
-                      child: badge?.achievementId == null
-                          ? const GameIcon(
-                              GameSymbol.lock,
-                              size: 20,
-                              color: GamePalette.stone700,
-                            )
-                          : Text(
-                              badge?.title ?? 'Badge',
-                              maxLines: 2,
-                              textAlign: TextAlign.center,
-                              overflow: TextOverflow.ellipsis,
-                              style: GameText.eyebrow.copyWith(fontSize: 9),
-                            ),
                     ),
                   ),
                 );
@@ -184,6 +187,40 @@ class _AchievementList extends StatelessWidget {
         ),
     ],
   );
+
+  Future<void> _chooseBadge(
+    BuildContext context,
+    WidgetRef ref,
+    int slotIndex,
+  ) async {
+    final selected = await showModalBottomSheet<String?>(
+      context: context,
+      backgroundColor: GamePalette.stone800,
+      builder: (context) => SafeArea(
+        child: ListView(
+          shrinkWrap: true,
+          children: [
+            ListTile(
+              leading: const GameIcon(GameSymbol.cross, size: 22),
+              title: Text('Golește slotul', style: GameText.body),
+              onTap: () => Navigator.pop(context),
+            ),
+            for (final item in items.where((item) => item.isUnlocked))
+              ListTile(
+                leading: const GameIcon(GameSymbol.trophy, size: 22),
+                title: Text(item.title, style: GameText.body),
+                subtitle: Text('${item.points} PP', style: GameText.bodyDim),
+                onTap: () => Navigator.pop(context, item.id),
+              ),
+          ],
+        ),
+      ),
+    );
+    if (!context.mounted) return;
+    await ref
+        .read(achievementsControllerProvider.notifier)
+        .setBadgeSlot(slotIndex: slotIndex, achievementId: selected);
+  }
 }
 
 class _AchievementCard extends StatelessWidget {
