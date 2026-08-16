@@ -8,6 +8,7 @@ import {
   ConversationType,
   DmPermission,
   MessageScope,
+  OnlineVisibility,
   Prisma,
   ProfileVisibility,
 } from '@prisma/client';
@@ -94,6 +95,9 @@ export class ChatService {
 
   // --- Confidențialitate (§2.4) ---
 
+  /// Toate setările de confidențialitate ale contului, nu doar cele de chat:
+  /// §2.4 și §4.9 le cer în același tabel, iar restricția de minor trebuie
+  /// aplicată într-un singur loc, altfel al doilea apelant ar putea s-o uite.
   async getPrivacy(userId: string) {
     const settings = await this.prisma.userPrivacySettings.findUnique({
       where: { userId },
@@ -105,6 +109,10 @@ export class ChatService {
         : (settings?.dmPermission ?? DmPermission.FRIENDS_ONLY),
       profileVisibility:
         settings?.profileVisibility ?? ProfileVisibility.PUBLIC,
+      onlineVisibility: settings?.onlineVisibility ?? OnlineVisibility.FRIENDS,
+      allowMatchInvites: settings?.allowMatchInvites ?? true,
+      chatCensorship: settings?.chatCensorship ?? true,
+      chatNotifications: settings?.chatNotifications ?? true,
       /// Minorii nu pot ridica restricția; aplicația trebuie să afișeze
       /// setarea ca blocată, nu s-o ascundă.
       dmPermissionLocked: capabilities.dmPermissionLocked,
@@ -113,7 +121,14 @@ export class ChatService {
 
   async updatePrivacy(
     userId: string,
-    dto: { dmPermission?: DmPermission; profileVisibility?: ProfileVisibility },
+    dto: {
+      dmPermission?: DmPermission;
+      profileVisibility?: ProfileVisibility;
+      onlineVisibility?: OnlineVisibility;
+      allowMatchInvites?: boolean;
+      chatCensorship?: boolean;
+      chatNotifications?: boolean;
+    },
   ) {
     const capabilities = await this.capabilitiesOf(userId);
     if (
@@ -128,6 +143,10 @@ export class ChatService {
     const data = {
       dmPermission: dto.dmPermission,
       profileVisibility: dto.profileVisibility,
+      onlineVisibility: dto.onlineVisibility,
+      allowMatchInvites: dto.allowMatchInvites,
+      chatCensorship: dto.chatCensorship,
+      chatNotifications: dto.chatNotifications,
     };
     await this.prisma.userPrivacySettings.upsert({
       where: { userId },
@@ -135,6 +154,25 @@ export class ChatService {
       update: data,
     });
     return this.getPrivacy(userId);
+  }
+
+  /// Dacă [viewerId] are voie să vadă profilul lui [ownerId] (§4.9).
+  ///
+  /// Proprietarul își vede întotdeauna propriul profil, oricât de închis l-ar
+  /// fi setat: altfel și-ar pierde accesul la propriile setări.
+  async canViewProfile(viewerId: string | null, ownerId: string) {
+    if (viewerId === ownerId) return true;
+
+    const settings = await this.prisma.userPrivacySettings.findUnique({
+      where: { userId: ownerId },
+      select: { profileVisibility: true },
+    });
+    const visibility = settings?.profileVisibility ?? ProfileVisibility.PUBLIC;
+
+    if (visibility === ProfileVisibility.PRIVATE) return false;
+    if (visibility === ProfileVisibility.PUBLIC) return true;
+    if (viewerId === null) return false;
+    return this.friends.areFriends(viewerId, ownerId);
   }
 
   // --- Conversații (§2.3, §2.4) ---
