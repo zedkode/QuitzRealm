@@ -36,6 +36,16 @@ class ApiClient {
     return _send('PATCH', path, body: body, authenticated: authenticated);
   }
 
+  /// Pentru endpointurile idempotente, unde a apăsa de două ori trebuie să dea
+  /// aceeași stare (echiparea unui cosmetic, de exemplu).
+  Future<Object?> put(
+    String path, {
+    Object? body,
+    bool authenticated = false,
+  }) {
+    return _send('PUT', path, body: body, authenticated: authenticated);
+  }
+
   Future<Object?> delete(String path, {bool authenticated = false}) {
     return _send('DELETE', path, authenticated: authenticated);
   }

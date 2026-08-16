@@ -179,9 +179,9 @@ class ApiProfileRepository implements ProfileRepository {
           'profileVisibility': profileVisibility.wireValue,
         if (onlineVisibility != null)
           'onlineVisibility': onlineVisibility.wireValue,
-        if (allowMatchInvites != null) 'allowMatchInvites': allowMatchInvites,
-        if (chatCensorship != null) 'chatCensorship': chatCensorship,
-        if (chatNotifications != null) 'chatNotifications': chatNotifications,
+        'allowMatchInvites': ?allowMatchInvites,
+        'chatCensorship': ?chatCensorship,
+        'chatNotifications': ?chatNotifications,
       },
       authenticated: true,
     );

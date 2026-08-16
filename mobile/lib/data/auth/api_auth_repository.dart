@@ -1,6 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../../core/network/api_client.dart';
+import '../../domain/auth/account_session.dart';
 import '../../domain/auth/auth_repository.dart';
 
 class ApiAuthRepository implements AuthRepository {
@@ -59,6 +60,57 @@ class ApiAuthRepository implements AuthRepository {
       await _storage.delete(key: ApiClient.accessTokenKey);
       await _storage.delete(key: ApiClient.refreshTokenKey);
     }
+  }
+
+  @override
+  Future<List<AccountSession>> fetchSessions() async {
+    final payload = await _api.get('auth/sessions', authenticated: true);
+    if (payload is! List) return const [];
+    return payload
+        .whereType<Map<String, Object?>>()
+        .map(AccountSession.fromJson)
+        .toList(growable: false);
+  }
+
+  @override
+  Future<void> revokeSession(String sessionId) async {
+    await _api.delete('auth/sessions/$sessionId', authenticated: true);
+  }
+
+  @override
+  Future<int> revokeOtherSessions() async {
+    final payload = await _api.delete('auth/sessions', authenticated: true);
+    if (payload is! Map<String, Object?>) return 0;
+    final revoked = payload['revoked'];
+    return revoked is num ? revoked.round() : 0;
+  }
+
+  @override
+  Future<void> changePassword({
+    required String currentPassword,
+    required String newPassword,
+  }) async {
+    await _api.post(
+      'auth/password/change',
+      body: {
+        'currentPassword': currentPassword,
+        'newPassword': newPassword,
+      },
+      authenticated: true,
+    );
+  }
+
+  @override
+  Future<void> deleteAccount({String? password}) async {
+    await _api.post(
+      'auth/account/delete',
+      body: {'password': ?password},
+      authenticated: true,
+    );
+    // Contul nu mai există: tokenurile rămase pe dispozitiv n-ar mai putea fi
+    // reîmprospătate oricum, iar aplicația trebuie să pornească fără sesiune.
+    await _storage.delete(key: ApiClient.accessTokenKey);
+    await _storage.delete(key: ApiClient.refreshTokenKey);
   }
 
   Future<void> _saveTokens(Object? payload) async {
