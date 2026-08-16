@@ -45,6 +45,14 @@ class FakeRealtimeClient implements RealtimeClient {
   @override
   void leaveQueue() => leftQueue = true;
 
+  /// Ținta de atac trimisă serverului, pentru verificări în teste.
+  ({String matchId, String territoryId})? declaredAttack;
+
+  @override
+  void declareAttack({required String matchId, required String territoryId}) {
+    declaredAttack = (matchId: matchId, territoryId: territoryId);
+  }
+
   @override
   void sendAnswer({required String matchId, required String answer}) {
     sentAnswers.add((matchId: matchId, answer: answer));

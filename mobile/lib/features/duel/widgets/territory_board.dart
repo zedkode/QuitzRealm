@@ -17,6 +17,9 @@ class TerritoryBoard extends StatefulWidget {
     required this.myUserId,
     super.key,
     this.playerOrder = const [],
+    this.attackable = const [],
+    this.selectedTargetId,
+    this.onSelectTarget,
   });
 
   final TerritoryMap map;
@@ -26,6 +29,11 @@ class TerritoryBoard extends StatefulWidget {
   /// Ordinea jucătorilor, care le fixează culoarea. Trebuie să fie stabilă pe
   /// toată partida: altfel un jucător și-ar schimba culoarea între runde.
   final List<String> playerOrder;
+
+  /// Teritoriile pe care le pot ataca acum; restul nu răspund la atingere.
+  final List<String> attackable;
+  final String? selectedTargetId;
+  final ValueChanged<String>? onSelectTarget;
 
   @override
   State<TerritoryBoard> createState() => _TerritoryBoardState();
@@ -76,18 +84,41 @@ class _TerritoryBoardState extends State<TerritoryBoard>
 
     return AspectRatio(
       aspectRatio: 1,
-      child: AnimatedBuilder(
-        animation: _controller,
-        builder: (context, _) {
-          return CustomPaint(
-            painter: _BoardPainter(
-              map: widget.map,
-              ownership: widget.ownership,
-              previous: _previous,
-              changed: _changed,
-              progress: _controller.value,
-              colours: _colourAssignment(),
-              myUserId: widget.myUserId,
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final size = Size(constraints.maxWidth, constraints.maxHeight);
+          final layout = _BoardLayout(widget.map, size);
+
+          return GestureDetector(
+            onTapUp: widget.onSelectTarget == null
+                ? null
+                : (details) {
+                    final id = layout.territoryAt(details.localPosition);
+                    // Doar țintele legale răspund la atingere; altfel jucătorul
+                    // ar crede că a declarat un atac care n-a plecat nicăieri.
+                    if (id != null && widget.attackable.contains(id)) {
+                      widget.onSelectTarget!(id);
+                    }
+                  },
+            child: AnimatedBuilder(
+              animation: _controller,
+              builder: (context, _) {
+                return CustomPaint(
+                  size: size,
+                  painter: _BoardPainter(
+                    map: widget.map,
+                    ownership: widget.ownership,
+                    previous: _previous,
+                    changed: _changed,
+                    progress: _controller.value,
+                    colours: _colourAssignment(),
+                    myUserId: widget.myUserId,
+                    layout: layout,
+                    attackable: widget.attackable.toSet(),
+                    selectedTargetId: widget.selectedTargetId,
+                  ),
+                );
+              },
             ),
           );
         },
@@ -127,6 +158,83 @@ class _TerritoryBoardState extends State<TerritoryBoard>
   }
 }
 
+/// Geometria hărții: unde cade fiecare hexagon pe pânză.
+///
+/// Desenul și atingerea folosesc **aceeași** instanță. Dacă fiecare și-ar
+/// calcula centrele separat, o modificare la unul ar muta tăcut zonele
+/// sensibile ale celuilalt, iar atingerile ar nimeri alt teritoriu decât cel
+/// văzut.
+class _BoardLayout {
+  _BoardLayout(this.map, Size size) {
+    var minX = 0.0, maxX = 0.0, minY = 0.0, maxY = 0.0;
+    for (final territory in map.territories) {
+      final centre = _rawCentre(territory.coordinates, 1);
+      minX = math.min(minX, centre.dx);
+      maxX = math.max(maxX, centre.dx);
+      minY = math.min(minY, centre.dy);
+      maxY = math.max(maxY, centre.dy);
+    }
+
+    // Raza vine din întinderea reală a hărții: una de 8 jucători are aproape
+    // dublul celulelor uneia de 4 și ar ieși din ecran cu o valoare fixă.
+    radius = math.min(size.width / ((maxX - minX) + 2), size.height / ((maxY - minY) + 2));
+    _offset = Offset(
+      size.width / 2 - (minX + maxX) / 2 * radius,
+      size.height / 2 - (minY + maxY) / 2 * radius,
+    );
+
+    for (final territory in map.territories) {
+      centres[territory.id] = _rawCentre(territory.coordinates, radius) + _offset;
+    }
+  }
+
+  final TerritoryMap map;
+  late final double radius;
+  late final Offset _offset;
+  final Map<String, Offset> centres = {};
+
+  static Offset _rawCentre(HexCoordinates coordinates, double radius) {
+    return Offset(
+      radius * math.sqrt(3) * (coordinates.q + coordinates.r / 2),
+      radius * 1.5 * coordinates.r,
+    );
+  }
+
+  Path hexPath(String territoryId) {
+    final centre = centres[territoryId]!;
+    final path = Path();
+    for (var i = 0; i < 6; i++) {
+      final angle = math.pi / 180 * (60 * i - 30);
+      final point = Offset(
+        centre.dx + radius * 0.92 * math.cos(angle),
+        centre.dy + radius * 0.92 * math.sin(angle),
+      );
+      if (i == 0) {
+        path.moveTo(point.dx, point.dy);
+      } else {
+        path.lineTo(point.dx, point.dy);
+      }
+    }
+    return path..close();
+  }
+
+  /// Teritoriul atins. Se ia cel mai apropiat centru aflat în raza celulei —
+  /// mai iertător decât un test exact de poligon, ceea ce contează pe un ecran
+  /// unde degetul acoperă mai mult decât un hexagon.
+  String? territoryAt(Offset position) {
+    String? best;
+    var bestDistance = double.infinity;
+    for (final entry in centres.entries) {
+      final distance = (entry.value - position).distance;
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = entry.key;
+      }
+    }
+    return bestDistance <= radius ? best : null;
+  }
+}
+
 class _BoardPainter extends CustomPainter {
   const _BoardPainter({
     required this.map,
@@ -136,6 +244,9 @@ class _BoardPainter extends CustomPainter {
     required this.progress,
     required this.colours,
     required this.myUserId,
+    required this.layout,
+    required this.attackable,
+    required this.selectedTargetId,
   });
 
   final TerritoryMap map;
@@ -145,32 +256,14 @@ class _BoardPainter extends CustomPainter {
   final double progress;
   final Map<String, Color> colours;
   final String? myUserId;
+  final _BoardLayout layout;
+  final Set<String> attackable;
+  final String? selectedTargetId;
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Raza se calculează din întinderea reală a hărții, nu dintr-o constantă:
-    // o hartă de 8 jucători are aproape dublul celulelor uneia de 4 și ar ieși
-    // din ecran cu o valoare fixă.
-    var minQ = 0.0, maxQ = 0.0, minR = 0.0, maxR = 0.0;
     for (final territory in map.territories) {
-      final centre = _centreFor(territory.coordinates, 1);
-      minQ = math.min(minQ, centre.dx);
-      maxQ = math.max(maxQ, centre.dx);
-      minR = math.min(minR, centre.dy);
-      maxR = math.max(maxR, centre.dy);
-    }
-
-    final spanX = (maxQ - minQ) + 2;
-    final spanY = (maxR - minR) + 2;
-    final radius = math.min(size.width / spanX, size.height / spanY);
-    final offset = Offset(
-      size.width / 2 - (minQ + maxQ) / 2 * radius,
-      size.height / 2 - (minR + maxR) / 2 * radius,
-    );
-
-    for (final territory in map.territories) {
-      final centre = _centreFor(territory.coordinates, radius) + offset;
-      final path = _hexPath(centre, radius * 0.92);
+      final path = layout.hexPath(territory.id);
 
       final isChanged = changed.contains(territory.id);
       final from = _colourOf(previous.ownerOf(territory.id));
@@ -182,15 +275,32 @@ class _BoardPainter extends CustomPainter {
       canvas.drawPath(path, Paint()..color = fill);
 
       final isContested = territory.id == ownership.contestedTerritoryId;
+      final isTarget = territory.id == selectedTargetId;
+      final isAttackable = attackable.contains(territory.id);
+
       canvas.drawPath(
         path,
         Paint()
           ..style = PaintingStyle.stroke
-          ..strokeWidth = isContested ? 2.5 : 1
-          ..color = isContested
+          ..strokeWidth = isTarget || isContested ? 2.5 : 1
+          ..color = isTarget
+              ? QuizRealmColors.crimson
+              : isContested
               ? QuizRealmColors.goldBright
+              : isAttackable
+              ? QuizRealmColors.electric
               : QuizRealmColors.goldDeep,
       );
+
+      // Ținta aleasă primește un semn în mijloc: conturul singur se pierde
+      // printre celelalte hexagoane colorate.
+      if (isTarget) {
+        canvas.drawCircle(
+          layout.centres[territory.id]!,
+          layout.radius * 0.28,
+          Paint()..color = QuizRealmColors.crimson.withValues(alpha: 0.85),
+        );
+      }
 
       // Haloul de cucerire se stinge pe măsură ce animația avansează.
       if (isChanged && progress < 1) {
@@ -213,33 +323,11 @@ class _BoardPainter extends CustomPainter {
     return colours[userId] ?? QuizRealmColors.surfaceRaised;
   }
 
-  /// Centrul unei celule în coordonate axiale, pentru hexagoane „pointy-top".
-  Offset _centreFor(HexCoordinates coordinates, double radius) {
-    final x = radius * math.sqrt(3) * (coordinates.q + coordinates.r / 2);
-    final y = radius * 1.5 * coordinates.r;
-    return Offset(x, y);
-  }
-
-  Path _hexPath(Offset centre, double radius) {
-    final path = Path();
-    for (var i = 0; i < 6; i++) {
-      final angle = math.pi / 180 * (60 * i - 30);
-      final point = Offset(
-        centre.dx + radius * math.cos(angle),
-        centre.dy + radius * math.sin(angle),
-      );
-      if (i == 0) {
-        path.moveTo(point.dx, point.dy);
-      } else {
-        path.lineTo(point.dx, point.dy);
-      }
-    }
-    return path..close();
-  }
-
   @override
   bool shouldRepaint(_BoardPainter old) =>
       old.progress != progress ||
       old.ownership != ownership ||
+      old.selectedTargetId != selectedTargetId ||
+      old.attackable != attackable ||
       old.map != map;
 }

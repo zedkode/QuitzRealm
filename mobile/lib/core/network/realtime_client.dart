@@ -110,6 +110,11 @@ class RealtimeClient {
         );
       })
       ..on('round:answer-accepted', (_) => _emit(const DuelAnswerAccepted()))
+      ..on('battle:attack-declared', (data) {
+        final map = _asMap(data);
+        if (map == null) return;
+        _emit(DuelAttackDeclared(map['territoryId']?.toString() ?? ''));
+      })
       ..on('round:result', (data) {
         final map = _asMap(data);
         if (map == null) return;
@@ -270,6 +275,14 @@ class RealtimeClient {
   }
 
   void leaveQueue() => _socket?.emit('matchmaking:leave');
+
+  /// Declară ținta de atac pentru runda de luptă curentă.
+  void declareAttack({required String matchId, required String territoryId}) {
+    _socket?.emit('battle:declare-attack', {
+      'matchId': matchId,
+      'territoryId': territoryId,
+    });
+  }
 
   void sendAnswer({required String matchId, required String answer}) {
     _socket?.emit('round:answer', {'matchId': matchId, 'answer': answer});

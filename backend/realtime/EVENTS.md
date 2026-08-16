@@ -486,3 +486,45 @@ primește la intrare și la reconectare, apoi actualizează doar `ownership`.
 
 Adiacența e reciprocă și verificată prin teste: dacă A îl vede pe B ca vecin dar
 B nu-l vede pe A, faza de atac ar permite lovituri într-un singur sens.
+
+### Faza de luptă (`classic`)
+
+Când nu mai există teritorii libere, partida trece automat în faza de luptă:
+`contestedTerritoryId` devine `null`, iar cucerirea se face prin atacuri.
+
+**Client → server: `battle:declare-attack`**
+
+```json
+{ "matchId": "…", "territoryId": "t12" }
+```
+
+Serverul verifică adiacența: ținta trebuie să fie vecină cu un teritoriu deținut
+de atacator. Clientul poate ascunde restul, dar nu poate fi crezut pe cuvânt.
+Un spectator (jucător fără teritorii) primește eroare.
+
+**Server → client: `battle:attack-declared`** — confirmare trimisă **doar
+atacatorului**. Ținta e informație tactică; ceilalți o află abia la rezolvare.
+
+**`round:result` — câmp adițional `conquests`**
+
+```json
+{
+  "conquests": [
+    { "territoryId": "t12", "winnerId": "user-a", "previousOwnerId": "user-b" }
+  ]
+}
+```
+
+Regulile de rezolvare (§12.3 faza 2), aplicate simultan pentru toate țintele:
+
+1. contează doar atacatorii care au **răspuns corect**; dacă niciunul n-a
+   nimerit, teritoriul rămâne la proprietar — apărarea reușește implicit;
+2. la mai mulți atacatori pe aceeași țintă câștigă **cel mai rapid** dintre cei
+   corecți;
+3. un răspuns corect fără timp măsurat pierde în fața unuia cronometrat, altfel
+   absența unei valori ar fi mai bună decât un răspuns real;
+4. la timpi identici departajează identificatorul, ca rezultatul să nu depindă de
+   ordinea cheilor dintr-un obiect.
+
+Declarațiile **nu se moștenesc** între runde: fiecare rundă de luptă cere o țintă
+nouă.

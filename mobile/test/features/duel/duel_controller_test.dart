@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:quiz_realm/domain/duel/duel_events.dart';
 import 'package:quiz_realm/domain/duel/match_preferences.dart';
 import 'package:quiz_realm/domain/duel/territory_map.dart';
+import 'package:quiz_realm/domain/question/quiz_question.dart';
 import 'package:quiz_realm/features/duel/duel_controller.dart';
 
 import '../../support/fake_realtime_client.dart';
@@ -562,6 +563,92 @@ void main() {
     expect(controller.state.spectatorUserIds, contains('rival'));
     // Eu n-am fost eliminat, deci pot răspunde în continuare.
     expect(controller.state.amSpectator, isFalse);
+  });
+
+
+  /// Trimite un snapshot cu hartă, ca partida să fie în faza de luptă.
+  Future<void> enterBattlePhase(
+    FakeRealtimeClient client,
+    DuelController controller,
+  ) async {
+    await controller.start();
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    client.emit(
+      DuelMatchSnapshot(
+        matchId: 'm1',
+        isPaused: false,
+        roundNumber: 3,
+        totalRounds: 8,
+        deadline: DateTime.now().add(const Duration(seconds: 10)),
+        question: const QuizQuestion(
+          id: 'q1',
+          type: QuizQuestionType.multipleChoice,
+          categoryId: 'history',
+          difficulty: 2,
+          text: 'Test?',
+          options: ['a', 'b'],
+          categoryName: 'Istorie',
+        ),
+        players: const [],
+        territoryMap: const TerritoryMap(
+          playerCount: 2,
+          territories: [
+            Territory(
+              id: 't0',
+              coordinates: HexCoordinates(0, 0),
+              neighbourIds: ['t1'],
+            ),
+            Territory(
+              id: 't1',
+              coordinates: HexCoordinates(1, 0),
+              neighbourIds: ['t0'],
+            ),
+          ],
+        ),
+        territory: const TerritoryOwnership(
+          owners: {'t0': 'me', 't1': 'rival'},
+        ),
+      ),
+    );
+    await settle();
+  }
+
+  test('ținta legală ajunge la server', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+    await enterBattlePhase(client, controller);
+
+    expect(controller.state.attackableTerritories, ['t1']);
+    controller.declareAttack('t1');
+
+    expect(client.declaredAttack?.territoryId, 't1');
+  });
+
+  test('o țintă care nu e la graniță nu se trimite deloc', () async {
+    // Serverul ar refuza-o oricum; oprind-o aici, jucătorul nu vede o eroare
+    // pentru o atingere care n-avea ce să reușească.
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+    await enterBattlePhase(client, controller);
+
+    controller.declareAttack('t0');
+    expect(client.declaredAttack, isNull);
+  });
+
+  test('confirmarea serverului marchează ținta pe hartă', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+    await enterBattlePhase(client, controller);
+
+    client.emit(const DuelAttackDeclared('t1'));
+    await settle();
+
+    expect(controller.state.declaredTargetId, 't1');
   });
 
 }

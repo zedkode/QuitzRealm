@@ -292,6 +292,9 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
         numericController: _numericController,
         onAnswer: (answer) =>
             ref.read(duelControllerProvider.notifier).submitAnswer(answer),
+        onSelectTarget: (territoryId) => ref
+            .read(duelControllerProvider.notifier)
+            .declareAttack(territoryId),
       ),
     };
   }
@@ -553,11 +556,15 @@ class _DuelRoundView extends StatelessWidget {
     required this.state,
     required this.numericController,
     required this.onAnswer,
+    required this.onSelectTarget,
   });
 
   final DuelState state;
   final TextEditingController numericController;
   final ValueChanged<String> onAnswer;
+
+  /// Alegerea unei ținte pe hartă, în faza de luptă.
+  final ValueChanged<String> onSelectTarget;
 
   @override
   Widget build(BuildContext context) {
@@ -582,6 +589,9 @@ class _DuelRoundView extends StatelessWidget {
               playerOrder: state.standings
                   .map((standing) => standing.userId)
                   .toList(growable: false),
+              attackable: state.attackableTerritories,
+              selectedTargetId: state.declaredTargetId,
+              onSelectTarget: state.amSpectator ? null : onSelectTarget,
             ),
             const SizedBox(height: 10),
           ],

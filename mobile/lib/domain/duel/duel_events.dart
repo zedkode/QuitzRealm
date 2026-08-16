@@ -92,6 +92,13 @@ class DuelPlayerScore {
   final int? responseTimeMs;
 }
 
+/// Serverul a acceptat ținta declarată. Confirmarea vine doar la atacator.
+class DuelAttackDeclared extends DuelEvent {
+  const DuelAttackDeclared(this.territoryId);
+
+  final String territoryId;
+}
+
 class DuelRoundResult extends DuelEvent {
   const DuelRoundResult({
     required this.roundNumber,

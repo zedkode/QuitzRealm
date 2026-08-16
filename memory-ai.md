@@ -882,3 +882,78 @@ laptop între build și install.
 Faza de luptă (§12.3 faza 2) — ultima piesă de reguli. Până la ea, harta se umple
 în faza de capturare și se oprește; nimeni nu pierde teritorii, deci eliminarea
 și spectatorul (deja implementate și testate) nu se pot declanșa în joc.
+
+---
+
+## 2026-08-16 (XII) — Claude — Faza de luptă: regulile Clasicului sunt complete
+
+### Livrat
+
+- `battle-resolution.ts` (pur, 10 teste): `resolveAttacks` + `canAttack`.
+  Reguli, în ordine: doar atacatorii **corecți** contează (apărarea reușește
+  implicit); la mai mulți pe aceeași țintă câștigă cel mai rapid; un corect fără
+  timp măsurat pierde în fața unuia cronometrat (altfel absența unei valori ar
+  bate un răspuns real); la timpi egali departajează id-ul, ca rezultatul să nu
+  depindă de ordinea cheilor dintr-un obiect.
+- `MatchState.territory.attacks` — țintele declarate în runda curentă.
+  **Nu se moștenesc** între runde: fiecare rundă de luptă cere o țintă nouă.
+- `GameService.declareAttack` + `battle:declare-attack` în gateway. Validarea
+  adiacenței e pe server; spectatorii sunt refuzați.
+- Confirmarea `battle:attack-declared` merge **doar atacatorului**: ținta e
+  informație tactică, ceilalți o află la rezolvare.
+- `round:result.conquests` — ce teritoriu, cine l-a luat, de la cine.
+- Faza se comută automat: `phaseFor(ownership)` → `capture` cât există teritorii
+  libere, apoi `battle`. Punctajul de capturare nu se mai aplică în luptă.
+- `EVENTS.md` documentează contractul complet.
+
+### Stare
+
+Realtime: **63/63 trec**, `tsc --noEmit` curat.
+
+**Regulile modului Clasic sunt acum complete**: capturare → luptă → eliminare →
+clasament final pe loc. Eliminarea și modul spectator, implementate anterior, se
+pot declanșa efectiv de acum, fiindcă în faza de luptă se pierd teritorii.
+
+### Rămâne
+
+Clientul pentru faza de luptă: alegerea țintei pe hartă (atingi un teritoriu
+adiacent), trimiterea `battle:declare-attack` și animarea cuceririlor din
+`conquests`. Tabla desenează deja proprietatea; îi lipsește interacțiunea.
+
+---
+
+## 2026-08-16 (XIII) — Claude — Modul Clasic e jucabil cap la cap
+
+Ultima piesă: interacțiunea de atac în client.
+
+### Livrat
+
+- `TerritoryOwnership.attackableBy()` + `isBattlePhase` în Dart — oglindesc
+  regula de pe server. Sunt **doar afordanță vizuală**: verdictul îl dă serverul,
+  care refuză o țintă invalidă indiferent ce trimite clientul.
+- `_BoardLayout` — geometria hărții extrasă într-o clasă folosită de **desen și
+  atingere deopotrivă**. Dacă fiecare și-ar calcula centrele separat, o
+  modificare la unul ar muta tăcut zonele sensibile ale celuilalt, iar atingerile
+  ar nimeri alt teritoriu decât cel văzut.
+- `territoryAt()` alege cel mai apropiat centru aflat în raza celulei — mai
+  iertător decât un test exact de poligon, ceea ce contează pe un ecran unde
+  degetul acoperă mai mult decât un hexagon.
+- Țintele legale au contur electric; ținta aleasă are contur roșu **și** un semn
+  în mijloc, fiindcă un contur singur se pierde printre hexagoane colorate.
+- `RealtimeClient.declareAttack` + evenimentul `DuelAttackDeclared`.
+- `DuelState.declaredTargetId` se **golește** la fiecare `round:result`:
+  declarațiile nu se moștenesc pe server, deci n-au voie să rămână nici pe ecran.
+- Spectatorii nu primesc callback de atingere.
+
+### Teste
+
+Mobil **142/142**, realtime **63/63**. Trei teste noi acoperă: ținta legală ajunge
+la server, o țintă care nu e la graniță **nu se trimite deloc** (serverul ar
+refuza-o oricum, dar așa jucătorul nu vede o eroare pentru o atingere care n-avea
+ce să reușească), iar confirmarea serverului marchează ținta pe hartă.
+
+### Stare
+
+Modul Clasic e complet ca reguli și ca interacțiune: capturare → luptă →
+eliminare → clasament pe loc final. Netestat încă pe dispozitiv cu jucători
+reali — telefonul era deconectat la ultima încercare de instalare.

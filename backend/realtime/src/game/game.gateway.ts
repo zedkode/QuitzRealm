@@ -16,6 +16,7 @@ import { agreeOnCategories } from './category-selection';
 import { RealtimeAuthService } from '../auth/realtime-auth.service';
 import { PresenceService } from '../chat/presence.service';
 import { JoinMatchmakingDto } from './dto/join-matchmaking.dto';
+import { DeclareAttackDto } from './dto/declare-attack.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { GameService } from './game.service';
 import { MatchProfile, publicMatchProfile } from './match-profile';
@@ -142,6 +143,24 @@ export class GameGateway
     client.emit('matchmaking:left', {
       mode: profile?.clientMode ?? 'duo',
       playerCountTarget: profile?.playerCountTarget ?? 2,
+    });
+  }
+
+  @SubscribeMessage('battle:declare-attack')
+  async declareAttack(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() dto: DeclareAttackDto,
+  ): Promise<void> {
+    await this.game.declareAttack(
+      this.getUserId(client),
+      dto.matchId,
+      dto.territoryId,
+    );
+    // Confirmarea merge doar către cel care a declarat: ținta unui jucător e
+    // informație tactică, iar ceilalți o află abia la rezolvarea rundei.
+    client.emit('battle:attack-declared', {
+      matchId: dto.matchId,
+      territoryId: dto.territoryId,
     });
   }
 

@@ -53,6 +53,7 @@ class DuelState {
     this.territoryMap,
     this.territory,
     this.spectatorUserIds = const [],
+    this.declaredTargetId,
     this.errorMessage,
     this.isPaused = false,
     this.missingUserId,
@@ -98,6 +99,19 @@ class DuelState {
 
   /// Jucătorii trecuți în mod spectator (§12.6).
   final List<String> spectatorUserIds;
+
+  /// Ținta mea de atac, confirmată de server pentru runda curentă.
+  final String? declaredTargetId;
+
+  /// Teritoriile pe care le pot ataca acum. Gol în faza de capturare.
+  List<String> get attackableTerritories {
+    final map = territoryMap;
+    final ownership = territory;
+    final userId = myUserId;
+    if (map == null || ownership == null || userId == null) return const [];
+    if (!ownership.isBattlePhase) return const [];
+    return ownership.attackableBy(map, userId);
+  }
 
   /// Eu am fost eliminat: pot vedea partida, dar nu mai pot răspunde.
   bool get amSpectator =>
@@ -191,6 +205,8 @@ class DuelState {
     TerritoryMap? territoryMap,
     TerritoryOwnership? territory,
     List<String>? spectatorUserIds,
+    String? declaredTargetId,
+    bool clearDeclaredTarget = false,
     String? errorMessage,
     bool clearError = false,
     bool? isPaused,
@@ -229,6 +245,9 @@ class DuelState {
       territoryMap: territoryMap ?? this.territoryMap,
       territory: territory ?? this.territory,
       spectatorUserIds: spectatorUserIds ?? this.spectatorUserIds,
+      declaredTargetId: clearDeclaredTarget
+          ? null
+          : declaredTargetId ?? this.declaredTargetId,
       errorMessage: clearError ? null : errorMessage ?? this.errorMessage,
       isPaused: clearPause ? false : isPaused ?? this.isPaused,
       missingUserId: clearPause ? null : missingUserId ?? this.missingUserId,
@@ -305,6 +324,14 @@ class DuelController extends StateNotifier<DuelState> {
     state = state.copyWith(clearChatError: true);
   }
 
+  /// Trimite ținta de atac aleasă pe hartă.
+  void declareAttack(String territoryId) {
+    final matchId = state.matchId;
+    if (matchId == null || state.amSpectator) return;
+    if (!state.attackableTerritories.contains(territoryId)) return;
+    _client.declareAttack(matchId: matchId, territoryId: territoryId);
+  }
+
   Future<void> leave() async {
     _timer?.cancel();
     _client.leaveQueue();
@@ -375,6 +402,8 @@ class DuelController extends StateNotifier<DuelState> {
         if (state.phase == DuelPhase.roundActive) {
           state = state.copyWith(phase: DuelPhase.waitingOpponent);
         }
+      case DuelAttackDeclared(:final territoryId):
+        state = state.copyWith(declaredTargetId: territoryId);
       case DuelRoundResult():
         _timer?.cancel();
         // Scorurile din eveniment sunt cumulate, deci diferența față de runda
@@ -408,6 +437,9 @@ class DuelController extends StateNotifier<DuelState> {
             ),
           ),
           territory: event.territory,
+          // Declarația nu se moștenește între runde pe server, n-are voie să
+          // rămână nici pe ecran: ar arăta o țintă care nu mai e trimisă.
+          clearDeclaredTarget: true,
           spectatorUserIds: event.eliminatedUserIds.isEmpty
               ? null
               : [...state.spectatorUserIds, ...event.eliminatedUserIds],

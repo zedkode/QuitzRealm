@@ -140,6 +140,32 @@ final class TerritoryOwnership {
     return changed;
   }
 
+  /// Teritoriile pe care [userId] le poate ataca: vecine cu ale lui, ale
+  /// altcuiva.
+  ///
+  /// E doar afordanță vizuală — evidențiem ce se poate atinge. Verdictul îl dă
+  /// tot serverul, care refuză o țintă invalidă indiferent ce trimite clientul.
+  List<String> attackableBy(TerritoryMap map, String userId) {
+    final mine = owners.entries
+        .where((entry) => entry.value == userId)
+        .map((entry) => entry.key)
+        .toSet();
+    if (mine.isEmpty) return const [];
+
+    final targets = <String>{};
+    for (final territory in map.territories) {
+      if (!mine.contains(territory.id)) continue;
+      for (final neighbour in territory.neighbourIds) {
+        final owner = owners[neighbour];
+        if (owner != null && owner != userId) targets.add(neighbour);
+      }
+    }
+    return targets.toList(growable: false)..sort();
+  }
+
+  /// Faza partidei: se capturează cât mai există teritorii libere.
+  bool get isBattlePhase => !owners.values.any((owner) => owner == null);
+
   static TerritoryOwnership fromJson(Map<String, Object?> json) {
     final rawOwners = json['ownership'];
     final owners = <String, String?>{};
