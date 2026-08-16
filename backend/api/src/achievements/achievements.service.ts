@@ -90,15 +90,32 @@ export class AchievementsService {
         ['correct_answers', entry.correctAnswersTotal],
         ['matches_played', await db.matchPlayer.count({ where: { userId: entry.userId } })],
       ]);
-      if (entry.mode === MatchMode.DUO && entry.result === MatchResult.WIN) {
+      if (entry.result === MatchResult.WIN) {
+        const metricForMode: Partial<Record<MatchMode, AchievementMetric>> = {
+          [MatchMode.DUO]: 'duo_wins',
+          [MatchMode.CLASSIC]: 'classic_wins',
+          [MatchMode.BLITZ]: 'blitz_wins',
+        };
+        finalMetric: {
+          const metric = metricForMode[entry.mode];
+          if (!metric) break finalMetric;
+          metricValues.set(
+            metric,
+            await db.matchPlayer.count({
+              where: {
+                userId: entry.userId,
+                result: MatchResult.WIN,
+                match: { mode: entry.mode },
+              },
+            }),
+          );
+        }
+      }
+      if (entry.mode === MatchMode.PRIVATE) {
         metricValues.set(
-          'duo_wins',
+          'private_matches',
           await db.matchPlayer.count({
-            where: {
-              userId: entry.userId,
-              result: MatchResult.WIN,
-              match: { mode: MatchMode.DUO },
-            },
+            where: { userId: entry.userId, match: { mode: MatchMode.PRIVATE } },
           }),
         );
       }

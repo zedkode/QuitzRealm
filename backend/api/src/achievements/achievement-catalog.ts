@@ -1,4 +1,10 @@
-export type AchievementMetric = 'correct_answers' | 'duo_wins' | 'matches_played';
+export type AchievementMetric =
+  | 'correct_answers'
+  | 'duo_wins'
+  | 'classic_wins'
+  | 'blitz_wins'
+  | 'private_matches'
+  | 'matches_played';
 
 export interface AchievementBlueprint {
   templateKey: string;
@@ -33,6 +39,35 @@ export const ACHIEVEMENT_BLUEPRINTS: readonly AchievementBlueprint[] = [
     descriptionTemplate: 'Câștigă {threshold} dueluri Duo.',
     pointsBase: 15,
     badgeAssetTemplate: 'duo_win_{threshold}',
+  },
+  {
+    templateKey: 'victory.classic_wins',
+    category: 'victory',
+    metric: 'classic_wins',
+    thresholds: [1, 10, 50, 100, 500],
+    titleTemplate: 'Conchistador: {threshold}',
+    descriptionTemplate: 'Câștigă {threshold} partide Clasice.',
+    pointsBase: 15,
+    badgeAssetTemplate: 'classic_win_{threshold}',
+  },
+  {
+    templateKey: 'victory.blitz_wins',
+    category: 'victory',
+    metric: 'blitz_wins',
+    thresholds: [1, 10, 50, 100, 500],
+    titleTemplate: 'Fulger: {threshold}',
+    descriptionTemplate: 'Câștigă {threshold} partide Blitz.',
+    pointsBase: 18,
+    badgeAssetTemplate: 'blitz_win_{threshold}',
+  },
+  {
+    templateKey: 'exploration.private_matches',
+    category: 'exploration',
+    metric: 'private_matches',
+    thresholds: [1, 10, 50],
+    titleTemplate: 'Gazdă: {threshold}',
+    descriptionTemplate: 'Finalizează {threshold} partide private.',
+    pointsBase: 8,
   },
   {
     templateKey: 'exploration.matches_played',
