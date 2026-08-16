@@ -70,6 +70,11 @@ model User {
   birthDate         DateTime? @map("birth_date") @db.Date
   passwordHash      String?   @map("password_hash")
   googleId          String?   @unique @map("google_id")
+  /// Secret TOTP criptat AES-GCM; nu este niciodată expus după activare.
+  twoFactorSecret   String?   @map("two_factor_secret") @db.Text
+  twoFactorEnabledAt DateTime? @map("two_factor_enabled_at")
+  /// Coduri de recuperare păstrate doar ca hash-uri Argon2.
+  twoFactorRecoveryCodes Json? @map("two_factor_recovery_codes")
   /// Țara declarată (ISO-3166 alpha-2), pentru clasamentele naționale din
   /// `owner-plan.md` §10.4. Se schimbă rar — vezi `regionChangedAt`.
   countryCode       String?   @map("country_code") @db.VarChar(2)
@@ -88,6 +93,10 @@ model User {
   /// Mut temporar la chat, pus automat de detectia de spam sau manual de
   /// moderare. `null` = fara restrictie.
   chatMutedUntil    DateTime? @map("chat_muted_until")
+  /// Shadow-ban limitat la chatul global: expeditorul își vede mesajele, dar
+  /// acestea nu sunt livrate celorlalți jucători. Este rezervat recidivei,
+  /// după review de moderare; nu afectează conversațiile cu prietenii/DM.
+  globalChatShadowBannedUntil DateTime? @map("global_chat_shadow_banned_until")
 
   createdQuestions   Question[]                @relation("QuestionCreator")
   reviewedQuestions  Question[]                @relation("QuestionReviewer")
@@ -97,6 +106,8 @@ model User {
   questionReports    QuestionReport[]
   sessions           UserSession[]
   authTokens         AuthToken[]
+  /// O conversie unică a progresului solo de pe un dispozitiv invitat.
+  guestMigration     GuestMigration?
   privacy            UserPrivacySettings?
   profile            UserProfile?
   links              UserLink[]
@@ -109,6 +120,9 @@ model User {
   messages           Message[]
   chatReportsMade    ChatReport[]              @relation("ChatReporter")
   chatReportsAgainst ChatReport[]              @relation("ChatReported")
+  achievements       UserAchievement[]
+  achievementBadges  UserBadgeSlot[]
+  achievementShowcase UserProfileShowcase[]
 
   @@map("users")
 }
@@ -201,6 +215,9 @@ model UserPrivacySettings {
   onlineVisibility  OnlineVisibility  @default(FRIENDS) @map("online_visibility")
   /// Invitatiile la partide de la alti jucatori (captura 04-account-settings).
   allowMatchInvites Boolean           @default(true) @map("allow_match_invites")
+  /// Sugestiile bazate pe jucători întâlniți recent sunt strict opt-in pentru
+  /// ambele conturi; implicarea în aceeași partidă nu publică automat o relație.
+  allowFriendSuggestions Boolean      @default(false) @map("allow_friend_suggestions")
   /// Cenzura din chat. Nu opreste moderarea si raportarea - schimba doar ce
   /// vede jucatorul, nu ce e permis sa se scrie.
   chatCensorship    Boolean           @default(true) @map("chat_censorship")
@@ -330,6 +347,16 @@ enum ChatReportResolution {
   @@map("chat_report_resolution")
 }
 
+enum AchievementRarity {
+  COMMON    @map("common")
+  RARE      @map("rare")
+  EPIC      @map("epic")
+  LEGENDARY @map("legendary")
+  MYTHIC    @map("mythic")
+
+  @@map("achievement_rarity")
+}
+
 model ChatReport {
   id              String               @id @default(uuid()) @db.Uuid
   /// `null` pentru mesajele globale, care nu se persista. Continutul e copiat
@@ -355,9 +382,113 @@ model ChatReport {
   @@map("chat_reports")
 }
 
+/// Șablon parametrizat: un singur rând poate genera zeci sau sute de
+/// achievements, fără listarea manuală a 1.000+ obiecte în migrații.
+model AchievementTemplate {
+  id                  String        @id @default(uuid()) @db.Uuid
+  templateKey         String        @unique @map("template_key") @db.VarChar(80)
+  category            String        @db.VarChar(40)
+  paramSchema         Json          @map("param_schema")
+  titleTemplate       String        @map("title_template") @db.VarChar(160)
+  descriptionTemplate String        @map("description_template") @db.VarChar(400)
+  badgeAssetTemplate  String?       @map("badge_asset_template") @db.VarChar(160)
+  pointsBase          Int           @default(10) @map("points_base")
+  createdAt           DateTime      @default(now()) @map("created_at")
+
+  achievements Achievement[]
+
+  @@map("achievement_templates")
+}
+
+/// Instanță expandată dintr-un template. Titlul și descrierea sunt rezolvate la
+/// generare pentru ca aplicația să le poată afișa fără un motor de template.
+model Achievement {
+  id          String            @id @default(uuid()) @db.Uuid
+  templateId  String            @map("template_id") @db.Uuid
+  instanceKey String            @unique @map("instance_key") @db.VarChar(120)
+  params      Json
+  title       String            @db.VarChar(160)
+  description String            @db.VarChar(400)
+  rarity      AchievementRarity @default(COMMON)
+  points      Int               @default(10)
+  target      Int               @default(1)
+  isHidden    Boolean           @default(false) @map("is_hidden")
+  createdAt   DateTime          @default(now()) @map("created_at")
+
+  template       AchievementTemplate    @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  userProgress   UserAchievement[]
+  badgeSlots     UserBadgeSlot[]
+  showcaseSlots  UserProfileShowcase[]
+
+  @@index([templateId])
+  @@index([rarity])
+  @@map("achievements")
+}
+
+/// Progresul este actualizat doar din evenimente server-side validate, iar
+/// deblocarea se deduce din `progressCurrent >= target` într-o tranzacție.
+model UserAchievement {
+  userId          String   @map("user_id") @db.Uuid
+  achievementId   String   @map("achievement_id") @db.Uuid
+  progressCurrent Int      @default(0) @map("progress_current")
+  unlockedAt      DateTime? @map("unlocked_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@id([userId, achievementId])
+  @@index([userId, unlockedAt])
+  @@map("user_achievements")
+}
+
+/// Maximum trei badge-uri achievement lângă avatar. Rank badge-urile rămân
+/// separate, conform §3.4 și §5.3.
+model UserBadgeSlot {
+  userId        String  @map("user_id") @db.Uuid
+  slotIndex     Int     @map("slot_index")
+  achievementId String? @map("achievement_id") @db.Uuid
+
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement? @relation(fields: [achievementId], references: [id], onDelete: SetNull)
+
+  @@id([userId, slotIndex])
+  @@map("user_badge_slots")
+}
+
+/// Showcase-ul de profil este independent de sloturile de badge și are până la
+/// șase poziții, alese manual de jucător.
+model UserProfileShowcase {
+  userId        String @map("user_id") @db.Uuid
+  position      Int
+  achievementId String @map("achievement_id") @db.Uuid
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@id([userId, position])
+  @@index([achievementId])
+  @@map("user_profile_showcase")
+}
+
 /// O sesiune activă = un dispozitiv conectat. Refresh token-ul trăiește aici,
 /// nu pe `users`, ca un login nou să nu deconecteze celelalte dispozitive și
 /// ca fiecare sesiune să poată fi revocată separat.
+/// Transferul o singură dată al progresului de campanie jucat ca invitat.
+/// Datele rămân separate de XP/ELO online: clientul local nu poate acorda
+/// recompense competitive doar printr-un payload de migrare.
+model GuestMigration {
+  id               String   @id @default(uuid()) @db.Uuid
+  guestId          String   @unique @map("guest_id") @db.VarChar(128)
+  userId           String   @unique @map("user_id") @db.Uuid
+  campaignProgress Json     @map("campaign_progress")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("guest_migrations")
+}
+
 model UserSession {
   id               String    @id @default(uuid()) @db.Uuid
   userId           String    @map("user_id") @db.Uuid
@@ -381,6 +512,8 @@ model UserSession {
 enum AuthTokenPurpose {
   EMAIL_VERIFICATION @map("email_verification")
   PASSWORD_RESET     @map("password_reset")
+  TWO_FACTOR_LOGIN   @map("two_factor_login")
+  MOBILE_OAUTH_EXCHANGE @map("mobile_oauth_exchange")
 
   @@map("auth_token_purpose")
 }

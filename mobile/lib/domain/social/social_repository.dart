@@ -19,6 +19,12 @@ abstract class SocialRepository {
 
   Future<void> unblockUser(String userId);
 
+  /// Jucători întâlniți recent; API-ul îi întoarce numai când ambele conturi au
+  /// consimțit explicit să participe la sugestii.
+  Future<FriendSuggestionFeed> fetchFriendSuggestions();
+
+  Future<bool> updateFriendSuggestionsEnabled(bool enabled);
+
   Future<List<Conversation>> fetchConversations();
 
   /// Deschide (sau regăsește) firul 1:1 cu un jucător. Poate eșua dacă treapta

@@ -52,6 +52,22 @@ class ApiSocialRepository implements SocialRepository {
   }
 
   @override
+  Future<FriendSuggestionFeed> fetchFriendSuggestions() async {
+    final payload = await _api.get('friends/suggestions', authenticated: true);
+    return FriendSuggestionFeed.fromJson(_map(payload));
+  }
+
+  @override
+  Future<bool> updateFriendSuggestionsEnabled(bool enabled) async {
+    final payload = await _api.patch(
+      'friends/suggestions/preference',
+      body: {'enabled': enabled},
+      authenticated: true,
+    );
+    return _map(payload)['enabled'] == true;
+  }
+
+  @override
   Future<List<Conversation>> fetchConversations() async {
     final payload = await _api.get('chat/conversations', authenticated: true);
     return _list(payload).map(Conversation.fromJson).toList(growable: false);
@@ -94,10 +110,7 @@ class ApiSocialRepository implements SocialRepository {
   }
 
   @override
-  Future<ChatMessage> sendMessage(
-    String conversationId,
-    String content,
-  ) async {
+  Future<ChatMessage> sendMessage(String conversationId, String content) async {
     final payload = await _api.post(
       'chat/conversations/$conversationId/messages',
       body: {'content': content},

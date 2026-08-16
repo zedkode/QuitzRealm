@@ -189,6 +189,9 @@ export interface GlobalChatContext {
   canPostLinksInGlobal: boolean;
   tier: number;
   mutedUntil: string | null;
+  /// Shadow-ban aplicat numai la livrarea mesajelor globale. Clientul expeditor
+  /// primește confirmarea normală, ceilalți jucători nu primesc mesajul.
+  shadowBannedUntil: string | null;
   /// Perechile blocate în ambele sensuri; realtime nu livrează între ele.
   blockedUserIds: string[];
 }

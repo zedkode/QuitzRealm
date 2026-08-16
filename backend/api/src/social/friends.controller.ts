@@ -6,6 +6,7 @@ import {
   HttpCode,
   Param,
   ParseUUIDPipe,
+  Patch,
   Post,
   Req,
   UseGuards,
@@ -15,7 +16,11 @@ import type { Request } from 'express';
 import { AuthenticatedUser } from '../auth/auth.types';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { InternalApiKeyGuard } from '../common/guards/internal-api-key.guard';
-import { RequestFriendshipDto, RespondFriendshipDto } from './dto/friends.dto';
+import {
+  RequestFriendshipDto,
+  RespondFriendshipDto,
+  UpdateFriendSuggestionPreferenceDto,
+} from './dto/friends.dto';
 import { FriendsService } from './friends.service';
 
 type AuthenticatedRequest = Request & { user: AuthenticatedUser };
@@ -28,6 +33,21 @@ export class FriendsController {
   @Get()
   list(@Req() request: AuthenticatedRequest) {
     return this.friends.list(request.user.id);
+  }
+
+  /// Sugestiile sunt returnate numai când jucătorul a optat explicit pentru
+  /// această funcție; candidații au făcut același lucru.
+  @Get('suggestions')
+  suggestions(@Req() request: AuthenticatedRequest) {
+    return this.friends.suggestions(request.user.id);
+  }
+
+  @Patch('suggestions/preference')
+  updateSuggestionPreference(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: UpdateFriendSuggestionPreferenceDto,
+  ) {
+    return this.friends.setFriendSuggestionsEnabled(request.user.id, dto.enabled);
   }
 
   /// Limitat strict: fără plafon, cererile de prietenie în masă ar fi cel mai

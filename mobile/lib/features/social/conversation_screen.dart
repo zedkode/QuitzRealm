@@ -12,6 +12,7 @@ import '../../core/ui/game_frame.dart';
 import '../../core/ui/game_icons.dart';
 import '../../core/ui/realm_backdrop.dart';
 import '../../domain/social/social_models.dart';
+import '../../domain/social/social_realtime_event.dart';
 import '../../l10n/app_localizations.dart';
 
 /// Firul unei conversații 1:1 (prieteni sau DM acceptat).
@@ -30,8 +31,7 @@ class ConversationScreen extends ConsumerStatefulWidget {
   final String? title;
 
   @override
-  ConsumerState<ConversationScreen> createState() =>
-      _ConversationScreenState();
+  ConsumerState<ConversationScreen> createState() => _ConversationScreenState();
 }
 
 class _ConversationScreenState extends ConsumerState<ConversationScreen> {
@@ -42,22 +42,20 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
   bool _loading = true;
   bool _sending = false;
   String? _error;
-  Timer? _poll;
+  StreamSubscription<SocialRealtimeEvent>? _socialSubscription;
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _load());
-    // Livrarea în timp real a mesajelor directe merge prin `chat:message` din
-    // `backend/realtime`. Până când clientul de socket e legat la el, ecranul
-    // deschis reîmprospătează firul periodic — un chat în care mesajul
-    // celuilalt apare abia la redeschidere n-ar fi un chat.
-    _poll = Timer.periodic(const Duration(seconds: 4), (_) => _refresh());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _load();
+      _startLiveDelivery();
+    });
   }
 
   @override
   void dispose() {
-    _poll?.cancel();
+    _socialSubscription?.cancel();
     _composer.dispose();
     _scroll.dispose();
     super.dispose();
@@ -84,24 +82,32 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
     }
   }
 
-  /// Reîmprospătare tăcută: fără indicator de încărcare și fără erori pe ecran,
-  /// ca o pană de rețea de o secundă să nu clipească peste conversație.
-  Future<void> _refresh() async {
-    if (!mounted || _loading) return;
-    try {
-      final messages = await ref
-          .read(socialRepositoryProvider)
-          .fetchMessages(widget.conversationId);
-      if (!mounted) return;
-      final known = _messages.map((message) => message.id).toSet();
-      final fresh = messages
-          .where((message) => !known.contains(message.id))
-          .toList(growable: false);
-      if (fresh.isEmpty) return;
-      setState(() => _messages = [..._messages, ...fresh]);
-      _scrollToEnd();
-    } catch (_) {
-      // Tăcut intenționat: următorul ciclu reîncearcă.
+  Future<void> _startLiveDelivery() async {
+    final client = ref.read(realtimeClientProvider);
+    _socialSubscription ??= client.socialEvents.listen(_onLiveEvent);
+    await client.connect();
+  }
+
+  void _onLiveEvent(SocialRealtimeEvent event) {
+    switch (event) {
+      case DirectChatMessageReceived(:final message):
+        if (message.conversationId != widget.conversationId || !mounted) return;
+        if (_messages.any((entry) => entry.id == message.id)) return;
+        setState(() {
+          _messages = [..._messages, message];
+          _sending = false;
+        });
+        _scrollToEnd();
+      case SocialChatRejected(scope: 'direct'):
+        if (!mounted) return;
+        setState(() => _sending = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context).authGenericError),
+          ),
+        );
+      default:
+        break;
     }
   }
 
@@ -109,14 +115,23 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
     final content = _composer.text.trim();
     if (content.isEmpty || _sending) return;
     setState(() => _sending = true);
+    final client = ref.read(realtimeClientProvider);
+    if (client.isConnected) {
+      // Gateway-ul trimite mesajul înapoi și către expeditor; adăugăm în fir
+      // numai răspunsul validat server-side, pentru a evita duplicatele.
+      client.sendDirectChat(
+        conversationId: widget.conversationId,
+        content: content,
+      );
+      _composer.clear();
+      return;
+    }
     try {
       final sent = await ref
           .read(socialRepositoryProvider)
           .sendMessage(widget.conversationId, content);
       if (!mounted) return;
       setState(() {
-        // Textul afișat e cel întors de server: profanitatea vine deja
-        // mascată, deci ecranul nu poate arăta altceva decât a fost salvat.
         _messages = [..._messages, sent];
         _sending = false;
       });
@@ -125,9 +140,8 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
     } on ApiException catch (error) {
       if (!mounted) return;
       setState(() => _sending = false);
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text(error.message)));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(error.message)));
     }
   }
 
@@ -276,7 +290,10 @@ class _ConversationScreenState extends ConsumerState<ConversationScreen> {
                   style: GameText.eyebrow.copyWith(fontSize: 10),
                 ),
                 const SizedBox(height: 3),
-                Text(message.content, style: GameText.body.copyWith(fontSize: 13)),
+                Text(
+                  message.content,
+                  style: GameText.body.copyWith(fontSize: 13),
+                ),
               ],
             ),
           ),

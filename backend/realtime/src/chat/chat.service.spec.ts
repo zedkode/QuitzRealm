@@ -71,6 +71,7 @@ describe('ChatService match chat', () => {
       canPostLinksInGlobal: false,
       tier: 0,
       mutedUntil: null,
+      shadowBannedUntil: null,
       blockedUserIds: [],
       ...overrides,
     };
@@ -131,6 +132,23 @@ describe('ChatService match chat', () => {
         messages: [expect.objectContaining({ content: 'Bun duel!' })],
       }),
     );
+  });
+
+  it('păstrează mesajul shadow-banned numai în istoricul autorului', async () => {
+    api.getGlobalChatContext.mockResolvedValue(
+      context('public', {
+        shadowBannedUntil: new Date(Date.now() + 60_000).toISOString(),
+      }),
+    );
+
+    const sent = await service.sendGlobal(userId, 'Mesaj sancționat');
+    expect(sent).toEqual(
+      expect.objectContaining({ ok: true, shadowBanned: true }),
+    );
+    await expect(service.recentGlobal()).resolves.toEqual([]);
+    await expect(service.recentGlobal(userId)).resolves.toEqual([
+      expect.objectContaining({ content: 'Mesaj sancționat', senderId: userId }),
+    ]);
   });
 
   it('aplică mutul și reacțiilor presetate', async () => {

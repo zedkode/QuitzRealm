@@ -1,5 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quiz_realm/domain/auth/account_session.dart';
 import 'package:quiz_realm/domain/auth/auth_repository.dart';
+import 'package:quiz_realm/domain/auth/two_factor_challenge.dart';
 import 'package:quiz_realm/features/auth/auth_controller.dart';
 
 class _FakeAuthRepository implements AuthRepository {
@@ -14,12 +16,34 @@ class _FakeAuthRepository implements AuthRepository {
   Future<bool> hasSession() async => sessionExists;
 
   @override
-  Future<void> login({
+  Future<TwoFactorChallenge?> login({
     required String email,
     required String password,
   }) async {
     sessionExists = true;
+    return null;
   }
+
+  @override
+  Future<TwoFactorChallenge?> loginWithGoogle() async {
+    sessionExists = true;
+    return null;
+  }
+
+  @override
+  Future<void> completeTwoFactorLogin({
+    required String challengeToken,
+    required String code,
+  }) async => sessionExists = true;
+
+  @override
+  Future<void> requestPasswordReset(String email) async {}
+
+  @override
+  Future<void> migrateGuestProgress({
+    required String guestId,
+    required Map<String, Object?> campaignProgress,
+  }) async {}
 
   @override
   Future<void> register({
@@ -27,6 +51,7 @@ class _FakeAuthRepository implements AuthRepository {
     required String email,
     required String password,
     required DateTime birthDate,
+    String? captchaToken,
   }) async {
     sessionExists = true;
   }
@@ -42,15 +67,48 @@ class _FakeAuthRepository implements AuthRepository {
     if (logoutThrows) throw Exception('serverul a refuzat tokenul');
     sessionExists = false;
   }
+
+  @override
+  Future<List<AccountSession>> fetchSessions() async => const [];
+
+  @override
+  Future<void> revokeSession(String sessionId) async {}
+
+  @override
+  Future<int> revokeOtherSessions() async => 0;
+
+  @override
+  Future<String> startTwoFactorEnrollment({
+    required String currentPassword,
+  }) async => 'otpauth://totp/QuizRealm:test?secret=TEST';
+
+  @override
+  Future<List<String>> confirmTwoFactorEnrollment({
+    required String currentPassword,
+    required String code,
+  }) async => const ['AAAAA-BBBBB'];
+
+  @override
+  Future<void> disableTwoFactor({
+    required String currentPassword,
+    required String code,
+  }) async {}
+
+  @override
+  Future<void> changePassword({
+    required String currentPassword,
+    required String newPassword,
+  }) async {}
+
+  @override
+  Future<void> deleteAccount({String? password}) async => sessionExists = false;
 }
 
 Future<void> settle() => Future<void>.delayed(Duration.zero);
 
 void main() {
   test('restaurează sesiunea existentă la pornire', () async {
-    final controller = AuthController(
-      _FakeAuthRepository(sessionExists: true),
-    );
+    final controller = AuthController(_FakeAuthRepository(sessionExists: true));
     addTearDown(controller.dispose);
     await settle();
 
@@ -86,21 +144,24 @@ void main() {
     },
   );
 
-  test('autentificarea eșuată raportează eroarea, nu blochează ecranul', () async {
-    final controller = AuthController(_FailingLogin());
-    addTearDown(controller.dispose);
-    await settle();
+  test(
+    'autentificarea eșuată raportează eroarea, nu blochează ecranul',
+    () async {
+      final controller = AuthController(_FailingLogin());
+      addTearDown(controller.dispose);
+      await settle();
 
-    await controller.login(email: 'a@b.test', password: 'gresita');
+      await controller.login(email: 'a@b.test', password: 'gresita');
 
-    expect(controller.state.status, AuthStatus.unauthenticated);
-    expect(controller.state.hasError, isTrue);
-  });
+      expect(controller.state.status, AuthStatus.unauthenticated);
+      expect(controller.state.hasError, isTrue);
+    },
+  );
 }
 
 class _FailingLogin extends _FakeAuthRepository {
   @override
-  Future<void> login({
+  Future<TwoFactorChallenge?> login({
     required String email,
     required String password,
   }) async {

@@ -9,6 +9,10 @@ import { PrismaService } from '../prisma/prisma.service';
 const TTL_MINUTES: Record<AuthTokenPurpose, number> = {
   EMAIL_VERIFICATION: 60 * 24,
   PASSWORD_RESET: 30,
+  // Parola tocmai a fost verificată; provocarea trebuie rezolvată imediat,
+  // nu poate deveni o a doua sesiune de autentificare reutilizabilă.
+  TWO_FACTOR_LOGIN: 5,
+  MOBILE_OAUTH_EXCHANGE: 2,
 };
 
 export interface IssuedToken {
@@ -18,8 +22,14 @@ export interface IssuedToken {
   expiresAt: Date;
 }
 
-/// Tokenurile trimise pe email: se păstrează hash-ate, expiră și se consumă o
-/// singură dată.
+export interface VerifiedAuthToken {
+  id: string;
+  userId: string;
+}
+
+/// Tokenurile de autentificare se păstrează hash-ate, expiră și se consumă o
+/// singură dată. Același mecanism protejează linkurile din email și provocarea
+/// temporară dintre parolă și verificarea TOTP.
 @Injectable()
 export class AuthTokenService {
   constructor(private readonly prisma: PrismaService) {}
@@ -28,8 +38,6 @@ export class AuthTokenService {
   /// altfel un utilizator care cere de trei ori resetarea ar rămâne cu trei
   /// linkuri valide simultan.
   async issue(userId: string, purpose: AuthTokenPurpose): Promise<IssuedToken> {
-    // `selector.verifier`: selectorul găsește rândul (index unic), verifier-ul
-    // dovedește că deținem token-ul (comparat pe hash).
     const selector = randomBytes(12).toString('base64url');
     const verifier = randomBytes(32).toString('base64url');
     const expiresAt = new Date(Date.now() + TTL_MINUTES[purpose] * 60 * 1_000);
@@ -53,22 +61,18 @@ export class AuthTokenService {
     return { token: `${selector}.${verifier}`, expiresAt };
   }
 
-  /// Consumă un token. Întoarce `userId` la succes, `null` altfel.
-  ///
-  /// Token-ul nu conține identitatea utilizatorului: cine interceptează linkul
-  /// nu află cui îi aparține.
-  async consume(
+  /// Verifică tokenul fără să-l consume. Este folosit doar pentru provocarea
+  /// TOTP: codul poate fi introdus greșit fără ca jucătorul să-și piardă
+  /// fereastra de login. Apelantul trebuie să cheme apoi [claim] la succes.
+  async inspect(
     token: string,
     purpose: AuthTokenPurpose,
-  ): Promise<string | null> {
-    const separator = token.indexOf('.');
-    if (separator <= 0) return null;
-    const selector = token.slice(0, separator);
-    const verifier = token.slice(separator + 1);
-    if (!verifier) return null;
+  ): Promise<VerifiedAuthToken | null> {
+    const parsed = this.parse(token);
+    if (!parsed) return null;
 
     const record = await this.prisma.authToken.findUnique({
-      where: { selector },
+      where: { selector: parsed.selector },
       select: {
         id: true,
         userId: true,
@@ -86,14 +90,36 @@ export class AuthTokenService {
     ) {
       return null;
     }
-    if (!(await argon2.verify(record.tokenHash, verifier))) return null;
+    if (!(await argon2.verify(record.tokenHash, parsed.verifier))) return null;
+    return { id: record.id, userId: record.userId };
+  }
 
-    // Filtrul pe `usedAt: null` face consumul atomic: din două cereri
-    // simultane cu același token trece una singură.
+  /// Marchează atomic tokenul verificat ca utilizat. Filtrul pe `usedAt` și pe
+  /// expirare face ca două cereri simultane să nu poată finaliza aceeași login.
+  async claim(tokenId: string): Promise<boolean> {
     const claimed = await this.prisma.authToken.updateMany({
-      where: { id: record.id, usedAt: null },
+      where: { id: tokenId, usedAt: null, expiresAt: { gt: new Date() } },
       data: { usedAt: new Date() },
     });
-    return claimed.count === 1 ? record.userId : null;
+    return claimed.count === 1;
+  }
+
+  /// Consumă un token într-un singur pas. Este potrivit pentru linkurile
+  /// email, unde nu există o verificare suplimentară între validare și consum.
+  async consume(
+    token: string,
+    purpose: AuthTokenPurpose,
+  ): Promise<string | null> {
+    const record = await this.inspect(token, purpose);
+    if (!record) return null;
+    return (await this.claim(record.id)) ? record.userId : null;
+  }
+
+  private parse(token: string): { selector: string; verifier: string } | null {
+    const separator = token.indexOf('.');
+    if (separator <= 0) return null;
+    const selector = token.slice(0, separator);
+    const verifier = token.slice(separator + 1);
+    return verifier ? { selector, verifier } : null;
   }
 }

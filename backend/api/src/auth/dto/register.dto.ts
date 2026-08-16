@@ -36,4 +36,11 @@ export class RegisterDto {
   /// de vârstă se fac în `account-policy`, nu aici.
   @IsDateString({ strict: true })
   birthDate!: string;
+
+  /// Tokenul emis de widgetul anti-bot. Poate lipsi în dezvoltare; producția
+  /// îl impune prin `CAPTCHA_REQUIRED=true` și îl verifică doar pe server.
+  @IsOptional()
+  @IsString()
+  @MaxLength(4_096)
+  captchaToken?: string;
 }

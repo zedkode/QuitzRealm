@@ -119,6 +119,90 @@ class Conversation {
   }
 }
 
+class GlobalChatMessage {
+  const GlobalChatMessage({
+    required this.id,
+    required this.senderId,
+    required this.senderName,
+    required this.content,
+    required this.createdAt,
+  });
+
+  final String id;
+  final String senderId;
+  final String senderName;
+  final String content;
+  final DateTime createdAt;
+
+  static GlobalChatMessage? fromJson(Map<String, Object?> json) {
+    final createdAt = DateTime.tryParse(json['createdAt']?.toString() ?? '');
+    final id = json['id']?.toString() ?? '';
+    if (id.isEmpty || createdAt == null) return null;
+    return GlobalChatMessage(
+      id: id,
+      senderId: json['senderId']?.toString() ?? '',
+      senderName: json['senderName']?.toString() ?? '',
+      content: json['content']?.toString() ?? '',
+      createdAt: createdAt,
+    );
+  }
+}
+
+class FriendSuggestion {
+  const FriendSuggestion({
+    required this.userId,
+    required this.username,
+    required this.displayName,
+    required this.sharedMatches,
+    required this.lastPlayedAt,
+  });
+
+  final String userId;
+  final String username;
+  final String displayName;
+  final int sharedMatches;
+  final DateTime lastPlayedAt;
+
+  static FriendSuggestion fromJson(Map<String, Object?> json) {
+    final sharedMatches = json['sharedMatches'];
+    return FriendSuggestion(
+      userId: json['userId']?.toString() ?? '',
+      username: json['username']?.toString() ?? '',
+      displayName:
+          json['displayName']?.toString() ?? json['username']?.toString() ?? '',
+      sharedMatches: sharedMatches is num
+          ? sharedMatches.round()
+          : int.tryParse(sharedMatches?.toString() ?? '') ?? 0,
+      lastPlayedAt:
+          DateTime.tryParse(json['lastPlayedAt']?.toString() ?? '') ??
+          DateTime.fromMillisecondsSinceEpoch(0),
+    );
+  }
+}
+
+class FriendSuggestionFeed {
+  const FriendSuggestionFeed({
+    required this.enabled,
+    required this.suggestions,
+  });
+
+  final bool enabled;
+  final List<FriendSuggestion> suggestions;
+
+  static FriendSuggestionFeed fromJson(Map<String, Object?> json) {
+    final rawSuggestions = json['suggestions'];
+    return FriendSuggestionFeed(
+      enabled: json['enabled'] == true,
+      suggestions: rawSuggestions is List
+          ? rawSuggestions
+                .whereType<Map<String, Object?>>()
+                .map(FriendSuggestion.fromJson)
+                .toList(growable: false)
+          : const [],
+    );
+  }
+}
+
 class ChatMessage {
   const ChatMessage({
     required this.id,
@@ -177,8 +261,7 @@ class TrustInfo {
   final int? nextTierThreshold;
   final DateTime? mutedUntil;
 
-  bool get isMuted =>
-      mutedUntil != null && mutedUntil!.isAfter(DateTime.now());
+  bool get isMuted => mutedUntil != null && mutedUntil!.isAfter(DateTime.now());
 
   /// Cât din drumul spre treapta următoare e parcurs, pentru bara de progres.
   double get progressToNextTier {

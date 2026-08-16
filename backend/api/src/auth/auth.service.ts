@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
-import { AuthTokenPurpose } from '@prisma/client';
+import { AuthTokenPurpose, Prisma } from '@prisma/client';
 import * as argon2 from 'argon2';
 import { randomUUID } from 'node:crypto';
 import { MailerService } from '../mail/mailer.service';
@@ -18,16 +18,20 @@ import {
   MINIMUM_AGE_YEARS,
 } from './account-policy';
 import { AuthTokenService } from './auth-token.service';
+import { CaptchaService } from './captcha.service';
 import {
   AuthTokens,
   AuthenticatedUser,
   GoogleUser,
   JwtPayload,
+  LoginResult,
   RefreshPayload,
 } from './auth.types';
+import { MigrateGuestProgressDto } from './dto/guest-migration.dto';
 import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
 import { SessionContext, SessionService } from './session.service';
+import { TotpService } from './totp.service';
 
 @Injectable()
 export class AuthService {
@@ -38,6 +42,8 @@ export class AuthService {
     private readonly sessions: SessionService,
     private readonly tokens: AuthTokenService,
     private readonly mailer: MailerService,
+    private readonly totp: TotpService,
+    private readonly captcha: CaptchaService,
   ) {}
 
   async register(
@@ -49,6 +55,8 @@ export class AuthService {
     const birthDate = new Date(dto.birthDate);
     const now = new Date();
 
+    await this.captcha.assertValid(dto.captchaToken, context.ipAddress);
+    await this.sessions.assertRegistrationAllowed(context);
     if (!isPlausibleBirthDate(birthDate, now)) {
       throw new BadRequestException('Data nașterii nu este validă.');
     }
@@ -83,7 +91,7 @@ export class AuthService {
     return this.startSession(user.id, user.email, context);
   }
 
-  async login(dto: LoginDto, context: SessionContext): Promise<AuthTokens> {
+  async login(dto: LoginDto, context: SessionContext): Promise<LoginResult> {
     const user = await this.prisma.user.findUnique({
       where: { email: dto.email.trim().toLowerCase() },
     });
@@ -93,7 +101,7 @@ export class AuthService {
     ) {
       throw new UnauthorizedException('Date de autentificare invalide.');
     }
-    return this.startSession(user.id, user.email, context);
+    return this.completePrimaryLogin(user, context);
   }
 
   async refresh(
@@ -178,37 +186,199 @@ export class AuthService {
   async loginWithGoogle(
     profile: GoogleUser,
     context: SessionContext,
-  ): Promise<AuthTokens> {
-    const email = profile.email.toLowerCase();
-    let user = await this.prisma.user.findFirst({
-      where: { OR: [{ googleId: profile.googleId }, { email }] },
-    });
+  ): Promise<LoginResult> {
+    const user = await this.resolveGoogleUser(profile);
+    return this.completePrimaryLogin(user, context);
+  }
 
-    if (user) {
-      if (!user.googleId) {
-        user = await this.prisma.user.update({
-          where: { id: user.id },
-          data: { googleId: profile.googleId },
-        });
-      }
-    } else {
-      const stem =
-        (profile.displayName || email.split('@')[0])
-          .replace(/[^a-zA-Z0-9_]/g, '')
-          .slice(0, 20) || 'jucator';
-      const username = `${stem}_${profile.googleId.slice(-8)}`;
-      user = await this.prisma.user.create({
-        data: {
-          email,
-          googleId: profile.googleId,
-          username,
-          displayName: profile.displayName?.trim() || username,
-          // Google a verificat deja adresa; nu mai cerem încă o confirmare.
-          emailVerifiedAt: new Date(),
-        },
+  /// Callback-ul browserului mobil nu primește tokenuri JWT. Emitem în schimb
+  /// un cod opac, utilizabil o singură dată de aplicația care a inițiat OAuth.
+  async createGoogleMobileExchange(profile: GoogleUser): Promise<string> {
+    const user = await this.resolveGoogleUser(profile);
+    const exchange = await this.tokens.issue(
+      user.id,
+      AuthTokenPurpose.MOBILE_OAUTH_EXCHANGE,
+    );
+    return exchange.token;
+  }
+
+  async exchangeGoogleMobileCode(
+    code: string,
+    context: SessionContext,
+  ): Promise<LoginResult> {
+    const userId = await this.tokens.consume(
+      code,
+      AuthTokenPurpose.MOBILE_OAUTH_EXCHANGE,
+    );
+    if (!userId) {
+      throw new UnauthorizedException('Codul Google OAuth este invalid sau expirat.');
+    }
+    const user = await this.prisma.user.findUnique({ where: { id: userId } });
+    if (!user) throw new UnauthorizedException();
+    return this.completePrimaryLogin(user, context);
+  }
+
+  // --- Autentificare cu doi factori (TOTP, §1.1) ---
+
+  /// Generează un secret nou, criptat pe server. Acesta nu este activ până
+  /// când proprietarul contului confirmă și codul curent din aplicația TOTP.
+  async startTwoFactorEnrollment(
+    userId: string,
+    currentPassword: string,
+  ): Promise<{ otpauthUri: string }> {
+    const user = await this.prisma.user.findUniqueOrThrow({
+      where: { id: userId },
+      select: { email: true, passwordHash: true, twoFactorEnabledAt: true },
+    });
+    await this.assertCurrentPassword(user.passwordHash, currentPassword);
+    if (user.twoFactorEnabledAt !== null) {
+      throw new BadRequestException('Autentificarea cu doi factori este deja activă.');
+    }
+
+    const enrollment = this.totp.createEnrollment({ accountName: user.email });
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        twoFactorSecret: this.totp.encryptSecret(enrollment.secret),
+        twoFactorRecoveryCodes: Prisma.JsonNull,
+      },
+    });
+    return { otpauthUri: enrollment.otpauthUri };
+  }
+
+  /// Activează 2FA după confirmarea parolei și a primului cod de autentificare.
+  /// Codurile de recuperare sunt arătate o singură dată în răspunsul API.
+  async confirmTwoFactorEnrollment(
+    userId: string,
+    currentPassword: string,
+    code: string,
+  ): Promise<{ recoveryCodes: string[] }> {
+    const user = await this.prisma.user.findUniqueOrThrow({
+      where: { id: userId },
+      select: { passwordHash: true, twoFactorSecret: true, twoFactorEnabledAt: true },
+    });
+    await this.assertCurrentPassword(user.passwordHash, currentPassword);
+    if (user.twoFactorEnabledAt !== null) {
+      throw new BadRequestException('Autentificarea cu doi factori este deja activă.');
+    }
+    const secret = user.twoFactorSecret
+      ? this.totp.decryptSecret(user.twoFactorSecret)
+      : null;
+    if (!secret || !this.totp.verifyCode(secret, code)) {
+      throw new UnauthorizedException('Codul de autentificare nu este valid.');
+    }
+
+    const recovery = await this.totp.createRecoveryCodes();
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        twoFactorEnabledAt: new Date(),
+        twoFactorRecoveryCodes: recovery.hashes,
+      },
+    });
+    return { recoveryCodes: recovery.plaintext };
+  }
+
+  async disableTwoFactor(
+    userId: string,
+    currentPassword: string,
+    code: string,
+  ): Promise<void> {
+    const user = await this.prisma.user.findUniqueOrThrow({
+      where: { id: userId },
+      select: {
+        passwordHash: true,
+        twoFactorSecret: true,
+        twoFactorEnabledAt: true,
+        twoFactorRecoveryCodes: true,
+      },
+    });
+    await this.assertCurrentPassword(user.passwordHash, currentPassword);
+    if (user.twoFactorEnabledAt === null) {
+      throw new BadRequestException('Autentificarea cu doi factori nu este activă.');
+    }
+    const verified = await this.verifyTwoFactorCode(user, code);
+    if (!verified) {
+      throw new UnauthorizedException('Codul de autentificare nu este valid.');
+    }
+
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        twoFactorSecret: null,
+        twoFactorEnabledAt: null,
+        twoFactorRecoveryCodes: Prisma.JsonNull,
+      },
+    });
+    await this.sessions.revokeAll(userId);
+  }
+
+  /// Ultimul pas după parola corectă. Provocarea nu emite o sesiune și expiră
+  /// în cinci minute; abia codul TOTP corect permite autentificarea.
+  async completeTwoFactorLogin(
+    challengeToken: string,
+    code: string,
+    context: SessionContext,
+  ): Promise<AuthTokens> {
+    const challenge = await this.tokens.inspect(
+      challengeToken,
+      AuthTokenPurpose.TWO_FACTOR_LOGIN,
+    );
+    if (!challenge) {
+      throw new UnauthorizedException('Provocarea de autentificare a expirat.');
+    }
+
+    const user = await this.prisma.user.findUnique({
+      where: { id: challenge.userId },
+      select: {
+        id: true,
+        email: true,
+        twoFactorSecret: true,
+        twoFactorEnabledAt: true,
+        twoFactorRecoveryCodes: true,
+      },
+    });
+    if (!user || user.twoFactorEnabledAt === null) {
+      throw new UnauthorizedException('Autentificarea cu doi factori nu mai este activă.');
+    }
+    const verified = await this.verifyTwoFactorCode(user, code);
+    if (!verified || !(await this.tokens.claim(challenge.id))) {
+      throw new UnauthorizedException('Codul de autentificare nu este valid sau a expirat.');
+    }
+    if (verified.remainingRecoveryCodes !== undefined) {
+      await this.prisma.user.update({
+        where: { id: user.id },
+        data: { twoFactorRecoveryCodes: verified.remainingRecoveryCodes },
       });
     }
     return this.startSession(user.id, user.email, context);
+  }
+
+  // --- Conversie mod invitat (§1.1) ---
+
+  /// Atașează o singură dată progresul solo de pe dispozitiv la cont. Payloadul
+  /// este redus la campania necompetitivă; nu poate acorda ELO, monede sau
+  /// cosmetice dintr-un client modificat.
+  async migrateGuestProgress(
+    userId: string,
+    dto: MigrateGuestProgressDto,
+  ): Promise<void> {
+    const campaignProgress = this.sanitizeGuestCampaignProgress(dto.campaignProgress);
+    const existing = await this.prisma.guestMigration.findFirst({
+      where: { OR: [{ userId }, { guestId: dto.guestId.toLowerCase() }] },
+      select: { id: true },
+    });
+    if (existing) {
+      throw new ConflictException('Acest progres invitat a fost deja convertit.');
+    }
+
+    await this.prisma.guestMigration.create({
+      data: {
+        userId,
+        guestId: dto.guestId.toLowerCase(),
+        campaignProgress,
+      },
+    });
   }
 
   // --- Verificare email (§1.3) ---
@@ -348,6 +518,118 @@ export class AuthService {
     }
 
     await this.prisma.user.delete({ where: { id: userId } });
+  }
+
+  private async resolveGoogleUser(profile: GoogleUser) {
+    const email = profile.email.toLowerCase();
+    let user = await this.prisma.user.findFirst({
+      where: { OR: [{ googleId: profile.googleId }, { email }] },
+    });
+
+    if (user) {
+      if (!user.googleId) {
+        user = await this.prisma.user.update({
+          where: { id: user.id },
+          data: { googleId: profile.googleId },
+        });
+      }
+      return user;
+    }
+
+    const stem =
+      (profile.displayName || email.split('@')[0])
+        .replace(/[^a-zA-Z0-9_]/g, '')
+        .slice(0, 20) || 'jucator';
+    const username = `${stem}_${profile.googleId.slice(-8)}`;
+    return this.prisma.user.create({
+      data: {
+        email,
+        googleId: profile.googleId,
+        username,
+        displayName: profile.displayName?.trim() || username,
+        // Google a verificat deja adresa; nu mai cerem încă o confirmare.
+        emailVerifiedAt: new Date(),
+      },
+    });
+  }
+
+  private sanitizeGuestCampaignProgress(
+    value: Record<string, unknown>,
+  ): { xp: number; stars: Record<string, number> } {
+    const rawXp = value.xp;
+    // XP-ul solo este expus doar ca progres de campanie; îl limităm totuși ca
+    // un payload corupt sau malițios să nu umfle inutil stocarea de profil.
+    const xp =
+      typeof rawXp === 'number' && Number.isSafeInteger(rawXp) && rawXp >= 0
+        ? Math.min(rawXp, 1_000_000)
+        : 0;
+    const stars: Record<string, number> = {};
+    const rawStars = value.stars;
+    if (rawStars && typeof rawStars === 'object' && !Array.isArray(rawStars)) {
+      for (const [stage, score] of Object.entries(rawStars).slice(0, 120)) {
+        if (
+          /^[a-z0-9_-]{1,64}\/[0-9]{1,3}$/i.test(stage) &&
+          typeof score === 'number' &&
+          Number.isInteger(score) &&
+          score >= 0 &&
+          score <= 3
+        ) {
+          stars[stage] = score;
+        }
+      }
+    }
+    return { xp, stars };
+  }
+
+  private async completePrimaryLogin(
+    user: { id: string; email: string; twoFactorEnabledAt: Date | null },
+    context: SessionContext,
+  ): Promise<LoginResult> {
+    if (user.twoFactorEnabledAt === null) {
+      return this.startSession(user.id, user.email, context);
+    }
+    const challenge = await this.tokens.issue(
+      user.id,
+      AuthTokenPurpose.TWO_FACTOR_LOGIN,
+    );
+    return {
+      twoFactorRequired: true,
+      challengeToken: challenge.token,
+      expiresAt: challenge.expiresAt.toISOString(),
+    };
+  }
+
+  private async assertCurrentPassword(
+    passwordHash: string | null,
+    currentPassword: string,
+  ): Promise<void> {
+    if (passwordHash === null) {
+      throw new BadRequestException(
+        'Contul folosește autentificarea Google. Setează mai întâi o parolă prin resetare pe email.',
+      );
+    }
+    if (!(await argon2.verify(passwordHash, currentPassword))) {
+      throw new UnauthorizedException('Parola curentă nu este corectă.');
+    }
+  }
+
+  private async verifyTwoFactorCode(
+    user: {
+      twoFactorSecret: string | null;
+      twoFactorRecoveryCodes: unknown;
+    },
+    code: string,
+  ): Promise<{ remainingRecoveryCodes?: string[] } | null> {
+    const secret = user.twoFactorSecret
+      ? this.totp.decryptSecret(user.twoFactorSecret)
+      : null;
+    if (secret && this.totp.verifyCode(secret, code)) return {};
+
+    const remainingRecoveryCodes = await this.totp.consumeRecoveryCode(
+      user.twoFactorRecoveryCodes,
+      code,
+    );
+    return remainingRecoveryCodes === null ? null : { remainingRecoveryCodes };
   }
 
   private async sendVerificationEmail(

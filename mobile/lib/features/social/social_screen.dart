@@ -56,9 +56,8 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
           next.phase == SocialPhase.error) {
         return;
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(message)),
-      );
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(message)));
       ref.read(socialControllerProvider.notifier).clearError();
     });
 
@@ -87,6 +86,14 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
                         style: GameText.heading.copyWith(fontSize: 16),
                       ),
                     ),
+                    GameIconButton(
+                      key: const Key('social-global-chat-open'),
+                      symbol: GameSymbol.chat,
+                      tooltip: 'Lobby global',
+                      size: 38,
+                      onPressed: () => context.push('/social/global'),
+                    ),
+                    const SizedBox(width: 6),
                     if (state.privacy != null)
                       GameIconButton(
                         key: const Key('social-privacy-open'),
@@ -214,14 +221,11 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
                             ? GamePalette.gold
                             : GamePalette.stone600,
                       ),
-                      title: Text(
-                        switch (option) {
-                          DmPermission.everyone => l10n.privacyDmEveryone,
-                          DmPermission.friendsOnly => l10n.privacyDmFriends,
-                          DmPermission.nobody => l10n.privacyDmNobody,
-                        },
-                        style: GameText.body.copyWith(fontSize: 13),
-                      ),
+                      title: Text(switch (option) {
+                        DmPermission.everyone => l10n.privacyDmEveryone,
+                        DmPermission.friendsOnly => l10n.privacyDmFriends,
+                        DmPermission.nobody => l10n.privacyDmNobody,
+                      }, style: GameText.body.copyWith(fontSize: 13)),
                       onTap: current.dmPermissionLocked
                           ? null
                           : () => sheetRef
@@ -287,6 +291,13 @@ class _FriendsTab extends ConsumerWidget {
             ],
           ),
         ),
+        if (state.friendSuggestionFeed != null) ...[
+          const SizedBox(height: 16),
+          _FriendSuggestionsPanel(
+            feed: state.friendSuggestionFeed!,
+            busy: state.busy,
+          ),
+        ],
         if (state.incomingRequests.isNotEmpty) ...[
           const SizedBox(height: 16),
           _SectionTitle(l10n.friendsIncomingRequests),
@@ -424,7 +435,9 @@ class _FriendsTab extends ConsumerWidget {
       ),
     );
     if (confirmed == true) {
-      await ref.read(socialControllerProvider.notifier).blockUser(friend.userId);
+      await ref
+          .read(socialControllerProvider.notifier)
+          .blockUser(friend.userId);
     }
   }
 }
@@ -489,6 +502,91 @@ class _ConversationsTab extends ConsumerWidget {
             ),
           ),
       ],
+    );
+  }
+}
+
+class _FriendSuggestionsPanel extends ConsumerWidget {
+  const _FriendSuggestionsPanel({required this.feed, required this.busy});
+
+  final FriendSuggestionFeed feed;
+  final bool busy;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final notifier = ref.read(socialControllerProvider.notifier);
+    return GameFrame(
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const GameIcon(
+                GameSymbol.helmet,
+                size: 21,
+                color: GamePalette.gold,
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'ALIAȚI ÎNTÂLNIȚI',
+                  style: GameText.eyebrow.copyWith(fontSize: 11),
+                ),
+              ),
+              Switch(
+                key: const Key('friend-suggestions-opt-in'),
+                value: feed.enabled,
+                activeThumbColor: GamePalette.gold,
+                onChanged: busy ? null : notifier.setFriendSuggestionsEnabled,
+              ),
+            ],
+          ),
+          Text(
+            feed.enabled
+                ? 'Arătăm doar jucători întâlniți recent care au ales și ei această opțiune.'
+                : 'Activează opțiunea pentru a vedea recomandări bazate pe partide recente.',
+            style: GameText.bodyDim.copyWith(fontSize: 11),
+          ),
+          if (feed.enabled && feed.suggestions.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            for (final suggestion in feed.suggestions)
+              Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            suggestion.displayName,
+                            style: GameText.body.copyWith(fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Text(
+                            '${suggestion.sharedMatches} partide împreună',
+                            style: GameText.bodyDim.copyWith(fontSize: 10),
+                          ),
+                        ],
+                      ),
+                    ),
+                    GameIconButton(
+                      key: Key('friend-suggestion-add-${suggestion.userId}'),
+                      symbol: GameSymbol.check,
+                      tooltip: 'Trimite cerere de prietenie',
+                      size: 34,
+                      onPressed: busy
+                          ? null
+                          : () =>
+                                notifier.sendFriendRequest(suggestion.username),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ],
+      ),
     );
   }
 }

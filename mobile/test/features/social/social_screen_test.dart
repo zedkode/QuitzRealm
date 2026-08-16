@@ -92,6 +92,14 @@ class _FakeSocialRepository implements SocialRepository {
   Future<void> unblockUser(String userId) async {}
 
   @override
+  Future<FriendSuggestionFeed> fetchFriendSuggestions() async {
+    return const FriendSuggestionFeed(enabled: false, suggestions: []);
+  }
+
+  @override
+  Future<bool> updateFriendSuggestionsEnabled(bool enabled) async => enabled;
+
+  @override
   Future<List<Conversation>> fetchConversations() async => conversations;
 
   @override
@@ -246,7 +254,10 @@ void main() {
     tester,
   ) async {
     final repository = _FakeSocialRepository(
-      throwOnRequest: const ApiException(404, 'Nu există un jucător cu acest nume.'),
+      throwOnRequest: const ApiException(
+        404,
+        'Nu există un jucător cu acest nume.',
+      ),
     );
     await _pumpSocial(tester, repository);
 

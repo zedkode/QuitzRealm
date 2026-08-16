@@ -8,11 +8,12 @@ import {
   ParseUUIDPipe,
   Post,
   Req,
+  Res,
   UseGuards,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { Throttle } from '@nestjs/throttler';
-import type { Request } from 'express';
+import type { Request, Response } from 'express';
 import { AuthService } from './auth.service';
 import { AuthenticatedUser, GoogleUser } from './auth.types';
 import {
@@ -23,10 +24,18 @@ import {
   RequestPasswordResetDto,
   ResetPasswordDto,
 } from './dto/password-reset.dto';
+import { GoogleMobileExchangeDto } from './dto/google-mobile-exchange.dto';
+import { MigrateGuestProgressDto } from './dto/guest-migration.dto';
 import { LoginDto } from './dto/login.dto';
 import { RefreshTokenDto } from './dto/refresh-token.dto';
 import { RegisterDto } from './dto/register.dto';
 import { ConfirmTokenDto } from './dto/verify-email.dto';
+import {
+  CompleteTwoFactorLoginDto,
+  DisableTwoFactorDto,
+  EnableTwoFactorDto,
+} from './dto/two-factor.dto';
+import { GoogleMobileAuthGuard } from './guards/google-mobile-auth.guard';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { SessionContext, SessionService } from './session.service';
 
@@ -73,6 +82,63 @@ export class AuthController {
     await this.auth.logout(request.user.id, request.user.sessionId);
   }
 
+  // --- Autentificare cu doi factori (TOTP, §1.1) ---
+
+  @UseGuards(JwtAuthGuard)
+  @Post('two-factor/setup')
+  @Throttle({ default: { limit: 5, ttl: 15 * 60_000 } })
+  startTwoFactorEnrollment(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: EnableTwoFactorDto,
+  ) {
+    return this.auth.startTwoFactorEnrollment(
+      request.user.id,
+      dto.currentPassword,
+    );
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('two-factor/confirm')
+  @Throttle({ default: { limit: 10, ttl: 15 * 60_000 } })
+  confirmTwoFactorEnrollment(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: EnableTwoFactorDto,
+  ) {
+    return this.auth.confirmTwoFactorEnrollment(
+      request.user.id,
+      dto.currentPassword,
+      dto.code,
+    );
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('two-factor/disable')
+  @Throttle({ default: { limit: 5, ttl: 15 * 60_000 } })
+  @HttpCode(204)
+  async disableTwoFactor(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: DisableTwoFactorDto,
+  ): Promise<void> {
+    await this.auth.disableTwoFactor(
+      request.user.id,
+      dto.currentPassword,
+      dto.code,
+    );
+  }
+
+  @Post('two-factor/login')
+  @Throttle({ default: { limit: 10, ttl: 5 * 60_000 } })
+  completeTwoFactorLogin(
+    @Body() dto: CompleteTwoFactorLoginDto,
+    @Req() request: Request,
+  ) {
+    return this.auth.completeTwoFactorLogin(
+      dto.challengeToken,
+      dto.code,
+      sessionContext(request),
+    );
+  }
+
   // --- Sesiuni active (§1.5) ---
 
   @UseGuards(JwtAuthGuard)
@@ -102,6 +168,19 @@ export class AuthController {
       request.user.sessionId,
     );
     return { revoked };
+  }
+
+  // --- Conversie mod invitat (§1.1) ---
+
+  @UseGuards(JwtAuthGuard)
+  @Post('guest/migrate')
+  @Throttle({ default: { limit: 3, ttl: 60 * 60_000 } })
+  @HttpCode(204)
+  async migrateGuestProgress(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: MigrateGuestProgressDto,
+  ): Promise<void> {
+    await this.auth.migrateGuestProgress(request.user.id, dto);
   }
 
   // --- Verificare email (§1.3) ---
@@ -180,9 +259,44 @@ export class AuthController {
   @UseGuards(AuthGuard('google'))
   googleLogin(): void {}
 
+  /// Inițiere pentru aplicația mobilă. Nonce-ul este generat și verificat de
+  /// client; serverul îl propagă prin Google OAuth și redirecționează doar spre
+  /// schema fixă `quizrealm://`, nu spre un URL furnizat de cerere.
+  @Get('google/mobile')
+  @UseGuards(GoogleMobileAuthGuard)
+  googleMobileLogin(): void {}
+
+  @Post('google/mobile/exchange')
+  @Throttle({ default: { limit: 10, ttl: 5 * 60_000 } })
+  exchangeGoogleMobile(
+    @Body() dto: GoogleMobileExchangeDto,
+    @Req() request: Request,
+  ) {
+    return this.auth.exchangeGoogleMobileCode(dto.code, sessionContext(request));
+  }
+
   @Get('google/callback')
   @UseGuards(AuthGuard('google'))
-  googleCallback(@Req() request: GoogleRequest) {
-    return this.auth.loginWithGoogle(request.user, sessionContext(request));
+  async googleCallback(
+    @Req() request: GoogleRequest,
+    @Res() response: Response,
+  ): Promise<void> {
+    const state = request.query.state;
+    if (
+      typeof state === 'string' &&
+      /^mobile\.[A-Za-z0-9_-]{24,128}$/.test(state)
+    ) {
+      const code = await this.auth.createGoogleMobileExchange(request.user);
+      const callback = new URL('quizrealm://auth/google');
+      callback.searchParams.set('state', state);
+      callback.searchParams.set('code', code);
+      response.redirect(302, callback.toString());
+      return;
+    }
+
+    // Păstrăm endpointul JSON pentru clienții web/integrațiile existente.
+    response.json(
+      await this.auth.loginWithGoogle(request.user, sessionContext(request)),
+    );
   }
 }
