@@ -1,0 +1,3 @@
+-- Account-level moderation state for Admin Panel.
+ALTER TABLE "users"
+  ADD COLUMN IF NOT EXISTS "banned_at" TIMESTAMP(3);

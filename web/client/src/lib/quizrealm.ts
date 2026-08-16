@@ -43,6 +43,16 @@ export const quizRealmApi = {
   leaderboard: (query = "") => request<unknown>(`/leaderboard${query}`),
   publicProfile: (username: string) => request<unknown>(`/players/${encodeURIComponent(username)}`),
   profile: () => request<unknown>("/users/me/profile"),
+  adminDashboard: () => request<unknown>("/admin/dashboard"),
+  adminUsers: () => request<unknown>("/admin/users"),
+  adminBanUser: (id: string) => request<unknown>(`/admin/users/${id}/ban`, { method: "PATCH" }),
+  adminUnbanUser: (id: string) => request<unknown>(`/admin/users/${id}/unban`, { method: "PATCH" }),
+  adminRevokeSessions: (id: string) => request<unknown>(`/admin/users/${id}/revoke-sessions`, { method: "POST" }),
+  adminForcePasswordReset: (id: string) => request<unknown>(`/admin/users/${id}/force-password-reset`, { method: "POST" }),
+  adminChatReports: () => request<unknown>("/admin/reports/chat"),
+  adminResolveChatReport: (id: string, resolution: string) => request<unknown>(`/admin/reports/chat/${id}`, { method: "PATCH", body: JSON.stringify({ resolution }) }),
+  adminQuestions: (status = "PENDING") => request<unknown>(`/admin/questions?status=${status}`),
+  adminReviewQuestion: (id: string, status: string) => request<unknown>(`/admin/questions/${id}`, { method: "PATCH", body: JSON.stringify({ status }) }),
   stats: () => request<{ activePlayers: number; matchesToday: number; questionsMastered: number; achievementsUnlocked: number; generatedAt: string }>("/health/stats"),
 };
 

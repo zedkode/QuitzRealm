@@ -106,6 +106,8 @@ model User {
   /// acestea nu sunt livrate celorlalți jucători. Este rezervat recidivei,
   /// după review de moderare; nu afectează conversațiile cu prietenii/DM.
   globalChatShadowBannedUntil DateTime? @map("global_chat_shadow_banned_until")
+  /// Ban la nivel de cont; null înseamnă că accesul nu este blocat.
+  bannedAt          DateTime? @map("banned_at")
 
   createdQuestions   Question[]                @relation("QuestionCreator")
   reviewedQuestions  Question[]                @relation("QuestionReviewer")
