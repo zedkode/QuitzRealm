@@ -4,6 +4,7 @@ import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { AchievementsModule } from './achievements/achievements.module';
 import { AdminModule } from './admin/admin.module';
+import { StoreModule } from './store/store.module';
 import { AuthModule } from './auth/auth.module';
 import { CategoriesModule } from './categories/categories.module';
 import { ChatModule } from './chat/chat.module';
@@ -37,6 +38,7 @@ import { UsersModule } from './users/users.module';
     AuthModule,
     AchievementsModule,
     AdminModule,
+    StoreModule,
     UsersModule,
     CategoriesModule,
     QuestionsModule,
