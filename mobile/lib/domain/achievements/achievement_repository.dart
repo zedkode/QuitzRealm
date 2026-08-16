@@ -6,4 +6,6 @@ abstract class AchievementRepository {
   Future<AchievementSummary> fetchSummary();
 
   Future<void> setBadgeSlot({required int slotIndex, String? achievementId});
+
+  Future<AchievementSummary> setShowcase(List<String> achievementIds);
 }

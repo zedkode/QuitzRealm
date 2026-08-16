@@ -37,4 +37,17 @@ class ApiAchievementRepository implements AchievementRepository {
       authenticated: true,
     );
   }
+
+  @override
+  Future<AchievementSummary> setShowcase(List<String> achievementIds) async {
+    final payload = await _api.patch(
+      'achievements/showcase',
+      body: {'achievementIds': achievementIds},
+      authenticated: true,
+    );
+    if (payload is! Map<String, Object?>) {
+      throw const FormatException('Showcase achievements invalid');
+    }
+    return AchievementSummary.fromJson(payload);
+  }
 }

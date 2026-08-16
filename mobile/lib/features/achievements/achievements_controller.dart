@@ -47,6 +47,13 @@ class AchievementsController extends StateNotifier<AchievementsState> {
     if (mounted) state = state.copyWith(summary: summary);
   }
 
+  Future<void> setShowcase(List<String> achievementIds) async {
+    final summary = await _ref
+        .read(achievementRepositoryProvider)
+        .setShowcase(achievementIds);
+    if (mounted) state = state.copyWith(summary: summary);
+  }
+
   Future<void> load() async {
     state = state.copyWith(status: AchievementsStatus.loading);
     try {

@@ -88,16 +88,54 @@ class EquippedAchievementBadge {
   }
 }
 
+class ProfileShowcaseAchievement {
+  const ProfileShowcaseAchievement({
+    required this.position,
+    required this.achievementId,
+    required this.title,
+    required this.rarity,
+  });
+
+  final int position;
+  final String achievementId;
+  final String title;
+  final AchievementRarity rarity;
+
+  static ProfileShowcaseAchievement? fromJson(Map<String, Object?> json) {
+    final achievement = json['achievement'];
+    if (achievement is! Map<String, Object?>) return null;
+    final id = achievement['id']?.toString() ?? '';
+    if (id.isEmpty) return null;
+    final rawPosition = json['position'];
+    return ProfileShowcaseAchievement(
+      position: rawPosition is num
+          ? rawPosition.round()
+          : int.tryParse(rawPosition?.toString() ?? '') ?? 0,
+      achievementId: id,
+      title: achievement['title']?.toString() ?? '',
+      rarity: switch (achievement['rarity']?.toString()) {
+        'RARE' => AchievementRarity.rare,
+        'EPIC' => AchievementRarity.epic,
+        'LEGENDARY' => AchievementRarity.legendary,
+        'MYTHIC' => AchievementRarity.mythic,
+        _ => AchievementRarity.common,
+      },
+    );
+  }
+}
+
 class AchievementSummary {
   const AchievementSummary({
     required this.prestigeScore,
     required this.unlockedCount,
     this.badges = const [],
+    this.showcase = const [],
   });
 
   final int prestigeScore;
   final int unlockedCount;
   final List<EquippedAchievementBadge> badges;
+  final List<ProfileShowcaseAchievement> showcase;
 
   static AchievementSummary fromJson(Map<String, Object?> json) {
     int read(String key) => json[key] is num
@@ -110,6 +148,13 @@ class AchievementSummary {
           ? (json['badges'] as List)
                 .whereType<Map<String, Object?>>()
                 .map(EquippedAchievementBadge.fromJson)
+                .toList(growable: false)
+          : const [],
+      showcase: json['showcase'] is List
+          ? (json['showcase'] as List)
+                .whereType<Map<String, Object?>>()
+                .map(ProfileShowcaseAchievement.fromJson)
+                .whereType<ProfileShowcaseAchievement>()
                 .toList(growable: false)
           : const [],
     );
