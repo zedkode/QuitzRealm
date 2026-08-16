@@ -96,5 +96,12 @@
 - [x] Înlocuiește imaginile `/manus-storage/*` (care răspundeau 500 în producție) cu SVG-urile locale din `MedievalSvg.tsx`
 - [x] Scoate scriptul de analytics cu placeholder nerezolvat din `index.html`, care servea `index.html` ca JavaScript la fiecare încărcare
 
-- [ ] Elimină valorile hardcodate rămase din `Game.tsx` (ELO, „banners in realm", timerul, lista de jucători din ecranul de luptă) și din Admin Dashboard
+- [x] Elimină valorile hardcodate din ecranul de luptă și desenează harta reală trimisă de server (`territoryMap` + `ownership`), cu aceeași geometrie hexagonală ca aplicația Flutter
+- [x] Rescrie ecranul de luptă după `design-reference/web/concept.png`: coloane de campanie, presiunea influenței, puterea provinciilor, linia frontului, cronica tărâmului — toate din starea reală a meciului
+- [x] Adaugă faza de luptă în web: ținte atacabile derivate din adiacență și emiterea `battle:declare-attack`
+- [x] Adaugă cronometrul real din `deadlineAt` în locul valorii fixe
+
+- [ ] Elimină valorile hardcodate din Admin Dashboard
 - [ ] Testează fluxul complet de meci din browser cu un cont real, după ce există date de test în producție
+- [ ] Serverul nu trimite nume afișabile pentru jucători, doar `userId`; ecranul de luptă afișează „Tu" și „Rival N". Adaugă numele în payload-ul realtime dacă vrem nume reale pe hartă
+- [ ] Decide limba panoului web: ecranul de luptă e în română, restul paginilor sunt în engleză
