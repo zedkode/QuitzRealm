@@ -1,7 +1,16 @@
 import { AXIOS_TIMEOUT_MS, COOKIE_NAME, ONE_YEAR_MS, decodeOAuthState } from "@shared/const";
 import { ForbiddenError } from "@shared/_core/errors";
 import axios, { type AxiosInstance } from "axios";
-import { parse as parseCookieHeader } from "cookie";
+
+function parseCookieHeader(header: string): Record<string, string> {
+  return Object.fromEntries(
+    header
+      .split(";")
+      .map(part => part.trim().split("="))
+      .filter(([name]) => Boolean(name))
+      .map(([name, ...value]) => [name, decodeURIComponent(value.join("="))])
+  );
+}
 import type { Request } from "express";
 import { SignJWT, jwtVerify } from "jose";
 import type { User } from "../../drizzle/schema";

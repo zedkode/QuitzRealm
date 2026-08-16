@@ -1,5 +1,14 @@
 import { COOKIE_NAME, ONE_YEAR_MS, OAUTH_STATE_COOKIE, decodeOAuthState } from "@shared/const";
-import { parse as parseCookieHeader } from "cookie";
+
+function parseCookieHeader(header: string): Record<string, string> {
+  return Object.fromEntries(
+    header
+      .split(";")
+      .map(part => part.trim().split("="))
+      .filter(([name]) => Boolean(name))
+      .map(([name, ...value]) => [name, decodeURIComponent(value.join("="))])
+  );
+}
 import type { Express, Request, Response } from "express";
 import * as db from "../db";
 import { getSessionCookieOptions } from "./cookies";

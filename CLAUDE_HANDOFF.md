@@ -29,3 +29,11 @@ Buildul APK Android release rămâne blocat de eșecul TLS/network către `plugi
 ## Continuare recomandată
 
 Primul pas este verificarea vizuală explicită pe ecranele Flutter Home, Duel, Profile, Social, Achievements și Settings, apoi finalizarea stărilor responsive/dialog/empty/error. După aceea trebuie configurată conexiunea TLS TiDBCloud și aplicate migrațiile admin. În paralel, Riverpod 3 poate fi migrat într-un branch separat, cu actualizarea controllerelor și testelor. APK-ul release trebuie reluat când accesul Gradle este disponibil.
+
+## Actualizări după primul checkpoint
+
+Achievements, Social și Global Chat folosesc acum `QuizRealmScaffold`, inclusiv bara de titlu comună, fundalul tactico-medieval, safe area și acțiunile contextuale. `QuizRealmTopBar` a primit layout responsive cu titlu flexibil; testele Social și suita Flutter completă au trecut cu 142 teste.
+
+Încercarea `flutter build apk --release` s-a oprit imediat deoarece sandboxul nu are Android SDK configurat: nu există `ANDROID_HOME`, `sdkmanager`, `adb` sau directoare SDK standard. Este un blocaj de infrastructură, nu o eroare Dart/Flutter.
+
+Website-ul are acum `minimumReleaseAge: 0` și `allowBuilds.esbuild: true` în `pnpm-workspace.yaml`; instalarea frozen pnpm 11 și buildul local trec. Checkpointul cloud ulterior a fost salvat pentru rerularea deploymentului după fix.

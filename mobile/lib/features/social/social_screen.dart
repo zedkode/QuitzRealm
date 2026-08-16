@@ -6,7 +6,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/ui/game_button.dart';
 import '../../core/ui/game_frame.dart';
 import '../../core/ui/game_icons.dart';
-import '../../core/ui/realm_backdrop.dart';
+import '../../core/design/quizrealm_scaffold.dart';
 import '../../domain/social/social_models.dart';
 import '../../l10n/app_localizations.dart';
 import 'social_controller.dart';
@@ -61,55 +61,38 @@ class _SocialScreenState extends ConsumerState<SocialScreen>
       ref.read(socialControllerProvider.notifier).clearError();
     });
 
-    return Scaffold(
-      body: RealmBackdrop(
-        accent: GamePalette.arcane,
-        artAsset: 'assets/game/realm_map_v2.png',
-        artOpacity: 0.14,
-        child: SafeArea(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 6, 14, 4),
-                child: Row(
-                  children: [
-                    GameIconButton(
-                      symbol: GameSymbol.back,
-                      tooltip: l10n.backLabel,
-                      size: 40,
-                      onPressed: () => context.pop(),
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        l10n.socialTitle,
-                        style: GameText.heading.copyWith(fontSize: 16),
-                      ),
-                    ),
-                    GameIconButton(
-                      key: const Key('social-global-chat-open'),
-                      symbol: GameSymbol.chat,
-                      tooltip: 'Lobby global',
-                      size: 38,
-                      onPressed: () => context.push('/social/global'),
-                    ),
-                    const SizedBox(width: 6),
-                    if (state.privacy != null)
-                      GameIconButton(
-                        key: const Key('social-privacy-open'),
-                        symbol: GameSymbol.shield,
-                        tooltip: l10n.privacyTitle,
-                        size: 38,
-                        onPressed: () => _openPrivacySheet(context, state),
-                      ),
-                  ],
-                ),
-              ),
-              Expanded(child: _buildBody(context, state)),
-            ],
+    return QuizRealmScaffold(
+      title: l10n.socialTitle,
+      onBack: () => context.pop(),
+      backSemanticsLabel: l10n.backLabel,
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.14,
+      backdropAccent: GamePalette.arcane,
+      padded: false,
+      scrollable: false,
+      titleTrailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          GameIconButton(
+            key: const Key('social-global-chat-open'),
+            symbol: GameSymbol.chat,
+            tooltip: 'Lobby global',
+            size: 38,
+            onPressed: () => context.push('/social/global'),
           ),
-        ),
+          if (state.privacy != null) ...[
+            const SizedBox(width: 6),
+            GameIconButton(
+              key: const Key('social-privacy-open'),
+              symbol: GameSymbol.shield,
+              tooltip: l10n.privacyTitle,
+              size: 38,
+              onPressed: () => _openPrivacySheet(context, state),
+            ),
+          ],
+        ],
       ),
+      body: Expanded(child: _buildBody(context, state)),
     );
   }
 

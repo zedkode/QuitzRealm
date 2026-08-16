@@ -6,7 +6,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/ui/game_button.dart';
 import '../../core/ui/game_frame.dart';
 import '../../core/ui/game_icons.dart';
-import '../../core/ui/realm_backdrop.dart';
+import '../../core/design/quizrealm_scaffold.dart';
 import '../../domain/achievements/achievement_models.dart';
 import '../../l10n/app_localizations.dart';
 import 'achievements_controller.dart';
@@ -18,74 +18,49 @@ class AchievementsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(achievementsControllerProvider);
     final l10n = AppLocalizations.of(context);
-    return Scaffold(
-      body: RealmBackdrop(
-        accent: GamePalette.goldBright,
-        artAsset: 'assets/game/realm_map_v2.png',
-        artOpacity: 0.16,
-        child: SafeArea(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 6, 14, 4),
-                child: Row(
-                  children: [
-                    GameIconButton(
-                      symbol: GameSymbol.back,
-                      tooltip: l10n.backLabel,
-                      size: 40,
-                      onPressed: () => context.pop(),
-                    ),
-                    const SizedBox(width: 10),
-                    const GameIcon(GameSymbol.trophy, size: 24),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        'SALA PRESTIGIULUI',
-                        style: GameText.heading.copyWith(fontSize: 16),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: switch (state.status) {
-                  AchievementsStatus.loading => const Center(
-                    child: CircularProgressIndicator(),
-                  ),
-                  AchievementsStatus.error => Center(
-                    child: GameFrame(
-                      glow: true,
-                      margin: const EdgeInsets.all(22),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          const GameIcon(GameSymbol.skull, size: 44),
-                          const SizedBox(height: 12),
-                          Text(
-                            'Nu am putut încărca realizările.',
-                            style: GameText.bodyDim,
-                          ),
-                          const SizedBox(height: 14),
-                          GameButton(
-                            label: l10n.retry,
-                            onPressed: () => ref
-                                .read(achievementsControllerProvider.notifier)
-                                .load(),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  AchievementsStatus.ready => _AchievementList(
-                    items: state.items,
-                    summary: state.summary!,
-                  ),
-                },
-              ),
-            ],
+    return QuizRealmScaffold(
+      title: 'Sala prestigiului',
+      onBack: () => context.pop(),
+      backSemanticsLabel: l10n.backLabel,
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.16,
+      backdropAccent: GamePalette.goldBright,
+      padded: false,
+      scrollable: false,
+      body: Expanded(
+        child: switch (state.status) {
+          AchievementsStatus.loading => const Center(
+            child: CircularProgressIndicator(),
           ),
-        ),
+          AchievementsStatus.error => Center(
+            child: GameFrame(
+              glow: true,
+              margin: const EdgeInsets.all(22),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const GameIcon(GameSymbol.skull, size: 44),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Nu am putut încărca realizările.',
+                    style: GameText.bodyDim,
+                  ),
+                  const SizedBox(height: 14),
+                  GameButton(
+                    label: l10n.retry,
+                    onPressed: () => ref
+                        .read(achievementsControllerProvider.notifier)
+                        .load(),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          AchievementsStatus.ready => _AchievementList(
+            items: state.items,
+            summary: state.summary!,
+          ),
+        },
       ),
     );
   }

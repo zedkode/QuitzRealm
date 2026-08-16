@@ -10,7 +10,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/ui/game_button.dart';
 import '../../core/ui/game_frame.dart';
 import '../../core/ui/game_icons.dart';
-import '../../core/ui/realm_backdrop.dart';
+import '../../core/design/quizrealm_scaffold.dart';
 import '../../domain/social/social_models.dart';
 import '../../domain/social/social_realtime_event.dart';
 import '../../l10n/app_localizations.dart';
@@ -188,45 +188,22 @@ class _GlobalChatScreenState extends ConsumerState<GlobalChatScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    return Scaffold(
-      body: RealmBackdrop(
-        accent: GamePalette.arcane,
-        artAsset: 'assets/game/realm_map_v2.png',
-        artOpacity: 0.12,
-        child: SafeArea(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 6, 14, 4),
-                child: Row(
-                  children: [
-                    GameIconButton(
-                      symbol: GameSymbol.back,
-                      tooltip: l10n.backLabel,
-                      size: 40,
-                      onPressed: () => context.pop(),
-                    ),
-                    const SizedBox(width: 10),
-                    const GameIcon(
-                      GameSymbol.chat,
-                      size: 24,
-                      color: GamePalette.gold,
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        'LOBBY GLOBAL',
-                        style: GameText.heading.copyWith(fontSize: 15),
-                      ),
-                    ),
-                    _TierSeal(trust: _trust),
-                  ],
-                ),
-              ),
-              Expanded(child: _buildBody(context)),
-              _buildComposer(context),
-            ],
-          ),
+    return QuizRealmScaffold(
+      title: 'Lobby global',
+      onBack: () => context.pop(),
+      backSemanticsLabel: l10n.backLabel,
+      backdropAsset: 'assets/game/realm_map_v2.png',
+      backdropOpacity: 0.12,
+      backdropAccent: GamePalette.arcane,
+      padded: false,
+      scrollable: false,
+      titleTrailing: _TierSeal(trust: _trust),
+      body: Expanded(
+        child: Column(
+          children: [
+            Expanded(child: _buildBody(context)),
+            _buildComposer(context),
+          ],
         ),
       ),
     );

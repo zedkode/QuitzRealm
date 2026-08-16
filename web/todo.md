@@ -64,3 +64,26 @@
 - [ ] Aplică explicit noile primitive Flutter pe ecranele home, duel, profil, social, achievements și setări, apoi verifică-le vizual
 - [ ] Parcurge și validează stările responsive, dialog, empty și error pentru toate suprafețele web și mobile după redesign
 - [ ] Capturează verificări vizuale pentru website pe mobil după redesign și pentru aplicația Flutter pe ecranele cheie
+
+## Dependency upgrade and handoff
+
+- [x] Inventariază versiunile actuale și cele mai noi versiuni disponibile pentru web/backend și Flutter/Android
+- [x] Actualizează dependințele web/backend și regenerează lockfile-ul
+- [x] Actualizează dependințele Flutter/Dart și pluginurile Android compatibil
+- [x] Rulează check, teste, build web/backend și flutter analyze după upgrade
+- [x] Încearcă buildul APK release după upgrade și documentează orice blocaj extern (Android SDK absent în sandbox)
+- [ ] Împinge toate modificările validate pe GitHub main
+- [ ] Scrie rezumatul de handoff pentru continuarea lucrului de către Claude
+
+## Dependency upgrade and handoff — continuation
+
+- [x] Finalizează validarea dependințelor web la ultimele versiuni compatibile pnpm 11/TypeScript 7
+- [x] Migrează și verifică API-urile Express 5, Recharts 3, react-day-picker 10 și react-resizable-panels 4
+- [x] Actualizează golden snapshots Flutter după redesign-ul Medieval-Futurist și rulează testele complete
+- [x] Validează final backend API, realtime, web și Flutter; apoi commit și push GitHub
+- [x] Documentează handoff-ul pentru Claude cu versiuni, teste și blocaje rămase
+- [x] Actualizează efectiv dependințele NestJS din backend/api și backend/realtime și regenerează lockfile-urile
+- [x] Aliniază și documentează configurația finală pnpm workspace/packageManager pentru web
+- [x] Repară build-ul cloud web: pnpm 11 respinge lockfile-ul cu minimumReleaseAge după upgrade-ul dependințelor publicate recent
+- [ ] Confirmă buildul cloud web după setarea minimumReleaseAge: 0 și documentează rezultatul din logurile de deployment
+- [x] Adoptă QuizRealmScaffold pe Achievements, Social și Global Chat și validează testele Flutter sociale

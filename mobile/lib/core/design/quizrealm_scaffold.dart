@@ -182,15 +182,18 @@ class QuizRealmTopBar extends StatelessWidget {
           child: Row(
             children: [
               const Expanded(child: _TitleRule(flipped: false)),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: QuizRealmSpacing.sm,
-                ),
-                child: Text(
-                  title.toUpperCase(),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: QuizRealmTypography.screenTitle,
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: QuizRealmSpacing.sm,
+                  ),
+                  child: Text(
+                    title.toUpperCase(),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: QuizRealmTypography.screenTitle,
+                  ),
                 ),
               ),
               const Expanded(child: _TitleRule(flipped: true)),
