@@ -59,6 +59,10 @@ export const quizRealmApi = {
 };
 
 export function connectQuizRealmSocket(tokenOverride?: string): Socket {
-  const socketUrl = (import.meta.env.VITE_QUIZREALM_SOCKET_URL as string | undefined) || API_BASE || window.location.origin;
+  const base = (import.meta.env.VITE_QUIZREALM_SOCKET_URL as string | undefined) || API_BASE || window.location.origin;
+  // Duelurile și chatul stau pe namespace-ul `/game`, la fel ca în aplicația
+  // Flutter (`realtime_client.dart`). Fără el handshake-ul cade cu „Invalid
+  // namespace” și pagina rămâne pe „offline”.
+  const socketUrl = `${base.replace(/\/$/, "")}/game`;
   return io(socketUrl, { transports: ["websocket"], auth: { token: tokenOverride ?? token() } });
 }
