@@ -16,6 +16,10 @@ import type { Request } from 'express';
 import { AuthService } from './auth.service';
 import { AuthenticatedUser, GoogleUser } from './auth.types';
 import {
+  ChangePasswordDto,
+  DeleteAccountDto,
+} from './dto/change-password.dto';
+import {
   RequestPasswordResetDto,
   ResetPasswordDto,
 } from './dto/password-reset.dto';
@@ -117,6 +121,39 @@ export class AuthController {
   @HttpCode(204)
   async confirmEmailVerification(@Body() dto: ConfirmTokenDto): Promise<void> {
     await this.auth.confirmEmailVerification(dto.token);
+  }
+
+  // --- Schimbare parolă din cont & ștergere cont ---
+
+  /// Limitat strict: fără plafon, endpointul ar fi un oracol care spune dacă
+  /// parola ghicită e cea corectă, pe o sesiune deja obținută.
+  @UseGuards(JwtAuthGuard)
+  @Post('password/change')
+  @Throttle({ default: { limit: 5, ttl: 3_600_000 } })
+  @HttpCode(204)
+  async changePassword(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: ChangePasswordDto,
+  ): Promise<void> {
+    await this.auth.changePassword(
+      request.user.id,
+      dto.currentPassword,
+      dto.newPassword,
+      request.user.sessionId,
+    );
+  }
+
+  /// Ștergerea contului e definitivă și nu are pas de anulare pe server:
+  /// confirmarea se cere în aplicație, iar aici se execută.
+  @UseGuards(JwtAuthGuard)
+  @Post('account/delete')
+  @Throttle({ default: { limit: 5, ttl: 3_600_000 } })
+  @HttpCode(204)
+  async deleteAccount(
+    @Req() request: AuthenticatedRequest,
+    @Body() dto: DeleteAccountDto,
+  ): Promise<void> {
+    await this.auth.deleteAccount(request.user.id, dto.password);
   }
 
   // --- Resetare parolă (§1.4) ---

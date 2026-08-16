@@ -14,10 +14,26 @@ import {
 } from '../auth/account-policy';
 import { LeaderboardService } from '../leaderboard/leaderboard.service';
 import { PrismaService } from '../prisma/prisma.service';
+import { DEFAULT_COSMETICS } from '../profile/cosmetic-catalog';
 import { resolveRank } from '../ranks/rank-tiers';
 import { SetBirthDateDto } from './dto/set-birth-date.dto';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 import { UpdateUsernameDto } from './dto/update-username.dto';
+
+/// Ce poartă jucătorul, cu implicitele completate.
+///
+/// Aceleași implicite ca în catalog: un cont nou n-are niciun rând în inventar,
+/// dar are totuși un portret și o ramă — altfel fiecare ecran ar trebui să-și
+/// inventeze propriul „dacă lipsește".
+function equippedCosmetics(
+  inventory: readonly { cosmetic: { code: string; type: string } }[],
+): Record<string, string | null> {
+  const equipped: Record<string, string | null> = { ...DEFAULT_COSMETICS };
+  for (const entry of inventory) {
+    equipped[entry.cosmetic.type] = entry.cosmetic.code;
+  }
+  return equipped;
+}
 
 @Injectable()
 export class UsersService {
@@ -37,13 +53,15 @@ export class UsersService {
         email: true,
         emailVerifiedAt: true,
         birthDate: true,
-        avatarId: true,
-        frameId: true,
         createdAt: true,
         eloRating: true,
         xp: true,
         level: true,
         coins: true,
+        inventory: {
+          where: { equipped: true },
+          select: { cosmetic: { select: { code: true, type: true } } },
+        },
         _count: { select: { matchPlayers: true } },
       },
     });
@@ -55,6 +73,7 @@ export class UsersService {
       usernameChangedAt,
       emailVerifiedAt,
       birthDate,
+      inventory,
       ...profile
     } = user;
 
@@ -62,6 +81,9 @@ export class UsersService {
       ...profile,
       // Când nu și-a ales un nume afișat, folosim handle-ul.
       displayName: user.displayName ?? user.username,
+      // Ce poartă acum, ca antetul de identitate să arate același portret pe
+      // toate ecranele fără să ceară profilul complet la fiecare randare.
+      equipped: equippedCosmetics(inventory),
       matchesPlayed: _count.matchPlayers,
       leaderboardPosition: standing?.position ?? null,
       rank: resolveRank(user.eloRating, standing?.position ?? null),

@@ -284,6 +284,72 @@ export class AuthService {
     await this.sessions.revokeAll(userId);
   }
 
+  /// Schimbarea parolei din cont, cu parola curentă drept dovadă.
+  ///
+  /// Diferit de resetarea prin email: acolo dovada e linkul primit pe adresă,
+  /// aici e faptul că știi parola veche. Fără ea, un telefon lăsat deblocat
+  /// cinci minute ar fi de ajuns ca să-i schimbe cineva parola contului.
+  ///
+  /// Închide celelalte sesiuni, dar o păstrează pe cea curentă: cine tocmai
+  /// și-a schimbat parola în aplicație n-are de ce să fie dat afară din ea.
+  async changePassword(
+    userId: string,
+    currentPassword: string,
+    newPassword: string,
+    sessionId?: string,
+  ): Promise<void> {
+    const user = await this.prisma.user.findUniqueOrThrow({
+      where: { id: userId },
+      select: { passwordHash: true },
+    });
+
+    if (user.passwordHash === null) {
+      // Cont creat prin Google: n-are parolă de confirmat, deci și-o setează
+      // prin fluxul de resetare pe email, unde dovada e accesul la adresă.
+      throw new BadRequestException(
+        'Contul folosește autentificarea Google. Setează o parolă prin resetare pe email.',
+      );
+    }
+    if (!(await argon2.verify(user.passwordHash, currentPassword))) {
+      throw new UnauthorizedException('Parola curentă nu este corectă.');
+    }
+    if (currentPassword === newPassword) {
+      throw new BadRequestException('Noua parolă trebuie să fie diferită.');
+    }
+
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: { passwordHash: await argon2.hash(newPassword) },
+    });
+    await this.sessions.revokeAll(userId, sessionId);
+  }
+
+  /// Șterge definitiv contul, după confirmarea identității.
+  ///
+  /// Ștergerea e reală, nu o marcare: `onDelete: Cascade` duce cu el sesiunile,
+  /// prietenii, mesajele și inventarul. Partidele jucate rămân doar acolo unde
+  /// relația e `Restrict` — istoricul altor jucători n-are voie să se rupă
+  /// pentru că cineva a plecat.
+  async deleteAccount(userId: string, password?: string): Promise<void> {
+    const user = await this.prisma.user.findUniqueOrThrow({
+      where: { id: userId },
+      select: { passwordHash: true },
+    });
+
+    if (user.passwordHash !== null) {
+      if (password === undefined || password.length === 0) {
+        throw new BadRequestException(
+          'Confirmă ștergerea contului cu parola ta.',
+        );
+      }
+      if (!(await argon2.verify(user.passwordHash, password))) {
+        throw new UnauthorizedException('Parola nu este corectă.');
+      }
+    }
+
+    await this.prisma.user.delete({ where: { id: userId } });
+  }
+
   private async sendVerificationEmail(
     userId: string,
     email: string,
