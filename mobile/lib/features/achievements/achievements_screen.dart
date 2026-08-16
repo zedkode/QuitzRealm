@@ -121,6 +121,61 @@ class _AchievementList extends StatelessWidget {
           ],
         ),
       ),
+      const SizedBox(height: 12),
+      GameFrame(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('BADGE-URI ECHIPATE', style: GameText.eyebrow),
+            const SizedBox(height: 8),
+            Row(
+              children: List.generate(3, (slotIndex) {
+                final badge = summary.badges
+                    .where((entry) => entry.slotIndex == slotIndex)
+                    .cast<EquippedAchievementBadge?>()
+                    .firstWhere((entry) => entry != null, orElse: () => null);
+                return Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(right: slotIndex == 2 ? 0 : 8),
+                    child: Container(
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: GamePalette.stone800.withValues(alpha: .72),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color:
+                              (badge?.rarity == AchievementRarity.legendary
+                                      ? GamePalette.gold
+                                      : GamePalette.arcane)
+                                  .withValues(
+                                    alpha: badge?.achievementId == null
+                                        ? .22
+                                        : .7,
+                                  ),
+                        ),
+                      ),
+                      child: badge?.achievementId == null
+                          ? const GameIcon(
+                              GameSymbol.lock,
+                              size: 20,
+                              color: GamePalette.stone700,
+                            )
+                          : Text(
+                              badge?.title ?? 'Badge',
+                              maxLines: 2,
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              style: GameText.eyebrow.copyWith(fontSize: 9),
+                            ),
+                    ),
+                  ),
+                );
+              }),
+            ),
+          ],
+        ),
+      ),
       const SizedBox(height: 14),
       for (final item in items)
         Padding(
