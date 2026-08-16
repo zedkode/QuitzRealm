@@ -52,8 +52,18 @@ dependencies:
 # deci `flutter build apk --release` cade înainte să compileze ceva. Upstream a
 # trecut pe varianta `-optimize`, dar fix-ul e deocamdată doar în seria 1.2.0.
 # Se scoate când apare o versiune stabilă cu fix-ul.
+# Toată familia trebuie ținută pe aceeași linie: pachetul-umbrelă și
+# implementările per platformă implementează `platform_interface`, deci un mix
+# stabil/beta pică la compilare cu „missing implementations", chiar dacă
+# `flutter analyze` trece (analiza nu intră în pub-cache).
 dependency_overrides:
+  flutter_inappwebview: 6.2.0-beta.3
+  flutter_inappwebview_platform_interface: 1.4.0-beta.3
   flutter_inappwebview_android: 1.2.0-beta.3
+  flutter_inappwebview_ios: 1.2.0-beta.3
+  flutter_inappwebview_macos: 1.2.0-beta.3
+  flutter_inappwebview_web: 1.2.0-beta.3
+  flutter_inappwebview_windows: 0.7.0-beta.3
 
 dev_dependencies:
   flutter_test:
