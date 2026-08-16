@@ -4,9 +4,9 @@ export interface DonutSlice {
   colour: string;
 }
 
-const SIZE = 120;
-const RADIUS = 46;
-const STROKE = 15;
+const SIZE = 92;
+const RADIUS = 35;
+const STROKE = 12;
 
 /// Inelul cu distribuția, desenat din arce de cerc.
 ///

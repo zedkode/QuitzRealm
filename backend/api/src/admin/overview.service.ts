@@ -271,12 +271,19 @@ export class OverviewService {
       this.prisma.chatReport.findMany({
         take: 4,
         orderBy: { createdAt: 'desc' },
-        select: { id: true, createdAt: true, scope: true, reportedUser: { select: { username: true } } },
+        select: {
+          id: true, createdAt: true, scope: true,
+          reportedUser: { select: { username: true } },
+          reporter: { select: { username: true } },
+        },
       }),
       this.prisma.question.findMany({
         take: 4,
         orderBy: { createdAt: 'desc' },
-        select: { id: true, createdAt: true, status: true, text: true },
+        select: {
+          id: true, createdAt: true, status: true, text: true,
+          createdBy: { select: { username: true } },
+        },
       }),
       this.prisma.match.findMany({
         take: 4,
@@ -288,44 +295,64 @@ export class OverviewService {
         take: 4,
         where: { status: PurchaseStatus.PAID },
         orderBy: { paidAt: 'desc' },
-        select: { id: true, paidAt: true, priceCents: true, currency: true, user: { select: { username: true } } },
+        select: {
+          id: true, paidAt: true, priceCents: true, currency: true,
+          user: { select: { username: true } },
+          gemPack: { select: { name: true } },
+        },
       }),
       this.prisma.adminAuditLog.findMany({
         take: 4,
         orderBy: { createdAt: 'desc' },
-        select: { id: true, createdAt: true, action: true, actor: { select: { username: true } } },
+        select: {
+          id: true, createdAt: true, action: true, targetType: true, success: true,
+          actor: { select: { username: true } },
+          targetUser: { select: { username: true } },
+        },
       }),
     ]);
 
+    // Actor, acțiune, țintă și detaliu, fiecare în coloana lui. Îngrămădite
+    // într-un singur text, un jurnal de activitate nu se poate citi pe verticală.
     const entries = [
       ...reports.map((row) => ({
         kind: 'report' as const,
-        title: 'Jucător raportat',
-        subtitle: `${row.reportedUser.username} · ${row.scope}`,
+        actor: row.reporter?.username ?? 'Sistem',
+        action: 'Reported player',
+        target: row.reportedUser.username,
+        details: String(row.scope),
         at: row.createdAt,
       })),
       ...questions.map((row) => ({
         kind: 'question' as const,
-        title: row.status === QuestionStatus.APPROVED ? 'Întrebare aprobată' : 'Întrebare trimisă',
-        subtitle: row.text.slice(0, 60),
+        actor: row.createdBy?.username ?? 'Sistem',
+        action: row.status === QuestionStatus.APPROVED ? 'Question approved' : 'Submitted question',
+        target: row.text.slice(0, 48),
+        details: String(row.status),
         at: row.createdAt,
       })),
       ...matches.map((row) => ({
         kind: 'match' as const,
-        title: 'Partidă începută',
-        subtitle: String(row.mode),
+        actor: 'Match Service',
+        action: 'Match started',
+        target: row.id.slice(0, 8),
+        details: String(row.mode),
         at: row.startedAt as Date,
       })),
       ...purchases.map((row) => ({
         kind: 'payment' as const,
-        title: 'Plată încasată',
-        subtitle: `${(row.priceCents / 100).toFixed(2)} ${row.currency} · ${row.user.username}`,
+        actor: row.user.username,
+        action: 'Payment received',
+        target: row.gemPack.name,
+        details: `${(row.priceCents / 100).toFixed(2)} ${row.currency}`,
         at: row.paidAt as Date,
       })),
       ...auditEntries.map((row) => ({
         kind: 'admin' as const,
-        title: 'Acțiune de administrare',
-        subtitle: `${row.action} · ${row.actor.username}`,
+        actor: row.actor.username,
+        action: row.action,
+        target: row.targetUser?.username ?? row.targetType ?? '—',
+        details: row.success ? 'Reușit' : 'Eșuat',
         at: row.createdAt,
       })),
     ];

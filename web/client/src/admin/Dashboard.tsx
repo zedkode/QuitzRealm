@@ -53,7 +53,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
     <div className="min-w-0">
       <header className="mb-3 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-display text-[26px] leading-none text-[#e8c56a]">Dashboard</h1>
+          <h1 className="text-[23px] font-extrabold leading-none tracking-tight text-[#e8c56a]">Dashboard</h1>
           <p className="mt-1.5 text-[10.5px] text-[var(--admin-muted)]">
             Live overview of players, content, economy, campaigns, and system health.
           </p>
@@ -86,7 +86,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
         <ChallengesPanel data={data} />
       </div>
 
-      <div className="mt-2.5 grid grid-cols-1 gap-2.5 md:grid-cols-2 lg:grid-cols-[1.5fr_1.3fr_1.4fr_1fr_1.05fr_1.2fr]">
+      <div className="mt-2.5 grid grid-cols-1 gap-2.5 md:grid-cols-2 lg:grid-cols-[1.15fr_1.5fr_1.35fr_1.2fr_1.15fr_1.15fr]">
         <CampaignMapPanel data={data} />
         <StoreRevenuePanel data={data} />
         <CoinEconomyPanel data={data} />
@@ -107,7 +107,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
 /* ---------------------------------------------------------------- cadre --- */
 
 function Panel({
-  title, note, action, children, bodyClass = "p-2.5", foot,
+  title, note, action, children, bodyClass = "p-2", foot,
 }: {
   title: string;
   note?: string;
@@ -140,7 +140,7 @@ function Foot({ children }: { children: ReactNode }) {
 /// Rândul standard din panourile-listă: etichetă la stânga, cifră la dreapta.
 function Row({ icon, label, value, tone }: { icon?: ReactNode; label: string; value: ReactNode; tone?: string }) {
   return (
-    <div className="flex items-center gap-2 rounded-md px-1.5 py-[5px] hover:bg-white/[.025]">
+    <div className="flex items-center gap-2 rounded-md px-1.5 py-[3px] hover:bg-white/[.025]">
       {icon}
       <span className="min-w-0 flex-1 truncate text-[10px] text-[#a49bbd]" style={tone ? { color: tone } : undefined}>
         {label}
@@ -229,7 +229,7 @@ function KpiRow({ data }: { data: AdminOverview | null }) {
       {cards.map((card) => {
         const tone = KPI_TONES[card.tone];
         return (
-          <article key={card.label} className="admin-kpi px-2.5 pb-1 pt-2.5">
+          <article key={card.label} className="admin-kpi px-2.5 pb-0.5 pt-1.5">
             <div className="flex items-start gap-2">
               <span className="admin-kpi-icon shrink-0" style={{ background: tone.bg, color: tone.fg }}>
                 {card.icon}
@@ -287,9 +287,9 @@ function PlayerGrowthPanel({ data }: { data: AdminOverview | null }) {
       foot={
         <div className="grid grid-cols-3 divide-x divide-[var(--admin-line)] border-t border-[var(--admin-line)]">
           {blocks.map((block) => (
-            <div key={block.label} className="min-w-0 px-2.5 py-1.5">
+            <div key={block.label} className="min-w-0 px-2 py-[3px]">
               <div className="truncate text-[8.5px] text-[var(--admin-dim)]">{block.label}</div>
-              <div className="text-[12px] font-bold text-[#efe7ff]">
+              <div className="text-[11.5px] font-bold text-[#efe7ff]">
                 {block.entry ? formatNumber(block.entry.value) : "—"}
               </div>
               <div className="truncate text-[8px]">
@@ -465,7 +465,7 @@ function StoreRevenuePanel({ data }: { data: AdminOverview | null }) {
         </Foot>
       }
     >
-      <div className="space-y-1.5">
+      <div className="space-y-1">
         {rows.map((row) => (
           <div key={row.label} className="px-1.5">
             <div className="text-[9px] text-[var(--admin-dim)]">{row.label}</div>
@@ -508,11 +508,11 @@ function CoinEconomyPanel({ data }: { data: AdminOverview | null }) {
         </Foot>
       }
     >
-      <div className="space-y-1.5">
+      <div className="space-y-1">
         {rows.map((row) => (
           <div key={row.label} className="px-1.5">
             <div className="text-[9px] text-[var(--admin-dim)]">{row.label}</div>
-            <div className="font-mono text-[12px] font-bold text-[#efe7ff]">
+            <div className="font-mono text-[11.5px] font-bold text-[#efe7ff]">
               {row.value != null ? formatCompact(row.value) : "—"}
             </div>
           </div>
@@ -637,7 +637,7 @@ function SystemHealthPanel({ data }: { data: AdminOverview | null }) {
         {services.map((service) => {
           const serviceTone = STATUS_TONE[service.status] ?? STATUS_TONE.unknown;
           return (
-            <div key={service.key} className="flex items-center gap-2 px-1.5 py-[3px]">
+            <div key={service.key} className="flex items-center gap-2 px-1.5 py-[1px]">
               <span className="min-w-0 flex-1 truncate text-[9.5px] text-[#a49bbd]">{service.name}</span>
               <span className="shrink-0 text-[9px]" style={{ color: serviceTone.colour }}>
                 {service.latencyMs != null ? `${service.latencyMs} ms` : serviceTone.label}
@@ -654,12 +654,13 @@ function SystemHealthPanel({ data }: { data: AdminOverview | null }) {
 
 /* ------------------------------------------------------------- rândul 4 --- */
 
-const ACTIVITY_LABELS: Record<string, string> = {
-  report: "Report filed",
-  question: "Question submitted",
-  match: "Match started",
-  payment: "Payment received",
-  admin: "Admin action",
+/// Culoarea actorului spune din ce sistem vine rândul, fără o coloană în plus.
+const ACTOR_TONE: Record<string, string> = {
+  report: "#f9a8d4",
+  question: "#f0cf7a",
+  match: "#5eead4",
+  payment: "#6ee7b7",
+  admin: "#b9a3ff",
 };
 
 function RecentActivityPanel({ data }: { data: AdminOverview | null }) {
@@ -680,9 +681,10 @@ function RecentActivityPanel({ data }: { data: AdminOverview | null }) {
         <table className="admin-table w-full table-fixed">
           <thead>
             <tr>
-              <th className="w-[54px]">Time</th>
-              <th className="w-[26%]">Actor</th>
-              <th className="w-[24%]">Action</th>
+              <th className="w-[52px]">Time</th>
+              <th className="w-[21%]">Actor</th>
+              <th className="w-[23%]">Action</th>
+              <th className="w-[26%]">Target</th>
               <th>Details</th>
             </tr>
           </thead>
@@ -694,9 +696,10 @@ function RecentActivityPanel({ data }: { data: AdminOverview | null }) {
                     hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
                   })}
                 </td>
-                <td className="truncate text-[#ded6f0]">{row.title}</td>
-                <td className="truncate">{ACTIVITY_LABELS[row.kind] ?? row.kind}</td>
-                <td className="truncate">{row.subtitle}</td>
+                <td className="truncate" style={{ color: ACTOR_TONE[row.kind] }}>{row.actor}</td>
+                <td className="truncate text-[#ded6f0]">{row.action}</td>
+                <td className="truncate">{row.target}</td>
+                <td className="truncate">{row.details}</td>
               </tr>
             ))}
           </tbody>
@@ -743,7 +746,7 @@ const OVERVIEW_BARS: Array<{ label: string; key: keyof AdminOverview["platformOv
 function PlatformOverviewPanel({ data }: { data: AdminOverview | null }) {
   return (
     <Panel title="Platform Overview" action={{ label: "View full report", href: "/admin/analytics/players" }}>
-      <div className="space-y-2">
+      <div className="space-y-1.5">
         {OVERVIEW_BARS.map((bar) => {
           const entry: DerivedPct | undefined = data?.platformOverview[bar.key];
           return (

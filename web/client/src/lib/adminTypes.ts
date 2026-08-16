@@ -59,8 +59,10 @@ export interface AdminOverview {
   series: ActivityPoint[];
   recentActivity: Array<{
     kind: "report" | "question" | "match" | "payment" | "admin";
-    title: string;
-    subtitle: string;
+    actor: string;
+    action: string;
+    target: string;
+    details: string;
     at: string;
   }>;
   moderation: {

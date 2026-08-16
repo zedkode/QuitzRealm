@@ -23,7 +23,7 @@ export default function AdminPlaceholderPage({ path }: { path: string }) {
       <header className="mb-4">
         <div className="admin-eyebrow">{route.section}</div>
         <div className="mt-1.5 flex flex-wrap items-center gap-2.5">
-          <h1 className="font-display text-[26px] leading-none text-[#e8c56a]">{route.label}</h1>
+          <h1 className="text-[23px] font-extrabold leading-none tracking-tight text-[#e8c56a]">{route.label}</h1>
           <StageTag stage={route.stage} />
         </div>
         <p className="mt-2 max-w-3xl text-[11.5px] leading-5 text-[var(--admin-muted)]">{route.summary}</p>
@@ -108,7 +108,7 @@ function UnknownRoute({ path }: { path: string }) {
     <div className="min-w-0">
       <header className="mb-4">
         <div className="admin-eyebrow">Admin</div>
-        <h1 className="mt-1.5 font-display text-[26px] leading-none text-[#e8c56a]">Rută necunoscută</h1>
+        <h1 className="mt-1.5 text-[23px] font-extrabold leading-none tracking-tight text-[#e8c56a]">Rută necunoscută</h1>
       </header>
       <section className="admin-panel p-6 text-center">
         <p className="text-[11.5px] text-[var(--admin-muted)]">

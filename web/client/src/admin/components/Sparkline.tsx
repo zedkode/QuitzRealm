@@ -1,5 +1,5 @@
 const WIDTH = 100;
-const HEIGHT = 26;
+const HEIGHT = 22;
 
 /// Linia mică de sub fiecare indicator.
 ///
@@ -8,7 +8,7 @@ const HEIGHT = 26;
 /// ar sugera „constant" acolo unde adevărul e „nu se măsoară".
 export default function Sparkline({ points, colour }: { points?: number[]; colour: string }) {
   if (!points || points.length < 2) {
-    return <div className="h-[26px]" aria-hidden />;
+    return <div className="h-[22px]" aria-hidden />;
   }
 
   const min = Math.min(...points);
@@ -22,7 +22,7 @@ export default function Sparkline({ points, colour }: { points?: number[]; colou
   const gradientId = `spark-${colour.replace("#", "")}`;
 
   return (
-    <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} preserveAspectRatio="none" className="h-[26px] w-full" aria-hidden>
+    <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} preserveAspectRatio="none" className="h-[22px] w-full" aria-hidden>
       <defs>
         <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor={colour} stopOpacity=".26" />

@@ -8,7 +8,7 @@ const SERIES = [
 ] as const;
 
 const WIDTH = 460;
-const HEIGHT = 150;
+const HEIGHT = 104;
 const PADDING = { top: 8, right: 8, bottom: 18, left: 30 };
 
 /// Graficul de creștere, desenat direct în SVG.
@@ -64,7 +64,7 @@ export default function GrowthChart({ series }: { series: GrowthPoint[] }) {
       </div>
 
       {chart === null ? (
-        <div className="admin-empty h-[150px]">
+        <div className="admin-empty h-[104px]">
           Nu există încă suficiente zile de istoric pentru a desena curba de creștere.
         </div>
       ) : (
