@@ -1,0 +1,4044 @@
+{
+  "id": "cars",
+  "name": "Mașini",
+  "questions": [
+    {
+      "id": "cars-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă a produs modelul 205 GTI?",
+      "options": [
+        "Peugeot",
+        "Renault",
+        "Citroën",
+        "Volkswagen"
+      ],
+      "answer": "Peugeot",
+      "explanation": "205 GTI este una dintre versiunile sportive emblematice ale Peugeot 205."
+    },
+    {
+      "id": "cars-002",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce marcă este asociat celebrul Delta Integrale?",
+      "options": [
+        "Lancia",
+        "Fiat",
+        "Alfa Romeo",
+        "Peugeot"
+      ],
+      "answer": "Lancia",
+      "explanation": "Delta Integrale este un model Lancia celebru pentru succesul în raliuri."
+    },
+    {
+      "id": "cars-003",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Capri?",
+      "options": [
+        "Ford",
+        "Opel",
+        "BMW",
+        "Volvo"
+      ],
+      "answer": "Ford",
+      "explanation": "Capri a fost coupe-ul european produs de Ford."
+    },
+    {
+      "id": "cars-004",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă producea modelul Celica?",
+      "options": [
+        "Toyota",
+        "Honda",
+        "Nissan",
+        "Mazda"
+      ],
+      "answer": "Toyota",
+      "explanation": "Celica a fost un coupe sport produs de Toyota timp de mai multe generații."
+    },
+    {
+      "id": "cars-005",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă a produs modelul Integra?",
+      "options": [
+        "Honda",
+        "Toyota",
+        "Nissan",
+        "Subaru"
+      ],
+      "answer": "Honda",
+      "explanation": "Integra a fost produs de Honda și, pe unele piețe, sub marca Acura."
+    },
+    {
+      "id": "cars-006",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă este asociată cu modelul 240?",
+      "options": [
+        "Volvo",
+        "Saab",
+        "BMW",
+        "Audi"
+      ],
+      "answer": "Volvo",
+      "explanation": "Seria 240 a fost una dintre cele mai cunoscute familii de modele Volvo."
+    },
+    {
+      "id": "cars-007",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă a produs modelul 900?",
+      "options": [
+        "Saab",
+        "Volvo",
+        "Škoda",
+        "Audi"
+      ],
+      "answer": "Saab",
+      "explanation": "Saab 900 a devenit unul dintre modelele reprezentative ale constructorului suedez."
+    },
+    {
+      "id": "cars-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul León?",
+      "options": [
+        "SEAT",
+        "Škoda",
+        "Renault",
+        "Fiat"
+      ],
+      "answer": "SEAT",
+      "explanation": "León este hatchback-ul compact al mărcii spaniole SEAT."
+    },
+    {
+      "id": "cars-009",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce constructor produce modelul Panda?",
+      "options": [
+        "Fiat",
+        "Renault",
+        "Peugeot",
+        "Dacia"
+      ],
+      "answer": "Fiat",
+      "explanation": "Panda este un model urban produs de Fiat."
+    },
+    {
+      "id": "cars-010",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă a produs modelul 190E?",
+      "options": [
+        "Mercedes-Benz",
+        "BMW",
+        "Audi",
+        "Volvo"
+      ],
+      "answer": "Mercedes-Benz",
+      "explanation": "190E face parte din familia Mercedes-Benz W201, precursoare a Clasei C."
+    },
+    {
+      "id": "cars-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul Impreza?",
+      "options": [
+        "Subaru",
+        "Mitsubishi",
+        "Mazda",
+        "Honda"
+      ],
+      "answer": "Subaru",
+      "explanation": "Impreza este un model asociat cu marca Subaru."
+    },
+    {
+      "id": "cars-012",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Wrangler?",
+      "options": [
+        "Jeep",
+        "Ford",
+        "Land Rover",
+        "GMC"
+      ],
+      "answer": "Jeep",
+      "explanation": "Wrangler este un model asociat cu marca Jeep."
+    },
+    {
+      "id": "cars-013",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul Defender?",
+      "options": [
+        "Land Rover",
+        "Jeep",
+        "Toyota",
+        "Ford"
+      ],
+      "answer": "Land Rover",
+      "explanation": "Defender este un model asociat cu marca Land Rover."
+    },
+    {
+      "id": "cars-014",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Supra?",
+      "options": [
+        "Toyota",
+        "Nissan",
+        "Honda",
+        "Subaru"
+      ],
+      "answer": "Toyota",
+      "explanation": "Supra este un model asociat cu marca Toyota."
+    },
+    {
+      "id": "cars-015",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul GT-R?",
+      "options": [
+        "Nissan",
+        "Toyota",
+        "Mazda",
+        "Mitsubishi"
+      ],
+      "answer": "Nissan",
+      "explanation": "GT-R este un model asociat cu marca Nissan."
+    },
+    {
+      "id": "cars-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Miura?",
+      "options": [
+        "Lamborghini",
+        "Ferrari",
+        "Maserati",
+        "Alfa Romeo"
+      ],
+      "answer": "Lamborghini",
+      "explanation": "Miura este un model asociat cu marca Lamborghini."
+    },
+    {
+      "id": "cars-017",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul DB5?",
+      "options": [
+        "Aston Martin",
+        "Bentley",
+        "Jaguar",
+        "Lotus"
+      ],
+      "answer": "Aston Martin",
+      "explanation": "DB5 este un model asociat cu marca Aston Martin."
+    },
+    {
+      "id": "cars-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Phantom?",
+      "options": [
+        "Rolls-Royce",
+        "Bentley",
+        "Maybach",
+        "Jaguar"
+      ],
+      "answer": "Rolls-Royce",
+      "explanation": "Phantom este un model asociat cu marca Rolls-Royce."
+    },
+    {
+      "id": "cars-019",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă produce modelul Octavia?",
+      "options": [
+        "Škoda",
+        "Volkswagen",
+        "SEAT",
+        "Opel"
+      ],
+      "answer": "Škoda",
+      "explanation": "Octavia este un model asociat cu marca Škoda."
+    },
+    {
+      "id": "cars-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cărui constructor îi aparține modelul Duster?",
+      "options": [
+        "Dacia",
+        "Renault",
+        "Peugeot",
+        "Fiat"
+      ],
+      "answer": "Dacia",
+      "explanation": "Duster este un model asociat cu marca Dacia."
+    },
+    {
+      "id": "cars-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Ferrari?",
+      "options": [
+        "Italia",
+        "Germania",
+        "Franța",
+        "Regatul Unit"
+      ],
+      "answer": "Italia",
+      "explanation": "Ferrari își are originile în Italia."
+    },
+    {
+      "id": "cars-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Volvo?",
+      "options": [
+        "Suedia",
+        "Norvegia",
+        "Germania",
+        "Danemarca"
+      ],
+      "answer": "Suedia",
+      "explanation": "Volvo își are originile în Suedia."
+    },
+    {
+      "id": "cars-023",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Hyundai?",
+      "options": [
+        "Coreea de Sud",
+        "Japonia",
+        "China",
+        "India"
+      ],
+      "answer": "Coreea de Sud",
+      "explanation": "Hyundai își are originile în Coreea de Sud."
+    },
+    {
+      "id": "cars-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Škoda?",
+      "options": [
+        "Cehia",
+        "Slovacia",
+        "Polonia",
+        "Austria"
+      ],
+      "answer": "Cehia",
+      "explanation": "Škoda își are originile în Cehia."
+    },
+    {
+      "id": "cars-025",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca SEAT?",
+      "options": [
+        "Spania",
+        "Italia",
+        "Portugalia",
+        "Franța"
+      ],
+      "answer": "Spania",
+      "explanation": "SEAT își are originile în Spania."
+    },
+    {
+      "id": "cars-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca BMW?",
+      "options": [
+        "Germania",
+        "Austria",
+        "Elveția",
+        "Suedia"
+      ],
+      "answer": "Germania",
+      "explanation": "BMW își are originile în Germania."
+    },
+    {
+      "id": "cars-027",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Peugeot?",
+      "options": [
+        "Franța",
+        "Belgia",
+        "Italia",
+        "Spania"
+      ],
+      "answer": "Franța",
+      "explanation": "Peugeot își are originile în Franța."
+    },
+    {
+      "id": "cars-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Honda?",
+      "options": [
+        "Japonia",
+        "Coreea de Sud",
+        "China",
+        "Thailanda"
+      ],
+      "answer": "Japonia",
+      "explanation": "Honda își are originile în Japonia."
+    },
+    {
+      "id": "cars-029",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Dacia?",
+      "options": [
+        "România",
+        "Bulgaria",
+        "Ungaria",
+        "Serbia"
+      ],
+      "answer": "România",
+      "explanation": "Dacia își are originile în România."
+    },
+    {
+      "id": "cars-030",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce țară își are originea marca Saab?",
+      "options": [
+        "Suedia",
+        "Finlanda",
+        "Danemarca",
+        "Norvegia"
+      ],
+      "answer": "Suedia",
+      "explanation": "Saab își are originile în Suedia."
+    },
+    {
+      "id": "cars-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce componentă încarcă bateria de 12 V la majoritatea mașinilor cu motor termic?",
+      "options": [
+        "Alternatorul",
+        "Radiatorul",
+        "Ambreiajul",
+        "Catalizatorul"
+      ],
+      "answer": "Alternatorul",
+      "explanation": "Alternatorul generează energie electrică atunci când motorul funcționează."
+    },
+    {
+      "id": "cars-032",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce piesă cuplează și decuplează motorul de transmisie la o cutie manuală?",
+      "options": [
+        "Ambreiajul",
+        "Radiatorul",
+        "Etrierul",
+        "Amortizorul"
+      ],
+      "answer": "Ambreiajul",
+      "explanation": "Ambreiajul controlează legătura mecanică dintre motor și cutie."
+    },
+    {
+      "id": "cars-033",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce sistem reduce blocarea roților la frânare puternică?",
+      "options": [
+        "ABS",
+        "GPS",
+        "EGR",
+        "TPMS"
+      ],
+      "answer": "ABS",
+      "explanation": "ABS modulează presiunea de frânare pentru a menține roțile controlabile."
+    },
+    {
+      "id": "cars-034",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce sistem supraveghează presiunea din anvelope?",
+      "options": [
+        "TPMS",
+        "ABS",
+        "EGR",
+        "OBD"
+      ],
+      "answer": "TPMS",
+      "explanation": "TPMS este sistemul de monitorizare a presiunii pneurilor."
+    },
+    {
+      "id": "cars-035",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce componentă evacuează căldura lichidului de răcire către aer?",
+      "options": [
+        "Radiatorul",
+        "Demarorul",
+        "Alternatorul",
+        "Volanta"
+      ],
+      "answer": "Radiatorul",
+      "explanation": "Radiatorul transferă căldura lichidului de răcire către aer."
+    },
+    {
+      "id": "cars-036",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce piesă rotește inițial motorul termic la pornire?",
+      "options": [
+        "Demarorul",
+        "Compresorul A/C",
+        "Catalizatorul",
+        "Pompa ABS"
+      ],
+      "answer": "Demarorul",
+      "explanation": "Demarorul rotește arborele cotit până când motorul pornește."
+    },
+    {
+      "id": "cars-037",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce măsoară turometrul?",
+      "options": [
+        "Turația motorului",
+        "Viteza mașinii",
+        "Presiunea pneurilor",
+        "Nivelul combustibilului"
+      ],
+      "answer": "Turația motorului",
+      "explanation": "Turometrul indică de regulă rotațiile motorului pe minut."
+    },
+    {
+      "id": "cars-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce componentă apasă plăcuțele pe discul de frână?",
+      "options": [
+        "Etrierul",
+        "Alternatorul",
+        "Diferențialul",
+        "Radiatorul"
+      ],
+      "answer": "Etrierul",
+      "explanation": "Etrierul transformă presiunea hidraulică în forță de strângere."
+    },
+    {
+      "id": "cars-039",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce componentă controlează oscilațiile arcurilor suspensiei?",
+      "options": [
+        "Amortizorul",
+        "Bujia",
+        "Injectorul",
+        "Planetara"
+      ],
+      "answer": "Amortizorul",
+      "explanation": "Amortizorul limitează oscilațiile suspensiei."
+    },
+    {
+      "id": "cars-040",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce piesă produce scânteia într-un motor convențional pe benzină?",
+      "options": [
+        "Bujia",
+        "Injectorul diesel",
+        "Turbina",
+        "Volanta"
+      ],
+      "answer": "Bujia",
+      "explanation": "Bujia aprinde amestecul aer-combustibil prin scânteie."
+    },
+    {
+      "id": "cars-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce piesă permite roților motoare să aibă viteze diferite în viraj?",
+      "options": [
+        "Diferențialul",
+        "Radiatorul",
+        "Turbocompresorul",
+        "Demarorul"
+      ],
+      "answer": "Diferențialul",
+      "explanation": "Diferențialul permite roților aceleiași punți să parcurgă distanțe diferite."
+    },
+    {
+      "id": "cars-042",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce sistem reduce efortul necesar pentru rotirea volanului?",
+      "options": [
+        "Servodirecția",
+        "EGR",
+        "ABS",
+        "Intercoolerul"
+      ],
+      "answer": "Servodirecția",
+      "explanation": "Servodirecția asistă mecanic, hidraulic sau electric direcția."
+    },
+    {
+      "id": "cars-043",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce rol principal are convertorul catalitic?",
+      "options": [
+        "Reduce anumiți poluanți din evacuare",
+        "Mărește presiunea pneurilor",
+        "Încarcă bateria",
+        "Răcește habitaclul"
+      ],
+      "answer": "Reduce anumiți poluanți din evacuare",
+      "explanation": "Catalizatorul transformă chimic o parte din poluanții evacuării."
+    },
+    {
+      "id": "cars-044",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce filtrează filtrul de aer al motorului?",
+      "options": [
+        "Aerul de admisie",
+        "Uleiul cutiei",
+        "Lichidul de frână",
+        "Agentul frigorific"
+      ],
+      "answer": "Aerul de admisie",
+      "explanation": "Filtrul reține particulele înainte ca aerul să intre în motor."
+    },
+    {
+      "id": "cars-045",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce lubrifiază în principal uleiul de motor?",
+      "options": [
+        "Componentele interne mobile",
+        "Anvelopele",
+        "Discurile de frână",
+        "Parbrizul"
+      ],
+      "answer": "Componentele interne mobile",
+      "explanation": "Uleiul reduce frecarea și uzura pieselor interne."
+    },
+    {
+      "id": "cars-046",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce parte a anvelopei atinge direct carosabilul?",
+      "options": [
+        "Banda de rulare",
+        "Talonul",
+        "Valva",
+        "Flancul interior"
+      ],
+      "answer": "Banda de rulare",
+      "explanation": "Banda de rulare formează zona de contact cu drumul."
+    },
+    {
+      "id": "cars-047",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce proprietate a benzinei exprimă cifra octanică?",
+      "options": [
+        "Rezistența la detonație",
+        "Vâscozitatea",
+        "Densitatea bateriei",
+        "Punctul de îngheț"
+      ],
+      "answer": "Rezistența la detonație",
+      "explanation": "Cifra octanică descrie rezistența benzinei la autoaprindere nedorită."
+    },
+    {
+      "id": "cars-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de aprindere folosește motorul diesel clasic?",
+      "options": [
+        "Aprindere prin compresie",
+        "Aprindere exclusiv prin bujie",
+        "Aprindere laser obligatorie",
+        "Aprindere prin baterie"
+      ],
+      "answer": "Aprindere prin compresie",
+      "explanation": "Motorina se aprinde datorită temperaturii ridicate a aerului comprimat."
+    },
+    {
+      "id": "cars-049",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce face, în principal, lichidul de răcire?",
+      "options": [
+        "Transportă căldura de la motor spre radiator",
+        "Lubrifiază ambreiajul uscat",
+        "Umflă anvelopele",
+        "Curăță catalizatorul"
+      ],
+      "answer": "Transportă căldura de la motor spre radiator",
+      "explanation": "Circuitul de răcire preia și evacuează căldura motorului."
+    },
+    {
+      "id": "cars-050",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce dispozitiv se umflă rapid pentru protecția ocupanților în anumite accidente?",
+      "options": [
+        "Airbagul",
+        "Intercoolerul",
+        "Spoilerul",
+        "Diferențialul"
+      ],
+      "answer": "Airbagul",
+      "explanation": "Airbagul completează protecția oferită de centura de siguranță."
+    },
+    {
+      "id": "cars-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă EV?",
+      "options": [
+        "Electric Vehicle",
+        "Engine Valve",
+        "Electronic Vacuum",
+        "Emission Variant"
+      ],
+      "answer": "Electric Vehicle",
+      "explanation": "EV este abrevierea uzuală pentru vehicul electric."
+    },
+    {
+      "id": "cars-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă SUV?",
+      "options": [
+        "Sport Utility Vehicle",
+        "Standard Urban Vehicle",
+        "Sequential Utility Van",
+        "Sport Unit Variant"
+      ],
+      "answer": "Sport Utility Vehicle",
+      "explanation": "SUV înseamnă Sport Utility Vehicle."
+    },
+    {
+      "id": "cars-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă AWD?",
+      "options": [
+        "All-Wheel Drive",
+        "Automatic Wheel Differential",
+        "Active Wet Drive",
+        "All-Wheel Disc"
+      ],
+      "answer": "All-Wheel Drive",
+      "explanation": "AWD descrie un sistem care poate antrena toate roțile."
+    },
+    {
+      "id": "cars-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "La tracțiune față, ce punte este motoare?",
+      "options": [
+        "Puntea față",
+        "Puntea spate",
+        "Ambele obligatoriu",
+        "Niciuna"
+      ],
+      "answer": "Puntea față",
+      "explanation": "FWD transmite cuplul în principal către roțile din față."
+    },
+    {
+      "id": "cars-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "La tracțiune spate, ce punte este motoare?",
+      "options": [
+        "Puntea spate",
+        "Puntea față",
+        "Ambele obligatoriu",
+        "Niciuna"
+      ],
+      "answer": "Puntea spate",
+      "explanation": "RWD transmite cuplul în principal către roțile din spate."
+    },
+    {
+      "id": "cars-056",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câți cilindri are un motor V6?",
+      "answer": "6",
+      "explanation": "Denumirea V6 indică șase cilindri în două bancuri."
+    },
+    {
+      "id": "cars-057",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câți cilindri are un motor V8?",
+      "answer": "8",
+      "explanation": "Un V8 are opt cilindri în două bancuri."
+    },
+    {
+      "id": "cars-058",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte puncte de ancorare are centura numită „în trei puncte”?",
+      "answer": "3",
+      "explanation": "Centura modernă în trei puncte folosește trei puncte de ancorare."
+    },
+    {
+      "id": "cars-059",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat Toyota Prius de primă generație în Japonia?",
+      "answer": "1997",
+      "explanation": "Toyota a lansat Prius în Japonia în 1997."
+    },
+    {
+      "id": "cars-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marcă a introdus centura modernă în trei puncte ca echipare standard în 1959?",
+      "options": [
+        "Volvo",
+        "Saab",
+        "Mercedes-Benz",
+        "Ford"
+      ],
+      "answer": "Volvo",
+      "explanation": "Volvo a introdus centura proiectată de Nils Bohlin pe modele de serie în 1959."
+    },
+    {
+      "id": "cars-061",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a proiectat Mini-ul original?",
+      "options": [
+        "Alec Issigonis",
+        "Ferdinand Porsche",
+        "Giorgetto Giugiaro",
+        "Marcello Gandini"
+      ],
+      "answer": "Alec Issigonis",
+      "explanation": "Alec Issigonis a conceput Mini-ul original."
+    },
+    {
+      "id": "cars-062",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce automobil este asociat cu producția de masă pe linia de asamblare mobilă a lui Henry Ford?",
+      "options": [
+        "Ford Model T",
+        "Ford Mustang",
+        "Chevrolet Bel Air",
+        "Cadillac Eldorado"
+      ],
+      "answer": "Ford Model T",
+      "explanation": "Model T a devenit simbolul producției auto de masă Ford."
+    },
+    {
+      "id": "cars-063",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce model Volkswagen este cunoscut pentru motorul posterior răcit cu aer?",
+      "options": [
+        "Beetle",
+        "Golf",
+        "Passat",
+        "Polo"
+      ],
+      "answer": "Beetle",
+      "explanation": "Beetle a folosit o arhitectură clasică cu motor spate răcit cu aer."
+    },
+    {
+      "id": "cars-064",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de motor are cilindrii opuși orizontal în perechi?",
+      "options": [
+        "Boxer",
+        "V",
+        "Wankel",
+        "În linie"
+      ],
+      "answer": "Boxer",
+      "explanation": "Motorul boxer are cilindri opuși pe două bancuri orizontale."
+    },
+    {
+      "id": "cars-065",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce constructor este asociat puternic cu motoarele boxer în automobile moderne?",
+      "options": [
+        "Subaru",
+        "Volvo",
+        "Renault",
+        "Peugeot"
+      ],
+      "answer": "Subaru",
+      "explanation": "Subaru folosește motoare boxer pe o mare parte din gama sa."
+    },
+    {
+      "id": "cars-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă a folosit cel mai cunoscut motoare rotative Wankel în mașini de serie?",
+      "options": [
+        "Mazda",
+        "Volvo",
+        "Fiat",
+        "Škoda"
+      ],
+      "answer": "Mazda",
+      "explanation": "Mazda a dezvoltat și produs numeroase automobile cu motor rotativ."
+    },
+    {
+      "id": "cars-067",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce model Mazda este celebru pentru motorul rotativ?",
+      "options": [
+        "RX-7",
+        "MX-5",
+        "CX-5",
+        "Mazda6"
+      ],
+      "answer": "RX-7",
+      "explanation": "RX-7 este unul dintre cele mai cunoscute modele Mazda cu motor Wankel."
+    },
+    {
+      "id": "cars-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost primul BMW M3?",
+      "options": [
+        "M3 E30",
+        "M3 E36",
+        "M3 E46",
+        "M3 E92"
+      ],
+      "answer": "M3 E30",
+      "explanation": "M3 E30 a fost prima generație BMW M3."
+    },
+    {
+      "id": "cars-069",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce model Porsche a fost prezentat inițial sub numele 901?",
+      "options": [
+        "911",
+        "928",
+        "944",
+        "356"
+      ],
+      "answer": "911",
+      "explanation": "Porsche a redenumit 901 în 911 înainte de comercializare."
+    },
+    {
+      "id": "cars-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "De ce a fost schimbat numele Porsche 901 în 911?",
+      "options": [
+        "Drepturile Peugeot asupra numerelor cu zero în mijloc",
+        "O regulă FIA",
+        "Cerințe ale pieței SUA",
+        "Cilindreea motorului"
+      ],
+      "answer": "Drepturile Peugeot asupra numerelor cu zero în mijloc",
+      "explanation": "Porsche a schimbat denumirea după disputa privind schema numerică Peugeot."
+    },
+    {
+      "id": "cars-071",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a proiectat centura modernă în trei puncte pentru Volvo?",
+      "options": [
+        "Nils Bohlin",
+        "Alec Issigonis",
+        "Ferdinand Piëch",
+        "Colin Chapman"
+      ],
+      "answer": "Nils Bohlin",
+      "explanation": "Nils Bohlin a dezvoltat configurația modernă pentru Volvo."
+    },
+    {
+      "id": "cars-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce model este asociat cu codul E30 la BMW?",
+      "options": [
+        "Seria 3",
+        "Seria 5",
+        "Seria 7",
+        "Z4"
+      ],
+      "answer": "Seria 3",
+      "explanation": "E30 este codul intern al unei generații BMW Seria 3."
+    },
+    {
+      "id": "cars-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce constructor a produs modelul Countach?",
+      "options": [
+        "Lamborghini",
+        "Ferrari",
+        "Maserati",
+        "Pagani"
+      ],
+      "answer": "Lamborghini",
+      "explanation": "Countach este un supercar Lamborghini."
+    },
+    {
+      "id": "cars-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce constructor a produs modelul F40?",
+      "options": [
+        "Ferrari",
+        "Lamborghini",
+        "Porsche",
+        "McLaren"
+      ],
+      "answer": "Ferrari",
+      "explanation": "F40 este unul dintre modelele emblematice Ferrari."
+    },
+    {
+      "id": "cars-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce constructor a produs NSX-ul original?",
+      "options": [
+        "Honda",
+        "Toyota",
+        "Nissan",
+        "Mazda"
+      ],
+      "answer": "Honda",
+      "explanation": "NSX a fost dezvoltat de Honda și vândut și ca Acura pe unele piețe."
+    },
+    {
+      "id": "cars-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce componentă comprimă aerul de admisie folosind energia gazelor de evacuare?",
+      "options": [
+        "Turbocompresorul",
+        "Alternatorul",
+        "Demarorul",
+        "Radiatorul"
+      ],
+      "answer": "Turbocompresorul",
+      "explanation": "Turbina de evacuare antrenează compresorul de admisie."
+    },
+    {
+      "id": "cars-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce dispozitiv răcește aerul comprimat de turbo înainte de motor?",
+      "options": [
+        "Intercoolerul",
+        "Catalizatorul",
+        "Volanta",
+        "Etrierul"
+      ],
+      "answer": "Intercoolerul",
+      "explanation": "Intercoolerul reduce temperatura aerului comprimat și îi crește densitatea."
+    },
+    {
+      "id": "cars-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce piesă transformă mișcarea pistoanelor în rotație?",
+      "options": [
+        "Arborele cotit",
+        "Arborele cu came",
+        "Galeria de admisie",
+        "Chiulasa"
+      ],
+      "answer": "Arborele cotit",
+      "explanation": "Arborele cotit transformă mișcarea alternativă în rotație."
+    },
+    {
+      "id": "cars-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arbore comandă de obicei deschiderea supapelor?",
+      "options": [
+        "Arborele cu came",
+        "Arborele cotit",
+        "Cardanul",
+        "Semiaxa"
+      ],
+      "answer": "Arborele cu came",
+      "explanation": "Lobii arborelui cu came acționează mecanismul supapelor."
+    },
+    {
+      "id": "cars-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce componentă transmite adesea cuplul spre puntea spate la o mașină RWD cu motor față?",
+      "options": [
+        "Arborele cardanic",
+        "Radiatorul",
+        "Cureaua de accesorii",
+        "Compresorul A/C"
+      ],
+      "answer": "Arborele cardanic",
+      "explanation": "Cardanul transmite rotația longitudinal către diferențial."
+    },
+    {
+      "id": "cars-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce măsoară senzorul MAF?",
+      "options": [
+        "Masa aerului aspirat",
+        "Presiunea uleiului",
+        "Turația roților",
+        "Unghiul volanului"
+      ],
+      "answer": "Masa aerului aspirat",
+      "explanation": "MAF înseamnă Mass Air Flow."
+    },
+    {
+      "id": "cars-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce măsoară senzorul MAP?",
+      "options": [
+        "Presiunea absolută în galeria de admisie",
+        "Masa mașinii",
+        "Presiunea pneurilor",
+        "Nivelul combustibilului"
+      ],
+      "answer": "Presiunea absolută în galeria de admisie",
+      "explanation": "MAP înseamnă Manifold Absolute Pressure."
+    },
+    {
+      "id": "cars-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce senzor măsoară oxigenul din evacuare?",
+      "options": [
+        "Sonda lambda",
+        "Senzorul ABS",
+        "Senzorul de ploaie",
+        "Senzorul de parcare"
+      ],
+      "answer": "Sonda lambda",
+      "explanation": "Sonda lambda este folosită pentru controlul amestecului și emisiilor."
+    },
+    {
+      "id": "cars-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce sistem recirculă gaze de evacuare pentru reducerea NOx?",
+      "options": [
+        "EGR",
+        "ABS",
+        "TPMS",
+        "Haldex"
+      ],
+      "answer": "EGR",
+      "explanation": "EGR înseamnă Exhaust Gas Recirculation."
+    },
+    {
+      "id": "cars-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce substanță este folosită de sistemele SCR diesel?",
+      "options": [
+        "AdBlue",
+        "Lichid de frână",
+        "Antigel",
+        "Ulei ATF"
+      ],
+      "answer": "AdBlue",
+      "explanation": "AdBlue furnizează agentul reducător necesar sistemului SCR."
+    },
+    {
+      "id": "cars-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce filtru reține funinginea la multe motoare diesel moderne?",
+      "options": [
+        "DPF",
+        "Filtrul de polen",
+        "Filtrul de aer",
+        "Filtrul de combustibil"
+      ],
+      "answer": "DPF",
+      "explanation": "DPF este filtrul de particule diesel."
+    },
+    {
+      "id": "cars-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de cutie folosește două ambreiaje?",
+      "options": [
+        "DCT",
+        "CVT",
+        "Manuală simplă",
+        "Reductor EV"
+      ],
+      "answer": "DCT",
+      "explanation": "DCT este o transmisie cu dublu ambreiaj."
+    },
+    {
+      "id": "cars-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce transmisie poate varia continuu raportul fără trepte fixe clasice?",
+      "options": [
+        "CVT",
+        "DCT",
+        "Manuală cu 5 trepte",
+        "Secvențială"
+      ],
+      "answer": "CVT",
+      "explanation": "CVT înseamnă Continuously Variable Transmission."
+    },
+    {
+      "id": "cars-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce componentă înlocuiește ambreiajul de plecare la multe automate clasice?",
+      "options": [
+        "Convertizorul de cuplu",
+        "Intercoolerul",
+        "Catalizatorul",
+        "Etrierul"
+      ],
+      "answer": "Convertizorul de cuplu",
+      "explanation": "Convertizorul transmite hidrodinamic cuplul între motor și cutie."
+    },
+    {
+      "id": "cars-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce face sincronizatorul într-o cutie manuală?",
+      "options": [
+        "Egalizează vitezele înainte de cuplarea treptei",
+        "Răcește ambreiajul",
+        "Măsoară viteza",
+        "Încarcă bateria"
+      ],
+      "answer": "Egalizează vitezele înainte de cuplarea treptei",
+      "explanation": "Sincronizatorul facilitează cuplarea lină a angrenajelor."
+    },
+    {
+      "id": "cars-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește tendința mașinii de a merge mai drept când puntea față pierde aderența?",
+      "options": [
+        "Subvirare",
+        "Supravirare",
+        "Aquaplanare",
+        "Fading"
+      ],
+      "answer": "Subvirare",
+      "explanation": "Subvirarea apare când puntea față atinge limita de aderență prima."
+    },
+    {
+      "id": "cars-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește rotirea excesivă a spatelui mașinii într-un viraj?",
+      "options": [
+        "Supravirare",
+        "Subvirare",
+        "Aquaplanare",
+        "Detonație"
+      ],
+      "answer": "Supravirare",
+      "explanation": "Supravirarea apare când puntea spate pierde aderență relativ mai mult."
+    },
+    {
+      "id": "cars-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este aquaplanarea?",
+      "options": [
+        "Pierderea aderenței din cauza unui strat de apă între pneu și drum",
+        "Supraîncălzirea motorului",
+        "Blocarea ambreiajului",
+        "Detonația"
+      ],
+      "answer": "Pierderea aderenței din cauza unui strat de apă între pneu și drum",
+      "explanation": "Anvelopa nu mai evacuează suficientă apă și pierde contactul eficient cu carosabilul."
+    },
+    {
+      "id": "cars-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce sistem poate frâna individual roți pentru stabilizarea mașinii?",
+      "options": [
+        "ESC/ESP",
+        "TPMS",
+        "OBD",
+        "Cruise control"
+      ],
+      "answer": "ESC/ESP",
+      "explanation": "Controlul stabilității folosește frânele și uneori cuplul motor."
+    },
+    {
+      "id": "cars-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de diferențial limitează patinarea relativă dintre roțile motoare?",
+      "options": [
+        "LSD",
+        "Diferențial deschis",
+        "Volantă dublă",
+        "Catalizator"
+      ],
+      "answer": "LSD",
+      "explanation": "LSD înseamnă Limited-Slip Differential."
+    },
+    {
+      "id": "cars-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce reprezintă camber-ul?",
+      "options": [
+        "Înclinarea roții față de verticală",
+        "Unghiul volanului",
+        "Unghiul cardanului",
+        "Raportul final"
+      ],
+      "answer": "Înclinarea roții față de verticală",
+      "explanation": "Camber-ul este văzut din fața sau spatele mașinii."
+    },
+    {
+      "id": "cars-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce reprezintă toe-ul roților?",
+      "options": [
+        "Orientarea lor ușor spre interior sau exterior",
+        "Presiunea pneurilor",
+        "Unghiul amortizorului",
+        "Raportul diferențialului"
+      ],
+      "answer": "Orientarea lor ușor spre interior sau exterior",
+      "explanation": "Toe-in și toe-out influențează stabilitatea și răspunsul direcției."
+    },
+    {
+      "id": "cars-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce reprezintă caster-ul?",
+      "options": [
+        "Înclinarea axei de pivotare a direcției văzută din lateral",
+        "Camber-ul",
+        "Unghiul pistonului",
+        "Rake-ul aripii"
+      ],
+      "answer": "Înclinarea axei de pivotare a direcției văzută din lateral",
+      "explanation": "Caster-ul influențează autocentrarea direcției."
+    },
+    {
+      "id": "cars-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce rol are bara antiruliu?",
+      "options": [
+        "Reduce ruliul prin cuplarea mișcărilor stânga-dreapta",
+        "Blochează diferențialul",
+        "Crește boost-ul",
+        "Răcește motorul"
+      ],
+      "answer": "Reduce ruliul prin cuplarea mișcărilor stânga-dreapta",
+      "explanation": "Bara se torsionează când suspensiile stânga și dreapta se comprimă diferit."
+    },
+    {
+      "id": "cars-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă masa nesuspendată?",
+      "options": [
+        "Masa componentelor care se mișcă în mare parte odată cu roata",
+        "Masa pasagerilor",
+        "Masa combustibilului",
+        "Masa caroseriei"
+      ],
+      "answer": "Masa componentelor care se mișcă în mare parte odată cu roata",
+      "explanation": "Roțile, anvelopele și părți din frâne și suspensie contribuie la masa nesuspendată."
+    },
+    {
+      "id": "cars-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În marcajul 225/45 R17, ce reprezintă 225?",
+      "options": [
+        "Lățimea nominală în milimetri",
+        "Diametrul jantei în inci",
+        "Presiunea maximă",
+        "Indicele de sarcină"
+      ],
+      "answer": "Lățimea nominală în milimetri",
+      "explanation": "Primul număr indică lățimea nominală a secțiunii anvelopei."
+    },
+    {
+      "id": "cars-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În marcajul 225/45 R17, ce reprezintă 17?",
+      "options": [
+        "Diametrul jantei în inci",
+        "Lățimea în inci",
+        "Presiunea recomandată",
+        "Indicele de viteză"
+      ],
+      "answer": "Diametrul jantei în inci",
+      "explanation": "Numărul de după R indică diametrul nominal al jantei."
+    },
+    {
+      "id": "cars-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce indică litera R în 225/45 R17?",
+      "options": [
+        "Construcție radială",
+        "Anvelopă de curse",
+        "Roată spate",
+        "Indice de viteză"
+      ],
+      "answer": "Construcție radială",
+      "explanation": "R indică o carcasă radială."
+    },
+    {
+      "id": "cars-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce se întâmplă în general cu distanța de frânare când viteza crește mult?",
+      "options": [
+        "Crește semnificativ",
+        "Scade",
+        "Rămâne identică",
+        "Devine zero cu ABS"
+      ],
+      "answer": "Crește semnificativ",
+      "explanation": "Energia cinetică crește cu pătratul vitezei."
+    },
+    {
+      "id": "cars-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce avantaj are un disc de frână ventilat?",
+      "options": [
+        "Disipă mai bine căldura",
+        "Nu se uzează",
+        "Nu are nevoie de plăcuțe",
+        "Este mereu mai ușor"
+      ],
+      "answer": "Disipă mai bine căldura",
+      "explanation": "Canalele interne măresc suprafața și fluxul de aer."
+    },
+    {
+      "id": "cars-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Giulia?",
+      "options": [
+        "Alfa Romeo",
+        "Fiat",
+        "Maserati",
+        "Lancia"
+      ],
+      "answer": "Alfa Romeo",
+      "explanation": "Giulia este produs de Alfa Romeo."
+    },
+    {
+      "id": "cars-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Vantage?",
+      "options": [
+        "Aston Martin",
+        "Jaguar",
+        "Bentley",
+        "Lotus"
+      ],
+      "answer": "Aston Martin",
+      "explanation": "Vantage este produs de Aston Martin."
+    },
+    {
+      "id": "cars-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Continental GT?",
+      "options": [
+        "Bentley",
+        "Rolls-Royce",
+        "Aston Martin",
+        "Jaguar"
+      ],
+      "answer": "Bentley",
+      "explanation": "Continental GT este produs de Bentley."
+    },
+    {
+      "id": "cars-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Taycan?",
+      "options": [
+        "Porsche",
+        "Audi",
+        "BMW",
+        "Mercedes-Benz"
+      ],
+      "answer": "Porsche",
+      "explanation": "Taycan este produs de Porsche."
+    },
+    {
+      "id": "cars-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Leaf?",
+      "options": [
+        "Nissan",
+        "Toyota",
+        "Honda",
+        "Mitsubishi"
+      ],
+      "answer": "Nissan",
+      "explanation": "Leaf este produs de Nissan."
+    },
+    {
+      "id": "cars-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Model S?",
+      "options": [
+        "Tesla",
+        "Lucid",
+        "Polestar",
+        "Rivian"
+      ],
+      "answer": "Tesla",
+      "explanation": "Model S este produs de Tesla."
+    },
+    {
+      "id": "cars-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce marcă produce modelul Lancer Evolution?",
+      "options": [
+        "Mitsubishi",
+        "Subaru",
+        "Nissan",
+        "Honda"
+      ],
+      "answer": "Mitsubishi",
+      "explanation": "Lancer Evolution este produs de Mitsubishi."
+    },
+    {
+      "id": "cars-113",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a introdus Volvo centura în trei puncte ca echipare standard pe unele modele?",
+      "answer": "1959",
+      "explanation": "Volvo a lansat centura lui Nils Bohlin în 1959."
+    },
+    {
+      "id": "cars-114",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a debutat public Porsche 901, viitorul 911?",
+      "answer": "1963",
+      "explanation": "Porsche 901 a debutat la Frankfurt în 1963."
+    },
+    {
+      "id": "cars-115",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a început producția BMW M3 E30?",
+      "answer": "1986",
+      "explanation": "Producția primei generații M3 a început în 1986."
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă DOHC într-un motor?",
+      "options": [
+        "Double Overhead Camshaft",
+        "Dual Oil Heat Control",
+        "Direct Output Hybrid Clutch",
+        "Dynamic Oversteer Handling Control"
+      ],
+      "answer": "Double Overhead Camshaft",
+      "explanation": "DOHC indică doi arbori cu came amplasați în chiulasă.",
+      "id": "cars-116"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă OBD în domeniul auto?",
+      "options": [
+        "On-Board Diagnostics",
+        "Oil Balance Device",
+        "Over-Brake Distribution",
+        "Output Battery Drive"
+      ],
+      "answer": "On-Board Diagnostics",
+      "explanation": "OBD este sistemul de diagnosticare la bord al vehiculului.",
+      "id": "cars-117"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă ECU în majoritatea contextelor auto?",
+      "options": [
+        "Electronic Control Unit",
+        "Engine Cooling Utility",
+        "Electric Clutch Unit",
+        "Exhaust Cleaning Unit"
+      ],
+      "answer": "Electronic Control Unit",
+      "explanation": "ECU este o unitate electronică de control care gestionează funcții ale vehiculului.",
+      "id": "cars-118"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce componentă menține de obicei tensiunea corectă a unei curele de accesorii?",
+      "options": [
+        "Întinzătorul",
+        "Catalizatorul",
+        "Etrierul",
+        "Sonda lambda"
+      ],
+      "answer": "Întinzătorul",
+      "explanation": "Întinzătorul menține cureaua la tensiunea necesară pentru antrenarea accesoriilor.",
+      "id": "cars-119"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce rol are termostatul în circuitul de răcire al motorului?",
+      "options": [
+        "Controlează circulația lichidului în funcție de temperatură",
+        "Controlează presiunea pneurilor",
+        "Reglează alternatorul",
+        "Blochează diferențialul"
+      ],
+      "answer": "Controlează circulația lichidului în funcție de temperatură",
+      "explanation": "Termostatul ajută motorul să ajungă și să rămână în zona normală de temperatură.",
+      "id": "cars-120"
+    },
+    {
+      "id": "cars-121",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce avantaj principal are injecția directă de benzină?",
+      "options": [
+        "Combustibilul este injectat direct în cilindru",
+        "Elimină pompa de combustibil",
+        "Nu mai necesită ECU",
+        "Funcționează fără bujii"
+      ],
+      "answer": "Combustibilul este injectat direct în cilindru",
+      "explanation": "Injectorul pulverizează combustibilul direct în camera de ardere."
+    },
+    {
+      "id": "cars-122",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fenomen apare când amestecul se autoaprinde necontrolat într-un motor pe benzină?",
+      "options": [
+        "Detonația",
+        "Aquaplanarea",
+        "Cavitația",
+        "Subvirarea"
+      ],
+      "answer": "Detonația",
+      "explanation": "Detonația produce unde de presiune nedorite în camera de ardere."
+    },
+    {
+      "id": "cars-123",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce proprietate a motorinei caracterizează cifra cetanică?",
+      "options": [
+        "Calitatea aprinderii prin compresie",
+        "Rezistența la detonație ca la benzină",
+        "Vâscozitatea uleiului",
+        "Conținutul de apă"
+      ],
+      "answer": "Calitatea aprinderii prin compresie",
+      "explanation": "Cifra cetanică este legată de întârzierea aprinderii combustibilului diesel."
+    },
+    {
+      "id": "cars-124",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce scop are o volantă cu masă dublă?",
+      "options": [
+        "Reduce vibrațiile torsionale spre transmisie",
+        "Crește boost-ul",
+        "Răcește frânele",
+        "Încarcă bateria HV"
+      ],
+      "answer": "Reduce vibrațiile torsionale spre transmisie",
+      "explanation": "Cele două mase și elementele elastice filtrează pulsațiile de cuplu."
+    },
+    {
+      "id": "cars-125",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă o treaptă de viteză „mai lungă”?",
+      "options": [
+        "Viteză mai mare la aceeași turație a motorului",
+        "Turație mai mare la aceeași viteză",
+        "Diferențial blocat",
+        "Ambreiaj inutil"
+      ],
+      "answer": "Viteză mai mare la aceeași turație a motorului",
+      "explanation": "O treaptă lungă reduce turația necesară pentru aceeași viteză."
+    },
+    {
+      "id": "cars-126",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este raportul final?",
+      "options": [
+        "Raportul de reducere din grupul final/diferențial",
+        "Raportul aer-combustibil",
+        "Raportul de compresie",
+        "Distribuția maselor"
+      ],
+      "answer": "Raportul de reducere din grupul final/diferențial",
+      "explanation": "Raportul final multiplică raportul treptei înainte de roți."
+    },
+    {
+      "id": "cars-127",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce efect are un raport final numeric mai mare?",
+      "options": [
+        "Mai multă multiplicare de cuplu și turație mai mare la aceeași viteză",
+        "Viteză mai mare la aceeași turație",
+        "Elimină diferențialul",
+        "Reduce cilindreea"
+      ],
+      "answer": "Mai multă multiplicare de cuplu și turație mai mare la aceeași viteză",
+      "explanation": "Un raport final mai mare favorizează accelerația în detrimentul turației de croazieră."
+    },
+    {
+      "id": "cars-128",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce rol are geometria Ackermann?",
+      "options": [
+        "Permite roților față să urmeze raze diferite în viraj",
+        "Egalizează presiunea pneurilor",
+        "Controlează injecția",
+        "Mărește garda la sol"
+      ],
+      "answer": "Permite roților față să urmeze raze diferite în viraj",
+      "explanation": "Roata interioară trebuie să vireze mai mult decât cea exterioară."
+    },
+    {
+      "id": "cars-129",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de suspensie folosește amortizorul telescopic ca element structural superior?",
+      "options": [
+        "MacPherson",
+        "De Dion",
+        "Panhard",
+        "Punte rigidă"
+      ],
+      "answer": "MacPherson",
+      "explanation": "MacPherson este compactă și folosește ansamblul arc-amortizor pentru ghidare."
+    },
+    {
+      "id": "cars-130",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce suspensie oferă control fin al camber-ului prin două brațe suprapuse?",
+      "options": [
+        "Double wishbone",
+        "Punte rigidă",
+        "Bară Panhard",
+        "Axă simplă de torsiune"
+      ],
+      "answer": "Double wishbone",
+      "explanation": "Două brațe permit control detaliat al geometriei roții."
+    },
+    {
+      "id": "cars-131",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "De ce este dorită o masă nesuspendată mai mică?",
+      "options": [
+        "Roata poate urmări mai bine denivelările",
+        "Crește automat puterea",
+        "Elimină ABS",
+        "Mărește raportul de compresie"
+      ],
+      "answer": "Roata poate urmări mai bine denivelările",
+      "explanation": "O masă mai mică este mai ușor de controlat de arc și amortizor."
+    },
+    {
+      "id": "cars-132",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce avantaj dinamic poate avea o baterie EV montată jos în podea?",
+      "options": [
+        "Coboară centrul de greutate",
+        "Ridică obligatoriu centrul de greutate",
+        "Elimină transferul de masă",
+        "Mărește masa nesuspendată"
+      ],
+      "answer": "Coboară centrul de greutate",
+      "explanation": "Montarea maselor grele jos poate reduce ruliul și îmbunătăți stabilitatea."
+    },
+    {
+      "id": "cars-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este fading-ul frânelor?",
+      "options": [
+        "Scăderea eficienței din cauza temperaturii ridicate",
+        "Creșterea presiunii",
+        "Blocarea volanului",
+        "Răcirea excesivă"
+      ],
+      "answer": "Scăderea eficienței din cauza temperaturii ridicate",
+      "explanation": "Supraîncălzirea poate reduce frecarea sau fierbe lichidul de frână."
+    },
+    {
+      "id": "cars-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "De ce lichidul de frână are nevoie de punct de fierbere ridicat?",
+      "options": [
+        "Pentru a evita formarea vaporilor la temperaturi mari",
+        "Pentru a lubrifia diferențialul",
+        "Pentru a răci bateria",
+        "Pentru a crește cifra octanică"
+      ],
+      "answer": "Pentru a evita formarea vaporilor la temperaturi mari",
+      "explanation": "Vaporii sunt compresibili și pot afecta pedala și frânarea."
+    },
+    {
+      "id": "cars-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este brake-by-wire?",
+      "options": [
+        "Comanda frânei este procesată electronic în parte sau total",
+        "Frâne exclusiv pe cablu",
+        "Frâne fără senzori",
+        "Doar regenerare"
+      ],
+      "answer": "Comanda frânei este procesată electronic în parte sau total",
+      "explanation": "Sistemul transmite electronic cererea șoferului către actuatoare/controlere."
+    },
+    {
+      "id": "cars-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este un șasiu monococă?",
+      "options": [
+        "Caroseria și structura portantă sunt integrate",
+        "Cadru separat obligatoriu",
+        "Motor pe cadru de lemn",
+        "Suspensie fără arcuri"
+      ],
+      "answer": "Caroseria și structura portantă sunt integrate",
+      "explanation": "Monococa integrează structura de rezistență în corpul vehiculului."
+    },
+    {
+      "id": "cars-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitectură este tipică multor off-road-uri tradiționale?",
+      "options": [
+        "Body-on-frame",
+        "Monococă de carbon",
+        "Motor central",
+        "Tracțiune exclusiv electrică"
+      ],
+      "answer": "Body-on-frame",
+      "explanation": "Body-on-frame folosește un cadru separat de caroserie."
+    },
+    {
+      "id": "cars-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce avantaj are aluminiul față de oțel în multe componente?",
+      "options": [
+        "Densitate mai mică",
+        "Este mai greu",
+        "Nu corodează niciodată",
+        "Este mai rigid în orice formă"
+      ],
+      "answer": "Densitate mai mică",
+      "explanation": "Aluminiul este folosit pentru reducerea masei."
+    },
+    {
+      "id": "cars-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce avantaj oferă fibra de carbon?",
+      "options": [
+        "Raport ridicat rigiditate/masă",
+        "Este mai grea decât fonta",
+        "Înlocuiește suspensia",
+        "Este ieftină și ușor de reparat"
+      ],
+      "answer": "Raport ridicat rigiditate/masă",
+      "explanation": "Compozitele pot fi foarte rigide și ușoare."
+    },
+    {
+      "id": "cars-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este torque vectoring?",
+      "options": [
+        "Distribuirea controlată a cuplului între roți",
+        "Măsurarea cuplului la volant",
+        "Reglarea pneurilor",
+        "Conversia cuplului în căldură"
+      ],
+      "answer": "Distribuirea controlată a cuplului între roți",
+      "explanation": "Torque vectoring influențează tracțiunea și rotația mașinii."
+    },
+    {
+      "id": "cars-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este frânarea regenerativă?",
+      "options": [
+        "Recuperarea unei părți din energia cinetică prin motorul electric",
+        "Răcirea frânelor cu aer",
+        "Blocarea roților",
+        "Pomparea combustibilului"
+      ],
+      "answer": "Recuperarea unei părți din energia cinetică prin motorul electric",
+      "explanation": "Motorul electric funcționează ca generator în decelerare."
+    },
+    {
+      "id": "cars-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce diferențiază un plug-in hybrid de un hibrid convențional?",
+      "options": [
+        "Poate fi încărcat dintr-o sursă externă",
+        "Nu are motor termic",
+        "Nu are baterie",
+        "Nu folosește motor electric"
+      ],
+      "answer": "Poate fi încărcat dintr-o sursă externă",
+      "explanation": "PHEV are o baterie de tracțiune ce poate fi încărcată la priză."
+    },
+    {
+      "id": "cars-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă PHEV?",
+      "options": [
+        "Plug-in Hybrid Electric Vehicle",
+        "Performance High Engine Variant",
+        "Petrol Heat Emission Vehicle",
+        "Permanent Hybrid Exhaust Valve"
+      ],
+      "answer": "Plug-in Hybrid Electric Vehicle",
+      "explanation": "PHEV este un vehicul hibrid reîncărcabil extern."
+    },
+    {
+      "id": "cars-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă BEV?",
+      "options": [
+        "Battery Electric Vehicle",
+        "Brake Energy Valve",
+        "Boosted Engine Vehicle",
+        "Battery Exhaust Variant"
+      ],
+      "answer": "Battery Electric Vehicle",
+      "explanation": "BEV este un vehicul electric alimentat de baterie."
+    },
+    {
+      "id": "cars-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă SOC la o baterie?",
+      "options": [
+        "State of Charge",
+        "Speed of Combustion",
+        "System Oil Control",
+        "Suspension Operating Center"
+      ],
+      "answer": "State of Charge",
+      "explanation": "SOC indică nivelul de încărcare."
+    },
+    {
+      "id": "cars-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce reprezintă kWh la o baterie?",
+      "options": [
+        "O unitate de energie",
+        "O unitate de accelerație",
+        "O frecvență",
+        "O unitate de cuplu"
+      ],
+      "answer": "O unitate de energie",
+      "explanation": "Kilowatt-ora este utilizată pentru capacitatea energetică."
+    },
+    {
+      "id": "cars-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este precondiționarea bateriei înainte de încărcare rapidă?",
+      "options": [
+        "Aducerea bateriei la o temperatură favorabilă",
+        "Golirea completă",
+        "Oprirea răcirii",
+        "Blocarea portului"
+      ],
+      "answer": "Aducerea bateriei la o temperatură favorabilă",
+      "explanation": "Gestionarea termică pregătește bateria pentru putere de încărcare mai bună."
+    },
+    {
+      "id": "cars-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce rol are BMS?",
+      "options": [
+        "Monitorizează și gestionează bateria",
+        "Controlează geometria direcției",
+        "Înlocuiește diferențialul",
+        "Răcește exclusiv habitaclul"
+      ],
+      "answer": "Monitorizează și gestionează bateria",
+      "explanation": "BMS supraveghează tensiuni, curenți și temperaturi."
+    },
+    {
+      "id": "cars-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce avantaj are motorul electric la turație joasă?",
+      "options": [
+        "Poate furniza cuplu ridicat aproape instantaneu",
+        "Nu produce cuplu sub 3000 rpm",
+        "Necesită turbo",
+        "Necesită ambreiaj clasic"
+      ],
+      "answer": "Poate furniza cuplu ridicat aproape instantaneu",
+      "explanation": "Motoarele electrice pot produce cuplu mare de la turații foarte mici."
+    },
+    {
+      "id": "cars-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce rol are invertorul într-un EV?",
+      "options": [
+        "Controlează conversia energiei între baterie și motor",
+        "Filtrează particule diesel",
+        "Comprimă aerul",
+        "Reglează direcția"
+      ],
+      "answer": "Controlează conversia energiei între baterie și motor",
+      "explanation": "Invertorul transformă și modulează energia electrică pentru motor."
+    },
+    {
+      "id": "cars-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce marcă a lansat Prius în 1997?",
+      "options": [
+        "Toyota",
+        "Honda",
+        "Nissan",
+        "Mazda"
+      ],
+      "answer": "Toyota",
+      "explanation": "Toyota a introdus Prius cu sistem hibrid benzină-electric."
+    },
+    {
+      "id": "cars-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă recuperare regenerativă limitată la SOC foarte ridicat?",
+      "options": [
+        "Bateria poate accepta mai puțină energie",
+        "Motorul termic pierde compresie",
+        "ABS se dezactivează",
+        "Pneurile pierd presiune"
+      ],
+      "answer": "Bateria poate accepta mai puțină energie",
+      "explanation": "BMS reduce regenerarea când bateria este aproape plină."
+    },
+    {
+      "id": "cars-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce componentă stochează energia de tracțiune într-un BEV?",
+      "options": [
+        "Bateria de înaltă tensiune",
+        "Alternatorul de 12 V",
+        "Catalizatorul",
+        "Rezervorul AdBlue"
+      ],
+      "answer": "Bateria de înaltă tensiune",
+      "explanation": "Bateria HV alimentează motorul electric."
+    },
+    {
+      "id": "cars-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este un motor electric folosit ca generator la decelerare?",
+      "options": [
+        "Aceeași mașină electrică operată regenerativ",
+        "Un alternator clasic obligatoriu",
+        "Un turbocompresor",
+        "Un convertizor catalitic"
+      ],
+      "answer": "Aceeași mașină electrică operată regenerativ",
+      "explanation": "Multe motoare de tracțiune pot funcționa bidirecțional energetic."
+    },
+    {
+      "id": "cars-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă range anxiety?",
+      "options": [
+        "Teama că autonomia rămasă nu este suficientă",
+        "Teama de turații mari",
+        "Teama de frânare ABS",
+        "Teama de apă în combustibil"
+      ],
+      "answer": "Teama că autonomia rămasă nu este suficientă",
+      "explanation": "Termenul este asociat în special cu vehiculele electrice."
+    },
+    {
+      "id": "cars-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor este asociat cu sistemul quattro?",
+      "options": [
+        "Audi",
+        "BMW",
+        "Volvo",
+        "Saab"
+      ],
+      "answer": "Audi",
+      "explanation": "quattro este marca Audi pentru tracțiune integrală."
+    },
+    {
+      "id": "cars-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor folosește denumirea xDrive?",
+      "options": [
+        "BMW",
+        "Mercedes-Benz",
+        "Audi",
+        "Volvo"
+      ],
+      "answer": "BMW",
+      "explanation": "xDrive este denumirea BMW pentru AWD."
+    },
+    {
+      "id": "cars-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor folosește denumirea 4MATIC?",
+      "options": [
+        "Mercedes-Benz",
+        "BMW",
+        "Audi",
+        "Porsche"
+      ],
+      "answer": "Mercedes-Benz",
+      "explanation": "4MATIC este denumirea Mercedes-Benz pentru AWD."
+    },
+    {
+      "id": "cars-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs LFA?",
+      "options": [
+        "Lexus",
+        "Nissan",
+        "Acura",
+        "Infiniti"
+      ],
+      "answer": "Lexus",
+      "explanation": "LFA este supercarul dezvoltat de Lexus."
+    },
+    {
+      "id": "cars-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs Carrera GT?",
+      "options": [
+        "Porsche",
+        "Ferrari",
+        "McLaren",
+        "Mercedes-Benz"
+      ],
+      "answer": "Porsche",
+      "explanation": "Carrera GT este un supercar Porsche cu motor V10."
+    },
+    {
+      "id": "cars-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs S2000?",
+      "options": [
+        "Honda",
+        "Mazda",
+        "Toyota",
+        "Nissan"
+      ],
+      "answer": "Honda",
+      "explanation": "S2000 este un roadster Honda."
+    },
+    {
+      "id": "cars-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs 300 SL „Gullwing”?",
+      "options": [
+        "Mercedes-Benz",
+        "BMW",
+        "Porsche",
+        "Jaguar"
+      ],
+      "answer": "Mercedes-Benz",
+      "explanation": "300 SL este celebru pentru ușile tip gullwing."
+    },
+    {
+      "id": "cars-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs E-Type?",
+      "options": [
+        "Jaguar",
+        "Aston Martin",
+        "Lotus",
+        "Bentley"
+      ],
+      "answer": "Jaguar",
+      "explanation": "E-Type este un model sport emblematic Jaguar."
+    },
+    {
+      "id": "cars-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs Esprit?",
+      "options": [
+        "Lotus",
+        "Jaguar",
+        "Aston Martin",
+        "TVR"
+      ],
+      "answer": "Lotus",
+      "explanation": "Esprit este un sportiv cu motor central Lotus."
+    },
+    {
+      "id": "cars-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs Quattro, celebru în raliuri?",
+      "options": [
+        "Audi",
+        "Volkswagen",
+        "BMW",
+        "Opel"
+      ],
+      "answer": "Audi",
+      "explanation": "Audi Quattro a popularizat AWD în raliurile de top."
+    },
+    {
+      "id": "cars-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce configurație de motor avea BMW M3 E30?",
+      "options": [
+        "Patru cilindri în linie",
+        "Șase cilindri în linie",
+        "V8",
+        "V6"
+      ],
+      "answer": "Patru cilindri în linie",
+      "explanation": "M3 E30 utiliza motorul S14 cu patru cilindri."
+    },
+    {
+      "id": "cars-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Unde este montat motorul clasicului Porsche 911?",
+      "options": [
+        "În spatele punții spate",
+        "În fața punții față",
+        "Central-față",
+        "Central transversal"
+      ],
+      "answer": "În spatele punții spate",
+      "explanation": "911 este cunoscut pentru motorul posterior."
+    },
+    {
+      "id": "cars-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce configurație a motorului a definit Porsche 911 timp de generații?",
+      "options": [
+        "Boxer cu șase cilindri",
+        "V8 transversal",
+        "V6",
+        "Wankel"
+      ],
+      "answer": "Boxer cu șase cilindri",
+      "explanation": "Flat-six-ul este o trăsătură centrală a 911."
+    },
+    {
+      "id": "cars-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce automobil electric de mare serie a lansat Nissan în 2010?",
+      "options": [
+        "Leaf",
+        "Prius",
+        "Volt",
+        "i3"
+      ],
+      "answer": "Leaf",
+      "explanation": "Leaf a fost unul dintre primele EV-uri moderne produse în volume mari."
+    },
+    {
+      "id": "cars-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce constructor a produs modelul Delta Integrale?",
+      "options": [
+        "Lancia",
+        "Fiat",
+        "Alfa Romeo",
+        "Peugeot"
+      ],
+      "answer": "Lancia",
+      "explanation": "Delta Integrale este un model Lancia celebru în raliuri."
+    },
+    {
+      "id": "cars-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este downforce?",
+      "options": [
+        "Forță aerodinamică orientată în jos",
+        "Rezistența la rulare",
+        "Cuplul motorului",
+        "Greutatea statică"
+      ],
+      "answer": "Forță aerodinamică orientată în jos",
+      "explanation": "Downforce mărește sarcina verticală pe anvelope la viteză."
+    },
+    {
+      "id": "cars-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este drag-ul aerodinamic?",
+      "options": [
+        "Forța care se opune deplasării prin aer",
+        "Forță verticală",
+        "Frecarea ambreiajului",
+        "Cuplul diferențialului"
+      ],
+      "answer": "Forța care se opune deplasării prin aer",
+      "explanation": "Rezistența aerului crește puternic cu viteza."
+    },
+    {
+      "id": "cars-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce reprezintă coeficientul Cd?",
+      "options": [
+        "Coeficientul de rezistență aerodinamică",
+        "Coeficientul de frecare al ambreiajului",
+        "Raportul final",
+        "Indicele de sarcină"
+      ],
+      "answer": "Coeficientul de rezistență aerodinamică",
+      "explanation": "Cd este un parametru adimensional al rezistenței aerodinamice."
+    },
+    {
+      "id": "cars-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este rev-matching?",
+      "options": [
+        "Potrivirea turației motorului cu treapta selectată",
+        "Limitarea turației la ralanti",
+        "Sincronizarea ABS",
+        "Egalizarea pneurilor"
+      ],
+      "answer": "Potrivirea turației motorului cu treapta selectată",
+      "explanation": "Rev-matching reduce șocurile la retrogradare."
+    },
+    {
+      "id": "cars-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este heel-and-toe?",
+      "options": [
+        "Frânare combinată cu blip de accelerație la retrogradare",
+        "Frânare exclusiv cu stângul",
+        "Pornire motor",
+        "Geometrie suspensie"
+      ],
+      "answer": "Frânare combinată cu blip de accelerație la retrogradare",
+      "explanation": "Tehnica permite frânare și potrivirea turației simultan."
+    },
+    {
+      "id": "cars-176",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat Nissan Leaf?",
+      "answer": "2010",
+      "explanation": "Nissan Leaf a intrat pe piață în 2010."
+    },
+    {
+      "id": "cars-177",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a debutat BMW M3 E30 la IAA Frankfurt?",
+      "answer": "1985",
+      "explanation": "BMW M3 a debutat public în 1985."
+    },
+    {
+      "id": "cars-178",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câți cilindri are motorul S14 de bază al BMW M3 E30?",
+      "answer": "4",
+      "explanation": "S14 este un motor cu patru cilindri în linie."
+    },
+    {
+      "id": "cars-179",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câți cilindri avea boxerul Porsche 911 original?",
+      "answer": "6",
+      "explanation": "911 original a folosit un boxer cu șase cilindri."
+    },
+    {
+      "id": "cars-180",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte grade se rotește arborele cotit într-un ciclu complet al unui motor în patru timpi?",
+      "answer": "720",
+      "explanation": "Un ciclu complet necesită două rotații ale arborelui cotit."
+    },
+    {
+      "id": "cars-181",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie raportul de compresie geometric?",
+      "options": [
+        "Raportul dintre volumul maxim și minim al cilindrului",
+        "Raportul dintre diametrul roții și jantei",
+        "AFR la ralanti",
+        "Raportul final"
+      ],
+      "answer": "Raportul dintre volumul maxim și minim al cilindrului",
+      "explanation": "Se compară volumul cilindrului cu pistonul la PMI și PMS."
+    },
+    {
+      "id": "cars-182",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Într-un motor în patru timpi, arborele cu came se rotește de regulă la ce viteză față de arborele cotit?",
+      "options": [
+        "La jumătate",
+        "La aceeași viteză",
+        "De două ori mai repede",
+        "De patru ori mai repede"
+      ],
+      "answer": "La jumătate",
+      "explanation": "Arborele cu came face o rotație la două rotații ale arborelui cotit."
+    },
+    {
+      "id": "cars-183",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă un motor oversquare?",
+      "options": [
+        "Alezaj mai mare decât cursa",
+        "Cursă mai mare decât alezajul",
+        "Alezaj egal cu cursa",
+        "Raport de compresie sub 1"
+      ],
+      "answer": "Alezaj mai mare decât cursa",
+      "explanation": "Oversquare înseamnă bore mai mare decât stroke."
+    },
+    {
+      "id": "cars-184",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă un motor undersquare?",
+      "options": [
+        "Cursă mai mare decât alezajul",
+        "Alezaj mai mare decât cursa",
+        "Cursă zero",
+        "Cilindri opuși"
+      ],
+      "answer": "Cursă mai mare decât alezajul",
+      "explanation": "Undersquare înseamnă stroke mai mare decât bore."
+    },
+    {
+      "id": "cars-185",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este scavenging-ul?",
+      "options": [
+        "Evacuarea gazelor arse și umplerea eficientă cu încărcătură proaspătă",
+        "Lubrifierea diferențialului",
+        "Răcirea frânelor",
+        "Încărcarea bateriei"
+      ],
+      "answer": "Evacuarea gazelor arse și umplerea eficientă cu încărcătură proaspătă",
+      "explanation": "Scavenging descrie schimbul de gaze din cilindru."
+    },
+    {
+      "id": "cars-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce poate face suprapunerea supapelor la turații mari?",
+      "options": [
+        "Poate îmbunătăți schimbul de gaze",
+        "Oprește evacuarea",
+        "Elimină arborele cu came",
+        "Reduce cilindreea"
+      ],
+      "answer": "Poate îmbunătăți schimbul de gaze",
+      "explanation": "Valve overlap poate folosi inerția fluxului pentru umplere mai bună."
+    },
+    {
+      "id": "cars-187",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sistem modifică momentul deschiderii supapelor?",
+      "options": [
+        "Variable Valve Timing",
+        "ABS",
+        "TPMS",
+        "Hill Descent"
+      ],
+      "answer": "Variable Valve Timing",
+      "explanation": "VVT schimbă fazarea pentru eficiență și performanță."
+    },
+    {
+      "id": "cars-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce avantaj poate avea un turbo twin-scroll?",
+      "options": [
+        "Separă impulsurile de evacuare pentru răspuns mai bun",
+        "Folosește obligatoriu două turbine",
+        "Elimină intercoolerul",
+        "Funcționează doar pe diesel"
+      ],
+      "answer": "Separă impulsurile de evacuare pentru răspuns mai bun",
+      "explanation": "Două canale păstrează separat anumite impulsuri de evacuare."
+    },
+    {
+      "id": "cars-189",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este turbo lag-ul?",
+      "options": [
+        "Întârzierea dintre cererea de cuplu și apariția boost-ului",
+        "Blocarea turbinei la frânare",
+        "Răcirea intercoolerului",
+        "Defectarea wastegate-ului"
+      ],
+      "answer": "Întârzierea dintre cererea de cuplu și apariția boost-ului",
+      "explanation": "Turbina are nevoie de debit și timp pentru a accelera."
+    },
+    {
+      "id": "cars-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce rol are wastegate-ul?",
+      "options": [
+        "Controlează energia gazelor prin turbină pentru limitarea boost-ului",
+        "Controlează lichidul de răcire",
+        "Reglează direcția",
+        "Filtrează combustibilul"
+      ],
+      "answer": "Controlează energia gazelor prin turbină pentru limitarea boost-ului",
+      "explanation": "Wastegate-ul poate devia gaze de evacuare."
+    },
+    {
+      "id": "cars-191",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce rol are blow-off valve?",
+      "options": [
+        "Eliberează presiunea din admisie când clapeta se închide brusc",
+        "Mărește presiunea uleiului",
+        "Dozează motorina",
+        "Activează ABS"
+      ],
+      "answer": "Eliberează presiunea din admisie când clapeta se închide brusc",
+      "explanation": "Supapa reduce riscul de compressor surge."
+    },
+    {
+      "id": "cars-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este compressor surge?",
+      "options": [
+        "Instabilitate a fluxului prin compresor la raport presiune/debit nepotrivit",
+        "Fading de frână",
+        "Blocarea diferențialului",
+        "Detonație diesel"
+      ],
+      "answer": "Instabilitate a fluxului prin compresor la raport presiune/debit nepotrivit",
+      "explanation": "Surge apare în afara zonei stabile a compresorului."
+    },
+    {
+      "id": "cars-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce avantaj poate oferi injecția apă-metanol?",
+      "options": [
+        "Reduce temperatura încărcăturii și tendința la detonație",
+        "Înlocuiește uleiul",
+        "Mărește turbina",
+        "Elimină filtrul de aer"
+      ],
+      "answer": "Reduce temperatura încărcăturii și tendința la detonație",
+      "explanation": "Evaporarea amestecului răcește aerul și camera de ardere."
+    },
+    {
+      "id": "cars-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este knock control?",
+      "options": [
+        "Strategie ECU care detectează detonația și ajustează aprinderea/sarcina",
+        "Blocare portiere",
+        "TPMS",
+        "Frână de parcare"
+      ],
+      "answer": "Strategie ECU care detectează detonația și ajustează aprinderea/sarcina",
+      "explanation": "Senzorii de knock permit corecții pentru protecția motorului."
+    },
+    {
+      "id": "cars-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă lambda = 1 pentru benzină?",
+      "options": [
+        "Amestec stoichiometric",
+        "Amestec fără aer",
+        "Combustibil pur",
+        "Compresie 1:1"
+      ],
+      "answer": "Amestec stoichiometric",
+      "explanation": "Lambda 1 indică raportul stoichiometric pentru combustibil."
+    },
+    {
+      "id": "cars-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este aproximativ AFR stoichiometric pentru benzină?",
+      "options": [
+        "14,7:1",
+        "7:1",
+        "1:1",
+        "30:1"
+      ],
+      "answer": "14,7:1",
+      "explanation": "Pentru benzină convențională se folosește aproximativ 14,7 părți aer la una de combustibil."
+    },
+    {
+      "id": "cars-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce se întâmplă cu temperatura aerului când este comprimat de turbo?",
+      "options": [
+        "Crește",
+        "Scade întotdeauna",
+        "Rămâne exact constantă",
+        "Devine sub zero"
+      ],
+      "answer": "Crește",
+      "explanation": "Compresia ridică temperatura aerului."
+    },
+    {
+      "id": "cars-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce avantaj oferă un sistem dry-sump?",
+      "options": [
+        "Menține alimentarea cu ulei la accelerații mari și permite motorului să stea jos",
+        "Elimină pompa de ulei",
+        "Înlocuiește antigelul",
+        "Lubrifiază pneurile"
+      ],
+      "answer": "Menține alimentarea cu ulei la accelerații mari și permite motorului să stea jos",
+      "explanation": "Baia uscată folosește rezervoare și pompe separate."
+    },
+    {
+      "id": "cars-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este cavitația într-o pompă?",
+      "options": [
+        "Formarea și colapsul bulelor de vapori la presiune locală scăzută",
+        "Îngheț instant",
+        "Oxidarea plăcuțelor",
+        "Supraîncărcarea bateriei"
+      ],
+      "answer": "Formarea și colapsul bulelor de vapori la presiune locală scăzută",
+      "explanation": "Cavitația poate eroda suprafețele și reduce debitul."
+    },
+    {
+      "id": "cars-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce efect are un diferențial complet blocat în viraj pe asfalt?",
+      "options": [
+        "Forțează roțile să aibă aceeași viteză și poate provoca patinare/tensiuni",
+        "Permite diferențe nelimitate",
+        "Elimină cuplul",
+        "Reduce raza la zero"
+      ],
+      "answer": "Forțează roțile să aibă aceeași viteză și poate provoca patinare/tensiuni",
+      "explanation": "Roțile parcurg distanțe diferite în viraj, iar blocarea le obligă să se rotească identic."
+    },
+    {
+      "id": "cars-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce caracterizează un diferențial deschis când o roată are aderență foarte mică?",
+      "options": [
+        "Cuplul utilizabil poate fi limitat de roata cu aderență redusă",
+        "Trimite automat tot cuplul celeilalte roți",
+        "Se blochează complet",
+        "Deconectează cutia"
+      ],
+      "answer": "Cuplul utilizabil poate fi limitat de roata cu aderență redusă",
+      "explanation": "Diferențialul deschis nu poate crea singur un bias mare de cuplu."
+    },
+    {
+      "id": "cars-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este bump steer?",
+      "options": [
+        "Schimbarea direcției roții cauzată de cursa suspensiei fără comandă în volan",
+        "Vibrație motor",
+        "Lovire în bump stop",
+        "Blocare frână"
+      ],
+      "answer": "Schimbarea direcției roții cauzată de cursa suspensiei fără comandă în volan",
+      "explanation": "Geometria bieletelor poate modifica toe-ul pe cursa suspensiei."
+    },
+    {
+      "id": "cars-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este roll center-ul?",
+      "options": [
+        "Punct geometric folosit în analiza ruliului",
+        "Centrul jantei",
+        "Centrul arborelui cotit",
+        "Punctul bujiei"
+      ],
+      "answer": "Punct geometric folosit în analiza ruliului",
+      "explanation": "Poziția lui influențează transferul lateral și ruliul."
+    },
+    {
+      "id": "cars-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este momentul polar de inerție în yaw?",
+      "options": [
+        "Rezistența la schimbarea vitezei de rotație în jurul axei verticale",
+        "Masa totală",
+        "Cuplul maxim",
+        "Raportul final"
+      ],
+      "answer": "Rezistența la schimbarea vitezei de rotație în jurul axei verticale",
+      "explanation": "Distribuția maselor față de centru influențează agilitatea."
+    },
+    {
+      "id": "cars-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "De ce poate un motor central favoriza agilitatea?",
+      "options": [
+        "Concentrează masele aproape de centrul vehiculului",
+        "Crește masa nesuspendată",
+        "Elimină transferul de masă",
+        "Permite doar FWD"
+      ],
+      "answer": "Concentrează masele aproape de centrul vehiculului",
+      "explanation": "Concentrarea maselor poate reduce momentul polar."
+    },
+    {
+      "id": "cars-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie distribuția de masă 50:50?",
+      "options": [
+        "Aproximativ jumătate din masă pe fiecare punte",
+        "50% combustibil și 50% aer",
+        "50% cuplu pe fiecare roată",
+        "Compresie 50:1"
+      ],
+      "answer": "Aproximativ jumătate din masă pe fiecare punte",
+      "explanation": "Se referă de obicei la sarcina statică față-spate."
+    },
+    {
+      "id": "cars-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este lift-off oversteer?",
+      "options": [
+        "Supravirare accentuată la ridicarea accelerației în viraj",
+        "Subvirare pe drept",
+        "Blocarea diferențialului",
+        "Pierderea servo"
+      ],
+      "answer": "Supravirare accentuată la ridicarea accelerației în viraj",
+      "explanation": "Transferul de sarcină spre față poate descărca puntea spate."
+    },
+    {
+      "id": "cars-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce efect are frânarea asupra transferului longitudinal de sarcină?",
+      "options": [
+        "Crește sarcina pe față și o reduce pe spate",
+        "Mută sarcina spre spate",
+        "Nu schimbă nimic",
+        "Mută masa fizic în portbagaj"
+      ],
+      "answer": "Crește sarcina pe față și o reduce pe spate",
+      "explanation": "Decelerația produce transfer de sarcină către puntea față."
+    },
+    {
+      "id": "cars-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce rol are EBD?",
+      "options": [
+        "Variază distribuția forței de frânare între punți/roți",
+        "Controlează turbina",
+        "Încarcă bateria",
+        "Reglează camber-ul"
+      ],
+      "answer": "Variază distribuția forței de frânare între punți/roți",
+      "explanation": "EBD adaptează distribuția frânării la condiții."
+    },
+    {
+      "id": "cars-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "De ce sunt folosite discuri carbon-ceramice?",
+      "options": [
+        "Rezistență termică mare și masă relativ redusă",
+        "Funcționează fără plăcuțe",
+        "Nu se încălzesc deloc",
+        "Înlocuiesc ABS"
+      ],
+      "answer": "Rezistență termică mare și masă relativ redusă",
+      "explanation": "Materialul poate suporta temperaturi ridicate și reduce masa nesuspendată."
+    },
+    {
+      "id": "cars-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce model a câștigat Le Mans în 1991 pentru Mazda?",
+      "options": [
+        "787B",
+        "RX-7",
+        "MX-5",
+        "Cosmo"
+      ],
+      "answer": "787B",
+      "explanation": "Mazda 787B a câștigat cursa de 24 de ore de la Le Mans în 1991."
+    },
+    {
+      "id": "cars-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce motor folosea Mazda 787B?",
+      "options": [
+        "Rotativ Wankel cu patru rotoare",
+        "V12 aspirat",
+        "V8 turbo",
+        "Boxer cu șase cilindri"
+      ],
+      "answer": "Rotativ Wankel cu patru rotoare",
+      "explanation": "787B folosea motorul rotativ R26B."
+    },
+    {
+      "id": "cars-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce model Audi a revoluționat AWD în raliurile anilor 1980?",
+      "options": [
+        "Audi Quattro",
+        "Audi TT",
+        "Audi A8",
+        "Audi 100"
+      ],
+      "answer": "Audi Quattro",
+      "explanation": "Audi Quattro a demonstrat avantajele tracțiunii integrale în WRC."
+    },
+    {
+      "id": "cars-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce categorie de raliuri din anii 1980 a devenit celebră pentru prototipuri extrem de puternice?",
+      "options": [
+        "Grupa B",
+        "Grupa N",
+        "GT4",
+        "TCR"
+      ],
+      "answer": "Grupa B",
+      "explanation": "Grupa B a avut reguli permisive și mașini foarte rapide."
+    },
+    {
+      "id": "cars-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă homologation special?",
+      "options": [
+        "Model rutier produs pentru cerințe de omologare în competiții",
+        "Model doar pentru emisii",
+        "Prototip fără drept de drum",
+        "Vehicul fără VIN"
+      ],
+      "answer": "Model rutier produs pentru cerințe de omologare în competiții",
+      "explanation": "Regulamentele cereau uneori un număr minim de versiuni rutiere."
+    },
+    {
+      "id": "cars-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "BMW M3 E30 a fost dezvoltat în strânsă legătură cu ce competiții?",
+      "options": [
+        "Curse de turisme",
+        "Drag racing",
+        "IndyCar",
+        "Rally raid"
+      ],
+      "answer": "Curse de turisme",
+      "explanation": "M3 E30 a fost creat pentru omologare și curse de turisme."
+    },
+    {
+      "id": "cars-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este efectul de sol în motorsport?",
+      "options": [
+        "Folosirea fluxului de sub mașină pentru downforce",
+        "Răcirea frânelor cu apă",
+        "Blocarea suspensiei",
+        "Tracțiune magnetică"
+      ],
+      "answer": "Folosirea fluxului de sub mașină pentru downforce",
+      "explanation": "Podeaua și tunelurile pot crea depresiune și forță verticală."
+    },
+    {
+      "id": "cars-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce rol are difuzorul posterior?",
+      "options": [
+        "Ajută expansiunea controlată a aerului de sub podea",
+        "Răcește combustibilul",
+        "Reduce presiunea uleiului",
+        "Acționează frâna de mână"
+      ],
+      "answer": "Ajută expansiunea controlată a aerului de sub podea",
+      "explanation": "Difuzorul contribuie la eficiența fluxului sub mașină."
+    },
+    {
+      "id": "cars-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este DRS în Formula 1?",
+      "options": [
+        "Sistem care reduce temporar rezistența aripii spate",
+        "Sistem de recuperare diesel",
+        "Diferențial standard",
+        "TPMS"
+      ],
+      "answer": "Sistem care reduce temporar rezistența aripii spate",
+      "explanation": "DRS modifică poziția unui element al aripii spate în condiții permise."
+    },
+    {
+      "id": "cars-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este parc fermé?",
+      "options": [
+        "Regim care limitează modificările tehnice după anumite sesiuni",
+        "Parcare spectatori",
+        "Parcare camioane",
+        "Zonă de încărcare EV"
+      ],
+      "answer": "Regim care limitează modificările tehnice după anumite sesiuni",
+      "explanation": "Parc fermé protejează conformitatea și limitează schimbările de setup."
+    },
+    {
+      "id": "cars-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care circuit a găzduit prima cursă a Campionatului Mondial F1 din 1950?",
+      "options": [
+        "Silverstone",
+        "Monza",
+        "Monaco",
+        "Spa-Francorchamps"
+      ],
+      "answer": "Silverstone",
+      "explanation": "Marele Premiu al Marii Britanii de la Silverstone a deschis campionatul."
+    },
+    {
+      "id": "cars-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost primul campion mondial de Formula 1?",
+      "options": [
+        "Giuseppe Farina",
+        "Juan Manuel Fangio",
+        "Alberto Ascari",
+        "Stirling Moss"
+      ],
+      "answer": "Giuseppe Farina",
+      "explanation": "Farina a câștigat titlul inaugural din 1950."
+    },
+    {
+      "id": "cars-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce constructor a câștigat prima cursă din Campionatul Mondial F1?",
+      "options": [
+        "Alfa Romeo",
+        "Ferrari",
+        "Mercedes-Benz",
+        "Maserati"
+      ],
+      "answer": "Alfa Romeo",
+      "explanation": "Farina a câștigat cu Alfa Romeo."
+    },
+    {
+      "id": "cars-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce cursă franceză este celebră pentru formatul de 24 de ore?",
+      "options": [
+        "Le Mans",
+        "Daytona 500",
+        "Indy 500",
+        "Monte Carlo Rally"
+      ],
+      "answer": "Le Mans",
+      "explanation": "24 Hours of Le Mans este o cursă de anduranță emblematică."
+    },
+    {
+      "id": "cars-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este scrutineering?",
+      "options": [
+        "Inspecția tehnică pentru verificarea conformității",
+        "Antrenament liber",
+        "Realimentare",
+        "Selecția piloților"
+      ],
+      "answer": "Inspecția tehnică pentru verificarea conformității",
+      "explanation": "Comisarii verifică mașina față de regulament."
+    },
+    {
+      "id": "cars-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce se întâmplă cu drag-ul dacă aria frontală crește, la același Cd și viteză?",
+      "options": [
+        "Crește",
+        "Scade",
+        "Nu se schimbă",
+        "Devine zero"
+      ],
+      "answer": "Crește",
+      "explanation": "Rezistența aerodinamică depinde și de aria frontală."
+    },
+    {
+      "id": "cars-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este centrul de presiune aerodinamic?",
+      "options": [
+        "Punctul echivalent de aplicare a rezultantei forțelor aerodinamice",
+        "Centrul jantei",
+        "Centrul arborelui cotit",
+        "Punctul de fierbere"
+      ],
+      "answer": "Punctul echivalent de aplicare a rezultantei forțelor aerodinamice",
+      "explanation": "Poziția lui influențează echilibrul aero."
+    },
+    {
+      "id": "cars-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă aerodynamic balance?",
+      "options": [
+        "Distribuția downforce-ului între față și spate",
+        "Raport masă-putere",
+        "AFR",
+        "Raport final"
+      ],
+      "answer": "Distribuția downforce-ului între față și spate",
+      "explanation": "Echilibrul aerodinamic influențează comportamentul la viteză."
+    },
+    {
+      "id": "cars-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este stall-ul unei aripi?",
+      "options": [
+        "Separarea fluxului și pierderea puternică a downforce-ului",
+        "Creștere infinită de downforce",
+        "Blocare diferențial",
+        "Creștere compresie"
+      ],
+      "answer": "Separarea fluxului și pierderea puternică a downforce-ului",
+      "explanation": "Separarea fluxului reduce eficiența profilului."
+    },
+    {
+      "id": "cars-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este rake-ul unei mașini?",
+      "options": [
+        "Înclinarea longitudinală a caroseriei față de sol",
+        "Unghiul volanului",
+        "Unghiul arborelui cu came",
+        "Curbura aripii"
+      ],
+      "answer": "Înclinarea longitudinală a caroseriei față de sol",
+      "explanation": "Rake-ul poate influența fluxul sub podea și echilibrul aero."
+    },
+    {
+      "id": "cars-231",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a câștigat Mazda 787B Le Mans?",
+      "answer": "1991",
+      "explanation": "Mazda 787B a câștigat Le Mans în 1991."
+    },
+    {
+      "id": "cars-232",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an s-a încheiat era Grupei B în WRC?",
+      "answer": "1986",
+      "explanation": "Grupa B a fost eliminată după sezonul 1986."
+    },
+    {
+      "id": "cars-233",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a început primul Campionat Mondial de Formula 1?",
+      "answer": "1950",
+      "explanation": "Primul sezon al campionatului mondial a fost 1950."
+    },
+    {
+      "id": "cars-234",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte rotații ale arborelui cotit sunt necesare pentru un ciclu complet în patru timpi?",
+      "answer": "2",
+      "explanation": "Un ciclu complet necesită două rotații ale arborelui cotit."
+    },
+    {
+      "id": "cars-235",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte grade însumează două rotații complete ale arborelui cotit?",
+      "answer": "720",
+      "explanation": "Două rotații complete înseamnă 720°."
+    },
+    {
+      "id": "cars-236",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câți cilindri avea motorul boxer al Porsche 911 original?",
+      "answer": "6",
+      "explanation": "Porsche 911 original folosea un boxer cu șase cilindri."
+    },
+    {
+      "id": "cars-237",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câți rotoare avea motorul Mazda 787B?",
+      "answer": "4",
+      "explanation": "R26B era un motor rotativ cu patru rotoare."
+    },
+    {
+      "id": "cars-238",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a debutat public Porsche 901?",
+      "answer": "1963",
+      "explanation": "Modelul a debutat la Frankfurt în 1963."
+    },
+    {
+      "id": "cars-239",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a început producția Porsche 901/911?",
+      "answer": "1964",
+      "explanation": "Producția a început în 1964."
+    },
+    {
+      "id": "cars-240",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost introdusă centura Volvo în trei puncte pe modele de serie?",
+      "answer": "1959",
+      "explanation": "Volvo a introdus sistemul în 1959."
+    },
+    {
+      "id": "cars-241",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce parametru geometric influențează puternic randamentul teoretic al ciclului Otto?",
+      "options": [
+        "Raportul de compresie",
+        "Diametrul jantei",
+        "Raportul final",
+        "Caster-ul"
+      ],
+      "answer": "Raportul de compresie",
+      "explanation": "În modelul ideal Otto, randamentul crește cu raportul de compresie."
+    },
+    {
+      "id": "cars-242",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce ciclu termodinamic idealizează motorul diesel clasic?",
+      "options": [
+        "Ciclul Diesel",
+        "Rankine",
+        "Brayton",
+        "Carnot invers"
+      ],
+      "answer": "Ciclul Diesel",
+      "explanation": "Modelul Diesel idealizează aportul de căldură la presiune constantă."
+    },
+    {
+      "id": "cars-243",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce ciclu este asociat cu multe motoare hibride eficiente printr-un raport efectiv de expansiune favorabil?",
+      "options": [
+        "Atkinson",
+        "Brayton",
+        "Rankine",
+        "Stirling"
+      ],
+      "answer": "Atkinson",
+      "explanation": "Ciclul Atkinson modern este realizat prin strategii de distribuție."
+    },
+    {
+      "id": "cars-244",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce caracterizează ciclul Miller?",
+      "options": [
+        "Timing al supapelor combinat frecvent cu supraalimentare",
+        "Lipsa compresiei",
+        "O cutie CVT",
+        "Frânare regenerativă"
+      ],
+      "answer": "Timing al supapelor combinat frecvent cu supraalimentare",
+      "explanation": "Miller reduce compresia efectivă și poate compensa umplerea prin boost."
+    },
+    {
+      "id": "cars-245",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă BSFC?",
+      "options": [
+        "Brake Specific Fuel Consumption",
+        "Brake System Force Coefficient",
+        "Boost Specific Flow Control",
+        "Battery State Feedback Current"
+      ],
+      "answer": "Brake Specific Fuel Consumption",
+      "explanation": "BSFC exprimă consumul de combustibil raportat la puterea produsă."
+    },
+    {
+      "id": "cars-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce indică un BSFC mai mic la același punct de sarcină?",
+      "options": [
+        "Eficiență mai bună",
+        "Fricțiune mai mare în frâne",
+        "Consum mai mare",
+        "Boost obligatoriu mai mare"
+      ],
+      "answer": "Eficiență mai bună",
+      "explanation": "Este nevoie de mai puțin combustibil pentru aceeași putere utilă."
+    },
+    {
+      "id": "cars-247",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă BMEP?",
+      "options": [
+        "Brake Mean Effective Pressure",
+        "Battery Maximum Electrical Power",
+        "Brake Mechanical Efficiency Percentage",
+        "Boost Manifold Exhaust Pressure"
+      ],
+      "answer": "Brake Mean Effective Pressure",
+      "explanation": "BMEP normalizează capacitatea motorului de a produce cuplu față de cilindree."
+    },
+    {
+      "id": "cars-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce este BMEP util?",
+      "options": [
+        "Permite compararea cuplului specific între motoare de cilindree diferită",
+        "Compară diametrele roților",
+        "Măsoară doar EGT",
+        "Indică masa motorului"
+      ],
+      "answer": "Permite compararea cuplului specific între motoare de cilindree diferită",
+      "explanation": "Este o presiune echivalentă calculată din cuplu și cilindree."
+    },
+    {
+      "id": "cars-249",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă IMEP?",
+      "options": [
+        "Indicated Mean Effective Pressure",
+        "Intake Manifold Exhaust Pressure",
+        "Integrated Motor Electrical Power",
+        "Internal Mass Efficiency Parameter"
+      ],
+      "answer": "Indicated Mean Effective Pressure",
+      "explanation": "IMEP se bazează pe lucrul indicat în cilindru."
+    },
+    {
+      "id": "cars-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Diferența dintre IMEP și BMEP reflectă în principal ce?",
+      "options": [
+        "Pierderi mecanice și de pompare",
+        "Drag aerodinamic",
+        "Rezistență la rulare",
+        "Pierderi în pneuri exclusiv"
+      ],
+      "answer": "Pierderi mecanice și de pompare",
+      "explanation": "BMEP este puterea utilă la arbore, după pierderi."
+    },
+    {
+      "id": "cars-251",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă LSPI?",
+      "options": [
+        "Low-Speed Pre-Ignition",
+        "Low-Speed Pressure Injection",
+        "Lean Spark Pulse Ignition",
+        "Load Sensor Pressure Index"
+      ],
+      "answer": "Low-Speed Pre-Ignition",
+      "explanation": "LSPI este o preaprindere anormală la turație joasă și sarcină mare."
+    },
+    {
+      "id": "cars-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce reprezintă raportul stoichiometric aer-combustibil?",
+      "options": [
+        "Cantitatea de aer teoretic necesară arderii complete a combustibilului",
+        "Raportul maxim de compresie",
+        "Raport cuplu-putere",
+        "Raportul turbo-atmosferă"
+      ],
+      "answer": "Cantitatea de aer teoretic necesară arderii complete a combustibilului",
+      "explanation": "Valoarea depinde de compoziția combustibilului."
+    },
+    {
+      "id": "cars-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce lambda este utilă pentru combustibili diferiți?",
+      "options": [
+        "Normalizează amestecul față de stoichiometria combustibilului",
+        "Este mereu 14,7",
+        "Măsoară puterea",
+        "Nu depinde de oxigen"
+      ],
+      "answer": "Normalizează amestecul față de stoichiometria combustibilului",
+      "explanation": "Lambda compară raportul real cu cel stoichiometric specific."
+    },
+    {
+      "id": "cars-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă lambda sub 1 la un motor pe benzină?",
+      "options": [
+        "Amestec mai bogat decât stoichiometric",
+        "Mai sărac",
+        "Exact stoichiometric",
+        "Fără combustibil"
+      ],
+      "answer": "Amestec mai bogat decât stoichiometric",
+      "explanation": "Există relativ mai mult combustibil față de aer."
+    },
+    {
+      "id": "cars-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă lambda peste 1?",
+      "options": [
+        "Amestec mai sărac decât stoichiometric",
+        "Mai bogat",
+        "Exact stoichiometric",
+        "Fără aer"
+      ],
+      "answer": "Amestec mai sărac decât stoichiometric",
+      "explanation": "Există exces de aer față de raportul stoichiometric."
+    },
+    {
+      "id": "cars-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce avantaj are o sondă lambda wideband?",
+      "options": [
+        "Măsoară precis o gamă largă de lambda",
+        "Nu necesită alimentare",
+        "Măsoară cuplul",
+        "Înlocuiește MAF"
+      ],
+      "answer": "Măsoară precis o gamă largă de lambda",
+      "explanation": "Wideband este utilă pentru control și calibrare pe o plajă extinsă."
+    },
+    {
+      "id": "cars-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă EGT?",
+      "options": [
+        "Exhaust Gas Temperature",
+        "Engine Gear Torque",
+        "Electronic Geometry Tracking",
+        "Energy Gain Transfer"
+      ],
+      "answer": "Exhaust Gas Temperature",
+      "explanation": "EGT este temperatura gazelor de evacuare."
+    },
+    {
+      "id": "cars-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce se întâmplă cu densitatea aerului la aceeași presiune dacă temperatura scade?",
+      "options": [
+        "Crește",
+        "Scade",
+        "Rămâne exact aceeași",
+        "Devine zero"
+      ],
+      "answer": "Crește",
+      "explanation": "Legea gazului ideal arată că densitatea crește când temperatura scade."
+    },
+    {
+      "id": "cars-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este volumetric efficiency?",
+      "options": [
+        "Măsura cât de eficient se umple motorul cu aer față de capacitatea teoretică",
+        "Randamentul frânelor",
+        "Raport masă-putere",
+        "Eficiența bateriei"
+      ],
+      "answer": "Măsura cât de eficient se umple motorul cu aer față de capacitatea teoretică",
+      "explanation": "Eficiența volumetrică descrie umplerea cilindrilor."
+    },
+    {
+      "id": "cars-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Poate un motor turbo avea eficiență volumetrică aparentă peste 100%?",
+      "options": [
+        "Da",
+        "Nu",
+        "Doar diesel în doi timpi",
+        "Doar fără intercooler"
+      ],
+      "answer": "Da",
+      "explanation": "Supraalimentarea poate introduce mai multă masă de aer decât la presiune atmosferică."
+    },
+    {
+      "id": "cars-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este mean piston speed?",
+      "options": [
+        "Viteza medie a pistonului calculată din cursă și turație",
+        "Viteza mașinii/cilindree",
+        "Viteza arborelui cu came",
+        "Viteza injectorului"
+      ],
+      "answer": "Viteza medie a pistonului calculată din cursă și turație",
+      "explanation": "Este un indicator al solicitării mecanice."
+    },
+    {
+      "id": "cars-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "La aceeași turație, ce motor are mean piston speed mai mare?",
+      "options": [
+        "Cel cu cursă mai lungă",
+        "Cel cu cursă mai scurtă",
+        "Ambele identic",
+        "Cel cu alezaj mai mare obligatoriu"
+      ],
+      "answer": "Cel cu cursă mai lungă",
+      "explanation": "Pistonul parcurge mai multă distanță pe rotație."
+    },
+    {
+      "id": "cars-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă MBT în calibrarea aprinderii?",
+      "options": [
+        "Minimum spark advance for Best Torque",
+        "Maximum Boost Temperature",
+        "Main Brake Torque",
+        "Motor Battery Threshold"
+      ],
+      "answer": "Minimum spark advance for Best Torque",
+      "explanation": "MBT este avansul minim care produce cuplul maxim în condițiile date."
+    },
+    {
+      "id": "cars-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este cam phasing?",
+      "options": [
+        "Deplasarea fazei arborelui cu came față de arborele cotit",
+        "Schimbarea profilului pneului",
+        "Reglarea diferențialului",
+        "Schimbarea turbinei"
+      ],
+      "answer": "Deplasarea fazei arborelui cu came față de arborele cotit",
+      "explanation": "Sistemele VVT pot roti faza arborelui cu came."
+    },
+    {
+      "id": "cars-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este variable valve lift?",
+      "options": [
+        "Modificarea cursei de deschidere a supapei",
+        "Schimbarea raportului final",
+        "Reglarea suspensiei pneumatice",
+        "Creșterea presiunii combustibilului"
+      ],
+      "answer": "Modificarea cursei de deschidere a supapei",
+      "explanation": "Sistemul schimbă amplitudinea deschiderii supapei."
+    },
+    {
+      "id": "cars-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce efect are EGR asupra temperaturilor de vârf ale arderii?",
+      "options": [
+        "Le reduce",
+        "Le mărește întotdeauna",
+        "Nu are efect",
+        "Le duce sub zero"
+      ],
+      "answer": "Le reduce",
+      "explanation": "Gazele recirculate diluează încărcătura și pot limita NOx."
+    },
+    {
+      "id": "cars-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce catalizatorul cu trei căi lucrează optim aproape de lambda 1?",
+      "options": [
+        "Are nevoie de echilibru între oxigen și specii reducătoare",
+        "Lambda 1 răcește evacuarea la 0°C",
+        "Nu există CO",
+        "Motorul nu produce NOx"
+      ],
+      "answer": "Are nevoie de echilibru între oxigen și specii reducătoare",
+      "explanation": "Conversia simultană a HC/CO și NOx cere o fereastră strânsă de amestec."
+    },
+    {
+      "id": "cars-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă SCR?",
+      "options": [
+        "Selective Catalytic Reduction",
+        "Sequential Combustion Ratio",
+        "Suspension Control Relay",
+        "Spark Controlled Regeneration"
+      ],
+      "answer": "Selective Catalytic Reduction",
+      "explanation": "SCR reduce NOx cu un agent reducător."
+    },
+    {
+      "id": "cars-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce se întâmplă în regenerarea activă a DPF?",
+      "options": [
+        "Temperatura este crescută pentru oxidarea funinginii",
+        "Filtrul este umplut cu ulei",
+        "Boost-ul este eliminat",
+        "Motorul merge fără injecție"
+      ],
+      "answer": "Temperatura este crescută pentru oxidarea funinginii",
+      "explanation": "Regenerarea arde particulele acumulate."
+    },
+    {
+      "id": "cars-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este diferența dintre funingine și cenușă într-un DPF?",
+      "options": [
+        "Funinginea poate fi oxidată; cenușa se acumulează",
+        "Cenușa arde mai ușor",
+        "Sunt identice",
+        "Cenușa este combustibil lichid"
+      ],
+      "answer": "Funinginea poate fi oxidată; cenușa se acumulează",
+      "explanation": "Cenușa este în mare parte reziduu anorganic și nu dispare prin regenerare."
+    },
+    {
+      "id": "cars-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este anti-lag într-un motor turbo de competiție?",
+      "options": [
+        "Strategie care menține turbina în turație la ridicarea accelerației",
+        "Sistem de frânare",
+        "Blocare diferențial",
+        "Răcire pneuri"
+      ],
+      "answer": "Strategie care menține turbina în turație la ridicarea accelerației",
+      "explanation": "ALS menține energie în turbină prin strategii de aer și ardere."
+    },
+    {
+      "id": "cars-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este dezavantajul major al anti-lag-ului agresiv?",
+      "options": [
+        "Solicitări și temperaturi foarte mari în turbo și evacuare",
+        "Răcește evacuarea la zero",
+        "Elimină consumul",
+        "Protejează catalizatorul"
+      ],
+      "answer": "Solicitări și temperaturi foarte mari în turbo și evacuare",
+      "explanation": "Arderea în evacuare poate deteriora rapid componentele."
+    },
+    {
+      "id": "cars-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este flat-shift/no-lift shift?",
+      "options": [
+        "Schimbare de treaptă cu accelerația menținută și cuplul gestionat de ECU",
+        "Schimbare fără ambreiaj la orice cutie",
+        "Retrogradare cu motorul oprit",
+        "Schimbare doar la ralanti"
+      ],
+      "answer": "Schimbare de treaptă cu accelerația menținută și cuplul gestionat de ECU",
+      "explanation": "ECU reduce temporar cuplul pentru schimbare rapidă."
+    },
+    {
+      "id": "cars-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este torsional vibration?",
+      "options": [
+        "Oscilație de răsucire a unui arbore",
+        "Vibrație verticală caroserie",
+        "Oscilație presiune pneuri",
+        "Deplasare axială constantă"
+      ],
+      "answer": "Oscilație de răsucire a unui arbore",
+      "explanation": "Pulsațiile de cuplu pot excita moduri torsionale."
+    },
+    {
+      "id": "cars-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce există un harmonic damper pe arborele cotit?",
+      "options": [
+        "Reduce vibrațiile torsionale rezonante",
+        "Crește boost-ul",
+        "Răcește pistoanele",
+        "Alimentează alternatorul"
+      ],
+      "answer": "Reduce vibrațiile torsionale rezonante",
+      "explanation": "Damper-ul protejează arborele de amplitudini mari la anumite frecvențe."
+    },
+    {
+      "id": "cars-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este rezonanța mecanică?",
+      "options": [
+        "Amplificarea răspunsului când excitația se apropie de frecvența naturală",
+        "Eliminarea vibrațiilor",
+        "Răcire prin convecție",
+        "Blocare mecanică"
+      ],
+      "answer": "Amplificarea răspunsului când excitația se apropie de frecvența naturală",
+      "explanation": "La rezonanță amplitudinea poate crește puternic."
+    },
+    {
+      "id": "cars-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este modal analysis?",
+      "options": [
+        "Analiza frecvențelor și formelor proprii de vibrație",
+        "Analiza culorilor",
+        "Analiza consumului",
+        "Citirea codurilor OBD"
+      ],
+      "answer": "Analiza frecvențelor și formelor proprii de vibrație",
+      "explanation": "Este folosită pentru controlul NVH și rigidității."
+    },
+    {
+      "id": "cars-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă NVH?",
+      "options": [
+        "Noise, Vibration and Harshness",
+        "Nominal Vehicle Horsepower",
+        "Neutral Valve Hydraulics",
+        "Network Voltage Handling"
+      ],
+      "answer": "Noise, Vibration and Harshness",
+      "explanation": "NVH tratează zgomotul, vibrațiile și asperitatea percepută."
+    },
+    {
+      "id": "cars-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este torsional rigidity a caroseriei?",
+      "options": [
+        "Rezistența structurii la răsucire",
+        "Rigiditatea pneului",
+        "Rigiditatea pedalei",
+        "Vâscozitatea uleiului"
+      ],
+      "answer": "Rezistența structurii la răsucire",
+      "explanation": "O structură rigidă permite suspensiei să lucreze mai predictibil."
+    },
+    {
+      "id": "cars-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este thermal runaway într-o baterie Li-ion?",
+      "options": [
+        "Reacție autoaccelerată în care căldura generează și mai multă căldură",
+        "Descărcare normală",
+        "Răcire sub zero",
+        "Echilibrare celule"
+      ],
+      "answer": "Reacție autoaccelerată în care căldura generează și mai multă căldură",
+      "explanation": "Thermal runaway este un risc sever la celule deteriorate sau supraîncălzite."
+    },
+    {
+      "id": "cars-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este cell balancing?",
+      "options": [
+        "Egalizarea stării de încărcare/tensiunii între celule",
+        "Echilibrarea roților",
+        "Distribuția cuplului",
+        "Sincronizarea arborilor"
+      ],
+      "answer": "Egalizarea stării de încărcare/tensiunii între celule",
+      "explanation": "BMS reduce diferențele dintre celule pentru utilizarea sigură a pachetului."
+    },
+    {
+      "id": "cars-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este C-rate?",
+      "options": [
+        "Raportul curentului de încărcare/descărcare la capacitatea nominală",
+        "Coeficient aerodinamic",
+        "Raport final",
+        "Indice de viteză"
+      ],
+      "answer": "Raportul curentului de încărcare/descărcare la capacitatea nominală",
+      "explanation": "1C corespunde teoretic unei descărcări în aproximativ o oră."
+    },
+    {
+      "id": "cars-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este regenerative blending?",
+      "options": [
+        "Combinarea frânării regenerative cu frânarea mecanică",
+        "Amestec de benzină și etanol",
+        "Combinarea pneurilor",
+        "Sincronizarea turbo"
+      ],
+      "answer": "Combinarea frânării regenerative cu frânarea mecanică",
+      "explanation": "Controlerul împarte cererea de decelerare între recuperare și fricțiune."
+    },
+    {
+      "id": "cars-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este torque fill într-un hibrid de performanță?",
+      "options": [
+        "Motorul electric completează golurile de cuplu ale sistemului termic/transmisiei",
+        "Umplerea diferențialului",
+        "Creșterea presiunii pneurilor",
+        "Pornirea A/C"
+      ],
+      "answer": "Motorul electric completează golurile de cuplu ale sistemului termic/transmisiei",
+      "explanation": "Cuplul electric poate umple schimbările de treaptă sau turbo lag-ul."
+    },
+    {
+      "id": "cars-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce o arhitectură electrică de tensiune mai mare poate fi eficientă?",
+      "options": [
+        "Pentru aceeași putere poate folosi curent mai mic",
+        "Necesită mereu cabluri mai groase",
+        "Elimină izolația",
+        "Face bateria mai grea prin definiție"
+      ],
+      "answer": "Pentru aceeași putere poate folosi curent mai mic",
+      "explanation": "P=V×I; curentul mai mic reduce pierderile I²R."
+    },
+    {
+      "id": "cars-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este SiC în electronica de putere EV?",
+      "options": [
+        "Semiconductor silicon-carbide folosit în invertoare eficiente",
+        "Lichid de răcire",
+        "Material de pneu",
+        "Aditiv de ulei"
+      ],
+      "answer": "Semiconductor silicon-carbide folosit în invertoare eficiente",
+      "explanation": "Dispozitivele SiC pot reduce pierderile de comutație."
+    },
+    {
+      "id": "cars-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este field weakening la un motor electric?",
+      "options": [
+        "Strategie pentru turații peste viteza de bază prin reducerea fluxului efectiv",
+        "Răcirea câmpului magnetic",
+        "Deconectarea invertorului",
+        "Frânare mecanică"
+      ],
+      "answer": "Strategie pentru turații peste viteza de bază prin reducerea fluxului efectiv",
+      "explanation": "Permite extinderea plajei de viteză cu scăderea cuplului disponibil."
+    },
+    {
+      "id": "cars-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este cogging torque?",
+      "options": [
+        "Cuplu parazit periodic între magneți și crestăturile statorului",
+        "Cuplu launch control",
+        "Cuplu frână de parcare",
+        "Cuplu diferențial"
+      ],
+      "answer": "Cuplu parazit periodic între magneți și crestăturile statorului",
+      "explanation": "Cogging-ul poate produce ondulații de cuplu la viteze mici."
+    },
+    {
+      "id": "cars-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este motion ratio într-o suspensie?",
+      "options": [
+        "Raportul dintre deplasarea roții și deplasarea arcului/amortizorului",
+        "Raportul motor-roată",
+        "Raportul de compresie",
+        "Raportul final"
+      ],
+      "answer": "Raportul dintre deplasarea roții și deplasarea arcului/amortizorului",
+      "explanation": "Geometria suspensiei transformă deplasarea roții în deplasarea arcului."
+    },
+    {
+      "id": "cars-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "De ce wheel rate diferă de spring rate?",
+      "options": [
+        "Din cauza motion ratio-ului și geometriei",
+        "Din cauza octanului",
+        "Din cauza lambda",
+        "Din cauza alezajului"
+      ],
+      "answer": "Din cauza motion ratio-ului și geometriei",
+      "explanation": "Forța și deplasarea arcului sunt transformate de pârghiile suspensiei."
+    },
+    {
+      "id": "cars-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este anti-dive geometry?",
+      "options": [
+        "Geometrie care reduce plonjarea la frânare",
+        "Sistem anti-aquaplanare",
+        "Program motor",
+        "Tip de pneu"
+      ],
+      "answer": "Geometrie care reduce plonjarea la frânare",
+      "explanation": "Forțele longitudinale sunt folosite pentru a limita compresia frontului."
+    },
+    {
+      "id": "cars-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este anti-squat geometry?",
+      "options": [
+        "Geometrie care reduce tasarea spatelui la accelerație",
+        "Control scaune",
+        "Reglaj camber ploaie",
+        "ABS"
+      ],
+      "answer": "Geometrie care reduce tasarea spatelui la accelerație",
+      "explanation": "Brațele suspensiei generează reacții care limitează squat-ul."
+    },
+    {
+      "id": "cars-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este scrub radius?",
+      "options": [
+        "Distanța pe sol dintre centrul petei de contact și intersecția axei de direcție",
+        "Raza pneului",
+        "Raza de virare",
+        "Diametrul discului"
+      ],
+      "answer": "Distanța pe sol dintre centrul petei de contact și intersecția axei de direcție",
+      "explanation": "Influențează feedbackul și reacțiile la frânare."
+    },
+    {
+      "id": "cars-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este steering axis inclination?",
+      "options": [
+        "Înclinarea axei de pivotare văzută din față",
+        "Unghi cardan",
+        "Unghi aripă",
+        "Unghi piston"
+      ],
+      "answer": "Înclinarea axei de pivotare văzută din față",
+      "explanation": "SAI/KPI contribuie la geometria direcției."
+    },
+    {
+      "id": "cars-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este pneumatic trail?",
+      "options": [
+        "Distanța efectivă dintre centrul geometric al contactului și rezultanta forței laterale",
+        "Lungimea valvei",
+        "Diametrul pneului",
+        "Adâncimea profilului"
+      ],
+      "answer": "Distanța efectivă dintre centrul geometric al contactului și rezultanta forței laterale",
+      "explanation": "Pneumatic trail contribuie la momentul de autoaliniere."
+    },
+    {
+      "id": "cars-296",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Care era cilindreea motorului S14B23 al BMW M3 E30, în cm³?",
+      "answer": "2302",
+      "explanation": "BMW Group Classic indică 2302 cm³ pentru motorul S14B23."
+    },
+    {
+      "id": "cars-297",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Ce viteză maximă în km/h indică BMW Group Classic pentru M3 E30 în fișa de bază consultată?",
+      "answer": "230",
+      "explanation": "BMW Group Classic indică 230 km/h pentru versiunea descrisă."
+    },
+    {
+      "id": "cars-298",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Ce putere în PS avea Porsche 911 original la debut?",
+      "answer": "130",
+      "explanation": "Porsche indică 130 PS pentru boxerul cu șase cilindri al modelului original."
+    },
+    {
+      "id": "cars-299",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a depus Volvo cererea de brevet pentru centura în trei puncte a lui Nils Bohlin?",
+      "answer": "1958",
+      "explanation": "Volvo descrie depunerea cererii de brevet în 1958."
+    },
+    {
+      "id": "cars-300",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "La o baterie, un regim ideal de 1C ar descărca teoretic capacitatea în câte ore?",
+      "answer": "1",
+      "explanation": "Prin definiție, 1C corespunde aproximativ unei descărcări complete într-o oră."
+    }
+  ]
+}

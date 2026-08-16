@@ -150,7 +150,7 @@ Verificare: aplicația rulează pe emulator/device Android, poate face login, po
 - [x] Campanie solo jucabilă end-to-end **offline**, din pachete curatoriate livrate cu jocul: 9 ținuturi × 3 asalturi, stele, XP/nivel, progres salvat local (ADR 0004).
 - [ ] Login-ul și o rundă solo completă cu întrebări reale `APPROVED` **din backend** sunt validate pe device (blocat corect de 0 întrebări aprobate; vezi `passed.md`).
 
-### Stare `docs/features-social-progression.md` §1 — Login & înregistrare
+### Stare `owner-plan.md` §1 — Login & înregistrare
 
 - [x] Sesiuni pe dispozitiv: refresh token per sesiune, listare, revocare
   individuală și în masă, rotație cu detecție de rejucare (ADR 0008).
@@ -175,6 +175,36 @@ Verificare: aplicația rulează pe emulator/device Android, poate face login, po
   (`PATCH /users/me/birth-date` există deja). Se face în §2, unde lipsa datei
   devine vizibilă prin restricțiile de chat.
 
+### Stare `owner-plan.md` §2 — Chat, prietenii și trepte de încredere
+
+- [x] Nouă trepte de încredere din răspunsuri corecte cumulate, calculate
+  server-side; pragurile se expun prin `GET /chat/trust`, nu sunt hardcodate în
+  client (ADR 0010).
+- [x] Sistem de prietenie: cerere / acceptare / refuz, cerere inversă tratată ca
+  acceptare, listă cu prezență online.
+- [x] Blocare valabilă în ambele sensuri, care rupe și prietenia, și scoate
+  conversația din listă.
+- [x] Conversații persistente 1:1 (prieteni și DM), cu coadă de „cerere de
+  mesaj” pentru necunoscuți și limita de un singur mesaj până la acceptare.
+- [x] Confidențialitate DM (`Oricine` / `Doar prietenii` / `Nimeni`), impusă pe
+  `Doar prietenii` la conturile de minor.
+- [x] Chat global efemer în Redis (100 mesaje, TTL 24 h), cerând T2 + email
+  confirmat, cu livrare care exclude perechile blocate.
+- [x] Protecții: rate limiting, filtru de limbaj RO/EN cu mascare, detecție de
+  spam cu mut automat, raportare cu copie a conținutului și prioritate mai mare
+  pentru contextul privat.
+- [x] Chat de bază în meci (`chat:match:*`) — implementat de Codex, vezi ADR 0009.
+- [x] Aplicație: ecran de prieteni și mesaje, ecran de conversație, card de
+  treaptă cu progres, setare de confidențialitate.
+- [ ] Livrarea prin socket a mesajelor directe în aplicație. Serverul emite deja
+  `chat:message` și `friends:presence`; până la legarea lor, ecranul de
+  conversație reîmprospătează firul la 4 secunde cât e deschis.
+- [ ] Ecran pentru completarea datei de naștere la conturile vechi — fără el,
+  acele conturi rămân tratate ca minori, deci fără chat global.
+- [ ] Imagini/GIF-uri (cer canal de upload și moderare de imagine), shadow-ban,
+  coadă de moderare umană (§13), sharding pe limbă al camerei globale,
+  sugestii de prieteni.
+
 ### Stare Faza 2 (`plan.md`) — Multiplayer MVP
 
 - [x] Serviciu realtime (Socket.IO) + matchmaking Redis.
@@ -195,7 +225,9 @@ Verificare: aplicația rulează pe emulator/device Android, poate face login, po
 - [x] Stivă publicată pe VPS (`docs/deploy-vps.md`): Postgres, Redis, API și
   realtime în containere proprii, expuse doar prin Cloudflare Tunnel.
 - [ ] Partide private cu cod + roboți configurabili.
-- [ ] Chat de bază în meci (`docs/features-social-progression.md` §2, mapat pe Faza 2).
+- [x] Chat de bază în meci (`owner-plan.md` §2, mapat pe Faza 2): cameră efemeră
+  izolată per partidă, istoric la reconectare, reacții presetate pentru T0/minori,
+  text liber numai cu permisiune server-side, rate limit, mute, blocări și UI Flutter.
 
 ### Stare Faza 1 (`plan.md`) — gameplay solo
 

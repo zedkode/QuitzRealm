@@ -55,12 +55,18 @@ Future<void> _pump(
 void main() {
   for (final entry in _phoneSizes.entries) {
     group('ecran ${entry.key} (${entry.value.width}×${entry.value.height})', () {
-      testWidgets('ecranul-titlu încape', (tester) async {
+      testWidgets('tabloul de bord încape', (tester) async {
         await _pump(tester, const TitleScreen(), size: entry.value);
 
         expect(tester.takeException(), isNull);
-        expect(find.byKey(const Key('menu-play')), findsOneWidget);
-        expect(find.byKey(const Key('title-stars')), findsOneWidget);
+        // Rândul de moduri e partea cea mai strâmtă a ecranului: patru
+        // cartonașe pe lățimea telefonului. Dacă se revarsă, se revarsă aici.
+        expect(find.byKey(const Key('menu-campaign')), findsOneWidget);
+        expect(find.byKey(const Key('menu-duel')), findsOneWidget);
+        expect(find.byKey(const Key('menu-social')), findsOneWidget);
+        expect(find.byKey(const Key('menu-leaderboard')), findsOneWidget);
+        expect(find.byKey(const Key('home-identity-header')), findsOneWidget);
+        expect(find.byKey(const Key('home-kingdom')), findsOneWidget);
       });
 
       testWidgets('harta regatului încape', (tester) async {

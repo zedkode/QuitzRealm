@@ -1,0 +1,4032 @@
+{
+  "id": "geography",
+  "name": "Geografie",
+  "questions": [
+    {
+      "id": "geography-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului România?",
+      "options": [
+        "Tallinn",
+        "București",
+        "Zagreb",
+        "Berna"
+      ],
+      "answer": "București",
+      "explanation": "București este capitala statului România și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-002",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Germania?",
+      "options": [
+        "Tallinn",
+        "Sofia",
+        "Berlin",
+        "Lisabona"
+      ],
+      "answer": "Berlin",
+      "explanation": "Berlin este capitala statului Germania și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-003",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Franța?",
+      "options": [
+        "Ljubljana",
+        "Paris",
+        "Atena",
+        "Tallinn"
+      ],
+      "answer": "Paris",
+      "explanation": "Paris este capitala statului Franța și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-004",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Italia?",
+      "options": [
+        "Kiev",
+        "Roma",
+        "Praga",
+        "Helsinki"
+      ],
+      "answer": "Roma",
+      "explanation": "Roma este capitala statului Italia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-005",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Spania?",
+      "options": [
+        "Copenhaga",
+        "Berlin",
+        "Budapesta",
+        "Madrid"
+      ],
+      "answer": "Madrid",
+      "explanation": "Madrid este capitala statului Spania și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-006",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Portugalia?",
+      "options": [
+        "Lisabona",
+        "Atena",
+        "Zagreb",
+        "Tirana"
+      ],
+      "answer": "Lisabona",
+      "explanation": "Lisabona este capitala statului Portugalia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-007",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Irlanda?",
+      "options": [
+        "Berlin",
+        "București",
+        "Reykjavik",
+        "Dublin"
+      ],
+      "answer": "Dublin",
+      "explanation": "Dublin este capitala statului Irlanda și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Țările de Jos?",
+      "options": [
+        "Amsterdam",
+        "Riga",
+        "Vilnius",
+        "Stockholm"
+      ],
+      "answer": "Amsterdam",
+      "explanation": "Amsterdam este capitala statului Țările de Jos și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-009",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Belgia?",
+      "options": [
+        "Bruxelles",
+        "Zagreb",
+        "Copenhaga",
+        "Berna"
+      ],
+      "answer": "Bruxelles",
+      "explanation": "Bruxelles este capitala statului Belgia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-010",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Elveția?",
+      "options": [
+        "Berna",
+        "Tirana",
+        "Atena",
+        "Vilnius"
+      ],
+      "answer": "Berna",
+      "explanation": "Berna este capitala statului Elveția și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Austria?",
+      "options": [
+        "Bruxelles",
+        "Tirana",
+        "Viena",
+        "Dublin"
+      ],
+      "answer": "Viena",
+      "explanation": "Viena este capitala statului Austria și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-012",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Polonia?",
+      "options": [
+        "Praga",
+        "Atena",
+        "Varșovia",
+        "Dublin"
+      ],
+      "answer": "Varșovia",
+      "explanation": "Varșovia este capitala statului Polonia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-013",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Cehia?",
+      "options": [
+        "Berlin",
+        "Belgrad",
+        "Praga",
+        "Vilnius"
+      ],
+      "answer": "Praga",
+      "explanation": "Praga este capitala statului Cehia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-014",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Slovacia?",
+      "options": [
+        "Roma",
+        "Amsterdam",
+        "Bruxelles",
+        "Bratislava"
+      ],
+      "answer": "Bratislava",
+      "explanation": "Bratislava este capitala statului Slovacia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-015",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Ungaria?",
+      "options": [
+        "Sofia",
+        "Lisabona",
+        "Varșovia",
+        "Budapesta"
+      ],
+      "answer": "Budapesta",
+      "explanation": "Budapesta este capitala statului Ungaria și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Grecia?",
+      "options": [
+        "Kiev",
+        "Oslo",
+        "Atena",
+        "Lisabona"
+      ],
+      "answer": "Atena",
+      "explanation": "Atena este capitala statului Grecia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-017",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Bulgaria?",
+      "options": [
+        "Viena",
+        "Kiev",
+        "Sofia",
+        "Riga"
+      ],
+      "answer": "Sofia",
+      "explanation": "Sofia este capitala statului Bulgaria și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Serbia?",
+      "options": [
+        "Belgrad",
+        "Roma",
+        "Paris",
+        "Budapesta"
+      ],
+      "answer": "Belgrad",
+      "explanation": "Belgrad este capitala statului Serbia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-019",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Croația?",
+      "options": [
+        "Bruxelles",
+        "Sarajevo",
+        "Zagreb",
+        "Berlin"
+      ],
+      "answer": "Zagreb",
+      "explanation": "Zagreb este capitala statului Croația și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Slovenia?",
+      "options": [
+        "Bruxelles",
+        "Kiev",
+        "Madrid",
+        "Ljubljana"
+      ],
+      "answer": "Ljubljana",
+      "explanation": "Ljubljana este capitala statului Slovenia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Bosnia și Herțegovina?",
+      "options": [
+        "Belgrad",
+        "Sofia",
+        "Berna",
+        "Sarajevo"
+      ],
+      "answer": "Sarajevo",
+      "explanation": "Sarajevo este capitala statului Bosnia și Herțegovina și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Macedonia de Nord?",
+      "options": [
+        "Dublin",
+        "Chișinău",
+        "Tallinn",
+        "Skopje"
+      ],
+      "answer": "Skopje",
+      "explanation": "Skopje este capitala statului Macedonia de Nord și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-023",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Albania?",
+      "options": [
+        "Oslo",
+        "Tirana",
+        "Chișinău",
+        "Vilnius"
+      ],
+      "answer": "Tirana",
+      "explanation": "Tirana este capitala statului Albania și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Republica Moldova?",
+      "options": [
+        "Chișinău",
+        "Ljubljana",
+        "Vilnius",
+        "Reykjavik"
+      ],
+      "answer": "Chișinău",
+      "explanation": "Chișinău este capitala statului Republica Moldova și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-025",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Ucraina?",
+      "options": [
+        "Copenhaga",
+        "Helsinki",
+        "Amsterdam",
+        "Kiev"
+      ],
+      "answer": "Kiev",
+      "explanation": "Kiev este capitala statului Ucraina și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Lituania?",
+      "options": [
+        "Vilnius",
+        "Sarajevo",
+        "Amsterdam",
+        "Bruxelles"
+      ],
+      "answer": "Vilnius",
+      "explanation": "Vilnius este capitala statului Lituania și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-027",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Letonia?",
+      "options": [
+        "Kiev",
+        "Skopje",
+        "Lisabona",
+        "Riga"
+      ],
+      "answer": "Riga",
+      "explanation": "Riga este capitala statului Letonia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Estonia?",
+      "options": [
+        "Chișinău",
+        "Atena",
+        "Tallinn",
+        "Vilnius"
+      ],
+      "answer": "Tallinn",
+      "explanation": "Tallinn este capitala statului Estonia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-029",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Norvegia?",
+      "options": [
+        "Berna",
+        "Oslo",
+        "Atena",
+        "Stockholm"
+      ],
+      "answer": "Oslo",
+      "explanation": "Oslo este capitala statului Norvegia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-030",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este capitala statului Suedia?",
+      "options": [
+        "Bratislava",
+        "Budapesta",
+        "Chișinău",
+        "Stockholm"
+      ],
+      "answer": "Stockholm",
+      "explanation": "Stockholm este capitala statului Suedia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-031",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Finlanda?",
+      "options": [
+        "Sarajevo",
+        "Helsinki",
+        "București",
+        "Tirana"
+      ],
+      "answer": "Helsinki",
+      "explanation": "Helsinki este capitala statului Finlanda și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-032",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Danemarca?",
+      "options": [
+        "Amsterdam",
+        "Tallinn",
+        "Copenhaga",
+        "Lisabona"
+      ],
+      "answer": "Copenhaga",
+      "explanation": "Copenhaga este capitala statului Danemarca și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Islanda?",
+      "options": [
+        "Skopje",
+        "Kiev",
+        "Vilnius",
+        "Reykjavik"
+      ],
+      "answer": "Reykjavik",
+      "explanation": "Reykjavik este capitala statului Islanda și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-034",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Turcia?",
+      "options": [
+        "Ankara",
+        "Baku",
+        "Amman",
+        "Tokyo"
+      ],
+      "answer": "Ankara",
+      "explanation": "Ankara este capitala statului Turcia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-035",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Georgia?",
+      "options": [
+        "Riad",
+        "Kathmandu",
+        "Tbilisi",
+        "Bangkok"
+      ],
+      "answer": "Tbilisi",
+      "explanation": "Tbilisi este capitala statului Georgia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-036",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Armenia?",
+      "options": [
+        "Phnom Penh",
+        "Erevan",
+        "Riad",
+        "Seul"
+      ],
+      "answer": "Erevan",
+      "explanation": "Erevan este capitala statului Armenia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-037",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Azerbaidjan?",
+      "options": [
+        "Kathmandu",
+        "New Delhi",
+        "Baku",
+        "Bangkok"
+      ],
+      "answer": "Baku",
+      "explanation": "Baku este capitala statului Azerbaidjan și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-038",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Statele Unite ale Americii?",
+      "options": [
+        "Santiago",
+        "Washington D.C.",
+        "Brasília",
+        "San José"
+      ],
+      "answer": "Washington D.C.",
+      "explanation": "Washington D.C. este capitala statului Statele Unite ale Americii și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-039",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Canada?",
+      "options": [
+        "Buenos Aires",
+        "Ottawa",
+        "Washington D.C.",
+        "Ciudad de Guatemala"
+      ],
+      "answer": "Ottawa",
+      "explanation": "Ottawa este capitala statului Canada și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Mexic?",
+      "options": [
+        "Havana",
+        "Ciudad de México",
+        "Caracas",
+        "Kingston"
+      ],
+      "answer": "Ciudad de México",
+      "explanation": "Ciudad de México este capitala statului Mexic și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-041",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Brazilia?",
+      "options": [
+        "Quito",
+        "Montevideo",
+        "Ciudad de México",
+        "Brasília"
+      ],
+      "answer": "Brasília",
+      "explanation": "Brasília este capitala statului Brazilia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-042",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Argentina?",
+      "options": [
+        "Quito",
+        "Buenos Aires",
+        "Kingston",
+        "San José"
+      ],
+      "answer": "Buenos Aires",
+      "explanation": "Buenos Aires este capitala statului Argentina și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Chile?",
+      "options": [
+        "Havana",
+        "Montevideo",
+        "Santiago",
+        "Ciudad de Panamá"
+      ],
+      "answer": "Santiago",
+      "explanation": "Santiago este capitala statului Chile și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-044",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Peru?",
+      "options": [
+        "Lima",
+        "Ottawa",
+        "Quito",
+        "Santiago"
+      ],
+      "answer": "Lima",
+      "explanation": "Lima este capitala statului Peru și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-045",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Columbia?",
+      "options": [
+        "Bogotá",
+        "Santiago",
+        "Buenos Aires",
+        "Quito"
+      ],
+      "answer": "Bogotá",
+      "explanation": "Bogotá este capitala statului Columbia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-046",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Venezuela?",
+      "options": [
+        "Caracas",
+        "Ciudad de Guatemala",
+        "Asunción",
+        "Ottawa"
+      ],
+      "answer": "Caracas",
+      "explanation": "Caracas este capitala statului Venezuela și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-047",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Uruguay?",
+      "options": [
+        "Ottawa",
+        "Buenos Aires",
+        "Montevideo",
+        "Ciudad de México"
+      ],
+      "answer": "Montevideo",
+      "explanation": "Montevideo este capitala statului Uruguay și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-048",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Paraguay?",
+      "options": [
+        "Asunción",
+        "Washington D.C.",
+        "Brasília",
+        "Santiago"
+      ],
+      "answer": "Asunción",
+      "explanation": "Asunción este capitala statului Paraguay și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-049",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Ecuador?",
+      "options": [
+        "Montevideo",
+        "Caracas",
+        "Buenos Aires",
+        "Quito"
+      ],
+      "answer": "Quito",
+      "explanation": "Quito este capitala statului Ecuador și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Cuba?",
+      "options": [
+        "Ciudad de Guatemala",
+        "Asunción",
+        "Havana",
+        "Santiago"
+      ],
+      "answer": "Havana",
+      "explanation": "Havana este capitala statului Cuba și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-051",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Jamaica?",
+      "options": [
+        "Ciudad de México",
+        "Kingston",
+        "Buenos Aires",
+        "Ciudad de Panamá"
+      ],
+      "answer": "Kingston",
+      "explanation": "Kingston este capitala statului Jamaica și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-052",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Costa Rica?",
+      "options": [
+        "Bogotá",
+        "Quito",
+        "San José",
+        "Washington D.C."
+      ],
+      "answer": "San José",
+      "explanation": "San José este capitala statului Costa Rica și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-053",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Panama?",
+      "options": [
+        "Havana",
+        "Quito",
+        "Ciudad de Guatemala",
+        "Ciudad de Panamá"
+      ],
+      "answer": "Ciudad de Panamá",
+      "explanation": "Ciudad de Panamá este capitala statului Panama și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-054",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Guatemala?",
+      "options": [
+        "Montevideo",
+        "Caracas",
+        "Ciudad de Guatemala",
+        "San José"
+      ],
+      "answer": "Ciudad de Guatemala",
+      "explanation": "Ciudad de Guatemala este capitala statului Guatemala și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-055",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Japonia?",
+      "options": [
+        "Islamabad",
+        "Bangkok",
+        "Tokyo",
+        "New Delhi"
+      ],
+      "answer": "Tokyo",
+      "explanation": "Tokyo este capitala statului Japonia și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-056",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului China?",
+      "options": [
+        "Ulan Bator",
+        "Islamabad",
+        "Beijing",
+        "Tbilisi"
+      ],
+      "answer": "Beijing",
+      "explanation": "Beijing este capitala statului China și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-057",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Coreea de Sud?",
+      "options": [
+        "Tokyo",
+        "Phnom Penh",
+        "Seul",
+        "Dhaka"
+      ],
+      "answer": "Seul",
+      "explanation": "Seul este capitala statului Coreea de Sud și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-058",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului India?",
+      "options": [
+        "Bangkok",
+        "Dhaka",
+        "Thimphu",
+        "New Delhi"
+      ],
+      "answer": "New Delhi",
+      "explanation": "New Delhi este capitala statului India și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-059",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Pakistan?",
+      "options": [
+        "New Delhi",
+        "Kathmandu",
+        "Islamabad",
+        "Beijing"
+      ],
+      "answer": "Islamabad",
+      "explanation": "Islamabad este capitala statului Pakistan și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-060",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este capitala statului Bangladesh?",
+      "options": [
+        "Dhaka",
+        "Kuala Lumpur",
+        "Bangkok",
+        "Teheran"
+      ],
+      "answer": "Dhaka",
+      "explanation": "Dhaka este capitala statului Bangladesh și principalul său centru politic. În geografia politică, asocierea corectă dintre stat și capitală este esențială pentru localizarea instituțiilor centrale și pentru diferențierea țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-061",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Sarajevo este capitala cărui stat?",
+      "options": [
+        "Bosnia și Herțegovina",
+        "Cehia",
+        "Spania",
+        "Irlanda"
+      ],
+      "answer": "Bosnia și Herțegovina",
+      "explanation": "Sarajevo este capitala statului Bosnia și Herțegovina. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-062",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Skopje este capitala cărui stat?",
+      "options": [
+        "Țările de Jos",
+        "Ucraina",
+        "Macedonia de Nord",
+        "România"
+      ],
+      "answer": "Macedonia de Nord",
+      "explanation": "Skopje este capitala statului Macedonia de Nord. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-063",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Tirana este capitala cărui stat?",
+      "options": [
+        "Croația",
+        "Macedonia de Nord",
+        "Albania",
+        "Țările de Jos"
+      ],
+      "answer": "Albania",
+      "explanation": "Tirana este capitala statului Albania. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-064",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Chișinău este capitala cărui stat?",
+      "options": [
+        "Suedia",
+        "Lituania",
+        "Republica Moldova",
+        "Danemarca"
+      ],
+      "answer": "Republica Moldova",
+      "explanation": "Chișinău este capitala statului Republica Moldova. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-065",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Kiev este capitala cărui stat?",
+      "options": [
+        "Suedia",
+        "Albania",
+        "Ucraina",
+        "Norvegia"
+      ],
+      "answer": "Ucraina",
+      "explanation": "Kiev este capitala statului Ucraina. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Vilnius este capitala cărui stat?",
+      "options": [
+        "Țările de Jos",
+        "Germania",
+        "Lituania",
+        "Franța"
+      ],
+      "answer": "Lituania",
+      "explanation": "Vilnius este capitala statului Lituania. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-067",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Riga este capitala cărui stat?",
+      "options": [
+        "Grecia",
+        "Croația",
+        "Letonia",
+        "Slovenia"
+      ],
+      "answer": "Letonia",
+      "explanation": "Riga este capitala statului Letonia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Tallinn este capitala cărui stat?",
+      "options": [
+        "Estonia",
+        "Țările de Jos",
+        "Grecia",
+        "Finlanda"
+      ],
+      "answer": "Estonia",
+      "explanation": "Tallinn este capitala statului Estonia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-069",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Oslo este capitala cărui stat?",
+      "options": [
+        "Belgia",
+        "Ucraina",
+        "Norvegia",
+        "Suedia"
+      ],
+      "answer": "Norvegia",
+      "explanation": "Oslo este capitala statului Norvegia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Stockholm este capitala cărui stat?",
+      "options": [
+        "Letonia",
+        "Slovacia",
+        "Suedia",
+        "Italia"
+      ],
+      "answer": "Suedia",
+      "explanation": "Stockholm este capitala statului Suedia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-071",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Helsinki este capitala cărui stat?",
+      "options": [
+        "Austria",
+        "Norvegia",
+        "Danemarca",
+        "Finlanda"
+      ],
+      "answer": "Finlanda",
+      "explanation": "Helsinki este capitala statului Finlanda. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Copenhaga este capitala cărui stat?",
+      "options": [
+        "Bulgaria",
+        "Finlanda",
+        "Danemarca",
+        "Germania"
+      ],
+      "answer": "Danemarca",
+      "explanation": "Copenhaga este capitala statului Danemarca. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Reykjavik este capitala cărui stat?",
+      "options": [
+        "Islanda",
+        "Irlanda",
+        "Slovenia",
+        "Belgia"
+      ],
+      "answer": "Islanda",
+      "explanation": "Reykjavik este capitala statului Islanda. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ankara este capitala cărui stat?",
+      "options": [
+        "China",
+        "Turcia",
+        "Thailanda",
+        "Nepal"
+      ],
+      "answer": "Turcia",
+      "explanation": "Ankara este capitala statului Turcia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Tbilisi este capitala cărui stat?",
+      "options": [
+        "Georgia",
+        "India",
+        "Vietnam",
+        "Coreea de Sud"
+      ],
+      "answer": "Georgia",
+      "explanation": "Tbilisi este capitala statului Georgia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Erevan este capitala cărui stat?",
+      "options": [
+        "China",
+        "Armenia",
+        "Iran",
+        "Georgia"
+      ],
+      "answer": "Armenia",
+      "explanation": "Erevan este capitala statului Armenia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Baku este capitala cărui stat?",
+      "options": [
+        "Irak",
+        "Arabia Saudită",
+        "Azerbaidjan",
+        "Nepal"
+      ],
+      "answer": "Azerbaidjan",
+      "explanation": "Baku este capitala statului Azerbaidjan. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Washington D.C. este capitala cărui stat?",
+      "options": [
+        "Canada",
+        "Statele Unite ale Americii",
+        "Costa Rica",
+        "Chile"
+      ],
+      "answer": "Statele Unite ale Americii",
+      "explanation": "Washington D.C. este capitala statului Statele Unite ale Americii. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ottawa este capitala cărui stat?",
+      "options": [
+        "Mexic",
+        "Brazilia",
+        "Venezuela",
+        "Canada"
+      ],
+      "answer": "Canada",
+      "explanation": "Ottawa este capitala statului Canada. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ciudad de México este capitala cărui stat?",
+      "options": [
+        "Jamaica",
+        "Peru",
+        "Cuba",
+        "Mexic"
+      ],
+      "answer": "Mexic",
+      "explanation": "Ciudad de México este capitala statului Mexic. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-081",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Brasília este capitala cărui stat?",
+      "options": [
+        "Cuba",
+        "Brazilia",
+        "Jamaica",
+        "Canada"
+      ],
+      "answer": "Brazilia",
+      "explanation": "Brasília este capitala statului Brazilia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-082",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Buenos Aires este capitala cărui stat?",
+      "options": [
+        "Argentina",
+        "Jamaica",
+        "Peru",
+        "Ecuador"
+      ],
+      "answer": "Argentina",
+      "explanation": "Buenos Aires este capitala statului Argentina. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-083",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Santiago este capitala cărui stat?",
+      "options": [
+        "Venezuela",
+        "Panama",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": "Chile",
+      "explanation": "Santiago este capitala statului Chile. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-084",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Lima este capitala cărui stat?",
+      "options": [
+        "Columbia",
+        "Ecuador",
+        "Peru",
+        "Canada"
+      ],
+      "answer": "Peru",
+      "explanation": "Lima este capitala statului Peru. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-085",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Bogotá este capitala cărui stat?",
+      "options": [
+        "Ecuador",
+        "Columbia",
+        "Guatemala",
+        "Jamaica"
+      ],
+      "answer": "Columbia",
+      "explanation": "Bogotá este capitala statului Columbia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-086",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Caracas este capitala cărui stat?",
+      "options": [
+        "Columbia",
+        "Ecuador",
+        "Venezuela",
+        "Guatemala"
+      ],
+      "answer": "Venezuela",
+      "explanation": "Caracas este capitala statului Venezuela. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-087",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Montevideo este capitala cărui stat?",
+      "options": [
+        "Uruguay",
+        "Mexic",
+        "Ecuador",
+        "Guatemala"
+      ],
+      "answer": "Uruguay",
+      "explanation": "Montevideo este capitala statului Uruguay. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-088",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Asunción este capitala cărui stat?",
+      "options": [
+        "Paraguay",
+        "Brazilia",
+        "Columbia",
+        "Mexic"
+      ],
+      "answer": "Paraguay",
+      "explanation": "Asunción este capitala statului Paraguay. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-089",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Quito este capitala cărui stat?",
+      "options": [
+        "Canada",
+        "Mexic",
+        "Ecuador",
+        "Uruguay"
+      ],
+      "answer": "Ecuador",
+      "explanation": "Quito este capitala statului Ecuador. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-090",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Havana este capitala cărui stat?",
+      "options": [
+        "Mexic",
+        "Cuba",
+        "Paraguay",
+        "Peru"
+      ],
+      "answer": "Cuba",
+      "explanation": "Havana este capitala statului Cuba. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-091",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Kingston este capitala cărui stat?",
+      "options": [
+        "Mexic",
+        "Jamaica",
+        "Guatemala",
+        "Brazilia"
+      ],
+      "answer": "Jamaica",
+      "explanation": "Kingston este capitala statului Jamaica. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-092",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "San José este capitala cărui stat?",
+      "options": [
+        "Uruguay",
+        "Peru",
+        "Columbia",
+        "Costa Rica"
+      ],
+      "answer": "Costa Rica",
+      "explanation": "San José este capitala statului Costa Rica. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-093",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ciudad de Panamá este capitala cărui stat?",
+      "options": [
+        "Panama",
+        "Chile",
+        "Ecuador",
+        "Peru"
+      ],
+      "answer": "Panama",
+      "explanation": "Ciudad de Panamá este capitala statului Panama. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-094",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ciudad de Guatemala este capitala cărui stat?",
+      "options": [
+        "Guatemala",
+        "Chile",
+        "Paraguay",
+        "Argentina"
+      ],
+      "answer": "Guatemala",
+      "explanation": "Ciudad de Guatemala este capitala statului Guatemala. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-095",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Tokyo este capitala cărui stat?",
+      "options": [
+        "Azerbaidjan",
+        "China",
+        "Singapore",
+        "Japonia"
+      ],
+      "answer": "Japonia",
+      "explanation": "Tokyo este capitala statului Japonia. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-096",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Beijing este capitala cărui stat?",
+      "options": [
+        "Arabia Saudită",
+        "Irak",
+        "China",
+        "Azerbaidjan"
+      ],
+      "answer": "China",
+      "explanation": "Beijing este capitala statului China. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-097",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Seul este capitala cărui stat?",
+      "options": [
+        "Armenia",
+        "Iordania",
+        "Coreea de Sud",
+        "India"
+      ],
+      "answer": "Coreea de Sud",
+      "explanation": "Seul este capitala statului Coreea de Sud. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-098",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "New Delhi este capitala cărui stat?",
+      "options": [
+        "Arabia Saudită",
+        "India",
+        "Pakistan",
+        "Coreea de Sud"
+      ],
+      "answer": "India",
+      "explanation": "New Delhi este capitala statului India. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-099",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Islamabad este capitala cărui stat?",
+      "options": [
+        "Pakistan",
+        "Coreea de Sud",
+        "Arabia Saudită",
+        "China"
+      ],
+      "answer": "Pakistan",
+      "explanation": "Islamabad este capitala statului Pakistan. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-100",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Dhaka este capitala cărui stat?",
+      "options": [
+        "Iran",
+        "Malaysia",
+        "Bangladesh",
+        "India"
+      ],
+      "answer": "Bangladesh",
+      "explanation": "Dhaka este capitala statului Bangladesh. Asocierea capitală–stat este importantă în geografia politică, mai ales pentru localizarea corectă a țărilor din aceeași regiune."
+    },
+    {
+      "id": "geography-101",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Viena, Bratislava, Budapesta și Belgrad?",
+      "options": [
+        "Dunărea",
+        "Rinul",
+        "Elba",
+        "Volga"
+      ],
+      "answer": "Dunărea",
+      "explanation": "Dunărea este al doilea fluviu ca lungime din Europa și traversează sau delimitează zece state. Pe cursul său se află mai multe capitale importante ale Europei Centrale și de Sud-Est."
+    },
+    {
+      "id": "geography-102",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mare se află între Europa de Sud, Africa de Nord și Asia de Vest?",
+      "options": [
+        "Marea Mediterană",
+        "Marea Baltică",
+        "Marea Nordului",
+        "Marea Caspică"
+      ],
+      "answer": "Marea Mediterană",
+      "explanation": "Marea Mediterană este aproape închisă de trei continente: Europa, Africa și Asia. Ea comunică cu Oceanul Atlantic prin Strâmtoarea Gibraltar."
+    },
+    {
+      "id": "geography-103",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce strâmtoare leagă Marea Mediterană de Oceanul Atlantic?",
+      "options": [
+        "Gibraltar",
+        "Bosfor",
+        "Dardanele",
+        "Bering"
+      ],
+      "answer": "Gibraltar",
+      "explanation": "Strâmtoarea Gibraltar separă sudul Spaniei de nordul Marocului și reprezintă legătura naturală dintre Atlantic și Marea Mediterană."
+    },
+    {
+      "id": "geography-104",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce canal leagă Marea Mediterană de Marea Roșie?",
+      "options": [
+        "Canalul Suez",
+        "Canalul Panama",
+        "Canalul Kiel",
+        "Canalul Corint"
+      ],
+      "answer": "Canalul Suez",
+      "explanation": "Canalul Suez traversează istmul Suez din Egipt și permite navelor să evite ocolirea Africii pe la Capul Bunei Speranțe."
+    },
+    {
+      "id": "geography-105",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce canal traversează istmul Panama și leagă Atlanticul de Pacific?",
+      "options": [
+        "Canalul Panama",
+        "Canalul Suez",
+        "Canalul Kiel",
+        "Canalul Erie"
+      ],
+      "answer": "Canalul Panama",
+      "explanation": "Canalul Panama taie istmul Panama și scurtează considerabil rutele maritime dintre coastele atlantică și pacifică ale Americilor."
+    },
+    {
+      "id": "geography-106",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este cel mai mare ocean al Pământului?",
+      "options": [
+        "Oceanul Pacific",
+        "Oceanul Atlantic",
+        "Oceanul Indian",
+        "Oceanul Arctic"
+      ],
+      "answer": "Oceanul Pacific",
+      "explanation": "Oceanul Pacific ocupă o suprafață mai mare decât orice alt ocean și conține numeroase arhipelaguri și cele mai adânci fose oceanice."
+    },
+    {
+      "id": "geography-107",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce lanț muntos formează o mare parte din granița naturală dintre Franța și Spania?",
+      "options": [
+        "Pirineii",
+        "Alpii",
+        "Carpații",
+        "Apeninii"
+      ],
+      "answer": "Pirineii",
+      "explanation": "Pirineii se întind între Golful Biscaya și Marea Mediterană. Ei separă în mare parte Peninsula Iberică de restul Europei continentale."
+    },
+    {
+      "id": "geography-108",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce lanț muntos traversează nordul Italiei, Elveția, Austria și alte state europene?",
+      "options": [
+        "Alpii",
+        "Carpații",
+        "Pirineii",
+        "Apeninii"
+      ],
+      "answer": "Alpii",
+      "explanation": "Alpii formează principalul sistem muntos al Europei Centrale și includ unele dintre cele mai înalte vârfuri ale continentului occidental."
+    },
+    {
+      "id": "geography-109",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce lanț muntos se întinde de-a lungul vestului Americii de Sud?",
+      "options": [
+        "Anzii",
+        "Munții Stâncoși",
+        "Alpii",
+        "Atlas"
+      ],
+      "answer": "Anzii",
+      "explanation": "Anzii formează cel mai lung lanț muntos continental de pe uscat și se întind de-a lungul marginii vestice a Americii de Sud."
+    },
+    {
+      "id": "geography-110",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce deșert ocupă o mare parte din Africa de Nord?",
+      "options": [
+        "Sahara",
+        "Kalahari",
+        "Gobi",
+        "Atacama"
+      ],
+      "answer": "Sahara",
+      "explanation": "Sahara este cel mai mare deșert cald al lumii și se întinde de la Oceanul Atlantic până aproape de Marea Roșie."
+    },
+    {
+      "id": "geography-111",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce deșert se află în principal în Mongolia și nordul Chinei?",
+      "options": [
+        "Gobi",
+        "Sahara",
+        "Atacama",
+        "Namib"
+      ],
+      "answer": "Gobi",
+      "explanation": "Deșertul Gobi este un deșert rece al Asiei interioare. El are ierni foarte reci și este în mare parte pietros, nu acoperit numai de dune."
+    },
+    {
+      "id": "geography-112",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce deșert foarte arid se află pe coasta pacifică a statelor Chile și Peru?",
+      "options": [
+        "Atacama",
+        "Kalahari",
+        "Thar",
+        "Gobi"
+      ],
+      "answer": "Atacama",
+      "explanation": "Atacama este una dintre cele mai aride regiuni de pe Pământ. Ariditatea este favorizată de curentul rece Humboldt și de umbra pluviometrică a Anzilor."
+    },
+    {
+      "id": "geography-113",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu formează o mare deltă înainte de a se vărsa în Marea Neagră?",
+      "options": [
+        "Dunărea",
+        "Rinul",
+        "Sena",
+        "Tamisa"
+      ],
+      "answer": "Dunărea",
+      "explanation": "Dunărea se varsă în Marea Neagră prin Delta Dunării, o zonă umedă foarte bogată în biodiversitate, împărțită în principal între România și Ucraina."
+    },
+    {
+      "id": "geography-114",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Egiptul de la sud spre nord?",
+      "options": [
+        "Nilul",
+        "Congo",
+        "Niger",
+        "Zambezi"
+      ],
+      "answer": "Nilul",
+      "explanation": "Nilul traversează nord-estul Africii și a susținut dezvoltarea civilizației egiptene prin apă și sedimente fertile într-un mediu arid."
+    },
+    {
+      "id": "geography-115",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Parisul?",
+      "options": [
+        "Sena",
+        "Loara",
+        "Ronul",
+        "Rinul"
+      ],
+      "answer": "Sena",
+      "explanation": "Sena traversează Parisul și continuă spre nord-vest, vărsându-se în Canalul Mânecii. Fluviul a fost esențial pentru dezvoltarea economică a capitalei franceze."
+    },
+    {
+      "id": "geography-116",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Londra?",
+      "options": [
+        "Tamisa",
+        "Severn",
+        "Mersey",
+        "Clyde"
+      ],
+      "answer": "Tamisa",
+      "explanation": "Tamisa traversează Londra și se varsă în Marea Nordului printr-un estuar. Fluviul a avut un rol major în dezvoltarea portuară a orașului."
+    },
+    {
+      "id": "geography-117",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Roma?",
+      "options": [
+        "Tibrul",
+        "Po",
+        "Arno",
+        "Adige"
+      ],
+      "answer": "Tibrul",
+      "explanation": "Tibrul traversează Roma și se varsă în Marea Tireniană. Orașul antic s-a dezvoltat pe malurile sale, aproape de trasee comerciale importante."
+    },
+    {
+      "id": "geography-118",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Praga?",
+      "options": [
+        "Vltava",
+        "Elba",
+        "Oder",
+        "Morava"
+      ],
+      "answer": "Vltava",
+      "explanation": "Vltava este cel mai lung râu din Cehia și traversează Praga înainte de a se vărsa în Elba. Podul Carol trece peste acest râu."
+    },
+    {
+      "id": "geography-119",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce fluviu traversează Budapesta și separă istoric Buda de Pest?",
+      "options": [
+        "Dunărea",
+        "Tisa",
+        "Sava",
+        "Drava"
+      ],
+      "answer": "Dunărea",
+      "explanation": "Dunărea împarte Budapesta în zonele istorice Buda și Pest, unite astăzi prin mai multe poduri, inclusiv celebrul Pod cu Lanțuri."
+    },
+    {
+      "id": "geography-120",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mare se află la nord de Turcia și la est de România și Bulgaria?",
+      "options": [
+        "Marea Neagră",
+        "Marea Adriatică",
+        "Marea Egee",
+        "Marea Baltică"
+      ],
+      "answer": "Marea Neagră",
+      "explanation": "Marea Neagră este legată de Mediterană prin Bosfor, Marea Marmara și Dardanele. România, Bulgaria, Turcia, Georgia, Rusia și Ucraina au litoral la ea."
+    },
+    {
+      "id": "geography-121",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mare se află între Italia și Peninsula Balcanică?",
+      "options": [
+        "Marea Adriatică",
+        "Marea Egee",
+        "Marea Tireniană",
+        "Marea Baltică"
+      ],
+      "answer": "Marea Adriatică",
+      "explanation": "Marea Adriatică este un braț al Mediteranei situat între Peninsula Italică și Peninsula Balcanică, cu un litoral foarte fragmentat pe coasta croată."
+    },
+    {
+      "id": "geography-122",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mare se află între Grecia și vestul Turciei?",
+      "options": [
+        "Marea Egee",
+        "Marea Adriatică",
+        "Marea Ionică",
+        "Marea Neagră"
+      ],
+      "answer": "Marea Egee",
+      "explanation": "Marea Egee este parte a Mediteranei și conține numeroase insule grecești. Ea este delimitată în principal de Grecia și Turcia."
+    },
+    {
+      "id": "geography-123",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este cea mai mare insulă din Marea Mediterană?",
+      "options": [
+        "Sicilia",
+        "Sardinia",
+        "Cipru",
+        "Creta"
+      ],
+      "answer": "Sicilia",
+      "explanation": "Sicilia este cea mai mare insulă a Mediteranei și aparține Italiei. Este separată de Peninsula Italică prin Strâmtoarea Messina."
+    },
+    {
+      "id": "geography-124",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce insulă aparține Greciei și este cea mai mare insulă a acestei țări?",
+      "options": [
+        "Creta",
+        "Rodos",
+        "Corfu",
+        "Lesbos"
+      ],
+      "answer": "Creta",
+      "explanation": "Creta este cea mai mare insulă grecească și se află în sudul Mării Egee. A fost centrul civilizației minoice în epoca bronzului."
+    },
+    {
+      "id": "geography-125",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce peninsulă cuprinde în principal Spania și Portugalia?",
+      "options": [
+        "Peninsula Iberică",
+        "Peninsula Balcanică",
+        "Peninsula Scandinavă",
+        "Peninsula Italică"
+      ],
+      "answer": "Peninsula Iberică",
+      "explanation": "Peninsula Iberică se află în sud-vestul Europei și este ocupată în principal de Spania și Portugalia, plus Andorra și teritoriul Gibraltar."
+    },
+    {
+      "id": "geography-126",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce peninsulă cuprinde Norvegia și Suedia?",
+      "options": [
+        "Peninsula Scandinavă",
+        "Peninsula Iutlanda",
+        "Peninsula Iberică",
+        "Peninsula Kola"
+      ],
+      "answer": "Peninsula Scandinavă",
+      "explanation": "Peninsula Scandinavă este ocupată în principal de Norvegia și Suedia și se întinde între Atlanticul de Nord, Marea Norvegiei și Marea Baltică."
+    },
+    {
+      "id": "geography-127",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce stat insular se află imediat la sud de India?",
+      "options": [
+        "Sri Lanka",
+        "Maldive",
+        "Indonezia",
+        "Madagascar"
+      ],
+      "answer": "Sri Lanka",
+      "explanation": "Sri Lanka se află în Oceanul Indian, la sud-est de extremitatea Indiei. Insula este separată de India prin Strâmtoarea Palk și Golful Mannar."
+    },
+    {
+      "id": "geography-128",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce insulă mare se află la est de coasta Africii și este stat independent?",
+      "options": [
+        "Madagascar",
+        "Borneo",
+        "Noua Guinee",
+        "Sumatra"
+      ],
+      "answer": "Madagascar",
+      "explanation": "Madagascar este situat în Oceanul Indian, separat de Mozambic prin Canalul Mozambic. Izolarea sa a favorizat o biodiversitate foarte distinctă."
+    },
+    {
+      "id": "geography-129",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce strâmtoare separă Asia de America de Nord?",
+      "options": [
+        "Strâmtoarea Bering",
+        "Strâmtoarea Gibraltar",
+        "Bosfor",
+        "Strâmtoarea Malacca"
+      ],
+      "answer": "Strâmtoarea Bering",
+      "explanation": "Strâmtoarea Bering separă extremitatea estică a Rusiei de Alaska. Ea leagă Marea Bering de Oceanul Arctic."
+    },
+    {
+      "id": "geography-130",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce strâmtoare separă partea europeană a Istanbulului de partea asiatică?",
+      "options": [
+        "Bosfor",
+        "Dardanele",
+        "Gibraltar",
+        "Otranto"
+      ],
+      "answer": "Bosfor",
+      "explanation": "Bosforul traversează Istanbulul și leagă Marea Neagră de Marea Marmara. El reprezintă una dintre limitele geografice convenționale dintre Europa și Asia."
+    },
+    {
+      "id": "geography-131",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce fluviu formează o parte importantă a graniței dintre Germania și Franța?",
+      "options": [
+        "Rinul",
+        "Dunărea",
+        "Oder",
+        "Elba"
+      ],
+      "answer": "Rinul",
+      "explanation": "Rinul formează pe anumite sectoare frontiera dintre Franța și Germania și este una dintre cele mai importante axe comerciale și industriale ale Europei."
+    },
+    {
+      "id": "geography-132",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce râu traversează Florența?",
+      "options": [
+        "Arno",
+        "Po",
+        "Tibru",
+        "Adige"
+      ],
+      "answer": "Arno",
+      "explanation": "Arno traversează Florența și apoi Pisa înainte de a se vărsa în Marea Ligurică. Podul Ponte Vecchio este construit peste acest râu."
+    },
+    {
+      "id": "geography-133",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce fluviu traversează orașele Köln și Düsseldorf?",
+      "options": [
+        "Rinul",
+        "Elba",
+        "Main",
+        "Dunărea"
+      ],
+      "answer": "Rinul",
+      "explanation": "Rinul traversează vestul Germaniei și trece prin numeroase centre industriale importante, printre care Köln și Düsseldorf, înainte de a ajunge în Țările de Jos."
+    },
+    {
+      "id": "geography-134",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce munți separă în mare parte Europa Centrală de Peninsula Italică?",
+      "options": [
+        "Alpii",
+        "Carpații",
+        "Apeninii",
+        "Pirineii"
+      ],
+      "answer": "Alpii",
+      "explanation": "Alpii formează o barieră naturală majoră la nordul Italiei. Trecătorile alpine au avut de secole o importanță strategică pentru transport și comerț."
+    },
+    {
+      "id": "geography-135",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce lanț muntos formează axa principală a Peninsulei Italice?",
+      "options": [
+        "Apeninii",
+        "Alpii",
+        "Carpații",
+        "Dinaricii"
+      ],
+      "answer": "Apeninii",
+      "explanation": "Apeninii se întind pe lungimea Peninsulei Italice, de la nord spre sud. Ei influențează puternic clima, hidrografia și distribuția așezărilor."
+    },
+    {
+      "id": "geography-136",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mare separă în principal Suedia de statele baltice și Finlanda?",
+      "options": [
+        "Marea Baltică",
+        "Marea Nordului",
+        "Marea Norvegiei",
+        "Marea Barents"
+      ],
+      "answer": "Marea Baltică",
+      "explanation": "Marea Baltică este aproape închisă și are salinitate redusă față de oceane. La litoralul ei se află state nordice, baltice și central-europene."
+    },
+    {
+      "id": "geography-137",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhipelag spaniol se află în Oceanul Atlantic, în apropierea coastei nord-vestice a Africii?",
+      "options": [
+        "Insulele Canare",
+        "Insulele Baleare",
+        "Azore",
+        "Capul Verde"
+      ],
+      "answer": "Insulele Canare",
+      "explanation": "Insulele Canare sunt un arhipelag vulcanic spaniol situat în Atlantic, la vest de Maroc și Sahara Occidentală. Ele aparțin geografic regiunii Macaronezia."
+    },
+    {
+      "id": "geography-138",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhipelag portughez se află în Atlanticul de Nord, aproximativ între Europa și America de Nord?",
+      "options": [
+        "Azore",
+        "Madeira",
+        "Canare",
+        "Baleare"
+      ],
+      "answer": "Azore",
+      "explanation": "Azorele sunt un arhipelag portughez de origine vulcanică situat în Atlanticul de Nord. Poziția lor este legată de zona de contact a mai multor plăci tectonice."
+    },
+    {
+      "id": "geography-139",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce strâmtoare este una dintre cele mai importante rute maritime dintre Oceanul Indian și Marea Chinei de Sud?",
+      "options": [
+        "Strâmtoarea Malacca",
+        "Strâmtoarea Bering",
+        "Bosfor",
+        "Strâmtoarea Drake"
+      ],
+      "answer": "Strâmtoarea Malacca",
+      "explanation": "Strâmtoarea Malacca se află între Peninsula Malay și insula Sumatra. Este una dintre cele mai aglomerate rute maritime comerciale din lume."
+    },
+    {
+      "id": "geography-140",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce podiș foarte înalt se află la nord de Himalaya și ocupă o mare parte din Tibet?",
+      "options": [
+        "Podișul Tibet",
+        "Podișul Deccan",
+        "Podișul Anatoliei",
+        "Podișul Colorado"
+      ],
+      "answer": "Podișul Tibet",
+      "explanation": "Podișul Tibet este cea mai întinsă regiune foarte înaltă a lumii, cu altitudini medii de peste 4.000 de metri și numeroși ghețari care alimentează mari fluvii asiatice."
+    },
+    {
+      "id": "geography-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu european se varsă în Marea Nordului printr-o deltă comună cu Meuse și Scheldt?",
+      "options": [
+        "Rinul",
+        "Elba",
+        "Loara",
+        "Oder"
+      ],
+      "answer": "Rinul",
+      "explanation": "Rinul ajunge în Țările de Jos, unde se desparte în mai multe brațe și face parte dintr-un vast sistem deltaic împreună cu Meuse și Scheldt."
+    },
+    {
+      "id": "geography-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu se varsă în Marea Caspică și este cel mai lung fluviu al Europei?",
+      "options": [
+        "Volga",
+        "Dunărea",
+        "Don",
+        "Nipru"
+      ],
+      "answer": "Volga",
+      "explanation": "Volga curge integral prin Rusia europeană și se varsă în Marea Caspică. Prin lungime și debit, este principalul fluviu al Europei."
+    },
+    {
+      "id": "geography-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu traversează Kievul și se varsă în Marea Neagră?",
+      "options": [
+        "Nipru",
+        "Don",
+        "Nistru",
+        "Volga"
+      ],
+      "answer": "Nipru",
+      "explanation": "Niprul izvorăște în Rusia, traversează Belarus și Ucraina, inclusiv Kievul, apoi se varsă în Marea Neagră printr-un estuar larg."
+    },
+    {
+      "id": "geography-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce râu formează o parte importantă a frontierei dintre Polonia și Germania?",
+      "options": [
+        "Oder",
+        "Vistula",
+        "Elba",
+        "Neman"
+      ],
+      "answer": "Oder",
+      "explanation": "Oderul și afluentul său Neisse formează o mare parte a frontierei germano-poloneze stabilite după al Doilea Război Mondial."
+    },
+    {
+      "id": "geography-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este principalul fluviu care traversează Polonia de la sud la nord și trece prin Varșovia?",
+      "options": [
+        "Vistula",
+        "Oder",
+        "Bug",
+        "Neman"
+      ],
+      "answer": "Vistula",
+      "explanation": "Vistula este cel mai lung fluviu al Poloniei. El traversează Varșovia și se varsă în Marea Baltică în apropierea orașului Gdańsk."
+    },
+    {
+      "id": "geography-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lanț muntos se întinde prin Slovacia, Polonia, Ucraina și România?",
+      "options": [
+        "Carpații",
+        "Alpii",
+        "Dinaricii",
+        "Caucazul"
+      ],
+      "answer": "Carpații",
+      "explanation": "Carpații formează un arc muntos extins în Europa Centrală și de Est. Ei includ Tatra, Carpații Păduroși și Carpații românești."
+    },
+    {
+      "id": "geography-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lanț muntos se întinde de-a lungul coastei estice a Mării Adriatice în Peninsula Balcanică?",
+      "options": [
+        "Alpii Dinarici",
+        "Apeninii",
+        "Pirineii",
+        "Munții Pindului"
+      ],
+      "answer": "Alpii Dinarici",
+      "explanation": "Alpii Dinarici se desfășoară paralel cu coasta Adriaticii, din Slovenia și Croația spre Bosnia și Herțegovina, Muntenegru și Albania."
+    },
+    {
+      "id": "geography-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce masiv muntos se află între Marea Neagră și Marea Caspică?",
+      "options": [
+        "Caucazul",
+        "Ural",
+        "Hindu Kush",
+        "Zagros"
+      ],
+      "answer": "Caucazul",
+      "explanation": "Munții Caucaz se află între Marea Neagră și Marea Caspică. Regiunea este adesea considerată una dintre limitele convenționale dintre Europa și Asia."
+    },
+    {
+      "id": "geography-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lanț muntos marchează convențional o parte a graniței dintre Europa și Asia în Rusia?",
+      "options": [
+        "Ural",
+        "Altai",
+        "Caucaz",
+        "Carpați"
+      ],
+      "answer": "Ural",
+      "explanation": "Munții Ural se întind aproximativ de la nord la sud prin vestul Rusiei și sunt folosiți frecvent ca limită geografică între Europa și Asia."
+    },
+    {
+      "id": "geography-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce depresiune se află la aproximativ 430 m sub nivelul mării și reprezintă cea mai joasă zonă continentală expusă?",
+      "options": [
+        "Țărmul Mării Moarte",
+        "Depresiunea Qattara",
+        "Valea Morții",
+        "Depresiunea Turpan"
+      ],
+      "answer": "Țărmul Mării Moarte",
+      "explanation": "Țărmul Mării Moarte, între Israel, Cisiordania și Iordania, se află cu peste 400 de metri sub nivelul mării, fiind cea mai joasă suprafață continentală expusă."
+    },
+    {
+      "id": "geography-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lac este cel mai mare lac de apă dulce din lume după suprafață?",
+      "options": [
+        "Lacul Superior",
+        "Lacul Victoria",
+        "Lacul Baikal",
+        "Lacul Huron"
+      ],
+      "answer": "Lacul Superior",
+      "explanation": "Lacul Superior, unul dintre Marile Lacuri nord-americane, are cea mai mare suprafață dintre lacurile de apă dulce ale lumii."
+    },
+    {
+      "id": "geography-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lac este cel mai adânc lac de apă dulce din lume?",
+      "options": [
+        "Lacul Baikal",
+        "Lacul Tanganyika",
+        "Lacul Superior",
+        "Lacul Malawi"
+      ],
+      "answer": "Lacul Baikal",
+      "explanation": "Lacul Baikal din Siberia depășește 1.600 de metri adâncime și conține aproximativ o cincime din apa dulce lichidă de suprafață neînghețată a lumii."
+    },
+    {
+      "id": "geography-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lac african este traversat de Ecuator și se află între Uganda, Kenya și Tanzania?",
+      "options": [
+        "Lacul Victoria",
+        "Lacul Tanganyika",
+        "Lacul Malawi",
+        "Lacul Turkana"
+      ],
+      "answer": "Lacul Victoria",
+      "explanation": "Lacul Victoria este cel mai mare lac african după suprafață și este împărțit între Uganda, Kenya și Tanzania. El este o sursă importantă a Nilului Alb."
+    },
+    {
+      "id": "geography-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mare interioară fără ieșire la ocean este cel mai mare corp de apă închis al lumii?",
+      "options": [
+        "Marea Caspică",
+        "Marea Aral",
+        "Marea Moartă",
+        "Marea Neagră"
+      ],
+      "answer": "Marea Caspică",
+      "explanation": "Marea Caspică este un bazin endoreic uriaș, fără legătură naturală directă cu oceanul. Deși este numită mare, este adesea clasificată geografic drept lac."
+    },
+    {
+      "id": "geography-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu formează celebra cascadă Victoria la granița dintre Zambia și Zimbabwe?",
+      "options": [
+        "Zambezi",
+        "Congo",
+        "Limpopo",
+        "Orange"
+      ],
+      "answer": "Zambezi",
+      "explanation": "Fluviul Zambezi formează Cascada Victoria pe granița Zambia–Zimbabwe. Mai în aval, este barat la Kariba și se varsă în Oceanul Indian."
+    },
+    {
+      "id": "geography-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu african traversează Ecuatorul de două ori?",
+      "options": [
+        "Congo",
+        "Nil",
+        "Niger",
+        "Zambezi"
+      ],
+      "answer": "Congo",
+      "explanation": "Congo are un traseu curbat prin bazinul ecuatorial și traversează Ecuatorul de două ori. Este al doilea fluviu al lumii ca debit după Amazon."
+    },
+    {
+      "id": "geography-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu se varsă în Golful Guineei printr-o mare deltă în Nigeria?",
+      "options": [
+        "Niger",
+        "Congo",
+        "Senegal",
+        "Volta"
+      ],
+      "answer": "Niger",
+      "explanation": "Nigerul descrie un arc larg prin Africa de Vest și se varsă în Golful Guineei prin Delta Nigerului, o regiune bogată în hidrocarburi și zone umede."
+    },
+    {
+      "id": "geography-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu formează o mare parte din granița dintre Statele Unite și Mexic?",
+      "options": [
+        "Rio Grande",
+        "Colorado",
+        "Mississippi",
+        "Columbia"
+      ],
+      "answer": "Rio Grande",
+      "explanation": "Rio Grande curge din Munții Stâncoși spre Golful Mexic și formează o mare parte a graniței internaționale dintre SUA și Mexic."
+    },
+    {
+      "id": "geography-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu a sculptat Grand Canyon în Arizona?",
+      "options": [
+        "Colorado",
+        "Columbia",
+        "Missouri",
+        "Snake"
+      ],
+      "answer": "Colorado",
+      "explanation": "Râul Colorado a erodat în timp rocile Podișului Colorado, contribuind la formarea Grand Canyonului, unul dintre cele mai spectaculoase canioane ale lumii."
+    },
+    {
+      "id": "geography-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lanț muntos traversează vestul Canadei și al Statelor Unite?",
+      "options": [
+        "Munții Stâncoși",
+        "Apalașii",
+        "Sierra Madre Oriental",
+        "Anzii"
+      ],
+      "answer": "Munții Stâncoși",
+      "explanation": "Munții Stâncoși formează un sistem major în vestul Americii de Nord, din Canada până în sud-vestul Statelor Unite."
+    },
+    {
+      "id": "geography-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce podiș ocupă o mare parte din centrul și sudul Indiei peninsulare?",
+      "options": [
+        "Podișul Deccan",
+        "Podișul Tibet",
+        "Podișul Iranului",
+        "Podișul Loess"
+      ],
+      "answer": "Podișul Deccan",
+      "explanation": "Podișul Deccan ocupă o mare parte din India peninsulară, între Ghats Occidentali și Ghats Orientali, și este acoperit parțial de lave bazaltice vechi."
+    },
+    {
+      "id": "geography-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu este considerat sacru în hinduism și traversează Câmpia Indo-Gangetică?",
+      "options": [
+        "Gange",
+        "Indus",
+        "Brahmaputra",
+        "Mekong"
+      ],
+      "answer": "Gange",
+      "explanation": "Gangele izvorăște din Himalaya și traversează nordul Indiei și Bangladeshul. Bazinul său susține una dintre cele mai dense populații ale lumii."
+    },
+    {
+      "id": "geography-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu traversează China, Myanmar, Laos, Thailanda, Cambodgia și Vietnam sau le delimitează parțial?",
+      "options": [
+        "Mekong",
+        "Yangtze",
+        "Salween",
+        "Irrawaddy"
+      ],
+      "answer": "Mekong",
+      "explanation": "Mekongul este unul dintre marile fluvii ale Asiei de Sud-Est. El formează frontiere, alimentează zone agricole și se varsă printr-o deltă extinsă în Vietnam."
+    },
+    {
+      "id": "geography-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este cel mai lung fluviu care curge integral în China?",
+      "options": [
+        "Yangtze",
+        "Fluviul Galben",
+        "Mekong",
+        "Amur"
+      ],
+      "answer": "Yangtze",
+      "explanation": "Yangtze, numit Chang Jiang în China, este cel mai lung fluviu al Asiei. Cursul său leagă interiorul Chinei de regiunea economică a Shanghaiului."
+    },
+    {
+      "id": "geography-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fluviu este supranumit uneori „Leagănul civilizației chineze” și traversează Podișul Loess?",
+      "options": [
+        "Fluviul Galben",
+        "Yangtze",
+        "Amur",
+        "Xi Jiang"
+      ],
+      "answer": "Fluviul Galben",
+      "explanation": "Huang He transportă cantități mari de loess, ceea ce îi conferă culoarea caracteristică. Bazinul său a fost unul dintre nucleele timpurii ale civilizației chineze."
+    },
+    {
+      "id": "geography-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce strâmtoare separă insulele Sumatra și Java?",
+      "options": [
+        "Sunda",
+        "Malacca",
+        "Lombok",
+        "Torres"
+      ],
+      "answer": "Sunda",
+      "explanation": "Strâmtoarea Sunda se află între Sumatra și Java, în Indonezia. În această zonă se află și vulcanul Krakatau, cunoscut pentru erupția din 1883."
+    },
+    {
+      "id": "geography-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce strâmtoare separă Australia de insula Noua Guinee?",
+      "options": [
+        "Torres",
+        "Bass",
+        "Sunda",
+        "Cook"
+      ],
+      "answer": "Torres",
+      "explanation": "Strâmtoarea Torres separă extremitatea nordică a statului Queensland de sudul Noii Guinee și conține numeroase insule și recife."
+    },
+    {
+      "id": "geography-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce strâmtoare separă insulele nordică și sudică ale Noii Zeelande?",
+      "options": [
+        "Cook",
+        "Bass",
+        "Torres",
+        "Magellan"
+      ],
+      "answer": "Cook",
+      "explanation": "Strâmtoarea Cook separă principalele două insule ale Noii Zeelande și leagă Marea Tasmaniei de Pacificul de Sud."
+    },
+    {
+      "id": "geography-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce strâmtoare separă Tasmania de continentul australian?",
+      "options": [
+        "Bass",
+        "Cook",
+        "Torres",
+        "Drake"
+      ],
+      "answer": "Bass",
+      "explanation": "Strâmtoarea Bass separă Tasmania de statul Victoria. Ea s-a format prin inundarea unei regiuni joase după ultima glaciațiune."
+    },
+    {
+      "id": "geography-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhipelag formează statul Indonezia împreună cu mii de insule între Asia și Australia?",
+      "options": [
+        "Arhipelagul Malaez",
+        "Antilele",
+        "Polinezia",
+        "Aleutinele"
+      ],
+      "answer": "Arhipelagul Malaez",
+      "explanation": "Indonezia ocupă o mare parte din Arhipelagul Malaez, cea mai mare regiune insulară a lumii, situată între Oceanul Indian și Pacific."
+    },
+    {
+      "id": "geography-171",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state au frontieră terestră cu România?",
+      "answer": "5",
+      "explanation": "România are frontiere terestre cu Ungaria, Serbia, Bulgaria, Ucraina și Republica Moldova. Marea Neagră formează limita sa maritimă la sud-est."
+    },
+    {
+      "id": "geography-172",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state au frontieră terestră cu Germania?",
+      "answer": "9",
+      "explanation": "Germania se învecinează cu Danemarca, Polonia, Cehia, Austria, Elveția, Franța, Luxemburg, Belgia și Țările de Jos, în total nouă state."
+    },
+    {
+      "id": "geography-173",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state au frontieră terestră cu China, conform numărării internaționale obișnuite?",
+      "answer": "14",
+      "explanation": "China are 14 vecini terestri, fiind la egalitate cu Rusia pentru cel mai mare număr de frontiere internaționale terestre ale unui stat."
+    },
+    {
+      "id": "geography-174",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state au frontieră terestră cu Rusia, conform numărării internaționale obișnuite?",
+      "answer": "14",
+      "explanation": "Rusia se învecinează terestru cu 14 state recunoscute internațional, din Europa de Nord și de Est până în Caucaz și Asia de Est."
+    },
+    {
+      "id": "geography-175",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state sunt traversate sau delimitate de Dunăre?",
+      "answer": "10",
+      "explanation": "Dunărea traversează sau formează granițe pentru zece state europene, ceea ce o face unul dintre cele mai internaționale fluvii ale lumii."
+    },
+    {
+      "id": "geography-176",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte țări au litoral la Marea Neagră?",
+      "answer": "6",
+      "explanation": "România, Bulgaria, Turcia, Georgia, Rusia și Ucraina au litoral la Marea Neagră. Bazinul este legat de Mediterană prin strâmtorile turcești."
+    },
+    {
+      "id": "geography-177",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state suverane se află integral sau parțial în Peninsula Scandinavă în definiția geografică principală?",
+      "answer": "3",
+      "explanation": "Norvegia și Suedia ocupă cea mai mare parte a Peninsulei Scandinave, iar extremitatea nord-vestică a Finlandei se află de asemenea pe peninsulă."
+    },
+    {
+      "id": "geography-178",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte Mari Lacuri alcătuiesc sistemul principal dintre Statele Unite și Canada?",
+      "answer": "5",
+      "explanation": "Marile Lacuri sunt Superior, Michigan, Huron, Erie și Ontario. Împreună formează cel mai mare sistem de apă dulce de suprafață după volum."
+    },
+    {
+      "id": "geography-179",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state independente se află pe insula Hispaniola?",
+      "answer": "2",
+      "explanation": "Insula Hispaniola este împărțită între Haiti în vest și Republica Dominicană în est, ambele fiind state suverane din Caraibe."
+    },
+    {
+      "id": "geography-180",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte state suverane se află pe insula Borneo?",
+      "answer": "3",
+      "explanation": "Borneo este împărțită între Indonezia, Malaezia și Brunei. Este una dintre foarte puținele insule ale lumii împărțite între trei state."
+    },
+    {
+      "id": "geography-181",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de climă Köppen este caracteristică regiunilor mediteraneene cu veri calde și uscate?",
+      "options": [
+        "Csa",
+        "Cfb",
+        "Dfb",
+        "Af"
+      ],
+      "answer": "Csa",
+      "explanation": "În clasificarea Köppen, Csa descrie o climă temperată cu vară uscată și fierbinte. Este tipică pentru multe regiuni din jurul Mării Mediterane."
+    },
+    {
+      "id": "geography-182",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de climă Köppen caracterizează pădurile tropicale umede ecuatoriale fără sezon secetos pronunțat?",
+      "options": [
+        "Af",
+        "Aw",
+        "BWh",
+        "Cfa"
+      ],
+      "answer": "Af",
+      "explanation": "Clima Af are temperaturi ridicate tot anul și precipitații abundente în fiecare lună. Ea apare în Amazonia, bazinul Congo și Asia ecuatorială."
+    },
+    {
+      "id": "geography-183",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de climă Köppen corespunde deșerturilor subtropicale fierbinți?",
+      "options": [
+        "BWh",
+        "BSk",
+        "Dfc",
+        "Csb"
+      ],
+      "answer": "BWh",
+      "explanation": "Codul BWh indică o climă aridă deșertică și fierbinte. Sahara și Peninsula Arabică oferă exemple extinse ale acestui tip climatic."
+    },
+    {
+      "id": "geography-184",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fenomen explică precipitațiile abundente pe versantul expus vântului și uscăciunea relativă pe versantul opus?",
+      "options": [
+        "Efectul de umbră pluviometrică",
+        "Inversiunea termică",
+        "Efectul Coriolis",
+        "Upwelling"
+      ],
+      "answer": "Efectul de umbră pluviometrică",
+      "explanation": "Aerul umed urcă pe versantul expus, se răcește și condensează. După depășirea culmii, aerul coboară, se încălzește și devine mai uscat."
+    },
+    {
+      "id": "geography-185",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce curent oceanic rece contribuie puternic la ariditatea deșertului Atacama?",
+      "options": [
+        "Curentul Humboldt",
+        "Gulf Stream",
+        "Kuroshio",
+        "Agulhas"
+      ],
+      "answer": "Curentul Humboldt",
+      "explanation": "Curentul Humboldt aduce ape reci de-a lungul coastei vestice a Americii de Sud. Aerul stabil de deasupra reduce formarea precipitațiilor convective."
+    },
+    {
+      "id": "geography-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce curent oceanic cald contribuie la iernile relativ blânde din Europa de Vest?",
+      "options": [
+        "Deriva Nord-Atlantică",
+        "Curentul Labrador",
+        "Curentul Benguela",
+        "Curentul Peru"
+      ],
+      "answer": "Deriva Nord-Atlantică",
+      "explanation": "Deriva Nord-Atlantică transportă căldură din Atlanticul subtropical spre nord-est. Împreună cu circulația atmosferică, temperează clima Europei de Vest."
+    },
+    {
+      "id": "geography-187",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fenomen oceanic implică ridicarea apei reci și bogate în nutrienți spre suprafață?",
+      "options": [
+        "Upwelling",
+        "Subsidență",
+        "Evapotranspirație",
+        "Salinizare"
+      ],
+      "answer": "Upwelling",
+      "explanation": "Upwelling-ul aduce la suprafață apă adâncă bogată în nutrienți, favorizând productivitatea biologică și unele dintre cele mai importante zone de pescuit."
+    },
+    {
+      "id": "geography-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fenomen climatic din Pacificul ecuatorial este asociat cu încălzirea anormală a apelor de suprafață din centru și est?",
+      "options": [
+        "El Niño",
+        "La Niña",
+        "Mistral",
+        "Föhn"
+      ],
+      "answer": "El Niño",
+      "explanation": "El Niño slăbește sau reorganizează circulația atmosferică și oceanică tropicală. Efectele sale pot modifica precipitațiile și temperaturile la scară globală."
+    },
+    {
+      "id": "geography-189",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fenomen este faza rece a oscilației ENSO?",
+      "options": [
+        "La Niña",
+        "El Niño",
+        "NAO pozitivă",
+        "Monsonul"
+      ],
+      "answer": "La Niña",
+      "explanation": "La Niña implică temperaturi de suprafață sub medie în Pacificul ecuatorial central și estic și intensificarea tipică a alizeelor."
+    },
+    {
+      "id": "geography-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce vânt cald și uscat coboară pe versantul din adăpost al Alpilor?",
+      "options": [
+        "Föhn",
+        "Mistral",
+        "Bora",
+        "Sirocco"
+      ],
+      "answer": "Föhn",
+      "explanation": "Föhnul se formează când aerul pierde umezeală pe versantul expus și coboară pe partea opusă, încălzindu-se adiabatic și devenind mai uscat."
+    },
+    {
+      "id": "geography-191",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce vânt rece și puternic coboară spre Adriatica de pe platourile balcanice?",
+      "options": [
+        "Bora",
+        "Föhn",
+        "Sirocco",
+        "Mistral"
+      ],
+      "answer": "Bora",
+      "explanation": "Bora este un vânt catabatic rece, frecvent pe coasta estică a Adriaticii. Poate produce rafale foarte puternice și scăderi bruște de temperatură."
+    },
+    {
+      "id": "geography-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce vânt rece și uscat afectează valea Ronului și sudul Franței?",
+      "options": [
+        "Mistral",
+        "Bora",
+        "Chinook",
+        "Harmattan"
+      ],
+      "answer": "Mistral",
+      "explanation": "Mistralul este canalizat prin valea Ronului către Mediterană. Este asociat cu aer rece, uscat și adesea cu cer foarte senin."
+    },
+    {
+      "id": "geography-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce vânt cald, încărcat cu praf, poate sufla din Sahara spre Mediterană?",
+      "options": [
+        "Sirocco",
+        "Mistral",
+        "Bora",
+        "Pampero"
+      ],
+      "answer": "Sirocco",
+      "explanation": "Sirocco transportă aer cald și uneori praf saharian spre sudul Europei. După traversarea Mediteranei poate deveni mai umed."
+    },
+    {
+      "id": "geography-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proces geomorfologic dizolvă calcarul și poate forma doline și peșteri?",
+      "options": [
+        "Carstificarea",
+        "Laterizarea",
+        "Deflația eoliană",
+        "Crioturbația"
+      ],
+      "answer": "Carstificarea",
+      "explanation": "Apa ușor acidă dizolvă carbonatul de calciu din calcar, dezvoltând relief carstic cu doline, ponoare, peșteri și drenaj subteran."
+    },
+    {
+      "id": "geography-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce formă de relief carstic este o depresiune închisă, de obicei circulară sau ovală?",
+      "options": [
+        "Dolină",
+        "Morenă",
+        "Fjord",
+        "Atol"
+      ],
+      "answer": "Dolină",
+      "explanation": "Dolinele sunt depresiuni caracteristice terenurilor carstice. Ele pot apărea prin dizolvare treptată sau prin prăbușirea unor cavități subterane."
+    },
+    {
+      "id": "geography-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un fjord?",
+      "options": [
+        "Vale glaciară adâncă inundată de mare",
+        "Deltă fluvială aridă",
+        "Lac vulcanic circular",
+        "Dună costieră"
+      ],
+      "answer": "Vale glaciară adâncă inundată de mare",
+      "explanation": "Fjordurile se formează când ghețarii sapă văi adânci în formă de U, iar după retragerea gheții nivelul mării inundă aceste văi."
+    },
+    {
+      "id": "geography-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este o morenă?",
+      "options": [
+        "Acumulare de material transportat și depus de un ghețar",
+        "Depozit exclusiv eolian",
+        "Platformă de abraziune marină",
+        "Recif coraligen"
+      ],
+      "answer": "Acumulare de material transportat și depus de un ghețar",
+      "explanation": "Morenele conțin material nesortat, de la argilă la bolovani, transportat și depus de ghețari la margini, frontal sau sub masa de gheață."
+    },
+    {
+      "id": "geography-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este loessul?",
+      "options": [
+        "Depozit fin de praf transportat de vânt",
+        "Lavă solidificată",
+        "Sediment marin grosier",
+        "Calcar coraligen"
+      ],
+      "answer": "Depozit fin de praf transportat de vânt",
+      "explanation": "Loessul este alcătuit predominant din particule fine depuse eolian. Solurile dezvoltate pe loess pot fi foarte fertile, cum se întâmplă în nordul Chinei."
+    },
+    {
+      "id": "geography-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un erg în geomorfologia deșertică?",
+      "options": [
+        "Câmp întins de dune de nisip",
+        "Podiș stâncos",
+        "Vale glaciară",
+        "Lac temporar salin"
+      ],
+      "answer": "Câmp întins de dune de nisip",
+      "explanation": "Un erg este o regiune deșertică dominată de nisip și dune. Sahara conține mai multe erguri, dar suprafețele nisipoase nu acoperă întregul deșert."
+    },
+    {
+      "id": "geography-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un reg sau serir în deșert?",
+      "options": [
+        "Suprafață pietroasă sau cu pietriș",
+        "Dună în formă de semilună",
+        "Oază permanentă",
+        "Canion fluvial"
+      ],
+      "answer": "Suprafață pietroasă sau cu pietriș",
+      "explanation": "Regurile sunt suprafețe deșertice acoperite cu pietriș și fragmente de rocă, rezultate adesea după îndepărtarea particulelor fine de către vânt."
+    },
+    {
+      "id": "geography-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de deltă are brațe alungite asemănătoare unor degete, precum Delta Mississippiului?",
+      "options": [
+        "Deltă digitată",
+        "Deltă arcuată",
+        "Deltă cuspiformă",
+        "Estuar"
+      ],
+      "answer": "Deltă digitată",
+      "explanation": "Delta Mississippiului este un exemplu clasic de deltă digitată, unde aportul fluvial domină și creează brațe lungi care pătrund în mare."
+    },
+    {
+      "id": "geography-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de gură de vărsare are formă de pâlnie și este influențată puternic de maree?",
+      "options": [
+        "Estuar",
+        "Deltă",
+        "Oxbow",
+        "Ponoru"
+      ],
+      "answer": "Estuar",
+      "explanation": "Un estuar este o gură de vărsare largă, unde apa dulce se amestecă cu apa sărată și mareele pot pătrunde mult în interior."
+    },
+    {
+      "id": "geography-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un meandru abandonat, separat de cursul principal al râului?",
+      "options": [
+        "Lac de meandru",
+        "Fjord",
+        "Atol",
+        "Tarn"
+      ],
+      "answer": "Lac de meandru",
+      "explanation": "Când râul taie gâtul unui meandru, bucla veche poate fi izolată și transformata într-un lac în formă de potcoavă."
+    },
+    {
+      "id": "geography-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un bazin endoreic?",
+      "options": [
+        "Bazin hidrografic fără scurgere către ocean",
+        "Bazin care se varsă printr-o deltă",
+        "Bazin glaciar deschis",
+        "Bazin exclusiv carstic"
+      ],
+      "answer": "Bazin hidrografic fără scurgere către ocean",
+      "explanation": "Într-un bazin endoreic, apa se acumulează în lacuri sau se pierde prin evaporare și infiltrație, fără a ajunge direct la ocean."
+    },
+    {
+      "id": "geography-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mare interioară este un exemplu clasic de bazin endoreic?",
+      "options": [
+        "Marea Caspică",
+        "Marea Nordului",
+        "Marea Adriatică",
+        "Marea Caraibilor"
+      ],
+      "answer": "Marea Caspică",
+      "explanation": "Marea Caspică nu are ieșire naturală spre ocean. Fluviile care se varsă în ea, precum Volga, termină astfel într-un bazin endoreic."
+    },
+    {
+      "id": "geography-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este cumpăna apelor?",
+      "options": [
+        "Linia care separă două bazine hidrografice",
+        "Linia de coastă la reflux",
+        "Frontiera dintre două state",
+        "Limita pădurii alpine"
+      ],
+      "answer": "Linia care separă două bazine hidrografice",
+      "explanation": "Cumpăna apelor urmărește de obicei culmi sau zone înalte. Precipitațiile căzute de o parte și de alta se scurg către bazine diferite."
+    },
+    {
+      "id": "geography-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proiecție cartografică păstrează unghiurile locale și a fost folosită mult în navigație?",
+      "options": [
+        "Mercator",
+        "Peters",
+        "Mollweide",
+        "Robinson"
+      ],
+      "answer": "Mercator",
+      "explanation": "Proiecția Mercator este conformă, deci păstrează unghiurile locale și direcțiile de compas ca linii drepte, dar mărește puternic suprafețele spre poli."
+    },
+    {
+      "id": "geography-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este principala distorsiune vizibilă a proiecției Mercator?",
+      "options": [
+        "Exagerează suprafețele la latitudini mari",
+        "Micșorează Ecuatorul până la zero",
+        "Inversează estul cu vestul",
+        "Elimină oceanele"
+      ],
+      "answer": "Exagerează suprafețele la latitudini mari",
+      "explanation": "Pentru a păstra unghiurile, Mercator mărește scara pe măsură ce latitudinea crește. De aceea Groenlanda pare mult mai mare decât este în realitate."
+    },
+    {
+      "id": "geography-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă că o proiecție cartografică este echivalentă?",
+      "options": [
+        "Păstrează proporțiile suprafețelor",
+        "Păstrează toate distanțele",
+        "Păstrează toate unghiurile",
+        "Nu are nicio distorsiune"
+      ],
+      "answer": "Păstrează proporțiile suprafețelor",
+      "explanation": "O proiecție echivalentă menține raporturile de arie dintre regiuni. Ea sacrifică însă alte proprietăți, precum forma locală sau unghiurile."
+    },
+    {
+      "id": "geography-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă că o proiecție este conformă?",
+      "options": [
+        "Păstrează unghiurile locale și formele foarte mici",
+        "Păstrează suprafețele globale",
+        "Păstrează toate distanțele",
+        "Păstrează simultan toate proprietățile"
+      ],
+      "answer": "Păstrează unghiurile locale și formele foarte mici",
+      "explanation": "Proiecțiile conforme păstrează unghiurile la scară locală, ceea ce ajută navigația și reprezentarea formelor mici, dar distorsionează suprafețele."
+    },
+    {
+      "id": "geography-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce linie imaginară se află la 0° latitudine?",
+      "options": [
+        "Ecuatorul",
+        "Meridianul Greenwich",
+        "Tropicul Racului",
+        "Cercul Polar Arctic"
+      ],
+      "answer": "Ecuatorul",
+      "explanation": "Ecuatorul împarte Pământul în emisfera nordică și sudică și reprezintă cercul maxim perpendicular pe axa de rotație a planetei."
+    },
+    {
+      "id": "geography-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce meridian este folosit convențional drept 0° longitudine?",
+      "options": [
+        "Greenwich",
+        "Paris",
+        "Roma",
+        "Washington"
+      ],
+      "answer": "Greenwich",
+      "explanation": "Meridianul de origine trece prin Observatorul Regal din Greenwich, Londra. Longitudinile sunt măsurate spre est și vest pornind de la acest reper."
+    },
+    {
+      "id": "geography-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este antimeridianul Greenwich, aproximativ?",
+      "options": [
+        "Meridianul de 180°",
+        "Meridianul de 90° E",
+        "Ecuatorul",
+        "Tropicul Capricornului"
+      ],
+      "answer": "Meridianul de 180°",
+      "explanation": "Meridianul de 180° este opus meridianului Greenwich pe glob. Linia internațională a datei urmează aproximativ acest meridian, cu numeroase deviații."
+    },
+    {
+      "id": "geography-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "De ce Linia Internațională a Datei nu urmează exact meridianul de 180°?",
+      "options": [
+        "Pentru a evita împărțirea unor state și arhipelaguri între două date calendaristice",
+        "Din cauza câmpului magnetic",
+        "Pentru a urma Ecuatorul",
+        "Pentru a evita oceanele"
+      ],
+      "answer": "Pentru a evita împărțirea unor state și arhipelaguri între două date calendaristice",
+      "explanation": "Linia este ajustată politic în jurul unor insule și state din Pacific, astfel încât comunități apropiate să folosească aceeași dată calendaristică."
+    },
+    {
+      "id": "geography-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce latitudine aproximativă are Tropicul Racului?",
+      "options": [
+        "23,5° N",
+        "45° N",
+        "66,5° N",
+        "0°"
+      ],
+      "answer": "23,5° N",
+      "explanation": "Tropicul Racului se află la aproximativ 23,5° latitudine nordică, valoare determinată de înclinarea axei Pământului față de planul orbital."
+    },
+    {
+      "id": "geography-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce latitudine aproximativă are Cercul Polar Arctic?",
+      "options": [
+        "66,5° N",
+        "23,5° N",
+        "45° N",
+        "90° S"
+      ],
+      "answer": "66,5° N",
+      "explanation": "Cercul Polar Arctic se află la aproximativ 66,5° N. La nord de el apar cel puțin o zi cu soare de la miezul nopții și una cu noapte polară."
+    },
+    {
+      "id": "geography-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proces tectonic formează frecvent lanțuri muntoase la coliziunea a două plăci continentale?",
+      "options": [
+        "Orogeneza",
+        "Subsidența termică",
+        "Riftingul oceanic",
+        "Laterizarea"
+      ],
+      "answer": "Orogeneza",
+      "explanation": "Coliziunea continentală comprimă și îngroașă scoarța, ridicând lanțuri muntoase. Himalaya s-a format prin coliziunea plăcii Indiene cu Eurasia."
+    },
+    {
+      "id": "geography-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de margine de placă formează dorsalele medio-oceanice?",
+      "options": [
+        "Divergentă",
+        "Convergentă continentală",
+        "Transformantă exclusiv",
+        "Pasivă"
+      ],
+      "answer": "Divergentă",
+      "explanation": "La marginile divergente, plăcile se depărtează, magma urcă și formează scoarță oceanică nouă. Dorsala Medio-Atlantică este un exemplu major."
+    },
+    {
+      "id": "geography-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de margine de placă este falia San Andreas?",
+      "options": [
+        "Transformantă",
+        "Divergentă",
+        "Convergentă cu subducție",
+        "Pasivă"
+      ],
+      "answer": "Transformantă",
+      "explanation": "Falia San Andreas marchează alunecarea laterală dintre placa Pacificului și placa Nord-Americană, fără creare sau distrugere majoră de scoarță."
+    },
+    {
+      "id": "geography-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proces tectonic are loc când o placă oceanică coboară sub o altă placă?",
+      "options": [
+        "Subducția",
+        "Riftingul",
+        "Eroziunea",
+        "Isostazia"
+      ],
+      "answer": "Subducția",
+      "explanation": "Placa oceanică mai densă poate coborî în manta la o margine convergentă. Procesul produce fose, cutremure și adesea arcuri vulcanice."
+    },
+    {
+      "id": "geography-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fosă oceanică este cea mai adâncă cunoscută?",
+      "options": [
+        "Fosa Marianelor",
+        "Fosa Peru–Chile",
+        "Fosa Japoniei",
+        "Fosa Tonga"
+      ],
+      "answer": "Fosa Marianelor",
+      "explanation": "Fosa Marianelor se află în vestul Pacificului. Challenger Deep, în interiorul ei, este cel mai adânc punct cunoscut al oceanului planetar."
+    },
+    {
+      "id": "geography-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de vulcan are pante line și este construit în principal din lave fluide bazaltice?",
+      "options": [
+        "Vulcan scut",
+        "Stratovulcan",
+        "Dom de lavă",
+        "Maar"
+      ],
+      "answer": "Vulcan scut",
+      "explanation": "Vulcanii scut se formează prin erupții repetate de lavă bazaltică fluidă, care curge pe distanțe mari și creează profile foarte largi."
+    },
+    {
+      "id": "geography-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de vulcan are de obicei alternanțe de lave și materiale piroclastice, cu pante relativ abrupte?",
+      "options": [
+        "Stratovulcan",
+        "Vulcan scut",
+        "Fisură bazaltică",
+        "Atol"
+      ],
+      "answer": "Stratovulcan",
+      "explanation": "Stratovulcanii, numiți și vulcani compoziți, pot produce erupții explozive deoarece magmele lor sunt adesea mai vâscoase și bogate în gaze."
+    },
+    {
+      "id": "geography-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un atol?",
+      "options": [
+        "Insulă sau recif coraligen inelar în jurul unei lagune",
+        "Vulcan continental activ",
+        "Deltă fluvială",
+        "Dună în formă de semilună"
+      ],
+      "answer": "Insulă sau recif coraligen inelar în jurul unei lagune",
+      "explanation": "Atolii se dezvoltă frecvent în jurul unor insule vulcanice care se scufundă lent, în timp ce coralii continuă să crească aproape de suprafață."
+    },
+    {
+      "id": "geography-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proces explică ridicarea sau coborârea lentă a scoarței pentru atingerea echilibrului gravitațional?",
+      "options": [
+        "Isostazia",
+        "Subducția",
+        "Carstificarea",
+        "Saltația"
+      ],
+      "answer": "Isostazia",
+      "explanation": "Isostazia descrie echilibrul gravitațional al litosferei pe astenosferă. Topirea ghețarilor poate produce ridicare postglaciară a scoarței."
+    },
+    {
+      "id": "geography-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este permafrostul?",
+      "options": [
+        "Sol sau rocă menținută la maximum 0°C cel puțin doi ani consecutivi",
+        "Gheață marină sezonieră",
+        "Ghețar montan",
+        "Zăpadă permanentă exclusiv"
+      ],
+      "answer": "Sol sau rocă menținută la maximum 0°C cel puțin doi ani consecutivi",
+      "explanation": "Permafrostul este definit termic și poate conține sau nu multă gheață. Este extins în Arctica și în regiunile montane foarte reci."
+    },
+    {
+      "id": "geography-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce biom este caracterizat de permafrost, vegetație joasă și sezon de creștere foarte scurt?",
+      "options": [
+        "Tundră",
+        "Taiga",
+        "Savană",
+        "Stepă"
+      ],
+      "answer": "Tundră",
+      "explanation": "Tundra apare în regiuni foarte reci, unde permafrostul și sezonul scurt limitează arborii. Predomină mușchi, licheni și arbuști pitici."
+    },
+    {
+      "id": "geography-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce biom boreal este dominat de conifere și se întinde în Canada și Eurasia nordică?",
+      "options": [
+        "Taiga",
+        "Tundră",
+        "Stepă",
+        "Chaparral"
+      ],
+      "answer": "Taiga",
+      "explanation": "Taigaua este cea mai întinsă zonă forestieră continuă și este dominată de conifere adaptate iernilor lungi și temperaturilor scăzute."
+    },
+    {
+      "id": "geography-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce formațiune vegetală temperată de ierburi este numită „stepă” în Eurasia?",
+      "options": [
+        "Pajiște temperată semi-aridă",
+        "Pădure ecuatorială",
+        "Tundră alpină",
+        "Mangrovă"
+      ],
+      "answer": "Pajiște temperată semi-aridă",
+      "explanation": "Stepele apar în interiorul continentelor cu precipitații insuficiente pentru păduri dense. Solurile lor pot fi foarte fertile, precum cernoziomurile."
+    },
+    {
+      "id": "geography-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sunt mangrovele?",
+      "options": [
+        "Păduri de coastă tropicale adaptate la apă sărată și maree",
+        "Păduri boreale de conifere",
+        "Pajiști alpine",
+        "Arbuști mediteraneeni"
+      ],
+      "answer": "Păduri de coastă tropicale adaptate la apă sărată și maree",
+      "explanation": "Mangrovele cresc în zone tropicale și subtropicale intertidale. Rădăcinile lor stabilizează sedimentele și oferă habitate importante pentru fauna marină."
+    },
+    {
+      "id": "geography-231",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "La ce longitudine se află meridianul de origine Greenwich?",
+      "answer": "0",
+      "explanation": "Meridianul Greenwich este definit convențional ca longitudine 0°. De la el se măsoară longitudinile spre est și spre vest până la aproximativ 180°."
+    },
+    {
+      "id": "geography-232",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "La ce latitudine se află Ecuatorul?",
+      "answer": "0",
+      "explanation": "Ecuatorul este cercul maxim perpendicular pe axa de rotație a Pământului și este definit prin latitudinea 0°, separând emisferele nordică și sudică."
+    },
+    {
+      "id": "geography-233",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte grade de longitudine cuprinde un cerc complet în jurul Pământului?",
+      "answer": "360",
+      "explanation": "Longitudinea acoperă un cerc complet de 360°. Convențional, valorile sunt exprimate până la 180° est și 180° vest de Greenwich."
+    },
+    {
+      "id": "geography-234",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte grade de latitudine sunt între Ecuator și Polul Nord?",
+      "answer": "90",
+      "explanation": "Latitudinea pornește de la 0° la Ecuator și ajunge la 90° la fiecare pol, măsurând distanța unghiulară nord–sud."
+    },
+    {
+      "id": "geography-235",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte fusuri orare teoretice de câte 15° ar acoperi cele 360° ale Pământului?",
+      "answer": "24",
+      "explanation": "Împărțirea ideală a celor 360° de longitudine în sectoare de câte 15° produce 24 de fusuri, corespunzătoare celor 24 de ore ale zilei."
+    },
+    {
+      "id": "geography-236",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte plăci tectonice majore sunt recunoscute de obicei în clasificarea școlară simplificată?",
+      "answer": "7",
+      "explanation": "În clasificarea simplificată sunt prezentate frecvent șapte plăci majore: Africană, Antarctică, Eurasiatică, Indo-Australiană, Nord-Americană, Pacifică și Sud-Americană."
+    },
+    {
+      "id": "geography-237",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte state sunt traversate de Ecuator pe uscat, în numărătoarea geografică uzuală?",
+      "answer": "13",
+      "explanation": "Ecuatorul traversează 13 state pe uscat sau prin teritorii insulare, în America de Sud, Africa și Asia-Pacific, înainte de a reveni peste oceane."
+    },
+    {
+      "id": "geography-238",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte state sunt traversate de Tropicul Racului în numărătoarea geografică uzuală?",
+      "answer": "16",
+      "explanation": "Tropicul Racului traversează aproximativ 16 state și teritorii, din America de Nord și Africa până în Peninsula Arabică și Asia de Sud-Est."
+    },
+    {
+      "id": "geography-239",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte state suverane au litoral la Marea Caspică?",
+      "answer": "5",
+      "explanation": "Rusia, Kazahstan, Turkmenistan, Iran și Azerbaidjan au litoral la Marea Caspică. Poziția sa închisă generează particularități juridice și geografice speciale."
+    },
+    {
+      "id": "geography-240",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte state au litoral la Marea Baltică?",
+      "answer": "9",
+      "explanation": "Danemarca, Germania, Polonia, Lituania, Letonia, Estonia, Rusia, Finlanda și Suedia au litoral la Marea Baltică, în total nouă state."
+    },
+    {
+      "id": "geography-241",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă insula Tierra del Fuego de continentul sud-american?",
+      "options": [
+        "Strâmtoarea Magellan",
+        "Strâmtoarea Drake",
+        "Canalul Beagle",
+        "Strâmtoarea Le Maire"
+      ],
+      "answer": "Strâmtoarea Magellan",
+      "explanation": "Strâmtoarea Magellan este o cale navigabilă naturală între Atlantic și Pacific, situată între continentul sud-american și arhipelagul Tierra del Fuego."
+    },
+    {
+      "id": "geography-242",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pasaj maritim se află între Capul Horn și Peninsula Antarctică?",
+      "options": [
+        "Strâmtoarea Drake",
+        "Strâmtoarea Magellan",
+        "Pasajul Nord-Vest",
+        "Strâmtoarea Davis"
+      ],
+      "answer": "Strâmtoarea Drake",
+      "explanation": "Strâmtoarea Drake separă extremitatea sudică a Americii de Sud de Antarctica și este cunoscută pentru vânturile și mările foarte puternice."
+    },
+    {
+      "id": "geography-243",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă insula Sahalin de insula japoneză Hokkaido?",
+      "options": [
+        "La Pérouse (Soya)",
+        "Tsugaru",
+        "Tătarilor",
+        "Korea"
+      ],
+      "answer": "La Pérouse (Soya)",
+      "explanation": "Strâmtoarea La Pérouse, numită Soya în Japonia, separă sudul Sahalinului de nordul insulei Hokkaido și leagă Marea Japoniei de Marea Ohotsk."
+    },
+    {
+      "id": "geography-244",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă Honshu de Hokkaido?",
+      "options": [
+        "Tsugaru",
+        "Soya",
+        "Korea",
+        "Kanmon"
+      ],
+      "answer": "Tsugaru",
+      "explanation": "Strâmtoarea Tsugaru separă insulele japoneze Honshu și Hokkaido. Tunelul feroviar Seikan trece pe sub această strâmtoare."
+    },
+    {
+      "id": "geography-245",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă peninsula coreeană de insulele japoneze Kyushu și Honshu prin zona Tsushima?",
+      "options": [
+        "Strâmtoarea Coreei",
+        "Tsugaru",
+        "Soya",
+        "Luzon"
+      ],
+      "answer": "Strâmtoarea Coreei",
+      "explanation": "Strâmtoarea Coreei leagă Marea Chinei de Est de Marea Japoniei și include canale separate de insulele Tsushima."
+    },
+    {
+      "id": "geography-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă Taiwanul de China continentală?",
+      "options": [
+        "Strâmtoarea Taiwan",
+        "Luzon",
+        "Tsushima",
+        "Makassar"
+      ],
+      "answer": "Strâmtoarea Taiwan",
+      "explanation": "Strâmtoarea Taiwan se află între insula Taiwan și provincia Fujian din China continentală și are o importanță geopolitică și comercială majoră."
+    },
+    {
+      "id": "geography-247",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă Taiwanul de insula Luzon?",
+      "options": [
+        "Luzon",
+        "Taiwan",
+        "Sunda",
+        "Makassar"
+      ],
+      "answer": "Luzon",
+      "explanation": "Strâmtoarea Luzon separă Taiwanul de nordul Filipinelor și reprezintă o legătură importantă între Marea Filipinelor și Marea Chinei de Sud."
+    },
+    {
+      "id": "geography-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă insulele Borneo și Sulawesi?",
+      "options": [
+        "Makassar",
+        "Sunda",
+        "Lombok",
+        "Malacca"
+      ],
+      "answer": "Makassar",
+      "explanation": "Strâmtoarea Makassar se află între Borneo și Sulawesi și este o rută importantă între Marea Celebes și Marea Java."
+    },
+    {
+      "id": "geography-249",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce strâmtoare separă Bali de Lombok și marchează aproximativ o limită biogeografică importantă?",
+      "options": [
+        "Lombok",
+        "Sunda",
+        "Makassar",
+        "Torres"
+      ],
+      "answer": "Lombok",
+      "explanation": "Strâmtoarea Lombok se află între Bali și Lombok și este asociată cu Linia Wallace, o limită biogeografică între faune asiatice și australasiene."
+    },
+    {
+      "id": "geography-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce linie biogeografică separă aproximativ fauna asiatică de cea australasiană în Arhipelagul Malaez?",
+      "options": [
+        "Linia Wallace",
+        "Linia Mason-Dixon",
+        "Linia Durand",
+        "Linia Radcliffe"
+      ],
+      "answer": "Linia Wallace",
+      "explanation": "Linia Wallace trece prin regiunea indoneziană și reflectă diferențe faunistice puternice rezultate din istoria geologică și barierele marine adânci."
+    },
+    {
+      "id": "geography-251",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mare se află între peninsula Kamceatka și Alaska?",
+      "options": [
+        "Marea Bering",
+        "Marea Ohotsk",
+        "Marea Beaufort",
+        "Marea Chukchi"
+      ],
+      "answer": "Marea Bering",
+      "explanation": "Marea Bering ocupă nordul Pacificului dintre Alaska și extremitatea estică a Rusiei și comunică spre nord cu Oceanul Arctic prin Strâmtoarea Bering."
+    },
+    {
+      "id": "geography-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mare se află la nord de Japonia și este aproape închisă de Kamceatka, Kurile și Sahalin?",
+      "options": [
+        "Marea Ohotsk",
+        "Marea Japoniei",
+        "Marea Bering",
+        "Marea Galbenă"
+      ],
+      "answer": "Marea Ohotsk",
+      "explanation": "Marea Ohotsk este delimitată de Siberia orientală, Peninsula Kamceatka, Insulele Kurile și Sahalin și este acoperită sezonier de gheață pe suprafețe întinse."
+    },
+    {
+      "id": "geography-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mare marginală este cuprinsă între peninsula coreeană și China de est?",
+      "options": [
+        "Marea Galbenă",
+        "Marea Japoniei",
+        "Marea Chinei de Sud",
+        "Marea Filipinelor"
+      ],
+      "answer": "Marea Galbenă",
+      "explanation": "Marea Galbenă este puțin adâncă și primește cantități mari de sedimente de la fluviile chineze, ceea ce contribuie la culoarea și turbiditatea apei."
+    },
+    {
+      "id": "geography-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mare marginală se află între Japonia, peninsula coreeană și Rusia?",
+      "options": [
+        "Marea Japoniei",
+        "Marea Galbenă",
+        "Marea Ohotsk",
+        "Marea Chinei de Est"
+      ],
+      "answer": "Marea Japoniei",
+      "explanation": "Marea Japoniei este aproape închisă de arhipelagul japonez și continentul asiatic, comunicând cu alte mări prin câteva strâmtori relativ înguste."
+    },
+    {
+      "id": "geography-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce platou submarin izolat este asociat cu „continentul” geologic Zealandia?",
+      "options": [
+        "Platoul Campbell și platoul Challenger",
+        "Platoul Kerguelen exclusiv",
+        "Platoul Mascarene",
+        "Platoul Ontong Java"
+      ],
+      "answer": "Platoul Campbell și platoul Challenger",
+      "explanation": "Zealandia este o masă continentală în mare parte scufundată în sud-vestul Pacificului. Noua Zeelandă reprezintă partea sa emergentă principală."
+    },
+    {
+      "id": "geography-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce microcontinent este reprezentat în principal la suprafață de Noua Zeelandă și Noua Caledonie?",
+      "options": [
+        "Zealandia",
+        "Sundaland",
+        "Doggerland",
+        "Beringia"
+      ],
+      "answer": "Zealandia",
+      "explanation": "Zealandia are crustă continentală și limite geologice distincte, dar aproximativ 94% din suprafața sa este scufundată sub nivelul mării."
+    },
+    {
+      "id": "geography-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regiune continentală scufundată lega temporar Marea Britanie de Europa în timpul Pleistocenului?",
+      "options": [
+        "Doggerland",
+        "Beringia",
+        "Sundaland",
+        "Zealandia"
+      ],
+      "answer": "Doggerland",
+      "explanation": "Doggerland ocupa zone azi acoperite de Marea Nordului și lega Marea Britanie de Europa continentală înainte de creșterea nivelului mării postglaciare."
+    },
+    {
+      "id": "geography-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce punte terestră pleistocenă lega Siberia de Alaska?",
+      "options": [
+        "Beringia",
+        "Doggerland",
+        "Sundaland",
+        "Wallacea"
+      ],
+      "answer": "Beringia",
+      "explanation": "Beringia a fost expusă când nivelul mărilor era mai scăzut în perioadele glaciare și a permis schimburi biologice și migrații între Asia și America de Nord."
+    },
+    {
+      "id": "geography-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regiune expusă în perioadele glaciare unea Peninsula Malay cu Sumatra, Java și Borneo?",
+      "options": [
+        "Sundaland",
+        "Sahul",
+        "Beringia",
+        "Doggerland"
+      ],
+      "answer": "Sundaland",
+      "explanation": "Sundaland reprezintă platforma continentală puțin adâncă din Asia de Sud-Est care a fost în mare parte uscată când nivelul global al mării era mai coborât."
+    },
+    {
+      "id": "geography-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce masă continentală pleistocenă unea Australia cu Noua Guinee și Tasmania?",
+      "options": [
+        "Sahul",
+        "Sundaland",
+        "Zealandia",
+        "Beringia"
+      ],
+      "answer": "Sahul",
+      "explanation": "Sahul cuprindea Australia, Noua Guinee și Tasmania într-o singură masă terestră atunci când nivelul mărilor era mult mai scăzut decât astăzi."
+    },
+    {
+      "id": "geography-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bazin endoreic foarte întins ocupă o mare parte din Asia Centrală și include Marea Aral?",
+      "options": [
+        "Bazinul Aral-Caspic",
+        "Bazinul Amazonului",
+        "Bazinul Congo",
+        "Bazinul Murray-Darling"
+      ],
+      "answer": "Bazinul Aral-Caspic",
+      "explanation": "Asia Centrală conține vaste regiuni fără scurgere spre ocean. Apele se termină în lacuri interioare precum Aral sau Caspică ori se pierd prin evaporare."
+    },
+    {
+      "id": "geography-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce râu alimentează în principal partea sudică a Mării Aral și traversează Asia Centrală?",
+      "options": [
+        "Amu Darya",
+        "Syr Darya",
+        "Ili",
+        "Tarim"
+      ],
+      "answer": "Amu Darya",
+      "explanation": "Amu Darya izvorăște din munții Asiei Centrale și curge spre Marea Aral. Devierile masive pentru irigații au contribuit la reducerea lacului."
+    },
+    {
+      "id": "geography-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce râu alimentează partea nordică a Mării Aral?",
+      "options": [
+        "Syr Darya",
+        "Amu Darya",
+        "Tarim",
+        "Ili"
+      ],
+      "answer": "Syr Darya",
+      "explanation": "Syr Darya curge din munții Tian Shan prin Asia Centrală spre nordul Mării Aral și este esențial pentru alimentarea Mării Aral de Nord."
+    },
+    {
+      "id": "geography-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce râu se pierde în bazinul endoreic Tarim, în apropierea deșertului Taklamakan?",
+      "options": [
+        "Tarim",
+        "Indus",
+        "Brahmaputra",
+        "Amur"
+      ],
+      "answer": "Tarim",
+      "explanation": "Râul Tarim curge prin Bazinul Tarim din vestul Chinei și nu ajunge la ocean, alimentând zone umede și lacuri terminale într-un mediu arid."
+    },
+    {
+      "id": "geography-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce deșert ocupă centrul Bazinului Tarim din Xinjiang?",
+      "options": [
+        "Taklamakan",
+        "Gobi",
+        "Karakum",
+        "Kyzylkum"
+      ],
+      "answer": "Taklamakan",
+      "explanation": "Taklamakan este un mare deșert nisipos înconjurat de lanțuri muntoase precum Tian Shan, Kunlun și Pamir, ceea ce accentuează caracterul său continental arid."
+    },
+    {
+      "id": "geography-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce deșert se află în principal în Turkmenistan?",
+      "options": [
+        "Karakum",
+        "Kyzylkum",
+        "Taklamakan",
+        "Thar"
+      ],
+      "answer": "Karakum",
+      "explanation": "Karakum ocupă cea mai mare parte a Turkmenistanului. Numele său înseamnă aproximativ „nisip negru” în limbile turcice locale."
+    },
+    {
+      "id": "geography-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce deșert se află între Amu Darya și Syr Darya, în principal în Uzbekistan și Kazahstan?",
+      "options": [
+        "Kyzylkum",
+        "Karakum",
+        "Taklamakan",
+        "Dasht-e Kavir"
+      ],
+      "answer": "Kyzylkum",
+      "explanation": "Kyzylkum se întinde între marile râuri Amu Darya și Syr Darya. Numele său înseamnă aproximativ „nisip roșu”."
+    },
+    {
+      "id": "geography-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce deșert sărat se află pe Platoul Iranului, la est de Munții Zagros?",
+      "options": [
+        "Dasht-e Kavir",
+        "Rub' al Khali",
+        "Karakum",
+        "Thar"
+      ],
+      "answer": "Dasht-e Kavir",
+      "explanation": "Dasht-e Kavir este Marele Deșert Sărat al Iranului, caracterizat de suprafețe saline, mlaștini sărate și condiții extrem de aride."
+    },
+    {
+      "id": "geography-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce deșert iranian este cunoscut pentru unele dintre cele mai ridicate temperaturi de suprafață măsurate prin satelit?",
+      "options": [
+        "Dasht-e Lut",
+        "Dasht-e Kavir",
+        "Karakum",
+        "Negev"
+      ],
+      "answer": "Dasht-e Lut",
+      "explanation": "Dasht-e Lut se află în sud-estul Iranului și conține vaste suprafețe sterpe unde temperaturile de suprafață pot deveni extrem de ridicate."
+    },
+    {
+      "id": "geography-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce vast deșert de nisip ocupă sudul Peninsulei Arabice?",
+      "options": [
+        "Rub' al Khali",
+        "An Nafud",
+        "Negev",
+        "Thar"
+      ],
+      "answer": "Rub' al Khali",
+      "explanation": "Rub' al Khali, numit și Empty Quarter, este una dintre cele mai mari întinderi continue de nisip ale lumii și acoperă părți din mai multe state arabe."
+    },
+    {
+      "id": "geography-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce lanț muntos se întinde prin Iran și separă în mare parte Platoul Iranului de câmpia Mesopotamiei?",
+      "options": [
+        "Zagros",
+        "Elburz",
+        "Taurus",
+        "Hindu Kush"
+      ],
+      "answer": "Zagros",
+      "explanation": "Munții Zagros se întind din nord-vestul Iranului spre Golful Persic și formează o importantă zonă de coliziune între plăcile Arabiei și Eurasiei."
+    },
+    {
+      "id": "geography-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce lanț muntos se află la sud de Marea Caspică și include vârful Damavand?",
+      "options": [
+        "Elburz",
+        "Zagros",
+        "Taurus",
+        "Kopet Dag"
+      ],
+      "answer": "Elburz",
+      "explanation": "Munții Elburz se întind de-a lungul sudului Mării Caspice. Damavand, un stratovulcan, este cel mai înalt vârf al Iranului."
+    },
+    {
+      "id": "geography-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce masiv muntos din Asia Centrală este cunoscut drept „Acoperișul lumii” și leagă Himalaya, Tian Shan și Hindu Kush?",
+      "options": [
+        "Pamir",
+        "Altai",
+        "Kunlun",
+        "Sayan"
+      ],
+      "answer": "Pamir",
+      "explanation": "Pamirul formează un nod orografic major în Asia Centrală, unde se întâlnesc mai multe sisteme muntoase foarte înalte și podișuri alpine."
+    },
+    {
+      "id": "geography-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce lanț muntos se află la nord de Bazinul Tarim și la sud de Kazahstan?",
+      "options": [
+        "Tian Shan",
+        "Altai",
+        "Kunlun",
+        "Hindu Kush"
+      ],
+      "answer": "Tian Shan",
+      "explanation": "Tian Shan se întinde prin Kârgâzstan, Kazahstan și vestul Chinei. Ghețarii săi alimentează numeroase râuri din Asia Centrală."
+    },
+    {
+      "id": "geography-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce lanț muntos delimitează sudul Bazinului Tarim și nordul Podișului Tibet?",
+      "options": [
+        "Kunlun",
+        "Tian Shan",
+        "Altai",
+        "Zagros"
+      ],
+      "answer": "Kunlun",
+      "explanation": "Munții Kunlun formează o barieră montană majoră între Bazinul Tarim și Podișul Tibet și se întind pe mii de kilometri în vestul Chinei."
+    },
+    {
+      "id": "geography-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fluviu din Asia de Sud-Est este numit Salween în engleză și Nu Jiang în China?",
+      "options": [
+        "Salween",
+        "Irrawaddy",
+        "Mekong",
+        "Red River"
+      ],
+      "answer": "Salween",
+      "explanation": "Salween izvorăște de pe Podișul Tibet și curge prin China și Myanmar, formând pe alocuri frontiere înainte de a ajunge în Marea Andaman."
+    },
+    {
+      "id": "geography-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fluviu este principala arteră hidrografică a Myanmarului?",
+      "options": [
+        "Irrawaddy",
+        "Salween",
+        "Mekong",
+        "Chao Phraya"
+      ],
+      "answer": "Irrawaddy",
+      "explanation": "Irrawaddy traversează Myanmarul de la nord la sud și formează o deltă fertilă înainte de a se vărsa în Marea Andaman."
+    },
+    {
+      "id": "geography-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fluviu traversează Bangkok și formează o câmpie deltaică importantă în Thailanda centrală?",
+      "options": [
+        "Chao Phraya",
+        "Mekong",
+        "Salween",
+        "Irrawaddy"
+      ],
+      "answer": "Chao Phraya",
+      "explanation": "Chao Phraya traversează Bangkokul și drenează câmpia centrală a Thailandei, una dintre cele mai importante regiuni agricole ale țării."
+    },
+    {
+      "id": "geography-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fluviu formează o deltă dens populată în nordul Vietnamului și traversează Hanoiul?",
+      "options": [
+        "Râul Roșu",
+        "Mekong",
+        "Salween",
+        "Pearl River"
+      ],
+      "answer": "Râul Roșu",
+      "explanation": "Râul Roșu curge din sudul Chinei spre nordul Vietnamului, traversează Hanoiul și formează o deltă fertilă la Golful Tonkin."
+    },
+    {
+      "id": "geography-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce râu traversează valea Kathmandu și este un afluent al sistemului Gange prin Gandaki?",
+      "options": [
+        "Bagmati",
+        "Indus",
+        "Teesta",
+        "Sutlej"
+      ],
+      "answer": "Bagmati",
+      "explanation": "Bagmati traversează Valea Kathmandu și are o importanță religioasă majoră în Nepal, înainte de a continua spre sud în sistemul hidrografic al Gangelui."
+    },
+    {
+      "id": "geography-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce râu este principalul curs de apă al Afganistanului și se varsă într-un bazin endoreic în regiunea Sistan?",
+      "options": [
+        "Helmand",
+        "Kabul",
+        "Amu Darya",
+        "Hari Rud"
+      ],
+      "answer": "Helmand",
+      "explanation": "Helmand este cel mai lung râu care curge în principal prin Afganistan și se termină în lacurile și mlaștinile endoreice Hamun din regiunea Sistan."
+    },
+    {
+      "id": "geography-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bazin foarte jos din vestul Chinei conține Depresiunea Turpan?",
+      "options": [
+        "Bazinul Turpan",
+        "Bazinul Sichuan",
+        "Bazinul Tarim",
+        "Bazinul Junggar"
+      ],
+      "answer": "Bazinul Turpan",
+      "explanation": "Depresiunea Turpan este una dintre cele mai joase regiuni continentale ale Asiei, înconjurată de relief înalt și caracterizată de un climat extrem de arid."
+    },
+    {
+      "id": "geography-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bazin se află între Tian Shan la sud și Altai la nord în Xinjiang și Kazahstan?",
+      "options": [
+        "Bazinul Junggar",
+        "Bazinul Tarim",
+        "Bazinul Turpan",
+        "Bazinul Qaidam"
+      ],
+      "answer": "Bazinul Junggar",
+      "explanation": "Bazinul Junggar este o depresiune intermontană aridă aflată la nord de Tian Shan, separată de Bazinul Tarim de marele lanț muntos."
+    },
+    {
+      "id": "geography-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bazin înalt și arid se află pe marginea nord-estică a Podișului Tibet?",
+      "options": [
+        "Bazinul Qaidam",
+        "Bazinul Sichuan",
+        "Bazinul Tarim",
+        "Bazinul Junggar"
+      ],
+      "answer": "Bazinul Qaidam",
+      "explanation": "Qaidam este un bazin endoreic de altitudine mare în provincia Qinghai, cunoscut pentru lacuri sărate, deșerturi și importante resurse minerale."
+    },
+    {
+      "id": "geography-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce câmpie chineză este înconjurată de munți și traversată de râul Yangtze superior, fiind foarte dens populată?",
+      "options": [
+        "Bazinul Sichuan",
+        "Bazinul Tarim",
+        "Câmpia Manciuriei",
+        "Podișul Loess"
+      ],
+      "answer": "Bazinul Sichuan",
+      "explanation": "Bazinul Sichuan este o depresiune fertilă și dens populată, protejată de munți și străbătută de Yangtze și afluenții săi."
+    },
+    {
+      "id": "geography-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce podiș chinez este renumit pentru depozitele groase de loess și eroziunea intensă?",
+      "options": [
+        "Podișul Loess",
+        "Podișul Tibet",
+        "Podișul Yunnan-Guizhou",
+        "Podișul Mongoliei"
+      ],
+      "answer": "Podișul Loess",
+      "explanation": "Podișul Loess din nordul Chinei este acoperit de sedimente eoliene foarte groase și este fragmentat de ravene rezultate din eroziune."
+    },
+    {
+      "id": "geography-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regiune carstică din sudul Chinei este celebră pentru relief cu turnuri calcaroase în jurul Guilinului?",
+      "options": [
+        "Karstul din Guangxi",
+        "Podișul Loess",
+        "Bazinul Sichuan",
+        "Deșertul Gobi"
+      ],
+      "answer": "Karstul din Guangxi",
+      "explanation": "Zona Guilin–Yangshuo din Guangxi este cunoscută pentru relief carstic spectaculos, cu turnuri de calcar modelate de dizolvare și eroziune."
+    },
+    {
+      "id": "geography-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce podiș vulcanic din India a fost format de erupții bazaltice masive la sfârșitul Cretacicului?",
+      "options": [
+        "Deccan Traps",
+        "Podișul Chota Nagpur",
+        "Podișul Malwa",
+        "Ghats Occidentali"
+      ],
+      "answer": "Deccan Traps",
+      "explanation": "Deccan Traps reprezintă una dintre cele mai mari provincii bazaltice de pe uscat, formată prin erupții extinse în apropierea limitei Cretacic–Paleogen."
+    },
+    {
+      "id": "geography-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce lanț muntos de coastă deține numeroase zone de biodiversitate ridicată în vestul Indiei?",
+      "options": [
+        "Ghats Occidentali",
+        "Ghats Orientali",
+        "Aravalli",
+        "Vindhya"
+      ],
+      "answer": "Ghats Occidentali",
+      "explanation": "Ghats Occidentali se ridică de-a lungul coastei vestice a Indiei și influențează puternic musonul, creând contraste mari de precipitații."
+    },
+    {
+      "id": "geography-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește deșertul nou format pe fostul fund expus al Mării Aral?",
+      "options": [
+        "Aralkum",
+        "Karakum",
+        "Kyzylkum",
+        "Ustyurt"
+      ],
+      "answer": "Aralkum",
+      "explanation": "Aralkum s-a format pe suprafețele rămase uscate după retragerea masivă a Mării Aral. Sedimentele expuse pot genera furtuni de praf încărcate cu sare și reziduuri agricole."
+    },
+    {
+      "id": "geography-291",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane se învecinează cu Marea Caspică?",
+      "answer": "5",
+      "explanation": "Marea Caspică are cinci state riverane: Rusia, Kazahstan, Turkmenistan, Iran și Azerbaidjan. Bazinul său este complet închis față de ocean."
+    },
+    {
+      "id": "geography-292",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state sunt traversate de fluviul Mekong sau folosesc cursul său drept frontieră?",
+      "answer": "6",
+      "explanation": "Mekongul trece prin sau delimitează China, Myanmar, Laos, Thailanda, Cambodgia și Vietnam, înainte de a forma o mare deltă în sudul Vietnamului."
+    },
+    {
+      "id": "geography-293",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane împart insula Noua Guinee?",
+      "answer": "2",
+      "explanation": "Noua Guinee este împărțită politic între Papua Noua Guinee în est și Indonezia în vest, fiind a doua insulă ca mărime a lumii."
+    },
+    {
+      "id": "geography-294",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane împart insula Timor?",
+      "answer": "2",
+      "explanation": "Insula Timor este împărțită între Timorul de Est și Indonezia. Partea vestică aparține provinciei indoneziene Nusa Tenggara de Est."
+    },
+    {
+      "id": "geography-295",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane au teritoriu pe insula Borneo?",
+      "answer": "3",
+      "explanation": "Borneo este împărțită între Indonezia, Malaezia și Brunei, fiind una dintre rarele insule mari ale lumii împărțite între trei state."
+    },
+    {
+      "id": "geography-296",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane sunt traversate de Munții Anzi în sens geografic larg?",
+      "answer": "7",
+      "explanation": "Anzii traversează Venezuela, Columbia, Ecuador, Peru, Bolivia, Chile și Argentina, formând coloana vertebrală montană a vestului Americii de Sud."
+    },
+    {
+      "id": "geography-297",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state suverane au litoral la Marea Adriatică?",
+      "answer": "6",
+      "explanation": "Italia, Slovenia, Croația, Bosnia și Herțegovina, Muntenegru și Albania au litoral la Marea Adriatică, care comunică cu Marea Ionică prin Strâmtoarea Otranto."
+    },
+    {
+      "id": "geography-298",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state împart Lacul Victoria?",
+      "answer": "3",
+      "explanation": "Lacul Victoria este împărțit între Tanzania, Uganda și Kenya. Este cel mai mare lac al Africii după suprafață și o sursă majoră a Nilului Alb."
+    },
+    {
+      "id": "geography-299",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte state împart Lacul Tanganyika?",
+      "answer": "4",
+      "explanation": "Lacul Tanganyika este împărțit între Tanzania, Republica Democrată Congo, Burundi și Zambia. Este unul dintre cele mai adânci lacuri ale lumii."
+    },
+    {
+      "id": "geography-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește procesul prin care topirea gheții din permafrost produce tasări, depresiuni și lacuri neregulate?",
+      "options": [
+        "Termocarst",
+        "Crioturbație",
+        "Laterizare",
+        "Solifluxiune exclusivă"
+      ],
+      "answer": "Termocarst",
+      "explanation": "Termocarstul apare când gheața din permafrost se topește, iar terenul își pierde volumul și stabilitatea. Rezultatul poate fi un relief cu depresiuni, lacuri, prăbușiri și suprafețe foarte neregulate."
+    }
+  ]
+}

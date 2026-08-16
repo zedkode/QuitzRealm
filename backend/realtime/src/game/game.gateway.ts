@@ -12,11 +12,13 @@ import {
 } from '@nestjs/websockets';
 import { Namespace, Socket } from 'socket.io';
 import { ApiClientService } from '../api-client/api-client.service';
+import { agreeOnCategories } from './category-selection';
 import { RealtimeAuthService } from '../auth/realtime-auth.service';
 import { PresenceService } from '../chat/presence.service';
 import { JoinMatchmakingDto } from './dto/join-matchmaking.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { GameService } from './game.service';
+import { MatchProfile, publicMatchProfile } from './match-profile';
 import { MatchmakingService } from './matchmaking.service';
 
 @WebSocketGateway({
@@ -106,17 +108,41 @@ export class GameGateway
       return;
     }
 
-    const matchedUsers = await this.matchmaking.join(userId);
-    client.emit('matchmaking:queued', { mode: dto.mode });
+    let profile: MatchProfile;
+    try {
+      profile = publicMatchProfile(dto.mode, dto.playerCount);
+    } catch (error) {
+      throw new WsException((error as Error).message);
+    }
+
+    const requested = dto.categoryCodes ?? [];
+    await this.matchmaking.setQueuePreferences(userId, requested);
+
+    const matchedUsers = await this.matchmaking.join(userId, profile);
+    client.emit('matchmaking:queued', {
+      mode: profile.clientMode,
+      playerCountTarget: profile.playerCountTarget,
+      lobbyType: profile.lobbyType,
+      categoryCodes: requested,
+    });
     if (matchedUsers) {
-      await this.game.createMatch(matchedUsers);
+      const categoryCodes = agreeOnCategories(
+        await Promise.all(
+          matchedUsers.map((id) => this.matchmaking.getQueuePreferences(id)),
+        ),
+      );
+      await this.matchmaking.clearQueuePreferences(matchedUsers);
+      await this.game.createMatch(matchedUsers, profile, categoryCodes);
     }
   }
 
   @SubscribeMessage('matchmaking:leave')
   async leaveMatchmaking(@ConnectedSocket() client: Socket): Promise<void> {
-    await this.matchmaking.leave(this.getUserId(client));
-    client.emit('matchmaking:left', { mode: 'duo' });
+    const profile = await this.matchmaking.leave(this.getUserId(client));
+    client.emit('matchmaking:left', {
+      mode: profile?.clientMode ?? 'duo',
+      playerCountTarget: profile?.playerCountTarget ?? 2,
+    });
   }
 
   @SubscribeMessage('round:answer')

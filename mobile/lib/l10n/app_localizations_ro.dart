@@ -544,6 +544,61 @@ class AppLocalizationsRo extends AppLocalizations {
   String get duelWonByForfeit => 'Adversarul nu s-a mai întors în partidă.';
 
   @override
+  String get matchChatOpen => 'Deschide chatul de luptă';
+
+  @override
+  String get matchChatTitle => 'Cronica luptei';
+
+  @override
+  String get matchChatEphemeral =>
+      'Mesajele acestei partide dispar după luptă.';
+
+  @override
+  String get matchChatEmpty =>
+      'Pergamentul este gol. Trimite o reacție adversarului.';
+
+  @override
+  String get matchChatReactions => 'REACȚII RAPIDE';
+
+  @override
+  String get matchReactionGoodLuck => 'Mult noroc!';
+
+  @override
+  String get matchReactionNiceMove => 'Mișcare bună!';
+
+  @override
+  String get matchReactionWow => 'Uau!';
+
+  @override
+  String get matchReactionWellPlayed => 'Bine jucat!';
+
+  @override
+  String get matchChatHint => 'Scrie un mesaj de luptă…';
+
+  @override
+  String get matchChatSend => 'Trimite mesajul';
+
+  @override
+  String get matchChatTextLocked =>
+      'Textul liber se deblochează după 10 răspunsuri corecte. Reacțiile rămân disponibile.';
+
+  @override
+  String get matchChatMuted => 'Chatul tău este temporar restricționat.';
+
+  @override
+  String get matchChatTooFast => 'Prea multe mesaje. Așteaptă câteva secunde.';
+
+  @override
+  String get matchChatLinksLocked =>
+      'Linkurile se deblochează la o treaptă de încredere mai mare.';
+
+  @override
+  String get matchChatClosed => 'Chatul acestei partide s-a închis.';
+
+  @override
+  String get matchChatInvalid => 'Mesajul nu a putut fi trimis.';
+
+  @override
   String get loginEyebrow => 'CONT DE JUCĂTOR';
 
   @override
@@ -603,4 +658,365 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get backLabel => 'Înapoi';
+
+  @override
+  String get socialTitle => 'Prieteni și mesaje';
+
+  @override
+  String get socialTabFriends => 'Prieteni';
+
+  @override
+  String get socialTabMessages => 'Mesaje';
+
+  @override
+  String get socialNeedAccountTitle => 'Partea socială cere un cont';
+
+  @override
+  String get socialNeedAccountBody =>
+      'Autentifică-te ca să ai prieteni, conversații și chat.';
+
+  @override
+  String get socialErrorTitle => 'Nu am putut încărca partea socială';
+
+  @override
+  String get friendsAddHint => 'Nume de utilizator';
+
+  @override
+  String get friendsAddAction => 'Trimite cerere';
+
+  @override
+  String get friendsIncomingRequests => 'Cereri primite';
+
+  @override
+  String get friendsOutgoingRequests => 'Cereri trimise';
+
+  @override
+  String get friendsRequestSent => 'În așteptare';
+
+  @override
+  String get friendsListTitle => 'Prietenii tăi';
+
+  @override
+  String get friendsEmpty =>
+      'Încă nu ai prieteni. Caută pe cineva după numele de utilizator.';
+
+  @override
+  String get friendsAccept => 'Acceptă';
+
+  @override
+  String get friendsDecline => 'Refuză';
+
+  @override
+  String get friendsOpenChat => 'Deschide conversația';
+
+  @override
+  String get friendsBlock => 'Blochează';
+
+  @override
+  String get friendsBlockTitle => 'Blochezi jucătorul?';
+
+  @override
+  String friendsBlockBody(String name) {
+    return '$name nu îți va mai putea scrie, iar prietenia se desface.';
+  }
+
+  @override
+  String get conversationsTitle => 'Conversații';
+
+  @override
+  String get conversationsEmpty => 'Nicio conversație deocamdată.';
+
+  @override
+  String get conversationEmpty => 'Scrie primul mesaj.';
+
+  @override
+  String get messageRequestsTitle => 'Cereri de mesaj';
+
+  @override
+  String get messageRequestsExplainer =>
+      'Cineva care nu îți e prieten vrea să-ți scrie. Acceptă doar dacă vrei să continui.';
+
+  @override
+  String get messageRequestAccept => 'Acceptă cererea';
+
+  @override
+  String get chatComposerHint => 'Scrie un mesaj…';
+
+  @override
+  String get chatSend => 'Trimite';
+
+  @override
+  String get chatMutedNotice =>
+      'Chatul îți este oprit temporar din cauza mesajelor repetate.';
+
+  @override
+  String get chatReportTitle => 'Raportează mesajul';
+
+  @override
+  String get chatReportHint => 'Ce e în neregulă?';
+
+  @override
+  String get chatReportSend => 'Trimite raportul';
+
+  @override
+  String get chatReportSent => 'Raportul a fost trimis.';
+
+  @override
+  String get privacyTitle => 'Confidențialitate';
+
+  @override
+  String get privacyDmTitle => 'Cine îți poate scrie direct';
+
+  @override
+  String get privacyDmLocked =>
+      'Conturile de minor primesc mesaje directe doar de la prieteni.';
+
+  @override
+  String get privacyDmEveryone => 'Oricine';
+
+  @override
+  String get privacyDmFriends => 'Doar prietenii';
+
+  @override
+  String get privacyDmNobody => 'Nimeni';
+
+  @override
+  String trustCorrectAnswers(int count) {
+    return '$count corecte';
+  }
+
+  @override
+  String trustAnswersToNextTier(int count) {
+    return 'Încă $count răspunsuri corecte până la treapta următoare.';
+  }
+
+  @override
+  String get trustMaxTier => 'Ai atins ultima treaptă de încredere.';
+
+  @override
+  String get trustTierNewcomer => 'Nou';
+
+  @override
+  String get trustTierApprentice => 'Ucenic';
+
+  @override
+  String get trustTierContributor => 'Contribuitor';
+
+  @override
+  String get trustTierEstablished => 'Stabilit';
+
+  @override
+  String get trustTierExperienced => 'Experimentat';
+
+  @override
+  String get trustTierExpert => 'Expert';
+
+  @override
+  String get trustTierCommunityMaster => 'Maestru al comunității';
+
+  @override
+  String get trustTierElite => 'Elită';
+
+  @override
+  String get trustTierCommunityLegend => 'Legendă a comunității';
+
+  @override
+  String get homeGuestTitle => 'Joci fără cont';
+
+  @override
+  String get homeGuestAction => 'Deschide cont';
+
+  @override
+  String get homeLoadingProfile => 'Se încarcă profilul…';
+
+  @override
+  String homeCoins(int count) {
+    return '$count monede';
+  }
+
+  @override
+  String get homeContinueEyebrow => 'Continuă cucerirea';
+
+  @override
+  String get homeStartEyebrow => 'Primul ținut';
+
+  @override
+  String get homeRealmsTitle => 'Ținuturile regatului';
+
+  @override
+  String get homeRealmsAction => 'Vezi harta';
+
+  @override
+  String homeRankPosition(int position) {
+    return 'Locul $position';
+  }
+
+  @override
+  String homeMatchesPlayed(int count) {
+    return '$count partide online';
+  }
+
+  @override
+  String get homeDuelLocked => 'Cere email confirmat';
+
+  @override
+  String get navHome => 'Acasă';
+
+  @override
+  String get navCampaign => 'Campanie';
+
+  @override
+  String get navChat => 'Chat';
+
+  @override
+  String get navRanking => 'Clasament';
+
+  @override
+  String get navMultiplayer => 'Multiplayer';
+
+  @override
+  String get navProfile => 'Profil';
+
+  @override
+  String get navSettings => 'Setări';
+
+  @override
+  String get homeMenu => 'Meniu';
+
+  @override
+  String homeCrystals(int count) {
+    final intl.NumberFormat countNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countString cristale';
+  }
+
+  @override
+  String get homeModeCampaign => 'Campanie';
+
+  @override
+  String get homeModeCampaignDesc => 'Progresează și cucerește noi teritorii.';
+
+  @override
+  String get homeModeMultiplayer => 'Multiplayer';
+
+  @override
+  String get homeModeMultiplayerDesc => 'Provoacă jucători din toată lumea.';
+
+  @override
+  String get homeModeChat => 'Chat';
+
+  @override
+  String get homeModeChatDesc => 'Discută cu aliații și prietenii tăi.';
+
+  @override
+  String get homeModeRanking => 'Clasament';
+
+  @override
+  String get homeModeRankingDesc => 'Vezi cei mai buni strategi de pe tărâm.';
+
+  @override
+  String get homeRecentProgress => 'Progres recent';
+
+  @override
+  String get homeContinue => 'Continuă';
+
+  @override
+  String get homeKingdomTitle => 'Regatul tău';
+
+  @override
+  String get homeKingdomTerritories => 'Teritorii';
+
+  @override
+  String get homeKingdomStars => 'Stele';
+
+  @override
+  String get homeKingdomMatches => 'Partide online';
+
+  @override
+  String get homePlayerTitleDefault => 'Cuceritor de Întrebări';
+
+  @override
+  String get settingsTitle => 'Setări';
+
+  @override
+  String get settingsAccount => 'Cont';
+
+  @override
+  String get settingsAccountId => 'ID Cont';
+
+  @override
+  String get settingsAccountIdCopied => 'ID-ul contului a fost copiat.';
+
+  @override
+  String get settingsConnectedEmail => 'Conectat prin email';
+
+  @override
+  String get settingsChangePassword => 'Schimbă parola';
+
+  @override
+  String get settingsGuestTitle => 'Nu ești autentificat';
+
+  @override
+  String get settingsGuestBody =>
+      'Setările se păstrează pe acest dispozitiv și fără cont.';
+
+  @override
+  String get settingsSound => 'Sunet';
+
+  @override
+  String get settingsMusic => 'Muzică';
+
+  @override
+  String get settingsEffects => 'Efecte';
+
+  @override
+  String get settingsVibration => 'Vibrație';
+
+  @override
+  String get settingsNotifications => 'Notificări';
+
+  @override
+  String get settingsPush => 'Notificări push';
+
+  @override
+  String get settingsPushDesc =>
+      'Primește notificări despre recompense și evenimente.';
+
+  @override
+  String get settingsGameplay => 'Joc';
+
+  @override
+  String get settingsConfirmActions => 'Confirmarea acțiunilor';
+
+  @override
+  String get settingsConfirmActionsDesc =>
+      'Cere confirmare pentru acțiuni importante.';
+
+  @override
+  String get settingsTutorials => 'Tutoriale';
+
+  @override
+  String get settingsTutorialsDesc => 'Afișează sfaturi și tutoriale în joc.';
+
+  @override
+  String get settingsDataSaver => 'Economisire resurse';
+
+  @override
+  String get settingsDataSaverDesc => 'Reduce consumul de date și de baterie.';
+
+  @override
+  String get settingsLanguageSection => 'Limbă și aspect';
+
+  @override
+  String get settingsLanguage => 'Limbă';
+
+  @override
+  String settingsVersion(String version) {
+    return 'Versiunea $version';
+  }
+
+  @override
+  String get settingsOpenAccount => 'Deschide contul';
 }

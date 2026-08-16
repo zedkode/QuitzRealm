@@ -1,0 +1,708 @@
+{
+  "id": "science",
+  "name": "Science",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "science-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic pentru Hidrogen?",
+      "options": [
+        "Li",
+        "C",
+        "N",
+        "H"
+      ],
+      "answer": "H",
+      "explanation": "Pentru „Hidrogen”, răspunsul corect este „H”."
+    },
+    {
+      "id": "science-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este numărul atomic al elementului Hidrogen?",
+      "options": [
+        "7",
+        "8",
+        "1",
+        "6"
+      ],
+      "answer": "1",
+      "explanation": "Pentru „Hidrogen”, răspunsul corect este „1”."
+    },
+    {
+      "id": "science-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este simbolul chimic pentru Heliu?",
+      "options": [
+        "F",
+        "He",
+        "N",
+        "O"
+      ],
+      "answer": "He",
+      "explanation": "Pentru „Heliu”, răspunsul corect este „He”."
+    },
+    {
+      "id": "science-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este numărul atomic al elementului Heliu?",
+      "options": [
+        "2",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": "2",
+      "explanation": "Pentru „Heliu”, răspunsul corect este „2”."
+    },
+    {
+      "id": "science-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este simbolul chimic pentru Litiu?",
+      "options": [
+        "F",
+        "Ne",
+        "Na",
+        "Li"
+      ],
+      "answer": "Li",
+      "explanation": "Pentru „Litiu”, răspunsul corect este „Li”."
+    },
+    {
+      "id": "science-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este numărul atomic al elementului Litiu?",
+      "options": [
+        "11",
+        "12",
+        "3",
+        "10"
+      ],
+      "answer": "3",
+      "explanation": "Pentru „Litiu”, răspunsul corect este „3”."
+    },
+    {
+      "id": "science-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este simbolul chimic pentru Carbon?",
+      "options": [
+        "Al",
+        "C",
+        "Na",
+        "Mg"
+      ],
+      "answer": "C",
+      "explanation": "Pentru „Carbon”, răspunsul corect este „C”."
+    },
+    {
+      "id": "science-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este numărul atomic al elementului Carbon?",
+      "options": [
+        "6",
+        "12",
+        "13",
+        "14"
+      ],
+      "answer": "6",
+      "explanation": "Pentru „Carbon”, răspunsul corect este „6”."
+    },
+    {
+      "id": "science-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este simbolul chimic pentru Azot?",
+      "options": [
+        "Al",
+        "Si",
+        "P",
+        "N"
+      ],
+      "answer": "N",
+      "explanation": "Pentru „Azot”, răspunsul corect este „N”."
+    },
+    {
+      "id": "science-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este numărul atomic al elementului Azot?",
+      "options": [
+        "15",
+        "16",
+        "7",
+        "14"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „Azot”, răspunsul corect este „7”."
+    },
+    {
+      "id": "science-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic pentru Oxigen?",
+      "options": [
+        "Cl",
+        "O",
+        "P",
+        "S"
+      ],
+      "answer": "O",
+      "explanation": "Pentru „Oxigen”, răspunsul corect este „O”."
+    },
+    {
+      "id": "science-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este numărul atomic al elementului Oxigen?",
+      "options": [
+        "8",
+        "16",
+        "17",
+        "18"
+      ],
+      "answer": "8",
+      "explanation": "Pentru „Oxigen”, răspunsul corect este „8”."
+    },
+    {
+      "id": "science-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este simbolul chimic pentru Fluor?",
+      "options": [
+        "Cl",
+        "Ar",
+        "K",
+        "F"
+      ],
+      "answer": "F",
+      "explanation": "Pentru „Fluor”, răspunsul corect este „F”."
+    },
+    {
+      "id": "science-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este numărul atomic al elementului Fluor?",
+      "options": [
+        "19",
+        "20",
+        "9",
+        "18"
+      ],
+      "answer": "9",
+      "explanation": "Pentru „Fluor”, răspunsul corect este „9”."
+    },
+    {
+      "id": "science-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este simbolul chimic pentru Neon?",
+      "options": [
+        "Fe",
+        "Ne",
+        "K",
+        "Ca"
+      ],
+      "answer": "Ne",
+      "explanation": "Pentru „Neon”, răspunsul corect este „Ne”."
+    },
+    {
+      "id": "science-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este numărul atomic al elementului Neon?",
+      "options": [
+        "10",
+        "20",
+        "26",
+        "29"
+      ],
+      "answer": "10",
+      "explanation": "Pentru „Neon”, răspunsul corect este „10”."
+    },
+    {
+      "id": "science-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este simbolul chimic pentru Sodiu?",
+      "options": [
+        "Fe",
+        "Cu",
+        "Zn",
+        "Na"
+      ],
+      "answer": "Na",
+      "explanation": "Pentru „Sodiu”, răspunsul corect este „Na”."
+    },
+    {
+      "id": "science-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este numărul atomic al elementului Sodiu?",
+      "options": [
+        "30",
+        "47",
+        "11",
+        "29"
+      ],
+      "answer": "11",
+      "explanation": "Pentru „Sodiu”, răspunsul corect este „11”."
+    },
+    {
+      "id": "science-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este simbolul chimic pentru Magneziu?",
+      "options": [
+        "Sn",
+        "Mg",
+        "Zn",
+        "Ag"
+      ],
+      "answer": "Mg",
+      "explanation": "Pentru „Magneziu”, răspunsul corect este „Mg”."
+    },
+    {
+      "id": "science-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este numărul atomic al elementului Magneziu?",
+      "options": [
+        "12",
+        "47",
+        "50",
+        "79"
+      ],
+      "answer": "12",
+      "explanation": "Pentru „Magneziu”, răspunsul corect este „12”."
+    },
+    {
+      "id": "science-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic pentru Aluminiu?",
+      "options": [
+        "Sn",
+        "Au",
+        "Pb",
+        "Al"
+      ],
+      "answer": "Al",
+      "explanation": "Pentru „Aluminiu”, răspunsul corect este „Al”."
+    },
+    {
+      "id": "science-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este numărul atomic al elementului Aluminiu?",
+      "options": [
+        "82",
+        "1",
+        "13",
+        "79"
+      ],
+      "answer": "13",
+      "explanation": "Pentru „Aluminiu”, răspunsul corect este „13”."
+    },
+    {
+      "id": "science-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este simbolul chimic pentru Siliciu?",
+      "options": [
+        "He",
+        "Si",
+        "Pb",
+        "H"
+      ],
+      "answer": "Si",
+      "explanation": "Pentru „Siliciu”, răspunsul corect este „Si”."
+    },
+    {
+      "id": "science-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este numărul atomic al elementului Siliciu?",
+      "options": [
+        "14",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "14",
+      "explanation": "Pentru „Siliciu”, răspunsul corect este „14”."
+    },
+    {
+      "id": "science-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este simbolul chimic pentru Fosfor?",
+      "options": [
+        "He",
+        "Li",
+        "C",
+        "P"
+      ],
+      "answer": "P",
+      "explanation": "Pentru „Fosfor”, răspunsul corect este „P”."
+    },
+    {
+      "id": "science-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este numărul atomic al elementului Fosfor?",
+      "options": [
+        "6",
+        "7",
+        "15",
+        "3"
+      ],
+      "answer": "15",
+      "explanation": "Pentru „Fosfor”, răspunsul corect este „15”."
+    },
+    {
+      "id": "science-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este simbolul chimic pentru Sulf?",
+      "options": [
+        "O",
+        "S",
+        "C",
+        "N"
+      ],
+      "answer": "S",
+      "explanation": "Pentru „Sulf”, răspunsul corect este „S”."
+    },
+    {
+      "id": "science-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este numărul atomic al elementului Sulf?",
+      "options": [
+        "16",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "16",
+      "explanation": "Pentru „Sulf”, răspunsul corect este „16”."
+    },
+    {
+      "id": "science-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este simbolul chimic pentru Clor?",
+      "options": [
+        "O",
+        "F",
+        "Ne",
+        "Cl"
+      ],
+      "answer": "Cl",
+      "explanation": "Pentru „Clor”, răspunsul corect este „Cl”."
+    },
+    {
+      "id": "science-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este numărul atomic al elementului Clor?",
+      "options": [
+        "10",
+        "11",
+        "17",
+        "9"
+      ],
+      "answer": "17",
+      "explanation": "Pentru „Clor”, răspunsul corect este „17”."
+    },
+    {
+      "id": "science-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic pentru Argon?",
+      "options": [
+        "Mg",
+        "Ar",
+        "Ne",
+        "Na"
+      ],
+      "answer": "Ar",
+      "explanation": "Pentru „Argon”, răspunsul corect este „Ar”."
+    },
+    {
+      "id": "science-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este numărul atomic al elementului Argon?",
+      "options": [
+        "18",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": "18",
+      "explanation": "Pentru „Argon”, răspunsul corect este „18”."
+    },
+    {
+      "id": "science-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este simbolul chimic pentru Potasiu?",
+      "options": [
+        "Mg",
+        "Al",
+        "Si",
+        "K"
+      ],
+      "answer": "K",
+      "explanation": "Pentru „Potasiu”, răspunsul corect este „K”."
+    },
+    {
+      "id": "science-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este numărul atomic al elementului Potasiu?",
+      "options": [
+        "14",
+        "15",
+        "19",
+        "13"
+      ],
+      "answer": "19",
+      "explanation": "Pentru „Potasiu”, răspunsul corect este „19”."
+    },
+    {
+      "id": "science-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este simbolul chimic pentru Calciu?",
+      "options": [
+        "S",
+        "Ca",
+        "Si",
+        "P"
+      ],
+      "answer": "Ca",
+      "explanation": "Pentru „Calciu”, răspunsul corect este „Ca”."
+    },
+    {
+      "id": "science-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este numărul atomic al elementului Calciu?",
+      "options": [
+        "20",
+        "15",
+        "16",
+        "17"
+      ],
+      "answer": "20",
+      "explanation": "Pentru „Calciu”, răspunsul corect este „20”."
+    },
+    {
+      "id": "science-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este simbolul chimic pentru Fier?",
+      "options": [
+        "S",
+        "Cl",
+        "Ar",
+        "Fe"
+      ],
+      "answer": "Fe",
+      "explanation": "Pentru „Fier”, răspunsul corect este „Fe”."
+    },
+    {
+      "id": "science-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este numărul atomic al elementului Fier?",
+      "options": [
+        "18",
+        "19",
+        "26",
+        "17"
+      ],
+      "answer": "26",
+      "explanation": "Pentru „Fier”, răspunsul corect este „26”."
+    },
+    {
+      "id": "science-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este simbolul chimic pentru Cupru?",
+      "options": [
+        "Ca",
+        "Cu",
+        "Ar",
+        "K"
+      ],
+      "answer": "Cu",
+      "explanation": "Pentru „Cupru”, răspunsul corect este „Cu”."
+    },
+    {
+      "id": "science-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este numărul atomic al elementului Cupru?",
+      "options": [
+        "29",
+        "19",
+        "20",
+        "26"
+      ],
+      "answer": "29",
+      "explanation": "Pentru „Cupru”, răspunsul corect este „29”."
+    },
+    {
+      "id": "science-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este simbolul chimic pentru Zinc?",
+      "options": [
+        "Ca",
+        "Fe",
+        "Cu",
+        "Zn"
+      ],
+      "answer": "Zn",
+      "explanation": "Pentru „Zinc”, răspunsul corect este „Zn”."
+    },
+    {
+      "id": "science-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este numărul atomic al elementului Zinc?",
+      "options": [
+        "29",
+        "47",
+        "30",
+        "26"
+      ],
+      "answer": "30",
+      "explanation": "Pentru „Zinc”, răspunsul corect este „30”."
+    },
+    {
+      "id": "science-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este simbolul chimic pentru Argint?",
+      "options": [
+        "Sn",
+        "Ag",
+        "Cu",
+        "Zn"
+      ],
+      "answer": "Ag",
+      "explanation": "Pentru „Argint”, răspunsul corect este „Ag”."
+    },
+    {
+      "id": "science-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este numărul atomic al elementului Argint?",
+      "options": [
+        "47",
+        "30",
+        "50",
+        "79"
+      ],
+      "answer": "47",
+      "explanation": "Pentru „Argint”, răspunsul corect este „47”."
+    },
+    {
+      "id": "science-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este simbolul chimic pentru Staniu?",
+      "options": [
+        "Ag",
+        "Au",
+        "Pb",
+        "Sn"
+      ],
+      "answer": "Sn",
+      "explanation": "Pentru „Staniu”, răspunsul corect este „Sn”."
+    },
+    {
+      "id": "science-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este numărul atomic al elementului Staniu?",
+      "options": [
+        "82",
+        "1",
+        "50",
+        "79"
+      ],
+      "answer": "50",
+      "explanation": "Pentru „Staniu”, răspunsul corect este „50”."
+    },
+    {
+      "id": "science-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este simbolul chimic pentru Aur?",
+      "options": [
+        "He",
+        "Au",
+        "Pb",
+        "H"
+      ],
+      "answer": "Au",
+      "explanation": "Pentru „Aur”, răspunsul corect este „Au”."
+    },
+    {
+      "id": "science-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este numărul atomic al elementului Aur?",
+      "options": [
+        "79",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "79",
+      "explanation": "Pentru „Aur”, răspunsul corect este „79”."
+    },
+    {
+      "id": "science-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este simbolul chimic pentru Plumb?",
+      "options": [
+        "He",
+        "Li",
+        "C",
+        "Pb"
+      ],
+      "answer": "Pb",
+      "explanation": "Pentru „Plumb”, răspunsul corect este „Pb”."
+    },
+    {
+      "id": "science-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este numărul atomic al elementului Plumb?",
+      "options": [
+        "6",
+        "7",
+        "82",
+        "3"
+      ],
+      "answer": "82",
+      "explanation": "Pentru „Plumb”, răspunsul corect este „82”."
+    }
+  ]
+}

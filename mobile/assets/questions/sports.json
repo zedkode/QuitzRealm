@@ -1,0 +1,708 @@
+{
+  "id": "sports",
+  "name": "Sports",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "sports-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă în fotbal?",
+      "options": [
+        "7",
+        "6",
+        "2",
+        "11"
+      ],
+      "answer": "11",
+      "explanation": "Pentru „fotbal”, răspunsul corect este „11”."
+    },
+    {
+      "id": "sports-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este durata sau ținta standard indicată pentru fotbal?",
+      "options": [
+        "2 seturi câștigate",
+        "80 de minute",
+        "90 de minute",
+        "3 seturi câștigate"
+      ],
+      "answer": "90 de minute",
+      "explanation": "Pentru „fotbal”, răspunsul corect este „90 de minute”."
+    },
+    {
+      "id": "sports-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Câți jucători are pe teren o echipă în baschet?",
+      "options": [
+        "9",
+        "5",
+        "2",
+        "15"
+      ],
+      "answer": "5",
+      "explanation": "Pentru „baschet”, răspunsul corect este „5”."
+    },
+    {
+      "id": "sports-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este durata sau ținta standard indicată pentru baschet?",
+      "options": [
+        "4 sferturi",
+        "80 de minute",
+        "14 minute",
+        "3 reprize"
+      ],
+      "answer": "4 sferturi",
+      "explanation": "Pentru „baschet”, răspunsul corect este „4 sferturi”."
+    },
+    {
+      "id": "sports-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Câți jucători are pe teren o echipă în handbal?",
+      "options": [
+        "9",
+        "10",
+        "4",
+        "7"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „handbal”, răspunsul corect este „7”."
+    },
+    {
+      "id": "sports-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este durata sau ținta standard indicată pentru handbal?",
+      "options": [
+        "9 reprize",
+        "7 reprize",
+        "60 de minute",
+        "3 reprize"
+      ],
+      "answer": "60 de minute",
+      "explanation": "Pentru „handbal”, răspunsul corect este „60 de minute”."
+    },
+    {
+      "id": "sports-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Câți jucători are pe teren o echipă în volei de sală?",
+      "options": [
+        "3",
+        "6",
+        "4",
+        "1"
+      ],
+      "answer": "6",
+      "explanation": "Pentru „volei de sală”, răspunsul corect este „6”."
+    },
+    {
+      "id": "sports-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este durata sau ținta standard indicată pentru volei de sală?",
+      "options": [
+        "3 seturi câștigate",
+        "7 reprize",
+        "maximum 5 zile",
+        "40 de minute"
+      ],
+      "answer": "3 seturi câștigate",
+      "explanation": "Pentru „volei de sală”, răspunsul corect este „3 seturi câștigate”."
+    },
+    {
+      "id": "sports-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Câți jucători are pe teren o echipă în volei pe plajă?",
+      "options": [
+        "3",
+        "11",
+        "5",
+        "2"
+      ],
+      "answer": "2",
+      "explanation": "Pentru „volei pe plajă”, răspunsul corect este „2”."
+    },
+    {
+      "id": "sports-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este durata sau ținta standard indicată pentru volei pe plajă?",
+      "options": [
+        "10 end-uri",
+        "2 game-uri câștigate",
+        "2 seturi câștigate",
+        "40 de minute"
+      ],
+      "answer": "2 seturi câștigate",
+      "explanation": "Pentru „volei pe plajă”, răspunsul corect este „2 seturi câștigate”."
+    },
+    {
+      "id": "sports-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă în rugby union?",
+      "options": [
+        "6",
+        "15",
+        "5",
+        "7"
+      ],
+      "answer": "15",
+      "explanation": "Pentru „rugby union”, răspunsul corect este „15”."
+    },
+    {
+      "id": "sports-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este durata sau ținta standard indicată pentru rugby union?",
+      "options": [
+        "80 de minute",
+        "2 game-uri câștigate",
+        "3 sau 4 seturi câștigate",
+        "400 de metri total"
+      ],
+      "answer": "80 de minute",
+      "explanation": "Pentru „rugby union”, răspunsul corect este „80 de minute”."
+    },
+    {
+      "id": "sports-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Câți jucători are pe teren o echipă în rugby sevens?",
+      "options": [
+        "2",
+        "15",
+        "9",
+        "7"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „rugby sevens”, răspunsul corect este „7”."
+    },
+    {
+      "id": "sports-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este durata sau ținta standard indicată pentru rugby sevens?",
+      "options": [
+        "4 manșe olimpice",
+        "10 minute",
+        "14 minute",
+        "400 de metri total"
+      ],
+      "answer": "14 minute",
+      "explanation": "Pentru „rugby sevens”, răspunsul corect este „14 minute”."
+    },
+    {
+      "id": "sports-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Câți jucători are pe teren o echipă în hochei pe gheață?",
+      "options": [
+        "4",
+        "6",
+        "9",
+        "10"
+      ],
+      "answer": "6",
+      "explanation": "Pentru „hochei pe gheață”, răspunsul corect este „6”."
+    },
+    {
+      "id": "sports-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este durata sau ținta standard indicată pentru hochei pe gheață?",
+      "options": [
+        "3 reprize",
+        "10 minute",
+        "90 de minute",
+        "4 sferturi"
+      ],
+      "answer": "3 reprize",
+      "explanation": "Pentru „hochei pe gheață”, răspunsul corect este „3 reprize”."
+    },
+    {
+      "id": "sports-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Câți jucători are pe teren o echipă în baseball?",
+      "options": [
+        "4",
+        "1",
+        "3",
+        "9"
+      ],
+      "answer": "9",
+      "explanation": "Pentru „baseball”, răspunsul corect este „9”."
+    },
+    {
+      "id": "sports-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este durata sau ținta standard indicată pentru baseball?",
+      "options": [
+        "60 de minute",
+        "3 seturi câștigate",
+        "9 reprize",
+        "4 sferturi"
+      ],
+      "answer": "9 reprize",
+      "explanation": "Pentru „baseball”, răspunsul corect este „9 reprize”."
+    },
+    {
+      "id": "sports-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Câți jucători are pe teren o echipă în softball?",
+      "options": [
+        "5",
+        "9",
+        "3",
+        "11"
+      ],
+      "answer": "9",
+      "explanation": "Pentru „softball”, răspunsul corect este „9”."
+    },
+    {
+      "id": "sports-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este durata sau ținta standard indicată pentru softball?",
+      "options": [
+        "7 reprize",
+        "3 seturi câștigate",
+        "2 seturi câștigate",
+        "80 de minute"
+      ],
+      "answer": "7 reprize",
+      "explanation": "Pentru „softball”, răspunsul corect este „7 reprize”."
+    },
+    {
+      "id": "sports-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă în cricket Test?",
+      "options": [
+        "7",
+        "6",
+        "2",
+        "11"
+      ],
+      "answer": "11",
+      "explanation": "Pentru „cricket Test”, răspunsul corect este „11”."
+    },
+    {
+      "id": "sports-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este durata sau ținta standard indicată pentru cricket Test?",
+      "options": [
+        "14 minute",
+        "3 reprize",
+        "maximum 5 zile",
+        "80 de minute"
+      ],
+      "answer": "maximum 5 zile",
+      "explanation": "Pentru „cricket Test”, răspunsul corect este „maximum 5 zile”."
+    },
+    {
+      "id": "sports-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Câți jucători are pe teren o echipă în polo pe apă?",
+      "options": [
+        "9",
+        "7",
+        "2",
+        "15"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „polo pe apă”, răspunsul corect este „7”."
+    },
+    {
+      "id": "sports-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este durata sau ținta standard indicată pentru polo pe apă?",
+      "options": [
+        "4 sferturi",
+        "9 reprize",
+        "7 reprize",
+        "maximum 5 zile"
+      ],
+      "answer": "4 sferturi",
+      "explanation": "Pentru „polo pe apă”, răspunsul corect este „4 sferturi”."
+    },
+    {
+      "id": "sports-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Câți jucători are pe teren o echipă în futsal?",
+      "options": [
+        "9",
+        "10",
+        "4",
+        "5"
+      ],
+      "answer": "5",
+      "explanation": "Pentru „futsal”, răspunsul corect este „5”."
+    },
+    {
+      "id": "sports-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este durata sau ținta standard indicată pentru futsal?",
+      "options": [
+        "maximum 5 zile",
+        "10 end-uri",
+        "40 de minute",
+        "7 reprize"
+      ],
+      "answer": "40 de minute",
+      "explanation": "Pentru „futsal”, răspunsul corect este „40 de minute”."
+    },
+    {
+      "id": "sports-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Câți jucători are pe teren o echipă în lacrosse pe teren?",
+      "options": [
+        "3",
+        "10",
+        "4",
+        "1"
+      ],
+      "answer": "10",
+      "explanation": "Pentru „lacrosse pe teren”, răspunsul corect este „10”."
+    },
+    {
+      "id": "sports-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este durata sau ținta standard indicată pentru lacrosse pe teren?",
+      "options": [
+        "4 sferturi",
+        "10 end-uri",
+        "2 game-uri câștigate",
+        "3 sau 4 seturi câștigate"
+      ],
+      "answer": "4 sferturi",
+      "explanation": "Pentru „lacrosse pe teren”, răspunsul corect este „4 sferturi”."
+    },
+    {
+      "id": "sports-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Câți jucători are pe teren o echipă în curling?",
+      "options": [
+        "3",
+        "11",
+        "5",
+        "4"
+      ],
+      "answer": "4",
+      "explanation": "Pentru „curling”, răspunsul corect este „4”."
+    },
+    {
+      "id": "sports-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este durata sau ținta standard indicată pentru curling?",
+      "options": [
+        "400 de metri total",
+        "4 manșe olimpice",
+        "10 end-uri",
+        "3 sau 4 seturi câștigate"
+      ],
+      "answer": "10 end-uri",
+      "explanation": "Pentru „curling”, răspunsul corect este „10 end-uri”."
+    },
+    {
+      "id": "sports-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă în tenis de simplu?",
+      "options": [
+        "6",
+        "1",
+        "5",
+        "7"
+      ],
+      "answer": "1",
+      "explanation": "Pentru „tenis de simplu”, răspunsul corect este „1”."
+    },
+    {
+      "id": "sports-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este durata sau ținta standard indicată pentru tenis de simplu?",
+      "options": [
+        "2 seturi câștigate",
+        "4 manșe olimpice",
+        "10 minute",
+        "90 de minute"
+      ],
+      "answer": "2 seturi câștigate",
+      "explanation": "Pentru „tenis de simplu”, răspunsul corect este „2 seturi câștigate”."
+    },
+    {
+      "id": "sports-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Câți jucători are pe teren o echipă în tenis de dublu?",
+      "options": [
+        "6",
+        "15",
+        "9",
+        "2"
+      ],
+      "answer": "2",
+      "explanation": "Pentru „tenis de dublu”, răspunsul corect este „2”."
+    },
+    {
+      "id": "sports-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este durata sau ținta standard indicată pentru tenis de dublu?",
+      "options": [
+        "4 sferturi",
+        "60 de minute",
+        "2 seturi câștigate",
+        "90 de minute"
+      ],
+      "answer": "2 seturi câștigate",
+      "explanation": "Pentru „tenis de dublu”, răspunsul corect este „2 seturi câștigate”."
+    },
+    {
+      "id": "sports-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Câți jucători are pe teren o echipă în badminton de simplu?",
+      "options": [
+        "10",
+        "1",
+        "15",
+        "9"
+      ],
+      "answer": "1",
+      "explanation": "Pentru „badminton de simplu”, răspunsul corect este „1”."
+    },
+    {
+      "id": "sports-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este durata sau ținta standard indicată pentru badminton de simplu?",
+      "options": [
+        "2 game-uri câștigate",
+        "60 de minute",
+        "3 seturi câștigate",
+        "2 seturi câștigate"
+      ],
+      "answer": "2 game-uri câștigate",
+      "explanation": "Pentru „badminton de simplu”, răspunsul corect este „2 game-uri câștigate”."
+    },
+    {
+      "id": "sports-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Câți jucători are pe teren o echipă în tenis de masă de simplu?",
+      "options": [
+        "10",
+        "4",
+        "3",
+        "1"
+      ],
+      "answer": "1",
+      "explanation": "Pentru „tenis de masă de simplu”, răspunsul corect este „1”."
+    },
+    {
+      "id": "sports-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este durata sau ținta standard indicată pentru tenis de masă de simplu?",
+      "options": [
+        "80 de minute",
+        "14 minute",
+        "3 sau 4 seturi câștigate",
+        "2 seturi câștigate"
+      ],
+      "answer": "3 sau 4 seturi câștigate",
+      "explanation": "Pentru „tenis de masă de simplu”, răspunsul corect este „3 sau 4 seturi câștigate”."
+    },
+    {
+      "id": "sports-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Câți jucători are pe teren o echipă în ștafeta 4×100 m?",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "11"
+      ],
+      "answer": "4",
+      "explanation": "Pentru „ștafeta 4×100 m”, răspunsul corect este „4”."
+    },
+    {
+      "id": "sports-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este durata sau ținta standard indicată pentru ștafeta 4×100 m?",
+      "options": [
+        "400 de metri total",
+        "14 minute",
+        "3 reprize",
+        "9 reprize"
+      ],
+      "answer": "400 de metri total",
+      "explanation": "Pentru „ștafeta 4×100 m”, răspunsul corect este „400 de metri total”."
+    },
+    {
+      "id": "sports-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Câți jucători are pe teren o echipă în bobsleigh de patru persoane?",
+      "options": [
+        "5",
+        "7",
+        "6",
+        "4"
+      ],
+      "answer": "4",
+      "explanation": "Pentru „bobsleigh de patru persoane”, răspunsul corect este „4”."
+    },
+    {
+      "id": "sports-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este durata sau ținta standard indicată pentru bobsleigh de patru persoane?",
+      "options": [
+        "7 reprize",
+        "maximum 5 zile",
+        "4 manșe olimpice",
+        "9 reprize"
+      ],
+      "answer": "4 manșe olimpice",
+      "explanation": "Pentru „bobsleigh de patru persoane”, răspunsul corect este „4 manșe olimpice”."
+    },
+    {
+      "id": "sports-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Câți jucători are pe teren o echipă în baschet 3x3?",
+      "options": [
+        "15",
+        "3",
+        "6",
+        "2"
+      ],
+      "answer": "3",
+      "explanation": "Pentru „baschet 3x3”, răspunsul corect este „3”."
+    },
+    {
+      "id": "sports-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este durata sau ținta standard indicată pentru baschet 3x3?",
+      "options": [
+        "10 minute",
+        "maximum 5 zile",
+        "40 de minute",
+        "10 end-uri"
+      ],
+      "answer": "10 minute",
+      "explanation": "Pentru „baschet 3x3”, răspunsul corect este „10 minute”."
+    },
+    {
+      "id": "sports-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Câți jucători are pe teren o echipă în kabaddi?",
+      "options": [
+        "9",
+        "10",
+        "4",
+        "7"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „kabaddi”, răspunsul corect este „7”."
+    },
+    {
+      "id": "sports-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este durata sau ținta standard indicată pentru kabaddi?",
+      "options": [
+        "3 sau 4 seturi câștigate",
+        "400 de metri total",
+        "40 de minute",
+        "2 game-uri câștigate"
+      ],
+      "answer": "40 de minute",
+      "explanation": "Pentru „kabaddi”, răspunsul corect este „40 de minute”."
+    },
+    {
+      "id": "sports-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Câți jucători are pe teren o echipă în netball?",
+      "options": [
+        "3",
+        "7",
+        "4",
+        "1"
+      ],
+      "answer": "7",
+      "explanation": "Pentru „netball”, răspunsul corect este „7”."
+    },
+    {
+      "id": "sports-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este durata sau ținta standard indicată pentru netball?",
+      "options": [
+        "60 de minute",
+        "400 de metri total",
+        "4 manșe olimpice",
+        "10 minute"
+      ],
+      "answer": "60 de minute",
+      "explanation": "Pentru „netball”, răspunsul corect este „60 de minute”."
+    },
+    {
+      "id": "sports-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Câți jucători are pe teren o echipă în hochei pe iarbă?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "11"
+      ],
+      "answer": "11",
+      "explanation": "Pentru „hochei pe iarbă”, răspunsul corect este „11”."
+    },
+    {
+      "id": "sports-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este durata sau ținta standard indicată pentru hochei pe iarbă?",
+      "options": [
+        "90 de minute",
+        "4 sferturi",
+        "60 de minute",
+        "10 minute"
+      ],
+      "answer": "60 de minute",
+      "explanation": "Pentru „hochei pe iarbă”, răspunsul corect este „60 de minute”."
+    }
+  ]
+}

@@ -31,9 +31,17 @@ export class ApiClientService {
     this.internalApiKey = config.getOrThrow<string>('INTERNAL_API_KEY');
   }
 
-  async getRandomQuestion(): Promise<InternalQuestion> {
+  /// `categoryCodes` gol înseamnă „toate categoriile” — exact ca bifa „Toate”
+  /// din aplicație.
+  async getRandomQuestion(
+    categoryCodes: readonly string[] = [],
+  ): Promise<InternalQuestion> {
+    const filter =
+      categoryCodes.length > 0
+        ? `&categoryCodes=${encodeURIComponent(categoryCodes.join(','))}`
+        : '';
     const response = await fetch(
-      `${this.baseUrl}/questions/internal/random?language=ro&limit=1`,
+      `${this.baseUrl}/questions/internal/random?language=ro&limit=1${filter}`,
       {
         headers: { 'x-internal-api-key': this.internalApiKey },
         signal: AbortSignal.timeout(5_000),

@@ -28,6 +28,18 @@ class ApiClient {
     return _send('POST', path, body: body, authenticated: authenticated);
   }
 
+  Future<Object?> patch(
+    String path, {
+    Object? body,
+    bool authenticated = false,
+  }) {
+    return _send('PATCH', path, body: body, authenticated: authenticated);
+  }
+
+  Future<Object?> delete(String path, {bool authenticated = false}) {
+    return _send('DELETE', path, authenticated: authenticated);
+  }
+
   Future<Object?> _send(
     String method,
     String path, {

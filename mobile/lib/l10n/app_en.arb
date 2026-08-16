@@ -2,7 +2,6 @@
   "@@locale": "en",
   "appTitle": "QuizRealm",
   "appTagline": "Know. Conquer. Reign.",
-
   "menuStartCampaign": "Start the campaign",
   "menuContinueCampaign": "Continue the campaign",
   "menuAccount": "Player account",
@@ -14,51 +13,83 @@
   "howToPlayRuleStars": "A flawless assault earns 3 stars. Stars unlock new realms.",
   "howToPlayRuleOffline": "The campaign runs offline, from the verified packs shipped with the game.",
   "close": "Got it",
-
   "worldMapEyebrow": "MAP OF THE REALM",
   "worldMapTitle": "Choose your realm",
   "worldMapHint": "Tap an unlocked realm to open its assaults.",
   "levelBadge": "Level {level}",
-  "@levelBadge": {"placeholders": {"level": {"type": "int"}}},
+  "@levelBadge": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "xpProgress": "{current} / {total} XP",
   "@xpProgress": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "starsCollected": "{earned} of {total} stars",
   "@starsCollected": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "starsShort": "{earned}/{total}",
   "@starsShort": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "chapterLockedHint": "Unlocks at {stars} stars",
-  "@chapterLockedHint": {"placeholders": {"stars": {"type": "int"}}},
+  "@chapterLockedHint": {
+    "placeholders": {
+      "stars": {
+        "type": "int"
+      }
+    }
+  },
   "chapterLockedSemantics": "{chapter}, locked, needs {stars} stars",
   "@chapterLockedSemantics": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "stars": {"type": "int"}
+      "chapter": {
+        "type": "String"
+      },
+      "stars": {
+        "type": "int"
+      }
     }
   },
   "chapterOpenSemantics": "{chapter}, {earned} of {total} stars",
   "@chapterOpenSemantics": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "chapter": {
+        "type": "String"
+      },
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
-
   "chapterIstorie": "Keep of Chronicles",
   "chapterRomania": "Carpathian Throne",
   "chapterGeografie": "Port of Seven Seas",
@@ -68,7 +99,6 @@
   "chapterLiteratura": "Hermitage of Manuscripts",
   "chapterArte": "Bay of Masks",
   "chapterMituri": "Isle of Wraiths",
-
   "subjectIstorie": "History",
   "subjectRomania": "Romania",
   "subjectGeografie": "Geography",
@@ -78,28 +108,40 @@
   "subjectLiteratura": "Literature",
   "subjectArte": "Film and music",
   "subjectMituri": "Myths and legends",
-
   "stageOutpost": "The Outpost",
   "stageCitadel": "The Citadel",
   "stageThrone": "The Throne Hall",
   "stageNumber": "Assault {index}",
-  "@stageNumber": {"placeholders": {"index": {"type": "int"}}},
+  "@stageNumber": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
   "stageSummary": "{questions} questions • {seconds} seconds each",
   "@stageSummary": {
     "placeholders": {
-      "questions": {"type": "int"},
-      "seconds": {"type": "int"}
+      "questions": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
     }
   },
   "stageLockedHint": "Earn a star in the previous assault",
   "chooseStage": "Choose the assault",
   "startStage": "Begin the assault",
-
   "battleHeader": "{chapter} • {stage}",
   "@battleHeader": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "stage": {"type": "String"}
+      "chapter": {
+        "type": "String"
+      },
+      "stage": {
+        "type": "String"
+      }
     }
   },
   "hudScore": "SCORE",
@@ -108,38 +150,76 @@
   "roundCounter": "{current}/{total}",
   "@roundCounter": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "streakMultiplier": "×{multiplier}",
-  "@streakMultiplier": {"placeholders": {"multiplier": {"type": "String"}}},
+  "@streakMultiplier": {
+    "placeholders": {
+      "multiplier": {
+        "type": "String"
+      }
+    }
+  },
   "timerSemantics": "{seconds} seconds left",
-  "@timerSemantics": {"placeholders": {"seconds": {"type": "int"}}},
+  "@timerSemantics": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "questionLoading": "Preparing the assault…",
   "questionErrorTitle": "The assault could not start",
   "noQuestionsTitle": "This realm has no questions",
   "noQuestionsBody": "The realm's pack could not be read. We never fight with unverified questions.",
   "retry": "Try again",
   "difficulty": "Difficulty {level}/5",
-  "@difficulty": {"placeholders": {"level": {"type": "int"}}},
+  "@difficulty": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "categoryFallback": "Realm archives",
   "numericHint": "Type your estimate",
   "submitAnswer": "Confirm answer",
   "answerOptionSemantics": "Option {letter}: {answer}",
   "@answerOptionSemantics": {
     "placeholders": {
-      "letter": {"type": "String"},
-      "answer": {"type": "String"}
+      "letter": {
+        "type": "String"
+      },
+      "answer": {
+        "type": "String"
+      }
     }
   },
   "correctTitle": "Direct hit!",
   "incorrectTitle": "Attack repelled",
   "timeoutTitle": "Time is up",
   "correctAnswerLabel": "Correct answer: {answer}",
-  "@correctAnswerLabel": {"placeholders": {"answer": {"type": "String"}}},
+  "@correctAnswerLabel": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
   "pointsAwarded": "+{points}",
-  "@pointsAwarded": {"placeholders": {"points": {"type": "int"}}},
+  "@pointsAwarded": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "nextQuestion": "Next question",
   "finishRound": "See the result",
   "answerSubmitError": "The verdict could not be obtained. Your attack is kept.",
@@ -148,11 +228,16 @@
   "leaveBattleBody": "This assault's progress is lost and the realm stays unconquered.",
   "leaveBattleConfirm": "Abandon",
   "leaveBattleCancel": "Keep fighting",
-
   "resultVictoryTitle": "Realm conquered",
   "resultDefeatTitle": "Assault repelled",
   "resultVictoryBody": "Your banner flies over {chapter}.",
-  "@resultVictoryBody": {"placeholders": {"chapter": {"type": "String"}}},
+  "@resultVictoryBody": {
+    "placeholders": {
+      "chapter": {
+        "type": "String"
+      }
+    }
+  },
   "resultDefeatBody": "The walls held. Return when you are ready.",
   "resultScoreLabel": "SCORE",
   "resultAnswersLabel": "CORRECT",
@@ -160,14 +245,30 @@
   "resultAnswers": "{correct}/{total}",
   "@resultAnswers": {
     "placeholders": {
-      "correct": {"type": "int"},
-      "total": {"type": "int"}
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "resultXpGained": "+{xp} XP",
-  "@resultXpGained": {"placeholders": {"xp": {"type": "int"}}},
+  "@resultXpGained": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
   "resultLevelUp": "New level: {level}!",
-  "@resultLevelUp": {"placeholders": {"level": {"type": "int"}}},
+  "@resultLevelUp": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "resultChapterCleared": "You have conquered the whole realm!",
   "actionRetryStage": "Retry the assault",
   "actionNextStage": "Next assault",
@@ -175,31 +276,50 @@
   "starsSemantics": "{earned} of {total} stars",
   "@starsSemantics": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
-
   "menuDuel": "Online duel",
   "menuLeaderboard": "Leaderboard",
   "leaderboardTitle": "Realm leaderboard",
   "leaderboardPlayerCount": "{total} ranked players",
-  "@leaderboardPlayerCount": {"placeholders": {"total": {"type": "int"}}},
+  "@leaderboardPlayerCount": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "leaderboardEmpty": "Nobody is ranked yet. Play a duel to open the leaderboard.",
   "leaderboardYourPlace": "YOUR PLACE",
   "leaderboardPositionLine": "Place {position} • {matches} matches",
   "@leaderboardPositionLine": {
     "placeholders": {
-      "position": {"type": "int"},
-      "matches": {"type": "int"}
+      "position": {
+        "type": "int"
+      },
+      "matches": {
+        "type": "int"
+      }
     }
   },
   "leaderboardRowSemantics": "Place {position}, {username}, {rank}",
   "@leaderboardRowSemantics": {
     "placeholders": {
-      "position": {"type": "int"},
-      "username": {"type": "String"},
-      "rank": {"type": "String"}
+      "position": {
+        "type": "int"
+      },
+      "username": {
+        "type": "String"
+      },
+      "rank": {
+        "type": "String"
+      }
     }
   },
   "leaderboardErrorTitle": "The leaderboard could not be read",
@@ -207,15 +327,31 @@
   "rankSemantics": "Rank {rank}, {elo} points",
   "@rankSemantics": {
     "placeholders": {
-      "rank": {"type": "String"},
-      "elo": {"type": "int"}
+      "rank": {
+        "type": "String"
+      },
+      "elo": {
+        "type": "int"
+      }
     }
   },
   "rankToNext": "{points} more points to the next tier",
-  "@rankToNext": {"placeholders": {"points": {"type": "int"}}},
+  "@rankToNext": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "rankTopReached": "You have reached the realm's highest tier",
   "duelRankUpdated": "Rank: {rank}",
-  "@duelRankUpdated": {"placeholders": {"rank": {"type": "String"}}},
+  "@duelRankUpdated": {
+    "placeholders": {
+      "rank": {
+        "type": "String"
+      }
+    }
+  },
   "duelTitle": "1v1 duel",
   "duelConnecting": "Connecting to the realm…",
   "duelSearching": "Looking for an opponent",
@@ -227,8 +363,12 @@
   "duelRoundCounter": "Round {current} of {total}",
   "@duelRoundCounter": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "duelYou": "YOU",
@@ -246,8 +386,12 @@
   "duelFinalLine": "{score} points • {territories} territories",
   "@duelFinalLine": {
     "placeholders": {
-      "score": {"type": "int"},
-      "territories": {"type": "int"}
+      "score": {
+        "type": "int"
+      },
+      "territories": {
+        "type": "int"
+      }
     }
   },
   "duelRematch": "Find another duel",
@@ -269,12 +413,30 @@
   "duelOpponentAwayBody": "{seconds, plural, =1{One second left to come back.} other{{seconds} seconds left to come back.}}",
   "@duelOpponentAwayBody": {
     "placeholders": {
-      "seconds": {"type": "int"}
+      "seconds": {
+        "type": "int"
+      }
     }
   },
   "duelOpponentAwayExpired": "The return window expired. The match is closing.",
   "duelWonByForfeit": "The opponent never came back to the match.",
-
+  "matchChatOpen": "Open battle chat",
+  "matchChatTitle": "Battle chronicle",
+  "matchChatEphemeral": "Messages from this match vanish after the battle.",
+  "matchChatEmpty": "The scroll is empty. Send your opponent a reaction.",
+  "matchChatReactions": "QUICK REACTIONS",
+  "matchReactionGoodLuck": "Good luck!",
+  "matchReactionNiceMove": "Nice move!",
+  "matchReactionWow": "Wow!",
+  "matchReactionWellPlayed": "Well played!",
+  "matchChatHint": "Write a battle message…",
+  "matchChatSend": "Send message",
+  "matchChatTextLocked": "Free text unlocks after 10 correct answers. Reactions remain available.",
+  "matchChatMuted": "Your chat is temporarily restricted.",
+  "matchChatTooFast": "Too many messages. Wait a few seconds.",
+  "matchChatLinksLocked": "Links unlock at a higher trust tier.",
+  "matchChatClosed": "This match chat has closed.",
+  "matchChatInvalid": "The message could not be sent.",
   "loginEyebrow": "PLAYER ACCOUNT",
   "loginTitle": "Keep your conquests on every device.",
   "accountOptionalNote": "The account is optional — the campaign plays without it.",
@@ -294,9 +456,323 @@
   "birthDateTooYoung": "You must be at least {years} to create an account.",
   "@birthDateTooYoung": {
     "placeholders": {
-      "years": {"type": "int"}
+      "years": {
+        "type": "int"
+      }
     }
   },
   "logout": "Sign out",
-  "backLabel": "Back"
+  "backLabel": "Back",
+  "socialTitle": "Friends and messages",
+  "socialTabFriends": "Friends",
+  "socialTabMessages": "Messages",
+  "socialNeedAccountTitle": "Social features need an account",
+  "socialNeedAccountBody": "Sign in to have friends, conversations and chat.",
+  "socialErrorTitle": "We couldn't load the social section",
+  "friendsAddHint": "Username",
+  "friendsAddAction": "Send request",
+  "friendsIncomingRequests": "Incoming requests",
+  "friendsOutgoingRequests": "Sent requests",
+  "friendsRequestSent": "Pending",
+  "friendsListTitle": "Your friends",
+  "friendsEmpty": "No friends yet. Search for someone by username.",
+  "friendsAccept": "Accept",
+  "friendsDecline": "Decline",
+  "friendsOpenChat": "Open conversation",
+  "friendsBlock": "Block",
+  "friendsBlockTitle": "Block this player?",
+  "friendsBlockBody": "{name} won't be able to message you, and the friendship ends.",
+  "@friendsBlockBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "conversationsTitle": "Conversations",
+  "conversationsEmpty": "No conversations yet.",
+  "conversationEmpty": "Write the first message.",
+  "messageRequestsTitle": "Message requests",
+  "messageRequestsExplainer": "Someone who isn't your friend wants to message you. Accept only if you want to continue.",
+  "messageRequestAccept": "Accept request",
+  "chatComposerHint": "Write a message…",
+  "chatSend": "Send",
+  "chatMutedNotice": "Your chat is temporarily paused because of repeated messages.",
+  "chatReportTitle": "Report message",
+  "chatReportHint": "What's wrong?",
+  "chatReportSend": "Send report",
+  "chatReportSent": "Report sent.",
+  "privacyTitle": "Privacy",
+  "privacyDmTitle": "Who can message you directly",
+  "privacyDmLocked": "Minor accounts receive direct messages from friends only.",
+  "privacyDmEveryone": "Anyone",
+  "privacyDmFriends": "Friends only",
+  "privacyDmNobody": "Nobody",
+  "trustCorrectAnswers": "{count} correct",
+  "@trustCorrectAnswers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trustAnswersToNextTier": "{count} more correct answers to the next tier.",
+  "@trustAnswersToNextTier": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trustMaxTier": "You've reached the highest trust tier.",
+  "trustTierNewcomer": "Newcomer",
+  "trustTierApprentice": "Apprentice",
+  "trustTierContributor": "Contributor",
+  "trustTierEstablished": "Established",
+  "trustTierExperienced": "Experienced",
+  "trustTierExpert": "Expert",
+  "trustTierCommunityMaster": "Community master",
+  "trustTierElite": "Elite",
+  "trustTierCommunityLegend": "Community legend",
+  "homeGuestTitle": "Playing without an account",
+  "homeGuestAction": "Create account",
+  "homeLoadingProfile": "Loading profile…",
+  "homeCoins": "{count} coins",
+  "@homeCoins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeContinueEyebrow": "Continue the conquest",
+  "homeStartEyebrow": "First realm",
+  "homeRealmsTitle": "Realms of the kingdom",
+  "homeRealmsAction": "View map",
+  "homeRankPosition": "Rank {position}",
+  "@homeRankPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  },
+  "homeMatchesPlayed": "{count} online matches",
+  "@homeMatchesPlayed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeDuelLocked": "Needs verified email",
+  "navHome": "Home",
+  "@navHome": {
+    "description": "Tablou de bord acasa"
+  },
+  "navCampaign": "Campaign",
+  "@navCampaign": {
+    "description": "Tablou de bord acasa"
+  },
+  "navChat": "Chat",
+  "@navChat": {
+    "description": "Tablou de bord acasa"
+  },
+  "navRanking": "Ranking",
+  "@navRanking": {
+    "description": "Tablou de bord acasa"
+  },
+  "navMultiplayer": "Multiplayer",
+  "@navMultiplayer": {
+    "description": "Tablou de bord acasa"
+  },
+  "navProfile": "Profile",
+  "@navProfile": {
+    "description": "Tablou de bord acasa"
+  },
+  "navSettings": "Settings",
+  "@navSettings": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeMenu": "Menu",
+  "@homeMenu": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeCrystals": "{count} crystals",
+  "@homeCrystals": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "homeModeCampaign": "Campaign",
+  "@homeModeCampaign": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeCampaignDesc": "Advance and conquer new territories.",
+  "@homeModeCampaignDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeMultiplayer": "Multiplayer",
+  "@homeModeMultiplayer": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeMultiplayerDesc": "Challenge players from all over the world.",
+  "@homeModeMultiplayerDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeChat": "Chat",
+  "@homeModeChat": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeChatDesc": "Talk with your allies and friends.",
+  "@homeModeChatDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeRanking": "Ranking",
+  "@homeModeRanking": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeRankingDesc": "See the finest strategists of the realm.",
+  "@homeModeRankingDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeRecentProgress": "Recent progress",
+  "@homeRecentProgress": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeContinue": "Continue",
+  "@homeContinue": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomTitle": "Your kingdom",
+  "@homeKingdomTitle": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomTerritories": "Territories",
+  "@homeKingdomTerritories": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomStars": "Stars",
+  "@homeKingdomStars": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomMatches": "Online matches",
+  "@homeKingdomMatches": {
+    "description": "Tablou de bord acasa"
+  },
+  "homePlayerTitleDefault": "Question Conqueror",
+  "@homePlayerTitleDefault": {
+    "description": "Tablou de bord acasa"
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccount": "Account",
+  "@settingsAccount": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccountId": "Account ID",
+  "@settingsAccountId": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccountIdCopied": "Account ID copied.",
+  "@settingsAccountIdCopied": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConnectedEmail": "Signed in with email",
+  "@settingsConnectedEmail": {
+    "description": "Ecranul de setari"
+  },
+  "settingsChangePassword": "Change password",
+  "@settingsChangePassword": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGuestTitle": "You are not signed in",
+  "@settingsGuestTitle": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGuestBody": "Settings are kept on this device even without an account.",
+  "@settingsGuestBody": {
+    "description": "Ecranul de setari"
+  },
+  "settingsSound": "Sound",
+  "@settingsSound": {
+    "description": "Ecranul de setari"
+  },
+  "settingsMusic": "Music",
+  "@settingsMusic": {
+    "description": "Ecranul de setari"
+  },
+  "settingsEffects": "Effects",
+  "@settingsEffects": {
+    "description": "Ecranul de setari"
+  },
+  "settingsVibration": "Vibration",
+  "@settingsVibration": {
+    "description": "Ecranul de setari"
+  },
+  "settingsNotifications": "Notifications",
+  "@settingsNotifications": {
+    "description": "Ecranul de setari"
+  },
+  "settingsPush": "Push notifications",
+  "@settingsPush": {
+    "description": "Ecranul de setari"
+  },
+  "settingsPushDesc": "Get notified about rewards and events.",
+  "@settingsPushDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGameplay": "Gameplay",
+  "@settingsGameplay": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConfirmActions": "Action confirmations",
+  "@settingsConfirmActions": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConfirmActionsDesc": "Ask for confirmation on important actions.",
+  "@settingsConfirmActionsDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsTutorials": "Tutorials",
+  "@settingsTutorials": {
+    "description": "Ecranul de setari"
+  },
+  "settingsTutorialsDesc": "Show in-game tips and tutorials.",
+  "@settingsTutorialsDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsDataSaver": "Data saver",
+  "@settingsDataSaver": {
+    "description": "Ecranul de setari"
+  },
+  "settingsDataSaverDesc": "Reduce data and battery usage.",
+  "@settingsDataSaverDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsLanguageSection": "Language and appearance",
+  "@settingsLanguageSection": {
+    "description": "Ecranul de setari"
+  },
+  "settingsLanguage": "Language",
+  "@settingsLanguage": {
+    "description": "Ecranul de setari"
+  },
+  "settingsVersion": "Version {version}",
+  "@settingsVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsOpenAccount": "Open account",
+  "@settingsOpenAccount": {
+    "description": "Ecranul de setari"
+  }
 }

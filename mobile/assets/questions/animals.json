@@ -1,0 +1,4158 @@
+{
+  "id": "animals",
+  "name": "Animals",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "animals-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un marsupial?",
+      "options": [
+        "Koala",
+        "Lemur",
+        "Suricată",
+        "Pangolin"
+      ],
+      "answer": "Koala",
+      "explanation": "Koala este un marsupial australian; puiul își continuă dezvoltarea în marsupiul mamei."
+    },
+    {
+      "id": "animals-002",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mamifer marin folosește ecolocația pentru a se orienta și a vâna?",
+      "options": [
+        "Delfinul",
+        "Lamantinul",
+        "Foca leopard",
+        "Morsa"
+      ],
+      "answer": "Delfinul",
+      "explanation": "Delfinii produc și interpretează ecouri sonore pentru orientare și detectarea prăzii."
+    },
+    {
+      "id": "animals-003",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste păsări nu poate zbura?",
+      "options": [
+        "Kiwi",
+        "Pescăruș",
+        "Lăstun",
+        "Stârc"
+      ],
+      "answer": "Kiwi",
+      "explanation": "Kiwi este o pasăre neozeelandeză nezburătoare."
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce grup de vertebrate trece frecvent printr-o metamorfoză de la larvă acvatică la adult terestru sau semiacvatic?",
+      "options": [
+        "Amfibienii",
+        "Reptilele",
+        "Păsările",
+        "Mamiferele"
+      ],
+      "answer": "Amfibienii",
+      "explanation": "La numeroși amfibieni, mormolocul sau larva acvatică se transformă prin metamorfoză într-un adult cu anatomie diferită.",
+      "id": "animals-004"
+    },
+    {
+      "id": "animals-005",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care animal este cunoscut pentru schimbarea rapidă a culorii pielii prin cromatofori?",
+      "options": [
+        "Sepia",
+        "Delfinul",
+        "Țestoasa marină",
+        "Pinguinul"
+      ],
+      "answer": "Sepia",
+      "explanation": "Sepiile își pot modifica rapid culoarea și desenul pielii cu ajutorul cromatoforilor."
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste reptile elimină excesul de sare prin glande specializate aflate în apropierea ochilor?",
+      "options": [
+        "Țestoasa marină",
+        "Șarpele de porumb",
+        "Șopârla de zid",
+        "Țestoasa de uscat"
+      ],
+      "answer": "Țestoasa marină",
+      "explanation": "Țestoasele marine au glande de sare lângă ochi care elimină sarea ingerată odată cu apa și hrana.",
+      "id": "animals-006"
+    },
+    {
+      "id": "animals-007",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce structură folosesc păsările pentru a mărunți mecanic hrana, deoarece nu au dinți?",
+      "options": [
+        "Pipota",
+        "Gușa",
+        "Cloaca",
+        "Traheea"
+      ],
+      "answer": "Pipota",
+      "explanation": "Pipota este o parte musculară a stomacului care poate mărunți hrana, adesea cu ajutorul pietricelelor înghițite."
+    },
+    {
+      "id": "animals-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un mamifer care depune ouă?",
+      "options": [
+        "Ornitorincul",
+        "Koala",
+        "Liliacul",
+        "Armadilul"
+      ],
+      "answer": "Ornitorincul",
+      "explanation": "Ornitorincul este un monotrem, adică un mamifer ovipar."
+    },
+    {
+      "id": "animals-009",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un cefalopod?",
+      "options": [
+        "Caracatița",
+        "Meduza",
+        "Steaua de mare",
+        "Crabul"
+      ],
+      "answer": "Caracatița",
+      "explanation": "Caracatițele sunt moluște cefalopode."
+    },
+    {
+      "id": "animals-010",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal are dungi individuale care pot fi folosite pentru identificarea exemplarelor?",
+      "options": [
+        "Tigrul",
+        "Leopardul",
+        "Ghepardul",
+        "Râsul"
+      ],
+      "answer": "Tigrul",
+      "explanation": "Modelul dungilor unui tigru este unic pentru fiecare individ."
+    },
+    {
+      "id": "animals-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste mamifere este adaptat la zbor activ, nu doar la planare?",
+      "options": [
+        "Liliacul",
+        "Veverița zburătoare",
+        "Colugo",
+        "Oposumul"
+      ],
+      "answer": "Liliacul",
+      "explanation": "Liliecii sunt singurele mamifere capabile de zbor activ susținut."
+    },
+    {
+      "id": "animals-012",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal își poartă puii într-un marsupiu și este originar din Australia?",
+      "options": [
+        "Cangurul",
+        "Capibara",
+        "Lama",
+        "Tapirul"
+      ],
+      "answer": "Cangurul",
+      "explanation": "Cangurii sunt marsupiale australiene, iar puii se dezvoltă în marsupiu."
+    },
+    {
+      "id": "animals-013",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este o primată?",
+      "options": [
+        "Lemurul",
+        "Pangolinul",
+        "Furnicarul",
+        "Lenesul"
+      ],
+      "answer": "Lemurul",
+      "explanation": "Lemurii sunt primate endemice în principal Madagascarului."
+    },
+    {
+      "id": "animals-014",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de animal este axolotlul?",
+      "options": [
+        "Salamandră",
+        "Șopârlă",
+        "Pește",
+        "Crustaceu"
+      ],
+      "answer": "Salamandră",
+      "explanation": "Axolotlul este o salamandră neotenică, capabilă să păstreze trăsături larvare la maturitate."
+    },
+    {
+      "id": "animals-015",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este principalul pigment respirator din sângele vertebratelor care transportă oxigenul?",
+      "options": [
+        "Hemoglobina",
+        "Melanina",
+        "Keratină",
+        "Insulina"
+      ],
+      "answer": "Hemoglobina",
+      "explanation": "Hemoglobina din eritrocite leagă și transportă oxigenul."
+    },
+    {
+      "id": "animals-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un erbivor specializat în consumul de bambus?",
+      "options": [
+        "Panda uriaș",
+        "Lupul cenușiu",
+        "Râsul eurasiatic",
+        "Vulpea arctică"
+      ],
+      "answer": "Panda uriaș",
+      "explanation": "Dieta pandaului uriaș este dominată de bambus, deși taxonomic este un carnivor."
+    },
+    {
+      "id": "animals-017",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal folosește o limbă foarte lungă și lipicioasă pentru a captura furnici și termite?",
+      "options": [
+        "Furnicarul uriaș",
+        "Capibara",
+        "Tapirul",
+        "Vidra"
+      ],
+      "answer": "Furnicarul uriaș",
+      "explanation": "Furnicarul uriaș folosește limba alungită și lipicioasă pentru a colecta insecte sociale."
+    },
+    {
+      "id": "animals-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale trăiește în colonii și are o regină reproducătoare?",
+      "options": [
+        "Albina meliferă",
+        "Libelula",
+        "Călugărița",
+        "Fluturele monarh"
+      ],
+      "answer": "Albina meliferă",
+      "explanation": "Coloniile de albine melifere au o regină, lucrătoare și trântori."
+    },
+    {
+      "id": "animals-019",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este cunoscut pentru construirea de baraje din lemn și noroi?",
+      "options": [
+        "Castorul",
+        "Vidra",
+        "Bizamul",
+        "Nutria"
+      ],
+      "answer": "Castorul",
+      "explanation": "Castorii construiesc baraje care modifică nivelul și curgerea apei."
+    },
+    {
+      "id": "animals-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste păsări este renumită pentru migrația anuală între Arctica și Antarctica?",
+      "options": [
+        "Chira arctică",
+        "Pinguinul imperial",
+        "Cazuarul",
+        "Kiwi"
+      ],
+      "answer": "Chira arctică",
+      "explanation": "Chira arctică efectuează una dintre cele mai lungi migrații cunoscute din lumea animală."
+    },
+    {
+      "id": "animals-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal are o trompă formată prin alungirea nasului și a buzei superioare?",
+      "options": [
+        "Elefantul",
+        "Tapirul",
+        "Morsa",
+        "Rinocerul"
+      ],
+      "answer": "Elefantul",
+      "explanation": "Trompa elefantului este o structură musculoasă derivată din nas și buza superioară."
+    },
+    {
+      "id": "animals-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un rozător?",
+      "options": [
+        "Capibara",
+        "Iepurele",
+        "Ariciul",
+        "Pangolinul"
+      ],
+      "answer": "Capibara",
+      "explanation": "Capibara este cel mai mare rozător viu."
+    },
+    {
+      "id": "animals-023",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale aparține familiei felidelor?",
+      "options": [
+        "Ghepardul",
+        "Hiena pătată",
+        "Șacalul",
+        "Mangusta"
+      ],
+      "answer": "Ghepardul",
+      "explanation": "Ghepardul este o felidă; hienele aparțin familiei Hyaenidae."
+    },
+    {
+      "id": "animals-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce organ folosesc peștii osoși pentru a-și regla flotabilitatea?",
+      "options": [
+        "Vezica înotătoare",
+        "Ficatul",
+        "Pancreasul",
+        "Rinichiul"
+      ],
+      "answer": "Vezica înotătoare",
+      "explanation": "La mulți pești osoși, vezica înotătoare ajută la menținerea flotabilității."
+    },
+    {
+      "id": "animals-025",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un mamifer semiacvatic?",
+      "options": [
+        "Vidra",
+        "Iguana",
+        "Pelicanul",
+        "Broasca țestoasă"
+      ],
+      "answer": "Vidra",
+      "explanation": "Vidrele sunt mamifere adaptate la viața în și lângă apă."
+    },
+    {
+      "id": "animals-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pasăre este cunoscută pentru capacitatea de a imita foarte bine sunete, inclusiv vorbirea umană?",
+      "options": [
+        "Papagalul gri african",
+        "Albatrosul",
+        "Emu",
+        "Sturzul de vâsc"
+      ],
+      "answer": "Papagalul gri african",
+      "explanation": "Papagalul gri african are capacități remarcabile de imitație vocală."
+    },
+    {
+      "id": "animals-027",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este o reptilă marină?",
+      "options": [
+        "Țestoasa verde",
+        "Delfinul comun",
+        "Tonul roșu",
+        "Foca cenușie"
+      ],
+      "answer": "Țestoasa verde",
+      "explanation": "Țestoasa verde este o reptilă marină care respiră aer atmosferic."
+    },
+    {
+      "id": "animals-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este cel mai apropiat, taxonomic, de câine?",
+      "options": [
+        "Lupul",
+        "Hiena",
+        "Puma",
+        "Mangusta"
+      ],
+      "answer": "Lupul",
+      "explanation": "Câinele domestic aparține aceleiași specii cu lupul cenușiu în clasificarea modernă, Canis lupus."
+    },
+    {
+      "id": "animals-029",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal are carapacea formată dintr-un exoschelet dur și zece membre locomotoare, inclusiv cleștii?",
+      "options": [
+        "Crabul",
+        "Meduza",
+        "Caracatița",
+        "Steaua de mare"
+      ],
+      "answer": "Crabul",
+      "explanation": "Crabii sunt crustacee decapode, cu zece apendice locomotoare."
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce cefalopod are opt brațe și încă două tentacule specializate pentru capturarea prăzii?",
+      "options": [
+        "Calmarul",
+        "Caracatița",
+        "Nautilul",
+        "Argonautul"
+      ],
+      "answer": "Calmarul",
+      "explanation": "Calmarii au opt brațe mai scurte și două tentacule mai lungi folosite la capturarea prăzii.",
+      "id": "animals-030"
+    },
+    {
+      "id": "animals-031",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte picioare are un păianjen adult?",
+      "answer": "8",
+      "explanation": "Păianjenii sunt arahnide și au patru perechi de picioare, adică opt."
+    },
+    {
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte degete funcționale are, în mod normal, fiecare picior al calului modern?",
+      "answer": "1",
+      "explanation": "Calul modern se sprijină pe un singur deget funcțional la fiecare membru, protejat de copită.",
+      "id": "animals-032"
+    },
+    {
+      "id": "animals-033",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte brațe are o caracatiță?",
+      "answer": "8",
+      "explanation": "Caracatițele au opt brațe prevăzute cu ventuze."
+    },
+    {
+      "id": "animals-034",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte camere are inima unui mamifer?",
+      "answer": "4",
+      "explanation": "Mamiferele au două atrii și două ventricule."
+    },
+    {
+      "id": "animals-035",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte perechi de aripi are în mod obișnuit un fluture adult?",
+      "answer": "2",
+      "explanation": "Fluturii au două perechi de aripi, adică patru aripi."
+    },
+    {
+      "id": "animals-036",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale hibernează sau intră într-o stare profundă de torpoare în sezonul rece, în funcție de specie și climă?",
+      "options": [
+        "Ariciul european",
+        "Girafa",
+        "Zebra",
+        "Hipopotamul"
+      ],
+      "answer": "Ariciul european",
+      "explanation": "Ariciul european poate hiberna luni întregi în regiunile cu ierni reci."
+    },
+    {
+      "id": "animals-037",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este cel mai mare membru viu al familiei felidelor?",
+      "options": [
+        "Tigrul",
+        "Leul",
+        "Jaguarul",
+        "Puma"
+      ],
+      "answer": "Tigrul",
+      "explanation": "Tigrul este cea mai mare specie vie din familia Felidae."
+    },
+    {
+      "id": "animals-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste păsări este un răpitor nocturn?",
+      "options": [
+        "Bufnița",
+        "Barza",
+        "Flamingul",
+        "Prigoria"
+      ],
+      "answer": "Bufnița",
+      "explanation": "Multe specii de bufnițe sunt prădători adaptați activității nocturne."
+    },
+    {
+      "id": "animals-039",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mamifer are un strat gros de grăsime sub piele care îl izolează în apele reci?",
+      "options": [
+        "Balena",
+        "Cămila",
+        "Girafa",
+        "Cangurul"
+      ],
+      "answer": "Balena",
+      "explanation": "Balenele au un strat de grăsime numit blubber, important pentru izolație și rezerve energetice."
+    },
+    {
+      "id": "animals-040",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un carnivor care aparține familiei ursidelor?",
+      "options": [
+        "Ursul polar",
+        "Panda roșu",
+        "Ratonul",
+        "Wolverine"
+      ],
+      "answer": "Ursul polar",
+      "explanation": "Ursul polar este o specie din familia Ursidae."
+    },
+    {
+      "id": "animals-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este cunoscut pentru regenerarea brațelor pierdute?",
+      "options": [
+        "Steaua de mare",
+        "Crabul potcoavă",
+        "Meduza-cutie",
+        "Ariciul de mare"
+      ],
+      "answer": "Steaua de mare",
+      "explanation": "Multe stele de mare își pot regenera brațele, deși capacitatea diferă între specii."
+    },
+    {
+      "id": "animals-042",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un rumegător?",
+      "options": [
+        "Vaca",
+        "Calul",
+        "Porcul",
+        "Iepurele"
+      ],
+      "answer": "Vaca",
+      "explanation": "Vitele sunt rumegătoare și își remestecă hrana după fermentarea inițială."
+    },
+    {
+      "id": "animals-043",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal are pene, dar își folosește aripile în principal pentru înot?",
+      "options": [
+        "Pinguinul",
+        "Struțul",
+        "Kiwi",
+        "Emu"
+      ],
+      "answer": "Pinguinul",
+      "explanation": "Aripile pinguinilor sunt transformate în înotătoare eficiente."
+    },
+    {
+      "id": "animals-044",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un prădător de vârf în multe ecosisteme marine?",
+      "options": [
+        "Orca",
+        "Dugongul",
+        "Krillul",
+        "Sardina"
+      ],
+      "answer": "Orca",
+      "explanation": "Orca este un prădător de vârf și poate vâna pești, păsări și mamifere marine."
+    },
+    {
+      "id": "animals-045",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este cunoscut pentru „dansul” prin care lucrătoarele comunică direcția și distanța până la hrană?",
+      "options": [
+        "Albina meliferă",
+        "Furnica roșie",
+        "Termita",
+        "Viespea"
+      ],
+      "answer": "Albina meliferă",
+      "explanation": "Albinele melifere folosesc dansul legănat pentru a transmite informații despre surse de hrană."
+    },
+    {
+      "id": "animals-046",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un monotrem?",
+      "options": [
+        "Echidna",
+        "Wombatul",
+        "Oposumul",
+        "Koala"
+      ],
+      "answer": "Echidna",
+      "explanation": "Echidnele și ornitorincii sunt monotreme, mamifere care depun ouă."
+    },
+    {
+      "id": "animals-047",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce structură le permite rechinilor să detecteze câmpuri electrice foarte slabe produse de alte animale?",
+      "options": [
+        "Ampulele lui Lorenzini",
+        "Linia laterală",
+        "Vezica înotătoare",
+        "Operculul"
+      ],
+      "answer": "Ampulele lui Lorenzini",
+      "explanation": "Ampulele lui Lorenzini sunt electroreceptori sensibili aflați mai ales în regiunea capului."
+    },
+    {
+      "id": "animals-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un mamifer și nu un pește?",
+      "options": [
+        "Dugongul",
+        "Rechinul-balenă",
+        "Tonul",
+        "Peștele-spadă"
+      ],
+      "answer": "Dugongul",
+      "explanation": "Dugongul este un mamifer marin din ordinul Sirenia."
+    },
+    {
+      "id": "animals-049",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale are un cioc cornos, dar nu are dinți la adult?",
+      "options": [
+        "Țestoasa",
+        "Crocodilul",
+        "Komodo",
+        "Iguana"
+      ],
+      "answer": "Țestoasa",
+      "explanation": "Țestoasele adulte au un cioc cornos și nu au dinți."
+    },
+    {
+      "id": "animals-050",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este adaptat la deșert și poate închide nările pentru a reduce pătrunderea nisipului?",
+      "options": [
+        "Cămila",
+        "Zebra",
+        "Bizonul",
+        "Tapirul"
+      ],
+      "answer": "Cămila",
+      "explanation": "Cămilele au adaptări la mediul deșertic, inclusiv nări care se pot închide parțial."
+    },
+    {
+      "id": "animals-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un erbivor mare originar din Africa?",
+      "options": [
+        "Girafa",
+        "Tapirul malaysian",
+        "Yak-ul",
+        "Lama"
+      ],
+      "answer": "Girafa",
+      "explanation": "Girafele sunt erbivore africane specializate în consumul frunzelor de la înălțime."
+    },
+    {
+      "id": "animals-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal folosește ecolocația și trăiește în peșteri, copaci sau clădiri, în funcție de specie?",
+      "options": [
+        "Liliacul",
+        "Veverița",
+        "Ariciul",
+        "Panda roșu"
+      ],
+      "answer": "Liliacul",
+      "explanation": "Multe specii de lilieci folosesc ecolocația pentru navigație și vânătoare."
+    },
+    {
+      "id": "animals-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un nevertebrat?",
+      "options": [
+        "Homarul",
+        "Broasca",
+        "Șarpele",
+        "Șoarecele"
+      ],
+      "answer": "Homarul",
+      "explanation": "Homarii sunt crustacee și nu au coloană vertebrală."
+    },
+    {
+      "id": "animals-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal are o limbă proiectabilă folosită pentru capturarea insectelor?",
+      "options": [
+        "Cameleonul",
+        "Gecko",
+        "Iguana marină",
+        "Varanul de Komodo"
+      ],
+      "answer": "Cameleonul",
+      "explanation": "Mulți cameleoni își proiectează rapid limba pentru a captura prada."
+    },
+    {
+      "id": "animals-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este o pasăre de pradă?",
+      "options": [
+        "Șoimul peregrin",
+        "Pupăza",
+        "Flamingul",
+        "Pelicanul"
+      ],
+      "answer": "Șoimul peregrin",
+      "explanation": "Șoimul peregrin este un răpitor care vânează în principal alte păsări."
+    },
+    {
+      "id": "animals-056",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care animal marin este un mamifer din familia focilor?",
+      "options": [
+        "Foca leopard",
+        "Rechinul leopard",
+        "Peștele-lună",
+        "Murenă"
+      ],
+      "answer": "Foca leopard",
+      "explanation": "Foca leopard este un mamifer marin din familia Phocidae."
+    },
+    {
+      "id": "animals-057",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce animal este cunoscut pentru exoscheletul său și pentru năpârlire pe măsură ce crește?",
+      "options": [
+        "Crustaceul",
+        "Mamiferul",
+        "Pasărea",
+        "Amfibianul"
+      ],
+      "answer": "Crustaceul",
+      "explanation": "Crustaceele au exoschelet și trebuie să năpârlească pentru a crește."
+    },
+    {
+      "id": "animals-058",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un ungulat cu un număr impar de degete funcționale?",
+      "options": [
+        "Calul",
+        "Vaca",
+        "Capra",
+        "Cerbul"
+      ],
+      "answer": "Calul",
+      "explanation": "Caii sunt perisodactile, ungulate cu număr impar de degete."
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce marsupial are deschiderea marsupiului orientată înapoi, o adaptare utilă pentru viața săpătoare?",
+      "options": [
+        "Wombatul",
+        "Cangurul roșu",
+        "Koala",
+        "Quokka"
+      ],
+      "answer": "Wombatul",
+      "explanation": "Marsupiul wombatului se deschide spre spate, reducând pătrunderea pământului atunci când animalul sapă.",
+      "id": "animals-059"
+    },
+    {
+      "id": "animals-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste animale este un pește cartilaginos?",
+      "options": [
+        "Rechinul",
+        "Somonul",
+        "Tonul",
+        "Crapul"
+      ],
+      "answer": "Rechinul",
+      "explanation": "Rechinii au schelet alcătuit în principal din cartilaj, nu din os."
+    },
+    {
+      "id": "animals-061",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este cel mai mare animal viu de pe Pământ?",
+      "options": [
+        "Balena albastră",
+        "Elefantul african",
+        "Rechinul-balenă",
+        "Cașalotul"
+      ],
+      "answer": "Balena albastră",
+      "explanation": "Balena albastră este cel mai mare animal cunoscut că a trăit vreodată."
+    },
+    {
+      "id": "animals-062",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are cea mai apropiată relație evolutivă cu hipopotamul?",
+      "options": [
+        "Balena",
+        "Rinocerul",
+        "Elefantul",
+        "Tapirul"
+      ],
+      "answer": "Balena",
+      "explanation": "Cetaceele și hipopotamii fac parte din aceeași ramură evolutivă a artiodactilelor."
+    },
+    {
+      "id": "animals-063",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal produce fire de mătase folosite pentru construirea pânzei?",
+      "options": [
+        "Păianjenul",
+        "Scorpionul",
+        "Centipedul",
+        "Gândacul"
+      ],
+      "answer": "Păianjenul",
+      "explanation": "Păianjenii produc mătase prin filiere aflate la capătul abdomenului."
+    },
+    {
+      "id": "animals-064",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce structură le permite păsărilor să respire eficient și în timpul zborului?",
+      "options": [
+        "Sacii aerieni",
+        "Vezica înotătoare",
+        "Diafragma musculară",
+        "Operculul"
+      ],
+      "answer": "Sacii aerieni",
+      "explanation": "Sacii aerieni participă la ventilația plămânilor și mențin un flux de aer foarte eficient."
+    },
+    {
+      "id": "animals-065",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un mamifer marin erbivor?",
+      "options": [
+        "Lamantinul",
+        "Orca",
+        "Foca leopard",
+        "Delfinul"
+      ],
+      "answer": "Lamantinul",
+      "explanation": "Lamantinii sunt sirenieni erbivori care consumă în principal vegetație acvatică."
+    },
+    {
+      "id": "animals-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de simetrie corporală au, în general, meduzele adulte?",
+      "options": [
+        "Radială",
+        "Bilaterală",
+        "Asimetrică",
+        "Spiralată"
+      ],
+      "answer": "Radială",
+      "explanation": "Meduzele adulte au de obicei simetrie radială în jurul axei corpului."
+    },
+    {
+      "id": "animals-067",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un artiodactil?",
+      "options": [
+        "Girafa",
+        "Calul",
+        "Rinocerul",
+        "Tapirul"
+      ],
+      "answer": "Girafa",
+      "explanation": "Girafele sunt ungulate cu număr par de degete, adică artiodactile."
+    },
+    {
+      "id": "animals-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce adaptare ajută vulpea arctică să reducă pierderile de căldură?",
+      "options": [
+        "Urechi relativ mici",
+        "Coada foarte scurtă și golașă",
+        "Piele fără blană",
+        "Picioare foarte lungi"
+      ],
+      "answer": "Urechi relativ mici",
+      "explanation": "Extremitățile compacte reduc suprafața prin care se pierde căldură."
+    },
+    {
+      "id": "animals-069",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este ectoterm?",
+      "options": [
+        "Crocodilul",
+        "Delfinul",
+        "Liliacul",
+        "Pinguinul"
+      ],
+      "answer": "Crocodilul",
+      "explanation": "Crocodilii depind în mare măsură de surse externe de căldură pentru reglarea temperaturii corporale."
+    },
+    {
+      "id": "animals-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal este cunoscut pentru folosirea pietrelor ca unelte pentru a sparge cochilii?",
+      "options": [
+        "Vidra de mare",
+        "Foca comună",
+        "Morsa",
+        "Dugongul"
+      ],
+      "answer": "Vidra de mare",
+      "explanation": "Vidrele de mare folosesc frecvent pietre drept nicovale sau ciocane pentru a deschide moluște."
+    },
+    {
+      "id": "animals-071",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce substanță conferă duritate exoscheletului multor artropode?",
+      "options": [
+        "Chitina",
+        "Celuloza",
+        "Keratină",
+        "Colagenul"
+      ],
+      "answer": "Chitina",
+      "explanation": "Chitina este un polizaharid structural important în exoscheletul artropodelor."
+    },
+    {
+      "id": "animals-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un echinoderm?",
+      "options": [
+        "Castravetele de mare",
+        "Caracatița",
+        "Homarul",
+        "Coralul"
+      ],
+      "answer": "Castravetele de mare",
+      "explanation": "Castraveții de mare aparțin încrengăturii Echinodermata."
+    },
+    {
+      "id": "animals-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal poate detecta ultrasunete și le folosește pentru ecolocație?",
+      "options": [
+        "Liliacul",
+        "Struțul",
+        "Broasca țestoasă",
+        "Iguana"
+      ],
+      "answer": "Liliacul",
+      "explanation": "Multe specii de lilieci emit ultrasunete și interpretează ecoul lor."
+    },
+    {
+      "id": "animals-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are sânge cu hemocianină, pigment pe bază de cupru, la multe specii?",
+      "options": [
+        "Caracatița",
+        "Câinele",
+        "Șopârla",
+        "Porumbelul"
+      ],
+      "answer": "Caracatița",
+      "explanation": "Multe moluște, inclusiv caracatițele, folosesc hemocianina pentru transportul oxigenului."
+    },
+    {
+      "id": "animals-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are cel mai rapid sprint terestru dintre speciile vii?",
+      "options": [
+        "Ghepardul",
+        "Pronghornul",
+        "Leul",
+        "Ogarul"
+      ],
+      "answer": "Ghepardul",
+      "explanation": "Ghepardul este cel mai rapid animal terestru pe distanțe scurte."
+    },
+    {
+      "id": "animals-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un polenizator important?",
+      "options": [
+        "Bondarul",
+        "Lăcusta",
+        "Libelula",
+        "Termita"
+      ],
+      "answer": "Bondarul",
+      "explanation": "Bondarii transportă polen între flori și sunt polenizatori importanți în multe ecosisteme."
+    },
+    {
+      "id": "animals-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are dinți care cresc continuu pe tot parcursul vieții?",
+      "options": [
+        "Castorul",
+        "Câinele",
+        "Calul",
+        "Maimuța"
+      ],
+      "answer": "Castorul",
+      "explanation": "Incisivii rozătoarelor, inclusiv ai castorului, cresc continuu."
+    },
+    {
+      "id": "animals-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este principalul rol al liniei laterale la pești?",
+      "options": [
+        "Detectarea vibrațiilor și mișcărilor apei",
+        "Producerea veninului",
+        "Reglarea temperaturii",
+        "Digestia hranei"
+      ],
+      "answer": "Detectarea vibrațiilor și mișcărilor apei",
+      "explanation": "Sistemul liniei laterale detectează modificări ale presiunii și mișcării apei."
+    },
+    {
+      "id": "animals-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un mamifer insectivor capabil să se rotească aproape complet în jurul propriei axe în tuneluri?",
+      "options": [
+        "Cârtița",
+        "Ariciul",
+        "Leneșul",
+        "Pangolinul"
+      ],
+      "answer": "Cârtița",
+      "explanation": "Cârtițele au corp cilindric și membre anterioare adaptate puternic pentru săpat."
+    },
+    {
+      "id": "animals-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pasăre are cea mai mare anvergură a aripilor dintre păsările actuale?",
+      "options": [
+        "Albatrosul călător",
+        "Condorul andin",
+        "Vulturul pleșuv",
+        "Pelicanul creț"
+      ],
+      "answer": "Albatrosul călător",
+      "explanation": "Albatrosul călător poate depăși 3,5 metri în anvergură."
+    },
+    {
+      "id": "animals-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal este cunoscut pentru capacitatea de a detecta radiația infraroșie cu ajutorul unor organe specializate?",
+      "options": [
+        "Vipera cu gropițe",
+        "Iguana verde",
+        "Țestoasa de uscat",
+        "Cameleonul"
+      ],
+      "answer": "Vipera cu gropițe",
+      "explanation": "Viperele cu gropițe au organe termosensibile care detectează căldura emisă de pradă."
+    },
+    {
+      "id": "animals-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un cnidar?",
+      "options": [
+        "Anemona de mare",
+        "Buretele de mare",
+        "Steaua de mare",
+        "Calmarul"
+      ],
+      "answer": "Anemona de mare",
+      "explanation": "Anemonele sunt cnidari, grup care include și coralii și meduzele."
+    },
+    {
+      "id": "animals-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are o membrană nictitantă care poate proteja ochiul în timpul vânătorii sau înotului?",
+      "options": [
+        "Rechinul",
+        "Caracatița",
+        "Steaua de mare",
+        "Meduza"
+      ],
+      "answer": "Rechinul",
+      "explanation": "La numeroase specii de rechini, membrana nictitantă protejează ochiul."
+    },
+    {
+      "id": "animals-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un lagomorf, nu un rozător?",
+      "options": [
+        "Iepurele",
+        "Șoarecele",
+        "Castorul",
+        "Capibara"
+      ],
+      "answer": "Iepurele",
+      "explanation": "Iepurii aparțin ordinului Lagomorpha, distinct de Rodentia."
+    },
+    {
+      "id": "animals-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce specie este cunoscută pentru metamorfoza de la omidă la adult?",
+      "options": [
+        "Fluturele",
+        "Păianjenul",
+        "Scorpionul",
+        "Râma"
+      ],
+      "answer": "Fluturele",
+      "explanation": "Fluturii trec prin metamorfoză completă: ou, larvă, pupă și adult."
+    },
+    {
+      "id": "animals-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are un cioc alcătuit din keratină și este mamifer?",
+      "options": [
+        "Ornitorincul",
+        "Pinguinul",
+        "Țestoasa",
+        "Calmarul"
+      ],
+      "answer": "Ornitorincul",
+      "explanation": "Ornitorincul este un mamifer monotrem cu un bot asemănător unui cioc."
+    },
+    {
+      "id": "animals-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mamifer este cel mai mare rozător viu?",
+      "options": [
+        "Capibara",
+        "Castorul",
+        "Mara patagoneză",
+        "Porcul spinos"
+      ],
+      "answer": "Capibara",
+      "explanation": "Capibara poate depăși 50 kg și este cel mai mare rozător actual."
+    },
+    {
+      "id": "animals-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este adaptat să consume în principal eucalipt?",
+      "options": [
+        "Koala",
+        "Wombatul",
+        "Cangurul roșu",
+        "Diavolul tasmanian"
+      ],
+      "answer": "Koala",
+      "explanation": "Koala are o dietă foarte specializată, bazată predominant pe frunze de eucalipt."
+    },
+    {
+      "id": "animals-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal poate sacrifica o parte a cozii pentru a scăpa de un prădător?",
+      "options": [
+        "Gecko",
+        "Crocodilul",
+        "Țestoasa",
+        "Pitonul"
+      ],
+      "answer": "Gecko",
+      "explanation": "Multe șopârle, inclusiv numeroși gecko, pot practica autotomia cozii."
+    },
+    {
+      "id": "animals-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un filtru-feeder, hrănindu-se prin filtrarea apei?",
+      "options": [
+        "Rechinul-balenă",
+        "Rechinul alb",
+        "Barracuda",
+        "Murenă"
+      ],
+      "answer": "Rechinul-balenă",
+      "explanation": "Rechinul-balenă filtrează plancton și organisme mici din apă."
+    },
+    {
+      "id": "animals-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal este recunoscut după coarnele ramificate care sunt lepădate și refăcute periodic?",
+      "options": [
+        "Cerbul",
+        "Antilopa",
+        "Capra",
+        "Bivolul"
+      ],
+      "answer": "Cerbul",
+      "explanation": "Coarnele osoase ale cervidelor cad și cresc din nou, de regulă anual."
+    },
+    {
+      "id": "animals-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are colți formați din incisivi superiori alungiți?",
+      "options": [
+        "Elefantul",
+        "Morsa",
+        "Narvalul",
+        "Hipopotamul"
+      ],
+      "answer": "Elefantul",
+      "explanation": "Colții elefanților sunt incisivi superiori modificați."
+    },
+    {
+      "id": "animals-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal folosește un „clopot” gelatinos pentru propulsie prin apă?",
+      "options": [
+        "Meduza",
+        "Calmarul",
+        "Căluțul de mare",
+        "Crabul"
+      ],
+      "answer": "Meduza",
+      "explanation": "Meduzele se deplasează prin contracții ritmice ale clopotului."
+    },
+    {
+      "id": "animals-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are un sistem circulator deschis?",
+      "options": [
+        "Lăcusta",
+        "Peștele",
+        "Broasca",
+        "Șopârla"
+      ],
+      "answer": "Lăcusta",
+      "explanation": "Insectele au un sistem circulator deschis în care hemolimfa nu circulă exclusiv prin vase."
+    },
+    {
+      "id": "animals-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal poate produce un șoc electric puternic pentru apărare și capturarea prăzii?",
+      "options": [
+        "Țiparul electric",
+        "Anghila europeană",
+        "Morunul",
+        "Somnul european"
+      ],
+      "answer": "Țiparul electric",
+      "explanation": "Țiparii electrici au organe electrice specializate capabile să genereze descărcări puternice."
+    },
+    {
+      "id": "animals-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un mamifer care trăiește exclusiv în Madagascar în sălbăticie?",
+      "options": [
+        "Lemurul cu coadă inelată",
+        "Gibonul",
+        "Macaque-ul",
+        "Tarsierul"
+      ],
+      "answer": "Lemurul cu coadă inelată",
+      "explanation": "Lemurii sunt endemici Madagascarului și insulelor apropiate."
+    },
+    {
+      "id": "animals-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pasăre își poate roti capul mult mai mult decât un om, datorită anatomiei cervicale speciale?",
+      "options": [
+        "Bufnița",
+        "Vulturul",
+        "Pelicanul",
+        "Pinguinul"
+      ],
+      "answer": "Bufnița",
+      "explanation": "Bufnițele pot roti capul până la aproximativ 270 de grade."
+    },
+    {
+      "id": "animals-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este o nevertebrată cu trei inimi?",
+      "options": [
+        "Caracatița",
+        "Meduza",
+        "Steaua de mare",
+        "Crevetele"
+      ],
+      "answer": "Caracatița",
+      "explanation": "Caracatițele au două inimi branhiale și o inimă sistemică."
+    },
+    {
+      "id": "animals-099",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte inimi are o caracatiță?",
+      "answer": "3",
+      "explanation": "Caracatița are două inimi care pompează sânge către branhii și una care îl pompează către restul corpului."
+    },
+    {
+      "id": "animals-100",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte perechi de picioare are un scorpion adult?",
+      "answer": "4",
+      "explanation": "Scorpionii sunt arahnide și au patru perechi de picioare."
+    },
+    {
+      "id": "animals-101",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte camere are inima unui crocodil?",
+      "answer": "4",
+      "explanation": "Crocodilienii au o inimă cu patru camere, o particularitate între reptile."
+    },
+    {
+      "id": "animals-102",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte tentacule lungi, distincte de brațe, are un calmar tipic?",
+      "answer": "2",
+      "explanation": "Calmarii au opt brațe și două tentacule mai lungi folosite la capturarea prăzii."
+    },
+    {
+      "id": "animals-103",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte vertebre cervicale au majoritatea mamiferelor, inclusiv girafa?",
+      "answer": "7",
+      "explanation": "Majoritatea mamiferelor au șapte vertebre cervicale; girafa nu face excepție."
+    },
+    {
+      "id": "animals-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are pigmentul negru numit melanină distribuit și în pielea de sub blana albă?",
+      "options": [
+        "Ursul polar",
+        "Vulpea arctică",
+        "Iepurele polar",
+        "Foca harpă"
+      ],
+      "answer": "Ursul polar",
+      "explanation": "Pielea ursului polar este închisă la culoare, iar firele de blană sunt translucide."
+    },
+    {
+      "id": "animals-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este capabil să meargă pe tavan datorită milioanelor de peri microscopici de pe degete?",
+      "options": [
+        "Gecko",
+        "Iguana",
+        "Cameleonul",
+        "Varanul"
+      ],
+      "answer": "Gecko",
+      "explanation": "Setele microscopice de pe degetele gecko folosesc forțe intermoleculare pentru aderență."
+    },
+    {
+      "id": "animals-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are un organ Jacobson foarte dezvoltat și își scoate limba bifurcată pentru a colecta molecule odorante?",
+      "options": [
+        "Șarpele",
+        "Broasca",
+        "Țestoasa",
+        "Crocodilul"
+      ],
+      "answer": "Șarpele",
+      "explanation": "Șerpii transferă moleculele colectate de limbă către organul vomeronazal."
+    },
+    {
+      "id": "animals-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste păsări își depune ouăle în cuiburile altor specii, practicând parazitismul de cuib?",
+      "options": [
+        "Cucul",
+        "Coțofana",
+        "Ciocănitoarea",
+        "Barza"
+      ],
+      "answer": "Cucul",
+      "explanation": "Numeroase specii de cuci practică parazitismul de cuib."
+    },
+    {
+      "id": "animals-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are o cocoașă care stochează în principal grăsime, nu apă?",
+      "options": [
+        "Cămila",
+        "Zebu",
+        "Bizonul",
+        "Yak-ul"
+      ],
+      "answer": "Cămila",
+      "explanation": "Cocoașa cămilei este o rezervă de grăsime care poate fi metabolizată când hrana lipsește."
+    },
+    {
+      "id": "animals-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale produce lapte, dar nu are mameloane?",
+      "options": [
+        "Ornitorincul",
+        "Cangurul",
+        "Delfinul",
+        "Liliacul"
+      ],
+      "answer": "Ornitorincul",
+      "explanation": "La monotreme, laptele este secretat prin pori ai pielii și colectat pe firele de păr."
+    },
+    {
+      "id": "animals-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal își poate umfla corpul prin înghițirea apei sau aerului pentru a descuraja prădătorii?",
+      "options": [
+        "Peștele-balon",
+        "Peștele-clovn",
+        "Peștele-spadă",
+        "Căluțul de mare"
+      ],
+      "answer": "Peștele-balon",
+      "explanation": "Peștii-balon își măresc rapid volumul corpului când sunt amenințați."
+    },
+    {
+      "id": "animals-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are un schelet hidraulic și se deplasează cu ajutorul picioarelor ambulacrare?",
+      "options": [
+        "Steaua de mare",
+        "Homarul",
+        "Calmarul",
+        "Meduza"
+      ],
+      "answer": "Steaua de mare",
+      "explanation": "Echinodermele folosesc sistemul ambulacrar pentru deplasare și manipularea hranei."
+    },
+    {
+      "id": "animals-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal este cel mai mare reprezentant viu al ordinului primatelor?",
+      "options": [
+        "Gorila",
+        "Orangutanul",
+        "Cimpanzeul",
+        "Mandrilul"
+      ],
+      "answer": "Gorila",
+      "explanation": "Gorilele sunt cele mai mari primate actuale."
+    },
+    {
+      "id": "animals-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este un carnivor specializat în consumul de furnici și termite, acoperit cu solzi de keratină?",
+      "options": [
+        "Pangolinul",
+        "Armadilul",
+        "Furnicarul",
+        "Aardvarkul"
+      ],
+      "answer": "Pangolinul",
+      "explanation": "Pangolinii sunt mamifere acoperite cu solzi de keratină și se hrănesc în principal cu insecte sociale."
+    },
+    {
+      "id": "animals-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pasăre poate plana pe distanțe foarte mari folosind curenții de aer de deasupra oceanului?",
+      "options": [
+        "Albatrosul",
+        "Kiwi",
+        "Prepelița",
+        "Fazanul"
+      ],
+      "answer": "Albatrosul",
+      "explanation": "Albatrosii folosesc zborul dinamic pentru a parcurge distanțe mari cu un consum redus de energie."
+    },
+    {
+      "id": "animals-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale are un tub digestiv cu o cameră de fermentație foarte dezvoltată în intestinul posterior?",
+      "options": [
+        "Calul",
+        "Vaca",
+        "Oaia",
+        "Capra"
+      ],
+      "answer": "Calul",
+      "explanation": "Caii sunt fermentatori de intestin posterior, în special prin cecum și colon."
+    },
+    {
+      "id": "animals-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are colți care sunt, de fapt, canini superiori foarte alungiți?",
+      "options": [
+        "Morsa",
+        "Elefantul",
+        "Narvalul",
+        "Mistrețul"
+      ],
+      "answer": "Morsa",
+      "explanation": "Colții morsei sunt canini superiori alungiți."
+    },
+    {
+      "id": "animals-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale este cunoscut pentru o relație mutualistă cu anemonele de mare?",
+      "options": [
+        "Peștele-clovn",
+        "Peștele-spadă",
+        "Calcanul",
+        "Murenă"
+      ],
+      "answer": "Peștele-clovn",
+      "explanation": "Peștii-clovn trăiesc printre tentaculele anemonelor, beneficiind de protecție."
+    },
+    {
+      "id": "animals-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mamifer marin are un colț spiralat care este, de fapt, un dinte alungit?",
+      "options": [
+        "Narvalul",
+        "Beluga",
+        "Morsa",
+        "Delfinul"
+      ],
+      "answer": "Narvalul",
+      "explanation": "Colțul narvalului este de obicei un canin superior stâng foarte alungit."
+    },
+    {
+      "id": "animals-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale își schimbă culoarea blănii sezonier în multe populații?",
+      "options": [
+        "Iepurele arctic",
+        "Lupul cenușiu",
+        "Râsul roșu",
+        "Suricata"
+      ],
+      "answer": "Iepurele arctic",
+      "explanation": "Blana iepurelui arctic devine adesea mai albă iarna, oferind camuflaj."
+    },
+    {
+      "id": "animals-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce insectă este cunoscută pentru migrații multigeneraționale pe distanțe foarte mari în America de Nord?",
+      "options": [
+        "Fluturele monarh",
+        "Fluturele coada-rândunicii",
+        "Molia atlas",
+        "Cărăbușul"
+      ],
+      "answer": "Fluturele monarh",
+      "explanation": "Migrația monarhului implică mai multe generații și poate acoperi mii de kilometri."
+    },
+    {
+      "id": "animals-121",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care dintre aceste animale poate respira parțial prin piele?",
+      "options": [
+        "Broasca",
+        "Șopârla",
+        "Pinguinul",
+        "Iepurele"
+      ],
+      "answer": "Broasca",
+      "explanation": "Amfibienii pot realiza schimburi gazoase prin pielea umedă."
+    },
+    {
+      "id": "animals-122",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce animal are cea mai mare creier raportat la corp dintre acestea, fiind cunoscut pentru comportamente complexe și folosirea uneltelor?",
+      "options": [
+        "Cioara",
+        "Găina",
+        "Porumbelul",
+        "Curcanul"
+      ],
+      "answer": "Cioara",
+      "explanation": "Corvidele au abilități cognitive remarcabile și pot folosi unelte."
+    },
+    {
+      "id": "animals-123",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce grup de mamifere include elefanții, damanii și sirenienii într-o ramură evolutivă comună?",
+      "options": [
+        "Afrotheria",
+        "Laurasiatheria",
+        "Euarchontoglires",
+        "Xenarthra"
+      ],
+      "answer": "Afrotheria",
+      "explanation": "Elefanții, damanii și sirenienii fac parte din clada Afrotheria."
+    },
+    {
+      "id": "animals-124",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce structură din urechea internă ajută vertebratele să detecteze accelerația și să-și mențină echilibrul?",
+      "options": [
+        "Canalele semicirculare",
+        "Cohleea",
+        "Timpanul",
+        "Trompa lui Eustachio"
+      ],
+      "answer": "Canalele semicirculare",
+      "explanation": "Canalele semicirculare detectează mișcările de rotație ale capului și contribuie la echilibru."
+    },
+    {
+      "id": "animals-125",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale este un xenarthran?",
+      "options": [
+        "Armadilul",
+        "Pangolinul",
+        "Aardvarkul",
+        "Porcul spinos"
+      ],
+      "answer": "Armadilul",
+      "explanation": "Armadilii aparțin superordinului Xenarthra, alături de leneși și furnicari."
+    },
+    {
+      "id": "animals-126",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce proces permite unor reptile să producă urmași din ovule nefecundate?",
+      "options": [
+        "Partenogeneza",
+        "Metamorfoza",
+        "Neotenia",
+        "Diapauza"
+      ],
+      "answer": "Partenogeneza",
+      "explanation": "Partenogeneza este reproducerea fără fertilizare și apare la unele reptile și numeroase nevertebrate."
+    },
+    {
+      "id": "animals-127",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale prezintă neotenie în mod natural, păstrând branhii externe la maturitate?",
+      "options": [
+        "Axolotlul",
+        "Tritonul crestat",
+        "Broasca-taur",
+        "Salamandra de foc"
+      ],
+      "answer": "Axolotlul",
+      "explanation": "Axolotlul ajunge la maturitate sexuală păstrând mai multe caractere larvare."
+    },
+    {
+      "id": "animals-128",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de dentiție au rechinii, ale căror rânduri de dinți sunt înlocuite continuu?",
+      "options": [
+        "Polifiodontă",
+        "Diodontă",
+        "Monofiodontă",
+        "Heterodontă exclusivă"
+      ],
+      "answer": "Polifiodontă",
+      "explanation": "Rechinii produc succesiv noi rânduri de dinți pe tot parcursul vieții."
+    },
+    {
+      "id": "animals-129",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pasăre are nările situate aproape de vârful ciocului, o particularitate neobișnuită între păsări?",
+      "options": [
+        "Kiwi",
+        "Emu",
+        "Cazuarul",
+        "Struțul"
+      ],
+      "answer": "Kiwi",
+      "explanation": "Kiwi are nările aproape de vârful ciocului și un simț olfactiv foarte dezvoltat."
+    },
+    {
+      "id": "animals-130",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce categorie de animale include organisme care își mențin temperatura corporală în principal prin producție metabolică de căldură?",
+      "options": [
+        "Endoterme",
+        "Ectoterme",
+        "Osmoconforme",
+        "Poikilohaline"
+      ],
+      "answer": "Endoterme",
+      "explanation": "Păsările și mamiferele sunt exemple clasice de animale endoterme."
+    },
+    {
+      "id": "animals-131",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are o articulație mandibulară diferită de cea a mamiferelor, bazată pe oasele quadratum și articulare?",
+      "options": [
+        "Șopârla",
+        "Câinele",
+        "Delfinul",
+        "Liliacul"
+      ],
+      "answer": "Șopârla",
+      "explanation": "La majoritatea reptilelor, mandibula se articulează prin quadratum și osul articulare, nu prin dentar-squamosal ca la mamifere."
+    },
+    {
+      "id": "animals-132",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de relație există atunci când remora beneficiază de transport și resturi de hrană de la un rechin, iar rechinul este în mare parte neafectat?",
+      "options": [
+        "Comensalism",
+        "Mutualism obligatoriu",
+        "Parazitism",
+        "Competiție"
+      ],
+      "answer": "Comensalism",
+      "explanation": "Comensalismul descrie o relație în care un organism beneficiază, iar celălalt este aproximativ neutru."
+    },
+    {
+      "id": "animals-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal este cunoscut pentru o limbă care poate depăși lungimea propriului corp, raportată la dimensiunea trunchiului?",
+      "options": [
+        "Cameleonul",
+        "Iguana marină",
+        "Varanul",
+        "Gecko leopard"
+      ],
+      "answer": "Cameleonul",
+      "explanation": "La unele specii de cameleoni, aparatul limbii permite proiecții extrem de lungi raportat la corp."
+    },
+    {
+      "id": "animals-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste mamifere are o placentă relativ simplă și o perioadă de gestație foarte scurtă urmată de dezvoltare în marsupiu?",
+      "options": [
+        "Cangurul",
+        "Lemurul",
+        "Armadilul",
+        "Liliacul"
+      ],
+      "answer": "Cangurul",
+      "explanation": "Marsupialele nasc pui foarte puțin dezvoltați, care continuă dezvoltarea atașați de mamelon."
+    },
+    {
+      "id": "animals-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce adaptare permite păsărilor marine precum albatrosul să elimine excesul de sare?",
+      "options": [
+        "Glande de sare supraorbitale",
+        "Rinichi cu nefroni foarte lungi",
+        "Branhii accesorii",
+        "Vezică urinară hipertrofiată"
+      ],
+      "answer": "Glande de sare supraorbitale",
+      "explanation": "Multe păsări marine elimină soluții concentrate de sare prin glande nazale specializate."
+    },
+    {
+      "id": "animals-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale folosește o „radulă” pentru a răzui sau tăia hrana?",
+      "options": [
+        "Melcul",
+        "Steaua de mare",
+        "Crabul",
+        "Meduza"
+      ],
+      "answer": "Melcul",
+      "explanation": "Radula este o structură bucală cu dinți microscopici întâlnită la majoritatea moluștelor, inclusiv melci."
+    },
+    {
+      "id": "animals-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal își poate încetini metabolismul și intra în estivare în perioade foarte uscate?",
+      "options": [
+        "Peștele pulmonat african",
+        "Somonul",
+        "Tonul",
+        "Păstrăvul"
+      ],
+      "answer": "Peștele pulmonat african",
+      "explanation": "Peștii pulmonari africani pot supraviețui secetei în coconi de mucus prin estivare."
+    },
+    {
+      "id": "animals-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este funcția principală a contracurentului în branhiile peștilor?",
+      "options": [
+        "Crește eficiența extragerii oxigenului",
+        "Reduce salinitatea sângelui",
+        "Încălzește apa inspirată",
+        "Produce mucus protector"
+      ],
+      "answer": "Crește eficiența extragerii oxigenului",
+      "explanation": "Sângele și apa curg în direcții opuse, menținând un gradient favorabil difuziei oxigenului."
+    },
+    {
+      "id": "animals-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are un sistem digestiv cu patru compartimente stomacale?",
+      "options": [
+        "Oaia",
+        "Calul",
+        "Porcul",
+        "Iepurele"
+      ],
+      "answer": "Oaia",
+      "explanation": "Rumegătoarele precum oaia au rumen, reticul, omas și abomas."
+    },
+    {
+      "id": "animals-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce insectă are o societate eusocială în care indivizii reproductivi pot fi un rege și o regină de lungă durată?",
+      "options": [
+        "Termita",
+        "Albina meliferă",
+        "Viespea solitară",
+        "Libelula"
+      ],
+      "answer": "Termita",
+      "explanation": "Coloniile de termite au de regulă o pereche reproductivă formată din rege și regină."
+    },
+    {
+      "id": "animals-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer marin poate dormi cu câte o emisferă cerebrală pe rând?",
+      "options": [
+        "Delfinul",
+        "Lamantinul",
+        "Vidra de mare",
+        "Morsa"
+      ],
+      "answer": "Delfinul",
+      "explanation": "Delfinii folosesc somn unihemisferic, menținând o parte a creierului activă pentru respirație și vigilență."
+    },
+    {
+      "id": "animals-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste structuri este omoloagă cu aripa unei păsări din punct de vedere evolutiv?",
+      "options": [
+        "Brațul omului",
+        "Aripa fluturelui",
+        "Înotătoarea dorsală a rechinului",
+        "Tentaculul caracatiței"
+      ],
+      "answer": "Brațul omului",
+      "explanation": "Membrele anterioare ale tetrapodelor au aceeași origine evolutivă, deși au funcții diferite."
+    },
+    {
+      "id": "animals-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal are o valvă spirală intestinală care mărește suprafața de absorbție?",
+      "options": [
+        "Rechinul",
+        "Somonul",
+        "Delfinul",
+        "Caracatița"
+      ],
+      "answer": "Rechinul",
+      "explanation": "Mulți pești cartilaginoși au o valvă spirală în intestin."
+    },
+    {
+      "id": "animals-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale respiră folosind plămâni în formă de „carte”?",
+      "options": [
+        "Scorpionul",
+        "Crabul",
+        "Lăcusta",
+        "Centipedul"
+      ],
+      "answer": "Scorpionul",
+      "explanation": "Scorpionii și unele arahnide folosesc plămâni foliacei, numiți și plămâni în carte."
+    },
+    {
+      "id": "animals-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer are solzi adevărați de keratină care îi acoperă cea mai mare parte a corpului?",
+      "options": [
+        "Pangolinul",
+        "Armadilul",
+        "Rinocerul",
+        "Aardvarkul"
+      ],
+      "answer": "Pangolinul",
+      "explanation": "Pangolinii sunt singurele mamifere actuale acoperite cu solzi mari de keratină."
+    },
+    {
+      "id": "animals-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este principalul avantaj al torporii zilnice la colibri?",
+      "options": [
+        "Reduce consumul energetic peste noapte",
+        "Crește viteza de zbor",
+        "Permite digestia nectarului fără apă",
+        "Mărește producția de pene"
+      ],
+      "answer": "Reduce consumul energetic peste noapte",
+      "explanation": "Colibrii pot reduce drastic temperatura corporală și metabolismul pentru a economisi energie."
+    },
+    {
+      "id": "animals-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal poate regenera porțiuni importante ale inimii după leziuni, fiind folosit frecvent în cercetarea regenerării?",
+      "options": [
+        "Peștele-zebră",
+        "Șoarecele",
+        "Porumbelul",
+        "Iguana"
+      ],
+      "answer": "Peștele-zebră",
+      "explanation": "Peștele-zebră are o capacitate remarcabilă de regenerare a țesutului cardiac."
+    },
+    {
+      "id": "animals-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce grup de animale posedă celule urticante numite cnidocite?",
+      "options": [
+        "Cnidarii",
+        "Moluștele",
+        "Echinodermele",
+        "Anelidele"
+      ],
+      "answer": "Cnidarii",
+      "explanation": "Meduzele, coralii și anemonele au cnidocite folosite pentru capturarea prăzii și apărare."
+    },
+    {
+      "id": "animals-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer are articulații suplimentare între vertebre, trăsătură care a dat numele grupului Xenarthra?",
+      "options": [
+        "Furnicarul",
+        "Pangolinul",
+        "Aardvarkul",
+        "Ariciul"
+      ],
+      "answer": "Furnicarul",
+      "explanation": "Xenarthra înseamnă aproximativ „articulații străine”, referindu-se la articulațiile vertebrale suplimentare."
+    },
+    {
+      "id": "animals-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale este un protostom?",
+      "options": [
+        "Caracatița",
+        "Steaua de mare",
+        "Omul",
+        "Ariciul de mare"
+      ],
+      "answer": "Caracatița",
+      "explanation": "Moluștele sunt protostome, în timp ce echinodermele și cordatele sunt deuterostome."
+    },
+    {
+      "id": "animals-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce strategie reproductivă descrie păstrarea ouălor în corp până când puii eclozează, fără o placentă adevărată?",
+      "options": [
+        "Ovoviviparitate",
+        "Oviparitate",
+        "Viviparitate placentară",
+        "Partenogeneză"
+      ],
+      "answer": "Ovoviviparitate",
+      "explanation": "În ovoviviparitate embrionii se dezvoltă în ouă reținute în corp și sunt hrăniți în principal de gălbenuș."
+    },
+    {
+      "id": "animals-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal este un exemplu clasic de specie-cheie deoarece prădează arici de mare și ajută la menținerea pădurilor de kelp?",
+      "options": [
+        "Vidra de mare",
+        "Foca elefant",
+        "Delfinul comun",
+        "Leul de mare"
+      ],
+      "answer": "Vidra de mare",
+      "explanation": "Prin controlul populațiilor de arici de mare, vidrele de mare pot proteja ecosistemele de kelp."
+    },
+    {
+      "id": "animals-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale utilizează magnetorecepția în migrație?",
+      "options": [
+        "Broasca țestoasă marină",
+        "Crocodilul de Nil",
+        "Hipopotamul",
+        "Varanul de Komodo"
+      ],
+      "answer": "Broasca țestoasă marină",
+      "explanation": "Țestoasele marine pot folosi câmpul magnetic terestru ca parte a sistemului lor de navigație."
+    },
+    {
+      "id": "animals-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de mimicrie apare când o specie inofensivă seamănă cu una periculoasă?",
+      "options": [
+        "Mimicrie batesiană",
+        "Mimicrie mülleriană",
+        "Criptism disruptiv",
+        "Aposematism"
+      ],
+      "answer": "Mimicrie batesiană",
+      "explanation": "În mimicria batesiană, o specie nepericuloasă imită semnalele unei specii periculoase."
+    },
+    {
+      "id": "animals-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fenomen explică faptul că animalele din climate reci tind să aibă extremități mai scurte decât rudele lor din climate calde?",
+      "options": [
+        "Regula lui Allen",
+        "Regula lui Bergmann",
+        "Principiul lui Hardy-Weinberg",
+        "Legea lui Dollo"
+      ],
+      "answer": "Regula lui Allen",
+      "explanation": "Regula lui Allen corelează dimensiunea extremităților cu disiparea căldurii în diferite climate."
+    },
+    {
+      "id": "animals-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are un organ electric derivat din țesut muscular modificat?",
+      "options": [
+        "Țiparul electric",
+        "Rechinul-ciocan",
+        "Peștele-spadă",
+        "Murenă"
+      ],
+      "answer": "Țiparul electric",
+      "explanation": "Electrocitele din organele electrice ale țiparului electric provin evolutiv din celule musculare."
+    },
+    {
+      "id": "animals-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal are „dinți” alcătuiți în mare parte din magnetită, printre cele mai dure materiale biologice cunoscute?",
+      "options": [
+        "Chitonul",
+        "Melcul de grădină",
+        "Sepia",
+        "Nautilul"
+      ],
+      "answer": "Chitonul",
+      "explanation": "Chitonii au dinți de radulă întăriți cu magnetită pentru răzuirea suprafețelor."
+    },
+    {
+      "id": "animals-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer este cunoscut pentru capacitatea de a detecta câmpuri electrice slabe cu receptorii din cioc?",
+      "options": [
+        "Ornitorincul",
+        "Echidna cu bot scurt",
+        "Vidra",
+        "Castorul"
+      ],
+      "answer": "Ornitorincul",
+      "explanation": "Ornitorincul folosește electroreceptori din cioc pentru a localiza prada sub apă."
+    },
+    {
+      "id": "animals-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are respirație traheală, fără ca sângele să transporte oxigenul către țesuturi în principal?",
+      "options": [
+        "Lăcusta",
+        "Râma",
+        "Melcul",
+        "Crabul"
+      ],
+      "answer": "Lăcusta",
+      "explanation": "La insecte, sistemul traheal livrează oxigenul direct țesuturilor printr-o rețea de tuburi."
+    },
+    {
+      "id": "animals-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de dezvoltare are libelula, fără stadiu de pupă?",
+      "options": [
+        "Metamorfoză incompletă",
+        "Metamorfoză completă",
+        "Neotenie",
+        "Dezvoltare directă fără năpârlire"
+      ],
+      "answer": "Metamorfoză incompletă",
+      "explanation": "Libelulele trec de la nimfă acvatică la adult fără stadiu pupal."
+    },
+    {
+      "id": "animals-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale este un deuterostom?",
+      "options": [
+        "Steaua de mare",
+        "Caracatița",
+        "Râma",
+        "Fluturele"
+      ],
+      "answer": "Steaua de mare",
+      "explanation": "Echinodermele sunt deuterostome, la fel ca vertebratele."
+    },
+    {
+      "id": "animals-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer poate avea o gestație întârziată prin implantare embrionară amânată?",
+      "options": [
+        "Ursul polar",
+        "Elefantul african",
+        "Calul",
+        "Gorila"
+      ],
+      "answer": "Ursul polar",
+      "explanation": "La ursul polar, implantarea embrionului poate fi întârziată după fecundare."
+    },
+    {
+      "id": "animals-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are branhii externe ramificate și le păstrează de obicei la maturitate?",
+      "options": [
+        "Axolotlul",
+        "Broasca-taur",
+        "Salamandra de foc",
+        "Tritonul comun"
+      ],
+      "answer": "Axolotlul",
+      "explanation": "Axolotlul își păstrează branhiile externe din stadiul larvar."
+    },
+    {
+      "id": "animals-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pasăre produce un „lapte de gușă” pentru hrănirea puilor?",
+      "options": [
+        "Porumbelul",
+        "Vulturul",
+        "Rața",
+        "Ciocănitoarea"
+      ],
+      "answer": "Porumbelul",
+      "explanation": "Porumbeii produc în gușă o secreție nutritivă bogată în grăsimi și proteine."
+    },
+    {
+      "id": "animals-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce structură permite rechinilor și batoidelor să detecteze câmpul magnetic indirect, prin inducție electrică în apă?",
+      "options": [
+        "Ampulele lui Lorenzini",
+        "Vezica înotătoare",
+        "Linia laterală exclusiv",
+        "Operculul"
+      ],
+      "answer": "Ampulele lui Lorenzini",
+      "explanation": "Electroreceptorii pot detecta câmpuri electrice induse de mișcarea prin câmpul magnetic al Pământului."
+    },
+    {
+      "id": "animals-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale este un organism colonial alcătuit din zooizi specializați, deși seamănă cu o singură meduză?",
+      "options": [
+        "Caravela portugheză",
+        "Meduza-lună",
+        "Anemona de mare",
+        "Hidra"
+      ],
+      "answer": "Caravela portugheză",
+      "explanation": "Caravela portugheză este un sifonofor colonial format din zooizi cu funcții diferite."
+    },
+    {
+      "id": "animals-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mamifer are eritrocite ovale și fără nucleu, o adaptare remarcabilă la deshidratare?",
+      "options": [
+        "Cămila",
+        "Elefantul",
+        "Girafa",
+        "Hipopotamul"
+      ],
+      "answer": "Cămila",
+      "explanation": "Camelidele au eritrocite ovale, care tolerează variații mari de volum osmotic."
+    },
+    {
+      "id": "animals-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale folosește „cleptoplasti”, păstrând cloroplaste funcționale din alge în propriile țesuturi?",
+      "options": [
+        "Unii limacși de mare sacoglosani",
+        "Caracatițele",
+        "Meduzele-cutie",
+        "Stelele de mare"
+      ],
+      "answer": "Unii limacși de mare sacoglosani",
+      "explanation": "Anumiți sacoglosani rețin cloroplaste din alge și le mențin funcționale temporar."
+    },
+    {
+      "id": "animals-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce adaptare protejează ochii crocodilului sub apă?",
+      "options": [
+        "Membrana nictitantă",
+        "Pleoapa osoasă fixă",
+        "Corneea opacă",
+        "Cristalinul extern"
+      ],
+      "answer": "Membrana nictitantă",
+      "explanation": "Crocodilienii au o a treia pleoapă transparentă care protejează ochiul sub apă."
+    },
+    {
+      "id": "animals-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal are „dinți faringieni” puternici folosiți la zdrobirea hranei, deși nu are dinți obișnuiți pe maxilare?",
+      "options": [
+        "Crapul",
+        "Rechinul alb",
+        "Somonul",
+        "Tonul"
+      ],
+      "answer": "Crapul",
+      "explanation": "Crapii și alte ciprinide au dinți faringieni în partea posterioară a gâtului."
+    },
+    {
+      "id": "animals-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale poate tolera înghețarea unei părți considerabile din apa corporală în timpul iernii?",
+      "options": [
+        "Broasca de lemn",
+        "Salamandra de foc",
+        "Iguana marină",
+        "Șarpele cu clopoței"
+      ],
+      "answer": "Broasca de lemn",
+      "explanation": "Broasca de lemn poate supraviețui înghețării extracelulare prin acumularea de crioprotectori."
+    },
+    {
+      "id": "animals-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de colorație avertizează prădătorii că un animal este toxic, veninos sau neplăcut la gust?",
+      "options": [
+        "Aposematism",
+        "Criptism",
+        "Contracolorație",
+        "Melanism industrial"
+      ],
+      "answer": "Aposematism",
+      "explanation": "Culorile de avertizare intense sunt un exemplu de aposematism."
+    },
+    {
+      "id": "animals-173",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte perechi de picioare locomotoare are un izopod adult, precum porcușorul de pământ?",
+      "answer": "7",
+      "explanation": "Izopodele adulte au șapte perechi de picioare locomotoare, ceea ce înseamnă 14 picioare."
+    },
+    {
+      "id": "animals-174",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte brațe și tentacule are în total un calmar tipic?",
+      "answer": "10",
+      "explanation": "Un calmar tipic are opt brațe și două tentacule, în total zece apendice."
+    },
+    {
+      "id": "animals-175",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte camere are inima unei păsări?",
+      "answer": "4",
+      "explanation": "Păsările au o inimă complet separată în două atrii și două ventricule."
+    },
+    {
+      "id": "animals-176",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte perechi de antene au crustaceele?",
+      "answer": "2",
+      "explanation": "Crustaceele au două perechi de antene, o trăsătură distinctivă față de alte artropode."
+    },
+    {
+      "id": "animals-177",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte perechi de aripi funcționale au muștele din ordinul Diptera?",
+      "answer": "1",
+      "explanation": "Dipterele au o singură pereche de aripi funcționale; perechea posterioară este transformată în haltere."
+    },
+    {
+      "id": "animals-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce structură derivată din aripile posterioare ajută muștele la echilibru în zbor?",
+      "options": [
+        "Halterele",
+        "Elytrele",
+        "Cercii",
+        "Palpii"
+      ],
+      "answer": "Halterele",
+      "explanation": "Halterele oscilează și funcționează ca organe giroscopice."
+    },
+    {
+      "id": "animals-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale este capabil să respire atât prin branhii, cât și printr-un organ pulmonar adevărat?",
+      "options": [
+        "Peștele pulmonat",
+        "Tonul",
+        "Rechinul-balenă",
+        "Peștele-spadă"
+      ],
+      "answer": "Peștele pulmonat",
+      "explanation": "Peștii pulmonari posedă plămâni funcționali și pot respira aer atmosferic."
+    },
+    {
+      "id": "animals-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal poate modifica textura pielii, nu doar culoarea, prin papile musculare?",
+      "options": [
+        "Sepia",
+        "Căluțul de mare",
+        "Peștele-balon",
+        "Meduza"
+      ],
+      "answer": "Sepia",
+      "explanation": "Sepiile și unele caracatițe pot modifica textura pielii pentru camuflaj."
+    },
+    {
+      "id": "animals-181",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este principala funcție a rete mirabile la ton și la unii rechini?",
+      "options": [
+        "Conservarea căldurii prin schimb contracurent",
+        "Filtrarea sării din apă",
+        "Producerea ultrasunetelor",
+        "Stocarea oxigenului"
+      ],
+      "answer": "Conservarea căldurii prin schimb contracurent",
+      "explanation": "Rețeaua de vase permite retenția căldurii metabolice în anumite regiuni ale corpului."
+    },
+    {
+      "id": "animals-182",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre aceste animale are un intestin foarte lung adaptat unei diete predominant folivore, deși aparține ordinului Carnivora?",
+      "options": [
+        "Panda uriaș",
+        "Lupul cenușiu",
+        "Leopardul",
+        "Vidra de mare"
+      ],
+      "answer": "Panda uriaș",
+      "explanation": "Panda uriaș aparține Carnivora, dar dieta sa este dominată de bambus și are adaptări comportamentale pentru aceasta."
+    },
+    {
+      "id": "animals-183",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce animal este faimos pentru orientarea prin polarizarea luminii și poziția Soarelui în timpul migrației?",
+      "options": [
+        "Albina meliferă",
+        "Cârtița",
+        "Ariciul",
+        "Pangolinul"
+      ],
+      "answer": "Albina meliferă",
+      "explanation": "Albinele pot folosi lumina polarizată pentru orientare atunci când Soarele este parțial ascuns."
+    },
+    {
+      "id": "animals-184",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce grup de mamifere include leneșii și furnicarii?",
+      "options": [
+        "Pilosa",
+        "Primates",
+        "Pholidota",
+        "Tubulidentata"
+      ],
+      "answer": "Pilosa",
+      "explanation": "Leneșii și furnicarii fac parte din ordinul Pilosa."
+    },
+    {
+      "id": "animals-185",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce os din urechea medie a mamiferelor este omolog cu osul articular al mandibulei reptiliene ancestrale?",
+      "options": [
+        "Ciocanul",
+        "Nicovala",
+        "Scărița",
+        "Cohleea"
+      ],
+      "answer": "Ciocanul",
+      "explanation": "Malleusul sau ciocanul derivă evolutiv din osul articular al mandibulei strămoșilor sinapsizi."
+    },
+    {
+      "id": "animals-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce os din urechea medie a mamiferelor este omolog cu osul quadratum al mandibulei reptiliene?",
+      "options": [
+        "Nicovala",
+        "Ciocanul",
+        "Scărița",
+        "Hioidul"
+      ],
+      "answer": "Nicovala",
+      "explanation": "Incusul sau nicovala este omolog cu osul quadratum al strămoșilor tetrapozi."
+    },
+    {
+      "id": "animals-187",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste grupe de mamifere aparține Afrotheria?",
+      "options": [
+        "Tenrecii",
+        "Castorii",
+        "Pangolinii",
+        "Urșii"
+      ],
+      "answer": "Tenrecii",
+      "explanation": "Tenrecii sunt afroterieni, alături de elefanți, sirenieni, damani și aardvarki."
+    },
+    {
+      "id": "animals-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură respiratorie permite păsărilor un flux de aer unidirecțional prin plămâni?",
+      "options": [
+        "Parabronhiile",
+        "Alveolele terminale",
+        "Diafragma",
+        "Bronhiolele fără saci aerieni"
+      ],
+      "answer": "Parabronhiile",
+      "explanation": "Aerul circulă unidirecțional prin parabronhii, susținut de sistemul de saci aerieni."
+    },
+    {
+      "id": "animals-189",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are un sistem port renal caracteristic multor vertebrate non-mamifere?",
+      "options": [
+        "Șopârla",
+        "Câinele",
+        "Delfinul",
+        "Omul"
+      ],
+      "answer": "Șopârla",
+      "explanation": "Reptilele păstrează un sistem port renal care dirijează o parte din sângele posterior spre rinichi."
+    },
+    {
+      "id": "animals-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen descrie capacitatea unui animal de a produce căldură prin activitatea țesutului adipos brun?",
+      "options": [
+        "Termogeneză fără frison",
+        "Ectotermie",
+        "Osmoreglare",
+        "Heterotermie obligatorie"
+      ],
+      "answer": "Termogeneză fără frison",
+      "explanation": "Țesutul adipos brun produce căldură prin decuplarea fosforilării oxidative."
+    },
+    {
+      "id": "animals-191",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proteină este esențială pentru termogeneza fără frison în țesutul adipos brun al mamiferelor?",
+      "options": [
+        "UCP1",
+        "Actina",
+        "Keratină",
+        "Mioglobina"
+      ],
+      "answer": "UCP1",
+      "explanation": "UCP1 decuplează gradientul protonic de sinteza ATP, eliberând energia sub formă de căldură."
+    },
+    {
+      "id": "animals-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are larvă numită planula?",
+      "options": [
+        "Meduza",
+        "Steaua de mare",
+        "Caracatița",
+        "Crabul"
+      ],
+      "answer": "Meduza",
+      "explanation": "Cnidarii au frecvent o larvă ciliată numită planula."
+    },
+    {
+      "id": "animals-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de larvă este caracteristic multor moluște și anelide?",
+      "options": [
+        "Trocoforă",
+        "Nauplius",
+        "Planula",
+        "Tornaria"
+      ],
+      "answer": "Trocoforă",
+      "explanation": "Larva trocoforă apare la numeroase moluște și anelide."
+    },
+    {
+      "id": "animals-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce larvă este caracteristică crustaceelor în stadiile timpurii?",
+      "options": [
+        "Nauplius",
+        "Trocoforă",
+        "Planula",
+        "Veliger"
+      ],
+      "answer": "Nauplius",
+      "explanation": "Naupliusul este un stadiu larvar tipic pentru numeroase crustacee."
+    },
+    {
+      "id": "animals-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură a peștilor cartilaginoși contribuie major la flotabilitate în lipsa vezicii înotătoare?",
+      "options": [
+        "Ficatul bogat în ulei",
+        "Splina",
+        "Pancreasul",
+        "Glandele rectale"
+      ],
+      "answer": "Ficatul bogat în ulei",
+      "explanation": "Rechinii au un ficat mare, bogat în lipide precum squalenul, care reduce densitatea corporală."
+    },
+    {
+      "id": "animals-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce glandă ajută rechinii marini să elimine excesul de sare?",
+      "options": [
+        "Glanda rectală",
+        "Glanda pineală",
+        "Timusul",
+        "Glanda uropigiană"
+      ],
+      "answer": "Glanda rectală",
+      "explanation": "Glanda rectală secretă o soluție concentrată de clorură de sodiu."
+    },
+    {
+      "id": "animals-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce compus azotat este reținut la concentrații ridicate în sângele rechinilor pentru osmoreglare?",
+      "options": [
+        "Ureea",
+        "Acidul uric",
+        "Amoniacul",
+        "Creatinina"
+      ],
+      "answer": "Ureea",
+      "explanation": "Rechinii mențin concentrații mari de uree, stabilizată de TMAO, pentru echilibrul osmotic cu apa de mare."
+    },
+    {
+      "id": "animals-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce compus protejează proteinele rechinilor de efectele destabilizatoare ale concentrației ridicate de uree?",
+      "options": [
+        "TMAO",
+        "ATP",
+        "Glicogen",
+        "Melatonină"
+      ],
+      "answer": "TMAO",
+      "explanation": "N-oxidul de trimetilamină (TMAO) contracarează efectele destabilizatoare ale ureei asupra proteinelor."
+    },
+    {
+      "id": "animals-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de hemoglobină este adaptat la transportul oxigenului în condiții de hipoxie la unele animale de mare altitudine?",
+      "options": [
+        "Hemoglobină cu afinitate crescută pentru oxigen",
+        "Hemoglobină fără fier",
+        "Hemoglobină cu afinitate zero",
+        "Hemocianină"
+      ],
+      "answer": "Hemoglobină cu afinitate crescută pentru oxigen",
+      "explanation": "La unele specii de altitudine, modificările hemoglobinei cresc captarea oxigenului în aer rarefiat."
+    },
+    {
+      "id": "animals-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pasăre este renumită pentru migrația peste Himalaya la altitudini foarte mari?",
+      "options": [
+        "Gâsca cu cap dungat",
+        "Gâsca canadiană",
+        "Lebăda mută",
+        "Cormoranul mare"
+      ],
+      "answer": "Gâsca cu cap dungat",
+      "explanation": "Gâsca cu cap dungat traversează Himalaya și are adaptări remarcabile la hipoxie."
+    },
+    {
+      "id": "animals-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pigment respirator pe bază de cupru devine albastru când este oxigenat?",
+      "options": [
+        "Hemocianina",
+        "Hemoglobina",
+        "Hemeritrina",
+        "Clorocruorina"
+      ],
+      "answer": "Hemocianina",
+      "explanation": "Hemocianina conține cupru și capătă o culoare albăstruie în forma oxigenată."
+    },
+    {
+      "id": "animals-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are hemolimfă în locul unui sistem sanguin închis tipic vertebratelor?",
+      "options": [
+        "Homarul",
+        "Păstrăvul",
+        "Broasca",
+        "Șopârla"
+      ],
+      "answer": "Homarul",
+      "explanation": "Crustaceele au un sistem circulator deschis în care circulă hemolimfa."
+    },
+    {
+      "id": "animals-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen descrie animalele care își pot varia temperatura corporală pe parcursul zilei, combinând perioade de endotermie și torpor?",
+      "options": [
+        "Heteroterme",
+        "Homeoterme stricte",
+        "Osmoconforme",
+        "Stenoterme"
+      ],
+      "answer": "Heteroterme",
+      "explanation": "Heterotermia permite alternarea între temperaturi corporale relativ stabile și scăderi controlate."
+    },
+    {
+      "id": "animals-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură celulară permite unor pești electrici să producă diferențe mari de potențial?",
+      "options": [
+        "Electrocitele",
+        "Cnidocitele",
+        "Osteocitele",
+        "Fotocitele"
+      ],
+      "answer": "Electrocitele",
+      "explanation": "Electrocitele sunt celule specializate aranjate în serie și paralel în organele electrice."
+    },
+    {
+      "id": "animals-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are un organ luminos bazat pe bacterii bioluminiscente în simbioză?",
+      "options": [
+        "Calmarul bobtail hawaian",
+        "Caracatița cu inele albastre",
+        "Nautilul",
+        "Sepia uriașă"
+      ],
+      "answer": "Calmarul bobtail hawaian",
+      "explanation": "Euprymna scolopes găzduiește bacterii bioluminiscente Vibrio fischeri într-un organ luminos."
+    },
+    {
+      "id": "animals-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce fenomen permite unor pești din Antarctica să supraviețuiască în apă sub punctul de îngheț al apei dulci?",
+      "options": [
+        "Proteine antigel",
+        "Hemoglobină suplimentară",
+        "Melanină albă",
+        "Ecolocație"
+      ],
+      "answer": "Proteine antigel",
+      "explanation": "Proteinele antigel inhibă creșterea cristalelor de gheață în fluidele corporale."
+    },
+    {
+      "id": "animals-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce familie de pești antarctici include specii fără hemoglobină funcțională în sânge?",
+      "options": [
+        "Channichthyidae",
+        "Salmonidae",
+        "Scombridae",
+        "Cyprinidae"
+      ],
+      "answer": "Channichthyidae",
+      "explanation": "Peștii de gheață crocodil din familia Channichthyidae au pierdut hemoglobina funcțională."
+    },
+    {
+      "id": "animals-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce caracteristică a sângelui peștilor de gheață antarctici compensează parțial lipsa hemoglobinei?",
+      "options": [
+        "Volum sanguin mare și debit cardiac ridicat",
+        "Număr foarte mare de eritrocite",
+        "Hemocianină abundentă",
+        "Presiune arterială extrem de mare"
+      ],
+      "answer": "Volum sanguin mare și debit cardiac ridicat",
+      "explanation": "Acești pești compensează transportul slab al oxigenului prin volume mari de sânge și circulație intensă."
+    },
+    {
+      "id": "animals-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen descrie orientarea unui animal folosind câmpul magnetic al Pământului?",
+      "options": [
+        "Magnetorecepție",
+        "Fototaxie",
+        "Reotaxie",
+        "Chemorecepție"
+      ],
+      "answer": "Magnetorecepție",
+      "explanation": "Magnetorecepția este capacitatea de a detecta informații despre câmpul magnetic terestru."
+    },
+    {
+      "id": "animals-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mecanism este propus pentru magnetorecepția dependentă de lumină la unele păsări?",
+      "options": [
+        "Criptocromii din retină",
+        "Hemoglobina din iris",
+        "Colagenul cornean",
+        "Melanina din pene"
+      ],
+      "answer": "Criptocromii din retină",
+      "explanation": "Criptocromii fotosensibili sunt implicați în unul dintre modelele principale de magnetorecepție aviară."
+    },
+    {
+      "id": "animals-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are un sistem de cromatofori controlat neural, capabil de schimbări foarte rapide de culoare?",
+      "options": [
+        "Sepia",
+        "Cameleonul",
+        "Broasca verde",
+        "Șopârla agama"
+      ],
+      "answer": "Sepia",
+      "explanation": "Cefalopodele controlează neural cromatoforii și pot schimba modelul pielii în fracțiuni de secundă."
+    },
+    {
+      "id": "animals-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce celule reflectorizante contribuie la aspectul metalic sau iridescent al pielii la cefalopode?",
+      "options": [
+        "Iridoforii",
+        "Osteocitele",
+        "Mastocitele",
+        "Eritrocitele"
+      ],
+      "answer": "Iridoforii",
+      "explanation": "Iridoforii reflectă selectiv lumina și produc efecte iridescente."
+    },
+    {
+      "id": "animals-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură din ochiul multor animale nocturne reflectă lumina prin retină și îmbunătățește vederea slab luminată?",
+      "options": [
+        "Tapetum lucidum",
+        "Macula lutea",
+        "Fovea centralis",
+        "Membrana bazilară"
+      ],
+      "answer": "Tapetum lucidum",
+      "explanation": "Tapetum lucidum reflectă fotonii înapoi prin retină, crescând șansa de absorbție."
+    },
+    {
+      "id": "animals-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mamifer nu are tapetum lucidum, în ciuda vederii nocturne relativ bune?",
+      "options": [
+        "Omul",
+        "Pisica",
+        "Câinele",
+        "Cerbul"
+      ],
+      "answer": "Omul",
+      "explanation": "Oamenii nu au tapetum lucidum, motiv pentru care ochii noștri nu prezintă reflexia tipică multor mamifere nocturne."
+    },
+    {
+      "id": "animals-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pigment vizual este predominant în bastonașele retinei vertebratelor?",
+      "options": [
+        "Rodopsina",
+        "Melanina",
+        "Iodopsina exclusiv",
+        "Hemoglobina"
+      ],
+      "answer": "Rodopsina",
+      "explanation": "Rodopsina este pigmentul fotosensibil principal al bastonașelor."
+    },
+    {
+      "id": "animals-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură a păsărilor este un organ vascular pigmentat care pătrunde în corpul vitros și are rol încă dezbătut?",
+      "options": [
+        "Pecten oculi",
+        "Tapetum lucidum",
+        "Glanda Harder",
+        "Crista neurală"
+      ],
+      "answer": "Pecten oculi",
+      "explanation": "Pecten oculi este o structură caracteristică ochiului aviar, probabil implicată în nutriția retinei și alte funcții."
+    },
+    {
+      "id": "animals-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce organ senzorial permite peștilor să detecteze accelerația și sunetele prin otoliți?",
+      "options": [
+        "Urechea internă",
+        "Linia laterală exclusiv",
+        "Vezica înotătoare exclusiv",
+        "Operculul"
+      ],
+      "answer": "Urechea internă",
+      "explanation": "Otoliții din urechea internă răspund la mișcare și vibrații sonore."
+    },
+    {
+      "id": "animals-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură lipsește la majoritatea insectelor, deși acestea pot auzi prin organe timpanale?",
+      "options": [
+        "Ureche internă vertebrată",
+        "Timpan extern",
+        "Receptori mecanici",
+        "Neuroni senzoriali"
+      ],
+      "answer": "Ureche internă vertebrată",
+      "explanation": "Insectele nu au urechea internă tipică vertebratelor; au organe mecanosenzoriale specializate."
+    },
+    {
+      "id": "animals-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste grupuri are un sistem vascular acvifer cu madreporit?",
+      "options": [
+        "Echinodermele",
+        "Cnidarii",
+        "Moluștele",
+        "Crustaceele"
+      ],
+      "answer": "Echinodermele",
+      "explanation": "Madreporitul conectează sistemul vascular acvifer al multor echinoderme cu mediul extern."
+    },
+    {
+      "id": "animals-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce funcție are aparatul lui Weber la peștii ostariofizi?",
+      "options": [
+        "Transmite vibrațiile vezicii înotătoare către urechea internă",
+        "Filtrează sarea",
+        "Produce impulsuri electrice",
+        "Reglează flotabilitatea fără gaze"
+      ],
+      "answer": "Transmite vibrațiile vezicii înotătoare către urechea internă",
+      "explanation": "O serie de oscioare conectează vezica înotătoare cu urechea și îmbunătățește auzul."
+    },
+    {
+      "id": "animals-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale aparține grupului Ostariophysi?",
+      "options": [
+        "Crapul",
+        "Tonul",
+        "Codul",
+        "Căluțul de mare"
+      ],
+      "answer": "Crapul",
+      "explanation": "Ciprinizii, inclusiv crapul, sunt ostariofizi."
+    },
+    {
+      "id": "animals-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mecanism folosesc multe insecte pentru a evita pierderea excesivă de apă prin respirație?",
+      "options": [
+        "Închiderea temporară a spiraculilor",
+        "Respirația prin piele umedă",
+        "Branhii interne",
+        "Plămâni alveolari"
+      ],
+      "answer": "Închiderea temporară a spiraculilor",
+      "explanation": "Controlul deschiderii spiraculilor reduce pierderea de apă în timpul schimbului de gaze."
+    },
+    {
+      "id": "animals-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce deșeu azotat insolubil este excretat de păsări și multe reptile pentru economisirea apei?",
+      "options": [
+        "Acid uric",
+        "Uree",
+        "Amoniac",
+        "Nitrați"
+      ],
+      "answer": "Acid uric",
+      "explanation": "Acidul uric poate fi eliminat cu puțină apă, fiind avantajos în mediile uscate și în ouăle cu coajă."
+    },
+    {
+      "id": "animals-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale este uricotelic în principal?",
+      "options": [
+        "Porumbelul",
+        "Câinele",
+        "Păstrăvul",
+        "Broasca adultă"
+      ],
+      "answer": "Porumbelul",
+      "explanation": "Păsările excretă cea mai mare parte a azotului sub formă de acid uric."
+    },
+    {
+      "id": "animals-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce hormon este central în controlul metamorfozei la amfibieni?",
+      "options": [
+        "Hormonii tiroidieni",
+        "Insulina",
+        "Adrenalina",
+        "Prolactina exclusiv"
+      ],
+      "answer": "Hormonii tiroidieni",
+      "explanation": "Tiroxina și alți hormoni tiroidieni declanșează schimbările majore din metamorfoza amfibienilor."
+    },
+    {
+      "id": "animals-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce hormon juvenil reglează metamorfoza insectelor împreună cu ecdisona?",
+      "options": [
+        "Hormonul juvenil",
+        "Tiroxina",
+        "Cortizolul",
+        "Melatonina"
+      ],
+      "answer": "Hormonul juvenil",
+      "explanation": "Nivelul hormonului juvenil influențează dacă năpârlirea produce o altă larvă, o pupă sau adultul."
+    },
+    {
+      "id": "animals-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce hormon steroidian declanșează năpârlirea la insecte?",
+      "options": [
+        "Ecdisona",
+        "Testosteronul",
+        "Aldosteronul",
+        "Calcitonina"
+      ],
+      "answer": "Ecdisona",
+      "explanation": "Ecdisona și derivații ei controlează ecdisisul și metamorfoza la artropode."
+    },
+    {
+      "id": "animals-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are cromozomi sexuali ZW la femelă și ZZ la mascul?",
+      "options": [
+        "Găina",
+        "Omul",
+        "Câinele",
+        "Șoarecele"
+      ],
+      "answer": "Găina",
+      "explanation": "La păsări, femelele sunt heterogametice ZW, iar masculii ZZ."
+    },
+    {
+      "id": "animals-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mecanism de determinare a sexului apare la multe reptile, inclusiv unele țestoase și crocodili?",
+      "options": [
+        "Temperatura de incubare",
+        "Numărul de picioare al embrionului",
+        "Salinitatea sângelui matern",
+        "Faza lunii"
+      ],
+      "answer": "Temperatura de incubare",
+      "explanation": "La numeroase reptile, temperatura oului în perioade critice influențează sexul puilor."
+    },
+    {
+      "id": "animals-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură permite unui embrion de reptilă sau pasăre să stocheze deșeuri și să participe la schimbul de gaze?",
+      "options": [
+        "Alantoida",
+        "Amnionul exclusiv",
+        "Sac vitelin exclusiv",
+        "Corionul exclusiv"
+      ],
+      "answer": "Alantoida",
+      "explanation": "Alantoida stochează deșeuri azotate și contribuie la schimbul gazos împreună cu corionul."
+    },
+    {
+      "id": "animals-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce membrană embrionară înconjoară direct embrionul într-un lichid protector la amniote?",
+      "options": [
+        "Amnionul",
+        "Alantoida",
+        "Corionul",
+        "Sac vitelin"
+      ],
+      "answer": "Amnionul",
+      "explanation": "Amnionul formează cavitatea amniotică umplută cu lichid."
+    },
+    {
+      "id": "animals-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale este un amniot?",
+      "options": [
+        "Țestoasa",
+        "Broasca",
+        "Salamandra",
+        "Axolotlul"
+      ],
+      "answer": "Țestoasa",
+      "explanation": "Reptilele, păsările și mamiferele sunt amniote; amfibienii nu sunt."
+    },
+    {
+      "id": "animals-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură embrionară a tunicatelor demonstrează apartenența lor la cordate?",
+      "options": [
+        "Notocordul larvar",
+        "Exoscheletul chitinos",
+        "Radula",
+        "Sistemul ambulacrar"
+      ],
+      "answer": "Notocordul larvar",
+      "explanation": "Larvele tunicatelor au notocord în coadă, una dintre trăsăturile definitorii ale cordatelor."
+    },
+    {
+      "id": "animals-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale este un tunicat?",
+      "options": [
+        "Ascidia",
+        "Nautilul",
+        "Buretele de mare",
+        "Anemona"
+      ],
+      "answer": "Ascidia",
+      "explanation": "Ascidiile sunt tunicate marine și aparțin cordatelor."
+    },
+    {
+      "id": "animals-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură caracteristică cordatelor este situată dorsal față de tubul digestiv?",
+      "options": [
+        "Tubul nervos dorsal",
+        "Lanțul nervos ventral",
+        "Radula",
+        "Nefridiul"
+      ],
+      "answer": "Tubul nervos dorsal",
+      "explanation": "Cordatele au un tub nervos dorsal gol, care la vertebrate formează creierul și măduva spinării."
+    },
+    {
+      "id": "animals-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce grup de animale are chelicere în loc de mandibule?",
+      "options": [
+        "Arahnidele",
+        "Crustaceele",
+        "Insectele",
+        "Miriapodele"
+      ],
+      "answer": "Arahnidele",
+      "explanation": "Cheliceratele, inclusiv arahnidele, posedă chelicere ca prime apendice bucale."
+    },
+    {
+      "id": "animals-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură funcționează ca organ respirator la crabii potcoavă?",
+      "options": [
+        "Branhiile în carte",
+        "Plămânii alveolari",
+        "Traheile",
+        "Branhiile externe filamentoase"
+      ],
+      "answer": "Branhiile în carte",
+      "explanation": "Crabii potcoavă au branhiile în carte, structuri lamelare situate abdominal."
+    },
+    {
+      "id": "animals-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale este mai apropiat evolutiv de păianjeni decât de crabi adevărați?",
+      "options": [
+        "Crabul potcoavă",
+        "Homarul",
+        "Crevetele",
+        "Păduchele de lemn"
+      ],
+      "answer": "Crabul potcoavă",
+      "explanation": "Crabii potcoavă sunt chelicerate, grup înrudit cu arahnidele, nu crustacee."
+    },
+    {
+      "id": "animals-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pigment din ochiul unor crustacee și insecte poate migra pentru adaptarea la lumină?",
+      "options": [
+        "Pigmenții ommatidiali",
+        "Hemoglobina",
+        "Mioglobina",
+        "Bilirubina"
+      ],
+      "answer": "Pigmenții ommatidiali",
+      "explanation": "Pigmenții din ochii compuși se pot redistribui și modifica sensibilitatea la lumină."
+    },
+    {
+      "id": "animals-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce unitate optică repetitivă formează ochiul compus al unei insecte?",
+      "options": [
+        "Omatidia",
+        "Alveola",
+        "Nefronul",
+        "Sclerita"
+      ],
+      "answer": "Omatidia",
+      "explanation": "Ochiul compus este alcătuit din numeroase unități numite omatidii."
+    },
+    {
+      "id": "animals-241",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte oscioare auditive are urechea medie a unui mamifer pe fiecare parte?",
+      "answer": "3",
+      "explanation": "Mamiferele au trei oscioare auditive: ciocan, nicovală și scăriță."
+    },
+    {
+      "id": "animals-242",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte perechi de saci aerieni are în mod tipic sistemul respirator al unei păsări, dacă sunt numărate grupurile pereche principale?",
+      "answer": "4",
+      "explanation": "Păsările au de obicei patru grupuri pereche de saci aerieni plus un sac interclavicular nepereche, totalizând de regulă nouă saci."
+    },
+    {
+      "id": "animals-243",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câți saci aerieni are în mod tipic o pasăre?",
+      "answer": "9",
+      "explanation": "Majoritatea păsărilor au nouă saci aerieni: patru perechi și un sac interclavicular nepereche."
+    },
+    {
+      "id": "animals-244",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce animal are o placă de os sau cartilaj numită opercul care acoperă branhiile?",
+      "options": [
+        "Crapul",
+        "Rechinul alb",
+        "Pisica de mare",
+        "Țiparul electric"
+      ],
+      "answer": "Crapul",
+      "explanation": "Peștii osoși au de regulă opercul, în timp ce majoritatea rechinilor au fante branhiale expuse."
+    },
+    {
+      "id": "animals-245",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care dintre aceste animale are un spiracul respirator în spatele ochiului, util mai ales când stă pe fundul mării?",
+      "options": [
+        "Pisica de mare",
+        "Tonul",
+        "Somonul",
+        "Peștele-spadă"
+      ],
+      "answer": "Pisica de mare",
+      "explanation": "Multe batoide aspiră apa prin spiracule când gura este aproape de substrat."
+    },
+    {
+      "id": "animals-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup de mamifere este grup-soră pentru Cetacea în cadrul Cetartiodactyla?",
+      "options": [
+        "Hippopotamidae",
+        "Suidae",
+        "Camelidae",
+        "Cervidae"
+      ],
+      "answer": "Hippopotamidae",
+      "explanation": "Analizele filogenetice plasează hipopotamii drept cele mai apropiate rude vii ale cetaceelor."
+    },
+    {
+      "id": "animals-247",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce genă este asociată major cu dezvoltarea membrelor și este exprimată în zona de activitate polarizantă a embrionului?",
+      "options": [
+        "SHH",
+        "PAX6",
+        "FOXP2",
+        "BRCA1"
+      ],
+      "answer": "SHH",
+      "explanation": "Sonic hedgehog, SHH, controlează patterningul antero-posterior al membrelor în dezvoltarea vertebratelor."
+    },
+    {
+      "id": "animals-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce genă de dezvoltare este esențială pentru formarea ochilor la numeroase animale și este remarcabil de conservată evolutiv?",
+      "options": [
+        "PAX6",
+        "MYH7",
+        "CFTR",
+        "HBB"
+      ],
+      "answer": "PAX6",
+      "explanation": "PAX6 este un regulator major al dezvoltării ochiului la multe linii animale."
+    },
+    {
+      "id": "animals-249",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proteină structurală predomină în mătasea produsă de păianjeni?",
+      "options": [
+        "Spidroina",
+        "Colagenul",
+        "Elastina",
+        "Tubulina"
+      ],
+      "answer": "Spidroina",
+      "explanation": "Mătasea păianjenilor este formată în principal din proteine fibroase numite spidroine."
+    },
+    {
+      "id": "animals-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură specializată a păianjenilor produce efectiv fibrele de mătase la exterior?",
+      "options": [
+        "Filierele",
+        "Chelicerele",
+        "Pedipalpii",
+        "Spiraculele"
+      ],
+      "answer": "Filierele",
+      "explanation": "Filierele sunt apendice abdominale conectate la glandele de mătase."
+    },
+    {
+      "id": "animals-251",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de celulă senzorială mecanoreceptoare formează neuromaștii liniei laterale la pești?",
+      "options": [
+        "Celule ciliate",
+        "Celule cu conuri",
+        "Osteocite",
+        "Melanocite"
+      ],
+      "answer": "Celule ciliate",
+      "explanation": "Neuromaștii conțin celule ciliate care răspund la deplasarea apei."
+    },
+    {
+      "id": "animals-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură gelatinoasă acoperă celulele ciliate din neuromaștii liniei laterale?",
+      "options": [
+        "Cupula",
+        "Macula",
+        "Tectorială",
+        "Crista osificată"
+      ],
+      "answer": "Cupula",
+      "explanation": "Mișcarea apei deplasează cupula și îndoaie stereocilii celulelor senzoriale."
+    },
+    {
+      "id": "animals-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pigment vizual este bazat pe retinal și o proteină opsină?",
+      "options": [
+        "Rodopsina",
+        "Melanina",
+        "Hemocianina",
+        "Pteridina"
+      ],
+      "answer": "Rodopsina",
+      "explanation": "Rodopsina este formată din opsină legată de retinal, un derivat al vitaminei A."
+    },
+    {
+      "id": "animals-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism permite crustaceelor decapode să calcifice rapid noul exoschelet după năpârlire?",
+      "options": [
+        "Depunerea sărurilor de calciu",
+        "Polimerizarea celulozei",
+        "Formarea de keratină",
+        "Depunerea siliciului exclusiv"
+      ],
+      "answer": "Depunerea sărurilor de calciu",
+      "explanation": "După ecdisis, cuticula este întărită prin mineralizare, în special cu carbonat de calciu."
+    },
+    {
+      "id": "animals-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură stochează temporar calciu la unele crustacee înainte de năpârlire?",
+      "options": [
+        "Gastrolitele",
+        "Otolitele",
+        "Statolitele",
+        "Nefrolitele"
+      ],
+      "answer": "Gastrolitele",
+      "explanation": "Unele crustacee formează gastrolite de calciu în stomac înainte de năpârlire pentru reutilizarea mineralului."
+    },
+    {
+      "id": "animals-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organ senzorial al crustaceelor detectează gravitația cu ajutorul unui statolit?",
+      "options": [
+        "Statocistul",
+        "Omatidiul",
+        "Nefridiul",
+        "Telsonul"
+      ],
+      "answer": "Statocistul",
+      "explanation": "Statocistul conține un statolit a cărui deplasare informează animalul despre orientare și accelerație."
+    },
+    {
+      "id": "animals-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură locomotorie a cefalopodelor expulzează apa pentru propulsie?",
+      "options": [
+        "Sifonul",
+        "Radula",
+        "Mantaua exclusiv",
+        "Brahiul"
+      ],
+      "answer": "Sifonul",
+      "explanation": "Contracția mantalei împinge apa prin sifon, producând propulsie cu jet."
+    },
+    {
+      "id": "animals-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organ produce cochilia la moluște?",
+      "options": [
+        "Mantaua",
+        "Radula",
+        "Branhia",
+        "Piciorul"
+      ],
+      "answer": "Mantaua",
+      "explanation": "Epiteliul mantalei secretă materialul mineral și organic al cochiliei."
+    },
+    {
+      "id": "animals-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care componentă minerală predomină în cochiliile multor moluște?",
+      "options": [
+        "Carbonatul de calciu",
+        "Fosfatul de calciu",
+        "Oxidul de fier",
+        "Dioxidul de siliciu"
+      ],
+      "answer": "Carbonatul de calciu",
+      "explanation": "Cochiliile sunt alcătuite în principal din carbonat de calciu în forme precum aragonitul sau calcitul."
+    },
+    {
+      "id": "animals-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură din cochilia nautilului controlează flotabilitatea prin reglarea lichidului și gazului din camere?",
+      "options": [
+        "Sifunculul",
+        "Radula",
+        "Rinoforul",
+        "Operculul"
+      ],
+      "answer": "Sifunculul",
+      "explanation": "Sifunculul traversează camerele cochiliei și participă la reglarea flotabilității."
+    },
+    {
+      "id": "animals-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen descrie procesul prin care o larvă devine adultă fără să piardă toate caracterele juvenile?",
+      "options": [
+        "Neotenie",
+        "Paedomorfoză",
+        "Heterocronie",
+        "Metageneză"
+      ],
+      "answer": "Paedomorfoză",
+      "explanation": "Paedomorfoza este păstrarea trăsăturilor juvenile la adult; neotenia este unul dintre mecanismele ei."
+    },
+    {
+      "id": "animals-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism de paedomorfoză presupune încetinirea dezvoltării somatice față de maturizarea reproductivă?",
+      "options": [
+        "Neotenia",
+        "Progenezia",
+        "Hipermorfoza",
+        "Accelerația"
+      ],
+      "answer": "Neotenia",
+      "explanation": "În neotenie, dezvoltarea somatică este încetinită, astfel încât adultul păstrează trăsături juvenile."
+    },
+    {
+      "id": "animals-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism de paedomorfoză presupune maturizarea sexuală mai devreme decât în forma ancestrală?",
+      "options": [
+        "Progenezia",
+        "Neotenia",
+        "Hipermorfoza",
+        "Peramorfoza"
+      ],
+      "answer": "Progenezia",
+      "explanation": "Progenezia scurtează dezvoltarea prin atingerea precoce a maturității sexuale."
+    },
+    {
+      "id": "animals-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de heterocronie produce caractere mai accentuate decât la strămoși prin prelungirea dezvoltării?",
+      "options": [
+        "Hipermorfoza",
+        "Neotenia",
+        "Progenezia",
+        "Miniaturizarea"
+      ],
+      "answer": "Hipermorfoza",
+      "explanation": "Hipermorfoza extinde dezvoltarea și este o formă de peramorfoză."
+    },
+    {
+      "id": "animals-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură este omoloagă cu scărița din urechea medie a mamiferelor la tetrapodele ancestrale?",
+      "options": [
+        "Columela sau hyomandibula",
+        "Quadratum",
+        "Articularul",
+        "Dentarul"
+      ],
+      "answer": "Columela sau hyomandibula",
+      "explanation": "Scărița mamiferelor derivă din hyomandibula, numită columela la multe tetrapode."
+    },
+    {
+      "id": "animals-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce arc faringian embrionar contribuie la structuri asociate mandibulei la vertebrate?",
+      "options": [
+        "Primul arc faringian",
+        "Al patrulea arc",
+        "Al cincilea arc",
+        "Niciun arc"
+      ],
+      "answer": "Primul arc faringian",
+      "explanation": "Primul arc faringian, mandibular, contribuie la structuri ale maxilarului și urechii medii."
+    },
+    {
+      "id": "animals-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce moleculă este principalul pigment din exoscheletul dur al unor polichete cu fălci întunecate, alături de proteine?",
+      "options": [
+        "Melanina",
+        "Clorofila",
+        "Hemoglobina",
+        "Carotenul"
+      ],
+      "answer": "Melanina",
+      "explanation": "La unele nevertebrate, melanina contribuie la întărirea și pigmentarea structurilor bucale."
+    },
+    {
+      "id": "animals-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură a anelidelor funcționează ca unitate excretoare segmentară?",
+      "options": [
+        "Metanefridiul",
+        "Nefronul",
+        "Tubul Malpighi",
+        "Glanda verde"
+      ],
+      "answer": "Metanefridiul",
+      "explanation": "Numeroase anelide au câte o pereche de metanefridii în segmentele corpului."
+    },
+    {
+      "id": "animals-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organ excretor este caracteristic insectelor?",
+      "options": [
+        "Tuburile Malpighi",
+        "Metanefridiile",
+        "Protonefridiile",
+        "Glandele antenale"
+      ],
+      "answer": "Tuburile Malpighi",
+      "explanation": "Tuburile Malpighi extrag produși de excreție din hemolimfă și îi varsă în intestin."
+    },
+    {
+      "id": "animals-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organ excretor este cunoscut drept „glanda verde” la multe crustacee?",
+      "options": [
+        "Glanda antenală",
+        "Glanda rectală",
+        "Glanda uropigiană",
+        "Glanda salivară"
+      ],
+      "answer": "Glanda antenală",
+      "explanation": "Glandele antenale sunt organe excretoare situate în regiunea capului la numeroase crustacee."
+    },
+    {
+      "id": "animals-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură excretoare simplă, formată din celule cu flacără, este caracteristică multor viermi plați?",
+      "options": [
+        "Protonefridiile",
+        "Metanefridiile",
+        "Tuburile Malpighi",
+        "Nefronii"
+      ],
+      "answer": "Protonefridiile",
+      "explanation": "Platelminții folosesc protonefridii cu celule cu flacără pentru osmoreglare și excreție."
+    },
+    {
+      "id": "animals-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de simetrie au echinodermele în stadiul larvar, înainte de simetria pentaradială adultă?",
+      "options": [
+        "Bilaterală",
+        "Pentaradială",
+        "Asimetrică",
+        "Sferică"
+      ],
+      "answer": "Bilaterală",
+      "explanation": "Larvele echinodermelor sunt bilaterale, indicând originea lor din strămoși bilaterieni."
+    },
+    {
+      "id": "animals-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură embrionară devine anusul în dezvoltarea deuterostomilor, în definiția clasică?",
+      "options": [
+        "Blastoporul",
+        "Arhenteronul",
+        "Blastocelul",
+        "Notocordul"
+      ],
+      "answer": "Blastoporul",
+      "explanation": "În schema clasică a deuterostomiei, blastoporul formează anusul, iar gura apare secundar."
+    },
+    {
+      "id": "animals-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup include vertebratele și tunicatele, dar nu cefalocordatele?",
+      "options": [
+        "Olfactores",
+        "Craniata",
+        "Gnathostomata",
+        "Tetrapoda"
+      ],
+      "answer": "Olfactores",
+      "explanation": "Olfactores este clada formată din tunicate și vertebrate, conform filogeniilor moleculare moderne."
+    },
+    {
+      "id": "animals-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care dintre aceste animale este un cefalocordat?",
+      "options": [
+        "Amfioxusul",
+        "Ascidia",
+        "Mixina",
+        "Lampetra"
+      ],
+      "answer": "Amfioxusul",
+      "explanation": "Amfioxusul sau lanceletul aparține Cefalochordata."
+    },
+    {
+      "id": "animals-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup de vertebrate actuale nu are maxilare adevărate?",
+      "options": [
+        "Ciclostomii",
+        "Actinopterigienii",
+        "Sarcopterigienii",
+        "Amniotele"
+      ],
+      "answer": "Ciclostomii",
+      "explanation": "Mixinele și chișcarii sunt vertebrate fără maxilare, grupate în Cyclostomata."
+    },
+    {
+      "id": "animals-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură a rechinilor masculi este modificată din înotătoarele pelviene pentru transferul spermei?",
+      "options": [
+        "Clasperii",
+        "Spiraculele",
+        "Filierele",
+        "Cercii"
+      ],
+      "answer": "Clasperii",
+      "explanation": "Clasperii sunt organe copulatoare pereche derivate din înotătoarele pelviene."
+    },
+    {
+      "id": "animals-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce organ produce ureea prin ciclul ornitinei la vertebrate?",
+      "options": [
+        "Ficatul",
+        "Rinichiul",
+        "Splina",
+        "Pancreasul"
+      ],
+      "answer": "Ficatul",
+      "explanation": "Ciclul ureei are loc în principal în hepatocite."
+    },
+    {
+      "id": "animals-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de rinichi este funcțional la majoritatea reptilelor, păsărilor și mamiferelor adulte?",
+      "options": [
+        "Metanefros",
+        "Pronefros",
+        "Mezonefros exclusiv",
+        "Protonefros"
+      ],
+      "answer": "Metanefros",
+      "explanation": "Metanefrosul formează rinichiul definitiv al amniotelor."
+    },
+    {
+      "id": "animals-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de rinichi este funcțional la embrionii timpurii ai multor vertebrate, dar rudimentar la amniote?",
+      "options": [
+        "Pronefros",
+        "Metanefros",
+        "Holonefros",
+        "Metanefridiu"
+      ],
+      "answer": "Pronefros",
+      "explanation": "Pronefrosul este primul rinichi embrionar și este tranzitoriu la amniote."
+    },
+    {
+      "id": "animals-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură transportă ovocitele la păsări, în condițiile în care la majoritatea femelelor doar ovarul stâng este funcțional?",
+      "options": [
+        "Oviductul stâng",
+        "Ureterul drept",
+        "Canalul deferent",
+        "Cloaca exclusiv"
+      ],
+      "answer": "Oviductul stâng",
+      "explanation": "La majoritatea păsărilor femele, ovarul și oviductul stâng sunt cele funcționale."
+    },
+    {
+      "id": "animals-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce glandă a păsărilor secretă ulei folosit frecvent la întreținerea penelor?",
+      "options": [
+        "Glanda uropigiană",
+        "Glanda pineală",
+        "Glanda rectală",
+        "Glanda Harder"
+      ],
+      "answer": "Glanda uropigiană",
+      "explanation": "Glanda uropigiană de la baza cozii produce o secreție răspândită pe pene în timpul toaletării."
+    },
+    {
+      "id": "animals-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de pene contribuie în principal la izolația termică prin reținerea aerului aproape de corp?",
+      "options": [
+        "Puful",
+        "Remigele",
+        "Rectricele",
+        "Filoplumele exclusiv"
+      ],
+      "answer": "Puful",
+      "explanation": "Penele de puf au structură laxă și rețin aer, reducând pierderea de căldură."
+    },
+    {
+      "id": "animals-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pene formează principalele suprafețe portante ale aripii unei păsări?",
+      "options": [
+        "Remigele",
+        "Rectricele",
+        "Puful",
+        "Vibrisele"
+      ],
+      "answer": "Remigele",
+      "explanation": "Remigele sunt penele mari de zbor ale aripilor."
+    },
+    {
+      "id": "animals-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pene mari ale cozii ajută la direcție și frânare în zbor?",
+      "options": [
+        "Rectricele",
+        "Remigele",
+        "Puful",
+        "Semiplumele"
+      ],
+      "answer": "Rectricele",
+      "explanation": "Rectricele sunt penele principale ale cozii și contribuie la controlul zborului."
+    },
+    {
+      "id": "animals-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură microscopică le permite penelor să formeze o suprafață continuă prin agățarea barbulelor?",
+      "options": [
+        "Cârligele barbulelor",
+        "Omatidiile",
+        "Stereocilii",
+        "Spiculele"
+      ],
+      "answer": "Cârligele barbulelor",
+      "explanation": "Barbulele penelor de contur au cârlige care se cuplează și refac suprafața penajului."
+    },
+    {
+      "id": "animals-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proteină predomină în pene, gheare și ciocul păsărilor?",
+      "options": [
+        "Beta-keratina aviară sau corneous beta-proteins",
+        "Colagenul tip I",
+        "Elastina",
+        "Fibroina"
+      ],
+      "answer": "Beta-keratina aviară sau corneous beta-proteins",
+      "explanation": "Structurile cornoase ale păsărilor sunt bogate în proteine beta-cornoase, tradițional numite beta-keratine."
+    },
+    {
+      "id": "animals-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pigment produce culorile roșu-galben-portocaliu în penele multor păsări și trebuie adesea obținut din dietă?",
+      "options": [
+        "Carotenoizii",
+        "Melanina exclusiv",
+        "Hemocianina",
+        "Porfirina exclusiv"
+      ],
+      "answer": "Carotenoizii",
+      "explanation": "Carotenoizii alimentari sunt depuși în pene și produc numeroase nuanțe galbene, portocalii și roșii."
+    },
+    {
+      "id": "animals-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de culoare produce albastrul multor pene de pasăre, în absența unui pigment albastru?",
+      "options": [
+        "Colorație structurală",
+        "Hemocianină",
+        "Biliverdină exclusiv",
+        "Caroten albastru"
+      ],
+      "answer": "Colorație structurală",
+      "explanation": "Nanostructurile penelor împrăștie selectiv lumina și pot produce albastru fără pigment albastru."
+    },
+    {
+      "id": "animals-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pigment poate produce verdele cojii ouălor la unele păsări?",
+      "options": [
+        "Biliverdina",
+        "Hemoglobina",
+        "Melanina",
+        "Keratină"
+      ],
+      "answer": "Biliverdina",
+      "explanation": "Biliverdina este unul dintre pigmenții implicați în colorarea verde-albăstruie a cojii ouălor."
+    },
+    {
+      "id": "animals-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pigment produce frecvent petele brun-roșcate de pe coaja ouălor de pasăre?",
+      "options": [
+        "Protoporfirina IX",
+        "Biliverdina exclusiv",
+        "Carotenul",
+        "Rodopsina"
+      ],
+      "answer": "Protoporfirina IX",
+      "explanation": "Protoporfirina IX contribuie la nuanțele roșcate și brune ale cojii."
+    },
+    {
+      "id": "animals-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup de păsări are un organ vocal numit syrinx situat la baza traheei?",
+      "options": [
+        "Toate păsările actuale au o formă de syrinx, cu variații",
+        "Doar papagalii",
+        "Doar păsările cântătoare",
+        "Doar răpitoarele"
+      ],
+      "answer": "Toate păsările actuale au o formă de syrinx, cu variații",
+      "explanation": "Syrinxul este organul vocal caracteristic păsărilor și variază mult între grupuri."
+    },
+    {
+      "id": "animals-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Unde este situat de obicei syrinxul păsărilor?",
+      "options": [
+        "La bifurcația traheei în bronhii",
+        "În cavitatea nazală",
+        "În esofag",
+        "În urechea internă"
+      ],
+      "answer": "La bifurcația traheei în bronhii",
+      "explanation": "Syrinxul se află de regulă la capătul inferior al traheei, în zona bifurcației bronșice."
+    },
+    {
+      "id": "animals-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură a mamiferelor produce sunetul vocal prin vibrația pliurilor vocale?",
+      "options": [
+        "Laringele",
+        "Syrinxul",
+        "Cohleea",
+        "Faringele exclusiv"
+      ],
+      "answer": "Laringele",
+      "explanation": "La mamifere, pliurile vocale din laringe sunt principala sursă a sunetelor vocale."
+    },
+    {
+      "id": "animals-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de fibră musculară este adaptată în special la activitate aerobă susținută și conține multă mioglobină?",
+      "options": [
+        "Fibrele oxidative lente",
+        "Fibrele glicolitice rapide",
+        "Fibrele fără mitocondrii",
+        "Fibrele cartilaginoase"
+      ],
+      "answer": "Fibrele oxidative lente",
+      "explanation": "Fibrele oxidative lente au multe mitocondrii, capilare și mioglobină și rezistă la oboseală."
+    },
+    {
+      "id": "animals-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proteină musculară stochează oxigen și este foarte abundentă la mamiferele marine scufundătoare?",
+      "options": [
+        "Mioglobina",
+        "Keratină",
+        "Actina exclusiv",
+        "Fibrinogenul"
+      ],
+      "answer": "Mioglobina",
+      "explanation": "Mamiferele marine care se scufundă au adesea concentrații foarte mari de mioglobină în mușchi."
+    },
+    {
+      "id": "animals-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce adaptare cardiovasculară apare frecvent în reflexul de scufundare al mamiferelor marine?",
+      "options": [
+        "Bradicardia",
+        "Tahicardia severă",
+        "Vasodilatația periferică generalizată",
+        "Oprirea completă a circulației"
+      ],
+      "answer": "Bradicardia",
+      "explanation": "Ritmul cardiac scade în scufundare, iar fluxul sanguin este prioritizat către organele vitale."
+    },
+    {
+      "id": "animals-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism protejează plămânii unor cetacee care se scufundă la mare adâncime de absorbția excesivă a azotului?",
+      "options": [
+        "Colabarea controlată a alveolelor și deplasarea aerului în căile rigide",
+        "Creșterea presiunii arteriale până la egalizare",
+        "Umplerea plămânilor cu apă",
+        "Producerea hemocianinei"
+      ],
+      "answer": "Colabarea controlată a alveolelor și deplasarea aerului în căile rigide",
+      "explanation": "La adâncime, alveolele se pot colaba și aerul este deplasat spre căile aeriene neparticipante la schimbul gazos."
+    },
+    {
+      "id": "animals-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pigment respirator este prezent în eritrocitele vertebratelor și conține fier în gruparea hem?",
+      "options": [
+        "Hemoglobina",
+        "Hemocianina",
+        "Hemeritrina",
+        "Clorocruorina"
+      ],
+      "answer": "Hemoglobina",
+      "explanation": "Hemoglobina folosește fierul din grupările hem pentru legarea reversibilă a oxigenului."
+    },
+    {
+      "id": "animals-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proteină din cristalinul ochiului contribuie masiv la transparență și refracție?",
+      "options": [
+        "Cristalinele",
+        "Keratină",
+        "Actina",
+        "Tubulina"
+      ],
+      "answer": "Cristalinele",
+      "explanation": "Cristalinele sunt proteine structurale foarte concentrate și stabile ale cristalinului."
+    },
+    {
+      "id": "animals-301",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism permite peștilor osoși să modifice focalizarea ochiului sub apă?",
+      "options": [
+        "Deplasarea cristalinului înainte și înapoi",
+        "Schimbarea majoră a curburii corneei",
+        "Contractarea pupilei exclusiv",
+        "Rotirea retinei"
+      ],
+      "answer": "Deplasarea cristalinului înainte și înapoi",
+      "explanation": "La mulți pești, focalizarea se realizează prin deplasarea cristalinului sferic."
+    },
+    {
+      "id": "animals-302",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mecanism de focalizare este predominant la mamifere?",
+      "options": [
+        "Schimbarea curburii cristalinului",
+        "Deplasarea rigidă a cristalinului ca la majoritatea peștilor",
+        "Deplasarea retinei",
+        "Modificarea lungimii corneei"
+      ],
+      "answer": "Schimbarea curburii cristalinului",
+      "explanation": "Mușchiul ciliar modifică tensiunea zonulelor și permite cristalinului să-și schimbe forma."
+    },
+    {
+      "id": "animals-303",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură a retinei este responsabilă în principal de vederea colorată la vertebrate?",
+      "options": [
+        "Conurile",
+        "Bastonașele",
+        "Celulele ganglionare exclusiv",
+        "Celulele Müller"
+      ],
+      "answer": "Conurile",
+      "explanation": "Conurile conțin opsine sensibile la diferite lungimi de undă și susțin vederea colorată."
+    },
+    {
+      "id": "animals-304",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte perechi de nervi cranieni au, în mod clasic, mamiferele?",
+      "answer": "12",
+      "explanation": "Anatomia mamiferelor descrie 12 perechi de nervi cranieni."
+    },
+    {
+      "id": "animals-305",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte arcuri aortice embrionare numerotate sunt descrise clasic la vertebrate, chiar dacă unele regresează sau lipsesc?",
+      "answer": "6",
+      "explanation": "În embriologia vertebratelor sunt descrise clasic șase perechi numerotate de arcuri aortice."
+    }
+  ]
+}

@@ -23,7 +23,8 @@
     "prisma:migrate:deploy": "prisma migrate deploy",
     "prisma:seed": "prisma db seed",
     "prisma:seed:verify": "ts-node prisma/verify-taxonomy.ts",
-    "questions:curated": "ts-node prisma/seed-curated-solo-questions.ts"
+    "questions:curated": "ts-node prisma/seed-curated-solo-questions.ts",
+    "questions:owner-categories": "ts-node prisma/seed-owner-category-questions.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",

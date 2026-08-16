@@ -1,0 +1,3756 @@
+{
+  "id": "history",
+  "name": "Istorie",
+  "questions": [
+    {
+      "id": "history-001",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a început Revoluția Franceză?",
+      "answer": "1789",
+      "explanation": "Revoluția Franceză a început în 1789, când criza financiară și politică a monarhiei a culminat cu convocarea Stărilor Generale și căderea Bastiliei."
+    },
+    {
+      "id": "history-002",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a început Primul Război Mondial?",
+      "answer": "1914",
+      "explanation": "Primul Război Mondial a început în 1914 după asasinarea arhiducelui Franz Ferdinand și activarea sistemului de alianțe europene."
+    },
+    {
+      "id": "history-003",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an s-a încheiat Primul Război Mondial prin armistițiul de la Compiègne?",
+      "answer": "1918",
+      "explanation": "Armistițiul de la Compiègne a intrat în vigoare la 11 noiembrie 1918 și a încheiat luptele principale de pe Frontul de Vest."
+    },
+    {
+      "id": "history-004",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a început al Doilea Război Mondial în Europa?",
+      "answer": "1939",
+      "explanation": "Germania a invadat Polonia la 1 septembrie 1939, iar Marea Britanie și Franța au declarat război Germaniei două zile mai târziu."
+    },
+    {
+      "id": "history-005",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an s-a încheiat al Doilea Război Mondial?",
+      "answer": "1945",
+      "explanation": "Războiul s-a încheiat în 1945, mai întâi în Europa în luna mai și apoi în Asia după capitularea Japoniei în septembrie."
+    },
+    {
+      "id": "history-006",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a căzut Zidul Berlinului?",
+      "answer": "1989",
+      "explanation": "Zidul Berlinului a fost deschis la 9 noiembrie 1989, devenind simbolul prăbușirii diviziunii politice dintre Est și Vest."
+    },
+    {
+      "id": "history-007",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost semnată Declarația de Independență a Statelor Unite?",
+      "answer": "1776",
+      "explanation": "Declarația de Independență a fost adoptată la 4 iulie 1776 de Congresul Continental, rupând oficial legăturile politice cu Marea Britanie."
+    },
+    {
+      "id": "history-008",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a ajuns expediția lui Cristofor Columb în Caraibe?",
+      "answer": "1492",
+      "explanation": "Columb a traversat Atlanticul în 1492 sub patronajul coroanei spaniole și a ajuns în insulele Caraibelor, nu pe continentul asiatic."
+    },
+    {
+      "id": "history-009",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a căzut Constantinopolul în mâinile otomanilor?",
+      "answer": "1453",
+      "explanation": "Constantinopolul a fost cucerit în 1453 de armata sultanului Mehmed al II-lea, punând capăt Imperiului Bizantin."
+    },
+    {
+      "id": "history-010",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc prima aselenizare cu echipaj uman?",
+      "answer": "1969",
+      "explanation": "Apollo 11 a aselenizat în iulie 1969, iar Neil Armstrong și Buzz Aldrin au devenit primii oameni care au pășit pe Lună."
+    },
+    {
+      "id": "history-011",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat Sputnik 1?",
+      "answer": "1957",
+      "explanation": "Uniunea Sovietică a lansat Sputnik 1 în 1957, inaugurând era sateliților artificiali și accelerând competiția spațială cu Statele Unite."
+    },
+    {
+      "id": "history-012",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost proclamat Imperiul German la Versailles?",
+      "answer": "1871",
+      "explanation": "Imperiul German a fost proclamat în ianuarie 1871 după victoria prusacă asupra Franței, sub conducerea regelui Wilhelm I."
+    },
+    {
+      "id": "history-013",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost semnat Tratatul de la Versailles după Primul Război Mondial?",
+      "answer": "1919",
+      "explanation": "Tratatul de la Versailles a fost semnat în 1919 și a impus Germaniei pierderi teritoriale, limitări militare și obligații financiare."
+    },
+    {
+      "id": "history-014",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an s-a dizolvat Uniunea Sovietică?",
+      "answer": "1991",
+      "explanation": "Uniunea Sovietică a încetat oficial să existe în decembrie 1991, după declararea independenței mai multor republici unionale."
+    },
+    {
+      "id": "history-015",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a început Războiul Civil American?",
+      "answer": "1861",
+      "explanation": "Războiul Civil American a început în 1861 după secesiunea statelor sudice și atacul confederat asupra Fort Sumter."
+    },
+    {
+      "id": "history-016",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost semnată Magna Carta?",
+      "answer": "1215",
+      "explanation": "Magna Carta a fost sigilată în 1215 de regele Ioan al Angliei, limitând anumite prerogative regale și consacrând principii juridice importante."
+    },
+    {
+      "id": "history-017",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a început Reforma protestantă prin publicarea celor 95 de teze ale lui Martin Luther?",
+      "answer": "1517",
+      "explanation": "În 1517, Martin Luther a făcut publice criticile sale față de practica indulgențelor, eveniment asociat convențional cu începutul Reformei protestante."
+    },
+    {
+      "id": "history-018",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Waterloo?",
+      "answer": "1815",
+      "explanation": "Bătălia de la Waterloo din 1815 a pus capăt revenirii lui Napoleon la putere în timpul perioadei numite Cele O Sută de Zile."
+    },
+    {
+      "id": "history-019",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a început Revoluția Rusă din februarie și octombrie?",
+      "answer": "1917",
+      "explanation": "Anul 1917 a adus două revoluții în Rusia: căderea țarismului în februarie și preluarea puterii de către bolșevici în octombrie."
+    },
+    {
+      "id": "history-020",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Criza rachetelor din Cuba?",
+      "answer": "1962",
+      "explanation": "Criza rachetelor din Cuba din 1962 a adus Statele Unite și Uniunea Sovietică foarte aproape de o confruntare nucleară directă."
+    },
+    {
+      "id": "history-021",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost proclamată Republica Populară Chineză?",
+      "answer": "1949",
+      "explanation": "Mao Zedong a proclamat Republica Populară Chineză la 1 octombrie 1949, după victoria comuniștilor în războiul civil chinez."
+    },
+    {
+      "id": "history-022",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost creat NATO?",
+      "answer": "1949",
+      "explanation": "Organizația Tratatului Atlanticului de Nord a fost creată în 1949 ca alianță defensivă între Statele Unite, Canada și mai multe state vest-europene."
+    },
+    {
+      "id": "history-023",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost creat Pactul de la Varșovia?",
+      "answer": "1955",
+      "explanation": "Pactul de la Varșovia a fost înființat în 1955 ca alianță militară a blocului estic dominat de Uniunea Sovietică."
+    },
+    {
+      "id": "history-024",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc căderea Saigonului?",
+      "answer": "1975",
+      "explanation": "Saigonul a căzut în aprilie 1975 în fața forțelor nord-vietnameze, marcând sfârșitul războiului din Vietnam."
+    },
+    {
+      "id": "history-025",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a început Marea Criză Economică prin crahul bursier de pe Wall Street?",
+      "answer": "1929",
+      "explanation": "Crahul bursier din octombrie 1929 a accelerat criza economică globală cunoscută drept Marea Depresiune."
+    },
+    {
+      "id": "history-026",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a început Restaurația Meiji în Japonia?",
+      "answer": "1868",
+      "explanation": "Restaurația Meiji a început în 1868 și a deschis o perioadă de modernizare rapidă, centralizare politică și industrializare a Japoniei."
+    },
+    {
+      "id": "history-027",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost deschis Canalul Suez?",
+      "answer": "1869",
+      "explanation": "Canalul Suez a fost deschis oficial în 1869 și a scurtat dramatic ruta maritimă dintre Europa și Oceanul Indian."
+    },
+    {
+      "id": "history-028",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost adoptat Edictul de la Milano?",
+      "answer": "313",
+      "explanation": "Edictul de la Milano din 313, asociat cu Constantin și Licinius, a acordat toleranță religioasă creștinilor din Imperiul Roman."
+    },
+    {
+      "id": "history-029",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Conciliul de la Niceea?",
+      "answer": "325",
+      "explanation": "Primul Conciliu de la Niceea a fost convocat în 325 de împăratul Constantin pentru a aborda dispute doctrinare din creștinismul timpuriu."
+    },
+    {
+      "id": "history-030",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Hastings?",
+      "answer": "1066",
+      "explanation": "Bătălia de la Hastings din 1066 a dus la cucerirea normandă a Angliei și la urcarea pe tron a lui William Cuceritorul."
+    },
+    {
+      "id": "history-031",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost semnată Pacea de la Westfalia?",
+      "answer": "1648",
+      "explanation": "Tratatele din 1648 au încheiat Războiul de Treizeci de Ani și au redefinit raporturile de putere și suveranitate în Europa."
+    },
+    {
+      "id": "history-032",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Lepanto?",
+      "answer": "1571",
+      "explanation": "Bătălia navală de la Lepanto din 1571 a fost o victorie majoră a Ligii Sfinte împotriva flotei otomane."
+    },
+    {
+      "id": "history-033",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Agincourt?",
+      "answer": "1415",
+      "explanation": "La Agincourt, în 1415, armata lui Henric al V-lea al Angliei a obținut o victorie surprinzătoare asupra unei forțe franceze superioare numeric."
+    },
+    {
+      "id": "history-034",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost semnat Tratatul de la Utrecht?",
+      "answer": "1713",
+      "explanation": "Tratatul de la Utrecht din 1713 a încheiat cea mai mare parte a Războiului de Succesiune Spaniolă și a schimbat echilibrul european."
+    },
+    {
+      "id": "history-035",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Revoluția Glorioasă din Anglia?",
+      "answer": "1688",
+      "explanation": "Revoluția Glorioasă din 1688 l-a înlăturat pe Iacob al II-lea și a consolidat monarhia constituțională engleză."
+    },
+    {
+      "id": "history-036",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Congresul de la Viena?",
+      "answer": "1815",
+      "explanation": "Congresul de la Viena s-a încheiat în 1815 și a reorganizat Europa după războaiele napoleoniene pe baza principiului echilibrului de putere."
+    },
+    {
+      "id": "history-037",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Austerlitz?",
+      "answer": "1805",
+      "explanation": "Napoleon a învins decisiv armatele rusă și austriacă la Austerlitz în 1805, una dintre cele mai cunoscute victorii ale sale."
+    },
+    {
+      "id": "history-038",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a început Războiul Crimeii?",
+      "answer": "1853",
+      "explanation": "Războiul Crimeii a început în 1853 și a implicat Rusia împotriva Imperiului Otoman sprijinit de Marea Britanie, Franța și Sardinia."
+    },
+    {
+      "id": "history-039",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Congresul de la Berlin care a revizuit Tratatul de la San Stefano?",
+      "answer": "1878",
+      "explanation": "Congresul de la Berlin din 1878 a redesenat aranjamentele balcanice după războiul ruso-otoman și a limitat influența Rusiei."
+    },
+    {
+      "id": "history-040",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a început Primul Război Balcanic?",
+      "answer": "1912",
+      "explanation": "Primul Război Balcanic a început în 1912, când Liga Balcanică a atacat Imperiul Otoman și i-a redus drastic teritoriile europene."
+    },
+    {
+      "id": "history-041",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Midway?",
+      "answer": "1942",
+      "explanation": "Bătălia de la Midway din 1942 a fost o victorie strategică decisivă a Statelor Unite împotriva Japoniei în Pacific."
+    },
+    {
+      "id": "history-042",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a început blocada Berlinului de Vest?",
+      "answer": "1948",
+      "explanation": "Uniunea Sovietică a început blocada Berlinului de Vest în 1948, iar occidentalii au răspuns prin podul aerian de la Berlin."
+    },
+    {
+      "id": "history-043",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Criza Suezului?",
+      "answer": "1956",
+      "explanation": "Criza Suezului din 1956 a urmat naționalizării canalului de către Gamal Abdel Nasser și intervenției militare a Israelului, Franței și Marii Britanii."
+    },
+    {
+      "id": "history-044",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a început Primăvara de la Praga?",
+      "answer": "1968",
+      "explanation": "Primăvara de la Praga din 1968 a încercat liberalizarea regimului comunist cehoslovac înainte de intervenția militară a Pactului de la Varșovia."
+    },
+    {
+      "id": "history-045",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Războiul de Yom Kippur?",
+      "answer": "1973",
+      "explanation": "Războiul de Yom Kippur a început în octombrie 1973 prin atacul Egiptului și Siriei împotriva Israelului."
+    },
+    {
+      "id": "history-046",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Adrianopol în care a murit împăratul Valens?",
+      "answer": "378",
+      "explanation": "Bătălia de la Adrianopol din 378 a fost o înfrângere majoră a romanilor în fața goților și a evidențiat vulnerabilitatea armatei imperiale."
+    },
+    {
+      "id": "history-047",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost semnat Tratatul de la Verdun?",
+      "answer": "843",
+      "explanation": "Tratatul de la Verdun din 843 a împărțit Imperiul Carolingian între nepoții lui Carol cel Mare și a influențat harta Europei medievale."
+    },
+    {
+      "id": "history-048",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc episodul de la Canossa dintre Henric al IV-lea și papa Grigore al VII-lea?",
+      "answer": "1077",
+      "explanation": "În 1077, Henric al IV-lea a mers la Canossa pentru a obține ridicarea excomunicării în contextul luptei pentru învestitură."
+    },
+    {
+      "id": "history-049",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Bouvines?",
+      "answer": "1214",
+      "explanation": "Victoria regelui Filip al II-lea al Franței la Bouvines în 1214 a consolidat monarhia franceză și a slăbit adversarii săi."
+    },
+    {
+      "id": "history-050",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Ain Jalut?",
+      "answer": "1260",
+      "explanation": "La Ain Jalut, în 1260, mamelucii au oprit înaintarea unei armate mongole în Levant, un moment important în istoria Orientului Apropiat."
+    },
+    {
+      "id": "history-051",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Grunwald?",
+      "answer": "1410",
+      "explanation": "Bătălia de la Grunwald din 1410 a adus o victorie majoră alianței polono-lituaniene asupra Ordinului Teutonic."
+    },
+    {
+      "id": "history-052",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost semnată Pacea de la Augsburg?",
+      "answer": "1555",
+      "explanation": "Pacea de la Augsburg din 1555 a introdus principiul cuius regio, eius religio pentru principii din Sfântul Imperiu Roman."
+    },
+    {
+      "id": "history-053",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a început Războiul de Treizeci de Ani?",
+      "answer": "1618",
+      "explanation": "Războiul de Treizeci de Ani a început în 1618 după Defenestrarea de la Praga și s-a extins într-un conflict european major."
+    },
+    {
+      "id": "history-054",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc al doilea asediu otoman al Vienei?",
+      "answer": "1683",
+      "explanation": "Asediul Vienei din 1683 s-a încheiat cu înfrângerea otomanilor de către o armată de coaliție condusă în parte de Ioan Sobieski."
+    },
+    {
+      "id": "history-055",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a început Războiul de Succesiune Spaniolă?",
+      "answer": "1701",
+      "explanation": "Războiul de Succesiune Spaniolă a început în 1701 după disputa privind moștenirea tronului spaniol al lui Carol al II-lea."
+    },
+    {
+      "id": "history-056",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Tratatul de la Küçük Kaynarca?",
+      "answer": "1774",
+      "explanation": "Tratatul de la Küçük Kaynarca din 1774 a încheiat un război ruso-otoman și a extins puternic influența Rusiei în regiunea Mării Negre."
+    },
+    {
+      "id": "history-057",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc lovitura de stat de la 18 Brumar?",
+      "answer": "1799",
+      "explanation": "Lovitura de stat din 18 Brumar, în 1799, a încheiat Directoratul francez și l-a adus pe Napoleon Bonaparte în poziția dominantă de Prim Consul."
+    },
+    {
+      "id": "history-058",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost semnat Tratatul de la Tilsit?",
+      "answer": "1807",
+      "explanation": "Tratatele de la Tilsit din 1807 au urmat victoriilor lui Napoleon asupra Prusiei și Rusiei și au reorganizat temporar alianțele europene."
+    },
+    {
+      "id": "history-059",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Tsushima?",
+      "answer": "1905",
+      "explanation": "Bătălia navală de la Tsushima din 1905 a fost o victorie decisivă a Japoniei asupra flotei ruse în Războiul Ruso-Japonez."
+    },
+    {
+      "id": "history-060",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost proclamată Republica Turcia?",
+      "answer": "1923",
+      "explanation": "Republica Turcia a fost proclamată în 1923 sub conducerea lui Mustafa Kemal Atatürk, după prăbușirea Imperiului Otoman."
+    },
+    {
+      "id": "history-061",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an î.Hr. a avut loc Bătălia de la Salamina?",
+      "answer": "480",
+      "explanation": "Bătălia navală de la Salamina din 480 î.Hr. a fost o victorie decisivă a coaliției grecești împotriva flotei persane a lui Xerxes."
+    },
+    {
+      "id": "history-062",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an î.Hr. a început Războiul Peloponesiac?",
+      "answer": "431",
+      "explanation": "Războiul Peloponesiac a început în 431 î.Hr. și a opus în principal Atena și aliații săi Spartei și Ligii Peloponesiace."
+    },
+    {
+      "id": "history-063",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an î.Hr. a avut loc Bătălia de la Cheroneea în care Filip al II-lea a învins coaliția greacă?",
+      "answer": "338",
+      "explanation": "Bătălia de la Cheroneea din 338 î.Hr. a consacrat dominația Macedoniei lui Filip al II-lea asupra principalelor cetăți grecești."
+    },
+    {
+      "id": "history-064",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an î.Hr. a avut loc Bătălia de la Actium?",
+      "answer": "31",
+      "explanation": "Bătălia navală de la Actium din 31 î.Hr. a decis conflictul dintre Octavian și alianța lui Marc Antoniu cu Cleopatra."
+    },
+    {
+      "id": "history-065",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia din Pădurea Teutoburg?",
+      "answer": "9",
+      "explanation": "În anul 9 d.Hr., o coaliție germanică condusă de Arminius a distrus trei legiuni romane în Pădurea Teutoburg."
+    },
+    {
+      "id": "history-066",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost detronat Romulus Augustulus, dată convențională pentru sfârșitul Imperiului Roman de Apus?",
+      "answer": "476",
+      "explanation": "Detronarea lui Romulus Augustulus în 476 este folosită convențional pentru marcarea sfârșitului Imperiului Roman de Apus."
+    },
+    {
+      "id": "history-067",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Lechfeld?",
+      "answer": "955",
+      "explanation": "În 955, Otto I a învins decisiv maghiarii la Lechfeld, consolidându-și prestigiul și puterea în Europa Centrală."
+    },
+    {
+      "id": "history-068",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Legnano?",
+      "answer": "1176",
+      "explanation": "La Legnano, în 1176, Liga Lombardă a învins armata împăratului Frederic Barbarossa, limitând controlul imperial asupra orașelor nord-italiene."
+    },
+    {
+      "id": "history-069",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a căzut Acre, ultimul mare bastion cruciat din Țara Sfântă?",
+      "answer": "1291",
+      "explanation": "Acre a căzut în 1291 în fața mamelucilor, marcând sfârșitul principalelor state cruciate de pe coasta Levantului."
+    },
+    {
+      "id": "history-070",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia Pintenilor de Aur?",
+      "answer": "1302",
+      "explanation": "Bătălia din 1302 de la Kortrijk a adus o victorie remarcabilă milițiilor flamande asupra cavaleriei nobiliare franceze."
+    },
+    {
+      "id": "history-071",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost semnat Tratatul de la Karlowitz?",
+      "answer": "1699",
+      "explanation": "Tratatul de la Karlowitz din 1699 a confirmat pierderi teritoriale otomane majore în Europa Centrală în favoarea Habsburgilor și aliaților lor."
+    },
+    {
+      "id": "history-072",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost semnat Tratatul de la Nystad?",
+      "answer": "1721",
+      "explanation": "Tratatul de la Nystad din 1721 a încheiat Marele Război al Nordului și a consacrat ascensiunea Rusiei ca mare putere baltică."
+    },
+    {
+      "id": "history-073",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost semnat Tratatul de la Campo Formio?",
+      "answer": "1797",
+      "explanation": "Tratatul de la Campo Formio din 1797 a încheiat războiul dintre Franța revoluționară și Austria și a reorganizat teritorii în Italia."
+    },
+    {
+      "id": "history-074",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Königgrätz/Sadowa?",
+      "answer": "1866",
+      "explanation": "Bătălia de la Königgrätz din 1866 a adus victoria decisivă a Prusiei asupra Austriei și a pregătit unificarea Germaniei sub conducere prusacă."
+    },
+    {
+      "id": "history-075",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost semnat Acordul de la München privind Sudetenlandul?",
+      "answer": "1938",
+      "explanation": "Acordul de la München din 1938 a permis Germaniei anexarea Sudetenlandului din Cehoslovacia și a devenit simbolul politicii de conciliere."
+    },
+    {
+      "id": "history-076",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost primul împărat roman?",
+      "options": [
+        "Augustus",
+        "Elisabeta I",
+        "Ginghis Han",
+        "Mao Zedong"
+      ],
+      "answer": "Augustus",
+      "explanation": "Augustus, inițial Octavian, a devenit primul împărat roman după înfrângerea rivalilor săi și reorganizarea Republicii într-un principat."
+    },
+    {
+      "id": "history-077",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a condus Macedonia în timpul marilor cuceriri până în India?",
+      "options": [
+        "Constantin cel Mare",
+        "Napoleon Bonaparte",
+        "Petru cel Mare",
+        "Alexandru cel Mare"
+      ],
+      "answer": "Alexandru cel Mare",
+      "explanation": "Alexandru cel Mare a moștenit regatul Macedoniei și a cucerit Imperiul Persan, extinzându-și dominația până în Asia Centrală și nord-vestul Indiei."
+    },
+    {
+      "id": "history-078",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost liderul francez încoronat împărat în 1804?",
+      "options": [
+        "George Washington",
+        "Napoleon Bonaparte",
+        "Mehmed al II-lea",
+        "Constantin cel Mare"
+      ],
+      "answer": "Napoleon Bonaparte",
+      "explanation": "Napoleon Bonaparte s-a încoronat împărat al francezilor în 1804 și a dominat politica europeană până la înfrângerea sa finală din 1815."
+    },
+    {
+      "id": "history-079",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a condus mișcarea de independență a Indiei prin metode de rezistență nonviolentă?",
+      "options": [
+        "Petru cel Mare",
+        "Mehmed al II-lea",
+        "Napoleon Bonaparte",
+        "Mahatma Gandhi"
+      ],
+      "answer": "Mahatma Gandhi",
+      "explanation": "Mahatma Gandhi a promovat satyagraha, adică rezistența nonviolentă, și a devenit una dintre figurile centrale ale luptei pentru independența Indiei."
+    },
+    {
+      "id": "history-080",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost primul președinte al Statelor Unite?",
+      "options": [
+        "Petru cel Mare",
+        "George Washington",
+        "Mehmed al II-lea",
+        "Iosif Stalin"
+      ],
+      "answer": "George Washington",
+      "explanation": "George Washington a condus armata continentală în Războiul de Independență și a devenit primul președinte al Statelor Unite în 1789."
+    },
+    {
+      "id": "history-081",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost prim-ministrul britanic asociat cu discursurile de rezistență din timpul celui de-al Doilea Război Mondial?",
+      "options": [
+        "Constantin cel Mare",
+        "Petru cel Mare",
+        "Mao Zedong",
+        "Winston Churchill"
+      ],
+      "answer": "Winston Churchill",
+      "explanation": "Winston Churchill a devenit prim-ministru în 1940 și a simbolizat rezistența britanică în perioada în care Germania domina mare parte din Europa."
+    },
+    {
+      "id": "history-082",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost liderul Uniunii Sovietice în cea mai mare parte a celui de-al Doilea Război Mondial?",
+      "options": [
+        "Mao Zedong",
+        "Nelson Mandela",
+        "Iosif Stalin",
+        "Napoleon Bonaparte"
+      ],
+      "answer": "Iosif Stalin",
+      "explanation": "Iosif Stalin a condus Uniunea Sovietică în timpul invaziei germane și al victoriei sovietice pe Frontul de Est."
+    },
+    {
+      "id": "history-083",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a proclamat Republica Populară Chineză în 1949?",
+      "options": [
+        "Mahatma Gandhi",
+        "Mao Zedong",
+        "Mehmed al II-lea",
+        "Constantin cel Mare"
+      ],
+      "answer": "Mao Zedong",
+      "explanation": "Mao Zedong a condus Partidul Comunist Chinez la victorie în războiul civil și a proclamat Republica Populară Chineză la Beijing."
+    },
+    {
+      "id": "history-084",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost liderul sud-african devenit președinte după sfârșitul apartheidului?",
+      "options": [
+        "Nelson Mandela",
+        "Augustus",
+        "Iosif Stalin",
+        "Vladimir Lenin"
+      ],
+      "answer": "Nelson Mandela",
+      "explanation": "Nelson Mandela a petrecut 27 de ani în închisoare și a devenit în 1994 primul președinte de culoare al Africii de Sud."
+    },
+    {
+      "id": "history-085",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost regina Angliei în perioada înfrângerii Armadei Spaniole din 1588?",
+      "options": [
+        "Vladimir Lenin",
+        "Petru cel Mare",
+        "Elisabeta I",
+        "Mahatma Gandhi"
+      ],
+      "answer": "Elisabeta I",
+      "explanation": "Elisabeta I a condus Anglia între 1558 și 1603, perioadă în care țara a învins campania Armadei Spaniole și și-a extins puterea maritimă."
+    },
+    {
+      "id": "history-086",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost sultanul otoman care a cucerit Constantinopolul?",
+      "options": [
+        "Mehmed al II-lea",
+        "Nelson Mandela",
+        "Napoleon Bonaparte",
+        "Elisabeta I"
+      ],
+      "answer": "Mehmed al II-lea",
+      "explanation": "Mehmed al II-lea, supranumit Cuceritorul, a capturat Constantinopolul în 1453 și l-a transformat într-un centru major al Imperiului Otoman."
+    },
+    {
+      "id": "history-087",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost țarul rus asociat cu modernizarea și fondarea orașului Sankt Petersburg?",
+      "options": [
+        "Petru cel Mare",
+        "Napoleon Bonaparte",
+        "George Washington",
+        "Mahatma Gandhi"
+      ],
+      "answer": "Petru cel Mare",
+      "explanation": "Petru cel Mare a inițiat reforme militare și administrative și a fondat Sankt Petersburg pentru a orienta Rusia mai puternic spre Europa."
+    },
+    {
+      "id": "history-088",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost împăratul roman care a legalizat creștinismul prin politica de toleranță din 313?",
+      "options": [
+        "Petru cel Mare",
+        "Mahatma Gandhi",
+        "Napoleon Bonaparte",
+        "Constantin cel Mare"
+      ],
+      "answer": "Constantin cel Mare",
+      "explanation": "Constantin cel Mare a susținut tolerarea creștinismului și a fondat Constantinopolul, mutând centrul de greutate imperial spre est."
+    },
+    {
+      "id": "history-089",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost conducătorul mongol care a unificat triburile și a fondat Imperiul Mongol?",
+      "options": [
+        "Ginghis Han",
+        "Alexandru cel Mare",
+        "Augustus",
+        "Mahatma Gandhi"
+      ],
+      "answer": "Ginghis Han",
+      "explanation": "Ginghis Han a unit triburile mongole la începutul secolului al XIII-lea și a creat baza celui mai mare imperiu terestru contiguu din istorie."
+    },
+    {
+      "id": "history-090",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a fost liderul bolșevic care a condus Revoluția din Octombrie 1917?",
+      "options": [
+        "Vladimir Lenin",
+        "Mao Zedong",
+        "Napoleon Bonaparte",
+        "Winston Churchill"
+      ],
+      "answer": "Vladimir Lenin",
+      "explanation": "Vladimir Lenin a condus facțiunea bolșevică și a jucat rolul central în preluarea puterii la Petrograd în octombrie 1917."
+    },
+    {
+      "id": "history-091",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost capitala Imperiului Bizantin?",
+      "options": [
+        "Alexandria",
+        "Constantinopol",
+        "Viena",
+        "Kyoto"
+      ],
+      "answer": "Constantinopol",
+      "explanation": "Constantinopolul a fost capitala Imperiului Roman de Răsărit și apoi a Imperiului Bizantin timp de peste o mie de ani, până la cucerirea otomană din 1453."
+    },
+    {
+      "id": "history-092",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost centrul politic al Imperiului Aztec la sosirea spaniolilor?",
+      "options": [
+        "Viena",
+        "Damasc",
+        "Ravenna",
+        "Tenochtitlán"
+      ],
+      "answer": "Tenochtitlán",
+      "explanation": "Tenochtitlán era capitala Imperiului Aztec și se afla pe insule din lacul Texcoco, în zona unde se găsește astăzi Ciudad de México."
+    },
+    {
+      "id": "history-093",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului Inca?",
+      "options": [
+        "Ravenna",
+        "Sankt Petersburg",
+        "Damasc",
+        "Cusco"
+      ],
+      "answer": "Cusco",
+      "explanation": "Cusco, în actualul Peru, a fost centrul politic și religios al Imperiului Inca și punctul de plecare al unei vaste rețele de drumuri."
+    },
+    {
+      "id": "history-094",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala califatului Abbasid în perioada sa de apogeu?",
+      "options": [
+        "Bagdad",
+        "Aachen",
+        "Sankt Petersburg",
+        "Viena"
+      ],
+      "answer": "Bagdad",
+      "explanation": "Bagdadul a devenit capitala Abbasizilor în secolul al VIII-lea și un important centru comercial, intelectual și științific al lumii islamice."
+    },
+    {
+      "id": "history-095",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Japoniei imperiale înainte de mutarea curții la Tokyo?",
+      "options": [
+        "Constantinopol",
+        "Ravenna",
+        "Kyoto",
+        "Persepolis"
+      ],
+      "answer": "Kyoto",
+      "explanation": "Kyoto a fost reședința curții imperiale japoneze timp de peste o mie de ani, până la mutarea împăratului la Tokyo în epoca Meiji."
+    },
+    {
+      "id": "history-096",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului Roman de Apus în ultima sa perioadă?",
+      "options": [
+        "Ravenna",
+        "Persepolis",
+        "Constantinopol",
+        "Berlin"
+      ],
+      "answer": "Ravenna",
+      "explanation": "Ravenna a devenit capitală imperială occidentală în 402, deoarece poziția sa mlăștinoasă și portuară oferea avantaje defensive importante."
+    },
+    {
+      "id": "history-097",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost reședința imperială preferată și principalul centru al curții lui Carol cel Mare?",
+      "options": [
+        "Viena",
+        "Aachen",
+        "Bagdad",
+        "Alexandria"
+      ],
+      "answer": "Aachen",
+      "explanation": "Aachen, numit Aix-la-Chapelle în franceză, a fost reședința preferată a lui Carol cel Mare și principalul centru ceremonial al curții sale. Curtea carolingiană era totuși itinerantă, deci termenul de «capitală» modernă poate fi înșelător."
+    },
+    {
+      "id": "history-098",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum este cunoscut astăzi orașul devenit centrul politic al Imperiului Otoman după cucerirea Constantinopolului din 1453?",
+      "options": [
+        "Sankt Petersburg",
+        "Timbuktu",
+        "Persepolis",
+        "Istanbul"
+      ],
+      "answer": "Istanbul",
+      "explanation": "Orașul cunoscut astăzi drept Istanbul a devenit principalul centru politic al Imperiului Otoman după cucerirea din 1453. În epocă au circulat și denumiri precum Constantinopol și Kostantiniyye."
+    },
+    {
+      "id": "history-099",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Califatului Omeiad?",
+      "options": [
+        "Damasc",
+        "Persepolis",
+        "Viena",
+        "Bagdad"
+      ],
+      "answer": "Damasc",
+      "explanation": "Dinastia Omeiadă a condus un vast califat din Damasc între 661 și 750, extinzând dominația islamică din Peninsula Iberică până în Asia Centrală."
+    },
+    {
+      "id": "history-100",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș al Imperiului Mali a devenit un mare centru de comerț și învățământ islamic în epoca lui Mansa Musa?",
+      "options": [
+        "Sankt Petersburg",
+        "Berlin",
+        "Timbuktu",
+        "Kyoto"
+      ],
+      "answer": "Timbuktu",
+      "explanation": "Timbuktu a devenit un important centru comercial și intelectual al Africii de Vest în epoca Imperiului Mali. Nu a fost în permanență capitala politică a imperiului, dar prestigiul său cultural a fost excepțional."
+    },
+    {
+      "id": "history-101",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului Persan Ahemenid folosită ceremonial de regi?",
+      "options": [
+        "Cusco",
+        "Sankt Petersburg",
+        "Persepolis",
+        "Constantinopol"
+      ],
+      "answer": "Persepolis",
+      "explanation": "Persepolis a fost un centru ceremonial monumental al Ahemenizilor, construit în principal de Darius I și succesorii săi în sudul Iranului actual."
+    },
+    {
+      "id": "history-102",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului Rus între începutul secolului al XVIII-lea și 1918?",
+      "options": [
+        "Constantinopol",
+        "Cusco",
+        "Sankt Petersburg",
+        "Damasc"
+      ],
+      "answer": "Sankt Petersburg",
+      "explanation": "Petru cel Mare a mutat centrul politic la Sankt Petersburg, iar orașul a rămas capitala Imperiului Rus până după Revoluția bolșevică."
+    },
+    {
+      "id": "history-103",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului Austro-Ungar?",
+      "options": [
+        "Berlin",
+        "Tenochtitlán",
+        "Istanbul",
+        "Viena"
+      ],
+      "answer": "Viena",
+      "explanation": "Viena a fost reședința dinastiei Habsburg și centrul politic al monarhiei dualiste austro-ungare până la destrămarea imperiului în 1918."
+    },
+    {
+      "id": "history-104",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Imperiului German între 1871 și 1918?",
+      "options": [
+        "Ravenna",
+        "Berlin",
+        "Sankt Petersburg",
+        "Kyoto"
+      ],
+      "answer": "Berlin",
+      "explanation": "Berlinul a devenit capitala Imperiului German creat în 1871 sub conducerea Prusiei și a rămas centrul politic al noului stat."
+    },
+    {
+      "id": "history-105",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce oraș a fost capitala Regatului Ptolemeic din Egipt?",
+      "options": [
+        "Cusco",
+        "Kyoto",
+        "Alexandria",
+        "Istanbul"
+      ],
+      "answer": "Alexandria",
+      "explanation": "Alexandria, fondată de Alexandru cel Mare, a devenit capitala dinastiei ptolemeice și unul dintre marile centre culturale ale lumii elenistice."
+    },
+    {
+      "id": "history-106",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce document englez din 1215 a limitat anumite prerogative ale regelui?",
+      "options": [
+        "Magna Carta",
+        "Perestroika",
+        "Iluminismul",
+        "Planul Marshall"
+      ],
+      "answer": "Magna Carta",
+      "explanation": "Magna Carta a fost impusă regelui Ioan de baronii rebeli și a devenit ulterior un simbol major al limitării puterii monarhice prin lege."
+    },
+    {
+      "id": "history-107",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce eveniment din 1789 este considerat simbolic începutul Revoluției Franceze?",
+      "options": [
+        "Planul Marshall",
+        "Conferința de la Berlin",
+        "Căderea Bastiliei",
+        "Revoluția din Octombrie"
+      ],
+      "answer": "Căderea Bastiliei",
+      "explanation": "Luarea Bastiliei la 14 iulie 1789 a avut o valoare simbolică enormă, deoarece fortăreața reprezenta autoritatea absolutistă a monarhiei."
+    },
+    {
+      "id": "history-108",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tratat a încheiat oficial războiul dintre Germania și principalele puteri aliate după Primul Război Mondial?",
+      "options": [
+        "Apartheid",
+        "Tratatul de la Versailles",
+        "Războiul Rece",
+        "Căderea Bastiliei"
+      ],
+      "answer": "Tratatul de la Versailles",
+      "explanation": "Tratatul de la Versailles din 1919 a redesenat frontiere, a limitat forțele armate germane și a creat cadrul pentru Liga Națiunilor."
+    },
+    {
+      "id": "history-109",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce operațiune aliată din 1944 a început cu debarcarea în Normandia?",
+      "options": [
+        "Războiul Rece",
+        "Operațiunea Overlord",
+        "Conferința de la Berlin",
+        "Revoluția din Octombrie"
+      ],
+      "answer": "Operațiunea Overlord",
+      "explanation": "Operațiunea Overlord a început la 6 iunie 1944 și a deschis un front occidental major împotriva Germaniei naziste în Europa."
+    },
+    {
+      "id": "history-110",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce doctrină americană din 1947 urmărea sprijinirea statelor amenințate de expansiunea comunistă?",
+      "options": [
+        "Doctrina Truman",
+        "Apartheid",
+        "Conferința de la Berlin",
+        "Perestroika"
+      ],
+      "answer": "Doctrina Truman",
+      "explanation": "Doctrina Truman a promis sprijin politic și economic pentru state amenințate de comunism, devenind o componentă timpurie a politicii de containment."
+    },
+    {
+      "id": "history-111",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce program american a finanțat reconstrucția Europei Occidentale după al Doilea Război Mondial?",
+      "options": [
+        "Reforma protestantă",
+        "Planul Marshall",
+        "Revoluția Industrială",
+        "Tratatul de la Versailles"
+      ],
+      "answer": "Planul Marshall",
+      "explanation": "Planul Marshall a oferit ajutor economic masiv statelor europene pentru reconstrucție și stabilizare, contribuind și la consolidarea blocului occidental."
+    },
+    {
+      "id": "history-112",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce perioadă de confruntare geopolitică a opus Statele Unite și Uniunea Sovietică după 1945?",
+      "options": [
+        "Războiul Rece",
+        "Căderea Bastiliei",
+        "Revoluția din Octombrie",
+        "Iluminismul"
+      ],
+      "answer": "Războiul Rece",
+      "explanation": "Războiul Rece a fost o competiție globală politică, militară, economică și ideologică între blocurile conduse de SUA și URSS."
+    },
+    {
+      "id": "history-113",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare intelectuală europeană a pus accent pe rațiune, știință și drepturi naturale în secolele XVII-XVIII?",
+      "options": [
+        "Doctrina Truman",
+        "Magna Carta",
+        "Operațiunea Overlord",
+        "Iluminismul"
+      ],
+      "answer": "Iluminismul",
+      "explanation": "Iluminismul a promovat rațiunea, toleranța și analiza critică a autorității și a influențat profund revoluțiile americană și franceză."
+    },
+    {
+      "id": "history-114",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare religioasă din secolul al XVI-lea a contestat autoritatea Bisericii Catolice în Europa Occidentală?",
+      "options": [
+        "Doctrina Truman",
+        "Conferința de la Berlin",
+        "Reforma protestantă",
+        "Revoluția Industrială"
+      ],
+      "answer": "Reforma protestantă",
+      "explanation": "Reforma protestantă a început prin critici teologice și instituționale și a dus la apariția mai multor confesiuni creștine occidentale."
+    },
+    {
+      "id": "history-115",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce proces economic și tehnologic început în Marea Britanie a transformat producția în secolele XVIII-XIX?",
+      "options": [
+        "Tratatul de la Versailles",
+        "Războiul Rece",
+        "Revoluția Industrială",
+        "Planul Marshall"
+      ],
+      "answer": "Revoluția Industrială",
+      "explanation": "Revoluția Industrială a înlocuit treptat producția artizanală cu mecanizarea, fabricile și energia fosilă, schimbând profund societatea și economia."
+    },
+    {
+      "id": "history-116",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare europeană din secolul al XIX-lea a susținut unificarea Italiei?",
+      "options": [
+        "Perestroika",
+        "Risorgimento",
+        "Reforma protestantă",
+        "Planul Marshall"
+      ],
+      "answer": "Risorgimento",
+      "explanation": "Risorgimento a reunit curente politice, războaie și diplomație care au dus la formarea Regatului Italiei în 1861 și completarea ulterioară a unificării."
+    },
+    {
+      "id": "history-117",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce politică de separare rasială instituționalizată a existat în Africa de Sud?",
+      "options": [
+        "Planul Marshall",
+        "Perestroika",
+        "Apartheid",
+        "Reforma protestantă"
+      ],
+      "answer": "Apartheid",
+      "explanation": "Apartheidul a impus segregare juridică și politică pe criterii rasiale în Africa de Sud până la reformele și alegerile democratice din anii 1990."
+    },
+    {
+      "id": "history-118",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce conferință din 1884-1885 a stabilit reguli pentru expansiunea colonială europeană în Africa?",
+      "options": [
+        "Conferința de la Berlin",
+        "Doctrina Truman",
+        "Tratatul de la Versailles",
+        "Planul Marshall"
+      ],
+      "answer": "Conferința de la Berlin",
+      "explanation": "Conferința de la Berlin a stabilit principii privind ocuparea teritoriilor africane de către puterile europene, accelerând împărțirea colonială a continentului."
+    },
+    {
+      "id": "history-119",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce revoluție din 1917 a adus bolșevicii la putere în Rusia?",
+      "options": [
+        "Perestroika",
+        "Reforma protestantă",
+        "Războiul Rece",
+        "Revoluția din Octombrie"
+      ],
+      "answer": "Revoluția din Octombrie",
+      "explanation": "Revoluția din Octombrie a răsturnat Guvernul Provizoriu și a permis bolșevicilor să preia instituțiile-cheie ale statului rus."
+    },
+    {
+      "id": "history-120",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce politică sovietică lansată de Mihail Gorbaciov urmărea restructurarea economiei și administrației?",
+      "options": [
+        "Tratatul de la Versailles",
+        "Revoluția Industrială",
+        "Iluminismul",
+        "Perestroika"
+      ],
+      "answer": "Perestroika",
+      "explanation": "Perestroika a încercat reformarea economiei și instituțiilor sovietice în anii 1980, fiind însoțită de politica de deschidere numită glasnost."
+    },
+    {
+      "id": "history-121",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fondat dinastia Mughală în India după victoria de la Panipat din 1526?",
+      "options": [
+        "Mansa Musa",
+        "José de San Martín",
+        "Babur",
+        "Otto von Bismarck"
+      ],
+      "answer": "Babur",
+      "explanation": "Babur, descendent al lui Timur și Ginghis Han, a învins sultanatul de la Delhi la Panipat și a pus bazele Imperiului Mughal."
+    },
+    {
+      "id": "history-122",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost împăratul Mughal cunoscut pentru politica relativ tolerantă față de religii și extinderea imperiului?",
+      "options": [
+        "Darius I",
+        "Konrad Adenauer",
+        "Akbar",
+        "Zheng He"
+      ],
+      "answer": "Akbar",
+      "explanation": "Akbar a consolidat Imperiul Mughal prin cuceriri, reforme fiscale și integrarea elitelor locale, promovând o politică religioasă mai flexibilă decât mulți succesori."
+    },
+    {
+      "id": "history-123",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost conducătorul Imperiului Mali celebru pentru pelerinajul său la Mecca și bogăția în aur?",
+      "options": [
+        "Babur",
+        "Toussaint Louverture",
+        "Mansa Musa",
+        "Cirus cel Mare"
+      ],
+      "answer": "Mansa Musa",
+      "explanation": "Mansa Musa a condus Mali în secolul al XIV-lea, iar pelerinajul său spectaculos la Mecca a făcut cunoscută bogăția imperiului în lumea mediteraneană."
+    },
+    {
+      "id": "history-124",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost fondatorul dinastiei Ming după alungarea mongolilor din China?",
+      "options": [
+        "José de San Martín",
+        "Darius I",
+        "Ashoka",
+        "Hongwu"
+      ],
+      "answer": "Hongwu",
+      "explanation": "Împăratul Hongwu, născut Zhu Yuanzhang, a învins dinastia Yuan și a fondat dinastia Ming în 1368."
+    },
+    {
+      "id": "history-125",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost amiralul chinez care a condus marile expediții maritime Ming în Oceanul Indian?",
+      "options": [
+        "Hongwu",
+        "Cirus cel Mare",
+        "Zheng He",
+        "Darius I"
+      ],
+      "answer": "Zheng He",
+      "explanation": "Zheng He a condus șapte mari expediții maritime în secolul al XV-lea, proiectând influența dinastiei Ming până în Arabia și Africa de Est."
+    },
+    {
+      "id": "history-126",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost fondatorul Imperiului Maurya din India?",
+      "options": [
+        "Toussaint Louverture",
+        "Chandragupta Maurya",
+        "Zheng He",
+        "Simón Bolívar"
+      ],
+      "answer": "Chandragupta Maurya",
+      "explanation": "Chandragupta Maurya a creat un vast imperiu în nordul Indiei în secolul al IV-lea î.Hr., după retragerea influenței macedonene."
+    },
+    {
+      "id": "history-127",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost împăratul Maurya cunoscut pentru adoptarea budismului după războiul din Kalinga?",
+      "options": [
+        "Ashoka",
+        "Akbar",
+        "Zheng He",
+        "Cirus cel Mare"
+      ],
+      "answer": "Ashoka",
+      "explanation": "Ashoka a extins Imperiul Maurya, dar după războiul sângeros din Kalinga a promovat budismul și o politică de guvernare morală."
+    },
+    {
+      "id": "history-128",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost conducătorul persan care a fondat Imperiul Ahemenid?",
+      "options": [
+        "Mustafa Kemal Atatürk",
+        "Mansa Musa",
+        "Cirus cel Mare",
+        "Babur"
+      ],
+      "answer": "Cirus cel Mare",
+      "explanation": "Cirus cel Mare a creat Imperiul Ahemenid în secolul al VI-lea î.Hr. și este cunoscut pentru administrarea relativ flexibilă a popoarelor cucerite."
+    },
+    {
+      "id": "history-129",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a reorganizat Imperiul Persan Ahemenid în satrapii și a construit Drumul Regal?",
+      "options": [
+        "Ashoka",
+        "Zheng He",
+        "Chandragupta Maurya",
+        "Darius I"
+      ],
+      "answer": "Darius I",
+      "explanation": "Darius I a consolidat administrația ahemenidă, a standardizat impozitarea și moneda și a dezvoltat infrastructura imperială."
+    },
+    {
+      "id": "history-130",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost liderul revoluției haitiene care a devenit simbolul luptei împotriva sclaviei?",
+      "options": [
+        "Chandragupta Maurya",
+        "Toussaint Louverture",
+        "Ashoka",
+        "Mustafa Kemal Atatürk"
+      ],
+      "answer": "Toussaint Louverture",
+      "explanation": "Toussaint Louverture a condus o mare parte a revoluției din Saint-Domingue și a contribuit decisiv la prăbușirea ordinii sclavagiste coloniale."
+    },
+    {
+      "id": "history-131",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost eliberatorul asociat cu independența Venezuelei, Columbiei, Ecuadorului și Boliviei?",
+      "options": [
+        "Akbar",
+        "Simón Bolívar",
+        "Hongwu",
+        "Chandragupta Maurya"
+      ],
+      "answer": "Simón Bolívar",
+      "explanation": "Simón Bolívar a fost una dintre figurile centrale ale războaielor de independență hispano-americane și a susținut proiecte de unitate regională."
+    },
+    {
+      "id": "history-132",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a condus campaniile de independență din sudul Americii de Sud, inclusiv traversarea Anzilor?",
+      "options": [
+        "José de San Martín",
+        "Darius I",
+        "Toussaint Louverture",
+        "Zheng He"
+      ],
+      "answer": "José de San Martín",
+      "explanation": "José de San Martín a contribuit decisiv la independența Argentinei, Chile și Peru, folosind o campanie strategică peste Munții Anzi."
+    },
+    {
+      "id": "history-133",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost liderul turc asociat cu abolirea sultanatului și modernizarea republicii?",
+      "options": [
+        "Simón Bolívar",
+        "Mustafa Kemal Atatürk",
+        "Konrad Adenauer",
+        "Ashoka"
+      ],
+      "answer": "Mustafa Kemal Atatürk",
+      "explanation": "Mustafa Kemal Atatürk a condus războiul de independență turc și a inițiat reforme laice și instituționale după proclamarea republicii."
+    },
+    {
+      "id": "history-134",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost cancelarul prusac care a condus procesul de unificare a Germaniei?",
+      "options": [
+        "José de San Martín",
+        "Zheng He",
+        "Otto von Bismarck",
+        "Babur"
+      ],
+      "answer": "Otto von Bismarck",
+      "explanation": "Otto von Bismarck a folosit diplomația și trei războaie majore pentru a realiza unificarea Germaniei sub conducerea Prusiei."
+    },
+    {
+      "id": "history-135",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a fost primul cancelar al Germaniei de Vest și un arhitect al integrării europene postbelice?",
+      "options": [
+        "Otto von Bismarck",
+        "Zheng He",
+        "Toussaint Louverture",
+        "Konrad Adenauer"
+      ],
+      "answer": "Konrad Adenauer",
+      "explanation": "Konrad Adenauer a orientat Republica Federală Germania spre Occident, NATO și cooperarea europeană în primii ani ai Războiului Rece."
+    },
+    {
+      "id": "history-136",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce dinastie chineză a construit o mare parte din Marele Zid în forma vizibilă astăzi?",
+      "options": [
+        "Imperiul Mali",
+        "Dinastia Ming",
+        "Imperiul Otoman",
+        "Dinastia Qing"
+      ],
+      "answer": "Dinastia Ming",
+      "explanation": "Dinastia Ming a reconstruit și extins masiv fortificațiile de la granița nordică, folosind cărămidă și piatră pe multe dintre segmentele celebre de astăzi."
+    },
+    {
+      "id": "history-137",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce dinastie chineză a fost fondată de Kublai Han?",
+      "options": [
+        "Dinastia Qing",
+        "Imperiul Aztec",
+        "Dinastia Yuan",
+        "Sfântul Imperiu Roman"
+      ],
+      "answer": "Dinastia Yuan",
+      "explanation": "Kublai Han a fondat dinastia Yuan și a integrat China în cadrul politic al lumii mongole, stabilindu-și capitala la Dadu, actualul Beijing."
+    },
+    {
+      "id": "history-138",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce dinastie a condus China imediat înainte de revoluția din 1911?",
+      "options": [
+        "Dinastia Yuan",
+        "Dinastia Ming",
+        "Dinastia Qing",
+        "Califatul Abbasid"
+      ],
+      "answer": "Dinastia Qing",
+      "explanation": "Dinastia Qing, de origine manciuriană, a condus China din 1644 până la abdicarea ultimului împărat în 1912."
+    },
+    {
+      "id": "history-139",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu indian a construit Taj Mahalul?",
+      "options": [
+        "Imperiul Inca",
+        "Imperiul Mughal",
+        "Dinastia Qing",
+        "Imperiul Bizantin"
+      ],
+      "answer": "Imperiul Mughal",
+      "explanation": "Taj Mahalul a fost comandat de împăratul Shah Jahan în secolul al XVII-lea, în perioada de maximă înflorire artistică a Imperiului Mughal."
+    },
+    {
+      "id": "history-140",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu vest-african a avut centre importante la Timbuktu și Gao?",
+      "options": [
+        "Rusia Kieveană",
+        "Imperiul Songhai",
+        "Imperiul Inca",
+        "Imperiul Otoman"
+      ],
+      "answer": "Imperiul Songhai",
+      "explanation": "Imperiul Songhai a dominat o mare parte din Sahel în secolele XV-XVI și a controlat importante rute comerciale transsahariene."
+    },
+    {
+      "id": "history-141",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu african a fost condus de Mansa Musa?",
+      "options": [
+        "Imperiul Inca",
+        "Imperiul Mongol",
+        "Dinastia Yuan",
+        "Imperiul Mali"
+      ],
+      "answer": "Imperiul Mali",
+      "explanation": "Imperiul Mali a prosperat prin comerțul cu aur și sare și a controlat regiuni vaste din Africa de Vest în Evul Mediu."
+    },
+    {
+      "id": "history-142",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu precolumbian avea capitala la Tenochtitlán?",
+      "options": [
+        "Imperiul Aztec",
+        "Imperiul Mongol",
+        "Imperiul Bizantin",
+        "Imperiul Songhai"
+      ],
+      "answer": "Imperiul Aztec",
+      "explanation": "Imperiul Aztec domina o mare parte din centrul Mexicului prin tribut și alianțe înainte de cucerirea spaniolă condusă de Hernán Cortés."
+    },
+    {
+      "id": "history-143",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu precolumbian avea o rețea extinsă de drumuri prin Anzi?",
+      "options": [
+        "Imperiul Inca",
+        "Imperiul Songhai",
+        "Califatul Omeiad",
+        "Imperiul Mughal"
+      ],
+      "answer": "Imperiul Inca",
+      "explanation": "Imperiul Inca a construit și întreținut o vastă rețea rutieră prin teren montan, facilitând administrația și deplasarea mesagerilor."
+    },
+    {
+      "id": "history-144",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu musulman medieval avea capitala la Bagdad și a patronat Casa Înțelepciunii?",
+      "options": [
+        "Rusia Kieveană",
+        "Imperiul Mughal",
+        "Sfântul Imperiu Roman",
+        "Califatul Abbasid"
+      ],
+      "answer": "Califatul Abbasid",
+      "explanation": "Abbasizii au mutat centrul politic la Bagdad, care a devenit un important centru de traducere, știință, filosofie și comerț."
+    },
+    {
+      "id": "history-145",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce califat a controlat Damasc înaintea Abbasizilor?",
+      "options": [
+        "Imperiul Inca",
+        "Dinastia Yuan",
+        "Imperiul Mali",
+        "Califatul Omeiad"
+      ],
+      "answer": "Califatul Omeiad",
+      "explanation": "Omeiazii au condus din Damasc între 661 și 750 și au extins califatul din Peninsula Iberică până în Asia Centrală."
+    },
+    {
+      "id": "history-146",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu a controlat Constantinopolul până în 1453?",
+      "options": [
+        "Imperiul Mongol",
+        "Imperiul Bizantin",
+        "Imperiul Mali",
+        "Dinastia Ming"
+      ],
+      "answer": "Imperiul Bizantin",
+      "explanation": "Imperiul Bizantin a continuat tradiția Imperiului Roman de Răsărit timp de secole, având Constantinopolul drept centru politic și religios."
+    },
+    {
+      "id": "history-147",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu a controlat mare parte din Anatolia, Balcani și Orientul Apropiat în secolele XVI-XVII?",
+      "options": [
+        "Califatul Abbasid",
+        "Imperiul Inca",
+        "Imperiul Otoman",
+        "Imperiul Mali"
+      ],
+      "answer": "Imperiul Otoman",
+      "explanation": "Imperiul Otoman a atins o mare extindere sub sultani precum Suleiman Magnificul, controlând rute comerciale și teritorii pe trei continente."
+    },
+    {
+      "id": "history-148",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu european a fost numit oficial „Sfântul Imperiu Roman”?",
+      "options": [
+        "Dinastia Yuan",
+        "Imperiul Aztec",
+        "Sfântul Imperiu Roman",
+        "Imperiul Bizantin"
+      ],
+      "answer": "Sfântul Imperiu Roman",
+      "explanation": "Sfântul Imperiu Roman a fost o structură politică complexă din Europa Centrală, formată din numeroase principate, orașe și teritorii autonome."
+    },
+    {
+      "id": "history-149",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce stat medieval a fost condus de dinastia Rurik înainte de ascensiunea Moscovei?",
+      "options": [
+        "Califatul Abbasid",
+        "Imperiul Mongol",
+        "Imperiul Bizantin",
+        "Rusia Kieveană"
+      ],
+      "answer": "Rusia Kieveană",
+      "explanation": "Rusia Kieveană a fost o federație de principate est-slave centrată pe Kiev și conectată comercial cu Bizanțul și lumea nordică."
+    },
+    {
+      "id": "history-150",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce imperiu nomad a fost împărțit după moartea lui Ginghis Han în mai multe hanate?",
+      "options": [
+        "Imperiul Songhai",
+        "Imperiul Mongol",
+        "Rusia Kieveană",
+        "Dinastia Ming"
+      ],
+      "answer": "Imperiul Mongol",
+      "explanation": "Imperiul Mongol a continuat să se extindă după Ginghis Han, dar s-a fragmentat treptat în entități precum Hoarda de Aur și Ilhanatul."
+    },
+    {
+      "id": "history-151",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce document american a proclamat abolirea sclaviei în statele aflate în rebeliune începând cu 1863?",
+      "options": [
+        "Proclamația de Emancipare",
+        "Revoluția Culturală",
+        "Acordurile de la Camp David",
+        "Reunificarea germană"
+      ],
+      "answer": "Proclamația de Emancipare",
+      "explanation": "Proclamația de Emancipare a lui Abraham Lincoln a declarat liberi sclavii din teritoriile confederate aflate în rebeliune, schimbând caracterul războiului."
+    },
+    {
+      "id": "history-152",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce amendament al Constituției SUA a abolit sclavia la nivel național?",
+      "options": [
+        "Acordurile de la Camp David",
+        "Invazia Cehoslovaciei",
+        "Noua Politică Economică",
+        "Al 13-lea Amendament"
+      ],
+      "answer": "Al 13-lea Amendament",
+      "explanation": "Al 13-lea Amendament, ratificat în 1865, a interzis sclavia și servitutea involuntară, cu excepția pedepsei pentru o infracțiune."
+    },
+    {
+      "id": "history-153",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce politică economică sovietică a înlocuit temporar comunismul de război în 1921?",
+      "options": [
+        "Glasnost",
+        "Noua Politică Economică",
+        "Doctrina Brejnev",
+        "Solidaritatea"
+      ],
+      "answer": "Noua Politică Economică",
+      "explanation": "Noua Politică Economică, sau NEP, a reintrodus elemente de piață și proprietate privată limitată pentru a revigora economia sovietică."
+    },
+    {
+      "id": "history-154",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce reformă japoneză din secolul al XIX-lea a desființat sistemul feudal al hanurilor?",
+      "options": [
+        "Doctrina Brejnev",
+        "Acordul de la München",
+        "Restaurația Meiji",
+        "Solidaritatea"
+      ],
+      "answer": "Restaurația Meiji",
+      "explanation": "Restaurația Meiji a centralizat puterea în jurul împăratului și a eliminat treptat structurile feudale ale daimyo și samurailor."
+    },
+    {
+      "id": "history-155",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce campanie politică chineză începută în 1966 a atacat „vechile idei” și numeroase instituții tradiționale?",
+      "options": [
+        "Revoluția Culturală",
+        "Al 13-lea Amendament",
+        "Pactul Molotov–Ribbentrop",
+        "Glasnost"
+      ],
+      "answer": "Revoluția Culturală",
+      "explanation": "Revoluția Culturală a mobilizat Gărzile Roșii și a provocat persecuții, distrugeri culturale și perturbări majore ale educației și administrației."
+    },
+    {
+      "id": "history-156",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce program economic chinez lansat în 1958 urmărea industrializarea rapidă și colectivizarea radicală?",
+      "options": [
+        "Marele Salt Înainte",
+        "Glasnost",
+        "Revoluția Culturală",
+        "Acordul de la München"
+      ],
+      "answer": "Marele Salt Înainte",
+      "explanation": "Marele Salt Înainte a urmărit creșterea rapidă a producției prin comune și proiecte industriale improvizate, dar a contribuit la o foamete catastrofală."
+    },
+    {
+      "id": "history-157",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce acord din 1978 a creat cadrul pentru pacea dintre Egipt și Israel?",
+      "options": [
+        "Acordurile de la Camp David",
+        "Invazia Cehoslovaciei",
+        "Reunificarea germană",
+        "Proclamația de Emancipare"
+      ],
+      "answer": "Acordurile de la Camp David",
+      "explanation": "Acordurile de la Camp David, negociate cu mediere americană, au pregătit tratatul de pace egipteano-israelian semnat în anul următor."
+    },
+    {
+      "id": "history-158",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce politică americană urmărea limitarea extinderii influenței sovietice?",
+      "options": [
+        "Revoluția Culturală",
+        "Containment",
+        "Proclamația de Emancipare",
+        "Invazia Cehoslovaciei"
+      ],
+      "answer": "Containment",
+      "explanation": "Politica de containment urmărea împiedicarea extinderii comunismului și a influenței sovietice prin alianțe, ajutor economic și presiune strategică."
+    },
+    {
+      "id": "history-159",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce operațiune sovietică din 1968 a pus capăt Primăverii de la Praga?",
+      "options": [
+        "Invazia Cehoslovaciei",
+        "Revoluția Culturală",
+        "Acordurile de la Camp David",
+        "Al 13-lea Amendament"
+      ],
+      "answer": "Invazia Cehoslovaciei",
+      "explanation": "În august 1968, trupe ale Pactului de la Varșovia conduse de URSS au intrat în Cehoslovacia și au blocat reformele conducerii lui Alexander Dubček."
+    },
+    {
+      "id": "history-160",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce acord din 1938 a cedat Germaniei regiunea Sudetă din Cehoslovacia?",
+      "options": [
+        "Solidaritatea",
+        "Revoluția Culturală",
+        "Acordul de la München",
+        "Reunificarea germană"
+      ],
+      "answer": "Acordul de la München",
+      "explanation": "Acordul de la München a fost semnat de Germania, Italia, Marea Britanie și Franța fără participarea directă a Cehoslovaciei."
+    },
+    {
+      "id": "history-161",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pact din 1939 a inclus un protocol secret privind împărțirea sferelor de influență în Europa de Est?",
+      "options": [
+        "Containment",
+        "Pactul Molotov–Ribbentrop",
+        "Glasnost",
+        "Reunificarea germană"
+      ],
+      "answer": "Pactul Molotov–Ribbentrop",
+      "explanation": "Pactul germano-sovietic de neagresiune a inclus un protocol secret care împărțea teritorii est-europene între sferele celor două puteri."
+    },
+    {
+      "id": "history-162",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce doctrină sovietică justifica intervenția în statele socialiste pentru protejarea sistemului comunist?",
+      "options": [
+        "Noua Politică Economică",
+        "Acordurile de la Camp David",
+        "Proclamația de Emancipare",
+        "Doctrina Brejnev"
+      ],
+      "answer": "Doctrina Brejnev",
+      "explanation": "Doctrina Brejnev afirma limitarea suveranității statelor socialiste atunci când conducerea sovietică considera amenințat sistemul comunist."
+    },
+    {
+      "id": "history-163",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce proces politic a dus la reunificarea Germaniei în 1990?",
+      "options": [
+        "Invazia Cehoslovaciei",
+        "Reunificarea germană",
+        "Doctrina Brejnev",
+        "Al 13-lea Amendament"
+      ],
+      "answer": "Reunificarea germană",
+      "explanation": "După căderea Zidului Berlinului și negocierile internaționale, Republica Democrată Germană s-a alăturat Republicii Federale Germania în octombrie 1990."
+    },
+    {
+      "id": "history-164",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mișcare sindicală poloneză condusă de Lech Wałęsa a contestat regimul comunist?",
+      "options": [
+        "Containment",
+        "Acordul de la München",
+        "Solidaritatea",
+        "Proclamația de Emancipare"
+      ],
+      "answer": "Solidaritatea",
+      "explanation": "Solidaritatea a apărut în 1980 la șantierele navale din Gdańsk și a devenit prima mare organizație independentă de masă din blocul sovietic."
+    },
+    {
+      "id": "history-165",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce politică a lui Gorbaciov a urmărit o mai mare transparență și libertate a informației?",
+      "options": [
+        "Containment",
+        "Restaurația Meiji",
+        "Glasnost",
+        "Doctrina Brejnev"
+      ],
+      "answer": "Glasnost",
+      "explanation": "Glasnost a redus cenzura și a permis dezbaterea publică a problemelor politice și istorice, accelerând schimbările din societatea sovietică."
+    },
+    {
+      "id": "history-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost regele Franței asociat cu absolutismul și palatul de la Versailles?",
+      "options": [
+        "Francisco Pizarro",
+        "Ludovic al XIV-lea",
+        "Hernán Cortés",
+        "Iosif al II-lea"
+      ],
+      "answer": "Ludovic al XIV-lea",
+      "explanation": "Ludovic al XIV-lea a domnit peste șapte decenii și a consolidat monarhia absolută franceză, transformând Versailles într-un centru politic și ceremonial."
+    },
+    {
+      "id": "history-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a condus Anglia republicană după execuția regelui Carol I?",
+      "options": [
+        "Oliver Cromwell",
+        "Menelik al II-lea",
+        "Ludovic al XIV-lea",
+        "Henric al VIII-lea"
+      ],
+      "answer": "Oliver Cromwell",
+      "explanation": "Oliver Cromwell a devenit Lord Protector după războaiele civile engleze și a condus Commonwealth-ul într-un regim republican cu puternică autoritate militară."
+    },
+    {
+      "id": "history-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost împărăteasa Rusiei asociată cu expansiunea spre Marea Neagră și ideile iluministe?",
+      "options": [
+        "Francisco Pizarro",
+        "Henric al VIII-lea",
+        "Ecaterina cea Mare",
+        "Menelik al II-lea"
+      ],
+      "answer": "Ecaterina cea Mare",
+      "explanation": "Ecaterina a II-a a extins teritoriul Rusiei și a întreținut relații intelectuale cu filosofi ai Iluminismului, deși a păstrat structura autocratică."
+    },
+    {
+      "id": "history-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost împăratul habsburgic care a emis Edictul de Toleranță în 1781?",
+      "options": [
+        "Carol Quintul",
+        "Ludovic al XIV-lea",
+        "Iosif al II-lea",
+        "Frederic cel Mare"
+      ],
+      "answer": "Iosif al II-lea",
+      "explanation": "Iosif al II-lea a promovat reforme inspirate de despotismul luminat, inclusiv toleranță religioasă mai largă și limitarea unor privilegii tradiționale."
+    },
+    {
+      "id": "history-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a condus Prusia în timpul Războiului de Șapte Ani și este asociat cu despotismul luminat?",
+      "options": [
+        "Henric Navigatorul",
+        "Henric al IV-lea",
+        "Hernán Cortés",
+        "Frederic cel Mare"
+      ],
+      "answer": "Frederic cel Mare",
+      "explanation": "Frederic al II-lea a consolidat Prusia ca mare putere europeană și a combinat militarismul cu reforme administrative și culturale."
+    },
+    {
+      "id": "history-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost monarhul spaniol sub care expediția lui Magellan a început prima circumnavigație?",
+      "options": [
+        "Frederic cel Mare",
+        "Menelik al II-lea",
+        "Carol Quintul",
+        "Hernán Cortés"
+      ],
+      "answer": "Carol Quintul",
+      "explanation": "Carol Quintul a aprobat expediția lui Magellan din 1519, care a continuat după moartea navigatorului și a realizat prima circumnavigație completă."
+    },
+    {
+      "id": "history-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost regele Angliei care a rupt relațiile cu Roma și a creat Biserica Anglicană sub autoritatea coroanei?",
+      "options": [
+        "Henric al IV-lea",
+        "Frederic cel Mare",
+        "Carol Quintul",
+        "Henric al VIII-lea"
+      ],
+      "answer": "Henric al VIII-lea",
+      "explanation": "Henric al VIII-lea a rupt jurisdicția papală asupra Angliei și, prin Actul de Supremație, a plasat Biserica Angliei sub autoritatea monarhului."
+    },
+    {
+      "id": "history-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost prințul portughez care a patronat explorările maritime timpurii de-a lungul Africii?",
+      "options": [
+        "Ecaterina cea Mare",
+        "Henric Navigatorul",
+        "Francisco Pizarro",
+        "Vasco da Gama"
+      ],
+      "answer": "Henric Navigatorul",
+      "explanation": "Henric Navigatorul a sprijinit expediții portugheze de explorare a coastei africane, contribuind la dezvoltarea navigației atlantice în secolul al XV-lea."
+    },
+    {
+      "id": "history-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a condus expediția care a ajuns pentru prima dată pe mare din Europa în India ocolind Africa?",
+      "options": [
+        "Frederic cel Mare",
+        "Ecaterina cea Mare",
+        "Vasco da Gama",
+        "Giuseppe Garibaldi"
+      ],
+      "answer": "Vasco da Gama",
+      "explanation": "Vasco da Gama a ajuns la Calicut în 1498 după ce a ocolit Capul Bunei Speranțe, deschizând o rută maritimă directă spre India."
+    },
+    {
+      "id": "history-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost conchistadorul care a cucerit Imperiul Aztec?",
+      "options": [
+        "Ecaterina cea Mare",
+        "Menelik al II-lea",
+        "Henric al IV-lea",
+        "Hernán Cortés"
+      ],
+      "answer": "Hernán Cortés",
+      "explanation": "Hernán Cortés a exploatat rivalități locale, alianțe indigene și superioritatea militară pentru a înfrânge Imperiul Aztec până în 1521."
+    },
+    {
+      "id": "history-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a condus cucerirea spaniolă a Imperiului Inca?",
+      "options": [
+        "Oliver Cromwell",
+        "Francisco Pizarro",
+        "Menelik al II-lea",
+        "Carol Quintul"
+      ],
+      "answer": "Francisco Pizarro",
+      "explanation": "Francisco Pizarro a capturat împăratul Atahualpa la Cajamarca și a profitat de războiul civil intern pentru a cuceri nucleul Imperiului Inca."
+    },
+    {
+      "id": "history-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost liderul protestant francez devenit regele Henric al IV-lea și asociat cu Edictul de la Nantes?",
+      "options": [
+        "Henric al IV-lea",
+        "Oliver Cromwell",
+        "Iosif al II-lea",
+        "Ludovic al XIV-lea"
+      ],
+      "answer": "Henric al IV-lea",
+      "explanation": "Henric al IV-lea a pus capăt unei mari părți a războaielor religioase franceze și a acordat drepturi limitate hughenoților prin Edictul de la Nantes."
+    },
+    {
+      "id": "history-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost cancelar al Austriei și una dintre figurile centrale ale Congresului de la Viena?",
+      "options": [
+        "Klemens von Metternich",
+        "Francisco Pizarro",
+        "Menelik al II-lea",
+        "Henric al VIII-lea"
+      ],
+      "answer": "Klemens von Metternich",
+      "explanation": "Metternich a susținut restaurarea monarhiilor și echilibrul de putere după Napoleon, devenind simbolul conservatorismului european post-1815."
+    },
+    {
+      "id": "history-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a condus mișcarea „Cămășilor Roșii” în procesul unificării Italiei?",
+      "options": [
+        "Iosif al II-lea",
+        "Giuseppe Garibaldi",
+        "Henric al VIII-lea",
+        "Henric Navigatorul"
+      ],
+      "answer": "Giuseppe Garibaldi",
+      "explanation": "Garibaldi a condus voluntari în campania celor O Mie și a contribuit la cucerirea Regatului celor Două Sicilii pentru cauza unificării italiene."
+    },
+    {
+      "id": "history-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a fost împăratul Etiopiei care a învins armata italiană la Adwa în 1896?",
+      "options": [
+        "Henric Navigatorul",
+        "Klemens von Metternich",
+        "Menelik al II-lea",
+        "Ludovic al XIV-lea"
+      ],
+      "answer": "Menelik al II-lea",
+      "explanation": "Menelik al II-lea a modernizat statul etiopian și a obținut victoria de la Adwa, păstrând independența Etiopiei în epoca imperialismului african."
+    },
+    {
+      "id": "history-181",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce uniune din 1707 a creat Regatul Marii Britanii?",
+      "options": [
+        "Actele Uniunii",
+        "Uniunea de la Lublin",
+        "Regatul Poloniei",
+        "Republica Venețiană"
+      ],
+      "answer": "Actele Uniunii",
+      "explanation": "Actele Uniunii au unit parlamentele Angliei și Scoției într-un singur regat și parlament, deși cele două țări și-au păstrat sisteme juridice distincte."
+    },
+    {
+      "id": "history-182",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat medieval a fost creat în Levant după Prima Cruciadă și avea capitala la Ierusalim?",
+      "options": [
+        "Imperiul Timurid",
+        "Marele Cnezat al Moscovei",
+        "Regatul Ierusalimului",
+        "Imperiul Ghana"
+      ],
+      "answer": "Regatul Ierusalimului",
+      "explanation": "Regatul Ierusalimului a fost cel mai important dintre statele cruciate întemeiate după cucerirea Ierusalimului în 1099."
+    },
+    {
+      "id": "history-183",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat cruciat avea centrul la Antiohia?",
+      "options": [
+        "Principatul Antiohiei",
+        "Imperiul Ghana",
+        "Ilhanatul",
+        "Imperiul Vijayanagara"
+      ],
+      "answer": "Principatul Antiohiei",
+      "explanation": "Principatul Antiohiei a fost unul dintre statele cruciate create la sfârșitul secolului al XI-lea și a controlat teritorii strategice din nordul Levantului."
+    },
+    {
+      "id": "history-184",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat medieval nord-african a cucerit pentru o perioadă mare parte din Peninsula Iberică musulmană în secolul al XII-lea?",
+      "options": [
+        "Republica Venețiană",
+        "Imperiul Ghana",
+        "Califatul Almohad",
+        "Uniunea de la Lublin"
+      ],
+      "answer": "Califatul Almohad",
+      "explanation": "Almohazii au creat un vast imperiu în Maghreb și al-Andalus și au devenit principala putere musulmană din vestul Mediteranei în secolul al XII-lea."
+    },
+    {
+      "id": "history-185",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce imperiu turco-persan din Asia Centrală a fost fondat de Timur?",
+      "options": [
+        "Dinastia Zagwe",
+        "Marele Cnezat al Moscovei",
+        "Imperiul Timurid",
+        "Ilhanatul"
+      ],
+      "answer": "Imperiul Timurid",
+      "explanation": "Timur a creat un imperiu militar întins din Asia Centrală spre Persia și Orientul Apropiat, iar urmașii săi au patronat arta și cultura persană."
+    },
+    {
+      "id": "history-186",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce hanat mongol a controlat o mare parte din Rusia și stepele nord-pontice?",
+      "options": [
+        "Hoarda de Aur",
+        "Califatul Almohad",
+        "Dinastia Zagwe",
+        "Principatul Antiohiei"
+      ],
+      "answer": "Hoarda de Aur",
+      "explanation": "Hoarda de Aur a fost unul dintre principalele state succesoare ale Imperiului Mongol și a exercitat suzeranitate asupra mai multor principate ruse."
+    },
+    {
+      "id": "history-187",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat mongol a fost fondat în Persia de Hülegü?",
+      "options": [
+        "Califatul Almohad",
+        "Principatul Antiohiei",
+        "Uniunea de la Lublin",
+        "Ilhanatul"
+      ],
+      "answer": "Ilhanatul",
+      "explanation": "Ilhanatul a fost creat în secolul al XIII-lea în Persia și Irak și a devenit unul dintre marile hanate succesoare ale Imperiului Mongol."
+    },
+    {
+      "id": "history-188",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce imperiu indian din sud a avut capitala la Vijayanagara/Hampi?",
+      "options": [
+        "Imperiul Vijayanagara",
+        "Califatul Almohad",
+        "Principatul Antiohiei",
+        "Regatul Ierusalimului"
+      ],
+      "answer": "Imperiul Vijayanagara",
+      "explanation": "Imperiul Vijayanagara a dominat sudul Indiei timp de peste două secole, iar capitala sa monumentală de la Hampi reflectă puterea și bogăția statului."
+    },
+    {
+      "id": "history-189",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce regat african medieval a controlat importante zăcăminte de aur și a dat numele statului modern Ghana?",
+      "options": [
+        "Imperiul Vijayanagara",
+        "Republica Venețiană",
+        "Imperiul Ghana",
+        "Regatul Poloniei"
+      ],
+      "answer": "Imperiul Ghana",
+      "explanation": "Imperiul Ghana medieval se afla mai la nord decât statul Ghana actual și prospera din comerțul transsaharian cu aur și sare."
+    },
+    {
+      "id": "history-190",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce regat etiopian medieval este asociat cu bisericile săpate în stâncă de la Lalibela?",
+      "options": [
+        "Dinastia Zagwe",
+        "Regatele Taifa",
+        "Regatul Poloniei",
+        "Marele Cnezat al Moscovei"
+      ],
+      "answer": "Dinastia Zagwe",
+      "explanation": "Dinastia Zagwe a condus Etiopia medievală înaintea restaurării dinastiei solomonice și este asociată cu ansamblul monumental de la Lalibela."
+    },
+    {
+      "id": "history-191",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat islamic a controlat Peninsula Iberică după destrămarea Califatului de Córdoba în mai multe entități?",
+      "options": [
+        "Regatul Ierusalimului",
+        "Hoarda de Aur",
+        "Regatele Taifa",
+        "Principatul Antiohiei"
+      ],
+      "answer": "Regatele Taifa",
+      "explanation": "După prăbușirea califatului în secolul al XI-lea, al-Andalus s-a fragmentat în numeroase mici regate musulmane numite taifas."
+    },
+    {
+      "id": "history-192",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat medieval a fost condus de dinastia Piast și apoi de Iagelloni în Europa Centrală?",
+      "options": [
+        "Ilhanatul",
+        "Regatul Poloniei",
+        "Actele Uniunii",
+        "Marele Cnezat al Moscovei"
+      ],
+      "answer": "Regatul Poloniei",
+      "explanation": "Regatul Poloniei s-a consolidat în Evul Mediu și, prin uniunea dinastică cu Lituania, a devenit parte a unei mari puteri regionale."
+    },
+    {
+      "id": "history-193",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce uniune politică din 1569 a creat oficial Commonwealth-ul Polono-Lituanian?",
+      "options": [
+        "Regatele Taifa",
+        "Uniunea de la Lublin",
+        "Principatul Antiohiei",
+        "Ilhanatul"
+      ],
+      "answer": "Uniunea de la Lublin",
+      "explanation": "Uniunea de la Lublin a creat un stat comun cu monarh ales și parlament comun, menținând însă unele instituții separate poloneze și lituaniene."
+    },
+    {
+      "id": "history-194",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat medieval rus a crescut în jurul Moscovei și a devenit nucleul viitorului țarat?",
+      "options": [
+        "Marele Cnezat al Moscovei",
+        "Republica Venețiană",
+        "Imperiul Ghana",
+        "Imperiul Timurid"
+      ],
+      "answer": "Marele Cnezat al Moscovei",
+      "explanation": "Moscova și-a extins treptat controlul asupra altor principate ruse și a redus dependența față de Hoarda de Aur."
+    },
+    {
+      "id": "history-195",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce stat maritim italian a avut o mare rețea comercială în Mediterana și capitala la Veneția?",
+      "options": [
+        "Ilhanatul",
+        "Republica Venețiană",
+        "Regatele Taifa",
+        "Marele Cnezat al Moscovei"
+      ],
+      "answer": "Republica Venețiană",
+      "explanation": "Republica Venețiană a construit un vast sistem comercial și colonial în Adriatica și estul Mediteranei, fiind una dintre marile puteri maritime medievale."
+    },
+    {
+      "id": "history-196",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pace din 1648 a recunoscut independența Provinciilor Unite și a Elveției în cadrul acordurilor sale?",
+      "options": [
+        "Acordul Sykes–Picot",
+        "Pacea de la Westfalia",
+        "Al Doilea Război al Burilor",
+        "Războiul Ruso-Japonez"
+      ],
+      "answer": "Pacea de la Westfalia",
+      "explanation": "Pacea de la Westfalia a încheiat conflicte majore europene și a recunoscut formal independența Provinciilor Unite și a Confederației Elvețiene față de imperiu."
+    },
+    {
+      "id": "history-197",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tratat din 1713 a acordat Marii Britanii Gibraltarul?",
+      "options": [
+        "Războiul Ruso-Japonez",
+        "Concertul Europei",
+        "Declarația Balfour",
+        "Tratatul de la Utrecht"
+      ],
+      "answer": "Tratatul de la Utrecht",
+      "explanation": "Prin acordurile de la Utrecht, Spania a cedat Marii Britanii Gibraltarul și Minorca, iar balanța de putere europeană a fost reorganizată."
+    },
+    {
+      "id": "history-198",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce sistem diplomatic post-napoleonian urmărea cooperarea marilor puteri pentru menținerea echilibrului european?",
+      "options": [
+        "Declarația Balfour",
+        "Sistemul mandatelor",
+        "Al Doilea Război al Burilor",
+        "Concertul Europei"
+      ],
+      "answer": "Concertul Europei",
+      "explanation": "Concertul Europei a apărut după 1815 și urmărea gestionarea crizelor prin consultări între marile puteri, pentru a preveni o nouă dominație continentală."
+    },
+    {
+      "id": "history-199",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce răscoală din 1857 a contestat dominația Companiei Britanice a Indiilor de Est?",
+      "options": [
+        "Conferința de la Bandung",
+        "Reforma și deschiderea",
+        "Revolta Sipailor",
+        "Concertul Europei"
+      ],
+      "answer": "Revolta Sipailor",
+      "explanation": "Revolta Sipailor a implicat soldați indieni și numeroase comunități locale și a dus la transferarea administrației Indiei direct coroanei britanice."
+    },
+    {
+      "id": "history-200",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce conflict din 1899-1902 a opus Imperiul Britanic republicilor bure din Africa de Sud?",
+      "options": [
+        "Declarația Balfour",
+        "Al Doilea Război al Burilor",
+        "Revoluția Rusă din 1905",
+        "Conferința de la Yalta"
+      ],
+      "answer": "Al Doilea Război al Burilor",
+      "explanation": "Al Doilea Război al Burilor a dus la înfrângerea republicilor Transvaal și Statul Liber Orange și la consolidarea controlului britanic în Africa de Sud."
+    },
+    {
+      "id": "history-201",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce război din 1904-1905 a demonstrat ascensiunea Japoniei ca mare putere?",
+      "options": [
+        "Reforma și deschiderea",
+        "Războiul Ruso-Japonez",
+        "Revolta Sipailor",
+        "Conferința de la Yalta"
+      ],
+      "answer": "Războiul Ruso-Japonez",
+      "explanation": "Victoria Japoniei asupra Rusiei a surprins puterile europene și a confirmat succesul modernizării militare japoneze din epoca Meiji."
+    },
+    {
+      "id": "history-202",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce revoluție din 1905 a forțat țarul Nicolae al II-lea să accepte crearea Dumei?",
+      "options": [
+        "Concertul Europei",
+        "Conferința de la Yalta",
+        "Revoluția Rusă din 1905",
+        "New Deal"
+      ],
+      "answer": "Revoluția Rusă din 1905",
+      "explanation": "Protestele, grevele și revoltele militare din 1905 au obligat regimul țarist să promită reforme constituționale și o adunare reprezentativă."
+    },
+    {
+      "id": "history-203",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce acord secret din 1916 a împărțit proiectat sfere de influență britanice și franceze în Orientul Apropiat otoman?",
+      "options": [
+        "Acordul Sykes–Picot",
+        "Revoluția Rusă din 1905",
+        "Conferința de la Bandung",
+        "Sistemul mandatelor"
+      ],
+      "answer": "Acordul Sykes–Picot",
+      "explanation": "Acordul Sykes–Picot a schițat sfere de control și influență în teritoriile arabe ale Imperiului Otoman, afectând politica regională postbelică."
+    },
+    {
+      "id": "history-204",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce declarație britanică din 1917 sprijinea crearea unui „cămin național” pentru poporul evreu în Palestina?",
+      "options": [
+        "Războiul Ruso-Japonez",
+        "Al Doilea Război al Burilor",
+        "Declarația Balfour",
+        "Acordul Sykes–Picot"
+      ],
+      "answer": "Declarația Balfour",
+      "explanation": "Declarația Balfour a exprimat sprijinul guvernului britanic pentru un cămin național evreiesc, menționând totodată drepturile comunităților neevreiești existente."
+    },
+    {
+      "id": "history-205",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce sistem de administrație internațională a pus foste teritorii otomane și colonii germane sub controlul unor puteri după Primul Război Mondial?",
+      "options": [
+        "Tratatul de la Utrecht",
+        "Pacea de la Westfalia",
+        "Declarația Balfour",
+        "Sistemul mandatelor"
+      ],
+      "answer": "Sistemul mandatelor",
+      "explanation": "Liga Națiunilor a distribuit mandate unor puteri precum Marea Britanie și Franța, teoretic pentru administrarea temporară a teritoriilor fostelor imperii."
+    },
+    {
+      "id": "history-206",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce politică economică americană din anii 1930 este asociată cu Franklin D. Roosevelt?",
+      "options": [
+        "Conferința de la Yalta",
+        "Conferința de la Bandung",
+        "New Deal",
+        "Războiul Ruso-Japonez"
+      ],
+      "answer": "New Deal",
+      "explanation": "New Deal a inclus programe de lucrări publice, reforme financiare și măsuri sociale menite să combată efectele Marii Depresiuni."
+    },
+    {
+      "id": "history-207",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce acord din 1944 a creat cadrul monetar internațional postbelic bazat pe dolar și instituții precum FMI?",
+      "options": [
+        "Conferința de la Yalta",
+        "Bretton Woods",
+        "Sistemul mandatelor",
+        "Revolta Sipailor"
+      ],
+      "answer": "Bretton Woods",
+      "explanation": "Sistemul Bretton Woods a stabilit cursuri de schimb gestionate și a creat instituții financiare internaționale pentru stabilitatea economică postbelică."
+    },
+    {
+      "id": "history-208",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce conferință din 1945 a reunit Roosevelt, Churchill și Stalin pentru a discuta Europa postbelică?",
+      "options": [
+        "Conferința de la Yalta",
+        "Revolta Sipailor",
+        "Conferința de la Bandung",
+        "Pacea de la Westfalia"
+      ],
+      "answer": "Conferința de la Yalta",
+      "explanation": "La Yalta, liderii aliați au discutat ocuparea Germaniei, frontierele Poloniei, Națiunile Unite și organizarea Europei după înfrângerea Germaniei."
+    },
+    {
+      "id": "history-209",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce conferință din 1955 a reunit state asiatice și africane și a influențat Mișcarea Nealiniată?",
+      "options": [
+        "Concertul Europei",
+        "Războiul Ruso-Japonez",
+        "Declarația Balfour",
+        "Conferința de la Bandung"
+      ],
+      "answer": "Conferința de la Bandung",
+      "explanation": "Conferința de la Bandung a promovat cooperarea afro-asiatică, anticolonialismul și ideea unei politici externe independente de cele două blocuri."
+    },
+    {
+      "id": "history-210",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce proces de reformă lansat în China după 1978 este asociat cu Deng Xiaoping?",
+      "options": [
+        "Al Doilea Război al Burilor",
+        "Reforma și deschiderea",
+        "Conferința de la Bandung",
+        "Sistemul mandatelor"
+      ],
+      "answer": "Reforma și deschiderea",
+      "explanation": "Reformele lui Deng Xiaoping au introdus mecanisme de piață, investiții externe și zone economice speciale, transformând profund economia chineză."
+    },
+    {
+      "id": "history-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost cardinalul și principalul ministru al lui Ludovic al XIII-lea, asociat cu centralizarea puterii franceze?",
+      "options": [
+        "Cardinalul Richelieu",
+        "Jean-Baptiste Colbert",
+        "Abdulhamid al II-lea",
+        "Ioan al III-lea Sobieski"
+      ],
+      "answer": "Cardinalul Richelieu",
+      "explanation": "Cardinalul Richelieu a redus autonomia politică a nobilimii și hughenoților și a urmărit slăbirea Habsburgilor printr-o politică externă pragmatică."
+    },
+    {
+      "id": "history-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost ministrul de finanțe al lui Ludovic al XIV-lea asociat cu mercantilismul francez?",
+      "options": [
+        "Ioan al III-lea Sobieski",
+        "Muhammad Ali",
+        "Jean-Baptiste Colbert",
+        "Maria Terezia"
+      ],
+      "answer": "Jean-Baptiste Colbert",
+      "explanation": "Colbert a încurajat manufacturile, exporturile și controlul statului asupra economiei, iar sistemul său economic este adesea numit colbertism."
+    },
+    {
+      "id": "history-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost regele Suediei care a intervenit decisiv în Războiul de Treizeci de Ani și a murit la Lützen?",
+      "options": [
+        "Saigō Takamori",
+        "Cardinalul Richelieu",
+        "Gustav Adolf",
+        "Sun Yat-sen"
+      ],
+      "answer": "Gustav Adolf",
+      "explanation": "Gustav al II-lea Adolf a modernizat armata suedeză și a intervenit de partea protestantă, transformând Suedia într-o mare putere europeană."
+    },
+    {
+      "id": "history-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost comandantul imperial habsburgic asasinat la Eger în 1634 după conflicte cu curtea?",
+      "options": [
+        "Alexandru al II-lea",
+        "Ioan al III-lea Sobieski",
+        "Albrecht von Wallenstein",
+        "Maria Terezia"
+      ],
+      "answer": "Albrecht von Wallenstein",
+      "explanation": "Wallenstein a ridicat mari armate pentru împărat în Războiul de Treizeci de Ani, dar autonomia și negocierile sale au provocat suspiciunea curții habsburgice."
+    },
+    {
+      "id": "history-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a condus armata polono-lituaniană care a contribuit decisiv la ridicarea asediului Vienei din 1683?",
+      "options": [
+        "Camillo Benso di Cavour",
+        "Ioan al III-lea Sobieski",
+        "Cardinalul Richelieu",
+        "Saigō Takamori"
+      ],
+      "answer": "Ioan al III-lea Sobieski",
+      "explanation": "Regele Ioan Sobieski a condus forțele poloneze în atacul coaliției care a înfrânt armata otomană la Viena în septembrie 1683."
+    },
+    {
+      "id": "history-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost conducătorul Brandenburg-Prusiei supranumit „Marele Elector”?",
+      "options": [
+        "Yuan Shikai",
+        "Alexandru al II-lea",
+        "Frederic Wilhelm",
+        "Sun Yat-sen"
+      ],
+      "answer": "Frederic Wilhelm",
+      "explanation": "Frederic Wilhelm a consolidat armata, administrația și resursele fiscale ale Brandenburg-Prusiei, pregătind ascensiunea ulterioară a regatului prusac."
+    },
+    {
+      "id": "history-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost suverana habsburgică a cărei succesiune a declanșat Războiul de Succesiune Austriacă?",
+      "options": [
+        "Maria Terezia",
+        "Muhammad Ali",
+        "Sun Yat-sen",
+        "Camillo Benso di Cavour"
+      ],
+      "answer": "Maria Terezia",
+      "explanation": "Maria Terezia a moștenit teritoriile habsburgice în 1740, iar contestarea drepturilor sale a declanșat un conflict european de amploare."
+    },
+    {
+      "id": "history-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a reprezentat Franța la Congresul de la Viena și a readus-o în cercul marilor puteri după Napoleon?",
+      "options": [
+        "Muhammad Ali",
+        "Cardinalul Richelieu",
+        "Charles-Maurice de Talleyrand",
+        "Ioan al III-lea Sobieski"
+      ],
+      "answer": "Charles-Maurice de Talleyrand",
+      "explanation": "Talleyrand a exploatat rivalitățile dintre învingători și principiul legitimității pentru a limita izolarea diplomatică a Franței după războaiele napoleoniene."
+    },
+    {
+      "id": "history-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost prim-ministrul Regatului Sardiniei-Piemont și principalul diplomat al unificării italiene?",
+      "options": [
+        "Abdulhamid al II-lea",
+        "Camillo Benso di Cavour",
+        "Alexandru al II-lea",
+        "Maria Terezia"
+      ],
+      "answer": "Camillo Benso di Cavour",
+      "explanation": "Cavour a modernizat Piemontul și a folosit alianța cu Franța și diplomația europeană pentru a extinde procesul de unificare italiană."
+    },
+    {
+      "id": "history-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost țarul rus care a emancipat iobagii în 1861?",
+      "options": [
+        "Gustav Adolf",
+        "Ioan al III-lea Sobieski",
+        "Camillo Benso di Cavour",
+        "Alexandru al II-lea"
+      ],
+      "answer": "Alexandru al II-lea",
+      "explanation": "Alexandru al II-lea a promulgat reforma emancipării iobagilor în 1861, parte a unui program mai larg de modernizare a Imperiului Rus."
+    },
+    {
+      "id": "history-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este considerat unul dintre fondatorii Republicii Chineze și autorul principiilor naționalism, democrație și bunăstare?",
+      "options": [
+        "Sun Yat-sen",
+        "Albrecht von Wallenstein",
+        "Yuan Shikai",
+        "Saigō Takamori"
+      ],
+      "answer": "Sun Yat-sen",
+      "explanation": "Sun Yat-sen a fost o figură centrală a mișcării revoluționare anti-Qing și a formulat Cele Trei Principii ale Poporului."
+    },
+    {
+      "id": "history-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a devenit președinte al Republicii Chineze și a încercat ulterior să se proclame împărat?",
+      "options": [
+        "Camillo Benso di Cavour",
+        "Jean-Baptiste Colbert",
+        "Saigō Takamori",
+        "Yuan Shikai"
+      ],
+      "answer": "Yuan Shikai",
+      "explanation": "Yuan Shikai a preluat președinția după revoluția din 1911, dar tentativa sa de restaurare monarhică a eșuat și a accentuat fragmentarea politică."
+    },
+    {
+      "id": "history-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost samuraiul și liderul Rebeliunii Satsuma din 1877?",
+      "options": [
+        "Charles-Maurice de Talleyrand",
+        "Camillo Benso di Cavour",
+        "Saigō Takamori",
+        "Cardinalul Richelieu"
+      ],
+      "answer": "Saigō Takamori",
+      "explanation": "Saigō Takamori participase la restaurarea Meiji, dar a ajuns să conducă rebeliunea unor foști samurai nemulțumiți de reformele noului stat."
+    },
+    {
+      "id": "history-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fondat dinastia care a modernizat Egiptul în secolul al XIX-lea sub suzeranitate otomană?",
+      "options": [
+        "Camillo Benso di Cavour",
+        "Abdulhamid al II-lea",
+        "Maria Terezia",
+        "Muhammad Ali"
+      ],
+      "answer": "Muhammad Ali",
+      "explanation": "Muhammad Ali a construit o armată modernă, a reorganizat economia și a extins temporar puterea Egiptului în Orientul Apropiat."
+    },
+    {
+      "id": "history-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a fost sultanul otoman asociat cu autocratia de la sfârșitul secolului al XIX-lea și suspendarea primei constituții?",
+      "options": [
+        "Frederic Wilhelm",
+        "Abdulhamid al II-lea",
+        "Cardinalul Richelieu",
+        "Sun Yat-sen"
+      ],
+      "answer": "Abdulhamid al II-lea",
+      "explanation": "Abdulhamid al II-lea a centralizat puterea după 1878, combinând modernizarea infrastructurii cu cenzură și control politic strict."
+    },
+    {
+      "id": "history-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce dinastie persană a făcut din islamul șiit duodeciman religia oficială a Iranului în secolul al XVI-lea?",
+      "options": [
+        "Imperiul Selgiucid",
+        "Regatul Kongo",
+        "Regatul Ayutthaya",
+        "Dinastia Safavidă"
+      ],
+      "answer": "Dinastia Safavidă",
+      "explanation": "Safavizii au unificat mare parte din Iran și au instituționalizat șiismul duodeciman, diferențiind politic și religios Persia de vecinii otomani sunniți."
+    },
+    {
+      "id": "history-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sultanat a condus Egiptul și Siria înainte de cucerirea otomană din 1516-1517?",
+      "options": [
+        "Imperiul Ghaznavid",
+        "Sultanatul Mameluc",
+        "Dinastia Samanidă",
+        "Dinastia Safavidă"
+      ],
+      "answer": "Sultanatul Mameluc",
+      "explanation": "Mamelucii au condus Egiptul și Levantul din secolul al XIII-lea până la cucerirea lor de către sultanul otoman Selim I."
+    },
+    {
+      "id": "history-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu turco-persan medieval a avut capitala la Ghazni și a desfășurat campanii repetate în nordul Indiei?",
+      "options": [
+        "Imperiul Ghaznavid",
+        "Srivijaya",
+        "Regatul Ayutthaya",
+        "Dinastia Ayyubidă"
+      ],
+      "answer": "Imperiul Ghaznavid",
+      "explanation": "Ghaznavizii au dominat Afganistanul și regiuni din Iran și India, iar Mahmud din Ghazni a condus numeroase campanii în subcontinent."
+    },
+    {
+      "id": "history-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu turc a dominat Iranul, Irakul și Anatolia după victoria de la Manzikert?",
+      "options": [
+        "Kanem-Bornu",
+        "Dinastia Safavidă",
+        "Regatul Ayutthaya",
+        "Imperiul Selgiucid"
+      ],
+      "answer": "Imperiul Selgiucid",
+      "explanation": "Selgiucizii au devenit principala putere sunnită a Orientului Apropiat în secolul al XI-lea și au deschis Anatolia unei colonizări turcești accelerate."
+    },
+    {
+      "id": "history-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu din Asia Centrală a fost distrus în mare parte de invazia lui Ginghis Han la începutul secolului al XIII-lea?",
+      "options": [
+        "Dinastia Samanidă",
+        "Imperiul Horezmian",
+        "Imperiul Selgiucid",
+        "Imperiul Ghaznavid"
+      ],
+      "answer": "Imperiul Horezmian",
+      "explanation": "Imperiul Horezmian controla Iranul și Asia Centrală, dar conflictul cu Ginghis Han a provocat o invazie mongolă devastatoare începând din 1219."
+    },
+    {
+      "id": "history-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce dinastie iraniană medievală a patronat cultura persană în Bukhara și Samarkand înaintea marilor imperii turcice?",
+      "options": [
+        "Dinastia Safavidă",
+        "Regatul Zimbabwe",
+        "Imperiul Ghaznavid",
+        "Dinastia Samanidă"
+      ],
+      "answer": "Dinastia Samanidă",
+      "explanation": "Samanizii au condus Transoxiana și Khorasanul în secolele IX-X și au contribuit la renașterea limbii și culturii persane."
+    },
+    {
+      "id": "history-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce califat șiit ismailit a fondat orașul Cairo în secolul al X-lea?",
+      "options": [
+        "Srivijaya",
+        "Califatul Fatimid",
+        "Kanem-Bornu",
+        "Regatul Zimbabwe"
+      ],
+      "answer": "Califatul Fatimid",
+      "explanation": "Fatimizii au cucerit Egiptul în 969 și au fondat Cairo ca nou centru politic, construind totodată instituții precum moscheea al-Azhar."
+    },
+    {
+      "id": "history-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce dinastie a fost fondată de Saladin și a condus Egiptul și Siria în timpul cruciadelor?",
+      "options": [
+        "Imperiul Horezmian",
+        "Majapahit",
+        "Srivijaya",
+        "Dinastia Ayyubidă"
+      ],
+      "answer": "Dinastia Ayyubidă",
+      "explanation": "Saladin a creat o dinastie care a unit Egiptul și Siria și a recucerit Ierusalimul după victoria de la Hattin din 1187."
+    },
+    {
+      "id": "history-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce dinastie berberă a creat un imperiu din Maroc până în al-Andalus în secolele XI-XII?",
+      "options": [
+        "Dinastia Safavidă",
+        "Dinastia Almoravidă",
+        "Dinastia Ayyubidă",
+        "Califatul Fatimid"
+      ],
+      "answer": "Dinastia Almoravidă",
+      "explanation": "Almoravizii au pornit din Sahara occidentală și au controlat Marocul și părți mari din Peninsula Iberică musulmană."
+    },
+    {
+      "id": "history-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu african de lungă durată a avut centrul în regiunea lacului Ciad?",
+      "options": [
+        "Imperiul Horezmian",
+        "Regatul Ayutthaya",
+        "Imperiul Ghaznavid",
+        "Kanem-Bornu"
+      ],
+      "answer": "Kanem-Bornu",
+      "explanation": "Kanem-Bornu a controlat timp de secole rute comerciale din jurul lacului Ciad și a fost un important stat islamic al Africii centrale."
+    },
+    {
+      "id": "history-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce regat central-african a intrat în contact diplomatic timpuriu cu Portugalia la sfârșitul secolului al XV-lea?",
+      "options": [
+        "Majapahit",
+        "Regatul Kongo",
+        "Kanem-Bornu",
+        "Imperiul Ghaznavid"
+      ],
+      "answer": "Regatul Kongo",
+      "explanation": "Regatul Kongo controla teritorii din jurul fluviului Congo inferior și a dezvoltat relații diplomatice și religioase complexe cu Portugalia."
+    },
+    {
+      "id": "history-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce stat medieval din sudul Africii este asociat cu marele complex de piatră Great Zimbabwe?",
+      "options": [
+        "Imperiul Ghaznavid",
+        "Califatul Fatimid",
+        "Regatul Zimbabwe",
+        "Dinastia Ayyubidă"
+      ],
+      "answer": "Regatul Zimbabwe",
+      "explanation": "Great Zimbabwe a fost centrul unui stat prosper legat de comerțul regional cu aur și de rutele spre porturile Oceanului Indian."
+    },
+    {
+      "id": "history-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu maritim din Sumatra a controlat rute comerciale prin Strâmtoarea Malacca în Evul Mediu?",
+      "options": [
+        "Regatul Kongo",
+        "Kanem-Bornu",
+        "Srivijaya",
+        "Dinastia Samanidă"
+      ],
+      "answer": "Srivijaya",
+      "explanation": "Srivijaya a prosperat prin controlul comerțului maritim dintre Oceanul Indian și Marea Chinei de Sud și prin patronajul budismului."
+    },
+    {
+      "id": "history-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu javanez din secolele XIII-XV a dominat o mare parte a arhipelagului indonezian?",
+      "options": [
+        "Dinastia Almoravidă",
+        "Sultanatul Mameluc",
+        "Majapahit",
+        "Dinastia Ayyubidă"
+      ],
+      "answer": "Majapahit",
+      "explanation": "Majapahit a fost o mare putere maritimă și comercială din Java, cunoscută din surse locale pentru o rețea largă de teritorii tributare."
+    },
+    {
+      "id": "history-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce regat din Asia de Sud-Est a avut capitala la Ayutthaya înainte de distrugerea orașului de către birmani în 1767?",
+      "options": [
+        "Imperiul Selgiucid",
+        "Regatul Ayutthaya",
+        "Sultanatul Mameluc",
+        "Imperiul Horezmian"
+      ],
+      "answer": "Regatul Ayutthaya",
+      "explanation": "Ayutthaya a fost un important regat siamez și centru comercial internațional, conectat cu China, India, Persia și puteri europene."
+    },
+    {
+      "id": "history-241",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce conflict medieval dintre papalitate și împărații germani privea dreptul de a numi episcopi?",
+      "options": [
+        "Războaiele Opiului",
+        "Lupta pentru învestitură",
+        "Rebeliunea Boxerilor",
+        "Cruciada Albigensiană"
+      ],
+      "answer": "Lupta pentru învestitură",
+      "explanation": "Lupta pentru învestitură a opus papalitatea și împărații Sfântului Imperiu Roman în jurul controlului asupra numirii episcopilor și simbolurilor funcției."
+    },
+    {
+      "id": "history-242",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce ruptură din 1054 este asociată convențional cu separarea dintre Bisericile Catolică și Ortodoxă?",
+      "options": [
+        "Revoluția Junilor Turci",
+        "Cruciada Albigensiană",
+        "Pragmatica Sancțiune",
+        "Marea Schismă"
+      ],
+      "answer": "Marea Schismă",
+      "explanation": "Schisma din 1054 a fost rezultatul unor tensiuni teologice, politice și jurisdicționale de lungă durată între Roma și Constantinopol."
+    },
+    {
+      "id": "history-243",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce acord din 1122 a încheiat în mare parte lupta pentru învestitură dintre papă și împărat?",
+      "options": [
+        "Concordatul de la Worms",
+        "Războaiele Opiului",
+        "Incidentul Fashoda",
+        "Congresul de la Berlin"
+      ],
+      "answer": "Concordatul de la Worms",
+      "explanation": "Concordatul de la Worms a separat într-o anumită măsură investitura spirituală de cea temporală și a redus conflictul direct dintre papalitate și imperiu."
+    },
+    {
+      "id": "history-244",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce campanie religioasă din secolul al XIII-lea a fost îndreptată împotriva catarilor din sudul Franței?",
+      "options": [
+        "Rebeliunea Boxerilor",
+        "Revoluția Junilor Turci",
+        "Cruciada Albigensiană",
+        "Rebeliunea Taiping"
+      ],
+      "answer": "Cruciada Albigensiană",
+      "explanation": "Cruciada Albigensiană a vizat comunitățile catare din Languedoc și a consolidat în cele din urmă controlul monarhiei franceze asupra regiunii."
+    },
+    {
+      "id": "history-245",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce document imperial din 1356 a reglementat alegerea împăratului Sfântului Imperiu Roman?",
+      "options": [
+        "Lupta pentru învestitură",
+        "Războaiele Opiului",
+        "Bula de Aur",
+        "Cruciada Albigensiană"
+      ],
+      "answer": "Bula de Aur",
+      "explanation": "Bula de Aur emisă de Carol al IV-lea a stabilit rolul principilor electori și procedura de alegere a regelui romano-german."
+    },
+    {
+      "id": "history-246",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce act habsburgic din 1713 urmărea să permită succesiunea Mariei Terezia?",
+      "options": [
+        "Pragmatica Sancțiune",
+        "Rebeliunea Taiping",
+        "Incidentul Fashoda",
+        "Bula de Aur"
+      ],
+      "answer": "Pragmatica Sancțiune",
+      "explanation": "Pragmatica Sancțiune a lui Carol al VI-lea urmărea păstrarea unității teritoriilor habsburgice și acceptarea succesiunii pe linie feminină."
+    },
+    {
+      "id": "history-247",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tratat din 1699 a transferat Habsburgilor mari teritorii otomane din Europa Centrală?",
+      "options": [
+        "Războaiele Opiului",
+        "Rebeliunea Boxerilor",
+        "Tratatul de la Karlowitz",
+        "Concordatul de la Worms"
+      ],
+      "answer": "Tratatul de la Karlowitz",
+      "explanation": "Karlowitz a încheiat Marele Război Turc și a marcat o schimbare majoră a balanței de putere în defavoarea Imperiului Otoman."
+    },
+    {
+      "id": "history-248",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce proces din secolul al XVIII-lea a dus la dispariția Commonwealth-ului Polono-Lituanian de pe hartă?",
+      "options": [
+        "Împărțirile Poloniei",
+        "Revoluția Junilor Turci",
+        "Congresul de la Berlin",
+        "Rebeliunea Boxerilor"
+      ],
+      "answer": "Împărțirile Poloniei",
+      "explanation": "Rusia, Prusia și Austria au realizat trei împărțiri teritoriale în 1772, 1793 și 1795, eliminând statul polono-lituanian independent."
+    },
+    {
+      "id": "history-249",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce program de reforme otomane început în 1839 urmărea modernizarea administrației și egalizarea juridică treptată a supușilor?",
+      "options": [
+        "Tanzimat",
+        "Lupta pentru învestitură",
+        "Rebeliunea Boxerilor",
+        "Tratatul de la Karlowitz"
+      ],
+      "answer": "Tanzimat",
+      "explanation": "Tanzimatul a introdus reforme militare, administrative, fiscale și juridice pentru a consolida statul otoman în fața presiunilor interne și externe."
+    },
+    {
+      "id": "history-250",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce războaie din secolul al XIX-lea au obligat China Qing să accepte tratate comerciale dezavantajoase cu puterile occidentale?",
+      "options": [
+        "Rebeliunea Taiping",
+        "Războaiele Opiului",
+        "Lupta pentru învestitură",
+        "Tanzimat"
+      ],
+      "answer": "Războaiele Opiului",
+      "explanation": "Războaiele Opiului au dus la deschiderea forțată a unor porturi chineze și la acordarea unor privilegii comerciale și juridice puterilor străine."
+    },
+    {
+      "id": "history-251",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mare răscoală chineză din secolul al XIX-lea a fost condusă de Hong Xiuquan?",
+      "options": [
+        "Războaiele Opiului",
+        "Bula de Aur",
+        "Rebeliunea Taiping",
+        "Tratatul de la Karlowitz"
+      ],
+      "answer": "Rebeliunea Taiping",
+      "explanation": "Rebeliunea Taiping a creat un stat rival în sudul Chinei și a provocat unul dintre cele mai sângeroase conflicte civile ale secolului al XIX-lea."
+    },
+    {
+      "id": "history-252",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce revoltă din China de la sfârșitul secolului al XIX-lea a atacat misionari și influența străină?",
+      "options": [
+        "Rebeliunea Boxerilor",
+        "Tanzimat",
+        "Tratatul de la Karlowitz",
+        "Războaiele Opiului"
+      ],
+      "answer": "Rebeliunea Boxerilor",
+      "explanation": "Mișcarea Boxerilor a atacat comunități creștine și reprezentanțe străine, provocând intervenția militară a unei coaliții internaționale în 1900."
+    },
+    {
+      "id": "history-253",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce congres din 1878 a redus teritoriul Bulgariei prevăzut de Tratatul de la San Stefano?",
+      "options": [
+        "Congresul de la Berlin",
+        "Concordatul de la Worms",
+        "Pragmatica Sancțiune",
+        "Cruciada Albigensiană"
+      ],
+      "answer": "Congresul de la Berlin",
+      "explanation": "Marile puteri reunite la Berlin au revizuit aranjamentele ruso-otomane și au limitat proiectul unei Bulgarii foarte extinse."
+    },
+    {
+      "id": "history-254",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce criză colonială din 1898 a adus Franța și Marea Britanie aproape de conflict în Sudan?",
+      "options": [
+        "Incidentul Fashoda",
+        "Marea Schismă",
+        "Bula de Aur",
+        "Tanzimat"
+      ],
+      "answer": "Incidentul Fashoda",
+      "explanation": "La Fashoda, expediții franceze și britanice s-au confruntat diplomatic asupra controlului Nilului superior, iar Franța s-a retras în cele din urmă."
+    },
+    {
+      "id": "history-255",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce revoluție din 1908 a restabilit constituția otomană din 1876?",
+      "options": [
+        "Împărțirile Poloniei",
+        "Tanzimat",
+        "Incidentul Fashoda",
+        "Revoluția Junilor Turci"
+      ],
+      "answer": "Revoluția Junilor Turci",
+      "explanation": "Junii Turci au forțat sultanul Abdulhamid al II-lea să restabilească regimul constituțional și parlamentul, schimbând profund politica otomană."
+    },
+    {
+      "id": "history-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost generalul teban care a învins Sparta la Leuctra în 371 î.Hr.?",
+      "options": [
+        "Epaminondas",
+        "Baibars",
+        "Nader Shah",
+        "Timur"
+      ],
+      "answer": "Epaminondas",
+      "explanation": "Epaminondas a folosit o formație oblică inovatoare la Leuctra și a distrus pentru o perioadă supremația militară spartană în Grecia."
+    },
+    {
+      "id": "history-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fondat dinastia seleucidă după războaiele succesorilor lui Alexandru cel Mare?",
+      "options": [
+        "Seleucus I Nicator",
+        "Epaminondas",
+        "Nader Shah",
+        "Tokugawa Ieyasu"
+      ],
+      "answer": "Seleucus I Nicator",
+      "explanation": "Seleucus I a fost unul dintre diadohi și a construit un vast regat elenistic care cuprindea Siria, Mesopotamia și mari părți din Iran."
+    },
+    {
+      "id": "history-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost regele Pontului care a purtat trei războaie împotriva Romei în secolul I î.Hr.?",
+      "options": [
+        "Mithridates al VI-lea",
+        "Alp Arslan",
+        "Vasile al II-lea",
+        "Timur"
+      ],
+      "answer": "Mithridates al VI-lea",
+      "explanation": "Mithridates al VI-lea a încercat să limiteze expansiunea romană în Anatolia și a devenit unul dintre cei mai perseverenți adversari ai Republicii Romane."
+    },
+    {
+      "id": "history-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a introdus tetrarhia pentru administrarea Imperiului Roman?",
+      "options": [
+        "Mithridates al VI-lea",
+        "Tokugawa Ieyasu",
+        "Saladin",
+        "Dioclețian"
+      ],
+      "answer": "Dioclețian",
+      "explanation": "Dioclețian a reorganizat conducerea imperială la sfârșitul secolului al III-lea, împărțind responsabilitatea între doi augusti și doi cezari."
+    },
+    {
+      "id": "history-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost împăratul bizantin asociat cu codificarea dreptului roman în Corpus Juris Civilis?",
+      "options": [
+        "Abbas I",
+        "Tokugawa Ieyasu",
+        "Seleucus I Nicator",
+        "Iustinian I"
+      ],
+      "answer": "Iustinian I",
+      "explanation": "Iustinian I a comandat o vastă codificare a dreptului roman și a încercat recucerirea unor teritorii occidentale pierdute de imperiu."
+    },
+    {
+      "id": "history-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost împăratul bizantin care a reorganizat imperiul în timpul războaielor cu Persia și al primelor cuceriri arabe?",
+      "options": [
+        "Heraclius",
+        "Mithridates al VI-lea",
+        "Nader Shah",
+        "Epaminondas"
+      ],
+      "answer": "Heraclius",
+      "explanation": "Heraclius a câștigat un război greu împotriva Imperiului Sasanid, dar imediat după aceea provinciile orientale au fost atacate de armatele arabe."
+    },
+    {
+      "id": "history-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost împăratul bizantin supranumit „Bulgaroctonul”?",
+      "options": [
+        "Vasile al II-lea",
+        "Iustinian I",
+        "Heraclius",
+        "Aurangzeb"
+      ],
+      "answer": "Vasile al II-lea",
+      "explanation": "Vasile al II-lea a domnit la apogeul militar al Bizanțului medieval și a înfrânt decisiv Primul Țarat Bulgar la începutul secolului al XI-lea."
+    },
+    {
+      "id": "history-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost sultanul selgiucid care a învins armata bizantină la Manzikert?",
+      "options": [
+        "Vasile al II-lea",
+        "Alp Arslan",
+        "Dioclețian",
+        "Nader Shah"
+      ],
+      "answer": "Alp Arslan",
+      "explanation": "Alp Arslan a obținut victoria de la Manzikert în 1071 și l-a capturat pe împăratul bizantin Roman al IV-lea Diogenes."
+    },
+    {
+      "id": "history-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fondat dinastia Ayyubidă și a recucerit Ierusalimul în 1187?",
+      "options": [
+        "Timur",
+        "Aurangzeb",
+        "Saladin",
+        "Heraclius"
+      ],
+      "answer": "Saladin",
+      "explanation": "Saladin a unit Egiptul și Siria, a învins armata cruciată la Hattin și a recucerit Ierusalimul în același an."
+    },
+    {
+      "id": "history-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost sultanul mameluc asociat cu consolidarea victoriei asupra mongolilor și cu ofensiva împotriva statelor cruciate?",
+      "options": [
+        "Abbas I",
+        "Mithridates al VI-lea",
+        "Baibars",
+        "Alp Arslan"
+      ],
+      "answer": "Baibars",
+      "explanation": "Baibars a devenit sultan după victoria de la Ain Jalut și a transformat statul mameluc într-o mare putere militară a Levantului."
+    },
+    {
+      "id": "history-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a creat un vast imperiu în Asia Centrală și Persia la sfârșitul secolului al XIV-lea, cu capitala la Samarkand?",
+      "options": [
+        "Iustinian I",
+        "Heraclius",
+        "Timur",
+        "Dioclețian"
+      ],
+      "answer": "Timur",
+      "explanation": "Timur, cunoscut și ca Tamerlan, a cucerit teritorii din India până în Anatolia, lăsând însă un imperiu dependent puternic de autoritatea sa personală."
+    },
+    {
+      "id": "history-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost șahul safavid care a mutat capitala la Isfahan și a reorganizat armata?",
+      "options": [
+        "Aurangzeb",
+        "Mithridates al VI-lea",
+        "Abbas I",
+        "Dioclețian"
+      ],
+      "answer": "Abbas I",
+      "explanation": "Abbas cel Mare a redus influența elitelor militare tradiționale, a întărit administrația și a transformat Isfahanul într-un centru imperial spectaculos."
+    },
+    {
+      "id": "history-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost împăratul Mughal sub care imperiul a atins cea mai mare extindere teritorială?",
+      "options": [
+        "Heraclius",
+        "Epaminondas",
+        "Aurangzeb",
+        "Vasile al II-lea"
+      ],
+      "answer": "Aurangzeb",
+      "explanation": "Aurangzeb a extins dominația Mughală foarte mult în Deccan, dar războaiele lungi și politicile sale au accentuat tensiunile interne."
+    },
+    {
+      "id": "history-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a fost conducătorul persan care a învins armata Mughală la Karnal și a jefuit Delhi în 1739?",
+      "options": [
+        "Iustinian I",
+        "Seleucus I Nicator",
+        "Nader Shah",
+        "Alp Arslan"
+      ],
+      "answer": "Nader Shah",
+      "explanation": "Nader Shah a reconstruit temporar puterea militară persană și a obținut o victorie spectaculoasă asupra Imperiului Mughal la Karnal."
+    },
+    {
+      "id": "history-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a câștigat Bătălia de la Sekigahara și a fondat shogunatul Tokugawa?",
+      "options": [
+        "Tokugawa Ieyasu",
+        "Nader Shah",
+        "Alp Arslan",
+        "Mithridates al VI-lea"
+      ],
+      "answer": "Tokugawa Ieyasu",
+      "explanation": "Tokugawa Ieyasu a învins coaliția rivală la Sekigahara în 1600 și a primit titlul de shogun în 1603, inaugurând o lungă perioadă de stabilitate."
+    },
+    {
+      "id": "history-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu mesopotamian a atins apogeul sub Ashurbanipal și avea capitala la Ninive?",
+      "options": [
+        "Imperiul Chola",
+        "Imperiul Sasanid",
+        "Imperiul Neo-Babilonian",
+        "Imperiul Neo-Asirian"
+      ],
+      "answer": "Imperiul Neo-Asirian",
+      "explanation": "Imperiul Neo-Asirian a dominat Orientul Apropiat printr-o armată foarte organizată și un sistem provincial extins înainte de căderea Ninivei în 612 î.Hr."
+    },
+    {
+      "id": "history-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu a reconstruit Babilonul sub Nabucodonosor al II-lea după prăbușirea Asiriei?",
+      "options": [
+        "Champa",
+        "Imperiul Neo-Babilonian",
+        "Califatul Sokoto",
+        "Imperiul Ghana"
+      ],
+      "answer": "Imperiul Neo-Babilonian",
+      "explanation": "Imperiul Neo-Babilonian a dominat Mesopotamia în secolul al VI-lea î.Hr., iar Nabucodonosor al II-lea a transformat Babilonul într-un mare centru monumental."
+    },
+    {
+      "id": "history-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regat iranian a precedat ascensiunea lui Cirus cel Mare și a participat la distrugerea Asiriei?",
+      "options": [
+        "Imperiul Chola",
+        "Regatul Mezilor",
+        "Imperiul Part",
+        "Imperiul Gupta"
+      ],
+      "answer": "Regatul Mezilor",
+      "explanation": "Mezii au fost o putere iraniană importantă în secolul al VII-lea î.Hr. și au cooperat cu babilonienii împotriva Imperiului Neo-Asirian."
+    },
+    {
+      "id": "history-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu iranian a înlocuit seleucizii în mare parte din Iran și Mesopotamia înaintea sasanizilor?",
+      "options": [
+        "Imperiul Sasanid",
+        "Regatul Benin",
+        "Imperiul Neo-Babilonian",
+        "Imperiul Part"
+      ],
+      "answer": "Imperiul Part",
+      "explanation": "Parții au construit un stat puternic între secolele III î.Hr. și III d.Hr. și au devenit un rival major al Romei în Orient."
+    },
+    {
+      "id": "history-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu iranian a fost principalul rival oriental al Romei târzii și Bizanțului până în secolul al VII-lea?",
+      "options": [
+        "Sultanatul Adal",
+        "Imperiul Sasanid",
+        "Imperiul Neo-Asirian",
+        "Champa"
+      ],
+      "answer": "Imperiul Sasanid",
+      "explanation": "Sasanizii au restaurat o monarhie persană centralizată și au purtat războaie repetate cu romanii și bizantinii până la cucerirea arabă."
+    },
+    {
+      "id": "history-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu din Asia Centrală și nordul Indiei a favorizat răspândirea budismului pe Drumul Mătăsii?",
+      "options": [
+        "Imperiul Kușan",
+        "Imperiul Neo-Babilonian",
+        "Sultanatul Adal",
+        "Imperiul Ghana"
+      ],
+      "answer": "Imperiul Kușan",
+      "explanation": "Imperiul Kușan a conectat India, Asia Centrală și lumea iraniană și a patronat comerțul și forme importante de artă budistă."
+    },
+    {
+      "id": "history-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu indian din secolele IV-VI este asociat cu o perioadă de mare înflorire culturală și științifică?",
+      "options": [
+        "Imperiul Ghana",
+        "Champa",
+        "Califatul Sokoto",
+        "Imperiul Gupta"
+      ],
+      "answer": "Imperiul Gupta",
+      "explanation": "Perioada Gupta a cunoscut dezvoltări importante în matematică, astronomie, literatură și artă, deși controlul politic nu a fost uniform în întregul subcontinent."
+    },
+    {
+      "id": "history-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu tamil maritim a proiectat putere navală spre Sri Lanka și Asia de Sud-Est în secolele X-XI?",
+      "options": [
+        "Regatul Benin",
+        "Imperiul Sasanid",
+        "Imperiul Neo-Babilonian",
+        "Imperiul Chola"
+      ],
+      "answer": "Imperiul Chola",
+      "explanation": "Chola a dezvoltat o administrație puternică, temple monumentale și o flotă capabilă să intervină pe rutele comerciale ale Oceanului Indian."
+    },
+    {
+      "id": "history-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu din Asia de Sud-Est avea capitala la Angkor?",
+      "options": [
+        "Imperiul Part",
+        "Imperiul Khmer",
+        "Imperiul Chola",
+        "Imperiul Ghana"
+      ],
+      "answer": "Imperiul Khmer",
+      "explanation": "Imperiul Khmer a dominat mare parte din Cambodgia și regiunile învecinate, iar Angkor a devenit unul dintre cele mai mari complexe urbane preindustriale."
+    },
+    {
+      "id": "history-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regat maritim a controlat părți ale coastei Vietnamului central înaintea expansiunii vietnameze spre sud?",
+      "options": [
+        "Imperiul Oyo",
+        "Champa",
+        "Sultanatul Adal",
+        "Imperiul Chola"
+      ],
+      "answer": "Champa",
+      "explanation": "Champa a fost un ansamblu de principate influențate de cultura indiană și implicate intens în comerțul maritim al Asiei de Sud-Est."
+    },
+    {
+      "id": "history-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu vest-african timpuriu prospera din comerțul cu aur și sare înainte de ascensiunea Maliului?",
+      "options": [
+        "Imperiul Gupta",
+        "Imperiul Sasanid",
+        "Imperiul Chola",
+        "Imperiul Ghana"
+      ],
+      "answer": "Imperiul Ghana",
+      "explanation": "Imperiul Ghana, numit și Wagadou în tradițiile locale, controla rute comerciale transsahariene și nu se afla pe teritoriul principal al statului Ghana modern."
+    },
+    {
+      "id": "history-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce regat din Africa de Vest este cunoscut pentru bronzurile și plăcile de alamă de la Benin City?",
+      "options": [
+        "Regatul Benin",
+        "Imperiul Kușan",
+        "Imperiul Gupta",
+        "Imperiul Oyo"
+      ],
+      "answer": "Regatul Benin",
+      "explanation": "Regatul Benin a dezvoltat o curte sofisticată și o tradiție artistică remarcabilă, iar orașul său principal era protejat de lucrări defensive extinse."
+    },
+    {
+      "id": "history-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce imperiu yoruba din Africa de Vest a devenit o mare putere regională prin cavalerie și sistem tributary?",
+      "options": [
+        "Califatul Sokoto",
+        "Regatul Mezilor",
+        "Imperiul Oyo",
+        "Regatul Benin"
+      ],
+      "answer": "Imperiul Oyo",
+      "explanation": "Oyo a controlat teritorii largi în actuala Nigerie și Benin, combinând puterea militară cu instituții politice capabile să limiteze autoritatea regelui."
+    },
+    {
+      "id": "history-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce califat vest-african a fost fondat în urma jihadului lui Usman dan Fodio la începutul secolului al XIX-lea?",
+      "options": [
+        "Regatul Mezilor",
+        "Imperiul Ghana",
+        "Califatul Sokoto",
+        "Champa"
+      ],
+      "answer": "Califatul Sokoto",
+      "explanation": "Califatul Sokoto a devenit unul dintre cele mai mari state ale Africii de Vest precoloniale și a fost organizat ca o federație de emirate."
+    },
+    {
+      "id": "history-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce stat medieval din Cornul Africii a controlat porturi și rute comerciale și s-a confruntat cu Etiopia creștină?",
+      "options": [
+        "Imperiul Chola",
+        "Imperiul Oyo",
+        "Sultanatul Adal",
+        "Champa"
+      ],
+      "answer": "Sultanatul Adal",
+      "explanation": "Sultanatul Adal a fost o putere musulmană din Cornul Africii, cunoscută mai ales pentru războaiele conduse de Ahmad ibn Ibrahim al-Ghazi împotriva Etiopiei."
+    },
+    {
+      "id": "history-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pace din 387/386 î.Hr. a fost impusă cetăților grecești sub arbitraj persan?",
+      "options": [
+        "Tratatul de la Sèvres",
+        "Pacea Regelui",
+        "Bătălia de la Ipsos",
+        "Tratatul de la Küçük Kaynarca"
+      ],
+      "answer": "Pacea Regelui",
+      "explanation": "Pacea Regelui, numită și Pacea lui Antalcidas, a recunoscut controlul persan asupra cetăților grecești din Asia Mică și a impus autonomia polisurilor."
+    },
+    {
+      "id": "history-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bătălie din 331 î.Hr. a distrus capacitatea lui Darius al III-lea de a continua rezistența organizată împotriva lui Alexandru?",
+      "options": [
+        "Convenția Strâmtorilor de la Londra",
+        "Cruciada a patra",
+        "Bătălia de la Manzikert",
+        "Bătălia de la Gaugamela"
+      ],
+      "answer": "Bătălia de la Gaugamela",
+      "explanation": "La Gaugamela, Alexandru cel Mare a învins decisiv armata ahemenidă, deschizând calea spre ocuparea principalelor centre ale Imperiului Persan."
+    },
+    {
+      "id": "history-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bătălie din 301 î.Hr. a redesenat lumea elenistică prin înfrângerea lui Antigonos Monophthalmos?",
+      "options": [
+        "Cruciada a patra",
+        "Bătălia de la Ipsos",
+        "Revolta Nika",
+        "Convenția Strâmtorilor de la Londra"
+      ],
+      "answer": "Bătălia de la Ipsos",
+      "explanation": "La Ipsos, o coaliție a diadohilor l-a învins pe Antigonos, iar teritoriile sale au fost împărțite între regatele elenistice rivale."
+    },
+    {
+      "id": "history-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce edict din 380 a făcut creștinismul niceean religia oficială favorizată a Imperiului Roman?",
+      "options": [
+        "Edictul de la Tesalonic",
+        "Conciliul de la Calcedon",
+        "Bătălia de la Ipsos",
+        "Bătălia de la Ain Jalut"
+      ],
+      "answer": "Edictul de la Tesalonic",
+      "explanation": "Edictul emis de Teodosiu I și colegii săi a susținut creștinismul niceean și a accelerat marginalizarea cultelor și doctrinelor rivale."
+    },
+    {
+      "id": "history-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce conciliu din 451 a formulat definiția hristologică asociată tradiției calcedoniene?",
+      "options": [
+        "Tratatul de la Sèvres",
+        "Cruciada a patra",
+        "Conciliul de la Calcedon",
+        "Tratatul de la Küçük Kaynarca"
+      ],
+      "answer": "Conciliul de la Calcedon",
+      "explanation": "Conciliul de la Calcedon a afirmat că Hristos este recunoscut în două naturi, divină și umană, provocând rupturi durabile în creștinismul oriental."
+    },
+    {
+      "id": "history-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce revoltă din 532 a amenințat domnia împăratului Iustinian la Constantinopol?",
+      "options": [
+        "Bătălia de la Ipsos",
+        "Tratatul de la Oliva",
+        "Revolta Nika",
+        "Bătălia de la Yarmouk"
+      ],
+      "answer": "Revolta Nika",
+      "explanation": "Revolta Nika a pornit din facțiunile hipodromului și s-a transformat într-o criză politică majoră, reprimată violent de generalii lui Iustinian."
+    },
+    {
+      "id": "history-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bătălie din 636 a deschis cuceritorilor arabi accesul decisiv către Siria bizantină?",
+      "options": [
+        "Tratatul de la Oliva",
+        "Pacea de la Cateau-Cambrésis",
+        "Pacea Regelui",
+        "Bătălia de la Yarmouk"
+      ],
+      "answer": "Bătălia de la Yarmouk",
+      "explanation": "La Yarmouk, armatele califatului Rashidun au învins o mare forță bizantină, accelerând pierderea Siriei și Palestinei de către Bizanț."
+    },
+    {
+      "id": "history-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bătălie din 1071 a slăbit controlul bizantin asupra Anatoliei?",
+      "options": [
+        "Bătălia de la Manzikert",
+        "Bătălia de la Yarmouk",
+        "Bătălia de la Ain Jalut",
+        "Convenția Strâmtorilor de la Londra"
+      ],
+      "answer": "Bătălia de la Manzikert",
+      "explanation": "Înfrângerea și capturarea împăratului Roman al IV-lea au fost urmate de lupte civile bizantine și de extinderea rapidă a puterii turce în Anatolia."
+    },
+    {
+      "id": "history-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce cruciadă a cucerit și jefuit Constantinopolul în 1204?",
+      "options": [
+        "Revolta Nika",
+        "Cruciada a patra",
+        "Bătălia de la Manzikert",
+        "Bătălia de la Yarmouk"
+      ],
+      "answer": "Cruciada a patra",
+      "explanation": "Cruciada a patra a deviat de la obiectivul inițial și a capturat Constantinopolul, producând o ruptură profundă și slăbirea durabilă a Bizanțului."
+    },
+    {
+      "id": "history-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce bătălie din 1260 a oprit înaintarea mongolă în Levant?",
+      "options": [
+        "Convenția Strâmtorilor de la Londra",
+        "Pacea Regelui",
+        "Bătălia de la Manzikert",
+        "Bătălia de la Ain Jalut"
+      ],
+      "answer": "Bătălia de la Ain Jalut",
+      "explanation": "Mamelucii au învins o armată mongolă la Ain Jalut, consolidându-și controlul asupra Siriei și reputația de apărători ai regiunii."
+    },
+    {
+      "id": "history-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pace din 1559 a încheiat Războaiele Italiene dintre Franța și Habsburgi?",
+      "options": [
+        "Tratatul de la Oliva",
+        "Pacea de la Cateau-Cambrésis",
+        "Cruciada a patra",
+        "Bătălia de la Gaugamela"
+      ],
+      "answer": "Pacea de la Cateau-Cambrésis",
+      "explanation": "Acordurile de la Cateau-Cambrésis au confirmat predominanța habsburgică în Italia și au încheiat decenii de competiție franco-habsburgică pentru peninsulă."
+    },
+    {
+      "id": "history-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tratat din 1660 a încheiat unul dintre conflictele majore ale Primului Război Nordic și a confirmat independența Ducatului Prusiei față de Polonia?",
+      "options": [
+        "Convenția Strâmtorilor de la Londra",
+        "Bătălia de la Ipsos",
+        "Tratatul de la Oliva",
+        "Tratatul de la Küçük Kaynarca"
+      ],
+      "answer": "Tratatul de la Oliva",
+      "explanation": "Tratatul de la Oliva a reglementat relațiile dintre Suedia, Polonia-Lituania și Brandenburg-Prusia și a consolidat poziția internațională a Hohenzollernilor."
+    },
+    {
+      "id": "history-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tratat din 1774 a oferit Rusiei avantaje strategice importante în raport cu Imperiul Otoman?",
+      "options": [
+        "Tratatul de la Küçük Kaynarca",
+        "Tratatul de la Sèvres",
+        "Bătălia de la Manzikert",
+        "Pacea Regelui"
+      ],
+      "answer": "Tratatul de la Küçük Kaynarca",
+      "explanation": "Acordul a consolidat accesul și influența Rusiei în regiunea Mării Negre și a avut consecințe importante pentru raporturile ruso-otomane."
+    },
+    {
+      "id": "history-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce convenție din 1841 a stabilit principiul închiderii strâmtorilor Bosfor și Dardanele pentru navele de război străine în timp de pace?",
+      "options": [
+        "Revolta Nika",
+        "Convenția Strâmtorilor de la Londra",
+        "Pacea Regelui",
+        "Tratatul de la Oliva"
+      ],
+      "answer": "Convenția Strâmtorilor de la Londra",
+      "explanation": "Convenția din 1841 a reafirmat controlul otoman asupra strâmtorilor și a limitat accesul naval al marilor puteri în Marea Neagră pe timp de pace."
+    },
+    {
+      "id": "history-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tratat din 1920 a prevăzut dezmembrarea amplă a Imperiului Otoman, dar nu a fost implementat în forma sa inițială?",
+      "options": [
+        "Tratatul de la Oliva",
+        "Convenția Strâmtorilor de la Londra",
+        "Tratatul de la Sèvres",
+        "Cruciada a patra"
+      ],
+      "answer": "Tratatul de la Sèvres",
+      "explanation": "Tratatul de la Sèvres a impus condiții teritoriale severe Imperiului Otoman, însă victoria mișcării naționale turce a dus ulterior la înlocuirea lui prin Lausanne."
+    }
+  ]
+}

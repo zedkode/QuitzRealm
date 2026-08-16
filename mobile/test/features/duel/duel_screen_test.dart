@@ -136,62 +136,65 @@ void main() {
     expect(client.sentAnswers.single.answer, '42');
   });
 
-  testWidgets('pierderea conexiunii în afara unei partide permite reîncercarea', (
-    tester,
-  ) async {
-    final client = FakeRealtimeClient();
-    await _pumpDuel(tester, client);
+  testWidgets(
+    'pierderea conexiunii în afara unei partide permite reîncercarea',
+    (tester) async {
+      final client = FakeRealtimeClient();
+      await _pumpDuel(tester, client);
 
-    client.emit(const DuelSessionReady('me'));
-    await tester.pump();
-    client.emit(const DuelDisconnected());
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
+      client.emit(const DuelSessionReady('me'));
+      await tester.pump();
+      client.emit(const DuelDisconnected());
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 300));
 
-    expect(find.text('Conexiunea s-a pierdut'), findsOneWidget);
-  });
+      expect(find.text('Conexiunea s-a pierdut'), findsOneWidget);
+    },
+  );
 
-  testWidgets('pierderea conexiunii în partidă anunță reconectarea, nu înfrângerea', (
-    tester,
-  ) async {
-    final client = FakeRealtimeClient();
-    await _pumpDuel(tester, client);
+  testWidgets(
+    'pierderea conexiunii în partidă anunță reconectarea, nu înfrângerea',
+    (tester) async {
+      final client = FakeRealtimeClient();
+      await _pumpDuel(tester, client);
 
-    client.emitMatchStart();
-    await tester.pump();
-    client.emit(const DuelDisconnected());
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
+      client.emitMatchStart();
+      await tester.pump();
+      client.emit(const DuelDisconnected());
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 300));
 
-    expect(find.byKey(const Key('duel-reconnecting')), findsOneWidget);
-    expect(find.text('Conexiunea s-a pierdut'), findsNothing);
-  });
+      expect(find.byKey(const Key('duel-reconnecting')), findsOneWidget);
+      expect(find.text('Conexiunea s-a pierdut'), findsNothing);
+    },
+  );
 
-  testWidgets('plecarea adversarului îngheață runda și arată timpul de revenire', (
-    tester,
-  ) async {
-    final client = FakeRealtimeClient();
-    await _pumpDuel(tester, client);
+  testWidgets(
+    'plecarea adversarului îngheață runda și arată timpul de revenire',
+    (tester) async {
+      final client = FakeRealtimeClient();
+      await _pumpDuel(tester, client);
 
-    client.emitMatchStart();
-    await tester.pump();
-    client.emit(
-      DuelMatchPaused(
-        disconnectedUserId: 'rival',
-        resumeDeadline: DateTime.now().add(const Duration(seconds: 40)),
-      ),
-    );
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
+      client.emitMatchStart();
+      await tester.pump();
+      client.emit(
+        DuelMatchPaused(
+          disconnectedUserId: 'rival',
+          resumeDeadline: DateTime.now().add(const Duration(seconds: 40)),
+        ),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 300));
 
-    expect(find.byKey(const Key('duel-opponent-away')), findsOneWidget);
-    expect(find.text('Adversarul a pierdut legătura'), findsOneWidget);
+      expect(find.byKey(const Key('duel-opponent-away')), findsOneWidget);
+      expect(find.text('Adversarul a pierdut legătura'), findsOneWidget);
 
-    // Cât e pauză, răspunsul nu pleacă spre server.
-    await tester.tap(find.byKey(const Key('duel-option-0')));
-    await tester.pump();
-    expect(client.sentAnswers, isEmpty);
-  });
+      // Cât e pauză, răspunsul nu pleacă spre server.
+      await tester.tap(find.byKey(const Key('duel-option-0')));
+      await tester.pump();
+      expect(client.sentAnswers, isEmpty);
+    },
+  );
 
   testWidgets('instantaneul de reconectare readuce scorul și runda', (
     tester,
@@ -259,9 +262,7 @@ void main() {
 
     client.emit(const DuelSessionReady('me'));
     await tester.pump();
-    client.emit(
-      const DuelQueueRejected(DuelRejectionReason.emailNotVerified),
-    );
+    client.emit(const DuelQueueRejected(DuelRejectionReason.emailNotVerified));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 
@@ -270,5 +271,46 @@ void main() {
     expect(find.byKey(const Key('duel-verify-email')), findsOneWidget);
     expect(find.text('Confirmă-ți adresa de email'), findsOneWidget);
     expect(find.text('Retrimite linkul'), findsOneWidget);
+  });
+
+  testWidgets('chatul de luptă trimite reacții și text permis de server', (
+    tester,
+  ) async {
+    final client = FakeRealtimeClient();
+    await _pumpDuel(tester, client);
+
+    client.emitMatchStart();
+    await tester.pump();
+    client.emit(
+      DuelMatchChatHistory(
+        matchId: 'match-1',
+        canSendText: true,
+        messages: [
+          DuelChatMessage(
+            id: 'msg-1',
+            matchId: 'match-1',
+            senderId: 'rival',
+            senderName: 'Rivalul',
+            content: 'well_played',
+            kind: DuelChatMessageKind.reaction,
+            createdAt: DateTime.now(),
+          ),
+        ],
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 300));
+
+    await tester.tap(find.byKey(const Key('duel-chat-open')));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
+    expect(find.byKey(const Key('duel-match-chat')), findsOneWidget);
+    expect(find.byKey(const Key('duel-chat-message-msg-1')), findsOneWidget);
+
+    await tester.tap(find.byKey(const Key('duel-reaction-good-luck')));
+    expect(client.sentReactions.single.reaction, 'good_luck');
+
+    await tester.enterText(find.byKey(const Key('duel-chat-input')), 'Salut!');
+    await tester.tap(find.byKey(const Key('duel-chat-send')));
+    expect(client.sentChatMessages.single.content, 'Salut!');
   });
 }

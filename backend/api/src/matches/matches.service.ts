@@ -17,9 +17,10 @@ export class MatchesService {
   }
 
   async record(dto: RecordMatchDto) {
-    if (dto.players[0].userId === dto.players[1].userId) {
+    const uniqueUserIds = new Set(dto.players.map((player) => player.userId));
+    if (uniqueUserIds.size !== dto.players.length) {
       throw new BadRequestException(
-        'O partidă duo necesită doi jucători diferiți.',
+        'Participanții unei partide trebuie să fie diferiți.',
       );
     }
     if (Date.parse(dto.endedAt) < Date.parse(dto.startedAt)) {
@@ -28,6 +29,11 @@ export class MatchesService {
       );
     }
     if (dto.mode === MatchMode.DUO) {
+      if (dto.players.length !== 2) {
+        throw new BadRequestException(
+          'O partidă duo necesită exact doi jucători.',
+        );
+      }
       const results = dto.players.map((player) => player.result);
       const isDraw = results.every((result) => result === MatchResult.DRAW);
       const hasWinnerAndLoser =
@@ -39,12 +45,20 @@ export class MatchesService {
         );
       }
     }
+    if (
+      dto.mode === MatchMode.CLASSIC &&
+      (dto.players.length < 4 || dto.players.length > 8)
+    ) {
+      throw new BadRequestException(
+        'O partidă clasică publică necesită între 4 și 8 jucători.',
+      );
+    }
     const ratings = await this.prisma.user.findMany({
       where: { id: { in: dto.players.map((player) => player.userId) } },
       select: { id: true, eloRating: true },
     });
-    if (ratings.length !== 2) {
-      throw new BadRequestException('Unul dintre jucători nu există.');
+    if (ratings.length !== dto.players.length) {
+      throw new BadRequestException('Cel puțin un jucător nu există.');
     }
     const ratingById = new Map(
       ratings.map((user) => [user.id, user.eloRating]),
@@ -54,20 +68,23 @@ export class MatchesService {
 
     // `correctAnswers` nu e o coloană pe `match_players`: e un contor cumulat
     // pe cont, deci se scoate din datele de creare și se aplică separat.
-    const players = dto.players.map(
-      ({ correctAnswers, ...player }, index) => {
-        void correctAnswers;
-        const opponent = dto.players[index === 0 ? 1 : 0];
-        return {
-          ...player,
-          eloDelta: calculateEloDelta(
-            ratingById.get(player.userId)!,
-            ratingById.get(opponent.userId)!,
-            scoreFor(player.result),
-          ),
-        };
-      },
-    );
+    const players = dto.players.map(({ correctAnswers, ...player }, index) => {
+      void correctAnswers;
+      return {
+        ...player,
+        // Rank-ul FFA bazat pe plasament aparține Fazei 3 din owner-plan.
+        // Până atunci, meciurile Clasic sunt persistate fără a altera ELO;
+        // Duo își păstrează formula competitivă existentă.
+        eloDelta:
+          dto.mode === MatchMode.DUO
+            ? calculateEloDelta(
+                ratingById.get(player.userId)!,
+                ratingById.get(dto.players[index === 0 ? 1 : 0].userId)!,
+                scoreFor(player.result),
+              )
+            : 0,
+      };
+    });
 
     return this.prisma.$transaction(async (transaction) => {
       const match = await transaction.match.create({

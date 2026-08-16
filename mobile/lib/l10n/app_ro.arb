@@ -2,7 +2,6 @@
   "@@locale": "ro",
   "appTitle": "QuizRealm",
   "appTagline": "Cunoaște. Cucerește. Domnește.",
-
   "menuStartCampaign": "Începe campania",
   "menuContinueCampaign": "Continuă campania",
   "menuAccount": "Cont de jucător",
@@ -14,51 +13,83 @@
   "howToPlayRuleStars": "Un asalt perfect îți aduce 3 stele. Stelele deblochează ținuturi noi.",
   "howToPlayRuleOffline": "Campania se joacă fără internet, din pachetele verificate livrate cu jocul.",
   "close": "Am înțeles",
-
   "worldMapEyebrow": "HARTA REGATULUI",
   "worldMapTitle": "Alege-ți ținutul",
   "worldMapHint": "Atinge un ținut cucerit pentru a-i deschide asalturile.",
   "levelBadge": "Nivel {level}",
-  "@levelBadge": {"placeholders": {"level": {"type": "int"}}},
+  "@levelBadge": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "xpProgress": "{current} / {total} XP",
   "@xpProgress": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "starsCollected": "{earned} din {total} stele",
   "@starsCollected": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "starsShort": "{earned}/{total}",
   "@starsShort": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "chapterLockedHint": "Se deschide la {stars} stele",
-  "@chapterLockedHint": {"placeholders": {"stars": {"type": "int"}}},
+  "@chapterLockedHint": {
+    "placeholders": {
+      "stars": {
+        "type": "int"
+      }
+    }
+  },
   "chapterLockedSemantics": "{chapter}, blocat, necesită {stars} stele",
   "@chapterLockedSemantics": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "stars": {"type": "int"}
+      "chapter": {
+        "type": "String"
+      },
+      "stars": {
+        "type": "int"
+      }
     }
   },
   "chapterOpenSemantics": "{chapter}, {earned} din {total} stele",
   "@chapterOpenSemantics": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "chapter": {
+        "type": "String"
+      },
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
-
   "chapterIstorie": "Cetatea Cronicilor",
   "chapterRomania": "Tronul Carpatin",
   "chapterGeografie": "Portul celor Șapte Mări",
@@ -68,7 +99,6 @@
   "chapterLiteratura": "Schitul Manuscriselor",
   "chapterArte": "Golful Măștilor",
   "chapterMituri": "Insula Nălucilor",
-
   "subjectIstorie": "Istorie",
   "subjectRomania": "România",
   "subjectGeografie": "Geografie",
@@ -78,28 +108,40 @@
   "subjectLiteratura": "Literatură",
   "subjectArte": "Film și muzică",
   "subjectMituri": "Mituri și legende",
-
   "stageOutpost": "Avanpostul",
   "stageCitadel": "Cetatea",
   "stageThrone": "Sala Tronului",
   "stageNumber": "Asaltul {index}",
-  "@stageNumber": {"placeholders": {"index": {"type": "int"}}},
+  "@stageNumber": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
   "stageSummary": "{questions} întrebări • {seconds} secunde fiecare",
   "@stageSummary": {
     "placeholders": {
-      "questions": {"type": "int"},
-      "seconds": {"type": "int"}
+      "questions": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
     }
   },
   "stageLockedHint": "Câștigă o stea în asaltul precedent",
   "chooseStage": "Alege asaltul",
   "startStage": "Pornește asaltul",
-
   "battleHeader": "{chapter} • {stage}",
   "@battleHeader": {
     "placeholders": {
-      "chapter": {"type": "String"},
-      "stage": {"type": "String"}
+      "chapter": {
+        "type": "String"
+      },
+      "stage": {
+        "type": "String"
+      }
     }
   },
   "hudScore": "SCOR",
@@ -108,38 +150,76 @@
   "roundCounter": "{current}/{total}",
   "@roundCounter": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "streakMultiplier": "×{multiplier}",
-  "@streakMultiplier": {"placeholders": {"multiplier": {"type": "String"}}},
+  "@streakMultiplier": {
+    "placeholders": {
+      "multiplier": {
+        "type": "String"
+      }
+    }
+  },
   "timerSemantics": "Au rămas {seconds} secunde",
-  "@timerSemantics": {"placeholders": {"seconds": {"type": "int"}}},
+  "@timerSemantics": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "questionLoading": "Se pregătește asaltul…",
   "questionErrorTitle": "Asaltul nu a putut porni",
   "noQuestionsTitle": "Ținutul e fără întrebări",
   "noQuestionsBody": "Pachetul acestui ținut nu a putut fi citit. Nu intrăm în luptă cu întrebări neverificate.",
   "retry": "Încearcă din nou",
   "difficulty": "Dificultate {level}/5",
-  "@difficulty": {"placeholders": {"level": {"type": "int"}}},
+  "@difficulty": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "categoryFallback": "Arhivele regatului",
   "numericHint": "Scrie estimarea ta",
   "submitAnswer": "Confirmă răspunsul",
   "answerOptionSemantics": "Varianta {letter}: {answer}",
   "@answerOptionSemantics": {
     "placeholders": {
-      "letter": {"type": "String"},
-      "answer": {"type": "String"}
+      "letter": {
+        "type": "String"
+      },
+      "answer": {
+        "type": "String"
+      }
     }
   },
   "correctTitle": "Lovitură reușită!",
   "incorrectTitle": "Atac respins",
   "timeoutTitle": "Timpul a expirat",
   "correctAnswerLabel": "Răspuns corect: {answer}",
-  "@correctAnswerLabel": {"placeholders": {"answer": {"type": "String"}}},
+  "@correctAnswerLabel": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
   "pointsAwarded": "+{points}",
-  "@pointsAwarded": {"placeholders": {"points": {"type": "int"}}},
+  "@pointsAwarded": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "nextQuestion": "Următoarea întrebare",
   "finishRound": "Vezi rezultatul",
   "answerSubmitError": "Verdictul nu a putut fi obținut. Atacul tău este păstrat.",
@@ -148,11 +228,16 @@
   "leaveBattleBody": "Progresul acestui asalt se pierde, iar ținutul rămâne necucerit.",
   "leaveBattleConfirm": "Abandonează",
   "leaveBattleCancel": "Continuă lupta",
-
   "resultVictoryTitle": "Ținut cucerit",
   "resultDefeatTitle": "Asalt respins",
   "resultVictoryBody": "Steagul tău flutură peste {chapter}.",
-  "@resultVictoryBody": {"placeholders": {"chapter": {"type": "String"}}},
+  "@resultVictoryBody": {
+    "placeholders": {
+      "chapter": {
+        "type": "String"
+      }
+    }
+  },
   "resultDefeatBody": "Zidurile au ținut. Reia asaltul când ești pregătit.",
   "resultScoreLabel": "SCOR",
   "resultAnswersLabel": "CORECTE",
@@ -160,14 +245,30 @@
   "resultAnswers": "{correct}/{total}",
   "@resultAnswers": {
     "placeholders": {
-      "correct": {"type": "int"},
-      "total": {"type": "int"}
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "resultXpGained": "+{xp} XP",
-  "@resultXpGained": {"placeholders": {"xp": {"type": "int"}}},
+  "@resultXpGained": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
   "resultLevelUp": "Nivel nou: {level}!",
-  "@resultLevelUp": {"placeholders": {"level": {"type": "int"}}},
+  "@resultLevelUp": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "resultChapterCleared": "Ai cucerit tot ținutul!",
   "actionRetryStage": "Reia asaltul",
   "actionNextStage": "Asaltul următor",
@@ -175,31 +276,50 @@
   "starsSemantics": "{earned} din {total} stele",
   "@starsSemantics": {
     "placeholders": {
-      "earned": {"type": "int"},
-      "total": {"type": "int"}
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
-
   "menuDuel": "Duel online",
   "menuLeaderboard": "Clasament",
   "leaderboardTitle": "Clasamentul regatului",
   "leaderboardPlayerCount": "{total} jucători clasați",
-  "@leaderboardPlayerCount": {"placeholders": {"total": {"type": "int"}}},
+  "@leaderboardPlayerCount": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "leaderboardEmpty": "Nu s-a clasat încă nimeni. Joacă un duel ca să deschizi clasamentul.",
   "leaderboardYourPlace": "LOCUL TĂU",
   "leaderboardPositionLine": "Locul {position} • {matches} partide",
   "@leaderboardPositionLine": {
     "placeholders": {
-      "position": {"type": "int"},
-      "matches": {"type": "int"}
+      "position": {
+        "type": "int"
+      },
+      "matches": {
+        "type": "int"
+      }
     }
   },
   "leaderboardRowSemantics": "Locul {position}, {username}, {rank}",
   "@leaderboardRowSemantics": {
     "placeholders": {
-      "position": {"type": "int"},
-      "username": {"type": "String"},
-      "rank": {"type": "String"}
+      "position": {
+        "type": "int"
+      },
+      "username": {
+        "type": "String"
+      },
+      "rank": {
+        "type": "String"
+      }
     }
   },
   "leaderboardErrorTitle": "Clasamentul nu a putut fi citit",
@@ -207,15 +327,31 @@
   "rankSemantics": "Rang {rank}, {elo} puncte",
   "@rankSemantics": {
     "placeholders": {
-      "rank": {"type": "String"},
-      "elo": {"type": "int"}
+      "rank": {
+        "type": "String"
+      },
+      "elo": {
+        "type": "int"
+      }
     }
   },
   "rankToNext": "Încă {points} puncte până la treapta următoare",
-  "@rankToNext": {"placeholders": {"points": {"type": "int"}}},
+  "@rankToNext": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
   "rankTopReached": "Ai atins treapta de vârf a regatului",
   "duelRankUpdated": "Rang: {rank}",
-  "@duelRankUpdated": {"placeholders": {"rank": {"type": "String"}}},
+  "@duelRankUpdated": {
+    "placeholders": {
+      "rank": {
+        "type": "String"
+      }
+    }
+  },
   "duelTitle": "Duel 1v1",
   "duelConnecting": "Ne conectăm la regat…",
   "duelSearching": "Căutăm un adversar",
@@ -227,8 +363,12 @@
   "duelRoundCounter": "Runda {current} din {total}",
   "@duelRoundCounter": {
     "placeholders": {
-      "current": {"type": "int"},
-      "total": {"type": "int"}
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "duelYou": "TU",
@@ -246,8 +386,12 @@
   "duelFinalLine": "{score} puncte • {territories} teritorii",
   "@duelFinalLine": {
     "placeholders": {
-      "score": {"type": "int"},
-      "territories": {"type": "int"}
+      "score": {
+        "type": "int"
+      },
+      "territories": {
+        "type": "int"
+      }
     }
   },
   "duelRematch": "Caută alt duel",
@@ -269,12 +413,30 @@
   "duelOpponentAwayBody": "{seconds, plural, =1{Mai are o secundă să revină.} other{Mai are {seconds} secunde să revină.}}",
   "@duelOpponentAwayBody": {
     "placeholders": {
-      "seconds": {"type": "int"}
+      "seconds": {
+        "type": "int"
+      }
     }
   },
   "duelOpponentAwayExpired": "Timpul de revenire a expirat. Partida se închide.",
   "duelWonByForfeit": "Adversarul nu s-a mai întors în partidă.",
-
+  "matchChatOpen": "Deschide chatul de luptă",
+  "matchChatTitle": "Cronica luptei",
+  "matchChatEphemeral": "Mesajele acestei partide dispar după luptă.",
+  "matchChatEmpty": "Pergamentul este gol. Trimite o reacție adversarului.",
+  "matchChatReactions": "REACȚII RAPIDE",
+  "matchReactionGoodLuck": "Mult noroc!",
+  "matchReactionNiceMove": "Mișcare bună!",
+  "matchReactionWow": "Uau!",
+  "matchReactionWellPlayed": "Bine jucat!",
+  "matchChatHint": "Scrie un mesaj de luptă…",
+  "matchChatSend": "Trimite mesajul",
+  "matchChatTextLocked": "Textul liber se deblochează după 10 răspunsuri corecte. Reacțiile rămân disponibile.",
+  "matchChatMuted": "Chatul tău este temporar restricționat.",
+  "matchChatTooFast": "Prea multe mesaje. Așteaptă câteva secunde.",
+  "matchChatLinksLocked": "Linkurile se deblochează la o treaptă de încredere mai mare.",
+  "matchChatClosed": "Chatul acestei partide s-a închis.",
+  "matchChatInvalid": "Mesajul nu a putut fi trimis.",
   "loginEyebrow": "CONT DE JUCĂTOR",
   "loginTitle": "Păstrează-ți cuceririle pe orice dispozitiv.",
   "accountOptionalNote": "Contul este opțional — campania se joacă și fără el.",
@@ -294,9 +456,323 @@
   "birthDateTooYoung": "Trebuie să ai cel puțin {years} ani ca să-ți creezi cont.",
   "@birthDateTooYoung": {
     "placeholders": {
-      "years": {"type": "int"}
+      "years": {
+        "type": "int"
+      }
     }
   },
   "logout": "Deconectare",
-  "backLabel": "Înapoi"
+  "backLabel": "Înapoi",
+  "socialTitle": "Prieteni și mesaje",
+  "socialTabFriends": "Prieteni",
+  "socialTabMessages": "Mesaje",
+  "socialNeedAccountTitle": "Partea socială cere un cont",
+  "socialNeedAccountBody": "Autentifică-te ca să ai prieteni, conversații și chat.",
+  "socialErrorTitle": "Nu am putut încărca partea socială",
+  "friendsAddHint": "Nume de utilizator",
+  "friendsAddAction": "Trimite cerere",
+  "friendsIncomingRequests": "Cereri primite",
+  "friendsOutgoingRequests": "Cereri trimise",
+  "friendsRequestSent": "În așteptare",
+  "friendsListTitle": "Prietenii tăi",
+  "friendsEmpty": "Încă nu ai prieteni. Caută pe cineva după numele de utilizator.",
+  "friendsAccept": "Acceptă",
+  "friendsDecline": "Refuză",
+  "friendsOpenChat": "Deschide conversația",
+  "friendsBlock": "Blochează",
+  "friendsBlockTitle": "Blochezi jucătorul?",
+  "friendsBlockBody": "{name} nu îți va mai putea scrie, iar prietenia se desface.",
+  "@friendsBlockBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "conversationsTitle": "Conversații",
+  "conversationsEmpty": "Nicio conversație deocamdată.",
+  "conversationEmpty": "Scrie primul mesaj.",
+  "messageRequestsTitle": "Cereri de mesaj",
+  "messageRequestsExplainer": "Cineva care nu îți e prieten vrea să-ți scrie. Acceptă doar dacă vrei să continui.",
+  "messageRequestAccept": "Acceptă cererea",
+  "chatComposerHint": "Scrie un mesaj…",
+  "chatSend": "Trimite",
+  "chatMutedNotice": "Chatul îți este oprit temporar din cauza mesajelor repetate.",
+  "chatReportTitle": "Raportează mesajul",
+  "chatReportHint": "Ce e în neregulă?",
+  "chatReportSend": "Trimite raportul",
+  "chatReportSent": "Raportul a fost trimis.",
+  "privacyTitle": "Confidențialitate",
+  "privacyDmTitle": "Cine îți poate scrie direct",
+  "privacyDmLocked": "Conturile de minor primesc mesaje directe doar de la prieteni.",
+  "privacyDmEveryone": "Oricine",
+  "privacyDmFriends": "Doar prietenii",
+  "privacyDmNobody": "Nimeni",
+  "trustCorrectAnswers": "{count} corecte",
+  "@trustCorrectAnswers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trustAnswersToNextTier": "Încă {count} răspunsuri corecte până la treapta următoare.",
+  "@trustAnswersToNextTier": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trustMaxTier": "Ai atins ultima treaptă de încredere.",
+  "trustTierNewcomer": "Nou",
+  "trustTierApprentice": "Ucenic",
+  "trustTierContributor": "Contribuitor",
+  "trustTierEstablished": "Stabilit",
+  "trustTierExperienced": "Experimentat",
+  "trustTierExpert": "Expert",
+  "trustTierCommunityMaster": "Maestru al comunității",
+  "trustTierElite": "Elită",
+  "trustTierCommunityLegend": "Legendă a comunității",
+  "homeGuestTitle": "Joci fără cont",
+  "homeGuestAction": "Deschide cont",
+  "homeLoadingProfile": "Se încarcă profilul…",
+  "homeCoins": "{count} monede",
+  "@homeCoins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeContinueEyebrow": "Continuă cucerirea",
+  "homeStartEyebrow": "Primul ținut",
+  "homeRealmsTitle": "Ținuturile regatului",
+  "homeRealmsAction": "Vezi harta",
+  "homeRankPosition": "Locul {position}",
+  "@homeRankPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  },
+  "homeMatchesPlayed": "{count} partide online",
+  "@homeMatchesPlayed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeDuelLocked": "Cere email confirmat",
+  "navHome": "Acasă",
+  "@navHome": {
+    "description": "Tablou de bord acasa"
+  },
+  "navCampaign": "Campanie",
+  "@navCampaign": {
+    "description": "Tablou de bord acasa"
+  },
+  "navChat": "Chat",
+  "@navChat": {
+    "description": "Tablou de bord acasa"
+  },
+  "navRanking": "Clasament",
+  "@navRanking": {
+    "description": "Tablou de bord acasa"
+  },
+  "navMultiplayer": "Multiplayer",
+  "@navMultiplayer": {
+    "description": "Tablou de bord acasa"
+  },
+  "navProfile": "Profil",
+  "@navProfile": {
+    "description": "Tablou de bord acasa"
+  },
+  "navSettings": "Setări",
+  "@navSettings": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeMenu": "Meniu",
+  "@homeMenu": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeCrystals": "{count} cristale",
+  "@homeCrystals": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "homeModeCampaign": "Campanie",
+  "@homeModeCampaign": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeCampaignDesc": "Progresează și cucerește noi teritorii.",
+  "@homeModeCampaignDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeMultiplayer": "Multiplayer",
+  "@homeModeMultiplayer": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeMultiplayerDesc": "Provoacă jucători din toată lumea.",
+  "@homeModeMultiplayerDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeChat": "Chat",
+  "@homeModeChat": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeChatDesc": "Discută cu aliații și prietenii tăi.",
+  "@homeModeChatDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeRanking": "Clasament",
+  "@homeModeRanking": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeModeRankingDesc": "Vezi cei mai buni strategi de pe tărâm.",
+  "@homeModeRankingDesc": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeRecentProgress": "Progres recent",
+  "@homeRecentProgress": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeContinue": "Continuă",
+  "@homeContinue": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomTitle": "Regatul tău",
+  "@homeKingdomTitle": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomTerritories": "Teritorii",
+  "@homeKingdomTerritories": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomStars": "Stele",
+  "@homeKingdomStars": {
+    "description": "Tablou de bord acasa"
+  },
+  "homeKingdomMatches": "Partide online",
+  "@homeKingdomMatches": {
+    "description": "Tablou de bord acasa"
+  },
+  "homePlayerTitleDefault": "Cuceritor de Întrebări",
+  "@homePlayerTitleDefault": {
+    "description": "Tablou de bord acasa"
+  },
+  "settingsTitle": "Setări",
+  "@settingsTitle": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccount": "Cont",
+  "@settingsAccount": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccountId": "ID Cont",
+  "@settingsAccountId": {
+    "description": "Ecranul de setari"
+  },
+  "settingsAccountIdCopied": "ID-ul contului a fost copiat.",
+  "@settingsAccountIdCopied": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConnectedEmail": "Conectat prin email",
+  "@settingsConnectedEmail": {
+    "description": "Ecranul de setari"
+  },
+  "settingsChangePassword": "Schimbă parola",
+  "@settingsChangePassword": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGuestTitle": "Nu ești autentificat",
+  "@settingsGuestTitle": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGuestBody": "Setările se păstrează pe acest dispozitiv și fără cont.",
+  "@settingsGuestBody": {
+    "description": "Ecranul de setari"
+  },
+  "settingsSound": "Sunet",
+  "@settingsSound": {
+    "description": "Ecranul de setari"
+  },
+  "settingsMusic": "Muzică",
+  "@settingsMusic": {
+    "description": "Ecranul de setari"
+  },
+  "settingsEffects": "Efecte",
+  "@settingsEffects": {
+    "description": "Ecranul de setari"
+  },
+  "settingsVibration": "Vibrație",
+  "@settingsVibration": {
+    "description": "Ecranul de setari"
+  },
+  "settingsNotifications": "Notificări",
+  "@settingsNotifications": {
+    "description": "Ecranul de setari"
+  },
+  "settingsPush": "Notificări push",
+  "@settingsPush": {
+    "description": "Ecranul de setari"
+  },
+  "settingsPushDesc": "Primește notificări despre recompense și evenimente.",
+  "@settingsPushDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsGameplay": "Joc",
+  "@settingsGameplay": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConfirmActions": "Confirmarea acțiunilor",
+  "@settingsConfirmActions": {
+    "description": "Ecranul de setari"
+  },
+  "settingsConfirmActionsDesc": "Cere confirmare pentru acțiuni importante.",
+  "@settingsConfirmActionsDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsTutorials": "Tutoriale",
+  "@settingsTutorials": {
+    "description": "Ecranul de setari"
+  },
+  "settingsTutorialsDesc": "Afișează sfaturi și tutoriale în joc.",
+  "@settingsTutorialsDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsDataSaver": "Economisire resurse",
+  "@settingsDataSaver": {
+    "description": "Ecranul de setari"
+  },
+  "settingsDataSaverDesc": "Reduce consumul de date și de baterie.",
+  "@settingsDataSaverDesc": {
+    "description": "Ecranul de setari"
+  },
+  "settingsLanguageSection": "Limbă și aspect",
+  "@settingsLanguageSection": {
+    "description": "Ecranul de setari"
+  },
+  "settingsLanguage": "Limbă",
+  "@settingsLanguage": {
+    "description": "Ecranul de setari"
+  },
+  "settingsVersion": "Versiunea {version}",
+  "@settingsVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsOpenAccount": "Deschide contul",
+  "@settingsOpenAccount": {
+    "description": "Ecranul de setari"
+  }
 }

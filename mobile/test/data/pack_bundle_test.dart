@@ -14,7 +14,7 @@ void main() {
 
     for (final chapter in RealmChapter.all) {
       final pack = await loader.load(chapter.packAsset);
-      expect(pack.id, chapter.id);
+      expect(pack.questions, isNotEmpty, reason: chapter.packAsset);
 
       for (final stage in RealmChapter.stages) {
         final source = LocalRoundSource(

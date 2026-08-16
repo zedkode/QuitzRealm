@@ -1,0 +1,708 @@
+{
+  "id": "space",
+  "name": "Space",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "space-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de corp sau structură cosmică este Mercur?",
+      "options": [
+        "Gigant de gheață",
+        "Satelit natural",
+        "Planetă pitică",
+        "Planetă telurică"
+      ],
+      "answer": "Planetă telurică",
+      "explanation": "Pentru „Mercur”, răspunsul corect este „Planetă telurică”."
+    },
+    {
+      "id": "space-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Mercur?",
+      "options": [
+        "Centura Kuiper",
+        "Centura de asteroizi",
+        "Sistemul Solar",
+        "Jupiter"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Mercur”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de corp sau structură cosmică este Venus?",
+      "options": [
+        "Pitic roșu",
+        "Planetă telurică",
+        "Planetă pitică",
+        "Stea de tip G"
+      ],
+      "answer": "Planetă telurică",
+      "explanation": "Pentru „Venus”, răspunsul corect este „Planetă telurică”."
+    },
+    {
+      "id": "space-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Venus?",
+      "options": [
+        "Sistemul Solar",
+        "Centura de asteroizi",
+        "Centaurus",
+        "Orion"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Venus”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de corp sau structură cosmică este Pământ?",
+      "options": [
+        "Pitic roșu",
+        "Supergigantă roșie",
+        "Stea de secvență principală",
+        "Planetă telurică"
+      ],
+      "answer": "Planetă telurică",
+      "explanation": "Pentru „Pământ”, răspunsul corect este „Planetă telurică”."
+    },
+    {
+      "id": "space-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Pământ?",
+      "options": [
+        "Câinele Mare",
+        "Ursa Mică",
+        "Sistemul Solar",
+        "Orion"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Pământ”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de corp sau structură cosmică este Marte?",
+      "options": [
+        "Galaxie spirală barată",
+        "Planetă telurică",
+        "Stea de secvență principală",
+        "Sistem stelar multiplu"
+      ],
+      "answer": "Planetă telurică",
+      "explanation": "Pentru „Marte”, răspunsul corect este „Planetă telurică”."
+    },
+    {
+      "id": "space-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Marte?",
+      "options": [
+        "Sistemul Solar",
+        "Ursa Mică",
+        "Grupul Local",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Marte”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de corp sau structură cosmică este Jupiter?",
+      "options": [
+        "Galaxie spirală barată",
+        "Galaxie spirală",
+        "Nebuloasă de emisie",
+        "Gigant gazos"
+      ],
+      "answer": "Gigant gazos",
+      "explanation": "Pentru „Jupiter”, răspunsul corect este „Gigant gazos”."
+    },
+    {
+      "id": "space-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Jupiter?",
+      "options": [
+        "Centrul Căii Lactee",
+        "Sistemul Pământ-Lună",
+        "Sistemul Solar",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Jupiter”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de corp sau structură cosmică este Saturn?",
+      "options": [
+        "Gaură neagră supermasivă",
+        "Gigant gazos",
+        "Nebuloasă de emisie",
+        "Galaxie eliptică"
+      ],
+      "answer": "Gigant gazos",
+      "explanation": "Pentru „Saturn”, răspunsul corect este „Gigant gazos”."
+    },
+    {
+      "id": "space-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Saturn?",
+      "options": [
+        "Sistemul Solar",
+        "Sistemul Pământ-Lună",
+        "Saturn",
+        "Jupiter"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Saturn”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de corp sau structură cosmică este Uranus?",
+      "options": [
+        "Gaură neagră supermasivă",
+        "Cometă periodică",
+        "Planetă telurică",
+        "Gigant de gheață"
+      ],
+      "answer": "Gigant de gheață",
+      "explanation": "Pentru „Uranus”, răspunsul corect este „Gigant de gheață”."
+    },
+    {
+      "id": "space-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Uranus?",
+      "options": [
+        "Centura Kuiper",
+        "Centura de asteroizi",
+        "Sistemul Solar",
+        "Jupiter"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Uranus”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de corp sau structură cosmică este Neptun?",
+      "options": [
+        "Satelit natural",
+        "Gigant de gheață",
+        "Planetă telurică",
+        "Gigant gazos"
+      ],
+      "answer": "Gigant de gheață",
+      "explanation": "Pentru „Neptun”, răspunsul corect este „Gigant de gheață”."
+    },
+    {
+      "id": "space-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Neptun?",
+      "options": [
+        "Sistemul Solar",
+        "Centura de asteroizi",
+        "Centaurus",
+        "Orion"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Neptun”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de corp sau structură cosmică este Luna?",
+      "options": [
+        "Gigant de gheață",
+        "Planetă pitică",
+        "Stea de tip G",
+        "Satelit natural"
+      ],
+      "answer": "Satelit natural",
+      "explanation": "Pentru „Luna”, răspunsul corect este „Satelit natural”."
+    },
+    {
+      "id": "space-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Luna?",
+      "options": [
+        "Câinele Mare",
+        "Ursa Mică",
+        "Sistemul Pământ-Lună",
+        "Orion"
+      ],
+      "answer": "Sistemul Pământ-Lună",
+      "explanation": "Pentru „Luna”, răspunsul corect este „Sistemul Pământ-Lună”."
+    },
+    {
+      "id": "space-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de corp sau structură cosmică este Titan?",
+      "options": [
+        "Supergigantă roșie",
+        "Satelit natural",
+        "Stea de tip G",
+        "Pitic roșu"
+      ],
+      "answer": "Satelit natural",
+      "explanation": "Pentru „Titan”, răspunsul corect este „Satelit natural”."
+    },
+    {
+      "id": "space-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Titan?",
+      "options": [
+        "Saturn",
+        "Ursa Mică",
+        "Grupul Local",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Saturn",
+      "explanation": "Pentru „Titan”, răspunsul corect este „Saturn”."
+    },
+    {
+      "id": "space-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de corp sau structură cosmică este Europa?",
+      "options": [
+        "Supergigantă roșie",
+        "Stea de secvență principală",
+        "Sistem stelar multiplu",
+        "Satelit natural"
+      ],
+      "answer": "Satelit natural",
+      "explanation": "Pentru „Europa”, răspunsul corect este „Satelit natural”."
+    },
+    {
+      "id": "space-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Europa?",
+      "options": [
+        "Centrul Căii Lactee",
+        "Sistemul Solar",
+        "Jupiter",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Jupiter",
+      "explanation": "Pentru „Europa”, răspunsul corect este „Jupiter”."
+    },
+    {
+      "id": "space-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de corp sau structură cosmică este Ganymede?",
+      "options": [
+        "Galaxie spirală",
+        "Satelit natural",
+        "Sistem stelar multiplu",
+        "Galaxie spirală barată"
+      ],
+      "answer": "Satelit natural",
+      "explanation": "Pentru „Ganymede”, răspunsul corect este „Satelit natural”."
+    },
+    {
+      "id": "space-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Ganymede?",
+      "options": [
+        "Jupiter",
+        "Sistemul Solar",
+        "Sistemul Pământ-Lună",
+        "Saturn"
+      ],
+      "answer": "Jupiter",
+      "explanation": "Pentru „Ganymede”, răspunsul corect este „Jupiter”."
+    },
+    {
+      "id": "space-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de corp sau structură cosmică este Pluto?",
+      "options": [
+        "Galaxie spirală",
+        "Nebuloasă de emisie",
+        "Galaxie eliptică",
+        "Planetă pitică"
+      ],
+      "answer": "Planetă pitică",
+      "explanation": "Pentru „Pluto”, răspunsul corect este „Planetă pitică”."
+    },
+    {
+      "id": "space-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Pluto?",
+      "options": [
+        "Jupiter",
+        "Centura de asteroizi",
+        "Centura Kuiper",
+        "Saturn"
+      ],
+      "answer": "Centura Kuiper",
+      "explanation": "Pentru „Pluto”, răspunsul corect este „Centura Kuiper”."
+    },
+    {
+      "id": "space-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de corp sau structură cosmică este Ceres?",
+      "options": [
+        "Cometă periodică",
+        "Planetă pitică",
+        "Galaxie eliptică",
+        "Gaură neagră supermasivă"
+      ],
+      "answer": "Planetă pitică",
+      "explanation": "Pentru „Ceres”, răspunsul corect este „Planetă pitică”."
+    },
+    {
+      "id": "space-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Ceres?",
+      "options": [
+        "Centura de asteroizi",
+        "Centura Kuiper",
+        "Centaurus",
+        "Orion"
+      ],
+      "answer": "Centura de asteroizi",
+      "explanation": "Pentru „Ceres”, răspunsul corect este „Centura de asteroizi”."
+    },
+    {
+      "id": "space-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de corp sau structură cosmică este Soarele?",
+      "options": [
+        "Cometă periodică",
+        "Planetă telurică",
+        "Gigant gazos",
+        "Stea de tip G"
+      ],
+      "answer": "Stea de tip G",
+      "explanation": "Pentru „Soarele”, răspunsul corect este „Stea de tip G”."
+    },
+    {
+      "id": "space-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Soarele?",
+      "options": [
+        "Câinele Mare",
+        "Ursa Mică",
+        "Sistemul Solar",
+        "Orion"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Soarele”, răspunsul corect este „Sistemul Solar”."
+    },
+    {
+      "id": "space-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de corp sau structură cosmică este Proxima Centauri?",
+      "options": [
+        "Satelit natural",
+        "Pitic roșu",
+        "Gigant gazos",
+        "Gigant de gheață"
+      ],
+      "answer": "Pitic roșu",
+      "explanation": "Pentru „Proxima Centauri”, răspunsul corect este „Pitic roșu”."
+    },
+    {
+      "id": "space-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Proxima Centauri?",
+      "options": [
+        "Centaurus",
+        "Ursa Mică",
+        "Grupul Local",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Centaurus",
+      "explanation": "Pentru „Proxima Centauri”, răspunsul corect este „Centaurus”."
+    },
+    {
+      "id": "space-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de corp sau structură cosmică este Betelgeuse?",
+      "options": [
+        "Satelit natural",
+        "Planetă pitică",
+        "Stea de tip G",
+        "Supergigantă roșie"
+      ],
+      "answer": "Supergigantă roșie",
+      "explanation": "Pentru „Betelgeuse”, răspunsul corect este „Supergigantă roșie”."
+    },
+    {
+      "id": "space-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Betelgeuse?",
+      "options": [
+        "Centrul Căii Lactee",
+        "Sistemul Solar",
+        "Orion",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Orion",
+      "explanation": "Pentru „Betelgeuse”, răspunsul corect este „Orion”."
+    },
+    {
+      "id": "space-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de corp sau structură cosmică este Sirius?",
+      "options": [
+        "Supergigantă roșie",
+        "Stea de secvență principală",
+        "Stea de tip G",
+        "Pitic roșu"
+      ],
+      "answer": "Stea de secvență principală",
+      "explanation": "Pentru „Sirius”, răspunsul corect este „Stea de secvență principală”."
+    },
+    {
+      "id": "space-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Sirius?",
+      "options": [
+        "Câinele Mare",
+        "Sistemul Solar",
+        "Sistemul Pământ-Lună",
+        "Saturn"
+      ],
+      "answer": "Câinele Mare",
+      "explanation": "Pentru „Sirius”, răspunsul corect este „Câinele Mare”."
+    },
+    {
+      "id": "space-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de corp sau structură cosmică este Polaris?",
+      "options": [
+        "Supergigantă roșie",
+        "Stea de secvență principală",
+        "Galaxie spirală barată",
+        "Sistem stelar multiplu"
+      ],
+      "answer": "Sistem stelar multiplu",
+      "explanation": "Pentru „Polaris”, răspunsul corect este „Sistem stelar multiplu”."
+    },
+    {
+      "id": "space-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Polaris?",
+      "options": [
+        "Jupiter",
+        "Centura Kuiper",
+        "Ursa Mică",
+        "Saturn"
+      ],
+      "answer": "Ursa Mică",
+      "explanation": "Pentru „Polaris”, răspunsul corect este „Ursa Mică”."
+    },
+    {
+      "id": "space-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de corp sau structură cosmică este Calea Lactee?",
+      "options": [
+        "Nebuloasă de emisie",
+        "Galaxie spirală barată",
+        "Sistem stelar multiplu",
+        "Galaxie spirală"
+      ],
+      "answer": "Galaxie spirală barată",
+      "explanation": "Pentru „Calea Lactee”, răspunsul corect este „Galaxie spirală barată”."
+    },
+    {
+      "id": "space-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Calea Lactee?",
+      "options": [
+        "Grupul Local",
+        "Centura Kuiper",
+        "Centura de asteroizi",
+        "Centaurus"
+      ],
+      "answer": "Grupul Local",
+      "explanation": "Pentru „Calea Lactee”, răspunsul corect este „Grupul Local”."
+    },
+    {
+      "id": "space-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de corp sau structură cosmică este Andromeda?",
+      "options": [
+        "Nebuloasă de emisie",
+        "Galaxie eliptică",
+        "Gaură neagră supermasivă",
+        "Galaxie spirală"
+      ],
+      "answer": "Galaxie spirală",
+      "explanation": "Pentru „Andromeda”, răspunsul corect este „Galaxie spirală”."
+    },
+    {
+      "id": "space-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Andromeda?",
+      "options": [
+        "Orion",
+        "Câinele Mare",
+        "Grupul Local",
+        "Centaurus"
+      ],
+      "answer": "Grupul Local",
+      "explanation": "Pentru „Andromeda”, răspunsul corect este „Grupul Local”."
+    },
+    {
+      "id": "space-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de corp sau structură cosmică este Nebuloasa Orion?",
+      "options": [
+        "Planetă telurică",
+        "Nebuloasă de emisie",
+        "Gaură neagră supermasivă",
+        "Cometă periodică"
+      ],
+      "answer": "Nebuloasă de emisie",
+      "explanation": "Pentru „Nebuloasa Orion”, răspunsul corect este „Nebuloasă de emisie”."
+    },
+    {
+      "id": "space-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Nebuloasa Orion?",
+      "options": [
+        "Orion",
+        "Ursa Mică",
+        "Grupul Local",
+        "Roiul Fecioarei"
+      ],
+      "answer": "Orion",
+      "explanation": "Pentru „Nebuloasa Orion”, răspunsul corect este „Orion”."
+    },
+    {
+      "id": "space-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tip de corp sau structură cosmică este Messier 87?",
+      "options": [
+        "Planetă telurică",
+        "Gigant gazos",
+        "Gigant de gheață",
+        "Galaxie eliptică"
+      ],
+      "answer": "Galaxie eliptică",
+      "explanation": "Pentru „Messier 87”, răspunsul corect este „Galaxie eliptică”."
+    },
+    {
+      "id": "space-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Messier 87?",
+      "options": [
+        "Centrul Căii Lactee",
+        "Sistemul Solar",
+        "Roiul Fecioarei",
+        "Grupul Local"
+      ],
+      "answer": "Roiul Fecioarei",
+      "explanation": "Pentru „Messier 87”, răspunsul corect este „Roiul Fecioarei”."
+    },
+    {
+      "id": "space-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de corp sau structură cosmică este Gaura neagră Sagittarius A*?",
+      "options": [
+        "Planetă pitică",
+        "Gaură neagră supermasivă",
+        "Gigant de gheață",
+        "Satelit natural"
+      ],
+      "answer": "Gaură neagră supermasivă",
+      "explanation": "Pentru „Gaura neagră Sagittarius A*”, răspunsul corect este „Gaură neagră supermasivă”."
+    },
+    {
+      "id": "space-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Gaura neagră Sagittarius A*?",
+      "options": [
+        "Centrul Căii Lactee",
+        "Sistemul Solar",
+        "Sistemul Pământ-Lună",
+        "Saturn"
+      ],
+      "answer": "Centrul Căii Lactee",
+      "explanation": "Pentru „Gaura neagră Sagittarius A*”, răspunsul corect este „Centrul Căii Lactee”."
+    },
+    {
+      "id": "space-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tip de corp sau structură cosmică este Cometa Halley?",
+      "options": [
+        "Planetă pitică",
+        "Stea de tip G",
+        "Pitic roșu",
+        "Cometă periodică"
+      ],
+      "answer": "Cometă periodică",
+      "explanation": "Pentru „Cometa Halley”, răspunsul corect este „Cometă periodică”."
+    },
+    {
+      "id": "space-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce sistem, constelație sau regiune este asociat Cometa Halley?",
+      "options": [
+        "Centura Kuiper",
+        "Centura de asteroizi",
+        "Sistemul Solar",
+        "Jupiter"
+      ],
+      "answer": "Sistemul Solar",
+      "explanation": "Pentru „Cometa Halley”, răspunsul corect este „Sistemul Solar”."
+    }
+  ]
+}

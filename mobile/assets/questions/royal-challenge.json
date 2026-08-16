@@ -1,0 +1,708 @@
+{
+  "id": "royal-challenge",
+  "name": "Royal Challenge",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "royal-challenge-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este răspunsul de elită pentru „simbolul chimic W”?",
+      "options": [
+        "Immanuel Kant",
+        "Cusco",
+        "engleză veche",
+        "wolfram"
+      ],
+      "answer": "wolfram",
+      "explanation": "Pentru „simbolul chimic W”, răspunsul corect este „wolfram”."
+    },
+    {
+      "id": "royal-challenge-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce domeniu provine provocarea „simbolul chimic W”?",
+      "options": [
+        "Literatură",
+        "Fizică",
+        "Chimie",
+        "Istorie"
+      ],
+      "answer": "Chimie",
+      "explanation": "Pentru „simbolul chimic W”, răspunsul corect este „Chimie”."
+    },
+    {
+      "id": "royal-challenge-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este răspunsul de elită pentru „cel mai mic număr prim”?",
+      "options": [
+        "Titan",
+        "2",
+        "engleză veche",
+        "fotonul"
+      ],
+      "answer": "2",
+      "explanation": "Pentru „cel mai mic număr prim”, răspunsul corect este „2”."
+    },
+    {
+      "id": "royal-challenge-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce domeniu provine provocarea „cel mai mic număr prim”?",
+      "options": [
+        "Matematică",
+        "Fizică",
+        "Astronomie",
+        "Arhitectură"
+      ],
+      "answer": "Matematică",
+      "explanation": "Pentru „cel mai mic număr prim”, răspunsul corect este „Matematică”."
+    },
+    {
+      "id": "royal-challenge-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este răspunsul de elită pentru „autorul Criticii rațiunii pure”?",
+      "options": [
+        "Titan",
+        "Filippo Brunelleschi",
+        "1648",
+        "Immanuel Kant"
+      ],
+      "answer": "Immanuel Kant",
+      "explanation": "Pentru „autorul Criticii rațiunii pure”, răspunsul corect este „Immanuel Kant”."
+    },
+    {
+      "id": "royal-challenge-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce domeniu provine provocarea „autorul Criticii rațiunii pure”?",
+      "options": [
+        "Muzică",
+        "Mitologie",
+        "Filosofie",
+        "Arhitectură"
+      ],
+      "answer": "Filosofie",
+      "explanation": "Pentru „autorul Criticii rațiunii pure”, răspunsul corect este „Filosofie”."
+    },
+    {
+      "id": "royal-challenge-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este răspunsul de elită pentru „capitala istorică a Imperiului Inca”?",
+      "options": [
+        "katal",
+        "Cusco",
+        "1648",
+        "Johann Sebastian Bach"
+      ],
+      "answer": "Cusco",
+      "explanation": "Pentru „capitala istorică a Imperiului Inca”, răspunsul corect este „Cusco”."
+    },
+    {
+      "id": "royal-challenge-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce domeniu provine provocarea „capitala istorică a Imperiului Inca”?",
+      "options": [
+        "Istorie",
+        "Mitologie",
+        "Arheologie",
+        "Logică"
+      ],
+      "answer": "Istorie",
+      "explanation": "Pentru „capitala istorică a Imperiului Inca”, răspunsul corect este „Istorie”."
+    },
+    {
+      "id": "royal-challenge-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este răspunsul de elită pentru „limba originală a epopeii Beowulf”?",
+      "options": [
+        "katal",
+        "Mihail Bulgakov",
+        "Calea Lactee",
+        "engleză veche"
+      ],
+      "answer": "engleză veche",
+      "explanation": "Pentru „limba originală a epopeii Beowulf”, răspunsul corect este „engleză veche”."
+    },
+    {
+      "id": "royal-challenge-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce domeniu provine provocarea „limba originală a epopeii Beowulf”?",
+      "options": [
+        "Artă",
+        "Istoria științei",
+        "Literatură",
+        "Logică"
+      ],
+      "answer": "Literatură",
+      "explanation": "Pentru „limba originală a epopeii Beowulf”, răspunsul corect este „Literatură”."
+    },
+    {
+      "id": "royal-challenge-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este răspunsul de elită pentru „particula purtătoare a interacțiunii electromagnetice”?",
+      "options": [
+        "Ninive",
+        "fotonul",
+        "Calea Lactee",
+        "Marduk"
+      ],
+      "answer": "fotonul",
+      "explanation": "Pentru „particula purtătoare a interacțiunii electromagnetice”, răspunsul corect este „fotonul”."
+    },
+    {
+      "id": "royal-challenge-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce domeniu provine provocarea „particula purtătoare a interacțiunii electromagnetice”?",
+      "options": [
+        "Fizică",
+        "Istoria științei",
+        "Geografie",
+        "Chimie"
+      ],
+      "answer": "Fizică",
+      "explanation": "Pentru „particula purtătoare a interacțiunii electromagnetice”, răspunsul corect este „Fizică”."
+    },
+    {
+      "id": "royal-challenge-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este răspunsul de elită pentru „cel mai mare satelit al lui Saturn”?",
+      "options": [
+        "Ninive",
+        "Kurt Gödel",
+        "Hieronymus Bosch",
+        "Titan"
+      ],
+      "answer": "Titan",
+      "explanation": "Pentru „cel mai mare satelit al lui Saturn”, răspunsul corect este „Titan”."
+    },
+    {
+      "id": "royal-challenge-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce domeniu provine provocarea „cel mai mare satelit al lui Saturn”?",
+      "options": [
+        "Matematică",
+        "Filosofie",
+        "Astronomie",
+        "Chimie"
+      ],
+      "answer": "Astronomie",
+      "explanation": "Pentru „cel mai mare satelit al lui Saturn”, răspunsul corect este „Astronomie”."
+    },
+    {
+      "id": "royal-challenge-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este răspunsul de elită pentru „arhitectul cupolei catedralei din Florența”?",
+      "options": [
+        "Bering",
+        "Filippo Brunelleschi",
+        "Hieronymus Bosch",
+        "Marie Curie"
+      ],
+      "answer": "Filippo Brunelleschi",
+      "explanation": "Pentru „arhitectul cupolei catedralei din Florența”, răspunsul corect este „Filippo Brunelleschi”."
+    },
+    {
+      "id": "royal-challenge-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce domeniu provine provocarea „arhitectul cupolei catedralei din Florența”?",
+      "options": [
+        "Arhitectură",
+        "Filosofie",
+        "Istorie",
+        "Literatură"
+      ],
+      "answer": "Arhitectură",
+      "explanation": "Pentru „arhitectul cupolei catedralei din Florența”, răspunsul corect este „Arhitectură”."
+    },
+    {
+      "id": "royal-challenge-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este răspunsul de elită pentru „anul păcii de la Westfalia”?",
+      "options": [
+        "Bering",
+        "barometrul",
+        "Ming",
+        "1648"
+      ],
+      "answer": "1648",
+      "explanation": "Pentru „anul păcii de la Westfalia”, răspunsul corect este „1648”."
+    },
+    {
+      "id": "royal-challenge-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce domeniu provine provocarea „anul păcii de la Westfalia”?",
+      "options": [
+        "Astronomie",
+        "Arhitectură",
+        "Istorie",
+        "Fizică"
+      ],
+      "answer": "Istorie",
+      "explanation": "Pentru „anul păcii de la Westfalia”, răspunsul corect este „Istorie”."
+    },
+    {
+      "id": "royal-challenge-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este răspunsul de elită pentru „compozitorul Artei fugii”?",
+      "options": [
+        "italiană",
+        "Johann Sebastian Bach",
+        "Ming",
+        "Platon"
+      ],
+      "answer": "Johann Sebastian Bach",
+      "explanation": "Pentru „compozitorul Artei fugii”, răspunsul corect este „Johann Sebastian Bach”."
+    },
+    {
+      "id": "royal-challenge-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce domeniu provine provocarea „compozitorul Artei fugii”?",
+      "options": [
+        "Muzică",
+        "Astronomie",
+        "Arhitectură",
+        "Mitologie"
+      ],
+      "answer": "Muzică",
+      "explanation": "Pentru „compozitorul Artei fugii”, răspunsul corect este „Muzică”."
+    },
+    {
+      "id": "royal-challenge-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este răspunsul de elită pentru „unitatea SI pentru activitate catalitică”?",
+      "options": [
+        "italiană",
+        "raportul de aur",
+        "wolfram",
+        "katal"
+      ],
+      "answer": "katal",
+      "explanation": "Pentru „unitatea SI pentru activitate catalitică”, răspunsul corect este „katal”."
+    },
+    {
+      "id": "royal-challenge-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce domeniu provine provocarea „unitatea SI pentru activitate catalitică”?",
+      "options": [
+        "Arheologie",
+        "Logică",
+        "Chimie",
+        "Mitologie"
+      ],
+      "answer": "Chimie",
+      "explanation": "Pentru „unitatea SI pentru activitate catalitică”, răspunsul corect este „Chimie”."
+    },
+    {
+      "id": "royal-challenge-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este răspunsul de elită pentru „autorul romanului Maestrul și Margareta”?",
+      "options": [
+        "Immanuel Kant",
+        "Mihail Bulgakov",
+        "wolfram",
+        "2"
+      ],
+      "answer": "Mihail Bulgakov",
+      "explanation": "Pentru „autorul romanului Maestrul și Margareta”, răspunsul corect este „Mihail Bulgakov”."
+    },
+    {
+      "id": "royal-challenge-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce domeniu provine provocarea „autorul romanului Maestrul și Margareta”?",
+      "options": [
+        "Literatură",
+        "Logică",
+        "Artă",
+        "Istoria științei"
+      ],
+      "answer": "Literatură",
+      "explanation": "Pentru „autorul romanului Maestrul și Margareta”, răspunsul corect este „Literatură”."
+    },
+    {
+      "id": "royal-challenge-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este răspunsul de elită pentru „galaxia care conține Sagittarius A*”?",
+      "options": [
+        "Immanuel Kant",
+        "Cusco",
+        "engleză veche",
+        "Calea Lactee"
+      ],
+      "answer": "Calea Lactee",
+      "explanation": "Pentru „galaxia care conține Sagittarius A*”, răspunsul corect este „Calea Lactee”."
+    },
+    {
+      "id": "royal-challenge-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce domeniu provine provocarea „galaxia care conține Sagittarius A*”?",
+      "options": [
+        "Geografie",
+        "Chimie",
+        "Astronomie",
+        "Istoria științei"
+      ],
+      "answer": "Astronomie",
+      "explanation": "Pentru „galaxia care conține Sagittarius A*”, răspunsul corect este „Astronomie”."
+    },
+    {
+      "id": "royal-challenge-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este răspunsul de elită pentru „zeul mesopotamian din epopeea Enuma Eliș”?",
+      "options": [
+        "Titan",
+        "Marduk",
+        "engleză veche",
+        "fotonul"
+      ],
+      "answer": "Marduk",
+      "explanation": "Pentru „zeul mesopotamian din epopeea Enuma Eliș”, răspunsul corect este „Marduk”."
+    },
+    {
+      "id": "royal-challenge-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce domeniu provine provocarea „zeul mesopotamian din epopeea Enuma Eliș”?",
+      "options": [
+        "Mitologie",
+        "Chimie",
+        "Matematică",
+        "Filosofie"
+      ],
+      "answer": "Mitologie",
+      "explanation": "Pentru „zeul mesopotamian din epopeea Enuma Eliș”, răspunsul corect este „Mitologie”."
+    },
+    {
+      "id": "royal-challenge-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este răspunsul de elită pentru „orașul antic al bibliotecii lui Assurbanipal”?",
+      "options": [
+        "Titan",
+        "Filippo Brunelleschi",
+        "1648",
+        "Ninive"
+      ],
+      "answer": "Ninive",
+      "explanation": "Pentru „orașul antic al bibliotecii lui Assurbanipal”, răspunsul corect este „Ninive”."
+    },
+    {
+      "id": "royal-challenge-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce domeniu provine provocarea „orașul antic al bibliotecii lui Assurbanipal”?",
+      "options": [
+        "Istorie",
+        "Literatură",
+        "Arheologie",
+        "Filosofie"
+      ],
+      "answer": "Arheologie",
+      "explanation": "Pentru „orașul antic al bibliotecii lui Assurbanipal”, răspunsul corect este „Arheologie”."
+    },
+    {
+      "id": "royal-challenge-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este răspunsul de elită pentru „matematicianul asociat cu teoremele incompletitudinii”?",
+      "options": [
+        "katal",
+        "Kurt Gödel",
+        "1648",
+        "Johann Sebastian Bach"
+      ],
+      "answer": "Kurt Gödel",
+      "explanation": "Pentru „matematicianul asociat cu teoremele incompletitudinii”, răspunsul corect este „Kurt Gödel”."
+    },
+    {
+      "id": "royal-challenge-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce domeniu provine provocarea „matematicianul asociat cu teoremele incompletitudinii”?",
+      "options": [
+        "Logică",
+        "Literatură",
+        "Fizică",
+        "Astronomie"
+      ],
+      "answer": "Logică",
+      "explanation": "Pentru „matematicianul asociat cu teoremele incompletitudinii”, răspunsul corect este „Logică”."
+    },
+    {
+      "id": "royal-challenge-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este răspunsul de elită pentru „pictorul Grădinii desfătărilor”?",
+      "options": [
+        "katal",
+        "Mihail Bulgakov",
+        "Calea Lactee",
+        "Hieronymus Bosch"
+      ],
+      "answer": "Hieronymus Bosch",
+      "explanation": "Pentru „pictorul Grădinii desfătărilor”, răspunsul corect este „Hieronymus Bosch”."
+    },
+    {
+      "id": "royal-challenge-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce domeniu provine provocarea „pictorul Grădinii desfătărilor”?",
+      "options": [
+        "Arhitectură",
+        "Muzică",
+        "Artă",
+        "Astronomie"
+      ],
+      "answer": "Artă",
+      "explanation": "Pentru „pictorul Grădinii desfătărilor”, răspunsul corect este „Artă”."
+    },
+    {
+      "id": "royal-challenge-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este răspunsul de elită pentru „elementul cu numărul atomic 74”?",
+      "options": [
+        "Kurt Gödel",
+        "wolfram",
+        "Marduk",
+        "Ninive"
+      ],
+      "answer": "wolfram",
+      "explanation": "Pentru „elementul cu numărul atomic 74”, răspunsul corect este „wolfram”."
+    },
+    {
+      "id": "royal-challenge-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce domeniu provine provocarea „elementul cu numărul atomic 74”?",
+      "options": [
+        "Chimie",
+        "Mitologie",
+        "Arheologie",
+        "Logică"
+      ],
+      "answer": "Chimie",
+      "explanation": "Pentru „elementul cu numărul atomic 74”, răspunsul corect este „Chimie”."
+    },
+    {
+      "id": "royal-challenge-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este răspunsul de elită pentru „prima femeie laureată a Premiului Nobel”?",
+      "options": [
+        "Ninive",
+        "Kurt Gödel",
+        "Hieronymus Bosch",
+        "Marie Curie"
+      ],
+      "answer": "Marie Curie",
+      "explanation": "Pentru „prima femeie laureată a Premiului Nobel”, răspunsul corect este „Marie Curie”."
+    },
+    {
+      "id": "royal-challenge-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce domeniu provine provocarea „prima femeie laureată a Premiului Nobel”?",
+      "options": [
+        "Logică",
+        "Artă",
+        "Istoria științei",
+        "Arheologie"
+      ],
+      "answer": "Istoria științei",
+      "explanation": "Pentru „prima femeie laureată a Premiului Nobel”, răspunsul corect este „Istoria științei”."
+    },
+    {
+      "id": "royal-challenge-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este răspunsul de elită pentru „strâmtoarea dintre Asia și America de Nord”?",
+      "options": [
+        "barometrul",
+        "Bering",
+        "Hieronymus Bosch",
+        "Marie Curie"
+      ],
+      "answer": "Bering",
+      "explanation": "Pentru „strâmtoarea dintre Asia și America de Nord”, răspunsul corect este „Bering”."
+    },
+    {
+      "id": "royal-challenge-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce domeniu provine provocarea „strâmtoarea dintre Asia și America de Nord”?",
+      "options": [
+        "Geografie",
+        "Artă",
+        "Istoria științei",
+        "Chimie"
+      ],
+      "answer": "Geografie",
+      "explanation": "Pentru „strâmtoarea dintre Asia și America de Nord”, răspunsul corect este „Geografie”."
+    },
+    {
+      "id": "royal-challenge-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care este răspunsul de elită pentru „instrumentul de măsurare a presiunii atmosferice”?",
+      "options": [
+        "Bering",
+        "Ming",
+        "Platon",
+        "barometrul"
+      ],
+      "answer": "barometrul",
+      "explanation": "Pentru „instrumentul de măsurare a presiunii atmosferice”, răspunsul corect este „barometrul”."
+    },
+    {
+      "id": "royal-challenge-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce domeniu provine provocarea „instrumentul de măsurare a presiunii atmosferice”?",
+      "options": [
+        "Matematică",
+        "Filosofie",
+        "Fizică",
+        "Chimie"
+      ],
+      "answer": "Fizică",
+      "explanation": "Pentru „instrumentul de măsurare a presiunii atmosferice”, răspunsul corect este „Fizică”."
+    },
+    {
+      "id": "royal-challenge-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care este răspunsul de elită pentru „dinastia chineză a flotei lui Zheng He”?",
+      "options": [
+        "raportul de aur",
+        "Ming",
+        "Platon",
+        "italiană"
+      ],
+      "answer": "Ming",
+      "explanation": "Pentru „dinastia chineză a flotei lui Zheng He”, răspunsul corect este „Ming”."
+    },
+    {
+      "id": "royal-challenge-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce domeniu provine provocarea „dinastia chineză a flotei lui Zheng He”?",
+      "options": [
+        "Istorie",
+        "Filosofie",
+        "Literatură",
+        "Fizică"
+      ],
+      "answer": "Istorie",
+      "explanation": "Pentru „dinastia chineză a flotei lui Zheng He”, răspunsul corect este „Istorie”."
+    },
+    {
+      "id": "royal-challenge-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este răspunsul de elită pentru „filosoful autor al dialogului Republica”?",
+      "options": [
+        "raportul de aur",
+        "wolfram",
+        "2",
+        "Platon"
+      ],
+      "answer": "Platon",
+      "explanation": "Pentru „filosoful autor al dialogului Republica”, răspunsul corect este „Platon”."
+    },
+    {
+      "id": "royal-challenge-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce domeniu provine provocarea „filosoful autor al dialogului Republica”?",
+      "options": [
+        "Astronomie",
+        "Arhitectură",
+        "Filosofie",
+        "Fizică"
+      ],
+      "answer": "Filosofie",
+      "explanation": "Pentru „filosoful autor al dialogului Republica”, răspunsul corect este „Filosofie”."
+    },
+    {
+      "id": "royal-challenge-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este răspunsul de elită pentru „limba în care a fost scrisă Divina Comedie”?",
+      "options": [
+        "Cusco",
+        "italiană",
+        "2",
+        "Immanuel Kant"
+      ],
+      "answer": "italiană",
+      "explanation": "Pentru „limba în care a fost scrisă Divina Comedie”, răspunsul corect este „italiană”."
+    },
+    {
+      "id": "royal-challenge-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce domeniu provine provocarea „limba în care a fost scrisă Divina Comedie”?",
+      "options": [
+        "Literatură",
+        "Arhitectură",
+        "Muzică",
+        "Mitologie"
+      ],
+      "answer": "Literatură",
+      "explanation": "Pentru „limba în care a fost scrisă Divina Comedie”, răspunsul corect este „Literatură”."
+    },
+    {
+      "id": "royal-challenge-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este răspunsul de elită pentru „constanta aproximativă 1,618”?",
+      "options": [
+        "Cusco",
+        "engleză veche",
+        "fotonul",
+        "raportul de aur"
+      ],
+      "answer": "raportul de aur",
+      "explanation": "Pentru „constanta aproximativă 1,618”, răspunsul corect este „raportul de aur”."
+    },
+    {
+      "id": "royal-challenge-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce domeniu provine provocarea „constanta aproximativă 1,618”?",
+      "options": [
+        "Arheologie",
+        "Logică",
+        "Matematică",
+        "Mitologie"
+      ],
+      "answer": "Matematică",
+      "explanation": "Pentru „constanta aproximativă 1,618”, răspunsul corect este „Matematică”."
+    }
+  ]
+}

@@ -99,6 +99,15 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
                           ),
                         ),
                       ),
+                      if (state.matchId != null && _isPlayingPhase(state.phase))
+                        GameIconButton(
+                          key: const Key('duel-chat-open'),
+                          symbol: GameSymbol.chat,
+                          tooltip: l10n.matchChatOpen,
+                          size: 40,
+                          color: GamePalette.arcane,
+                          onPressed: () => _openMatchChat(context),
+                        ),
                     ],
                   ),
                 ),
@@ -119,6 +128,37 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
         phase == DuelPhase.error ||
         phase == DuelPhase.disconnected ||
         phase == DuelPhase.unauthenticated;
+  }
+
+  static bool _isPlayingPhase(DuelPhase phase) {
+    return phase == DuelPhase.roundActive ||
+        phase == DuelPhase.waitingOpponent ||
+        phase == DuelPhase.roundRevealed;
+  }
+
+  Future<void> _openMatchChat(BuildContext context) async {
+    final input = TextEditingController();
+    await showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
+      backgroundColor: Colors.transparent,
+      barrierColor: GamePalette.nightDeep.withValues(alpha: 0.78),
+      builder: (_) => Consumer(
+        builder: (context, ref, _) => _MatchChatSheet(
+          state: ref.watch(duelControllerProvider),
+          input: input,
+          onSend: (message) {
+            ref.read(duelControllerProvider.notifier).sendChatMessage(message);
+            input.clear();
+          },
+          onReaction: ref
+              .read(duelControllerProvider.notifier)
+              .sendChatReaction,
+        ),
+      ),
+    );
+    input.dispose();
   }
 
   Future<void> _confirmLeave(
@@ -247,6 +287,257 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
             ref.read(duelControllerProvider.notifier).submitAnswer(answer),
       ),
     };
+  }
+}
+
+class _MatchChatSheet extends StatelessWidget {
+  const _MatchChatSheet({
+    required this.state,
+    required this.input,
+    required this.onSend,
+    required this.onReaction,
+  });
+
+  final DuelState state;
+  final TextEditingController input;
+  final ValueChanged<String> onSend;
+  final ValueChanged<String> onReaction;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return FractionallySizedBox(
+      heightFactor: 0.78,
+      child: Padding(
+        padding: EdgeInsets.fromLTRB(
+          10,
+          0,
+          10,
+          MediaQuery.viewInsetsOf(context).bottom + 10,
+        ),
+        child: GameFrame(
+          key: const Key('duel-match-chat'),
+          accent: GamePalette.arcane,
+          glow: true,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  const GameIcon(
+                    GameSymbol.chat,
+                    size: 30,
+                    color: GamePalette.arcane,
+                    glow: true,
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(l10n.matchChatTitle, style: GameText.heading),
+                        Text(l10n.matchChatEphemeral, style: GameText.bodyDim),
+                      ],
+                    ),
+                  ),
+                  GameIconButton(
+                    symbol: GameSymbol.cross,
+                    tooltip: l10n.close,
+                    size: 38,
+                    onPressed: () => Navigator.of(context).pop(),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              Expanded(
+                child: state.chatMessages.isEmpty
+                    ? Center(
+                        child: Text(
+                          l10n.matchChatEmpty,
+                          textAlign: TextAlign.center,
+                          style: GameText.bodyDim,
+                        ),
+                      )
+                    : ListView.separated(
+                        key: const Key('duel-chat-messages'),
+                        reverse: true,
+                        itemCount: state.chatMessages.length,
+                        separatorBuilder: (_, _) => const SizedBox(height: 7),
+                        itemBuilder: (context, index) {
+                          final message =
+                              state.chatMessages[state.chatMessages.length -
+                                  1 -
+                                  index];
+                          return _MatchChatMessageBubble(
+                            message: message,
+                            mine: message.senderId == state.myUserId,
+                          );
+                        },
+                      ),
+              ),
+              if (state.chatErrorReason != null) ...[
+                const SizedBox(height: 8),
+                Text(
+                  _chatError(l10n, state.chatErrorReason!),
+                  key: const Key('duel-chat-error'),
+                  style: GameText.body.copyWith(color: GamePalette.crimson),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+              const SizedBox(height: 10),
+              Text(l10n.matchChatReactions, style: GameText.eyebrow),
+              const SizedBox(height: 7),
+              Row(
+                children: [
+                  Expanded(
+                    child: GameButton(
+                      key: const Key('duel-reaction-good-luck'),
+                      label: l10n.matchReactionGoodLuck,
+                      tone: GameButtonTone.arcane,
+                      height: 38,
+                      compact: true,
+                      onPressed: () => onReaction('good_luck'),
+                    ),
+                  ),
+                  const SizedBox(width: 7),
+                  Expanded(
+                    child: GameButton(
+                      label: l10n.matchReactionNiceMove,
+                      tone: GameButtonTone.stone,
+                      height: 38,
+                      compact: true,
+                      onPressed: () => onReaction('nice_move'),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 6),
+              Row(
+                children: [
+                  Expanded(
+                    child: GameButton(
+                      label: l10n.matchReactionWow,
+                      tone: GameButtonTone.stone,
+                      height: 38,
+                      compact: true,
+                      onPressed: () => onReaction('wow'),
+                    ),
+                  ),
+                  const SizedBox(width: 7),
+                  Expanded(
+                    child: GameButton(
+                      label: l10n.matchReactionWellPlayed,
+                      tone: GameButtonTone.emerald,
+                      height: 38,
+                      compact: true,
+                      onPressed: () => onReaction('well_played'),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              if (state.canSendChatText)
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        key: const Key('duel-chat-input'),
+                        controller: input,
+                        maxLength: 500,
+                        minLines: 1,
+                        maxLines: 2,
+                        textInputAction: TextInputAction.send,
+                        onSubmitted: onSend,
+                        decoration: InputDecoration(
+                          counterText: '',
+                          hintText: l10n.matchChatHint,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    GameIconButton(
+                      key: const Key('duel-chat-send'),
+                      symbol: GameSymbol.sword,
+                      tooltip: l10n.matchChatSend,
+                      color: GamePalette.goldBright,
+                      onPressed: () => onSend(input.text),
+                    ),
+                  ],
+                )
+              else
+                Text(
+                  l10n.matchChatTextLocked,
+                  key: const Key('duel-chat-text-locked'),
+                  textAlign: TextAlign.center,
+                  style: GameText.bodyDim,
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _chatError(AppLocalizations l10n, String reason) {
+    return switch (reason) {
+      'tier_too_low' => l10n.matchChatTextLocked,
+      'muted' => l10n.matchChatMuted,
+      'rate_limited' => l10n.matchChatTooFast,
+      'links_not_allowed' => l10n.matchChatLinksLocked,
+      'not_in_match' => l10n.matchChatClosed,
+      _ => l10n.matchChatInvalid,
+    };
+  }
+}
+
+class _MatchChatMessageBubble extends StatelessWidget {
+  const _MatchChatMessageBubble({required this.message, required this.mine});
+
+  final DuelChatMessage message;
+  final bool mine;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final content = message.kind == DuelChatMessageKind.reaction
+        ? switch (message.content) {
+            'good_luck' => l10n.matchReactionGoodLuck,
+            'nice_move' => l10n.matchReactionNiceMove,
+            'wow' => l10n.matchReactionWow,
+            'well_played' => l10n.matchReactionWellPlayed,
+            _ => message.content,
+          }
+        : message.content;
+    final accent = mine ? GamePalette.gold : GamePalette.arcane;
+    return Align(
+      alignment: mine ? Alignment.centerRight : Alignment.centerLeft,
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 310),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: GamePalette.stone900.withValues(alpha: 0.92),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: accent.withValues(alpha: 0.65)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              mine ? l10n.duelYou : message.senderName,
+              style: GameText.eyebrow.copyWith(color: accent),
+            ),
+            const SizedBox(height: 3),
+            Text(
+              content,
+              key: Key('duel-chat-message-${message.id}'),
+              style: message.kind == DuelChatMessageKind.reaction
+                  ? GameText.heading.copyWith(fontSize: 14)
+                  : GameText.body,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -881,7 +1172,9 @@ class _VerifyEmailNeededState extends ConsumerState<_VerifyEmailNeeded> {
       symbol: GameSymbol.scroll,
       title: l10n.duelVerifyEmailTitle,
       body: l10n.duelVerifyEmailBody,
-      actionLabel: _sending ? l10n.duelVerifyEmailSending : l10n.duelVerifyEmailAction,
+      actionLabel: _sending
+          ? l10n.duelVerifyEmailSending
+          : l10n.duelVerifyEmailAction,
       onAction: _sending ? () {} : _resend,
     );
   }

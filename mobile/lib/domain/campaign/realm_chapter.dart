@@ -50,6 +50,10 @@ final class RealmChapter {
   ];
 
   /// Ordinea din listă este ordinea campaniei; poziția este locul de pe hartă.
+  ///
+  /// Identificatorii ținuturilor rămân cei vechi, deși pachetele au acum nume
+  /// englezești: cheia de progres salvată pe telefon e `<chapterId>/<etapă>`,
+  /// iar o redenumire ar șterge în tăcere progresul jucătorilor.
   static const all = <RealmChapter>[
     RealmChapter(
       id: 'istorie',
@@ -65,43 +69,43 @@ final class RealmChapter {
     ),
     RealmChapter(
       id: 'geografie',
-      packAsset: 'assets/questions/geografie.json',
+      packAsset: 'assets/questions/geography.json',
       starsToUnlock: 6,
       mapPosition: (0.825, 0.515),
     ),
     RealmChapter(
       id: 'stiinta',
-      packAsset: 'assets/questions/stiinta.json',
+      packAsset: 'assets/questions/science.json',
       starsToUnlock: 10,
       mapPosition: (0.745, 0.245),
     ),
     RealmChapter(
       id: 'sport',
-      packAsset: 'assets/questions/sport.json',
+      packAsset: 'assets/questions/sports.json',
       starsToUnlock: 15,
       mapPosition: (0.765, 0.845),
     ),
     RealmChapter(
       id: 'tehnologie',
-      packAsset: 'assets/questions/tehnologie.json',
+      packAsset: 'assets/questions/technology.json',
       starsToUnlock: 21,
       mapPosition: (0.455, 0.215),
     ),
     RealmChapter(
       id: 'literatura',
-      packAsset: 'assets/questions/literatura.json',
+      packAsset: 'assets/questions/literature.json',
       starsToUnlock: 28,
       mapPosition: (0.195, 0.765),
     ),
     RealmChapter(
       id: 'arte',
-      packAsset: 'assets/questions/arte.json',
+      packAsset: 'assets/questions/art.json',
       starsToUnlock: 36,
       mapPosition: (0.235, 0.505),
     ),
     RealmChapter(
       id: 'mituri',
-      packAsset: 'assets/questions/mituri.json',
+      packAsset: 'assets/questions/mythology.json',
       starsToUnlock: 45,
       mapPosition: (0.155, 0.255),
     ),

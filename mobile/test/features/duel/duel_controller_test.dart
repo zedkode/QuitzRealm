@@ -216,19 +216,22 @@ void main() {
     expect(controller.state.phase, DuelPhase.finished);
   });
 
-  test('sesiunea cu partidă activă nu reintră în coadă, ci așteaptă starea', () async {
-    final client = FakeRealtimeClient();
-    final controller = DuelController(client);
-    addTearDown(controller.dispose);
+  test(
+    'sesiunea cu partidă activă nu reintră în coadă, ci așteaptă starea',
+    () async {
+      final client = FakeRealtimeClient();
+      final controller = DuelController(client);
+      addTearDown(controller.dispose);
 
-    await controller.start();
-    client.emit(const DuelSessionReady('me', activeMatchId: 'match-1'));
-    await settle();
+      await controller.start();
+      client.emit(const DuelSessionReady('me', activeMatchId: 'match-1'));
+      await settle();
 
-    expect(client.joinedQueue, isFalse);
-    expect(controller.state.phase, DuelPhase.reconnecting);
-    expect(controller.state.matchId, 'match-1');
-  });
+      expect(client.joinedQueue, isFalse);
+      expect(controller.state.phase, DuelPhase.reconnecting);
+      expect(controller.state.matchId, 'match-1');
+    },
+  );
 
   test('pauza îngheață runda și blochează trimiterea răspunsului', () async {
     final client = FakeRealtimeClient();
@@ -334,5 +337,58 @@ void main() {
     expect(client.leftQueue, isTrue);
     expect(client.disconnected, isTrue);
     expect(controller.state.phase, DuelPhase.idle);
+  });
+
+  test('chatul partidei respectă accesul primit de la server', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emitMatchStart();
+    await settle();
+
+    expect(client.joinedMatchChats, ['match-1']);
+    client.emit(
+      DuelMatchChatHistory(
+        matchId: 'match-1',
+        canSendText: true,
+        messages: [
+          DuelChatMessage(
+            id: 'chat-1',
+            matchId: 'match-1',
+            senderId: 'rival',
+            senderName: 'Rivalul',
+            content: 'well_played',
+            kind: DuelChatMessageKind.reaction,
+            createdAt: DateTime.now(),
+          ),
+        ],
+      ),
+    );
+    await settle();
+
+    expect(controller.state.canSendChatText, isTrue);
+    expect(controller.state.chatMessages.single.id, 'chat-1');
+    controller.sendChatMessage('  Salut!  ');
+    controller.sendChatReaction('nice_move');
+    expect(client.sentChatMessages.single.content, 'Salut!');
+    expect(client.sentReactions.single.reaction, 'nice_move');
+  });
+
+  test('chatul ignoră evenimentele care aparțin altei partide', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emitMatchStart();
+    await settle();
+    client.emit(
+      const DuelMatchChatRejected(matchId: 'alta-partida', reason: 'muted'),
+    );
+    await settle();
+
+    expect(controller.state.chatErrorReason, isNull);
   });
 }

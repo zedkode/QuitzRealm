@@ -992,6 +992,108 @@ abstract class AppLocalizations {
   /// **'Adversarul nu s-a mai întors în partidă.'**
   String get duelWonByForfeit;
 
+  /// No description provided for @matchChatOpen.
+  ///
+  /// In ro, this message translates to:
+  /// **'Deschide chatul de luptă'**
+  String get matchChatOpen;
+
+  /// No description provided for @matchChatTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cronica luptei'**
+  String get matchChatTitle;
+
+  /// No description provided for @matchChatEphemeral.
+  ///
+  /// In ro, this message translates to:
+  /// **'Mesajele acestei partide dispar după luptă.'**
+  String get matchChatEphemeral;
+
+  /// No description provided for @matchChatEmpty.
+  ///
+  /// In ro, this message translates to:
+  /// **'Pergamentul este gol. Trimite o reacție adversarului.'**
+  String get matchChatEmpty;
+
+  /// No description provided for @matchChatReactions.
+  ///
+  /// In ro, this message translates to:
+  /// **'REACȚII RAPIDE'**
+  String get matchChatReactions;
+
+  /// No description provided for @matchReactionGoodLuck.
+  ///
+  /// In ro, this message translates to:
+  /// **'Mult noroc!'**
+  String get matchReactionGoodLuck;
+
+  /// No description provided for @matchReactionNiceMove.
+  ///
+  /// In ro, this message translates to:
+  /// **'Mișcare bună!'**
+  String get matchReactionNiceMove;
+
+  /// No description provided for @matchReactionWow.
+  ///
+  /// In ro, this message translates to:
+  /// **'Uau!'**
+  String get matchReactionWow;
+
+  /// No description provided for @matchReactionWellPlayed.
+  ///
+  /// In ro, this message translates to:
+  /// **'Bine jucat!'**
+  String get matchReactionWellPlayed;
+
+  /// No description provided for @matchChatHint.
+  ///
+  /// In ro, this message translates to:
+  /// **'Scrie un mesaj de luptă…'**
+  String get matchChatHint;
+
+  /// No description provided for @matchChatSend.
+  ///
+  /// In ro, this message translates to:
+  /// **'Trimite mesajul'**
+  String get matchChatSend;
+
+  /// No description provided for @matchChatTextLocked.
+  ///
+  /// In ro, this message translates to:
+  /// **'Textul liber se deblochează după 10 răspunsuri corecte. Reacțiile rămân disponibile.'**
+  String get matchChatTextLocked;
+
+  /// No description provided for @matchChatMuted.
+  ///
+  /// In ro, this message translates to:
+  /// **'Chatul tău este temporar restricționat.'**
+  String get matchChatMuted;
+
+  /// No description provided for @matchChatTooFast.
+  ///
+  /// In ro, this message translates to:
+  /// **'Prea multe mesaje. Așteaptă câteva secunde.'**
+  String get matchChatTooFast;
+
+  /// No description provided for @matchChatLinksLocked.
+  ///
+  /// In ro, this message translates to:
+  /// **'Linkurile se deblochează la o treaptă de încredere mai mare.'**
+  String get matchChatLinksLocked;
+
+  /// No description provided for @matchChatClosed.
+  ///
+  /// In ro, this message translates to:
+  /// **'Chatul acestei partide s-a închis.'**
+  String get matchChatClosed;
+
+  /// No description provided for @matchChatInvalid.
+  ///
+  /// In ro, this message translates to:
+  /// **'Mesajul nu a putut fi trimis.'**
+  String get matchChatInvalid;
+
   /// No description provided for @loginEyebrow.
   ///
   /// In ro, this message translates to:
@@ -1105,6 +1207,672 @@ abstract class AppLocalizations {
   /// In ro, this message translates to:
   /// **'Înapoi'**
   String get backLabel;
+
+  /// No description provided for @socialTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Prieteni și mesaje'**
+  String get socialTitle;
+
+  /// No description provided for @socialTabFriends.
+  ///
+  /// In ro, this message translates to:
+  /// **'Prieteni'**
+  String get socialTabFriends;
+
+  /// No description provided for @socialTabMessages.
+  ///
+  /// In ro, this message translates to:
+  /// **'Mesaje'**
+  String get socialTabMessages;
+
+  /// No description provided for @socialNeedAccountTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Partea socială cere un cont'**
+  String get socialNeedAccountTitle;
+
+  /// No description provided for @socialNeedAccountBody.
+  ///
+  /// In ro, this message translates to:
+  /// **'Autentifică-te ca să ai prieteni, conversații și chat.'**
+  String get socialNeedAccountBody;
+
+  /// No description provided for @socialErrorTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Nu am putut încărca partea socială'**
+  String get socialErrorTitle;
+
+  /// No description provided for @friendsAddHint.
+  ///
+  /// In ro, this message translates to:
+  /// **'Nume de utilizator'**
+  String get friendsAddHint;
+
+  /// No description provided for @friendsAddAction.
+  ///
+  /// In ro, this message translates to:
+  /// **'Trimite cerere'**
+  String get friendsAddAction;
+
+  /// No description provided for @friendsIncomingRequests.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cereri primite'**
+  String get friendsIncomingRequests;
+
+  /// No description provided for @friendsOutgoingRequests.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cereri trimise'**
+  String get friendsOutgoingRequests;
+
+  /// No description provided for @friendsRequestSent.
+  ///
+  /// In ro, this message translates to:
+  /// **'În așteptare'**
+  String get friendsRequestSent;
+
+  /// No description provided for @friendsListTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Prietenii tăi'**
+  String get friendsListTitle;
+
+  /// No description provided for @friendsEmpty.
+  ///
+  /// In ro, this message translates to:
+  /// **'Încă nu ai prieteni. Caută pe cineva după numele de utilizator.'**
+  String get friendsEmpty;
+
+  /// No description provided for @friendsAccept.
+  ///
+  /// In ro, this message translates to:
+  /// **'Acceptă'**
+  String get friendsAccept;
+
+  /// No description provided for @friendsDecline.
+  ///
+  /// In ro, this message translates to:
+  /// **'Refuză'**
+  String get friendsDecline;
+
+  /// No description provided for @friendsOpenChat.
+  ///
+  /// In ro, this message translates to:
+  /// **'Deschide conversația'**
+  String get friendsOpenChat;
+
+  /// No description provided for @friendsBlock.
+  ///
+  /// In ro, this message translates to:
+  /// **'Blochează'**
+  String get friendsBlock;
+
+  /// No description provided for @friendsBlockTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Blochezi jucătorul?'**
+  String get friendsBlockTitle;
+
+  /// No description provided for @friendsBlockBody.
+  ///
+  /// In ro, this message translates to:
+  /// **'{name} nu îți va mai putea scrie, iar prietenia se desface.'**
+  String friendsBlockBody(String name);
+
+  /// No description provided for @conversationsTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Conversații'**
+  String get conversationsTitle;
+
+  /// No description provided for @conversationsEmpty.
+  ///
+  /// In ro, this message translates to:
+  /// **'Nicio conversație deocamdată.'**
+  String get conversationsEmpty;
+
+  /// No description provided for @conversationEmpty.
+  ///
+  /// In ro, this message translates to:
+  /// **'Scrie primul mesaj.'**
+  String get conversationEmpty;
+
+  /// No description provided for @messageRequestsTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cereri de mesaj'**
+  String get messageRequestsTitle;
+
+  /// No description provided for @messageRequestsExplainer.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cineva care nu îți e prieten vrea să-ți scrie. Acceptă doar dacă vrei să continui.'**
+  String get messageRequestsExplainer;
+
+  /// No description provided for @messageRequestAccept.
+  ///
+  /// In ro, this message translates to:
+  /// **'Acceptă cererea'**
+  String get messageRequestAccept;
+
+  /// No description provided for @chatComposerHint.
+  ///
+  /// In ro, this message translates to:
+  /// **'Scrie un mesaj…'**
+  String get chatComposerHint;
+
+  /// No description provided for @chatSend.
+  ///
+  /// In ro, this message translates to:
+  /// **'Trimite'**
+  String get chatSend;
+
+  /// No description provided for @chatMutedNotice.
+  ///
+  /// In ro, this message translates to:
+  /// **'Chatul îți este oprit temporar din cauza mesajelor repetate.'**
+  String get chatMutedNotice;
+
+  /// No description provided for @chatReportTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Raportează mesajul'**
+  String get chatReportTitle;
+
+  /// No description provided for @chatReportHint.
+  ///
+  /// In ro, this message translates to:
+  /// **'Ce e în neregulă?'**
+  String get chatReportHint;
+
+  /// No description provided for @chatReportSend.
+  ///
+  /// In ro, this message translates to:
+  /// **'Trimite raportul'**
+  String get chatReportSend;
+
+  /// No description provided for @chatReportSent.
+  ///
+  /// In ro, this message translates to:
+  /// **'Raportul a fost trimis.'**
+  String get chatReportSent;
+
+  /// No description provided for @privacyTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Confidențialitate'**
+  String get privacyTitle;
+
+  /// No description provided for @privacyDmTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cine îți poate scrie direct'**
+  String get privacyDmTitle;
+
+  /// No description provided for @privacyDmLocked.
+  ///
+  /// In ro, this message translates to:
+  /// **'Conturile de minor primesc mesaje directe doar de la prieteni.'**
+  String get privacyDmLocked;
+
+  /// No description provided for @privacyDmEveryone.
+  ///
+  /// In ro, this message translates to:
+  /// **'Oricine'**
+  String get privacyDmEveryone;
+
+  /// No description provided for @privacyDmFriends.
+  ///
+  /// In ro, this message translates to:
+  /// **'Doar prietenii'**
+  String get privacyDmFriends;
+
+  /// No description provided for @privacyDmNobody.
+  ///
+  /// In ro, this message translates to:
+  /// **'Nimeni'**
+  String get privacyDmNobody;
+
+  /// No description provided for @trustCorrectAnswers.
+  ///
+  /// In ro, this message translates to:
+  /// **'{count} corecte'**
+  String trustCorrectAnswers(int count);
+
+  /// No description provided for @trustAnswersToNextTier.
+  ///
+  /// In ro, this message translates to:
+  /// **'Încă {count} răspunsuri corecte până la treapta următoare.'**
+  String trustAnswersToNextTier(int count);
+
+  /// No description provided for @trustMaxTier.
+  ///
+  /// In ro, this message translates to:
+  /// **'Ai atins ultima treaptă de încredere.'**
+  String get trustMaxTier;
+
+  /// No description provided for @trustTierNewcomer.
+  ///
+  /// In ro, this message translates to:
+  /// **'Nou'**
+  String get trustTierNewcomer;
+
+  /// No description provided for @trustTierApprentice.
+  ///
+  /// In ro, this message translates to:
+  /// **'Ucenic'**
+  String get trustTierApprentice;
+
+  /// No description provided for @trustTierContributor.
+  ///
+  /// In ro, this message translates to:
+  /// **'Contribuitor'**
+  String get trustTierContributor;
+
+  /// No description provided for @trustTierEstablished.
+  ///
+  /// In ro, this message translates to:
+  /// **'Stabilit'**
+  String get trustTierEstablished;
+
+  /// No description provided for @trustTierExperienced.
+  ///
+  /// In ro, this message translates to:
+  /// **'Experimentat'**
+  String get trustTierExperienced;
+
+  /// No description provided for @trustTierExpert.
+  ///
+  /// In ro, this message translates to:
+  /// **'Expert'**
+  String get trustTierExpert;
+
+  /// No description provided for @trustTierCommunityMaster.
+  ///
+  /// In ro, this message translates to:
+  /// **'Maestru al comunității'**
+  String get trustTierCommunityMaster;
+
+  /// No description provided for @trustTierElite.
+  ///
+  /// In ro, this message translates to:
+  /// **'Elită'**
+  String get trustTierElite;
+
+  /// No description provided for @trustTierCommunityLegend.
+  ///
+  /// In ro, this message translates to:
+  /// **'Legendă a comunității'**
+  String get trustTierCommunityLegend;
+
+  /// No description provided for @homeGuestTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Joci fără cont'**
+  String get homeGuestTitle;
+
+  /// No description provided for @homeGuestAction.
+  ///
+  /// In ro, this message translates to:
+  /// **'Deschide cont'**
+  String get homeGuestAction;
+
+  /// No description provided for @homeLoadingProfile.
+  ///
+  /// In ro, this message translates to:
+  /// **'Se încarcă profilul…'**
+  String get homeLoadingProfile;
+
+  /// No description provided for @homeCoins.
+  ///
+  /// In ro, this message translates to:
+  /// **'{count} monede'**
+  String homeCoins(int count);
+
+  /// No description provided for @homeContinueEyebrow.
+  ///
+  /// In ro, this message translates to:
+  /// **'Continuă cucerirea'**
+  String get homeContinueEyebrow;
+
+  /// No description provided for @homeStartEyebrow.
+  ///
+  /// In ro, this message translates to:
+  /// **'Primul ținut'**
+  String get homeStartEyebrow;
+
+  /// No description provided for @homeRealmsTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Ținuturile regatului'**
+  String get homeRealmsTitle;
+
+  /// No description provided for @homeRealmsAction.
+  ///
+  /// In ro, this message translates to:
+  /// **'Vezi harta'**
+  String get homeRealmsAction;
+
+  /// No description provided for @homeRankPosition.
+  ///
+  /// In ro, this message translates to:
+  /// **'Locul {position}'**
+  String homeRankPosition(int position);
+
+  /// No description provided for @homeMatchesPlayed.
+  ///
+  /// In ro, this message translates to:
+  /// **'{count} partide online'**
+  String homeMatchesPlayed(int count);
+
+  /// No description provided for @homeDuelLocked.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cere email confirmat'**
+  String get homeDuelLocked;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Acasă'**
+  String get navHome;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Campanie'**
+  String get navCampaign;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Chat'**
+  String get navChat;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Clasament'**
+  String get navRanking;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Multiplayer'**
+  String get navMultiplayer;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Profil'**
+  String get navProfile;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Setări'**
+  String get navSettings;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Meniu'**
+  String get homeMenu;
+
+  /// No description provided for @homeCrystals.
+  ///
+  /// In ro, this message translates to:
+  /// **'{count} cristale'**
+  String homeCrystals(int count);
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Campanie'**
+  String get homeModeCampaign;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Progresează și cucerește noi teritorii.'**
+  String get homeModeCampaignDesc;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Multiplayer'**
+  String get homeModeMultiplayer;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Provoacă jucători din toată lumea.'**
+  String get homeModeMultiplayerDesc;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Chat'**
+  String get homeModeChat;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Discută cu aliații și prietenii tăi.'**
+  String get homeModeChatDesc;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Clasament'**
+  String get homeModeRanking;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Vezi cei mai buni strategi de pe tărâm.'**
+  String get homeModeRankingDesc;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Progres recent'**
+  String get homeRecentProgress;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Continuă'**
+  String get homeContinue;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Regatul tău'**
+  String get homeKingdomTitle;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Teritorii'**
+  String get homeKingdomTerritories;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Stele'**
+  String get homeKingdomStars;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Partide online'**
+  String get homeKingdomMatches;
+
+  /// Tablou de bord acasa
+  ///
+  /// In ro, this message translates to:
+  /// **'Cuceritor de Întrebări'**
+  String get homePlayerTitleDefault;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Setări'**
+  String get settingsTitle;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Cont'**
+  String get settingsAccount;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'ID Cont'**
+  String get settingsAccountId;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'ID-ul contului a fost copiat.'**
+  String get settingsAccountIdCopied;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Conectat prin email'**
+  String get settingsConnectedEmail;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Schimbă parola'**
+  String get settingsChangePassword;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Nu ești autentificat'**
+  String get settingsGuestTitle;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Setările se păstrează pe acest dispozitiv și fără cont.'**
+  String get settingsGuestBody;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Sunet'**
+  String get settingsSound;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Muzică'**
+  String get settingsMusic;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Efecte'**
+  String get settingsEffects;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Vibrație'**
+  String get settingsVibration;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Notificări'**
+  String get settingsNotifications;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Notificări push'**
+  String get settingsPush;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Primește notificări despre recompense și evenimente.'**
+  String get settingsPushDesc;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Joc'**
+  String get settingsGameplay;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Confirmarea acțiunilor'**
+  String get settingsConfirmActions;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Cere confirmare pentru acțiuni importante.'**
+  String get settingsConfirmActionsDesc;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Tutoriale'**
+  String get settingsTutorials;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Afișează sfaturi și tutoriale în joc.'**
+  String get settingsTutorialsDesc;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Economisire resurse'**
+  String get settingsDataSaver;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Reduce consumul de date și de baterie.'**
+  String get settingsDataSaverDesc;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Limbă și aspect'**
+  String get settingsLanguageSection;
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Limbă'**
+  String get settingsLanguage;
+
+  /// No description provided for @settingsVersion.
+  ///
+  /// In ro, this message translates to:
+  /// **'Versiunea {version}'**
+  String settingsVersion(String version);
+
+  /// Ecranul de setari
+  ///
+  /// In ro, this message translates to:
+  /// **'Deschide contul'**
+  String get settingsOpenAccount;
 }
 
 class _AppLocalizationsDelegate

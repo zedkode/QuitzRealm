@@ -3,25 +3,29 @@ import {
   INITIAL_TAXONOMY_CHILD_COUNT,
   INITIAL_TAXONOMY_ROOT_COUNT,
   INITIAL_TAXONOMY_TOTAL_COUNT,
+  OWNER_GAMEPLAY_CATEGORY_CODES,
   TaxonomyRoot,
   validateTaxonomyDefinition,
 } from './initial-taxonomy';
 
 describe('initial category taxonomy', () => {
-  it('conține cele opt domenii din plan și 45 de subcategorii', () => {
-    expect(INITIAL_CATEGORY_TAXONOMY.map((root) => root.name)).toEqual([
-      'Istorie',
-      'Geografie',
-      'Știință',
-      'Sport',
-      'Film și muzică',
-      'Literatură',
-      'Actualitate',
-      'România',
-    ]);
-    expect(INITIAL_TAXONOMY_ROOT_COUNT).toBe(8);
-    expect(INITIAL_TAXONOMY_CHILD_COUNT).toBe(45);
-    expect(INITIAL_TAXONOMY_TOTAL_COUNT).toBe(53);
+  it('păstrează domeniile din plan și include cele 20 de categorii cerute', () => {
+    expect(INITIAL_CATEGORY_TAXONOMY.map((root) => root.name)).toEqual(
+      expect.arrayContaining([
+        'Istorie',
+        'Geografie',
+        'Știință',
+        'Sport',
+        'Film și muzică',
+        'Literatură',
+        'Actualitate',
+        'România',
+      ]),
+    );
+    expect(INITIAL_TAXONOMY_ROOT_COUNT).toBe(13);
+    expect(INITIAL_TAXONOMY_CHILD_COUNT).toBe(56);
+    expect(INITIAL_TAXONOMY_TOTAL_COUNT).toBe(69);
+    expect(OWNER_GAMEPLAY_CATEGORY_CODES).toHaveLength(20);
     expect(() =>
       validateTaxonomyDefinition(INITIAL_CATEGORY_TAXONOMY),
     ).not.toThrow();

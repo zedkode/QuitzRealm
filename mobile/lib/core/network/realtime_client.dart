@@ -93,7 +93,9 @@ class RealtimeClient {
       ..on('round:started', (data) {
         final map = _asMap(data);
         final question = _asMap(map?['question']);
-        final deadline = DateTime.tryParse(map?['deadlineAt']?.toString() ?? '');
+        final deadline = DateTime.tryParse(
+          map?['deadlineAt']?.toString() ?? '',
+        );
         if (map == null || question == null || deadline == null) return;
         _emit(
           DuelRoundStarted(
@@ -157,7 +159,9 @@ class RealtimeClient {
       })
       ..on('match:resumed', (data) {
         final map = _asMap(data);
-        final deadline = DateTime.tryParse(map?['deadlineAt']?.toString() ?? '');
+        final deadline = DateTime.tryParse(
+          map?['deadlineAt']?.toString() ?? '',
+        );
         if (map == null || deadline == null) return;
         _emit(
           DuelMatchResumed(
@@ -169,7 +173,9 @@ class RealtimeClient {
       ..on('match:state', (data) {
         final map = _asMap(data);
         final question = _asMap(map?['question']);
-        final deadline = DateTime.tryParse(map?['deadlineAt']?.toString() ?? '');
+        final deadline = DateTime.tryParse(
+          map?['deadlineAt']?.toString() ?? '',
+        );
         if (map == null || question == null || deadline == null) return;
         final players = map['players'];
         _emit(
@@ -192,6 +198,37 @@ class RealtimeClient {
           ),
         );
       })
+      ..on('chat:match:history', (data) {
+        final map = _asMap(data);
+        if (map == null) return;
+        final messages = map['messages'];
+        _emit(
+          DuelMatchChatHistory(
+            matchId: map['matchId']?.toString() ?? '',
+            canSendText: map['access']?.toString() == 'text',
+            messages: messages is List
+                ? messages
+                      .map(_parseChatMessage)
+                      .whereType<DuelChatMessage>()
+                      .toList(growable: false)
+                : const [],
+          ),
+        );
+      })
+      ..on('chat:match:message', (data) {
+        final message = _parseChatMessage(data);
+        if (message != null) _emit(DuelMatchChatMessageReceived(message));
+      })
+      ..on('chat:rejected', (data) {
+        final map = _asMap(data);
+        if (map?['scope']?.toString() != 'match') return;
+        _emit(
+          DuelMatchChatRejected(
+            matchId: map?['matchId']?.toString() ?? '',
+            reason: map?['reason']?.toString() ?? 'invalid',
+          ),
+        );
+      })
       ..on('match:error', (data) => _emitError(data))
       ..on('server:error', (data) => _emitError(data))
       ..on('connect_error', (_) => _emit(const DuelDisconnected()))
@@ -204,6 +241,21 @@ class RealtimeClient {
 
   void sendAnswer({required String matchId, required String answer}) {
     _socket?.emit('round:answer', {'matchId': matchId, 'answer': answer});
+  }
+
+  void joinMatchChat(String matchId) {
+    _socket?.emit('chat:match:join', {'matchId': matchId});
+  }
+
+  void sendMatchChat({required String matchId, required String content}) {
+    _socket?.emit('chat:match:send', {'matchId': matchId, 'content': content});
+  }
+
+  void sendMatchReaction({required String matchId, required String reaction}) {
+    _socket?.emit('chat:match:react', {
+      'matchId': matchId,
+      'reaction': reaction,
+    });
   }
 
   Future<void> disconnect() async {
@@ -283,6 +335,24 @@ class RealtimeClient {
         'LOSS' => DuelOutcome.loss,
         _ => DuelOutcome.draw,
       },
+    );
+  }
+
+  DuelChatMessage? _parseChatMessage(Object? value) {
+    final map = _asMap(value);
+    if (map == null) return null;
+    final createdAt = DateTime.tryParse(map['createdAt']?.toString() ?? '');
+    if (createdAt == null) return null;
+    return DuelChatMessage(
+      id: map['id']?.toString() ?? '',
+      matchId: map['matchId']?.toString() ?? '',
+      senderId: map['senderId']?.toString() ?? '',
+      senderName: map['senderName']?.toString() ?? '',
+      content: map['content']?.toString() ?? '',
+      kind: map['kind']?.toString() == 'reaction'
+          ? DuelChatMessageKind.reaction
+          : DuelChatMessageKind.text,
+      createdAt: createdAt,
     );
   }
 

@@ -57,11 +57,16 @@ export class QuestionsService {
   }
 
   async getInternalRandom(query: ListQuestionsDto) {
+    const codes = query.categoryCodes ?? [];
     const where: Prisma.QuestionWhereInput = {
       status: QuestionStatus.APPROVED,
       categoryId: query.categoryId,
       difficulty: query.difficulty,
       language: query.language ?? 'ro',
+      // Potrivire exactă pe categoria întrebării, nu pe subarbore: dacă
+      // jucătorul a bifat „Istorie” dar nu „Medieval”, o întrebare medievală
+      // n-are ce căuta în meci. Bifele trebuie să însemne ce scrie pe ele.
+      ...(codes.length > 0 ? { category: { code: { in: codes } } } : {}),
     };
     const count = await this.prisma.question.count({ where });
     if (count === 0) {

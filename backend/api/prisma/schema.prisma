@@ -330,6 +330,8 @@ model AuthToken {
 
 model Category {
   id       String  @id @default(uuid()) @db.Uuid
+  /// Identificator stabil, independent de traducerea numelui afișat.
+  code     String? @unique @db.VarChar(64)
   name     String  @db.VarChar(100)
   parentId String? @map("parent_id") @db.Uuid
   icon     String? @db.VarChar(100)

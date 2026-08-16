@@ -16,6 +16,9 @@ class FakeRealtimeClient implements RealtimeClient {
   bool leftQueue = false;
   bool disconnected = false;
   final List<({String matchId, String answer})> sentAnswers = [];
+  final List<String> joinedMatchChats = [];
+  final List<({String matchId, String content})> sentChatMessages = [];
+  final List<({String matchId, String reaction})> sentReactions = [];
 
   @override
   Stream<DuelEvent> get events => _controller.stream;
@@ -35,6 +38,19 @@ class FakeRealtimeClient implements RealtimeClient {
   @override
   void sendAnswer({required String matchId, required String answer}) {
     sentAnswers.add((matchId: matchId, answer: answer));
+  }
+
+  @override
+  void joinMatchChat(String matchId) => joinedMatchChats.add(matchId);
+
+  @override
+  void sendMatchChat({required String matchId, required String content}) {
+    sentChatMessages.add((matchId: matchId, content: content));
+  }
+
+  @override
+  void sendMatchReaction({required String matchId, required String reaction}) {
+    sentReactions.add((matchId: matchId, reaction: reaction));
   }
 
   @override

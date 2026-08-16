@@ -202,6 +202,54 @@ class DuelMatchSnapshot extends DuelEvent {
   final List<DuelPlayerSnapshot> players;
 }
 
+enum DuelChatMessageKind { text, reaction }
+
+class DuelChatMessage {
+  const DuelChatMessage({
+    required this.id,
+    required this.matchId,
+    required this.senderId,
+    required this.senderName,
+    required this.content,
+    required this.kind,
+    required this.createdAt,
+  });
+
+  final String id;
+  final String matchId;
+  final String senderId;
+  final String senderName;
+  final String content;
+  final DuelChatMessageKind kind;
+  final DateTime createdAt;
+}
+
+/// Istoricul efemer și dreptul decis de server pentru chatul partidei.
+class DuelMatchChatHistory extends DuelEvent {
+  const DuelMatchChatHistory({
+    required this.matchId,
+    required this.canSendText,
+    required this.messages,
+  });
+
+  final String matchId;
+  final bool canSendText;
+  final List<DuelChatMessage> messages;
+}
+
+class DuelMatchChatMessageReceived extends DuelEvent {
+  const DuelMatchChatMessageReceived(this.message);
+
+  final DuelChatMessage message;
+}
+
+class DuelMatchChatRejected extends DuelEvent {
+  const DuelMatchChatRejected({required this.matchId, required this.reason});
+
+  final String matchId;
+  final String reason;
+}
+
 /// Eroare raportată de server (`server:error` sau `match:error`).
 class DuelServerError extends DuelEvent {
   const DuelServerError(this.message);

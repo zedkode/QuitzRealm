@@ -30,27 +30,49 @@ interface SyncResult {
   state: 'created' | 'updated' | 'unchanged';
 }
 
+const taxonomyCode = (node: TaxonomyNode): string | null => node.code ?? null;
+
 async function syncNode(
   transaction: Prisma.TransactionClient,
   node: TaxonomyNode,
   parentId: string | null,
 ): Promise<SyncResult> {
   const existing = await transaction.category.findFirst({
-    where: { name: node.name, parentId },
+    where: node.code
+      ? {
+          OR: [{ code: node.code }, { name: node.name, parentId, code: null }],
+        }
+      : { name: node.name, parentId },
     orderBy: { id: 'asc' },
   });
   if (!existing) {
     const created = await transaction.category.create({
-      data: { id: node.id, name: node.name, icon: node.icon, parentId },
+      data: {
+        id: node.id,
+        code: node.code,
+        name: node.name,
+        icon: node.icon,
+        parentId,
+      },
     });
     return { id: created.id, state: 'created' };
   }
-  if (existing.icon === node.icon) {
+  if (
+    existing.icon === node.icon &&
+    existing.code === (node.code ?? null) &&
+    existing.name === node.name &&
+    existing.parentId === parentId
+  ) {
     return { id: existing.id, state: 'unchanged' };
   }
   const updated = await transaction.category.update({
     where: { id: existing.id },
-    data: { icon: node.icon },
+    data: {
+      code: node.code,
+      name: node.name,
+      icon: node.icon,
+      parentId,
+    },
   });
   return { id: updated.id, state: 'updated' };
 }
@@ -83,7 +105,7 @@ export async function verifyInitialCategoryTaxonomy(
 ): Promise<TaxonomyVerificationResult> {
   validateTaxonomyDefinition(INITIAL_CATEGORY_TAXONOMY);
   const categories = await prisma.category.findMany({
-    select: { id: true, name: true, icon: true, parentId: true },
+    select: { id: true, code: true, name: true, icon: true, parentId: true },
   });
   const errors: string[] = [];
   let matchedRoots = 0;
@@ -104,6 +126,9 @@ export async function verifyInitialCategoryTaxonomy(
     if (storedRoot.icon !== root.icon) {
       errors.push(`Icon incorect pentru categoria ${root.name}.`);
     }
+    if (storedRoot.code !== taxonomyCode(root)) {
+      errors.push(`Cod incorect pentru categoria ${root.name}.`);
+    }
     for (const child of root.children) {
       const childMatches = categories.filter(
         (category) =>
@@ -118,6 +143,9 @@ export async function verifyInitialCategoryTaxonomy(
       matchedChildren += 1;
       if (childMatches[0].icon !== child.icon) {
         errors.push(`Icon incorect pentru ${root.name} / ${child.name}.`);
+      }
+      if (childMatches[0].code !== taxonomyCode(child)) {
+        errors.push(`Cod incorect pentru ${root.name} / ${child.name}.`);
       }
     }
   }

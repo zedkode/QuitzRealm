@@ -1,0 +1,3846 @@
+{
+  "id": "literature",
+  "name": "Literatură",
+  "questions": [
+    {
+      "id": "literature-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Micul Prinț”?",
+      "options": [
+        "Alexandre Dumas",
+        "Antoine de Saint-Exupéry",
+        "Mark Twain",
+        "Marin Preda"
+      ],
+      "answer": "Antoine de Saint-Exupéry",
+      "explanation": "Antoine de Saint-Exupéry a publicat Micul Prinț în timpul celui de-al Doilea Război Mondial. Povestea combină simplitatea unui basm cu reflecții despre prietenie, responsabilitate și maturizare."
+    },
+    {
+      "id": "literature-002",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „1984”?",
+      "options": [
+        "Alexandre Dumas",
+        "George Orwell",
+        "Victor Hugo",
+        "Dante Alighieri"
+      ],
+      "answer": "George Orwell",
+      "explanation": "George Orwell a imaginat în 1984 un stat totalitar bazat pe supraveghere, propagandă și controlul limbajului. Romanul a introdus termeni precum Big Brother în cultura politică modernă."
+    },
+    {
+      "id": "literature-003",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Ferma animalelor”?",
+      "options": [
+        "Miguel de Cervantes",
+        "Victor Hugo",
+        "George Orwell",
+        "Fiodor Dostoievski"
+      ],
+      "answer": "George Orwell",
+      "explanation": "Ferma animalelor este o satiră politică în care revolta animalelor devine o alegorie a degradării idealurilor revoluționare și a ascensiunii dictaturii."
+    },
+    {
+      "id": "literature-004",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Romeo și Julieta”?",
+      "options": [
+        "George Orwell",
+        "William Shakespeare",
+        "Lev Tolstoi",
+        "Fiodor Dostoievski"
+      ],
+      "answer": "William Shakespeare",
+      "explanation": "Romeo și Julieta este una dintre cele mai cunoscute tragedii ale lui Shakespeare. Conflictul dintre familiile Montague și Capulet transformă iubirea celor doi tineri într-un deznodământ tragic."
+    },
+    {
+      "id": "literature-005",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Hamlet”?",
+      "options": [
+        "Lewis Carroll",
+        "William Shakespeare",
+        "Dante Alighieri",
+        "Homer"
+      ],
+      "answer": "William Shakespeare",
+      "explanation": "Hamlet este o tragedie despre răzbunare, îndoială morală și corupția puterii. Prințul Danemarcei încearcă să afle adevărul despre moartea tatălui său."
+    },
+    {
+      "id": "literature-006",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Don Quijote”?",
+      "options": [
+        "Mark Twain",
+        "F. Scott Fitzgerald",
+        "Miguel de Cervantes",
+        "Jane Austen"
+      ],
+      "answer": "Miguel de Cervantes",
+      "explanation": "Miguel de Cervantes a creat în Don Quijote o parodie a romanelor cavalerești care a devenit totodată o reflecție asupra idealului, realității și ficțiunii."
+    },
+    {
+      "id": "literature-007",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Mândrie și prejudecată”?",
+      "options": [
+        "Herman Melville",
+        "George Orwell",
+        "Antoine de Saint-Exupéry",
+        "Jane Austen"
+      ],
+      "answer": "Jane Austen",
+      "explanation": "Jane Austen urmărește relația dintre Elizabeth Bennet și Mr. Darcy, folosind ironia pentru a analiza clasa socială, căsătoria și prejudecățile din Anglia georgiană."
+    },
+    {
+      "id": "literature-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Crimă și pedeapsă”?",
+      "options": [
+        "Fiodor Dostoievski",
+        "Mary Shelley",
+        "William Shakespeare",
+        "Bram Stoker"
+      ],
+      "answer": "Fiodor Dostoievski",
+      "explanation": "Romanul lui Dostoievski urmărește crima comisă de Raskolnikov și consecințele sale psihologice. Cartea explorează vinovăția, justificarea morală și posibilitatea mântuirii."
+    },
+    {
+      "id": "literature-009",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Război și pace”?",
+      "options": [
+        "George Orwell",
+        "Mary Shelley",
+        "Lev Tolstoi",
+        "Dante Alighieri"
+      ],
+      "answer": "Lev Tolstoi",
+      "explanation": "Război și pace combină destinele mai multor familii ruse cu evenimentele războaielor napoleoniene. Tolstoi discută atât viața privată, cât și marile forțe ale istoriei."
+    },
+    {
+      "id": "literature-010",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Odiseea”?",
+      "options": [
+        "Homer",
+        "George Orwell",
+        "Liviu Rebreanu",
+        "Mary Shelley"
+      ],
+      "answer": "Homer",
+      "explanation": "Odiseea este atribuită tradițional lui Homer și urmărește lunga întoarcere a lui Ulise spre Ithaca după războiul troian, combinând aventură, mit și reflecție asupra identității."
+    },
+    {
+      "id": "literature-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Divina Comedie”?",
+      "options": [
+        "Alexandre Dumas",
+        "Dante Alighieri",
+        "Fiodor Dostoievski",
+        "Herman Melville"
+      ],
+      "answer": "Dante Alighieri",
+      "explanation": "Dante descrie o călătorie imaginară prin Infern, Purgatoriu și Paradis. Poemul este una dintre operele fundamentale ale literaturii italiene și europene medievale."
+    },
+    {
+      "id": "literature-012",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Frankenstein”?",
+      "options": [
+        "Mary Shelley",
+        "F. Scott Fitzgerald",
+        "Fiodor Dostoievski",
+        "Lev Tolstoi"
+      ],
+      "answer": "Mary Shelley",
+      "explanation": "Mary Shelley a combinat romanul gotic cu întrebări despre știință, responsabilitate și izolare. Creatura lui Victor Frankenstein nu primește un nume propriu în roman."
+    },
+    {
+      "id": "literature-013",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Dracula”?",
+      "options": [
+        "Fiodor Dostoievski",
+        "Mark Twain",
+        "Bram Stoker",
+        "Miguel de Cervantes"
+      ],
+      "answer": "Bram Stoker",
+      "explanation": "Dracula este romanul gotic al lui Bram Stoker despre contele transilvănean și confruntarea sa cu un grup condus intelectual de profesorul Van Helsing."
+    },
+    {
+      "id": "literature-014",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Contele de Monte-Cristo”?",
+      "options": [
+        "Lev Tolstoi",
+        "Alexandre Dumas",
+        "Mark Twain",
+        "Dante Alighieri"
+      ],
+      "answer": "Alexandre Dumas",
+      "explanation": "Alexandre Dumas urmărește transformarea lui Edmond Dantès din victimă a unei conspirații într-un om preocupat de răzbunare, justiție și limitele puterii personale."
+    },
+    {
+      "id": "literature-015",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Cei trei muschetari”?",
+      "options": [
+        "Fiodor Dostoievski",
+        "Alexandre Dumas",
+        "Antoine de Saint-Exupéry",
+        "George Orwell"
+      ],
+      "answer": "Alexandre Dumas",
+      "explanation": "Romanul îl urmărește pe tânărul d'Artagnan alături de Athos, Porthos și Aramis într-o poveste de aventuri plasată în Franța secolului al XVII-lea."
+    },
+    {
+      "id": "literature-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Marele Gatsby”?",
+      "options": [
+        "George Orwell",
+        "Mary Shelley",
+        "F. Scott Fitzgerald",
+        "Miguel de Cervantes"
+      ],
+      "answer": "F. Scott Fitzgerald",
+      "explanation": "Fitzgerald prezintă ascensiunea și prăbușirea lui Jay Gatsby pe fundalul prosperității anilor 1920, criticând iluzia succesului și visul american."
+    },
+    {
+      "id": "literature-017",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Hobbitul”?",
+      "options": [
+        "Dante Alighieri",
+        "Victor Hugo",
+        "J. R. R. Tolkien",
+        "Lev Tolstoi"
+      ],
+      "answer": "J. R. R. Tolkien",
+      "explanation": "Hobbitul urmărește călătoria lui Bilbo Baggins alături de pitici spre Muntele Singuratic. Cartea precedă cronologic evenimentele principale din Stăpânul Inelelor."
+    },
+    {
+      "id": "literature-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Stăpânul Inelelor”?",
+      "options": [
+        "Mark Twain",
+        "Lev Tolstoi",
+        "F. Scott Fitzgerald",
+        "J. R. R. Tolkien"
+      ],
+      "answer": "J. R. R. Tolkien",
+      "explanation": "Stăpânul Inelelor descrie lupta pentru distrugerea Inelului Unic și rezistența împotriva lui Sauron. Tolkien a construit pentru poveste o mitologie și limbi fictive extinse."
+    },
+    {
+      "id": "literature-019",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Aventurile lui Tom Sawyer”?",
+      "options": [
+        "Miguel de Cervantes",
+        "George Orwell",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "answer": "Mark Twain",
+      "explanation": "Mark Twain plasează aventurile lui Tom Sawyer într-un orășel de pe Mississippi. Romanul combină umorul cu observații despre societatea americană din secolul al XIX-lea."
+    },
+    {
+      "id": "literature-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Moby-Dick”?",
+      "options": [
+        "Alexandre Dumas",
+        "Herman Melville",
+        "Lewis Carroll",
+        "George Orwell"
+      ],
+      "answer": "Herman Melville",
+      "explanation": "Herman Melville transformă vânătoarea balenei albe într-o meditație asupra obsesiei, destinului și naturii. Căpitanul Ahab conduce nava Pequod într-o urmărire autodistructivă."
+    },
+    {
+      "id": "literature-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Mizerabilii”?",
+      "options": [
+        "F. Scott Fitzgerald",
+        "George Orwell",
+        "Homer",
+        "Victor Hugo"
+      ],
+      "answer": "Victor Hugo",
+      "explanation": "Victor Hugo urmărește destinul lui Jean Valjean și societatea franceză din prima jumătate a secolului al XIX-lea, discutând sărăcia, justiția, revolta și compasiunea."
+    },
+    {
+      "id": "literature-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Alice în Țara Minunilor”?",
+      "options": [
+        "F. Scott Fitzgerald",
+        "Lewis Carroll",
+        "Mary Shelley",
+        "Marin Preda"
+      ],
+      "answer": "Lewis Carroll",
+      "explanation": "Lewis Carroll o trimite pe Alice într-o lume bazată pe logică răsturnată, jocuri de limbaj și personaje absurde. Cartea este atât literatură pentru copii, cât și satiră intelectuală."
+    },
+    {
+      "id": "literature-023",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Moromeții”?",
+      "options": [
+        "Alexandre Dumas",
+        "Fiodor Dostoievski",
+        "Bram Stoker",
+        "Marin Preda"
+      ],
+      "answer": "Marin Preda",
+      "explanation": "Marin Preda descrie viața unei familii țărănești din Câmpia Dunării înainte și după marile transformări sociale ale secolului al XX-lea. Ilie Moromete este personajul central."
+    },
+    {
+      "id": "literature-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a scris „Ion”?",
+      "options": [
+        "F. Scott Fitzgerald",
+        "Liviu Rebreanu",
+        "Miguel de Cervantes",
+        "Dante Alighieri"
+      ],
+      "answer": "Liviu Rebreanu",
+      "explanation": "Liviu Rebreanu construiește în Ion un roman realist despre obsesia pentru pământ, statut social și conflictele comunității rurale transilvănene."
+    },
+    {
+      "id": "literature-025",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Winston Smith?",
+      "options": [
+        "Moromeții",
+        "Crimă și pedeapsă",
+        "1984",
+        "Stăpânul Inelelor"
+      ],
+      "answer": "1984",
+      "explanation": "Winston Smith este funcționar la Ministerul Adevărului și încearcă să reziste controlului ideologic exercitat de Partid și de figura omniprezentă Big Brother."
+    },
+    {
+      "id": "literature-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Elizabeth Bennet?",
+      "options": [
+        "Alice în Țara Minunilor",
+        "Mândrie și prejudecată",
+        "Crimă și pedeapsă",
+        "1984"
+      ],
+      "answer": "Mândrie și prejudecată",
+      "explanation": "Elizabeth Bennet este protagonista inteligentă și ironică a romanului lui Jane Austen. Relația ei cu Darcy se schimbă pe măsură ce amândoi își reevaluează prejudecățile."
+    },
+    {
+      "id": "literature-027",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Rodion Raskolnikov?",
+      "options": [
+        "Alice în Țara Minunilor",
+        "Crimă și pedeapsă",
+        "Stăpânul Inelelor",
+        "Moromeții"
+      ],
+      "answer": "Crimă și pedeapsă",
+      "explanation": "Raskolnikov este studentul sărac care comite o crimă încercând să-și demonstreze teoria morală. Romanul urmărește destrămarea justificării sale intelectuale."
+    },
+    {
+      "id": "literature-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Jean Valjean?",
+      "options": [
+        "Stăpânul Inelelor",
+        "Mizerabilii",
+        "Alice în Țara Minunilor",
+        "Mândrie și prejudecată"
+      ],
+      "answer": "Mizerabilii",
+      "explanation": "Jean Valjean este fostul condamnat care încearcă să-și reconstruiască viața după întâlnirea cu episcopul Myriel, fiind urmărit mult timp de inspectorul Javert."
+    },
+    {
+      "id": "literature-029",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul d'Artagnan?",
+      "options": [
+        "Mândrie și prejudecată",
+        "Crimă și pedeapsă",
+        "Cei trei muschetari",
+        "1984"
+      ],
+      "answer": "Cei trei muschetari",
+      "explanation": "d'Artagnan ajunge la Paris cu ambiția de a deveni muschetar și se împrietenește cu Athos, Porthos și Aramis în romanul lui Alexandre Dumas."
+    },
+    {
+      "id": "literature-030",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Alice?",
+      "options": [
+        "Mândrie și prejudecată",
+        "1984",
+        "Alice în Țara Minunilor",
+        "Crimă și pedeapsă"
+      ],
+      "answer": "Alice în Țara Minunilor",
+      "explanation": "Alice este fetița care urmărește Iepurele Alb și intră într-o lume unde regulile logice și convențiile sociale sunt constant deformate."
+    },
+    {
+      "id": "literature-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Frodo Baggins?",
+      "options": [
+        "Cei trei muschetari",
+        "Mândrie și prejudecată",
+        "Mizerabilii",
+        "Stăpânul Inelelor"
+      ],
+      "answer": "Stăpânul Inelelor",
+      "explanation": "Frodo primește sarcina de a duce Inelul Unic până la Muntele Destinului. Călătoria sa devine nucleul moral și narativ al trilogiei."
+    },
+    {
+      "id": "literature-032",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce operă apare personajul Ilie Moromete?",
+      "options": [
+        "Moromeții",
+        "Crimă și pedeapsă",
+        "1984",
+        "Stăpânul Inelelor"
+      ],
+      "answer": "Moromeții",
+      "explanation": "Ilie Moromete este capul familiei Moromete și unul dintre cele mai memorabile personaje ale prozei românești, definit prin ironie, inteligență și atașamentul față de autonomie."
+    },
+    {
+      "id": "literature-033",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „roman”?",
+      "options": [
+        "operă narativă în proză, de întindere mare, cu personaje și acțiune dezvoltate",
+        "poem fix de paisprezece versuri",
+        "piesă destinată exclusiv scenei",
+        "text autobiografic obligatoriu"
+      ],
+      "answer": "operă narativă în proză, de întindere mare, cu personaje și acțiune dezvoltate",
+      "explanation": "Romanul este o formă narativă flexibilă, capabilă să urmărească acțiuni ample, personaje complexe și evoluții întinse pe perioade lungi."
+    },
+    {
+      "id": "literature-034",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „tragedie”?",
+      "options": [
+        "piesă dramatică în care conflictul conduce de regulă la un deznodământ grav sau catastrofal",
+        "poem umoristic scurt",
+        "narațiune jurnalistică",
+        "roman de aventuri obligatoriu"
+      ],
+      "answer": "piesă dramatică în care conflictul conduce de regulă la un deznodământ grav sau catastrofal",
+      "explanation": "Tragedia provine din tradiția dramatică antică și pune frecvent personajele în fața unor conflicte morale, politice sau existențiale imposibil de rezolvat ușor."
+    },
+    {
+      "id": "literature-035",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „satiră”?",
+      "options": [
+        "folosirea ironiei, exagerării sau ridicolului pentru a critica persoane, idei ori instituții",
+        "descriere neutră a naturii",
+        "poveste fără conflict",
+        "formă metrică de opt versuri"
+      ],
+      "answer": "folosirea ironiei, exagerării sau ridicolului pentru a critica persoane, idei ori instituții",
+      "explanation": "Satira poate fi comică sau foarte dură și urmărește expunerea defectelor societății, politicii ori comportamentului uman."
+    },
+    {
+      "id": "literature-036",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „autobiografie”?",
+      "options": [
+        "relatarea propriei vieți scrisă de persoana care a trăit experiențele prezentate",
+        "biografie scrisă de alt autor",
+        "poveste exclusiv fantastică",
+        "piesă în versuri"
+      ],
+      "answer": "relatarea propriei vieți scrisă de persoana care a trăit experiențele prezentate",
+      "explanation": "Autobiografia presupune identitatea dintre autor, naratorul principal și persoana a cărei viață este povestită, chiar dacă memoria rămâne selectivă."
+    },
+    {
+      "id": "literature-037",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „metaforă”?",
+      "options": [
+        "figură de stil care transferă sensul pe baza unei asemănări implicite",
+        "repetarea aceleiași consoane obligatoriu",
+        "enumerarea cronologică a evenimentelor",
+        "definiție de dicționar"
+      ],
+      "answer": "figură de stil care transferă sensul pe baza unei asemănări implicite",
+      "explanation": "Metafora creează o relație de sens fără folosirea explicită a unor termeni comparativi precum «ca» sau «precum»."
+    },
+    {
+      "id": "literature-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „narator”?",
+      "options": [
+        "vocea sau instanța care spune povestea într-un text narativ",
+        "autorul real în mod obligatoriu",
+        "personajul principal în orice roman",
+        "editorul cărții"
+      ],
+      "answer": "vocea sau instanța care spune povestea într-un text narativ",
+      "explanation": "Naratorul nu trebuie confundat automat cu autorul real. El este o construcție textuală și poate avea diferite grade de cunoaștere și participare."
+    },
+    {
+      "id": "literature-039",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „sonet”?",
+      "options": [
+        "poem de paisprezece versuri organizat după o schemă formală",
+        "roman istoric scurt",
+        "piesă într-un singur act",
+        "poem fără structură fixă obligatoriu"
+      ],
+      "answer": "poem de paisprezece versuri organizat după o schemă formală",
+      "explanation": "Sonetul s-a dezvoltat în literatura italiană și a fost adaptat în numeroase tradiții, inclusiv de Petrarca și Shakespeare."
+    },
+    {
+      "id": "literature-040",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul literar „haiku”?",
+      "options": [
+        "formă poetică japoneză foarte scurtă, asociată tradițional cu observația concentrată asupra unui moment",
+        "roman japonez în trei volume",
+        "poem epic de mii de versuri",
+        "piesă de teatru comică"
+      ],
+      "answer": "formă poetică japoneză foarte scurtă, asociată tradițional cu observația concentrată asupra unui moment",
+      "explanation": "Haiku-ul clasic japonez este legat de o structură ritmică 5-7-5 în unități moraice și de o imagine sezonieră sau o observație condensată."
+    },
+    {
+      "id": "literature-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce limbă a fost scris inițial „Don Quijote”?",
+      "options": [
+        "Spaniolă",
+        "Italiană",
+        "Franceză",
+        "Portugheză"
+      ],
+      "answer": "Spaniolă",
+      "explanation": "Cervantes a scris Don Quijote în spaniola începutului de secol XVII. Opera a avut o influență majoră asupra dezvoltării romanului european modern."
+    },
+    {
+      "id": "literature-042",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce limbă a fost scrisă „Divina Comedie”?",
+      "options": [
+        "Italiană",
+        "Latină",
+        "Franceză",
+        "Spaniolă"
+      ],
+      "answer": "Italiană",
+      "explanation": "Dante a scris poemul în limba vernaculară toscană, nu în latina erudită. Prestigiul operei a contribuit la dezvoltarea limbii italiene literare."
+    },
+    {
+      "id": "literature-043",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce țară este asociat scriitorul Lev Tolstoi?",
+      "options": [
+        "Rusia",
+        "Franța",
+        "Germania",
+        "Polonia"
+      ],
+      "answer": "Rusia",
+      "explanation": "Tolstoi a fost unul dintre marii romancieri ruși ai secolului al XIX-lea. Război și pace și Anna Karenina au influențat profund realismul european."
+    },
+    {
+      "id": "literature-044",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce țară este asociată Jane Austen?",
+      "options": [
+        "Regatul Unit",
+        "Statele Unite",
+        "Irlanda",
+        "Canada"
+      ],
+      "answer": "Regatul Unit",
+      "explanation": "Jane Austen a trăit și a scris în Anglia georgiană. Romanele ei analizează prin ironie clasa socială, căsătoria și independența individuală."
+    },
+    {
+      "id": "literature-045",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen literar este „Romeo și Julieta”?",
+      "options": [
+        "Tragedie",
+        "Comedie romantică modernă",
+        "Epopee",
+        "Autobiografie"
+      ],
+      "answer": "Tragedie",
+      "explanation": "Piesa urmărește conflictul dintre două familii și moartea celor doi îndrăgostiți. Structura și deznodământul o plasează clar în tradiția tragediei."
+    },
+    {
+      "id": "literature-046",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen este „Odiseea” în clasificarea tradițională?",
+      "options": [
+        "Epopee",
+        "Sonet",
+        "Nuvelă realistă",
+        "Comedie"
+      ],
+      "answer": "Epopee",
+      "explanation": "Odiseea este un poem epic amplu despre întoarcerea lui Ulise. Opera combină mitologia, aventura și memoria războiului troian."
+    },
+    {
+      "id": "literature-047",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tip de roman este în primul rând „Dracula”?",
+      "options": [
+        "Roman gotic",
+        "Roman polițist procedural",
+        "Roman realist rural",
+        "Roman picaresc"
+      ],
+      "answer": "Roman gotic",
+      "explanation": "Dracula folosește castele, amenințare supranaturală, frică și atmosfera întunecată caracteristice tradiției gotice de secol XIX."
+    },
+    {
+      "id": "literature-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce temă este centrală în romanul „Ion” de Liviu Rebreanu?",
+      "options": [
+        "Obsesia pentru pământ și statut social",
+        "Călătoria interplanetară",
+        "Viața aristocrației londoneze",
+        "Războiul troian"
+      ],
+      "answer": "Obsesia pentru pământ și statut social",
+      "explanation": "Ion al Glanetașului vede pământul ca sursă de prestigiu și autonomie. Dorința lui produce conflicte personale și sociale cu consecințe tragice."
+    },
+    {
+      "id": "literature-049",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat romanul „1984”?",
+      "answer": "1949",
+      "explanation": "Romanul 1984 a apărut în 1949, la începutul Războiului Rece. Orwell a combinat experiențe ale totalitarismului european cu o critică a manipulării limbajului."
+    },
+    {
+      "id": "literature-050",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicată „Ferma animalelor”?",
+      "answer": "1945",
+      "explanation": "Ferma animalelor a fost publicată în 1945. Alegoria urmărește transformarea unei revoluții egalitare într-un sistem de putere autoritar."
+    },
+    {
+      "id": "literature-051",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a apărut prima ediție a romanului „Frankenstein”?",
+      "answer": "1818",
+      "explanation": "Frankenstein a fost publicat anonim în 1818. Ediția din 1831 a fost revizuită substanțial de Mary Shelley și este de asemenea foarte cunoscută."
+    },
+    {
+      "id": "literature-052",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat romanul „Dracula”?",
+      "answer": "1897",
+      "explanation": "Bram Stoker a publicat Dracula în 1897. Romanul folosește scrisori, jurnale și documente fictive pentru a construi povestea."
+    },
+    {
+      "id": "literature-053",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat „Marele Gatsby”?",
+      "answer": "1925",
+      "explanation": "Marele Gatsby a apărut în 1925 și este strâns asociat cu epoca Jazz Age și prosperitatea aparentă a Statelor Unite din anii 1920."
+    },
+    {
+      "id": "literature-054",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat „Mândrie și prejudecată”?",
+      "answer": "1813",
+      "explanation": "Mândrie și prejudecată a fost publicat în 1813. Jane Austen dezvoltase o versiune timpurie a poveștii cu mulți ani înainte."
+    },
+    {
+      "id": "literature-055",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat „Hobbitul”?",
+      "answer": "1937",
+      "explanation": "Hobbitul a apărut în 1937 și a avut inițial succes ca literatură pentru copii. Ulterior a devenit punctul de intrare în lumea amplă a Pământului de Mijloc."
+    },
+    {
+      "id": "literature-056",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat primul volum din „Stăpânul Inelelor”, „Frăția Inelului”?",
+      "answer": "1954",
+      "explanation": "Frăția Inelului a fost publicată în 1954, urmată în același an de Cele două turnuri și în 1955 de Întoarcerea regelui."
+    },
+    {
+      "id": "literature-057",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat „Bătrânul și marea” de Ernest Hemingway?",
+      "answer": "1952",
+      "explanation": "Bătrânul și marea a apărut în 1952 și a contribuit la consolidarea reputației târzii a lui Hemingway, înaintea Premiului Nobel din 1954."
+    },
+    {
+      "id": "literature-058",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat „Brave New World” de Aldous Huxley?",
+      "answer": "1932",
+      "explanation": "Brave New World a apărut în 1932 și imaginează o societate stabilizată prin condiționare, consum și control biologic, nu doar prin represiune directă."
+    },
+    {
+      "id": "literature-059",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a apărut primul volum al romanului „Moromeții”?",
+      "answer": "1955",
+      "explanation": "Primul volum din Moromeții a fost publicat în 1955. Al doilea volum, apărut ulterior, prezintă transformarea lumii rurale după război."
+    },
+    {
+      "id": "literature-060",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost publicat romanul „Ion” de Liviu Rebreanu?",
+      "answer": "1920",
+      "explanation": "Ion a fost publicat în 1920 și a devenit una dintre operele reprezentative ale realismului românesc interbelic."
+    },
+    {
+      "id": "literature-061",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Metamorfoza”?",
+      "options": [
+        "Charlotte Brontë",
+        "Franz Kafka",
+        "Mihail Sadoveanu",
+        "Albert Camus"
+      ],
+      "answer": "Franz Kafka",
+      "explanation": "Franz Kafka îl transformă pe Gregor Samsa într-o insectă uriașă chiar la începutul narațiunii. Textul explorează alienarea, obligațiile familiale și pierderea identității sociale."
+    },
+    {
+      "id": "literature-062",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Procesul”?",
+      "options": [
+        "Umberto Eco",
+        "Joseph Heller",
+        "Franz Kafka",
+        "Stendhal"
+      ],
+      "answer": "Franz Kafka",
+      "explanation": "Procesul urmărește arestarea inexplicabilă a lui Josef K. și confruntarea sa cu o birocrație opacă. Romanul a fost publicat postum de Max Brod."
+    },
+    {
+      "id": "literature-063",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Jane Eyre”?",
+      "options": [
+        "Vladimir Nabokov",
+        "J. D. Salinger",
+        "Charlotte Brontë",
+        "Toni Morrison"
+      ],
+      "answer": "Charlotte Brontë",
+      "explanation": "Charlotte Brontë construiește povestea maturizării lui Jane Eyre și insistă asupra autonomiei morale, iubirii și poziției femeii în societatea victoriană."
+    },
+    {
+      "id": "literature-064",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „La răscruce de vânturi”?",
+      "options": [
+        "Harper Lee",
+        "Toni Morrison",
+        "Ivan Turgheniev",
+        "Emily Brontë"
+      ],
+      "answer": "Emily Brontë",
+      "explanation": "Emily Brontë prezintă relația intensă și distructivă dintre Catherine Earnshaw și Heathcliff pe fundalul izolat al ținuturilor mlăștinoase din Yorkshire."
+    },
+    {
+      "id": "literature-065",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „De veghe în lanul de secară”?",
+      "options": [
+        "Fiodor Dostoievski",
+        "J. D. Salinger",
+        "Mihail Bulgakov",
+        "Lev Tolstoi"
+      ],
+      "answer": "J. D. Salinger",
+      "explanation": "J. D. Salinger îl folosește pe Holden Caulfield ca narator adolescent, construind o voce distinctivă despre alienare, ipocrizie și dificultatea maturizării."
+    },
+    {
+      "id": "literature-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Un veac de singurătate”?",
+      "options": [
+        "Toni Morrison",
+        "Gabriel García Márquez",
+        "Mihail Bulgakov",
+        "Umberto Eco"
+      ],
+      "answer": "Gabriel García Márquez",
+      "explanation": "Romanul urmărește mai multe generații ale familiei Buendía în Macondo. Realitatea cotidiană și evenimentele fantastice coexistă într-un stil asociat realismului magic."
+    },
+    {
+      "id": "literature-067",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Numele trandafirului”?",
+      "options": [
+        "Umberto Eco",
+        "Charlotte Brontë",
+        "Stendhal",
+        "Harper Lee"
+      ],
+      "answer": "Umberto Eco",
+      "explanation": "Umberto Eco combină romanul polițist, dezbaterea teologică și reflecția despre interpretare într-o mănăstire medievală unde au loc crime misterioase."
+    },
+    {
+      "id": "literature-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Străinul”?",
+      "options": [
+        "Albert Camus",
+        "George Călinescu",
+        "Nikolai Gogol",
+        "Charlotte Brontë"
+      ],
+      "answer": "Albert Camus",
+      "explanation": "Albert Camus îl prezintă pe Meursault, un personaj detașat de convențiile sociale. Romanul este frecvent discutat în legătură cu filosofia absurdului."
+    },
+    {
+      "id": "literature-069",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Ciuma”?",
+      "options": [
+        "Toni Morrison",
+        "George Călinescu",
+        "Albert Camus",
+        "Gustave Flaubert"
+      ],
+      "answer": "Albert Camus",
+      "explanation": "Ciuma descrie izolarea orașului Oran în timpul unei epidemii fictive. Camus explorează solidaritatea, responsabilitatea și reacția oamenilor în fața suferinței."
+    },
+    {
+      "id": "literature-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Madame Bovary”?",
+      "options": [
+        "Ray Bradbury",
+        "Gustave Flaubert",
+        "Stendhal",
+        "Lev Tolstoi"
+      ],
+      "answer": "Gustave Flaubert",
+      "explanation": "Flaubert urmărește nemulțumirea Emmei Bovary față de viața provincială și efectele idealurilor romantice asupra alegerilor sale personale și financiare."
+    },
+    {
+      "id": "literature-071",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Germinal”?",
+      "options": [
+        "Fiodor Dostoievski",
+        "Ray Bradbury",
+        "Albert Camus",
+        "Émile Zola"
+      ],
+      "answer": "Émile Zola",
+      "explanation": "Germinal descrie viața minerilor francezi și conflictul social dintr-o comunitate industrială. Romanul este una dintre operele reprezentative ale naturalismului."
+    },
+    {
+      "id": "literature-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Roșu și negru”?",
+      "options": [
+        "Mihail Sadoveanu",
+        "Nikolai Gogol",
+        "Stendhal",
+        "Ivan Turgheniev"
+      ],
+      "answer": "Stendhal",
+      "explanation": "Stendhal urmărește ambiția socială a lui Julien Sorel în Franța Restaurării. Romanul analizează ipocrizia, cariera și tensiunile dintre merit și clasă."
+    },
+    {
+      "id": "literature-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Părinți și copii”?",
+      "options": [
+        "Mihail Bulgakov",
+        "Ivan Turgheniev",
+        "J. D. Salinger",
+        "Vladimir Nabokov"
+      ],
+      "answer": "Ivan Turgheniev",
+      "explanation": "Turgheniev explorează conflictul dintre generații prin personajul Bazarov, asociat cu nihilismul și respingerea valorilor tradiționale ale aristocrației ruse."
+    },
+    {
+      "id": "literature-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Suflete moarte”?",
+      "options": [
+        "Mihail Bulgakov",
+        "Nikolai Gogol",
+        "Toni Morrison",
+        "Gabriel García Márquez"
+      ],
+      "answer": "Nikolai Gogol",
+      "explanation": "Gogol îl urmărește pe Cicikov într-un plan absurd de cumpărare a unor iobagi decedați încă înscriși în registre, construind o satiră a societății ruse."
+    },
+    {
+      "id": "literature-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Frații Karamazov”?",
+      "options": [
+        "J. D. Salinger",
+        "Franz Kafka",
+        "Fiodor Dostoievski",
+        "Joseph Heller"
+      ],
+      "answer": "Fiodor Dostoievski",
+      "explanation": "Ultimul mare roman al lui Dostoievski combină conflictul familial cu întrebări despre credință, libertate, vinovăție și responsabilitate morală."
+    },
+    {
+      "id": "literature-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Anna Karenina”?",
+      "options": [
+        "Charlotte Brontë",
+        "Gabriel García Márquez",
+        "Stendhal",
+        "Lev Tolstoi"
+      ],
+      "answer": "Lev Tolstoi",
+      "explanation": "Tolstoi urmărește în paralel povestea Annei Karenina și evoluția lui Levin, contrastând pasiunea, familia, societatea și căutarea unui sens al vieții."
+    },
+    {
+      "id": "literature-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Maestrul și Margareta”?",
+      "options": [
+        "Mihail Bulgakov",
+        "Ray Bradbury",
+        "J. D. Salinger",
+        "Toni Morrison"
+      ],
+      "answer": "Mihail Bulgakov",
+      "explanation": "Bulgakov combină satira Moscovei sovietice cu povestea lui Pilat din Pont și apariția diavolului Woland într-un roman fantastic și polifonic."
+    },
+    {
+      "id": "literature-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Lolita”?",
+      "options": [
+        "Toni Morrison",
+        "Franz Kafka",
+        "Vladimir Nabokov",
+        "Gustave Flaubert"
+      ],
+      "answer": "Vladimir Nabokov",
+      "explanation": "Nabokov construiește romanul prin vocea manipulatoare a lui Humbert Humbert. Limbajul sofisticat obligă cititorul să distingă stilul naratorului de gravitatea faptelor descrise."
+    },
+    {
+      "id": "literature-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Beloved”?",
+      "options": [
+        "Mihail Bulgakov",
+        "Gustave Flaubert",
+        "Toni Morrison",
+        "Umberto Eco"
+      ],
+      "answer": "Toni Morrison",
+      "explanation": "Beloved urmărește trauma sclaviei prin povestea lui Sethe și revenirea unei prezențe misterioase. Romanul combină memoria istorică, realismul și elemente supranaturale."
+    },
+    {
+      "id": "literature-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Să ucizi o pasăre cântătoare”?",
+      "options": [
+        "Ray Bradbury",
+        "Mihail Bulgakov",
+        "Charlotte Brontë",
+        "Harper Lee"
+      ],
+      "answer": "Harper Lee",
+      "explanation": "Harper Lee prezintă rasismul și justiția prin perspectiva copilăriei lui Scout Finch, în jurul procesului în care avocatul Atticus Finch apără un bărbat de culoare."
+    },
+    {
+      "id": "literature-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Catch-22”?",
+      "options": [
+        "Charlotte Brontë",
+        "Stendhal",
+        "Mihail Sadoveanu",
+        "Joseph Heller"
+      ],
+      "answer": "Joseph Heller",
+      "explanation": "Joseph Heller folosește structura fragmentată și absurdul pentru a critica logica birocratică a războiului. Expresia «catch-22» a intrat ulterior în limbajul comun."
+    },
+    {
+      "id": "literature-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Fahrenheit 451”?",
+      "options": [
+        "Gustave Flaubert",
+        "Mihail Sadoveanu",
+        "Albert Camus",
+        "Ray Bradbury"
+      ],
+      "answer": "Ray Bradbury",
+      "explanation": "Bradbury imaginează o societate în care pompierii ard cărți. Romanul discută cenzura, conformismul, divertismentul superficial și rolul memoriei culturale."
+    },
+    {
+      "id": "literature-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Enigma Otiliei”?",
+      "options": [
+        "George Călinescu",
+        "Gabriel García Márquez",
+        "Fiodor Dostoievski",
+        "Lev Tolstoi"
+      ],
+      "answer": "George Călinescu",
+      "explanation": "George Călinescu construiește un roman realist despre moștenire, familie și ascensiune socială în Bucureștiul de la începutul secolului al XX-lea."
+    },
+    {
+      "id": "literature-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a scris „Baltagul”?",
+      "options": [
+        "Émile Zola",
+        "George Călinescu",
+        "Mihail Sadoveanu",
+        "Joseph Heller"
+      ],
+      "answer": "Mihail Sadoveanu",
+      "explanation": "Baltagul urmărește căutarea întreprinsă de Vitoria Lipan pentru a descoperi adevărul despre dispariția soțului ei, într-o lume pastorală guvernată de tradiție."
+    },
+    {
+      "id": "literature-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Gregor Samsa?",
+      "options": [
+        "La răscruce de vânturi",
+        "Lolita",
+        "Metamorfoza",
+        "Procesul"
+      ],
+      "answer": "Metamorfoza",
+      "explanation": "Gregor Samsa se trezește transformat într-o creatură monstruoasă. Reacția familiei sale scoate la iveală cât de mult îi fusese definită valoarea prin muncă și utilitate."
+    },
+    {
+      "id": "literature-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Josef K.?",
+      "options": [
+        "Beloved",
+        "La răscruce de vânturi",
+        "Metamorfoza",
+        "Procesul"
+      ],
+      "answer": "Procesul",
+      "explanation": "Josef K. este arestat fără să i se comunice clar acuzația și încearcă să înțeleagă un sistem judiciar care devine tot mai imposibil de pătruns."
+    },
+    {
+      "id": "literature-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Heathcliff?",
+      "options": [
+        "Beloved",
+        "La răscruce de vânturi",
+        "Să ucizi o pasăre cântătoare",
+        "Străinul"
+      ],
+      "answer": "La răscruce de vânturi",
+      "explanation": "Heathcliff este legat de Catherine Earnshaw printr-o relație intensă care, după separare și resentiment, devine o sursă de răzbunare între generații."
+    },
+    {
+      "id": "literature-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Atticus Finch?",
+      "options": [
+        "La răscruce de vânturi",
+        "Lolita",
+        "Baltagul",
+        "Să ucizi o pasăre cântătoare"
+      ],
+      "answer": "Să ucizi o pasăre cântătoare",
+      "explanation": "Atticus Finch este avocatul care îl apără pe Tom Robinson într-un proces dominat de prejudecăți rasiale, devenind un reper moral pentru copiii săi."
+    },
+    {
+      "id": "literature-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Meursault?",
+      "options": [
+        "Baltagul",
+        "Metamorfoza",
+        "Străinul",
+        "Procesul"
+      ],
+      "answer": "Străinul",
+      "explanation": "Meursault este naratorul detașat al romanului lui Camus. Reacțiile sale neconvenționale devin aproape la fel de importante pentru societate ca fapta pentru care este judecat."
+    },
+    {
+      "id": "literature-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Sethe?",
+      "options": [
+        "Beloved",
+        "Lolita",
+        "La răscruce de vânturi",
+        "Străinul"
+      ],
+      "answer": "Beloved",
+      "explanation": "Sethe este o fostă sclavă a cărei viață este dominată de traumă, memorie și o decizie extremă luată pentru a-și proteja copiii de revenirea în sclavie."
+    },
+    {
+      "id": "literature-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Humbert Humbert?",
+      "options": [
+        "Baltagul",
+        "Metamorfoza",
+        "Lolita",
+        "La răscruce de vânturi"
+      ],
+      "answer": "Lolita",
+      "explanation": "Humbert Humbert este naratorul profund nesigur al romanului. Stilul său elegant încearcă constant să manipuleze cititorul și să cosmetizeze abuzul pe care îl comite."
+    },
+    {
+      "id": "literature-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce operă apare personajul Vitoria Lipan?",
+      "options": [
+        "La răscruce de vânturi",
+        "Străinul",
+        "Metamorfoza",
+        "Baltagul"
+      ],
+      "answer": "Baltagul",
+      "explanation": "Vitoria Lipan pornește într-o călătorie pentru a-l găsi pe Nechifor Lipan. Inteligența, intuiția și cunoașterea tradițiilor o ajută să reconstituie crima."
+    },
+    {
+      "id": "literature-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „realism magic”?",
+      "options": [
+        "integrarea elementelor fantastice într-o lume narativă tratată ca firească și cotidiană",
+        "descriere exclusiv documentară",
+        "poezie fără imagini",
+        "narațiune limitată la vise"
+      ],
+      "answer": "integrarea elementelor fantastice într-o lume narativă tratată ca firească și cotidiană",
+      "explanation": "Realismul magic este asociat puternic cu literatura latino-americană, dar apare și în alte tradiții. Fantasticul nu rupe neapărat logica lumii personajelor."
+    },
+    {
+      "id": "literature-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „distopie”?",
+      "options": [
+        "reprezentarea unei societăți imaginare profund opresive sau degradate",
+        "descriere ideală a unei societăți perfecte",
+        "biografie istorică",
+        "comedie bazată doar pe jocuri de cuvinte"
+      ],
+      "answer": "reprezentarea unei societăți imaginare profund opresive sau degradate",
+      "explanation": "Distopia proiectează tendințe politice, tehnologice sau sociale într-o lume negativă pentru a critica pericolele prezentului."
+    },
+    {
+      "id": "literature-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „bildungsroman”?",
+      "options": [
+        "roman care urmărește formarea și maturizarea intelectuală sau morală a protagonistului",
+        "poem despre un război antic",
+        "piesă fără protagonist",
+        "roman alcătuit doar din scrisori oficiale"
+      ],
+      "answer": "roman care urmărește formarea și maturizarea intelectuală sau morală a protagonistului",
+      "explanation": "Bildungsromanul urmărește dezvoltarea unui personaj din tinerețe spre maturitate și raportul dintre identitatea individuală și societate."
+    },
+    {
+      "id": "literature-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „roman gotic”?",
+      "options": [
+        "narațiune bazată pe atmosferă întunecată, mister, amenințare și uneori supranatural",
+        "roman exclusiv economic",
+        "poezie pastorală scurtă",
+        "tratat filosofic"
+      ],
+      "answer": "narațiune bazată pe atmosferă întunecată, mister, amenințare și uneori supranatural",
+      "explanation": "Romanul gotic folosește frecvent spații izolate, secrete de familie, teamă și elemente supranaturale sau aparent supranaturale."
+    },
+    {
+      "id": "literature-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „naturalism”?",
+      "options": [
+        "curent care accentuează influența mediului, eredității și condițiilor sociale asupra personajelor",
+        "idealizarea cavalerismului medieval",
+        "respingerea completă a realității sociale",
+        "scriere exclusiv în versuri"
+      ],
+      "answer": "curent care accentuează influența mediului, eredității și condițiilor sociale asupra personajelor",
+      "explanation": "Naturalismul dezvoltă unele principii ale realismului și este asociat cu autori precum Émile Zola, preocupați de determinism social și biologic."
+    },
+    {
+      "id": "literature-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „narator necreditabil”?",
+      "options": [
+        "narator ale cărui afirmații sau interpretări nu pot fi acceptate automat ca adevărate",
+        "narator care știe absolut tot",
+        "autorul real al cărții",
+        "personaj care nu vorbește niciodată"
+      ],
+      "answer": "narator ale cărui afirmații sau interpretări nu pot fi acceptate automat ca adevărate",
+      "explanation": "Un narator necreditabil poate minți, omite, interpreta greșit sau fi limitat psihologic. Cititorul trebuie să reconstruiască adevărul din indicii."
+    },
+    {
+      "id": "literature-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „flux al conștiinței”?",
+      "options": [
+        "tehnică ce încearcă să redea succesiunea gândurilor și senzațiilor unei minți",
+        "descriere exclusiv cronologică a unui război",
+        "listă de personaje",
+        "dialog dramatic fără narațiune"
+      ],
+      "answer": "tehnică ce încearcă să redea succesiunea gândurilor și senzațiilor unei minți",
+      "explanation": "Fluxul conștiinței apropie textul de mișcarea asociațiilor mentale, folosind uneori sintaxă fragmentată și tranziții foarte rapide."
+    },
+    {
+      "id": "literature-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul literar „roman epistolar”?",
+      "options": [
+        "roman construit în principal din scrisori sau alte documente personale",
+        "roman fără personaje",
+        "poem epic oral",
+        "piesă dramatică într-un act"
+      ],
+      "answer": "roman construit în principal din scrisori sau alte documente personale",
+      "explanation": "Forma epistolară creează impresia accesului direct la vocile personajelor și permite perspective multiple, lacune și contradicții între documente."
+    },
+    {
+      "id": "literature-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce curent literar este asociat în mod special Émile Zola?",
+      "options": [
+        "Naturalism",
+        "Suprarealism",
+        "Romantism timpuriu",
+        "Futurism"
+      ],
+      "answer": "Naturalism",
+      "explanation": "Zola a formulat explicit idei naturaliste și a încercat să trateze romanul ca pe o observație a influențelor sociale și ereditare asupra individului."
+    },
+    {
+      "id": "literature-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce oraș fictiv este centrul romanului „Un veac de singurătate”?",
+      "options": [
+        "Macondo",
+        "Comala",
+        "Yoknapatawpha",
+        "Dublin"
+      ],
+      "answer": "Macondo",
+      "explanation": "Macondo este satul fondat de familia Buendía și devine pe parcursul romanului o lume completă, cu propriul ciclu de prosperitate, violență și uitare."
+    },
+    {
+      "id": "literature-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce profesie are Atticus Finch?",
+      "options": [
+        "Avocat",
+        "Medic",
+        "Profesor universitar",
+        "Jurnalist"
+      ],
+      "answer": "Avocat",
+      "explanation": "Atticus Finch este avocat și îl apără pe Tom Robinson. Procesul permite romanului să examineze prejudecățile rasiale și funcționarea justiției locale."
+    },
+    {
+      "id": "literature-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de narațiune folosește „Dracula” într-o mare parte a structurii sale?",
+      "options": [
+        "Documente, scrisori și jurnale fictive",
+        "Un singur monolog fără întrerupere",
+        "Versuri albe",
+        "Doar dialog teatral"
+      ],
+      "answer": "Documente, scrisori și jurnale fictive",
+      "explanation": "Stoker combină jurnale, scrisori, telegrame și articole pentru a construi treptat amenințarea, oferind cititorului perspective parțiale."
+    },
+    {
+      "id": "literature-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce idee filosofică este asociată frecvent opera lui Albert Camus?",
+      "options": [
+        "Absurdul",
+        "Determinismul economic marxist exclusiv",
+        "Idealismul platonic",
+        "Scolastica medievală"
+      ],
+      "answer": "Absurdul",
+      "explanation": "Camus descrie tensiunea dintre dorința umană de sens și un univers care nu oferă automat un răspuns. Străinul este frecvent citit prin această lentilă."
+    },
+    {
+      "id": "literature-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce spațiu românesc constituie fundalul principal al romanului „Ion”?",
+      "options": [
+        "Satul transilvănean",
+        "Bucureștiul fanariot",
+        "Delta Dunării",
+        "Portul Constanța"
+      ],
+      "answer": "Satul transilvănean",
+      "explanation": "Rebreanu plasează acțiunea într-o comunitate rurală transilvăneană inspirată din realitate. Proprietatea asupra pământului structurează relațiile sociale."
+    },
+    {
+      "id": "literature-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce motiv narativ pune în mișcare acțiunea din „Baltagul”?",
+      "options": [
+        "Dispariția lui Nechifor Lipan",
+        "O moștenire regală",
+        "Un război mondial",
+        "O călătorie în America"
+      ],
+      "answer": "Dispariția lui Nechifor Lipan",
+      "explanation": "Absența prelungită a lui Nechifor îl determină pe Vitoria să pornească pe urmele lui. Căutarea devine o investigație construită prin observație și tradiție."
+    },
+    {
+      "id": "literature-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce relație există între Charlotte Brontë și Emily Brontë?",
+      "options": [
+        "Au fost surori",
+        "Au fost aceeași persoană sub două pseudonime",
+        "Au fost mamă și fiică",
+        "Nu au avut legătură de familie"
+      ],
+      "answer": "Au fost surori",
+      "explanation": "Charlotte și Emily Brontë au fost surori și scriitoare. Sora lor Anne a fost de asemenea romancieră și poetă în epoca victoriană."
+    },
+    {
+      "id": "literature-109",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicată „Metamorfoza” lui Franz Kafka?",
+      "answer": "1915",
+      "explanation": "Metamorfoza a fost publicată în 1915, în timpul vieții lui Kafka. Textul a devenit ulterior una dintre cele mai cunoscute opere ale literaturii moderniste."
+    },
+    {
+      "id": "literature-110",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat postum romanul „Procesul”?",
+      "answer": "1925",
+      "explanation": "Procesul a fost publicat în 1925 de Max Brod, după moartea lui Kafka. Manuscrisul nu fusese pregătit definitiv pentru publicare de autor."
+    },
+    {
+      "id": "literature-111",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat romanul „Jane Eyre”?",
+      "answer": "1847",
+      "explanation": "Jane Eyre a apărut în 1847 sub pseudonimul Currer Bell. În același an a fost publicat și romanul surorii Emily, La răscruce de vânturi."
+    },
+    {
+      "id": "literature-112",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Un veac de singurătate”?",
+      "answer": "1967",
+      "explanation": "Romanul lui Gabriel García Márquez a apărut în 1967 și a devenit rapid una dintre operele emblematice ale boom-ului latino-american."
+    },
+    {
+      "id": "literature-113",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat romanul „Numele trandafirului”?",
+      "answer": "1980",
+      "explanation": "Numele trandafirului a apărut în 1980. Umberto Eco a combinat expertiza sa de semiotician cu structura unui mister medieval."
+    },
+    {
+      "id": "literature-114",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Străinul” de Albert Camus?",
+      "answer": "1942",
+      "explanation": "Străinul a apărut în 1942, același an în care Camus a publicat eseul Mitul lui Sisif, o lucrare importantă despre absurd."
+    },
+    {
+      "id": "literature-115",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Madame Bovary” în volum?",
+      "answer": "1857",
+      "explanation": "Madame Bovary a fost publicat în volum în 1857 după serializarea sa. Flaubert a fost judecat pentru presupusă ofensă la adresa moralei publice și achitat."
+    },
+    {
+      "id": "literature-116",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Lolita” pentru prima dată?",
+      "answer": "1955",
+      "explanation": "Lolita a fost publicată pentru prima dată în 1955 la Paris. Ediția americană a apărut ulterior și a generat dezbateri intense."
+    },
+    {
+      "id": "literature-117",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat romanul „Beloved”?",
+      "answer": "1987",
+      "explanation": "Beloved a apărut în 1987 și a câștigat Premiul Pulitzer pentru ficțiune. Romanul este inspirat parțial de un caz real din epoca sclaviei."
+    },
+    {
+      "id": "literature-118",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Fahrenheit 451”?",
+      "answer": "1953",
+      "explanation": "Fahrenheit 451 a apărut în 1953, într-un context marcat de anxietăți privind cenzura, conformismul și dezvoltarea rapidă a televiziunii."
+    },
+    {
+      "id": "literature-119",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicată „Enigma Otiliei”?",
+      "answer": "1938",
+      "explanation": "Enigma Otiliei a fost publicată în 1938. Romanul lui George Călinescu analizează familia, moștenirea și burghezia bucureșteană."
+    },
+    {
+      "id": "literature-120",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost publicat „Baltagul”?",
+      "answer": "1930",
+      "explanation": "Baltagul a apărut în 1930. Sadoveanu combină structura unei investigații cu mituri, tradiții pastorale și observația lumii montane moldovenești."
+    },
+    {
+      "id": "literature-121",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Ulise”?",
+      "options": [
+        "Günter Grass",
+        "Virginia Woolf",
+        "Chinua Achebe",
+        "James Joyce"
+      ],
+      "answer": "James Joyce",
+      "explanation": "James Joyce construiește Ulise în jurul unei singure zile petrecute la Dublin, folosind tehnici moderniste și numeroase paralele cu Odiseea lui Homer."
+    },
+    {
+      "id": "literature-122",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „În căutarea timpului pierdut”?",
+      "options": [
+        "Franz Kafka",
+        "Marcel Proust",
+        "Salman Rushdie",
+        "Milan Kundera"
+      ],
+      "answer": "Marcel Proust",
+      "explanation": "Ciclul lui Proust explorează memoria, timpul, arta și societatea franceză printr-o narațiune amplă în care amintirea involuntară are un rol esențial."
+    },
+    {
+      "id": "literature-123",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Muntele vrăjit”?",
+      "options": [
+        "Yasunari Kawabata",
+        "Julio Cortázar",
+        "Thomas Mann",
+        "Günter Grass"
+      ],
+      "answer": "Thomas Mann",
+      "explanation": "Thomas Mann plasează acțiunea într-un sanatoriu din Alpii elvețieni, transformând izolarea personajelor într-o dezbatere despre Europa dinaintea Primului Război Mondial."
+    },
+    {
+      "id": "literature-124",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Lupul de stepă”?",
+      "options": [
+        "Hermann Hesse",
+        "Franz Kafka",
+        "Chinua Achebe",
+        "Camil Petrescu"
+      ],
+      "answer": "Hermann Hesse",
+      "explanation": "Hermann Hesse explorează criza identitară a lui Harry Haller, prins între izolare intelectuală, dorința de libertate și multiplele posibilități ale propriei personalități."
+    },
+    {
+      "id": "literature-125",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Orbirea”?",
+      "options": [
+        "Marcel Proust",
+        "Italo Calvino",
+        "José Saramago",
+        "Thomas Mann"
+      ],
+      "answer": "José Saramago",
+      "explanation": "Saramago imaginează o epidemie inexplicabilă de orbire și urmărește prăbușirea rapidă a normelor sociale, dar și apariția solidarității între oameni vulnerabili."
+    },
+    {
+      "id": "literature-126",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Dacă într-o noapte de iarnă un călător”?",
+      "options": [
+        "Italo Calvino",
+        "Chinua Achebe",
+        "Franz Kafka",
+        "William Faulkner"
+      ],
+      "answer": "Italo Calvino",
+      "explanation": "Calvino transformă cititorul într-un personaj și întrerupe repetat începuturile unor romane diferite, construind o meditație ludică despre lectură și ficțiune."
+    },
+    {
+      "id": "literature-127",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Valurile”?",
+      "options": [
+        "Milan Kundera",
+        "Julio Cortázar",
+        "Günter Grass",
+        "Virginia Woolf"
+      ],
+      "answer": "Virginia Woolf",
+      "explanation": "Virginia Woolf construiește romanul din monologurile interioare ale unui grup de personaje, urmărind identitatea și trecerea timpului printr-o structură poetică experimentală."
+    },
+    {
+      "id": "literature-128",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Doamna Dalloway”?",
+      "options": [
+        "Milan Kundera",
+        "Juan Rulfo",
+        "Virginia Woolf",
+        "Günter Grass"
+      ],
+      "answer": "Virginia Woolf",
+      "explanation": "Romanul urmărește o singură zi din viața Clarissei Dalloway și intersectează viața ei socială cu trauma veteranului Septimus Smith."
+    },
+    {
+      "id": "literature-129",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Zgomotul și furia”?",
+      "options": [
+        "Boris Pasternak",
+        "Chinua Achebe",
+        "William Faulkner",
+        "James Joyce"
+      ],
+      "answer": "William Faulkner",
+      "explanation": "Faulkner folosește perspective narative diferite și cronologie fragmentată pentru a descrie destrămarea familiei Compson în sudul Statelor Unite."
+    },
+    {
+      "id": "literature-130",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Absalom, Absalom!”?",
+      "options": [
+        "Thomas Mann",
+        "William Faulkner",
+        "Marcel Proust",
+        "Franz Kafka"
+      ],
+      "answer": "William Faulkner",
+      "explanation": "Romanul reconstruiește istoria lui Thomas Sutpen prin relatări parțiale și contradictorii, arătând dificultatea de a recupera un trecut traumatic și incomplet."
+    },
+    {
+      "id": "literature-131",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Castelul”?",
+      "options": [
+        "Franz Kafka",
+        "Juan Rulfo",
+        "Kazuo Ishiguro",
+        "Italo Calvino"
+      ],
+      "answer": "Franz Kafka",
+      "explanation": "Castelul urmărește încercările topografului K. de a obține acces la o autoritate administrativă inaccesibilă, continuând tema kafkiană a birocrației opace."
+    },
+    {
+      "id": "literature-132",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Pedro Páramo”?",
+      "options": [
+        "Juan Rulfo",
+        "Günter Grass",
+        "Kazuo Ishiguro",
+        "Jorge Luis Borges"
+      ],
+      "answer": "Juan Rulfo",
+      "explanation": "Juan Rulfo construiește orașul Comala din voci ale morților, amintiri și fragmente temporale. Romanul a influențat profund literatura latino-americană ulterioară."
+    },
+    {
+      "id": "literature-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Rayuela”?",
+      "options": [
+        "Milan Kundera",
+        "Julio Cortázar",
+        "Camil Petrescu",
+        "Jorge Luis Borges"
+      ],
+      "answer": "Julio Cortázar",
+      "explanation": "Rayuela, cunoscut și ca Șotron, propune mai multe ordini posibile de lectură și experimentează cu structura romanului, limbajul și relația dintre autor și cititor."
+    },
+    {
+      "id": "literature-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Ficțiuni”?",
+      "options": [
+        "William Faulkner",
+        "Juan Rulfo",
+        "Hermann Hesse",
+        "Jorge Luis Borges"
+      ],
+      "answer": "Jorge Luis Borges",
+      "explanation": "Volumul lui Borges reunește povestiri despre labirinturi, biblioteci, identități și lumi imaginare, comprimând probleme filosofice complexe în texte foarte scurte."
+    },
+    {
+      "id": "literature-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Lucrurile se destramă”?",
+      "options": [
+        "Jorge Luis Borges",
+        "Franz Kafka",
+        "Julio Cortázar",
+        "Chinua Achebe"
+      ],
+      "answer": "Chinua Achebe",
+      "explanation": "Achebe prezintă viața lui Okonkwo și societatea igbo înainte și în timpul pătrunderii coloniale britanice, contestând reprezentările europene simplificatoare ale Africii."
+    },
+    {
+      "id": "literature-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Copiii din miez de noapte”?",
+      "options": [
+        "Salman Rushdie",
+        "Italo Calvino",
+        "Hermann Hesse",
+        "William Faulkner"
+      ],
+      "answer": "Salman Rushdie",
+      "explanation": "Rushdie leagă viața lui Saleem Sinai de independența și transformările Indiei, combinând istoria politică cu realismul magic și o voce narativă exuberantă."
+    },
+    {
+      "id": "literature-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Rămășițele zilei”?",
+      "options": [
+        "Julio Cortázar",
+        "Kazuo Ishiguro",
+        "Salman Rushdie",
+        "Giuseppe Tomasi di Lampedusa"
+      ],
+      "answer": "Kazuo Ishiguro",
+      "explanation": "Ishiguro îl folosește pe majordomul Stevens pentru a analiza loialitatea, reprimarea emoțională și autoamăgirea în raport cu trecutul aristocratic britanic."
+    },
+    {
+      "id": "literature-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Țara zăpezilor”?",
+      "options": [
+        "Hermann Hesse",
+        "Yasunari Kawabata",
+        "William Faulkner",
+        "Marcel Proust"
+      ],
+      "answer": "Yasunari Kawabata",
+      "explanation": "Kawabata construiește o poveste delicată și melancolică despre relația dintre Shimamura și gheisa Komako într-o regiune montană izolată a Japoniei."
+    },
+    {
+      "id": "literature-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Toba de tinichea”?",
+      "options": [
+        "Hermann Hesse",
+        "Günter Grass",
+        "Camil Petrescu",
+        "Jorge Luis Borges"
+      ],
+      "answer": "Günter Grass",
+      "explanation": "Günter Grass folosește perspectiva excentrică a lui Oskar Matzerath pentru a examina ascensiunea nazismului, războiul și memoria germană postbelică."
+    },
+    {
+      "id": "literature-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Doctor Jivago”?",
+      "options": [
+        "Kazuo Ishiguro",
+        "Liviu Rebreanu",
+        "Chinua Achebe",
+        "Boris Pasternak"
+      ],
+      "answer": "Boris Pasternak",
+      "explanation": "Pasternak urmărește viața medicului și poetului Iuri Jivago pe fundalul Revoluției Ruse și războiului civil, punând accent pe experiența individuală."
+    },
+    {
+      "id": "literature-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Insuportabila ușurătate a ființei”?",
+      "options": [
+        "Boris Pasternak",
+        "Günter Grass",
+        "Milan Kundera",
+        "William Faulkner"
+      ],
+      "answer": "Milan Kundera",
+      "explanation": "Kundera combină poveștile personajelor cu reflecții filosofice despre libertate, iubire, întâmplare și istorie în Cehoslovacia invadată în 1968."
+    },
+    {
+      "id": "literature-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Ghepardul”?",
+      "options": [
+        "Virginia Woolf",
+        "Giuseppe Tomasi di Lampedusa",
+        "Kazuo Ishiguro",
+        "Boris Pasternak"
+      ],
+      "answer": "Giuseppe Tomasi di Lampedusa",
+      "explanation": "Romanul descrie declinul aristocrației siciliene în timpul Risorgimentului prin perspectiva prințului Salina, confruntat cu schimbarea inevitabilă a ordinii sociale."
+    },
+    {
+      "id": "literature-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Ultima noapte de dragoste, întâia noapte de război”?",
+      "options": [
+        "Franz Kafka",
+        "Salman Rushdie",
+        "Camil Petrescu",
+        "Günter Grass"
+      ],
+      "answer": "Camil Petrescu",
+      "explanation": "Camil Petrescu combină criza geloziei lui Ștefan Gheorghidiu cu experiența directă a războiului, folosind o perspectivă subiectivă și introspectivă."
+    },
+    {
+      "id": "literature-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a scris „Pădurea spânzuraților”?",
+      "options": [
+        "Yasunari Kawabata",
+        "Liviu Rebreanu",
+        "Juan Rulfo",
+        "Giuseppe Tomasi di Lampedusa"
+      ],
+      "answer": "Liviu Rebreanu",
+      "explanation": "Rebreanu urmărește drama ofițerului Apostol Bologa din armata austro-ungară, prins între obligația militară și identitatea sa națională și morală."
+    },
+    {
+      "id": "literature-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Leopold Bloom?",
+      "options": [
+        "Lucrurile se destramă",
+        "Doamna Dalloway",
+        "Rămășițele zilei",
+        "Ulise"
+      ],
+      "answer": "Ulise",
+      "explanation": "Leopold Bloom parcurge Dublinul la 16 iunie 1904. Joyce construiește în jurul vieții sale cotidiene paralele ironice și complexe cu aventurile lui Ulise homeric."
+    },
+    {
+      "id": "literature-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Hans Castorp?",
+      "options": [
+        "Pădurea spânzuraților",
+        "Doamna Dalloway",
+        "Muntele vrăjit",
+        "Ultima noapte de dragoste, întâia noapte de război"
+      ],
+      "answer": "Muntele vrăjit",
+      "explanation": "Hans Castorp ajunge pentru o vizită scurtă la un sanatoriu, dar rămâne ani întregi. Izolarea devine pentru el o educație intelectuală și ideologică."
+    },
+    {
+      "id": "literature-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Septimus Warren Smith?",
+      "options": [
+        "Lucrurile se destramă",
+        "Rămășițele zilei",
+        "Doamna Dalloway",
+        "Ulise"
+      ],
+      "answer": "Doamna Dalloway",
+      "explanation": "Septimus este veteran al Primului Război Mondial și suferă de traumă psihică severă. Povestea sa contrastează cu lumea socială a Clarissei Dalloway."
+    },
+    {
+      "id": "literature-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Okonkwo?",
+      "options": [
+        "Copiii din miez de noapte",
+        "Doamna Dalloway",
+        "Lucrurile se destramă",
+        "Muntele vrăjit"
+      ],
+      "answer": "Lucrurile se destramă",
+      "explanation": "Okonkwo este un războinic igbo respectat, dar rigiditatea lui și schimbările provocate de colonialism îl aduc într-un conflict tot mai imposibil cu lumea sa."
+    },
+    {
+      "id": "literature-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Saleem Sinai?",
+      "options": [
+        "Copiii din miez de noapte",
+        "Lucrurile se destramă",
+        "Rămășițele zilei",
+        "Doamna Dalloway"
+      ],
+      "answer": "Copiii din miez de noapte",
+      "explanation": "Saleem se naște exact la momentul independenței Indiei, iar viața sa este legată simbolic de istoria politică a noului stat."
+    },
+    {
+      "id": "literature-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Stevens?",
+      "options": [
+        "Ulise",
+        "Doamna Dalloway",
+        "Rămășițele zilei",
+        "Muntele vrăjit"
+      ],
+      "answer": "Rămășițele zilei",
+      "explanation": "Stevens este un majordom care își justifică întreaga viață prin ideea de profesionalism. Călătoria sa scoate la iveală compromisuri și regrete reprimate."
+    },
+    {
+      "id": "literature-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Apostol Bologa?",
+      "options": [
+        "Doamna Dalloway",
+        "Lucrurile se destramă",
+        "Ulise",
+        "Pădurea spânzuraților"
+      ],
+      "answer": "Pădurea spânzuraților",
+      "explanation": "Apostol Bologa este ofițer român în armata austro-ungară. Conflictul dintre disciplina militară și conștiința sa națională devine centrul tragic al romanului."
+    },
+    {
+      "id": "literature-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce operă apare personajul Ștefan Gheorghidiu?",
+      "options": [
+        "Ulise",
+        "Copiii din miez de noapte",
+        "Ultima noapte de dragoste, întâia noapte de război",
+        "Doamna Dalloway"
+      ],
+      "answer": "Ultima noapte de dragoste, întâia noapte de război",
+      "explanation": "Ștefan Gheorghidiu este naratorul intelectual care analizează obsesiv iubirea și gelozia, apoi confruntă experiența haotică și lipsită de eroism a frontului."
+    },
+    {
+      "id": "literature-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „discurs indirect liber”?",
+      "options": [
+        "redarea gândurilor unui personaj în persoana a treia fără formule explicite precum «a gândit»",
+        "reproducerea exactă a unui dialog teatral",
+        "narațiune obligatoriu la persoana întâi",
+        "descrierea exclusivă a decorului"
+      ],
+      "answer": "redarea gândurilor unui personaj în persoana a treia fără formule explicite precum «a gândit»",
+      "explanation": "Discursul indirect liber amestecă vocea naratorului cu limbajul și perspectiva personajului, fiind foarte important în dezvoltarea romanului modern."
+    },
+    {
+      "id": "literature-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „metaficțiune”?",
+      "options": [
+        "ficțiune care atrage atenția asupra propriei construcții și asupra faptului că este un text inventat",
+        "biografie fără elemente narative",
+        "poezie orală anonimă",
+        "descriere geografică neutră"
+      ],
+      "answer": "ficțiune care atrage atenția asupra propriei construcții și asupra faptului că este un text inventat",
+      "explanation": "Metaficțiunea rupe sau problematizează iluzia realistă, discutând direct mecanismele povestirii, rolul autorului sau poziția cititorului."
+    },
+    {
+      "id": "literature-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „intertextualitate”?",
+      "options": [
+        "relația prin care un text trimite, transformă sau dialoghează cu alte texte",
+        "repetarea unei vocale",
+        "aranjarea alfabetică a capitolelor",
+        "lipsa totală a referințelor culturale"
+      ],
+      "answer": "relația prin care un text trimite, transformă sau dialoghează cu alte texte",
+      "explanation": "Intertextualitatea poate lua forma citatelor, aluziilor, rescrierilor sau parodiilor și arată că operele literare există într-o rețea de texte."
+    },
+    {
+      "id": "literature-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „picaresc”?",
+      "options": [
+        "tip de narațiune despre aventurile episodice ale unui personaj de origine modestă care supraviețuiește prin ingeniozitate",
+        "tragedie aristocratică în cinci acte",
+        "poem pastoral despre natură",
+        "roman exclusiv epistolar"
+      ],
+      "answer": "tip de narațiune despre aventurile episodice ale unui personaj de origine modestă care supraviețuiește prin ingeniozitate",
+      "explanation": "Romanul picaresc s-a dezvoltat în Spania și folosește adesea un protagonist marginal pentru a satiriza instituțiile și clasele sociale."
+    },
+    {
+      "id": "literature-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „anti-erou”?",
+      "options": [
+        "protagonist lipsit de multe dintre calitățile eroice tradiționale",
+        "personaj secundar fără rol",
+        "zeu din epopee",
+        "narator omniscient obligatoriu"
+      ],
+      "answer": "protagonist lipsit de multe dintre calitățile eroice tradiționale",
+      "explanation": "Anti-eroul poate fi indecis, vulnerabil, egoist sau moral ambiguu, iar interesul narațiunii vine tocmai din abaterea sa de la modelul eroic."
+    },
+    {
+      "id": "literature-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „cadru narativ”?",
+      "options": [
+        "poveste exterioară care conține una sau mai multe povești relatate în interiorul ei",
+        "capitol fără personaje",
+        "descriere exclusiv poetică",
+        "ordine alfabetică a evenimentelor"
+      ],
+      "answer": "poveste exterioară care conține una sau mai multe povești relatate în interiorul ei",
+      "explanation": "Structura în ramă permite includerea mai multor naratori și istorii. Exemple clasice apar în O mie și una de nopți și Decameronul."
+    },
+    {
+      "id": "literature-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „monolog interior”?",
+      "options": [
+        "reprezentarea directă a gândurilor unui personaj ca și cum cititorul ar avea acces la fluxul său mental",
+        "descriere externă obiectivă",
+        "dialog între patru personaje",
+        "comentariu editorial despre autor"
+      ],
+      "answer": "reprezentarea directă a gândurilor unui personaj ca și cum cititorul ar avea acces la fluxul său mental",
+      "explanation": "Monologul interior este o tehnică importantă a modernismului și poate reproduce asociații, ezitări și schimbări rapide ale conștiinței."
+    },
+    {
+      "id": "literature-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul literar „alegorie”?",
+      "options": [
+        "narațiune sau imagine în care personajele și evenimentele funcționează sistematic și ca reprezentări ale unor idei mai largi",
+        "figură bazată doar pe sunet",
+        "notă de subsol",
+        "rimă identică"
+      ],
+      "answer": "narațiune sau imagine în care personajele și evenimentele funcționează sistematic și ca reprezentări ale unor idei mai largi",
+      "explanation": "Alegoria menține de obicei un nivel literal și unul simbolic relativ coerent, permițând criticarea politicii, moralei sau societății printr-o poveste."
+    },
+    {
+      "id": "literature-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce oraș constituie spațiul central al romanului „Ulise”?",
+      "options": [
+        "Dublin",
+        "Londra",
+        "Paris",
+        "Trieste"
+      ],
+      "answer": "Dublin",
+      "explanation": "Joyce reconstruiește Dublinul din 1904 cu precizie topografică remarcabilă. Orașul cotidian devine echivalentul modern și ironic al spațiului eroic din Odiseea."
+    },
+    {
+      "id": "literature-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tehnică este asociată puternic cu Virginia Woolf și James Joyce?",
+      "options": [
+        "Fluxul conștiinței",
+        "Realismul socialist",
+        "Versul alexandrin",
+        "Cronica medievală"
+      ],
+      "answer": "Fluxul conștiinței",
+      "explanation": "Moderniștii au încercat să redea mișcarea minții, memoria și percepțiile imediate. Tehnicile lor diferă, dar sunt frecvent grupate sub această denumire."
+    },
+    {
+      "id": "literature-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce țară este plasat romanul „Lucrurile se destramă” înainte și în timpul colonialismului britanic?",
+      "options": [
+        "Nigeria",
+        "Kenya",
+        "Africa de Sud",
+        "Etiopia"
+      ],
+      "answer": "Nigeria",
+      "explanation": "Acțiunea se desfășoară în comunități igbo din zona actualei Nigerii. Achebe prezintă societatea locală înainte ca misionarii și administrația colonială să o transforme."
+    },
+    {
+      "id": "literature-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce mișcare literară este asociat în principal „Ulise”?",
+      "options": [
+        "Modernismul",
+        "Romantismul",
+        "Clasicismul francez",
+        "Naturalismul"
+      ],
+      "answer": "Modernismul",
+      "explanation": "Ulise este una dintre operele centrale ale modernismului prin experimentul formal, montajul vocilor și reinterpretarea structurilor mitice într-un context urban contemporan."
+    },
+    {
+      "id": "literature-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce relație structurală are „Ulise” cu „Odiseea”?",
+      "options": [
+        "Reinterpretează episoade și motive homerice într-o zi modernă la Dublin",
+        "Este traducerea literală a poemului",
+        "Continuă direct povestea lui Homer",
+        "Respinge orice referință mitologică"
+      ],
+      "answer": "Reinterpretează episoade și motive homerice într-o zi modernă la Dublin",
+      "explanation": "Joyce construiește corespondențe între personaje și episoade moderne și cele homerice, fără ca romanul să fie o simplă adaptare a intrigii antice."
+    },
+    {
+      "id": "literature-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce eveniment istoric formează fundalul principal al „Pădurii spânzuraților”?",
+      "options": [
+        "Primul Război Mondial",
+        "Războiul Crimeii",
+        "Al Doilea Război Mondial",
+        "Războiul de Independență american"
+      ],
+      "answer": "Primul Război Mondial",
+      "explanation": "Apostol Bologa servește în armata austro-ungară în timpul Primului Război Mondial, iar perspectiva mutării pe frontul românesc îi intensifică dilema morală."
+    },
+    {
+      "id": "literature-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce element face romanul „Dacă într-o noapte de iarnă un călător” profund metaficțional?",
+      "options": [
+        "Cititorul devine personaj și începe repetat romane întrerupte",
+        "Povestea este spusă doar prin scrisori",
+        "Nu există niciun narator",
+        "Toate capitolele sunt identice"
+      ],
+      "answer": "Cititorul devine personaj și începe repetat romane întrerupte",
+      "explanation": "Calvino transformă actul lecturii în subiectul principal al cărții și expune deliberat mecanismele prin care ficțiunea produce așteptări."
+    },
+    {
+      "id": "literature-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tehnică folosește Faulkner în „Zgomotul și furia” pentru a complica percepția timpului?",
+      "options": [
+        "Perspective multiple și cronologie fragmentată",
+        "Un singur narator omniscient strict cronologic",
+        "Doar documente juridice",
+        "Versificație regulată"
+      ],
+      "answer": "Perspective multiple și cronologie fragmentată",
+      "explanation": "Secțiunile romanului sunt narate din puncte de vedere diferite, iar memoria personajelor amestecă prezentul și trecutul fără tranziții simple."
+    },
+    {
+      "id": "literature-169",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Ulise” de James Joyce?",
+      "answer": "1922",
+      "explanation": "Ulise a fost publicat integral în 1922 la Paris. Anul 1922 este adesea considerat simbolic pentru modernismul literar de limbă engleză."
+    },
+    {
+      "id": "literature-170",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat romanul „Un veac de singurătate”?",
+      "answer": "1967",
+      "explanation": "Un veac de singurătate a apărut în 1967 la Buenos Aires și a devenit una dintre operele definitorii ale boom-ului latino-american."
+    },
+    {
+      "id": "literature-171",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Copiii din miez de noapte”?",
+      "answer": "1981",
+      "explanation": "Midnight's Children a apărut în 1981 și a legat realismul magic de istoria Indiei postcoloniale, câștigând Booker Prize."
+    },
+    {
+      "id": "literature-172",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Lucrurile se destramă”?",
+      "answer": "1958",
+      "explanation": "Things Fall Apart a fost publicat în 1958 și a devenit una dintre cele mai influente opere africane moderne scrise în limba engleză."
+    },
+    {
+      "id": "literature-173",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Rămășițele zilei”?",
+      "answer": "1989",
+      "explanation": "The Remains of the Day a apărut în 1989 și a câștigat Booker Prize, consolidând reputația internațională a lui Kazuo Ishiguro."
+    },
+    {
+      "id": "literature-174",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Toba de tinichea”?",
+      "answer": "1959",
+      "explanation": "Die Blechtrommel a fost publicat în 1959 și a devenit o operă majoră a literaturii germane postbelice despre memorie și responsabilitate."
+    },
+    {
+      "id": "literature-175",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Doctor Jivago” pentru prima dată în volum?",
+      "answer": "1957",
+      "explanation": "Doctor Jivago a fost publicat pentru prima dată în Italia în 1957, după ce publicarea sa în Uniunea Sovietică fusese refuzată."
+    },
+    {
+      "id": "literature-176",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat romanul „Rayuela” de Julio Cortázar?",
+      "answer": "1963",
+      "explanation": "Rayuela a apărut în 1963 și a devenit una dintre operele experimentale emblematice ale boom-ului latino-american."
+    },
+    {
+      "id": "literature-177",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Pedro Páramo”?",
+      "answer": "1955",
+      "explanation": "Pedro Páramo a apărut în 1955. Structura sa fragmentată și vocile morților au influențat numeroși scriitori latino-americani ulteriori."
+    },
+    {
+      "id": "literature-178",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat romanul „Ghepardul”?",
+      "answer": "1958",
+      "explanation": "Il Gattopardo a fost publicat postum în 1958, după ce manuscrisul fusese respins în timpul vieții lui Giuseppe Tomasi di Lampedusa."
+    },
+    {
+      "id": "literature-179",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat romanul „Ultima noapte de dragoste, întâia noapte de război”?",
+      "answer": "1930",
+      "explanation": "Romanul lui Camil Petrescu a apărut în 1930 și este reprezentativ pentru modernizarea perspectivei narative în proza românească interbelică."
+    },
+    {
+      "id": "literature-180",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost publicat „Pădurea spânzuraților”?",
+      "answer": "1922",
+      "explanation": "Pădurea spânzuraților a apărut în 1922 și este inspirată parțial de drama fratelui lui Liviu Rebreanu, executat în timpul Primului Război Mondial."
+    },
+    {
+      "id": "literature-181",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Omul fără însușiri”?",
+      "options": [
+        "Robert Musil",
+        "Ben Okri",
+        "Ismail Kadare",
+        "Italo Svevo"
+      ],
+      "answer": "Robert Musil",
+      "explanation": "Romanul neterminat al lui Musil urmărește intelectualul Ulrich în ultimele luni ale Imperiului Austro-Ungar, combinând satira socială cu eseul filosofic."
+    },
+    {
+      "id": "literature-182",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Recunoașterile”?",
+      "options": [
+        "Milorad Pavić",
+        "William Gaddis",
+        "Georges Perec",
+        "Clarice Lispector"
+      ],
+      "answer": "William Gaddis",
+      "explanation": "The Recognitions este un roman amplu despre falsificare, autenticitate, artă și religie. Structura densă și dialogurile fără marcaje simple îl fac o operă dificilă."
+    },
+    {
+      "id": "literature-183",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Sub vulcan”?",
+      "options": [
+        "Malcolm Lowry",
+        "Joseph Roth",
+        "Ben Okri",
+        "Camil Petrescu"
+      ],
+      "answer": "Malcolm Lowry",
+      "explanation": "Romanul urmărește ultima zi a fostului consul Geoffrey Firmin în Mexic. Alcoolismul, vinovăția și apropierea războiului se suprapun într-o structură simbolică."
+    },
+    {
+      "id": "literature-184",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Cartea neliniștirii”?",
+      "options": [
+        "Amos Tutuola",
+        "Italo Calvino",
+        "Elias Canetti",
+        "Fernando Pessoa"
+      ],
+      "answer": "Fernando Pessoa",
+      "explanation": "Cartea neliniștirii este o colecție postumă de fragmente atribuite în principal semi-heteronimului Bernardo Soares, despre identitate, vis, monotonie și conștiință."
+    },
+    {
+      "id": "literature-185",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Auto-da-Fé (Orbirea)”?",
+      "options": [
+        "Robert Musil",
+        "Ismail Kadare",
+        "Elias Canetti",
+        "William Gaddis"
+      ],
+      "answer": "Elias Canetti",
+      "explanation": "Romanul lui Elias Canetti îl urmărește pe savantul Peter Kien într-o lume grotescă a obsesiei, izolării și degradării intelectuale."
+    },
+    {
+      "id": "literature-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Marșul Radetzky”?",
+      "options": [
+        "Flann O'Brien",
+        "Joseph Roth",
+        "Italo Svevo",
+        "Ismail Kadare"
+      ],
+      "answer": "Joseph Roth",
+      "explanation": "Joseph Roth urmărește trei generații ale familiei Trotta în paralel cu declinul Imperiului Habsburgic, transformând istoria politică într-o tragedie familială."
+    },
+    {
+      "id": "literature-187",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Berlin Alexanderplatz”?",
+      "options": [
+        "Elias Canetti",
+        "Alfred Döblin",
+        "Clarice Lispector",
+        "Mateiu I. Caragiale"
+      ],
+      "answer": "Alfred Döblin",
+      "explanation": "Döblin urmărește încercarea lui Franz Biberkopf de a trăi cinstit după ieșirea din închisoare, folosind montaj urban, reclame, cântece și voci multiple."
+    },
+    {
+      "id": "literature-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Conștiința lui Zeno”?",
+      "options": [
+        "Joseph Roth",
+        "Ismail Kadare",
+        "Italo Svevo",
+        "Ben Okri"
+      ],
+      "answer": "Italo Svevo",
+      "explanation": "Zeno Cosini își scrie amintirile la sugestia psihanalistului, dar își expune constant contradicțiile. Romanul explorează autoamăgirea și instabilitatea identității."
+    },
+    {
+      "id": "literature-189",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Bunul soldat”?",
+      "options": [
+        "Ford Madox Ford",
+        "Joseph Roth",
+        "Ismail Kadare",
+        "Tayeb Salih"
+      ],
+      "answer": "Ford Madox Ford",
+      "explanation": "The Good Soldier este narat de John Dowell, care reconstituie treptat relațiile și trădările dintre două cupluri. Cronologia și credibilitatea naratorului sunt deliberat instabile."
+    },
+    {
+      "id": "literature-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Moartea lui Vergiliu”?",
+      "options": [
+        "Camil Petrescu",
+        "Hermann Broch",
+        "Ismail Kadare",
+        "Joseph Roth"
+      ],
+      "answer": "Hermann Broch",
+      "explanation": "Broch imaginează ultimele ore ale poetului Vergiliu într-o proză densă și lirică, transformând moartea într-o meditație asupra artei și puterii."
+    },
+    {
+      "id": "literature-191",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Viața, mod de întrebuințare”?",
+      "options": [
+        "Georges Perec",
+        "Ismail Kadare",
+        "Flann O'Brien",
+        "Ben Okri"
+      ],
+      "answer": "Georges Perec",
+      "explanation": "Perec descrie sistematic locuitorii și camerele unei clădiri pariziene, folosind constrângeri formale inspirate de grupul Oulipo și structuri combinatorii."
+    },
+    {
+      "id": "literature-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Orașele invizibile”?",
+      "options": [
+        "Joseph Roth",
+        "Fernando Pessoa",
+        "Clarice Lispector",
+        "Italo Calvino"
+      ],
+      "answer": "Italo Calvino",
+      "explanation": "Marco Polo descrie lui Kublai Han zeci de orașe imaginare. Cartea este mai degrabă o rețea poetică despre memorie, dorință și spațiu decât un roman tradițional."
+    },
+    {
+      "id": "literature-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Patimile după G.H.”?",
+      "options": [
+        "Ben Okri",
+        "Elias Canetti",
+        "Clarice Lispector",
+        "Fernando Pessoa"
+      ],
+      "answer": "Clarice Lispector",
+      "explanation": "O femeie din Rio de Janeiro intră în camera servitoarei și întâlnirea cu un gândac declanșează o experiență filosofică radicală despre identitate și existență."
+    },
+    {
+      "id": "literature-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Al treilea polițist”?",
+      "options": [
+        "Flann O'Brien",
+        "Georges Perec",
+        "Camil Petrescu",
+        "William Gaddis"
+      ],
+      "answer": "Flann O'Brien",
+      "explanation": "Romanul combină umor absurd, metafizică și o lume rurală în care bicicletele, sufletele și logica poliției funcționează după reguli imposibile."
+    },
+    {
+      "id": "literature-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „La doi lebădoi”?",
+      "options": [
+        "Malcolm Lowry",
+        "Clarice Lispector",
+        "Flann O'Brien",
+        "Amos Tutuola"
+      ],
+      "answer": "Flann O'Brien",
+      "explanation": "At Swim-Two-Birds este un roman metaficțional în care personajele se revoltă împotriva autorului lor, iar mai multe niveluri de ficțiune se intersectează."
+    },
+    {
+      "id": "literature-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Băutorul de vin de palmier”?",
+      "options": [
+        "László Krasznahorkai",
+        "Amos Tutuola",
+        "Ford Madox Ford",
+        "Tayeb Salih"
+      ],
+      "answer": "Amos Tutuola",
+      "explanation": "Tutuola combină engleza nigeriană cu motive yoruba într-o călătorie fantastică prin lumea spiritelor, creând o voce radical diferită de proza colonială convențională."
+    },
+    {
+      "id": "literature-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Sezonul migrației spre nord”?",
+      "options": [
+        "Magda Szabó",
+        "Tayeb Salih",
+        "Clarice Lispector",
+        "Georges Perec"
+      ],
+      "answer": "Tayeb Salih",
+      "explanation": "Romanul lui Tayeb Salih confruntă experiența colonială și postcolonială prin relația dintre Sudan și Marea Britanie și prin misteriosul Mustafa Sa'eed."
+    },
+    {
+      "id": "literature-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Drumul foametei”?",
+      "options": [
+        "Ben Okri",
+        "Hermann Broch",
+        "Mateiu I. Caragiale",
+        "Milorad Pavić"
+      ],
+      "answer": "Ben Okri",
+      "explanation": "The Famished Road îl are ca narator pe Azaro, un copil-spirit abiku, și combină realitatea politică nigeriană cu o lume spirituală fluidă."
+    },
+    {
+      "id": "literature-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Palatul viselor”?",
+      "options": [
+        "Robert Musil",
+        "László Krasznahorkai",
+        "Italo Svevo",
+        "Ismail Kadare"
+      ],
+      "answer": "Ismail Kadare",
+      "explanation": "Kadare imaginează un imperiu care colectează și interpretează visele supușilor. Birocrația onirică funcționează ca alegorie a controlului politic totalitar."
+    },
+    {
+      "id": "literature-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Dicționarul khazarilor”?",
+      "options": [
+        "Alfred Döblin",
+        "Milorad Pavić",
+        "Amos Tutuola",
+        "Georges Perec"
+      ],
+      "answer": "Milorad Pavić",
+      "explanation": "Romanul este organizat ca un pseudo-dicționar în trei secțiuni religioase. Cititorul poate reconstrui povestea fără o ordine narativă liniară fixă."
+    },
+    {
+      "id": "literature-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Melancolia rezistenței”?",
+      "options": [
+        "Ismail Kadare",
+        "Robert Musil",
+        "Hermann Broch",
+        "László Krasznahorkai"
+      ],
+      "answer": "László Krasznahorkai",
+      "explanation": "Un orășel este destabilizat de sosirea unui circ misterios și a unei balene uriașe. Frazele lungi și atmosfera apocaliptică definesc stilul lui Krasznahorkai."
+    },
+    {
+      "id": "literature-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Ușa”?",
+      "options": [
+        "Magda Szabó",
+        "Amos Tutuola",
+        "Fernando Pessoa",
+        "Camil Petrescu"
+      ],
+      "answer": "Magda Szabó",
+      "explanation": "Romanul descrie relația complicată dintre o scriitoare și menajera Emerenc. Intimitatea, mândria și vinovăția se dezvoltă printr-o retrospectivă confesivă."
+    },
+    {
+      "id": "literature-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Craii de Curtea-Veche”?",
+      "options": [
+        "Amos Tutuola",
+        "Mateiu I. Caragiale",
+        "Fernando Pessoa",
+        "Joseph Roth"
+      ],
+      "answer": "Mateiu I. Caragiale",
+      "explanation": "Romanul lui Mateiu Caragiale construiește un București decadent și nocturn printr-o proză barocă, concentrată asupra aristocrației degradate și a fascinației pentru trecut."
+    },
+    {
+      "id": "literature-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris „Patul lui Procust”?",
+      "options": [
+        "Camil Petrescu",
+        "Amos Tutuola",
+        "Ismail Kadare",
+        "Alfred Döblin"
+      ],
+      "answer": "Camil Petrescu",
+      "explanation": "Camil Petrescu folosește scrisori, note și perspective multiple pentru a construi un roman despre iubire, autenticitate și imposibilitatea cunoașterii complete a celuilalt."
+    },
+    {
+      "id": "literature-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Ulrich?",
+      "options": [
+        "Patul lui Procust",
+        "Omul fără însușiri",
+        "Berlin Alexanderplatz",
+        "Ușa"
+      ],
+      "answer": "Omul fără însușiri",
+      "explanation": "Ulrich este un intelectual care își declară o «vacanță de la viață» și observă ironic societatea austro-ungară aflată înaintea prăbușirii din 1914."
+    },
+    {
+      "id": "literature-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Franz Biberkopf?",
+      "options": [
+        "Omul fără însușiri",
+        "Craii de Curtea-Veche",
+        "Bunul soldat",
+        "Berlin Alexanderplatz"
+      ],
+      "answer": "Berlin Alexanderplatz",
+      "explanation": "Franz Biberkopf încearcă să-și reconstruiască viața după închisoare, dar Berlinul interbelic și propriile alegeri îl atrag din nou spre violență și criminalitate."
+    },
+    {
+      "id": "literature-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Zeno Cosini?",
+      "options": [
+        "Omul fără însușiri",
+        "Conștiința lui Zeno",
+        "Bunul soldat",
+        "Patul lui Procust"
+      ],
+      "answer": "Conștiința lui Zeno",
+      "explanation": "Zeno își povestește viața într-un jurnal destinat psihanalizei. Contradicțiile sale fac imposibilă separarea simplă dintre sinceritate, autojustificare și ironie."
+    },
+    {
+      "id": "literature-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul John Dowell?",
+      "options": [
+        "Cartea neliniștirii",
+        "Bunul soldat",
+        "Ușa",
+        "Craii de Curtea-Veche"
+      ],
+      "answer": "Bunul soldat",
+      "explanation": "John Dowell este naratorul care pretinde inițial că spune o poveste simplă, dar își corectează constant amintirile și dezvăluie treptat o rețea de trădări."
+    },
+    {
+      "id": "literature-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Bernardo Soares?",
+      "options": [
+        "Ușa",
+        "Bunul soldat",
+        "Patul lui Procust",
+        "Cartea neliniștirii"
+      ],
+      "answer": "Cartea neliniștirii",
+      "explanation": "Bernardo Soares este un semi-heteronim al lui Fernando Pessoa, funcționar modest la Lisabona și voce a reflecțiilor despre vis, rutină și fragmentarea eului."
+    },
+    {
+      "id": "literature-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Emerenc?",
+      "options": [
+        "Conștiința lui Zeno",
+        "Bunul soldat",
+        "Ușa",
+        "Berlin Alexanderplatz"
+      ],
+      "answer": "Ușa",
+      "explanation": "Emerenc este menajera independentă și secretă care stabilește propriile reguli în relația cu naratoarea. Titlul romanului capătă astfel o valoare concretă și simbolică."
+    },
+    {
+      "id": "literature-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Pașadia?",
+      "options": [
+        "Omul fără însușiri",
+        "Bunul soldat",
+        "Craii de Curtea-Veche",
+        "Berlin Alexanderplatz"
+      ],
+      "answer": "Craii de Curtea-Veche",
+      "explanation": "Pașadia este unul dintre «craii» romanului lui Mateiu Caragiale, caracterizat prin rafinament, erudiție și o relație ambiguă cu mediul decadent bucureștean."
+    },
+    {
+      "id": "literature-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce operă apare personajul Fred Vasilescu?",
+      "options": [
+        "Craii de Curtea-Veche",
+        "Berlin Alexanderplatz",
+        "Omul fără însușiri",
+        "Patul lui Procust"
+      ],
+      "answer": "Patul lui Procust",
+      "explanation": "Fred Vasilescu devine una dintre principalele voci ale romanului prin jurnalul și mărturia sa, oferind o perspectivă incompletă asupra relațiilor dintre personaje."
+    },
+    {
+      "id": "literature-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „Oulipo”?",
+      "options": [
+        "grup literar care explorează scrierea prin constrângeri formale și procedee combinatorii",
+        "școală realistă rusă",
+        "curent poetic bazat exclusiv pe improvizație",
+        "teorie despre biografia autorului"
+      ],
+      "answer": "grup literar care explorează scrierea prin constrângeri formale și procedee combinatorii",
+      "explanation": "Oulipo, prescurtare de la Ouvroir de littérature potentielle, a inclus autori precum Raymond Queneau și Georges Perec și a folosit reguli matematice sau lingvistice."
+    },
+    {
+      "id": "literature-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „defamiliarizare”?",
+      "options": [
+        "prezentarea lucrurilor obișnuite într-o formă neobișnuită pentru a reînnoi percepția cititorului",
+        "explicarea literală a fiecărui simbol",
+        "eliminarea oricărei descrieri",
+        "ordonarea alfabetică a personajelor"
+      ],
+      "answer": "prezentarea lucrurilor obișnuite într-o formă neobișnuită pentru a reînnoi percepția cititorului",
+      "explanation": "Conceptul este asociat formalistului rus Viktor Șklovski și susține că arta poate încetini percepția automatizată a realității cotidiene."
+    },
+    {
+      "id": "literature-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „corelativ obiectiv”?",
+      "options": [
+        "ansamblu de obiecte, situații sau evenimente folosit pentru a produce o anumită emoție fără a o declara direct",
+        "rimă internă obligatorie",
+        "povestire în ordine inversă",
+        "traducere literală"
+      ],
+      "answer": "ansamblu de obiecte, situații sau evenimente folosit pentru a produce o anumită emoție fără a o declara direct",
+      "explanation": "T. S. Eliot a popularizat termenul în critica literară, susținând că emoția artistică poate fi concretizată printr-o structură externă adecvată."
+    },
+    {
+      "id": "literature-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „heteroglosie”?",
+      "options": [
+        "coexistența mai multor voci, registre și limbaje sociale într-un text",
+        "folosirea unei singure voci neutre",
+        "scriere exclusiv în dialect",
+        "absența dialogului"
+      ],
+      "answer": "coexistența mai multor voci, registre și limbaje sociale într-un text",
+      "explanation": "Conceptul lui Mihail Bahtin descrie romanul ca spațiu în care limbaje sociale și perspective diferite se confruntă și se relativizează reciproc."
+    },
+    {
+      "id": "literature-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „cronotop”?",
+      "options": [
+        "legătura structurală dintre organizarea timpului și spațiului într-o narațiune",
+        "numărul de capitole",
+        "schema de rimă a unui sonet",
+        "biografia completă a autorului"
+      ],
+      "answer": "legătura structurală dintre organizarea timpului și spațiului într-o narațiune",
+      "explanation": "Bahtin folosește termenul cronotop pentru a explica modul în care formele narative construiesc împreună timpul, spațiul și tipurile de acțiune posibile."
+    },
+    {
+      "id": "literature-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „negative capability”?",
+      "options": [
+        "capacitatea de a rămâne în incertitudine și mister fără a forța imediat o explicație rațională",
+        "obligația de a demonstra toate simbolurile",
+        "tehnică de rimă",
+        "narațiune fără personaje"
+      ],
+      "answer": "capacitatea de a rămâne în incertitudine și mister fără a forța imediat o explicație rațională",
+      "explanation": "John Keats a folosit expresia pentru a descrie o calitate poetică prin care scriitorul poate tolera ambiguitatea fără a o reduce la certitudini."
+    },
+    {
+      "id": "literature-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „ekphrasis”?",
+      "options": [
+        "descriere literară amplă sau evocatoare a unei opere vizuale ori a unui obiect artistic",
+        "traducerea unui roman în altă limbă",
+        "monolog fără imagini",
+        "listă bibliografică"
+      ],
+      "answer": "descriere literară amplă sau evocatoare a unei opere vizuale ori a unui obiect artistic",
+      "explanation": "Ekphrasisul creează un dialog între literatură și artele vizuale. Un exemplu clasic este descrierea scutului lui Ahile în Iliada."
+    },
+    {
+      "id": "literature-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul literar „parataxă”?",
+      "options": [
+        "așezarea propozițiilor sau unităților una lângă alta cu puțină subordonare sintactică",
+        "folosirea exclusivă a propozițiilor subordonate",
+        "rimă încrucișată",
+        "narațiune la persoana a doua"
+      ],
+      "answer": "așezarea propozițiilor sau unităților una lângă alta cu puțină subordonare sintactică",
+      "explanation": "Parataxa poate produce un stil rapid, fragmentar sau solemn. Efectul depinde de acumulare și juxtapunere mai mult decât de ierarhia sintactică explicită."
+    },
+    {
+      "id": "literature-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce grup literar este asociat direct cu Georges Perec?",
+      "options": [
+        "Oulipo",
+        "Bloomsbury Group",
+        "Futurismul italian",
+        "Beat Generation"
+      ],
+      "answer": "Oulipo",
+      "explanation": "Perec a fost membru Oulipo și a folosit constrângeri formale complexe. În Dispariția, de exemplu, a scris un roman francez fără litera «e»."
+    },
+    {
+      "id": "literature-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tehnică urbană folosește intens Alfred Döblin în „Berlin Alexanderplatz”?",
+      "options": [
+        "Montaj de reclame, cântece, știri și voci",
+        "Sonet petrarchist",
+        "Narațiune cavalerească liniară",
+        "Doar scrisori private"
+      ],
+      "answer": "Montaj de reclame, cântece, știri și voci",
+      "explanation": "Döblin introduce fragmente din mediul urban pentru a face Berlinul să funcționeze aproape ca un personaj colectiv și pentru a fragmenta perspectiva."
+    },
+    {
+      "id": "literature-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "De ce este „Dicționarul khazarilor” neobișnuit structural?",
+      "options": [
+        "Este organizat ca un lexicon cu intrări care pot fi citite în ordine variabilă",
+        "Este format dintr-un singur poem",
+        "Nu conține cuvinte inventate",
+        "Are doar dialoguri"
+      ],
+      "answer": "Este organizat ca un lexicon cu intrări care pot fi citite în ordine variabilă",
+      "explanation": "Pavić înlocuiește firul narativ tradițional cu trei pseudo-surse documentare, iar cititorul trebuie să compare variante contradictorii ale aceleiași istorii."
+    },
+    {
+      "id": "literature-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce oraș este esențial în „Cartea neliniștirii”?",
+      "options": [
+        "Lisabona",
+        "Madrid",
+        "Praga",
+        "Viena"
+      ],
+      "answer": "Lisabona",
+      "explanation": "Bernardo Soares observă străzile, birourile și cafenelele Lisabonei. Orașul devine fundalul unei existențe monotone transformate prin imaginație."
+    },
+    {
+      "id": "literature-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tip de narator este John Dowell în „Bunul soldat”?",
+      "options": [
+        "Un narator profund nesigur și autorevizuitor",
+        "Un narator omniscient perfect",
+        "Un cor antic",
+        "Un observator fără implicare"
+      ],
+      "answer": "Un narator profund nesigur și autorevizuitor",
+      "explanation": "Dowell își reorganizează constant povestea și admite că nu a înțeles evenimentele atunci când s-au petrecut, obligând cititorul să reconstruiască relațiile."
+    },
+    {
+      "id": "literature-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce imperiu aflat în declin formează fundalul din „Marșul Radetzky”?",
+      "options": [
+        "Imperiul Austro-Ungar",
+        "Imperiul Otoman",
+        "Imperiul Britanic",
+        "Imperiul Japonez"
+      ],
+      "answer": "Imperiul Austro-Ungar",
+      "explanation": "Destinul familiei Trotta este legat de ritualurile, armata și ierarhiile monarhiei habsburgice, care își pierde treptat coeziunea înainte de 1914."
+    },
+    {
+      "id": "literature-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce structură narativă folosește „Patul lui Procust”?",
+      "options": [
+        "Mai multe documente și perspective care se corectează reciproc",
+        "Un singur narator omniscient fără întrerupere",
+        "Doar scene teatrale",
+        "Versuri cu rimă fixă"
+      ],
+      "answer": "Mai multe documente și perspective care se corectează reciproc",
+      "explanation": "Scrisori, note și mărturii construiesc imagini diferite ale acelorași personaje, punând sub semnul întrebării posibilitatea unui adevăr psihologic unic."
+    },
+    {
+      "id": "literature-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce mediu urban domină „Craii de Curtea-Veche”?",
+      "options": [
+        "Bucureștiul decadent de la începutul secolului XX",
+        "Parisul revoluționar din 1789",
+        "Londra victoriană",
+        "Roma imperială"
+      ],
+      "answer": "Bucureștiul decadent de la începutul secolului XX",
+      "explanation": "Mateiu Caragiale transformă Bucureștiul nocturn într-un spațiu al rafinamentului artificial, al genealogiei imaginare și al degradării morale."
+    },
+    {
+      "id": "literature-229",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a apărut primul volum al romanului „Omul fără însușiri”?",
+      "answer": "1930",
+      "explanation": "Primul volum din Der Mann ohne Eigenschaften a apărut în 1930. Musil a continuat să lucreze la proiect până la moarte, lăsându-l neterminat."
+    },
+    {
+      "id": "literature-230",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat romanul „Recunoașterile” de William Gaddis?",
+      "answer": "1955",
+      "explanation": "The Recognitions a apărut în 1955 și a fost inițial primit neuniform, devenind ulterior o operă importantă a ficțiunii americane postbelice."
+    },
+    {
+      "id": "literature-231",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Sub vulcan” de Malcolm Lowry?",
+      "answer": "1947",
+      "explanation": "Under the Volcano a apărut în 1947. Acțiunea principală se desfășoară în Mexic în Ziua Morților din 1938."
+    },
+    {
+      "id": "literature-232",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Marșul Radetzky”?",
+      "answer": "1932",
+      "explanation": "Radetzkymarsch a apărut în 1932, când Europa Centrală privea deja retrospectiv spre lumea pierdută a Imperiului Habsburgic."
+    },
+    {
+      "id": "literature-233",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Berlin Alexanderplatz”?",
+      "answer": "1929",
+      "explanation": "Berlin Alexanderplatz a apărut în 1929, în ultimii ani ai Republicii de la Weimar, și surprinde intensitatea vieții metropolitane interbelice."
+    },
+    {
+      "id": "literature-234",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicată „Conștiința lui Zeno”?",
+      "answer": "1923",
+      "explanation": "La coscienza di Zeno a apărut în 1923. Romanul a câștigat recunoaștere internațională după ce James Joyce a contribuit la promovarea operei lui Svevo."
+    },
+    {
+      "id": "literature-235",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Viața, mod de întrebuințare”?",
+      "answer": "1978",
+      "explanation": "La Vie mode d'emploi a apărut în 1978 și folosește un proiect formal elaborat pentru a descrie camerele și poveștile unei clădiri pariziene."
+    },
+    {
+      "id": "literature-236",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Orașele invizibile”?",
+      "answer": "1972",
+      "explanation": "Le città invisibili a apărut în 1972. Cartea este alcătuită din scurte descrieri de orașe imaginare organizate într-o arhitectură formală precisă."
+    },
+    {
+      "id": "literature-237",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Patimile după G.H.”?",
+      "answer": "1964",
+      "explanation": "A paixão segundo G.H. a fost publicat în 1964 și este considerat unul dintre cele mai radicale romane filosofice ale Claricei Lispector."
+    },
+    {
+      "id": "literature-238",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Sezonul migrației spre nord” în formă de carte în arabă?",
+      "answer": "1966",
+      "explanation": "Romanul lui Tayeb Salih a apărut în formă de carte în 1966 și a devenit un text fundamental al literaturii arabe postcoloniale."
+    },
+    {
+      "id": "literature-239",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat „Dicționarul khazarilor”?",
+      "answer": "1984",
+      "explanation": "Hazarski rečnik a apărut în 1984 și a atras atenția internațională prin structura sa de pseudo-enciclopedie și variante editoriale neobișnuite."
+    },
+    {
+      "id": "literature-240",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost publicat romanul „Ușa” de Magda Szabó?",
+      "answer": "1987",
+      "explanation": "Az ajtó a apărut în 1987 în limba maghiară. Traducerile ulterioare au adus romanului o recunoaștere internațională mult mai largă."
+    },
+    {
+      "id": "literature-241",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Viața și opiniile lui Tristram Shandy”?",
+      "options": [
+        "Gabriel García Márquez",
+        "Ezra Pound",
+        "William H. Gass",
+        "Laurence Sterne"
+      ],
+      "answer": "Laurence Sterne",
+      "explanation": "Laurence Sterne construiește un anti-roman plin de digresiuni, întreruperi, pagini neobișnuite și comentarii despre imposibilitatea de a povesti viața în ordine simplă."
+    },
+    {
+      "id": "literature-242",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Middlemarch”?",
+      "options": [
+        "George Eliot",
+        "Carlos Fuentes",
+        "W. G. Sebald",
+        "Ralph Ellison"
+      ],
+      "answer": "George Eliot",
+      "explanation": "George Eliot urmărește mai multe destine într-un oraș provincial englez și analizează căsătoria, reforma politică, medicina, statutul femeii și limitele idealismului."
+    },
+    {
+      "id": "literature-243",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Casa umbrelor”?",
+      "options": [
+        "Thomas Pynchon",
+        "Charles Dickens",
+        "Doris Lessing",
+        "John Hawkes"
+      ],
+      "answer": "Charles Dickens",
+      "explanation": "Bleak House combină satira sistemului juridic cu numeroase fire sociale și două moduri de narațiune, dintre care unul aparține personajului Esther Summerson."
+    },
+    {
+      "id": "literature-244",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Omul invizibil”?",
+      "options": [
+        "T. S. Eliot",
+        "Ralph Ellison",
+        "George Eliot",
+        "Ezra Pound"
+      ],
+      "answer": "Ralph Ellison",
+      "explanation": "Invisible Man urmărește un narator afro-american fără nume care traversează medii politice și sociale diferite, confruntându-se cu modurile în care ceilalți refuză să-i recunoască individualitatea."
+    },
+    {
+      "id": "literature-245",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Țara pustie”?",
+      "options": [
+        "T. S. Eliot",
+        "Carlos Fuentes",
+        "José Donoso",
+        "Roberto Bolaño"
+      ],
+      "answer": "T. S. Eliot",
+      "explanation": "The Waste Land este un poem modernist construit din fragmente, aluzii literare și schimbări de voce. Eliot folosește surse din mitologie, religie și literaturi europene."
+    },
+    {
+      "id": "literature-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Cantos”?",
+      "options": [
+        "Salman Rushdie",
+        "Ezra Pound",
+        "John Barth",
+        "Roberto Bolaño"
+      ],
+      "answer": "Ezra Pound",
+      "explanation": "The Cantos este proiectul poetic de lungă durată al lui Ezra Pound, alcătuit din fragmente istorice, economice, mitologice și lingvistice dispuse într-o structură dificilă."
+    },
+    {
+      "id": "literature-247",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Petersburg”?",
+      "options": [
+        "Ezra Pound",
+        "W. G. Sebald",
+        "Andrei Belîi",
+        "Ralph Ellison"
+      ],
+      "answer": "Andrei Belîi",
+      "explanation": "Romanul lui Andrei Belîi transformă Sankt Petersburgul revoluționar într-un spațiu simbolic și instabil, folosind ritm, repetiție și imagini apropiate de simbolism."
+    },
+    {
+      "id": "literature-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Gravity's Rainbow”?",
+      "options": [
+        "W. G. Sebald",
+        "T. S. Eliot",
+        "Thomas Pynchon",
+        "Samuel Beckett"
+      ],
+      "answer": "Thomas Pynchon",
+      "explanation": "Pynchon leagă tehnologia rachetelor V-2, paranoia, războiul și cultura populară într-o structură vastă, fragmentată și intenționat dificil de stabilizat interpretativ."
+    },
+    {
+      "id": "literature-249",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Strigarea lotului 49”?",
+      "options": [
+        "John Barth",
+        "Doris Lessing",
+        "Thomas Pynchon",
+        "Laurence Sterne"
+      ],
+      "answer": "Thomas Pynchon",
+      "explanation": "The Crying of Lot 49 o urmărește pe Oedipa Maas în căutarea unei posibile rețele poștale secrete, fără a confirma definitiv dacă misterul este real sau proiectat."
+    },
+    {
+      "id": "literature-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „JR”?",
+      "options": [
+        "George Eliot",
+        "T. S. Eliot",
+        "William Gaddis",
+        "Doris Lessing"
+      ],
+      "answer": "William Gaddis",
+      "explanation": "JR prezintă capitalismul american prin dialoguri aproape continue și prin ascensiunea absurdă a unui elev care construiește de la distanță un imperiu financiar."
+    },
+    {
+      "id": "literature-251",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Negustorul de tutun”?",
+      "options": [
+        "Carlos Fuentes",
+        "George Eliot",
+        "Ezra Pound",
+        "John Barth"
+      ],
+      "answer": "John Barth",
+      "explanation": "The Sot-Weed Factor parodiază romanul istoric și picaresc prin aventurile poetului Ebenezer Cooke în Marylandul colonial, combinând documente, pastişă și exagerare."
+    },
+    {
+      "id": "literature-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „The Lime Twig”?",
+      "options": [
+        "Andrei Belîi",
+        "Ezra Pound",
+        "Doris Lessing",
+        "John Hawkes"
+      ],
+      "answer": "John Hawkes",
+      "explanation": "Romanul lui John Hawkes construiește o lume violentă și onirică în jurul unei curse de cai, privilegiind atmosfera, imaginile și discontinuitatea în locul realismului convențional."
+    },
+    {
+      "id": "literature-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Caietul de aur”?",
+      "options": [
+        "T. S. Eliot",
+        "George Eliot",
+        "Samuel Beckett",
+        "Doris Lessing"
+      ],
+      "answer": "Doris Lessing",
+      "explanation": "The Golden Notebook organizează experiența Annei Wulf în mai multe caiete tematice, explorând politica, identitatea, creația și fragmentarea psihologică."
+    },
+    {
+      "id": "literature-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Detectivii sălbatici”?",
+      "options": [
+        "George Eliot",
+        "Roberto Bolaño",
+        "T. S. Eliot",
+        "Gabriel García Márquez"
+      ],
+      "answer": "Roberto Bolaño",
+      "explanation": "Bolaño reconstruiește traseele unor poeți avangardiști prin zeci de mărturii și voci, transformând căutarea literară într-o poveste despre memorie și dispariție."
+    },
+    {
+      "id": "literature-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Pasărea obscenă a nopții”?",
+      "options": [
+        "Andrei Belîi",
+        "José Donoso",
+        "George Eliot",
+        "Ralph Ellison"
+      ],
+      "answer": "José Donoso",
+      "explanation": "José Donoso combină deformarea corporală, identitățile instabile și spațiile închise într-un roman complex asociat boom-ului latino-american și post-boomului."
+    },
+    {
+      "id": "literature-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Moartea lui Artemio Cruz”?",
+      "options": [
+        "Carlos Fuentes",
+        "Ezra Pound",
+        "William H. Gass",
+        "John Hawkes"
+      ],
+      "answer": "Carlos Fuentes",
+      "explanation": "Fuentes reconstruiește viața unui fost revoluționar devenit om de afaceri prin schimbări de persoană narativă și fragmente temporale necronologice."
+    },
+    {
+      "id": "literature-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Toamna patriarhului”?",
+      "options": [
+        "Carlos Fuentes",
+        "Samuel Beckett",
+        "T. S. Eliot",
+        "Gabriel García Márquez"
+      ],
+      "answer": "Gabriel García Márquez",
+      "explanation": "García Márquez construiește portretul unui dictator latino-american arhetipal prin fraze extrem de lungi, repetiții și o cronologie circulară."
+    },
+    {
+      "id": "literature-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Versetele satanice”?",
+      "options": [
+        "José Donoso",
+        "Charles Dickens",
+        "Salman Rushdie",
+        "W. G. Sebald"
+      ],
+      "answer": "Salman Rushdie",
+      "explanation": "Rushdie combină migrația, identitatea, visul și transformarea fantastică într-un roman care folosește realism magic, satiră și numeroase referințe religioase și literare."
+    },
+    {
+      "id": "literature-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Cartea râsului și a uitării”?",
+      "options": [
+        "Salman Rushdie",
+        "Milan Kundera",
+        "Thomas Pynchon",
+        "Ralph Ellison"
+      ],
+      "answer": "Milan Kundera",
+      "explanation": "Kundera leagă mai multe narațiuni despre memorie, erotism și putere, folosind eseul și ficțiunea pentru a analiza mecanismele uitării politice."
+    },
+    {
+      "id": "literature-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Nemângâiatul”?",
+      "options": [
+        "Ezra Pound",
+        "T. S. Eliot",
+        "Kazuo Ishiguro",
+        "Thomas Pynchon"
+      ],
+      "answer": "Kazuo Ishiguro",
+      "explanation": "The Unconsoled urmărește un pianist într-un oraș european nenumit, unde timpul și spațiul funcționează după logica instabilă a unui vis."
+    },
+    {
+      "id": "literature-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Austerlitz”?",
+      "options": [
+        "Gabriel García Márquez",
+        "Charles Dickens",
+        "W. G. Sebald",
+        "Thomas Pynchon"
+      ],
+      "answer": "W. G. Sebald",
+      "explanation": "Sebald urmărește recuperarea lentă a trecutului lui Jacques Austerlitz, combinând fotografie, memorie, arhitectură și istoria copiilor refugiați din Europa nazistă."
+    },
+    {
+      "id": "literature-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „2666”?",
+      "options": [
+        "George Eliot",
+        "Doris Lessing",
+        "Roberto Bolaño",
+        "John Barth"
+      ],
+      "answer": "Roberto Bolaño",
+      "explanation": "2666 este alcătuit din cinci părți conectate prin orașul fictiv Santa Teresa, violență, literatură și căutarea enigmaticului scriitor Benno von Archimboldi."
+    },
+    {
+      "id": "literature-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Molloy”?",
+      "options": [
+        "Samuel Beckett",
+        "Andrei Belîi",
+        "Ezra Pound",
+        "John Barth"
+      ],
+      "answer": "Samuel Beckett",
+      "explanation": "Molloy este prima parte a trilogiei postbelice a lui Beckett și destabilizează identitatea, scopul călătoriei și autoritatea naratorului printr-o proză deliberat nesigură."
+    },
+    {
+      "id": "literature-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris „Tunelul”?",
+      "options": [
+        "William Gaddis",
+        "Carlos Fuentes",
+        "William H. Gass",
+        "Ralph Ellison"
+      ],
+      "answer": "William H. Gass",
+      "explanation": "The Tunnel îl prezintă pe istoricul William Kohler, care abandonează prefața lucrării sale academice pentru un vast monolog despre memorie, resentiment și autojustificare."
+    },
+    {
+      "id": "literature-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Tristram Shandy?",
+      "options": [
+        "Austerlitz",
+        "Viața și opiniile lui Tristram Shandy",
+        "2666",
+        "Gravity's Rainbow"
+      ],
+      "answer": "Viața și opiniile lui Tristram Shandy",
+      "explanation": "Tristram încearcă să-și povestească viața, dar digresiunile sunt atât de numeroase încât narațiunea avansează mult mai încet decât timpul pe care încearcă să-l descrie."
+    },
+    {
+      "id": "literature-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Dorothea Brooke?",
+      "options": [
+        "Gravity's Rainbow",
+        "Casa umbrelor",
+        "Middlemarch",
+        "Austerlitz"
+      ],
+      "answer": "Middlemarch",
+      "explanation": "Dorothea este o tânără idealistă care caută o viață intelectuală și morală semnificativă. Căsătoria ei cu Casaubon îi arată limitele proiectelor construite pe idealizare."
+    },
+    {
+      "id": "literature-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Esther Summerson?",
+      "options": [
+        "Strigarea lotului 49",
+        "Caietul de aur",
+        "Casa umbrelor",
+        "Austerlitz"
+      ],
+      "answer": "Casa umbrelor",
+      "explanation": "Esther este una dintre cele două voci narative principale din Bleak House. Perspectiva ei la persoana întâi alternează cu un narator la persoana a treia."
+    },
+    {
+      "id": "literature-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Oedipa Maas?",
+      "options": [
+        "Gravity's Rainbow",
+        "Strigarea lotului 49",
+        "Caietul de aur",
+        "Casa umbrelor"
+      ],
+      "answer": "Strigarea lotului 49",
+      "explanation": "Oedipa este desemnată executor testamentar și descoperă indicii despre o posibilă rețea poștală clandestină, devenind tot mai nesigură asupra sensului dovezilor."
+    },
+    {
+      "id": "literature-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Tyrone Slothrop?",
+      "options": [
+        "Austerlitz",
+        "2666",
+        "Middlemarch",
+        "Gravity's Rainbow"
+      ],
+      "answer": "Gravity's Rainbow",
+      "explanation": "Slothrop este un militar american ale cărui experiențe și condiționări misterioase devin legate de traiectoriile rachetelor V-2 și de o conspirație imposibil de delimitat."
+    },
+    {
+      "id": "literature-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Anna Wulf?",
+      "options": [
+        "Caietul de aur",
+        "Casa umbrelor",
+        "Viața și opiniile lui Tristram Shandy",
+        "2666"
+      ],
+      "answer": "Caietul de aur",
+      "explanation": "Anna Wulf își împarte experiențele în caiete de culori diferite, încercând să gestioneze separarea dintre viața politică, personală și creația literară."
+    },
+    {
+      "id": "literature-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Jacques Austerlitz?",
+      "options": [
+        "Caietul de aur",
+        "Gravity's Rainbow",
+        "2666",
+        "Austerlitz"
+      ],
+      "answer": "Austerlitz",
+      "explanation": "Jacques Austerlitz își recuperează treptat originile și copilăria pierdută, după ce fusese trimis în Marea Britanie printr-un transport de copii refugiați."
+    },
+    {
+      "id": "literature-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce operă apare personajul Benno von Archimboldi?",
+      "options": [
+        "Middlemarch",
+        "2666",
+        "Strigarea lotului 49",
+        "Caietul de aur"
+      ],
+      "answer": "2666",
+      "explanation": "Archimboldi este scriitorul german misterios căutat de criticii literari din prima parte a romanului, iar identitatea lui se clarifică abia mult mai târziu."
+    },
+    {
+      "id": "literature-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „anagnorisis”?",
+      "options": [
+        "momentul de recunoaștere sau descoperire decisivă prin care un personaj înțelege un adevăr esențial",
+        "schimbarea bruscă a decorului",
+        "repetarea unei formule metrice",
+        "introducerea unui narator omniscient"
+      ],
+      "answer": "momentul de recunoaștere sau descoperire decisivă prin care un personaj înțelege un adevăr esențial",
+      "explanation": "Aristotel discută anagnorisis în Poetica, mai ales în legătură cu tragedia, unde recunoașterea poate transforma radical înțelegerea situației și a identității."
+    },
+    {
+      "id": "literature-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „peripeție”?",
+      "options": [
+        "răsturnarea bruscă a situației sau a direcției acțiunii într-o intrigă",
+        "descrierea detaliată a unui obiect",
+        "numele dat introducerii personajelor",
+        "repetarea unui sunet"
+      ],
+      "answer": "răsturnarea bruscă a situației sau a direcției acțiunii într-o intrigă",
+      "explanation": "Peripeția este un concept aristotelic important pentru tragedie. O schimbare neașteptată poate transforma succesul în dezastru sau invers."
+    },
+    {
+      "id": "literature-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „hamartia”?",
+      "options": [
+        "eroare de judecată sau greșeală decisivă asociată căderii unui personaj tragic",
+        "defect fizic obligatoriu al eroului",
+        "moment comic între două acte",
+        "descriere a peisajului"
+      ],
+      "answer": "eroare de judecată sau greșeală decisivă asociată căderii unui personaj tragic",
+      "explanation": "Hamartia nu înseamnă pur și simplu «defect moral fatal». În tradiția aristotelică poate desemna o eroare sau o decizie care contribuie la catastrofă."
+    },
+    {
+      "id": "literature-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „diegeză”?",
+      "options": [
+        "lumea narativă în care există personajele și evenimentele povestite",
+        "schema metrică a poeziei",
+        "biografia reală a autorului",
+        "lista edițiilor unei cărți"
+      ],
+      "answer": "lumea narativă în care există personajele și evenimentele povestite",
+      "explanation": "În naratologie, diegeza este universul poveștii. Un sunet auzit de personaje într-un film sau o poveste este, de exemplu, diegetic."
+    },
+    {
+      "id": "literature-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „focalizare”?",
+      "options": [
+        "modul în care informația narativă este filtrată printr-o anumită perspectivă perceptivă sau cognitivă",
+        "numărul total de capitole",
+        "ordinea alfabetică a personajelor",
+        "alegerea fontului ediției"
+      ],
+      "answer": "modul în care informația narativă este filtrată printr-o anumită perspectivă perceptivă sau cognitivă",
+      "explanation": "Gérard Genette a sistematizat termenul pentru a separa întrebarea «cine vede sau percepe?» de întrebarea «cine vorbește?» în narațiune."
+    },
+    {
+      "id": "literature-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „metalepsă”?",
+      "options": [
+        "trecerea transgresivă între niveluri narative care în mod normal ar trebui să rămână separate",
+        "descrierea unui obiect prin alt obiect",
+        "folosirea unei strofe fixe",
+        "repetarea unei consoane"
+      ],
+      "answer": "trecerea transgresivă între niveluri narative care în mod normal ar trebui să rămână separate",
+      "explanation": "Metalepsa narativă apare când autorul, naratorul, personajul sau cititorul pare să traverseze granița dintre niveluri diferite ale ficțiunii."
+    },
+    {
+      "id": "literature-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „sinecdocă”?",
+      "options": [
+        "figură prin care partea poate reprezenta întregul sau întregul poate reprezenta partea",
+        "compararea explicită prin «ca»",
+        "contradicție între doi termeni",
+        "repetarea începutului de vers"
+      ],
+      "answer": "figură prin care partea poate reprezenta întregul sau întregul poate reprezenta partea",
+      "explanation": "Sinecdoca este apropiată de metonimie, dar se bazează în mod tradițional pe o relație de incluziune între parte și întreg."
+    },
+    {
+      "id": "literature-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul literar „aporie”?",
+      "options": [
+        "impas intelectual sau dificultate aparent insolubilă în argumentare ori interpretare",
+        "concluzie perfect sigură",
+        "rimă împerecheată",
+        "descriere pastorală"
+      ],
+      "answer": "impas intelectual sau dificultate aparent insolubilă în argumentare ori interpretare",
+      "explanation": "Termenul provine din greacă și desemnează o stare de nedumerire sau blocaj conceptual. Critica modernă îl folosește pentru contradicții greu de rezolvat în texte."
+    },
+    {
+      "id": "literature-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce structură face „Tristram Shandy” radical neconvențional pentru secolul al XVIII-lea?",
+      "options": [
+        "Digresiuni, întreruperi și jocuri tipografice care amână continuu povestea",
+        "Respectarea strictă a cronologiei biografice",
+        "Narațiunea exclusiv în versuri",
+        "Absența completă a unui narator"
+      ],
+      "answer": "Digresiuni, întreruperi și jocuri tipografice care amână continuu povestea",
+      "explanation": "Sterne transformă imposibilitatea de a povesti totul într-un principiu formal. Cartea include pagini negre, linii grafice și capitole deliberat deplasate."
+    },
+    {
+      "id": "literature-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce text critic antic este sursa clasică pentru termenii anagnorisis și peripeție?",
+      "options": [
+        "Poetica lui Aristotel",
+        "Republica lui Platon",
+        "Arta poetică a lui Horațiu",
+        "Despre sublim"
+      ],
+      "answer": "Poetica lui Aristotel",
+      "explanation": "Aristotel analizează tragedia greacă prin concepte precum intrigă, recunoaștere și răsturnare, folosind adesea Oedip rege drept exemplu de construcție eficientă."
+    },
+    {
+      "id": "literature-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce mișcare poetică de început de secol XX este asociat Ezra Pound?",
+      "options": [
+        "Imagismul",
+        "Naturalismul",
+        "Parnasianismul românesc",
+        "Dadaismul exclusiv"
+      ],
+      "answer": "Imagismul",
+      "explanation": "Pound a promovat imagismul, care cerea precizie a imaginii, economie verbală și libertate ritmică, înainte de dezvoltarea proiectului mult mai amplu al Cantos."
+    },
+    {
+      "id": "literature-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce procedeu structural definește în mare măsură „Caietul de aur”?",
+      "options": [
+        "Separarea experienței protagonistei în caiete tematice diferite",
+        "Povestirea unei singure zile fără întrerupere",
+        "Doar scrisori între două personaje",
+        "O cronologie medievală strictă"
+      ],
+      "answer": "Separarea experienței protagonistei în caiete tematice diferite",
+      "explanation": "Doris Lessing folosește caietele pentru a reprezenta compartimentarea identității Annei Wulf, iar «caietul de aur» încearcă o integrare dificilă a acestor fragmente."
+    },
+    {
+      "id": "literature-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce relație există între „2666” și orașul fictiv Santa Teresa?",
+      "options": [
+        "Mai multe părți ale romanului converg asupra orașului și asupra violenței sale",
+        "Orașul apare doar într-o notă de subsol",
+        "Este capitala unei țări imaginare utopice",
+        "Nu are legătură cu intriga"
+      ],
+      "answer": "Mai multe părți ale romanului converg asupra orașului și asupra violenței sale",
+      "explanation": "Santa Teresa este inspirat parțial de Ciudad Juárez și devine centrul geografic al investigațiilor despre crime, literatură și putere."
+    },
+    {
+      "id": "literature-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce particularitate are naratorul din „Omul invizibil” de Ralph Ellison?",
+      "options": [
+        "Nu îi este oferit un nume propriu cititorului",
+        "Este un narator omniscient exterior",
+        "Este un copil de șapte ani",
+        "Este autorul real declarat în text"
+      ],
+      "answer": "Nu îi este oferit un nume propriu cititorului",
+      "explanation": "Anonimatul naratorului întărește tema «invizibilității» sociale: ceilalți îl definesc prin ideologii și stereotipuri în loc să-i recunoască individualitatea."
+    },
+    {
+      "id": "literature-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen de text este în primul rând „Țara pustie” de T. S. Eliot?",
+      "options": [
+        "Poem modernist de mari dimensiuni",
+        "Roman realist",
+        "Piesă de teatru clasică",
+        "Autobiografie"
+      ],
+      "answer": "Poem modernist de mari dimensiuni",
+      "explanation": "The Waste Land este un poem în cinci secțiuni care folosește colajul de voci, citate și limbi diferite pentru a crea o lume culturală fragmentată."
+    },
+    {
+      "id": "literature-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce autor a creat mai mulți heteronimi literari, printre care Alberto Caeiro, Ricardo Reis și Álvaro de Campos?",
+      "options": [
+        "Fernando Pessoa",
+        "Jorge Luis Borges",
+        "Italo Calvino",
+        "Samuel Beckett"
+      ],
+      "answer": "Fernando Pessoa",
+      "explanation": "Heteronimii lui Pessoa nu sunt simple pseudonime: au biografii, stiluri și poziții estetice distincte, formând aproape o literatură internă cu mai mulți autori."
+    },
+    {
+      "id": "literature-289",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an au apărut primele două volume din „Tristram Shandy”?",
+      "answer": "1759",
+      "explanation": "Primele volume din Tristram Shandy au apărut la sfârșitul anului 1759. Sterne a continuat publicarea în mai multe volume până în anii 1760."
+    },
+    {
+      "id": "literature-290",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Bleak House” în volum după încheierea serializării?",
+      "answer": "1853",
+      "explanation": "Bleak House a fost serializat în 1852-1853 și publicat în volum în 1853. Dickens a folosit romanul pentru a satiriza sistemul juridic al Curții de Chancery."
+    },
+    {
+      "id": "literature-291",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Invisible Man” de Ralph Ellison?",
+      "answer": "1952",
+      "explanation": "Invisible Man a apărut în 1952 și a câștigat National Book Award. Romanul a devenit o operă centrală a literaturii americane din secolul XX."
+    },
+    {
+      "id": "literature-292",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat pentru prima dată „The Waste Land” în volum?",
+      "answer": "1922",
+      "explanation": "The Waste Land a apărut în 1922, după publicări în reviste. Ezra Pound a avut un rol important în editarea manuscrisului lui Eliot."
+    },
+    {
+      "id": "literature-293",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Gravity's Rainbow”?",
+      "answer": "1973",
+      "explanation": "Gravity's Rainbow a apărut în 1973 și a devenit una dintre operele emblematice ale postmodernismului american prin amploare, parodie și structură fragmentată."
+    },
+    {
+      "id": "literature-294",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „The Crying of Lot 49”?",
+      "answer": "1966",
+      "explanation": "The Crying of Lot 49 a apărut în 1966 și comprimă multe teme pynchoniene, precum paranoia, sisteme de comunicare și imposibilitatea interpretării definitive."
+    },
+    {
+      "id": "literature-295",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat romanul „JR” de William Gaddis?",
+      "answer": "1975",
+      "explanation": "JR a fost publicat în 1975, la două decenii după The Recognitions. Romanul a câștigat National Book Award în Statele Unite."
+    },
+    {
+      "id": "literature-296",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „The Golden Notebook” de Doris Lessing?",
+      "answer": "1962",
+      "explanation": "The Golden Notebook a apărut în 1962 și a devenit important pentru discuțiile despre identitate feminină, politică și fragmentarea experienței moderne."
+    },
+    {
+      "id": "literature-297",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Detectivii sălbatici”?",
+      "answer": "1998",
+      "explanation": "Los detectives salvajes a apărut în 1998 și a obținut Premiul Rómulo Gallegos, contribuind decisiv la reputația internațională a lui Roberto Bolaño."
+    },
+    {
+      "id": "literature-298",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Toamna patriarhului”?",
+      "answer": "1975",
+      "explanation": "El otoño del patriarca a apărut în 1975. García Márquez folosește structuri circulare și fraze foarte lungi pentru a reprezenta izolarea puterii dictatoriale."
+    },
+    {
+      "id": "literature-299",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat „Versetele satanice”?",
+      "answer": "1988",
+      "explanation": "The Satanic Verses a apărut în 1988. Romanul a generat o controversă internațională majoră, dar este și o operă complexă despre migrație și identitate."
+    },
+    {
+      "id": "literature-300",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat romanul „Austerlitz” de W. G. Sebald?",
+      "answer": "2001",
+      "explanation": "Austerlitz a apărut în 2001, ultimul an al vieții lui Sebald. Romanul combină ficțiunea, fotografia și eseul istoric într-o meditație asupra memoriei."
+    }
+  ]
+}

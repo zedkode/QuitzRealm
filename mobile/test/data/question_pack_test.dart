@@ -99,7 +99,11 @@ void main() {
           jsonDecode(file.readAsStringSync()) as Map<String, Object?>,
         );
 
-        expect(pack.id, chapter.id);
+        // Identificatorul pachetului nu mai e cel al ținutului: ținuturile
+        // păstrează numele românești (cheia de progres), pachetele au trecut la
+        // codurile de categorie. Contează să existe și să fie numite, nu să
+        // coincidă.
+        expect(pack.id, isNotEmpty);
         expect(pack.name, isNotEmpty);
         expect(
           pack.questions.length,

@@ -1,3 +1,10 @@
+import {
+  ClientMatchMode,
+  MatchLobbyType,
+  MatchResolutionPolicy,
+  PersistedMatchMode,
+} from './match-profile';
+
 export type RealtimeQuestionType = 'MULTIPLE_CHOICE' | 'NUMERIC';
 
 export interface InternalQuestion {
@@ -33,7 +40,10 @@ export interface MatchPlayerState {
 
 export interface MatchState {
   id: string;
-  mode: 'DUO';
+  mode: PersistedMatchMode;
+  playerCountTarget: number;
+  lobbyType: MatchLobbyType;
+  resolutionPolicy: MatchResolutionPolicy;
   status: 'active' | 'paused' | 'finished' | 'persistence_failed';
   mapId: string;
   roundNumber: number;
@@ -49,6 +59,10 @@ export interface MatchState {
   resumeDeadlineAt?: string;
   question: InternalQuestion;
   /** Întrebările deja folosite, ca o partidă să nu repete aceeași întrebare. */
+  /// Categoriile din care se trag întrebările. Lista goală = toate.
+  /// Se fixează la crearea partidei și nu se mai schimbă: altfel runda 4 ar
+  /// putea veni din alt domeniu decât cel pe care l-au acceptat jucătorii.
+  categoryCodes: string[];
   usedQuestionIds: string[];
   players: MatchPlayerState[];
 }
@@ -60,7 +74,9 @@ export type MatchEndReason = 'rounds' | 'forfeit';
 /// niciodată răspunsul corect sau răspunsul adversarului la runda în curs.
 export interface MatchSnapshotPayload {
   matchId: string;
-  mode: 'duo';
+  mode: ClientMatchMode;
+  playerCountTarget: number;
+  lobbyType: MatchLobbyType;
   status: 'active' | 'paused';
   roundNumber: number;
   totalRounds: number;
@@ -77,7 +93,7 @@ export interface MatchSnapshotPayload {
 }
 
 export interface PersistMatchPayload {
-  mode: 'DUO';
+  mode: PersistedMatchMode;
   mapId: string;
   startedAt: string;
   endedAt: string;

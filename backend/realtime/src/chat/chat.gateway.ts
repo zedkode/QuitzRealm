@@ -8,8 +8,17 @@ import {
   WsException,
 } from '@nestjs/websockets';
 import { Namespace, Socket } from 'socket.io';
-import { ApiClientService, ChatRejectedError } from '../api-client/api-client.service';
-import { SendDirectMessageDto, SendGlobalMessageDto } from './dto/chat.dto';
+import {
+  ApiClientService,
+  ChatRejectedError,
+} from '../api-client/api-client.service';
+import {
+  MatchChatDto,
+  SendDirectMessageDto,
+  SendGlobalMessageDto,
+  SendMatchMessageDto,
+  SendMatchReactionDto,
+} from './dto/chat.dto';
 import { ChatService, GLOBAL_ROOM } from './chat.service';
 
 /// Chatul stă pe același namespace `/game` ca partidele, cu prefixe de
@@ -67,6 +76,49 @@ export class ChatGateway {
       .emit('chat:global:message', outcome.message);
   }
 
+  @SubscribeMessage('chat:match:join')
+  async joinMatch(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() dto: MatchChatDto,
+  ): Promise<void> {
+    const outcome = await this.chat.joinMatch(this.userId(client), dto.matchId);
+    if (!outcome.ok) {
+      this.rejectMatch(client, dto.matchId, outcome.reason);
+      return;
+    }
+    client.emit('chat:match:history', {
+      matchId: dto.matchId,
+      access: outcome.access,
+      messages: outcome.messages,
+    });
+  }
+
+  @SubscribeMessage('chat:match:send')
+  async sendMatch(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() dto: SendMatchMessageDto,
+  ): Promise<void> {
+    const outcome = await this.chat.sendMatchText(
+      this.userId(client),
+      dto.matchId,
+      dto.content,
+    );
+    this.deliverMatchOutcome(client, dto.matchId, outcome);
+  }
+
+  @SubscribeMessage('chat:match:react')
+  async reactInMatch(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() dto: SendMatchReactionDto,
+  ): Promise<void> {
+    const outcome = await this.chat.sendMatchReaction(
+      this.userId(client),
+      dto.matchId,
+      dto.reaction,
+    );
+    this.deliverMatchOutcome(client, dto.matchId, outcome);
+  }
+
   /// Mesaj într-o conversație persistentă. Verificările stau în API, nu aici:
   /// două locuri cu aceleași reguli ar diverge exact acolo unde contează.
   @SubscribeMessage('chat:send')
@@ -111,5 +163,24 @@ export class ChatGateway {
       throw new WsException('Sesiunea nu este autentificată.');
     }
     return userId;
+  }
+
+  private deliverMatchOutcome(
+    client: Socket,
+    matchId: string,
+    outcome: Awaited<ReturnType<ChatService['sendMatchText']>>,
+  ): void {
+    if (!outcome.ok) {
+      this.rejectMatch(client, matchId, outcome.reason);
+      return;
+    }
+    this.server
+      .to(`match:${matchId}`)
+      .except(outcome.excludedUserIds.map((id) => `user:${id}`))
+      .emit('chat:match:message', outcome.message);
+  }
+
+  private rejectMatch(client: Socket, matchId: string, reason: string): void {
+    client.emit('chat:rejected', { scope: 'match', matchId, reason });
   }
 }

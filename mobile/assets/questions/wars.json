@@ -1,0 +1,708 @@
+{
+  "id": "wars",
+  "name": "Wars",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "wars-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a început conflictul „Războaiele Medice”?",
+      "options": [
+        "218 î.Hr.",
+        "58 î.Hr.",
+        "66",
+        "499 î.Hr."
+      ],
+      "answer": "499 î.Hr.",
+      "explanation": "Pentru „Războaiele Medice”, răspunsul corect este „499 î.Hr.”."
+    },
+    {
+      "id": "wars-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războaiele Medice”?",
+      "options": [
+        "Iudeea",
+        "Franța",
+        "Grecia și Marea Egee",
+        "Galia"
+      ],
+      "answer": "Grecia și Marea Egee",
+      "explanation": "Pentru „Războaiele Medice”, răspunsul corect este „Grecia și Marea Egee”."
+    },
+    {
+      "id": "wars-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a început conflictul „Războiul Peloponesiac”?",
+      "options": [
+        "1455",
+        "431 î.Hr.",
+        "66",
+        "1337"
+      ],
+      "answer": "431 î.Hr.",
+      "explanation": "Pentru „Războiul Peloponesiac”, răspunsul corect este „431 î.Hr.”."
+    },
+    {
+      "id": "wars-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Peloponesiac”?",
+      "options": [
+        "Grecia",
+        "Franța",
+        "Anglia",
+        "Europa Centrală"
+      ],
+      "answer": "Grecia",
+      "explanation": "Pentru „Războiul Peloponesiac”, răspunsul corect este „Grecia”."
+    },
+    {
+      "id": "wars-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a început conflictul „Al Doilea Război Punic”?",
+      "options": [
+        "1455",
+        "1618",
+        "1642",
+        "218 î.Hr."
+      ],
+      "answer": "218 î.Hr.",
+      "explanation": "Pentru „Al Doilea Război Punic”, răspunsul corect este „218 î.Hr.”."
+    },
+    {
+      "id": "wars-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost principalul teatru geografic al conflictului „Al Doilea Război Punic”?",
+      "options": [
+        "Europa de Nord",
+        "Europa și colonii",
+        "Mediterana de Vest",
+        "Europa Centrală"
+      ],
+      "answer": "Mediterana de Vest",
+      "explanation": "Pentru „Al Doilea Război Punic”, răspunsul corect este „Mediterana de Vest”."
+    },
+    {
+      "id": "wars-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a început conflictul „Războiul Galic al lui Cezar”?",
+      "options": [
+        "1756",
+        "58 î.Hr.",
+        "1642",
+        "1700"
+      ],
+      "answer": "58 î.Hr.",
+      "explanation": "Pentru „Războiul Galic al lui Cezar”, răspunsul corect este „58 î.Hr.”."
+    },
+    {
+      "id": "wars-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Galic al lui Cezar”?",
+      "options": [
+        "Galia",
+        "Europa și colonii",
+        "America de Nord",
+        "Europa"
+      ],
+      "answer": "Galia",
+      "explanation": "Pentru „Războiul Galic al lui Cezar”, răspunsul corect este „Galia”."
+    },
+    {
+      "id": "wars-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a început conflictul „Primul Război Iudeo-Roman”?",
+      "options": [
+        "1756",
+        "1775",
+        "1803",
+        "66"
+      ],
+      "answer": "66",
+      "explanation": "Pentru „Primul Război Iudeo-Roman”, răspunsul corect este „66”."
+    },
+    {
+      "id": "wars-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost principalul teatru geografic al conflictului „Primul Război Iudeo-Roman”?",
+      "options": [
+        "Crimeea",
+        "Statele Unite",
+        "Iudeea",
+        "Europa"
+      ],
+      "answer": "Iudeea",
+      "explanation": "Pentru „Primul Război Iudeo-Roman”, răspunsul corect este „Iudeea”."
+    },
+    {
+      "id": "wars-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a început conflictul „Războiul de O Sută de Ani”?",
+      "options": [
+        "1861",
+        "1337",
+        "1803",
+        "1853"
+      ],
+      "answer": "1337",
+      "explanation": "Pentru „Războiul de O Sută de Ani”, răspunsul corect este „1337”."
+    },
+    {
+      "id": "wars-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul de O Sută de Ani”?",
+      "options": [
+        "Franța",
+        "Statele Unite",
+        "Franța și Germania",
+        "Manciuria și Marea Japoniei"
+      ],
+      "answer": "Franța",
+      "explanation": "Pentru „Războiul de O Sută de Ani”, răspunsul corect este „Franța”."
+    },
+    {
+      "id": "wars-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a început conflictul „Războaiele Rozelor”?",
+      "options": [
+        "1861",
+        "1870",
+        "1904",
+        "1455"
+      ],
+      "answer": "1455",
+      "explanation": "Pentru „Războaiele Rozelor”, răspunsul corect este „1455”."
+    },
+    {
+      "id": "wars-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războaiele Rozelor”?",
+      "options": [
+        "Spania",
+        "Global",
+        "Anglia",
+        "Manciuria și Marea Japoniei"
+      ],
+      "answer": "Anglia",
+      "explanation": "Pentru „Războaiele Rozelor”, răspunsul corect este „Anglia”."
+    },
+    {
+      "id": "wars-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a început conflictul „Războiul de Treizeci de Ani”?",
+      "options": [
+        "1936",
+        "1618",
+        "1904",
+        "1914"
+      ],
+      "answer": "1618",
+      "explanation": "Pentru „Războiul de Treizeci de Ani”, răspunsul corect este „1618”."
+    },
+    {
+      "id": "wars-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul de Treizeci de Ani”?",
+      "options": [
+        "Europa Centrală",
+        "Global",
+        "Peninsula Coreeană",
+        "Asia de Sud-Est"
+      ],
+      "answer": "Europa Centrală",
+      "explanation": "Pentru „Războiul de Treizeci de Ani”, răspunsul corect este „Europa Centrală”."
+    },
+    {
+      "id": "wars-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a început conflictul „Războiul Civil Englez”?",
+      "options": [
+        "1936",
+        "1939",
+        "1950",
+        "1642"
+      ],
+      "answer": "1642",
+      "explanation": "Pentru „Războiul Civil Englez”, răspunsul corect este „1642”."
+    },
+    {
+      "id": "wars-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Civil Englez”?",
+      "options": [
+        "Orientul Mijlociu",
+        "Golful Persic",
+        "Anglia",
+        "Asia de Sud-Est"
+      ],
+      "answer": "Anglia",
+      "explanation": "Pentru „Războiul Civil Englez”, răspunsul corect este „Anglia”."
+    },
+    {
+      "id": "wars-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a început conflictul „Marele Război al Nordului”?",
+      "options": [
+        "1967",
+        "1700",
+        "1950",
+        "1955"
+      ],
+      "answer": "1700",
+      "explanation": "Pentru „Marele Război al Nordului”, răspunsul corect este „1700”."
+    },
+    {
+      "id": "wars-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost principalul teatru geografic al conflictului „Marele Război al Nordului”?",
+      "options": [
+        "Europa de Nord",
+        "Golful Persic",
+        "Balcani",
+        "Grecia și Marea Egee"
+      ],
+      "answer": "Europa de Nord",
+      "explanation": "Pentru „Marele Război al Nordului”, răspunsul corect este „Europa de Nord”."
+    },
+    {
+      "id": "wars-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a început conflictul „Războiul de Șapte Ani”?",
+      "options": [
+        "1967",
+        "1990",
+        "1998",
+        "1756"
+      ],
+      "answer": "1756",
+      "explanation": "Pentru „Războiul de Șapte Ani”, răspunsul corect este „1756”."
+    },
+    {
+      "id": "wars-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul de Șapte Ani”?",
+      "options": [
+        "Grecia",
+        "Mediterana de Vest",
+        "Europa și colonii",
+        "Grecia și Marea Egee"
+      ],
+      "answer": "Europa și colonii",
+      "explanation": "Pentru „Războiul de Șapte Ani”, răspunsul corect este „Europa și colonii”."
+    },
+    {
+      "id": "wars-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a început conflictul „Războiul de Independență al SUA”?",
+      "options": [
+        "431 î.Hr.",
+        "1775",
+        "1998",
+        "499 î.Hr."
+      ],
+      "answer": "1775",
+      "explanation": "Pentru „Războiul de Independență al SUA”, răspunsul corect este „1775”."
+    },
+    {
+      "id": "wars-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul de Independență al SUA”?",
+      "options": [
+        "America de Nord",
+        "Mediterana de Vest",
+        "Galia",
+        "Iudeea"
+      ],
+      "answer": "America de Nord",
+      "explanation": "Pentru „Războiul de Independență al SUA”, răspunsul corect este „America de Nord”."
+    },
+    {
+      "id": "wars-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a început conflictul „Războaiele Napoleoniene”?",
+      "options": [
+        "431 î.Hr.",
+        "218 î.Hr.",
+        "58 î.Hr.",
+        "1803"
+      ],
+      "answer": "1803",
+      "explanation": "Pentru „Războaiele Napoleoniene”, răspunsul corect este „1803”."
+    },
+    {
+      "id": "wars-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războaiele Napoleoniene”?",
+      "options": [
+        "Franța",
+        "Anglia",
+        "Europa",
+        "Iudeea"
+      ],
+      "answer": "Europa",
+      "explanation": "Pentru „Războaiele Napoleoniene”, răspunsul corect este „Europa”."
+    },
+    {
+      "id": "wars-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a început conflictul „Războiul Crimeii”?",
+      "options": [
+        "1337",
+        "1853",
+        "58 î.Hr.",
+        "66"
+      ],
+      "answer": "1853",
+      "explanation": "Pentru „Războiul Crimeii”, răspunsul corect este „1853”."
+    },
+    {
+      "id": "wars-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Crimeii”?",
+      "options": [
+        "Crimeea",
+        "Anglia",
+        "Europa Centrală",
+        "Europa de Nord"
+      ],
+      "answer": "Crimeea",
+      "explanation": "Pentru „Războiul Crimeii”, răspunsul corect este „Crimeea”."
+    },
+    {
+      "id": "wars-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a început conflictul „Războiul Civil American”?",
+      "options": [
+        "1337",
+        "1455",
+        "1618",
+        "1861"
+      ],
+      "answer": "1861",
+      "explanation": "Pentru „Războiul Civil American”, răspunsul corect este „1861”."
+    },
+    {
+      "id": "wars-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Civil American”?",
+      "options": [
+        "Europa și colonii",
+        "America de Nord",
+        "Statele Unite",
+        "Europa de Nord"
+      ],
+      "answer": "Statele Unite",
+      "explanation": "Pentru „Războiul Civil American”, răspunsul corect este „Statele Unite”."
+    },
+    {
+      "id": "wars-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a început conflictul „Războiul Franco-Prusac”?",
+      "options": [
+        "1700",
+        "1870",
+        "1618",
+        "1642"
+      ],
+      "answer": "1870",
+      "explanation": "Pentru „Războiul Franco-Prusac”, răspunsul corect este „1870”."
+    },
+    {
+      "id": "wars-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Franco-Prusac”?",
+      "options": [
+        "Franța și Germania",
+        "America de Nord",
+        "Europa",
+        "Crimeea"
+      ],
+      "answer": "Franța și Germania",
+      "explanation": "Pentru „Războiul Franco-Prusac”, răspunsul corect este „Franța și Germania”."
+    },
+    {
+      "id": "wars-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a început conflictul „Războiul Ruso-Japonez”?",
+      "options": [
+        "1700",
+        "1756",
+        "1775",
+        "1904"
+      ],
+      "answer": "1904",
+      "explanation": "Pentru „Războiul Ruso-Japonez”, răspunsul corect este „1904”."
+    },
+    {
+      "id": "wars-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Ruso-Japonez”?",
+      "options": [
+        "Statele Unite",
+        "Franța și Germania",
+        "Manciuria și Marea Japoniei",
+        "Crimeea"
+      ],
+      "answer": "Manciuria și Marea Japoniei",
+      "explanation": "Pentru „Războiul Ruso-Japonez”, răspunsul corect este „Manciuria și Marea Japoniei”."
+    },
+    {
+      "id": "wars-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a început conflictul „Primul Război Mondial”?",
+      "options": [
+        "1853",
+        "1914",
+        "1775",
+        "1803"
+      ],
+      "answer": "1914",
+      "explanation": "Pentru „Primul Război Mondial”, răspunsul corect este „1914”."
+    },
+    {
+      "id": "wars-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost principalul teatru geografic al conflictului „Primul Război Mondial”?",
+      "options": [
+        "Europa",
+        "Manciuria și Marea Japoniei",
+        "Spania",
+        "Global"
+      ],
+      "answer": "Europa",
+      "explanation": "Pentru „Primul Război Mondial”, răspunsul corect este „Europa”."
+    },
+    {
+      "id": "wars-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a început conflictul „Războiul Civil Spaniol”?",
+      "options": [
+        "1853",
+        "1861",
+        "1870",
+        "1936"
+      ],
+      "answer": "1936",
+      "explanation": "Pentru „Războiul Civil Spaniol”, răspunsul corect este „1936”."
+    },
+    {
+      "id": "wars-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul Civil Spaniol”?",
+      "options": [
+        "Peninsula Coreeană",
+        "Asia de Sud-Est",
+        "Spania",
+        "Global"
+      ],
+      "answer": "Spania",
+      "explanation": "Pentru „Războiul Civil Spaniol”, răspunsul corect este „Spania”."
+    },
+    {
+      "id": "wars-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a început conflictul „Al Doilea Război Mondial”?",
+      "options": [
+        "1914",
+        "1939",
+        "1870",
+        "1904"
+      ],
+      "answer": "1939",
+      "explanation": "Pentru „Al Doilea Război Mondial”, răspunsul corect este „1939”."
+    },
+    {
+      "id": "wars-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost principalul teatru geografic al conflictului „Al Doilea Război Mondial”?",
+      "options": [
+        "Global",
+        "Asia de Sud-Est",
+        "Orientul Mijlociu",
+        "Golful Persic"
+      ],
+      "answer": "Global",
+      "explanation": "Pentru „Al Doilea Război Mondial”, răspunsul corect este „Global”."
+    },
+    {
+      "id": "wars-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a început conflictul „Războiul din Coreea”?",
+      "options": [
+        "1914",
+        "1936",
+        "1939",
+        "1950"
+      ],
+      "answer": "1950",
+      "explanation": "Pentru „Războiul din Coreea”, răspunsul corect este „1950”."
+    },
+    {
+      "id": "wars-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul din Coreea”?",
+      "options": [
+        "Balcani",
+        "Grecia și Marea Egee",
+        "Peninsula Coreeană",
+        "Golful Persic"
+      ],
+      "answer": "Peninsula Coreeană",
+      "explanation": "Pentru „Războiul din Coreea”, răspunsul corect este „Peninsula Coreeană”."
+    },
+    {
+      "id": "wars-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a început conflictul „Războiul din Vietnam”?",
+      "options": [
+        "1967",
+        "1955",
+        "1939",
+        "1950"
+      ],
+      "answer": "1955",
+      "explanation": "Pentru „Războiul din Vietnam”, răspunsul corect este „1955”."
+    },
+    {
+      "id": "wars-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul din Vietnam”?",
+      "options": [
+        "Asia de Sud-Est",
+        "Grecia și Marea Egee",
+        "Grecia",
+        "Mediterana de Vest"
+      ],
+      "answer": "Asia de Sud-Est",
+      "explanation": "Pentru „Războiul din Vietnam”, răspunsul corect este „Asia de Sud-Est”."
+    },
+    {
+      "id": "wars-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a început conflictul „Războiul de Șase Zile”?",
+      "options": [
+        "1955",
+        "1990",
+        "1998",
+        "1967"
+      ],
+      "answer": "1967",
+      "explanation": "Pentru „Războiul de Șase Zile”, răspunsul corect este „1967”."
+    },
+    {
+      "id": "wars-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul de Șase Zile”?",
+      "options": [
+        "Galia",
+        "Iudeea",
+        "Orientul Mijlociu",
+        "Mediterana de Vest"
+      ],
+      "answer": "Orientul Mijlociu",
+      "explanation": "Pentru „Războiul de Șase Zile”, răspunsul corect este „Orientul Mijlociu”."
+    },
+    {
+      "id": "wars-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a început conflictul „Războiul din Golf”?",
+      "options": [
+        "431 î.Hr.",
+        "1990",
+        "1998",
+        "499 î.Hr."
+      ],
+      "answer": "1990",
+      "explanation": "Pentru „Războiul din Golf”, răspunsul corect este „1990”."
+    },
+    {
+      "id": "wars-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul din Golf”?",
+      "options": [
+        "Golful Persic",
+        "Iudeea",
+        "Franța",
+        "Anglia"
+      ],
+      "answer": "Golful Persic",
+      "explanation": "Pentru „Războiul din Golf”, răspunsul corect este „Golful Persic”."
+    },
+    {
+      "id": "wars-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a început conflictul „Războiul din Kosovo”?",
+      "options": [
+        "431 î.Hr.",
+        "218 î.Hr.",
+        "58 î.Hr.",
+        "1998"
+      ],
+      "answer": "1998",
+      "explanation": "Pentru „Războiul din Kosovo”, răspunsul corect este „1998”."
+    },
+    {
+      "id": "wars-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care a fost principalul teatru geografic al conflictului „Războiul din Kosovo”?",
+      "options": [
+        "Europa Centrală",
+        "Europa de Nord",
+        "Balcani",
+        "Anglia"
+      ],
+      "answer": "Balcani",
+      "explanation": "Pentru „Războiul din Kosovo”, răspunsul corect este „Balcani”."
+    }
+  ]
+}

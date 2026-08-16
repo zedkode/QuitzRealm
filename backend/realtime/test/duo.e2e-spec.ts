@@ -82,6 +82,7 @@ describe('Duo realtime flow (e2e)', () => {
     getRandomQuestion: jest.fn(),
     persistMatch: jest.fn(),
     getCapabilities: jest.fn(),
+    getGlobalChatContext: jest.fn(),
   };
 
   function resetApiMocks(): void {
@@ -97,6 +98,14 @@ describe('Duo realtime flow (e2e)', () => {
     // Implicit, conturile din teste au emailul confirmat; testul de refuz
     // își schimbă singur valoarea.
     api.getCapabilities.mockResolvedValue(verifiedCapabilities());
+    api.getGlobalChatContext.mockResolvedValue({
+      displayName: 'Cavaler de test',
+      globalChat: 'ownMatches',
+      canPostLinksInGlobal: false,
+      tier: 1,
+      mutedUntil: null,
+      blockedUserIds: [],
+    });
   }
 
   beforeAll(async () => {
@@ -300,6 +309,42 @@ describe('Duo realtime flow (e2e)', () => {
     expect(state.status).toBe('finished');
     expect(state.roundNumber).toBe(totalRounds);
     expect(state.usedQuestionIds).toHaveLength(totalRounds);
+  });
+
+  it('izolează chatul efemer în camera partidei și livrează reacții', async () => {
+    const { matchId } = await connectPair();
+    const firstHistory = waitForEvent<{
+      matchId: string;
+      access: string;
+      messages: unknown[];
+    }>(firstClient, 'chat:match:history');
+    firstClient.emit('chat:match:join', { matchId });
+
+    await expect(firstHistory).resolves.toEqual({
+      matchId,
+      access: 'text',
+      messages: [],
+    });
+
+    const received = waitForEvent<{
+      matchId: string;
+      senderId: string;
+      kind: string;
+      content: string;
+    }>(secondClient, 'chat:match:message');
+    firstClient.emit('chat:match:react', {
+      matchId,
+      reaction: 'good_luck',
+    });
+
+    await expect(received).resolves.toEqual(
+      expect.objectContaining({
+        matchId,
+        senderId: firstUserId,
+        kind: 'reaction',
+        content: 'good_luck',
+      }),
+    );
   });
 
   /// §1.3: ranked-ul cere email confirmat. Poarta stă în server, nu în

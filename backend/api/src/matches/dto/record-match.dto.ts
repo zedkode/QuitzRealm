@@ -53,7 +53,7 @@ export class RecordMatchDto {
 
   @IsArray()
   @ArrayMinSize(2)
-  @ArrayMaxSize(2)
+  @ArrayMaxSize(8)
   @ValidateNested({ each: true })
   @Type(() => MatchPlayerResultDto)
   players!: MatchPlayerResultDto[];

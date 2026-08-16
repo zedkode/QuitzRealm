@@ -34,6 +34,7 @@ enum GameSymbol {
   mask,
   helmet,
   compass,
+  chat,
   chevronRight,
 }
 
@@ -73,7 +74,10 @@ class GameIcon extends StatelessWidget {
     if (semanticLabel == null) {
       return ExcludeSemantics(child: icon);
     }
-    return Semantics(label: semanticLabel, child: ExcludeSemantics(child: icon));
+    return Semantics(
+      label: semanticLabel,
+      child: ExcludeSemantics(child: icon),
+    );
   }
 }
 
@@ -260,6 +264,10 @@ class _GameIconPainter extends CustomPainter {
             ..close(),
           light,
         );
+      case GameSymbol.chat:
+        canvas
+          ..drawLine(const Offset(7, 9), const Offset(17, 9), line)
+          ..drawLine(const Offset(7, 13), const Offset(14, 13), line);
       case GameSymbol.flask:
         canvas.drawPath(
           Path()
@@ -369,10 +377,7 @@ class _GameIconPainter extends CustomPainter {
         final shackle = Path()
           ..moveTo(7, 11)
           ..lineTo(7, 8.4)
-          ..arcToPoint(
-            const Offset(17, 8.4),
-            radius: const Radius.circular(5),
-          )
+          ..arcToPoint(const Offset(17, 8.4), radius: const Radius.circular(5))
           ..lineTo(17, 11)
           ..lineTo(14.4, 11)
           ..lineTo(14.4, 8.4)
@@ -574,6 +579,19 @@ class _GameIconPainter extends CustomPainter {
       case GameSymbol.compass:
         return Path()
           ..addOval(Rect.fromCircle(center: const Offset(12, 12), radius: 9.4));
+
+      case GameSymbol.chat:
+        return Path()
+          ..addRRect(
+            RRect.fromRectAndRadius(
+              const Rect.fromLTWH(2.4, 3.4, 19.2, 15),
+              const Radius.circular(4),
+            ),
+          )
+          ..moveTo(7, 17)
+          ..lineTo(5, 22)
+          ..lineTo(12, 18)
+          ..close();
 
       case GameSymbol.check:
       case GameSymbol.cross:

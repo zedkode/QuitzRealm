@@ -1,0 +1,708 @@
+{
+  "id": "movies",
+  "name": "Movies",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "movies-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul Metropolis?",
+      "options": [
+        "Orson Welles",
+        "Akira Kurosawa",
+        "Alfred Hitchcock",
+        "Fritz Lang"
+      ],
+      "answer": "Fritz Lang",
+      "explanation": "Pentru „Metropolis”, răspunsul corect este „Fritz Lang”."
+    },
+    {
+      "id": "movies-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a avut premiera filmul Metropolis?",
+      "options": [
+        "1960",
+        "1962",
+        "1927",
+        "1954"
+      ],
+      "answer": "1927",
+      "explanation": "Pentru „Metropolis”, răspunsul corect este „1927”."
+    },
+    {
+      "id": "movies-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat filmul The Wizard of Oz?",
+      "options": [
+        "Stanley Kubrick",
+        "Victor Fleming",
+        "Alfred Hitchcock",
+        "David Lean"
+      ],
+      "answer": "Victor Fleming",
+      "explanation": "Pentru „The Wizard of Oz”, răspunsul corect este „Victor Fleming”."
+    },
+    {
+      "id": "movies-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a avut premiera filmul The Wizard of Oz?",
+      "options": [
+        "1939",
+        "1962",
+        "1968",
+        "1972"
+      ],
+      "answer": "1939",
+      "explanation": "Pentru „The Wizard of Oz”, răspunsul corect este „1939”."
+    },
+    {
+      "id": "movies-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat filmul Citizen Kane?",
+      "options": [
+        "Stanley Kubrick",
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "Orson Welles"
+      ],
+      "answer": "Orson Welles",
+      "explanation": "Pentru „Citizen Kane”, răspunsul corect este „Orson Welles”."
+    },
+    {
+      "id": "movies-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a avut premiera filmul Citizen Kane?",
+      "options": [
+        "1975",
+        "1977",
+        "1941",
+        "1972"
+      ],
+      "answer": "1941",
+      "explanation": "Pentru „Citizen Kane”, răspunsul corect este „1941”."
+    },
+    {
+      "id": "movies-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul Seven Samurai?",
+      "options": [
+        "Ridley Scott",
+        "Akira Kurosawa",
+        "Steven Spielberg",
+        "George Lucas"
+      ],
+      "answer": "Akira Kurosawa",
+      "explanation": "Pentru „Seven Samurai”, răspunsul corect este „Akira Kurosawa”."
+    },
+    {
+      "id": "movies-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a avut premiera filmul Seven Samurai?",
+      "options": [
+        "1954",
+        "1977",
+        "1979",
+        "1982"
+      ],
+      "answer": "1954",
+      "explanation": "Pentru „Seven Samurai”, răspunsul corect este „1954”."
+    },
+    {
+      "id": "movies-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat filmul Psycho?",
+      "options": [
+        "Ridley Scott",
+        "Robert Zemeckis",
+        "Giuseppe Tornatore",
+        "Alfred Hitchcock"
+      ],
+      "answer": "Alfred Hitchcock",
+      "explanation": "Pentru „Psycho”, răspunsul corect este „Alfred Hitchcock”."
+    },
+    {
+      "id": "movies-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a avut premiera filmul Psycho?",
+      "options": [
+        "1985",
+        "1988",
+        "1960",
+        "1982"
+      ],
+      "answer": "1960",
+      "explanation": "Pentru „Psycho”, răspunsul corect este „1960”."
+    },
+    {
+      "id": "movies-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul Lawrence of Arabia?",
+      "options": [
+        "Quentin Tarantino",
+        "David Lean",
+        "Giuseppe Tornatore",
+        "Martin Scorsese"
+      ],
+      "answer": "David Lean",
+      "explanation": "Pentru „Lawrence of Arabia”, răspunsul corect este „David Lean”."
+    },
+    {
+      "id": "movies-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a avut premiera filmul Lawrence of Arabia?",
+      "options": [
+        "1962",
+        "1988",
+        "1990",
+        "1993"
+      ],
+      "answer": "1962",
+      "explanation": "Pentru „Lawrence of Arabia”, răspunsul corect este „1962”."
+    },
+    {
+      "id": "movies-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat filmul 2001: A Space Odyssey?",
+      "options": [
+        "Quentin Tarantino",
+        "John Lasseter",
+        "James Cameron",
+        "Stanley Kubrick"
+      ],
+      "answer": "Stanley Kubrick",
+      "explanation": "Pentru „2001: A Space Odyssey”, răspunsul corect este „Stanley Kubrick”."
+    },
+    {
+      "id": "movies-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a avut premiera filmul 2001: A Space Odyssey?",
+      "options": [
+        "1994",
+        "1995",
+        "1968",
+        "1993"
+      ],
+      "answer": "1968",
+      "explanation": "Pentru „2001: A Space Odyssey”, răspunsul corect este „1968”."
+    },
+    {
+      "id": "movies-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat filmul The Godfather?",
+      "options": [
+        "Peter Jackson",
+        "Francis Ford Coppola",
+        "James Cameron",
+        "Lana și Lilly Wachowski"
+      ],
+      "answer": "Francis Ford Coppola",
+      "explanation": "Pentru „The Godfather”, răspunsul corect este „Francis Ford Coppola”."
+    },
+    {
+      "id": "movies-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a avut premiera filmul The Godfather?",
+      "options": [
+        "1972",
+        "1995",
+        "1997",
+        "1999"
+      ],
+      "answer": "1972",
+      "explanation": "Pentru „The Godfather”, răspunsul corect este „1972”."
+    },
+    {
+      "id": "movies-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul Jaws?",
+      "options": [
+        "Peter Jackson",
+        "Hayao Miyazaki",
+        "Christopher Nolan",
+        "Steven Spielberg"
+      ],
+      "answer": "Steven Spielberg",
+      "explanation": "Pentru „Jaws”, răspunsul corect este „Steven Spielberg”."
+    },
+    {
+      "id": "movies-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a avut premiera filmul Jaws?",
+      "options": [
+        "2001",
+        "2008",
+        "1975",
+        "1999"
+      ],
+      "answer": "1975",
+      "explanation": "Pentru „Jaws”, răspunsul corect este „1975”."
+    },
+    {
+      "id": "movies-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat filmul Star Wars?",
+      "options": [
+        "Denis Villeneuve",
+        "George Lucas",
+        "Christopher Nolan",
+        "Bong Joon-ho"
+      ],
+      "answer": "George Lucas",
+      "explanation": "Pentru „Star Wars”, răspunsul corect este „George Lucas”."
+    },
+    {
+      "id": "movies-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a avut premiera filmul Star Wars?",
+      "options": [
+        "1977",
+        "2008",
+        "2019",
+        "2021"
+      ],
+      "answer": "1977",
+      "explanation": "Pentru „Star Wars”, răspunsul corect este „1977”."
+    },
+    {
+      "id": "movies-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul Alien?",
+      "options": [
+        "Denis Villeneuve",
+        "Fritz Lang",
+        "Victor Fleming",
+        "Ridley Scott"
+      ],
+      "answer": "Ridley Scott",
+      "explanation": "Pentru „Alien”, răspunsul corect este „Ridley Scott”."
+    },
+    {
+      "id": "movies-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a avut premiera filmul Alien?",
+      "options": [
+        "1927",
+        "1939",
+        "1979",
+        "2021"
+      ],
+      "answer": "1979",
+      "explanation": "Pentru „Alien”, răspunsul corect este „1979”."
+    },
+    {
+      "id": "movies-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat filmul Blade Runner?",
+      "options": [
+        "Akira Kurosawa",
+        "Ridley Scott",
+        "Victor Fleming",
+        "Orson Welles"
+      ],
+      "answer": "Ridley Scott",
+      "explanation": "Pentru „Blade Runner”, răspunsul corect este „Ridley Scott”."
+    },
+    {
+      "id": "movies-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a avut premiera filmul Blade Runner?",
+      "options": [
+        "1982",
+        "1939",
+        "1941",
+        "1954"
+      ],
+      "answer": "1982",
+      "explanation": "Pentru „Blade Runner”, răspunsul corect este „1982”."
+    },
+    {
+      "id": "movies-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat filmul Back to the Future?",
+      "options": [
+        "Akira Kurosawa",
+        "Alfred Hitchcock",
+        "David Lean",
+        "Robert Zemeckis"
+      ],
+      "answer": "Robert Zemeckis",
+      "explanation": "Pentru „Back to the Future”, răspunsul corect este „Robert Zemeckis”."
+    },
+    {
+      "id": "movies-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a avut premiera filmul Back to the Future?",
+      "options": [
+        "1960",
+        "1962",
+        "1985",
+        "1954"
+      ],
+      "answer": "1985",
+      "explanation": "Pentru „Back to the Future”, răspunsul corect este „1985”."
+    },
+    {
+      "id": "movies-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul Cinema Paradiso?",
+      "options": [
+        "Francis Ford Coppola",
+        "Giuseppe Tornatore",
+        "David Lean",
+        "Stanley Kubrick"
+      ],
+      "answer": "Giuseppe Tornatore",
+      "explanation": "Pentru „Cinema Paradiso”, răspunsul corect este „Giuseppe Tornatore”."
+    },
+    {
+      "id": "movies-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a avut premiera filmul Cinema Paradiso?",
+      "options": [
+        "1988",
+        "1962",
+        "1968",
+        "1972"
+      ],
+      "answer": "1988",
+      "explanation": "Pentru „Cinema Paradiso”, răspunsul corect este „1988”."
+    },
+    {
+      "id": "movies-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat filmul Goodfellas?",
+      "options": [
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "George Lucas",
+        "Martin Scorsese"
+      ],
+      "answer": "Martin Scorsese",
+      "explanation": "Pentru „Goodfellas”, răspunsul corect este „Martin Scorsese”."
+    },
+    {
+      "id": "movies-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a avut premiera filmul Goodfellas?",
+      "options": [
+        "1975",
+        "1977",
+        "1990",
+        "1972"
+      ],
+      "answer": "1990",
+      "explanation": "Pentru „Goodfellas”, răspunsul corect este „1990”."
+    },
+    {
+      "id": "movies-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul Jurassic Park?",
+      "options": [
+        "Giuseppe Tornatore",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "Robert Zemeckis"
+      ],
+      "answer": "Steven Spielberg",
+      "explanation": "Pentru „Jurassic Park”, răspunsul corect este „Steven Spielberg”."
+    },
+    {
+      "id": "movies-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a avut premiera filmul Jurassic Park?",
+      "options": [
+        "1993",
+        "1977",
+        "1979",
+        "1982"
+      ],
+      "answer": "1993",
+      "explanation": "Pentru „Jurassic Park”, răspunsul corect este „1993”."
+    },
+    {
+      "id": "movies-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat filmul Pulp Fiction?",
+      "options": [
+        "Robert Zemeckis",
+        "Giuseppe Tornatore",
+        "Martin Scorsese",
+        "Quentin Tarantino"
+      ],
+      "answer": "Quentin Tarantino",
+      "explanation": "Pentru „Pulp Fiction”, răspunsul corect este „Quentin Tarantino”."
+    },
+    {
+      "id": "movies-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a avut premiera filmul Pulp Fiction?",
+      "options": [
+        "1985",
+        "1988",
+        "1994",
+        "1982"
+      ],
+      "answer": "1994",
+      "explanation": "Pentru „Pulp Fiction”, răspunsul corect este „1994”."
+    },
+    {
+      "id": "movies-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat filmul Toy Story?",
+      "options": [
+        "James Cameron",
+        "John Lasseter",
+        "Martin Scorsese",
+        "Quentin Tarantino"
+      ],
+      "answer": "John Lasseter",
+      "explanation": "Pentru „Toy Story”, răspunsul corect este „John Lasseter”."
+    },
+    {
+      "id": "movies-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a avut premiera filmul Toy Story?",
+      "options": [
+        "1995",
+        "1988",
+        "1990",
+        "1993"
+      ],
+      "answer": "1995",
+      "explanation": "Pentru „Toy Story”, răspunsul corect este „1995”."
+    },
+    {
+      "id": "movies-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul Titanic?",
+      "options": [
+        "John Lasseter",
+        "Lana și Lilly Wachowski",
+        "Peter Jackson",
+        "James Cameron"
+      ],
+      "answer": "James Cameron",
+      "explanation": "Pentru „Titanic”, răspunsul corect este „James Cameron”."
+    },
+    {
+      "id": "movies-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a avut premiera filmul Titanic?",
+      "options": [
+        "1994",
+        "1995",
+        "1997",
+        "1993"
+      ],
+      "answer": "1997",
+      "explanation": "Pentru „Titanic”, răspunsul corect este „1997”."
+    },
+    {
+      "id": "movies-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat filmul The Matrix?",
+      "options": [
+        "Christopher Nolan",
+        "Lana și Lilly Wachowski",
+        "Peter Jackson",
+        "Hayao Miyazaki"
+      ],
+      "answer": "Lana și Lilly Wachowski",
+      "explanation": "Pentru „The Matrix”, răspunsul corect este „Lana și Lilly Wachowski”."
+    },
+    {
+      "id": "movies-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a avut premiera filmul The Matrix?",
+      "options": [
+        "1999",
+        "1995",
+        "1997",
+        "2001"
+      ],
+      "answer": "1999",
+      "explanation": "Pentru „The Matrix”, răspunsul corect este „1999”."
+    },
+    {
+      "id": "movies-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a regizat filmul The Lord of the Rings: The Fellowship of the Ring?",
+      "options": [
+        "Christopher Nolan",
+        "Bong Joon-ho",
+        "Denis Villeneuve",
+        "Peter Jackson"
+      ],
+      "answer": "Peter Jackson",
+      "explanation": "Pentru „The Lord of the Rings: The Fellowship of the Ring”, răspunsul corect este „Peter Jackson”."
+    },
+    {
+      "id": "movies-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce an a avut premiera filmul The Lord of the Rings: The Fellowship of the Ring?",
+      "options": [
+        "2008",
+        "2019",
+        "2001",
+        "1999"
+      ],
+      "answer": "2001",
+      "explanation": "Pentru „The Lord of the Rings: The Fellowship of the Ring”, răspunsul corect este „2001”."
+    },
+    {
+      "id": "movies-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat filmul Spirited Away?",
+      "options": [
+        "Victor Fleming",
+        "Hayao Miyazaki",
+        "Denis Villeneuve",
+        "Fritz Lang"
+      ],
+      "answer": "Hayao Miyazaki",
+      "explanation": "Pentru „Spirited Away”, răspunsul corect este „Hayao Miyazaki”."
+    },
+    {
+      "id": "movies-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce an a avut premiera filmul Spirited Away?",
+      "options": [
+        "2001",
+        "2019",
+        "2021",
+        "1927"
+      ],
+      "answer": "2001",
+      "explanation": "Pentru „Spirited Away”, răspunsul corect este „2001”."
+    },
+    {
+      "id": "movies-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat filmul The Dark Knight?",
+      "options": [
+        "Victor Fleming",
+        "Orson Welles",
+        "Akira Kurosawa",
+        "Christopher Nolan"
+      ],
+      "answer": "Christopher Nolan",
+      "explanation": "Pentru „The Dark Knight”, răspunsul corect este „Christopher Nolan”."
+    },
+    {
+      "id": "movies-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce an a avut premiera filmul The Dark Knight?",
+      "options": [
+        "1939",
+        "1941",
+        "2008",
+        "1927"
+      ],
+      "answer": "2008",
+      "explanation": "Pentru „The Dark Knight”, răspunsul corect este „2008”."
+    },
+    {
+      "id": "movies-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat filmul Parasite?",
+      "options": [
+        "David Lean",
+        "Bong Joon-ho",
+        "Akira Kurosawa",
+        "Alfred Hitchcock"
+      ],
+      "answer": "Bong Joon-ho",
+      "explanation": "Pentru „Parasite”, răspunsul corect este „Bong Joon-ho”."
+    },
+    {
+      "id": "movies-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce an a avut premiera filmul Parasite?",
+      "options": [
+        "2019",
+        "1941",
+        "1954",
+        "1960"
+      ],
+      "answer": "2019",
+      "explanation": "Pentru „Parasite”, răspunsul corect este „2019”."
+    },
+    {
+      "id": "movies-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat filmul Dune?",
+      "options": [
+        "David Lean",
+        "Stanley Kubrick",
+        "Francis Ford Coppola",
+        "Denis Villeneuve"
+      ],
+      "answer": "Denis Villeneuve",
+      "explanation": "Pentru „Dune”, răspunsul corect este „Denis Villeneuve”."
+    },
+    {
+      "id": "movies-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce an a avut premiera filmul Dune?",
+      "options": [
+        "1962",
+        "1968",
+        "2021",
+        "1960"
+      ],
+      "answer": "2021",
+      "explanation": "Pentru „Dune”, răspunsul corect este „2021”."
+    }
+  ]
+}

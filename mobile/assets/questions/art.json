@@ -1,0 +1,4538 @@
+{
+  "id": "art",
+  "name": "Art",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a pictat „Noaptea înstelată”?",
+      "options": [
+        "Vincent van Gogh",
+        "Paul Gauguin",
+        "Claude Monet",
+        "Edvard Munch"
+      ],
+      "answer": "Vincent van Gogh",
+      "explanation": "Vincent van Gogh a pictat „Noaptea înstelată” în 1889, în perioada petrecută la Saint-Rémy-de-Provence.",
+      "id": "art-001"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "„Persistența memoriei”, cu celebrele ceasuri moi, este opera cărui artist?",
+      "options": [
+        "Salvador Dalí",
+        "René Magritte",
+        "Joan Miró",
+        "Max Ernst"
+      ],
+      "answer": "Salvador Dalí",
+      "explanation": "Salvador Dalí a realizat „Persistența memoriei” în 1931; tabloul a devenit una dintre imaginile emblematice ale suprarealismului.",
+      "id": "art-002"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist este autorul tabloului „Guernica”?",
+      "options": [
+        "Pablo Picasso",
+        "Joan Miró",
+        "Diego Rivera",
+        "Henri Matisse"
+      ],
+      "answer": "Pablo Picasso",
+      "explanation": "Picasso a pictat „Guernica” în 1937, ca reacție la bombardarea orașului basc în timpul Războiului Civil Spaniol.",
+      "id": "art-003"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce muzeu se află „Mona Lisa”?",
+      "options": [
+        "Muzeul Luvru",
+        "Muzeul Prado",
+        "Galeria Uffizi",
+        "Rijksmuseum"
+      ],
+      "answer": "Muzeul Luvru",
+      "explanation": "„Mona Lisa” de Leonardo da Vinci este expusă la Muzeul Luvru din Paris.",
+      "id": "art-004"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care pictor este asociat cu seria „Nuferi”?",
+      "options": [
+        "Claude Monet",
+        "Pierre-Auguste Renoir",
+        "Edgar Degas",
+        "Camille Pissarro"
+      ],
+      "answer": "Claude Monet",
+      "explanation": "Claude Monet a pictat numeroase versiuni ale nuferilor din grădina sa de la Giverny.",
+      "id": "art-005"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce sculptor renascentist a realizat statuia „David” aflată la Florența?",
+      "options": [
+        "Michelangelo",
+        "Donatello",
+        "Lorenzo Ghiberti",
+        "Benvenuto Cellini"
+      ],
+      "answer": "Michelangelo",
+      "explanation": "Michelangelo a sculptat celebrul „David” din marmură la începutul secolului al XVI-lea.",
+      "id": "art-006"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce curent artistic este asociat cel mai direct cu Monet, Renoir și Degas?",
+      "options": [
+        "Impresionismul",
+        "Cubismul",
+        "Futurismul",
+        "Suprarealismul"
+      ],
+      "answer": "Impresionismul",
+      "explanation": "Monet, Renoir și Degas sunt figuri centrale ale impresionismului francez din secolul al XIX-lea.",
+      "id": "art-007"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "„Strigătul” este una dintre cele mai cunoscute lucrări ale cărui artist?",
+      "options": [
+        "Edvard Munch",
+        "Gustav Klimt",
+        "Egon Schiele",
+        "Paul Klee"
+      ],
+      "answer": "Edvard Munch",
+      "explanation": "Edvard Munch a creat mai multe versiuni ale compoziției „Strigătul”.",
+      "id": "art-008"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a pictat „Nașterea lui Venus”?",
+      "options": [
+        "Sandro Botticelli",
+        "Rafael",
+        "Titian",
+        "Caravaggio"
+      ],
+      "answer": "Sandro Botticelli",
+      "explanation": "Sandro Botticelli a pictat „Nașterea lui Venus” în Florența renascentistă.",
+      "id": "art-009"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist pop este celebru pentru imaginile repetate cu cutii de supă Campbell’s?",
+      "options": [
+        "Andy Warhol",
+        "Roy Lichtenstein",
+        "Keith Haring",
+        "Jasper Johns"
+      ],
+      "answer": "Andy Warhol",
+      "explanation": "Andy Warhol a transformat imagini comerciale precum conservele Campbell’s în simboluri ale artei Pop.",
+      "id": "art-010"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tehnică presupune aplicarea pigmentului pe tencuială umedă?",
+      "options": [
+        "Fresca",
+        "Gravura",
+        "Mozaicul",
+        "Litografia"
+      ],
+      "answer": "Fresca",
+      "explanation": "În tehnica frescei, pigmentul este aplicat pe tencuială încă umedă, astfel încât culoarea se fixează în stratul de var.",
+      "id": "art-011"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "„Fata cu cercel de perlă” a fost pictată de:",
+      "options": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Frans Hals",
+        "Jan Steen"
+      ],
+      "answer": "Johannes Vermeer",
+      "explanation": "Johannes Vermeer este autorul tabloului cunoscut drept „Fata cu cercel de perlă”.",
+      "id": "art-012"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist mexican este cunoscut pentru numeroase autoportrete și pentru lucrarea „Cele două Fride”?",
+      "options": [
+        "Frida Kahlo",
+        "Remedios Varo",
+        "Leonora Carrington",
+        "María Izquierdo"
+      ],
+      "answer": "Frida Kahlo",
+      "explanation": "Frida Kahlo a folosit frecvent autoportretul pentru a explora identitatea, durerea și experiența personală.",
+      "id": "art-013"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce material a folosit Michelangelo pentru „Pietà” din Bazilica Sfântul Petru?",
+      "options": [
+        "Marmură",
+        "Bronz",
+        "Lemn",
+        "Teracotă"
+      ],
+      "answer": "Marmură",
+      "explanation": "„Pietà” a lui Michelangelo este sculptată în marmură de Carrara.",
+      "id": "art-014"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare artistică folosește forme geometrice fragmentate și perspective multiple în aceeași imagine?",
+      "options": [
+        "Cubismul",
+        "Romantismul",
+        "Rococo",
+        "Realismul"
+      ],
+      "answer": "Cubismul",
+      "explanation": "Cubismul, dezvoltat în special de Picasso și Braque, fragmentează formele și combină mai multe puncte de vedere.",
+      "id": "art-015"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a pictat „Cina cea de Taină” din mănăstirea Santa Maria delle Grazie din Milano?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Rafael",
+        "Andrea del Verrocchio"
+      ],
+      "answer": "Leonardo da Vinci",
+      "explanation": "Leonardo da Vinci a realizat „Cina cea de Taină” pe peretele refectoriului mănăstirii Santa Maria delle Grazie.",
+      "id": "art-016"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care oraș este asociat în mod special cu Galeria Uffizi?",
+      "options": [
+        "Florența",
+        "Veneția",
+        "Roma",
+        "Milano"
+      ],
+      "answer": "Florența",
+      "explanation": "Galeria Uffizi se află în Florența și deține una dintre cele mai importante colecții de artă renascentistă.",
+      "id": "art-017"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „Sărutul”, lucrare celebră pentru folosirea foiței de aur?",
+      "options": [
+        "Gustav Klimt",
+        "Egon Schiele",
+        "Oskar Kokoschka",
+        "Alphonse Mucha"
+      ],
+      "answer": "Gustav Klimt",
+      "explanation": "„Sărutul” aparține perioadei de aur a lui Gustav Klimt.",
+      "id": "art-018"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum se numește arta realizată prin asamblarea unor bucăți mici de piatră, sticlă sau ceramică?",
+      "options": [
+        "Mozaic",
+        "Frescă",
+        "Acuarelă",
+        "Xilogravură"
+      ],
+      "answer": "Mozaic",
+      "explanation": "Mozaicul construiește imaginea din piese mici, numite adesea tessere.",
+      "id": "art-019"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor olandez este cunoscut pentru numeroase autoportrete și pentru „Rondul de noapte”?",
+      "options": [
+        "Rembrandt",
+        "Vermeer",
+        "Mondrian",
+        "Van Gogh"
+      ],
+      "answer": "Rembrandt",
+      "explanation": "Rembrandt van Rijn a realizat „Rondul de noapte” și un număr remarcabil de autoportrete.",
+      "id": "art-020"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "„Libertatea conducând poporul” aparține cărui pictor francez?",
+      "options": [
+        "Eugène Delacroix",
+        "Jacques-Louis David",
+        "Jean-Auguste-Dominique Ingres",
+        "Théodore Géricault"
+      ],
+      "answer": "Eugène Delacroix",
+      "explanation": "Delacroix a pictat „Libertatea conducând poporul” în legătură cu Revoluția din iulie 1830.",
+      "id": "art-021"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare artistică este asociată cu Salvador Dalí și René Magritte?",
+      "options": [
+        "Suprarealismul",
+        "Impresionismul",
+        "Neoclasicismul",
+        "Pointilismul"
+      ],
+      "answer": "Suprarealismul",
+      "explanation": "Dalí și Magritte sunt două dintre figurile majore ale suprarealismului.",
+      "id": "art-022"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care pictor a realizat „Floarea-soarelui” în mai multe versiuni celebre?",
+      "options": [
+        "Vincent van Gogh",
+        "Paul Cézanne",
+        "Claude Monet",
+        "Henri de Toulouse-Lautrec"
+      ],
+      "answer": "Vincent van Gogh",
+      "explanation": "Van Gogh a pictat mai multe naturi statice cu floarea-soarelui, mai ales în perioada petrecută la Arles.",
+      "id": "art-023"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a creat sculptura „Gânditorul”?",
+      "options": [
+        "Auguste Rodin",
+        "Constantin Brâncuși",
+        "Alberto Giacometti",
+        "Henry Moore"
+      ],
+      "answer": "Auguste Rodin",
+      "explanation": "„Gânditorul” a fost conceput inițial ca parte a proiectului „Porțile Infernului” al lui Rodin.",
+      "id": "art-024"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor este asociat cu tehnica pointilistă și cu lucrarea „O duminică după-amiază pe insula La Grande Jatte”?",
+      "options": [
+        "Georges Seurat",
+        "Paul Signac",
+        "Camille Corot",
+        "Édouard Manet"
+      ],
+      "answer": "Georges Seurat",
+      "explanation": "Georges Seurat a folosit sistematic mici puncte de culoare în compoziția „La Grande Jatte”.",
+      "id": "art-025"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre aceste materiale este specific sculpturii turnate prin procedeul cerii pierdute?",
+      "options": [
+        "Bronzul",
+        "Acuarela",
+        "Cărbunele",
+        "Tempera"
+      ],
+      "answer": "Bronzul",
+      "explanation": "Turnarea prin ceară pierdută este o tehnică tradițională folosită frecvent pentru sculpturi din bronz.",
+      "id": "art-026"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „Domnișoarele din Avignon”?",
+      "options": [
+        "Pablo Picasso",
+        "Georges Braque",
+        "Henri Matisse",
+        "Juan Gris"
+      ],
+      "answer": "Pablo Picasso",
+      "explanation": "„Domnișoarele din Avignon” din 1907 este o lucrare-cheie în dezvoltarea limbajului cubist al lui Picasso.",
+      "id": "art-027"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce termen desemnează reprezentarea obiectelor neînsuflețite, precum fructe, vase sau flori?",
+      "options": [
+        "Natură statică",
+        "Peisaj",
+        "Portret",
+        "Frescă"
+      ],
+      "answer": "Natură statică",
+      "explanation": "Natura statică are ca subiect principal obiecte neînsuflețite aranjate într-o compoziție.",
+      "id": "art-028"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor a realizat „Bal du moulin de la Galette”?",
+      "options": [
+        "Pierre-Auguste Renoir",
+        "Claude Monet",
+        "Édouard Manet",
+        "Alfred Sisley"
+      ],
+      "answer": "Pierre-Auguste Renoir",
+      "explanation": "Renoir a pictat scena de agrement pariziană „Bal du moulin de la Galette” în 1876.",
+      "id": "art-029"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce muzeu din Madrid este celebru pentru lucrări de Velázquez, Goya și El Greco?",
+      "options": [
+        "Muzeul Prado",
+        "Reina Sofía",
+        "Thyssen-Bornemisza",
+        "Guggenheim Bilbao"
+      ],
+      "answer": "Muzeul Prado",
+      "explanation": "Prado deține colecții excepționale de pictură spaniolă, inclusiv Velázquez și Goya.",
+      "id": "art-030"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „Las Meninas”?",
+      "options": [
+        "Diego Velázquez",
+        "Francisco Goya",
+        "El Greco",
+        "Bartolomé Murillo"
+      ],
+      "answer": "Diego Velázquez",
+      "explanation": "„Las Meninas” este capodopera lui Diego Velázquez și se află la Muzeul Prado.",
+      "id": "art-031"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum se numește pictura realizată cu pigmenți diluați în apă, pe hârtie?",
+      "options": [
+        "Acuarelă",
+        "Ulei pe pânză",
+        "Encaustică",
+        "Frescă"
+      ],
+      "answer": "Acuarelă",
+      "explanation": "Acuarela folosește pigmenți solubili sau dispersabili în apă, aplicați de regulă pe hârtie.",
+      "id": "art-032"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce sculptor român a creat „Coloana fără sfârșit”?",
+      "options": [
+        "Constantin Brâncuși",
+        "Dimitrie Paciurea",
+        "Ion Jalea",
+        "Oscar Han"
+      ],
+      "answer": "Constantin Brâncuși",
+      "explanation": "„Coloana fără sfârșit” face parte din ansamblul monumental realizat de Constantin Brâncuși la Târgu Jiu.",
+      "id": "art-033"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist este asociat cu „Compoziție cu roșu, albastru și galben” și cu grila de linii negre?",
+      "options": [
+        "Piet Mondrian",
+        "Kazimir Malevici",
+        "Wassily Kandinsky",
+        "Theo van Doesburg"
+      ],
+      "answer": "Piet Mondrian",
+      "explanation": "Mondrian a redus compoziția la linii ortogonale și culori primare în lucrările sale neoplastice.",
+      "id": "art-034"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor a realizat „Olympia”, lucrare scandaloasă pentru publicul parizian al secolului al XIX-lea?",
+      "options": [
+        "Édouard Manet",
+        "Edgar Degas",
+        "Gustave Courbet",
+        "Jean-François Millet"
+      ],
+      "answer": "Édouard Manet",
+      "explanation": "„Olympia” de Manet a provocat controverse la Salonul din 1865 prin tratarea directă a nudului modern.",
+      "id": "art-035"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care artist este cunoscut pentru sculpturile alungite ale figurii umane, precum „Omul care merge”?",
+      "options": [
+        "Alberto Giacometti",
+        "Auguste Rodin",
+        "Antoine Bourdelle",
+        "Jean Arp"
+      ],
+      "answer": "Alberto Giacometti",
+      "explanation": "Giacometti a devenit celebru pentru figurile umane extrem de subțiri și alungite realizate după al Doilea Război Mondial.",
+      "id": "art-036"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce curent artistic a precedat direct impresionismul și a insistat asupra reprezentării vieții obișnuite fără idealizare?",
+      "options": [
+        "Realismul",
+        "Rococo",
+        "Futurismul",
+        "Constructivismul"
+      ],
+      "answer": "Realismul",
+      "explanation": "Realismul secolului al XIX-lea, reprezentat de artiști precum Courbet, a respins idealizarea academică și romantică.",
+      "id": "art-037"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor francez a realizat „Pluta Meduzei”?",
+      "options": [
+        "Théodore Géricault",
+        "Eugène Delacroix",
+        "Gustave Courbet",
+        "Jean-Léon Gérôme"
+      ],
+      "answer": "Théodore Géricault",
+      "explanation": "„Pluta Meduzei” este una dintre marile lucrări ale romantismului francez, pictată de Géricault.",
+      "id": "art-038"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce tehnică de gravură folosește o placă de lemn ca matrice?",
+      "options": [
+        "Xilogravura",
+        "Acvatinta",
+        "Litografia",
+        "Mezzotinta"
+      ],
+      "answer": "Xilogravura",
+      "explanation": "În xilogravură, imaginea este tăiată într-o placă de lemn și imprimată de pe suprafața rămasă în relief.",
+      "id": "art-039"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor japonez este autorul celebrei stampe „Marele val de la Kanagawa”?",
+      "options": [
+        "Katsushika Hokusai",
+        "Utagawa Hiroshige",
+        "Kitagawa Utamaro",
+        "Sesshū Tōyō"
+      ],
+      "answer": "Katsushika Hokusai",
+      "explanation": "Hokusai a creat „Marele val de la Kanagawa” ca parte a seriei „Treizeci și șase de vederi ale Muntelui Fuji”.",
+      "id": "art-040"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce stil artistic european al secolului al XVIII-lea este asociat cu decorul elegant, culorile pastelate și scenele galante?",
+      "options": [
+        "Rococo",
+        "Baroc",
+        "Realism",
+        "Expresionism"
+      ],
+      "answer": "Rococo",
+      "explanation": "Rococoul s-a dezvoltat în secolul al XVIII-lea și este asociat cu ornamentația rafinată, asimetria și tonurile luminoase.",
+      "id": "art-041"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „American Gothic”?",
+      "options": [
+        "Grant Wood",
+        "Edward Hopper",
+        "Andrew Wyeth",
+        "Thomas Hart Benton"
+      ],
+      "answer": "Grant Wood",
+      "explanation": "Grant Wood a pictat „American Gothic” în 1930, una dintre imaginile emblematice ale regionalismului american.",
+      "id": "art-042"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor este cunoscut pentru „Nighthawks”, scena nocturnă într-un diner american?",
+      "options": [
+        "Edward Hopper",
+        "Grant Wood",
+        "Jackson Pollock",
+        "Norman Rockwell"
+      ],
+      "answer": "Edward Hopper",
+      "explanation": "Edward Hopper a pictat „Nighthawks” în 1942, surprinzând izolarea urbană într-un local nocturn.",
+      "id": "art-043"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce mișcare de avangardă italiană glorifica viteza, mașinile și dinamismul modern?",
+      "options": [
+        "Futurismul",
+        "Dadaismul",
+        "Simbolismul",
+        "Prerafaelismul"
+      ],
+      "answer": "Futurismul",
+      "explanation": "Futurismul italian a celebrat viteza, tehnologia și energia lumii moderne.",
+      "id": "art-044"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a pictat „Impresie, răsărit de soare”, lucrare de la care provine numele impresionismului?",
+      "options": [
+        "Claude Monet",
+        "Édouard Manet",
+        "Berthe Morisot",
+        "Camille Pissarro"
+      ],
+      "answer": "Claude Monet",
+      "explanation": "Titlul tabloului lui Monet a inspirat termenul „impresionism”, folosit inițial ironic de criticul Louis Leroy.",
+      "id": "art-045"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist este autorul „Portretului Arnolfini”?",
+      "options": [
+        "Jan van Eyck",
+        "Rogier van der Weyden",
+        "Hans Memling",
+        "Pieter Bruegel cel Bătrân"
+      ],
+      "answer": "Jan van Eyck",
+      "explanation": "„Portretul Arnolfini” din 1434 este una dintre cele mai cunoscute lucrări ale lui Jan van Eyck.",
+      "id": "art-046"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce element este caracteristic arhitecturii gotice?",
+      "options": [
+        "Arcul frânt",
+        "Cupola hemisferică romană",
+        "Coloana dorică fără bază",
+        "Acoperișul plat modernist"
+      ],
+      "answer": "Arcul frânt",
+      "explanation": "Arcul frânt, bolta pe ogive și contrafortul zburător sunt elemente definitorii ale arhitecturii gotice.",
+      "id": "art-047"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „Grădina desfătărilor pământești”?",
+      "options": [
+        "Hieronymus Bosch",
+        "Pieter Bruegel cel Bătrân",
+        "Albrecht Dürer",
+        "Jan Gossaert"
+      ],
+      "answer": "Hieronymus Bosch",
+      "explanation": "Tripticul „Grădina desfătărilor pământești” este una dintre cele mai enigmatice lucrări ale lui Hieronymus Bosch.",
+      "id": "art-048"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist renascentist a pictat „Școala din Atena”?",
+      "options": [
+        "Rafael",
+        "Leonardo da Vinci",
+        "Sandro Botticelli",
+        "Andrea Mantegna"
+      ],
+      "answer": "Rafael",
+      "explanation": "Rafael a pictat „Școala din Atena” în camerele papale de la Vatican.",
+      "id": "art-049"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor baroc este asociat cu un clarobscur dramatic și cu lucrarea „Chemarea Sfântului Matei”?",
+      "options": [
+        "Caravaggio",
+        "Rubens",
+        "Poussin",
+        "Veronese"
+      ],
+      "answer": "Caravaggio",
+      "explanation": "Caravaggio a folosit contraste puternice de lumină și întuneric pentru a accentua dramatismul scenelor sale.",
+      "id": "art-050"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist spaniol a realizat seria de gravuri „Dezastrele războiului”?",
+      "options": [
+        "Francisco Goya",
+        "Diego Velázquez",
+        "Joaquín Sorolla",
+        "Joan Miró"
+      ],
+      "answer": "Francisco Goya",
+      "explanation": "Goya a creat seria „Dezastrele războiului” inspirat de violențele conflictelor napoleoniene din Spania.",
+      "id": "art-051"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum se numește tehnica de pictură în care se folosesc pigmenți amestecați cu ulei, de regulă ulei de in?",
+      "options": [
+        "Pictură în ulei",
+        "Tempera",
+        "Frescă",
+        "Pastel"
+      ],
+      "answer": "Pictură în ulei",
+      "explanation": "Pictura în ulei folosește pigmenți legați cu uleiuri sicative și permite modelări și glasiuri complexe.",
+      "id": "art-052"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre acești artiști a fost membru important al grupului expresionist Der Blaue Reiter?",
+      "options": [
+        "Wassily Kandinsky",
+        "Claude Monet",
+        "Georges Seurat",
+        "Antonio Canova"
+      ],
+      "answer": "Wassily Kandinsky",
+      "explanation": "Kandinsky și Franz Marc au fost figuri centrale ale grupului Der Blaue Reiter, activ la München.",
+      "id": "art-053"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce muzeu din New York este cunoscut sub abrevierea MoMA?",
+      "options": [
+        "Museum of Modern Art",
+        "Metropolitan Museum of Art",
+        "Morgan Library & Museum",
+        "Whitney Museum of American Art"
+      ],
+      "answer": "Museum of Modern Art",
+      "explanation": "MoMA este abrevierea pentru Museum of Modern Art din New York.",
+      "id": "art-054"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "„Venus din Milo” este o sculptură antică asociată cu ce cultură?",
+      "options": [
+        "Greacă",
+        "Egipteană",
+        "Etruscă",
+        "Mesopotamiană"
+      ],
+      "answer": "Greacă",
+      "explanation": "„Venus din Milo” este o sculptură elenistică greacă, reprezentând-o probabil pe Afrodita.",
+      "id": "art-055"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce pictor a realizat „Fiul omului”, cu figura al cărei chip este acoperit de un măr verde?",
+      "options": [
+        "René Magritte",
+        "Salvador Dalí",
+        "Paul Delvaux",
+        "Max Ernst"
+      ],
+      "answer": "René Magritte",
+      "explanation": "„Fiul omului” din 1964 este una dintre cele mai cunoscute imagini ale suprarealistului belgian René Magritte.",
+      "id": "art-056"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist este cunoscut pentru sculpturile mobile suspendate numite „mobiles”?",
+      "options": [
+        "Alexander Calder",
+        "Henry Moore",
+        "Donald Judd",
+        "Richard Serra"
+      ],
+      "answer": "Alexander Calder",
+      "explanation": "Alexander Calder a dezvoltat sculpturi cinetice suspendate, ale căror elemente se mișcă în aer.",
+      "id": "art-057"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce stil arhitectural este asociat cu Le Corbusier și principiul „mașinii de locuit”?",
+      "options": [
+        "Modernismul",
+        "Barocul",
+        "Neogoticul",
+        "Rococoul"
+      ],
+      "answer": "Modernismul",
+      "explanation": "Le Corbusier este unul dintre principalii arhitecți ai modernismului și a descris casa drept o „mașină de locuit”.",
+      "id": "art-058"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce artist a pictat „Dansul” în versiunea monumentală cu cinci figuri roșii pe fundal simplificat?",
+      "options": [
+        "Henri Matisse",
+        "André Derain",
+        "Raoul Dufy",
+        "Maurice de Vlaminck"
+      ],
+      "answer": "Henri Matisse",
+      "explanation": "Henri Matisse a realizat „Dansul” în jurul anilor 1909–1910, într-un limbaj cromatic simplificat și energic.",
+      "id": "art-059"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce termen descrie efectul de trecere graduală de la lumină la umbră pentru a sugera volum?",
+      "options": [
+        "Clarobscur",
+        "Colaj",
+        "Impasto",
+        "Hatching"
+      ],
+      "answer": "Clarobscur",
+      "explanation": "Clarobscurul modelează formele prin contraste și tranziții între lumină și umbră.",
+      "id": "art-060"
+    },
+    {
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care dintre acești artiști este cel mai strâns asociat cu expresionismul abstract și tehnica „drip painting”?",
+      "options": [
+        "Jackson Pollock",
+        "Andy Warhol",
+        "David Hockney",
+        "Edward Hopper"
+      ],
+      "answer": "Jackson Pollock",
+      "explanation": "Jackson Pollock a devenit celebru pentru picturile realizate prin turnarea și picurarea vopselei pe pânze așezate pe podea.",
+      "id": "art-061"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost pictată „Guernica” de Pablo Picasso?",
+      "answer": "1937",
+      "explanation": "Picasso a realizat „Guernica” în 1937 pentru Pavilionul Republicii Spaniole de la Expoziția Internațională de la Paris.",
+      "id": "art-062"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost fondată școala Bauhaus la Weimar?",
+      "answer": "1919",
+      "explanation": "Bauhaus a fost fondată în 1919 de arhitectul Walter Gropius la Weimar.",
+      "id": "art-063"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost deschis Muzeul Luvru ca muzeu public?",
+      "answer": "1793",
+      "explanation": "Luvrul a fost deschis ca muzeu public în 1793, în timpul Revoluției Franceze.",
+      "id": "art-064"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Moartea lui Marat”?",
+      "options": [
+        "Jacques-Louis David",
+        "Eugène Delacroix",
+        "Jean-Auguste-Dominique Ingres",
+        "Théodore Géricault"
+      ],
+      "answer": "Jacques-Louis David",
+      "explanation": "Jacques-Louis David a pictat „Moartea lui Marat” în 1793, transformând un episod politic contemporan într-o imagine cu gravitate clasică.",
+      "id": "art-065"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor este autorul lucrării „Saturn devorându-și fiul”?",
+      "options": [
+        "Francisco Goya",
+        "Diego Velázquez",
+        "Peter Paul Rubens",
+        "Jusepe de Ribera"
+      ],
+      "answer": "Francisco Goya",
+      "explanation": "„Saturn devorându-și fiul” face parte din seria Picturilor Negre realizate de Goya pe pereții casei sale.",
+      "id": "art-066"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a realizat „Prânzul pe iarbă” („Le Déjeuner sur l’herbe”)?",
+      "options": [
+        "Édouard Manet",
+        "Claude Monet",
+        "Gustave Courbet",
+        "Edgar Degas"
+      ],
+      "answer": "Édouard Manet",
+      "explanation": "Manet a provocat controverse cu „Prânzul pe iarbă”, prezentat la Salon des Refusés în 1863.",
+      "id": "art-067"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a pictat „Jucătorii de cărți”, serie importantă pentru dezvoltarea artei moderne?",
+      "options": [
+        "Paul Cézanne",
+        "Paul Gauguin",
+        "Georges Seurat",
+        "Henri Rousseau"
+      ],
+      "answer": "Paul Cézanne",
+      "explanation": "Paul Cézanne a realizat mai multe versiuni ale „Jucătorilor de cărți” în anii 1890.",
+      "id": "art-068"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist este asociat cu Tahiti și cu lucrarea „De unde venim? Ce suntem? Încotro ne îndreptăm?”?",
+      "options": [
+        "Paul Gauguin",
+        "Henri Matisse",
+        "Paul Cézanne",
+        "Henri de Toulouse-Lautrec"
+      ],
+      "answer": "Paul Gauguin",
+      "explanation": "Paul Gauguin a trăit și a lucrat în Polinezia Franceză, iar această pictură este una dintre operele sale majore.",
+      "id": "art-069"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Bar la Folies-Bergère”?",
+      "options": [
+        "Édouard Manet",
+        "Pierre-Auguste Renoir",
+        "Edgar Degas",
+        "Claude Monet"
+      ],
+      "answer": "Édouard Manet",
+      "explanation": "„Bar la Folies-Bergère” este una dintre ultimele lucrări importante ale lui Manet.",
+      "id": "art-070"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce sculptor a realizat „Extazul Sfintei Tereza” din capela Cornaro?",
+      "options": [
+        "Gian Lorenzo Bernini",
+        "Antonio Canova",
+        "Donatello",
+        "Lorenzo Ghiberti"
+      ],
+      "answer": "Gian Lorenzo Bernini",
+      "explanation": "Bernini a creat ansamblul „Extazul Sfintei Tereza” ca o sinteză barocă de sculptură, arhitectură și lumină.",
+      "id": "art-071"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a sculptat versiunea renascentistă în bronz a lui „David”, una dintre primele statui nud în mărime naturală ale Renașterii?",
+      "options": [
+        "Donatello",
+        "Michelangelo",
+        "Verrocchio",
+        "Ghiberti"
+      ],
+      "answer": "Donatello",
+      "explanation": "David-ul din bronz al lui Donatello este o lucrare emblematică a Renașterii florentine timpurii.",
+      "id": "art-072"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect a proiectat cupola Catedralei Santa Maria del Fiore din Florența?",
+      "options": [
+        "Filippo Brunelleschi",
+        "Leon Battista Alberti",
+        "Andrea Palladio",
+        "Donato Bramante"
+      ],
+      "answer": "Filippo Brunelleschi",
+      "explanation": "Brunelleschi a rezolvat problema tehnică a uriașei cupole a Domului din Florența printr-un sistem structural inovator.",
+      "id": "art-073"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Primăvara” („La Primavera”)?",
+      "options": [
+        "Sandro Botticelli",
+        "Piero della Francesca",
+        "Fra Angelico",
+        "Perugino"
+      ],
+      "answer": "Sandro Botticelli",
+      "explanation": "„Primăvara” este una dintre cele mai cunoscute alegorii mitologice ale Renașterii florentine.",
+      "id": "art-074"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen desemnează aplicarea unui strat subțire, transparent sau semitransparent de culoare peste un strat uscat de pictură?",
+      "options": [
+        "Glasiu",
+        "Impasto",
+        "Sgraffito",
+        "Frottage"
+      ],
+      "answer": "Glasiu",
+      "explanation": "Glasiul permite modificarea tonului și profunzimii culorii fără acoperirea completă a stratului inferior.",
+      "id": "art-075"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tehnică folosește vopseaua aplicată în strat gros, astfel încât urmele pensulei sau cuțitului să rămână reliefate?",
+      "options": [
+        "Impasto",
+        "Acuarelă",
+        "Pointe sèche",
+        "Grisaille"
+      ],
+      "answer": "Impasto",
+      "explanation": "Impasto creează o suprafață picturală reliefată prin aplicarea groasă a vopselei.",
+      "id": "art-076"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a creat „Pătratul negru”, una dintre lucrările-cheie ale suprematismului?",
+      "options": [
+        "Kazimir Malevici",
+        "El Lissitzky",
+        "Vladimir Tatlin",
+        "Piet Mondrian"
+      ],
+      "answer": "Kazimir Malevici",
+      "explanation": "„Pătratul negru” al lui Malevici a devenit o emblemă a suprematismului și a abstracției radicale.",
+      "id": "art-077"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mișcare artistică a fost fondată în 1909 prin manifestul lui Filippo Tommaso Marinetti?",
+      "options": [
+        "Futurismul",
+        "Dadaismul",
+        "Suprematismul",
+        "De Stijl"
+      ],
+      "answer": "Futurismul",
+      "explanation": "Manifestul futurist al lui Marinetti a fost publicat în 1909 și a lansat mișcarea futuristă italiană.",
+      "id": "art-078"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce grup artistic german, al cărui nume înseamnă „Podul”, a fost fondat la Dresda în 1905?",
+      "options": [
+        "Die Brücke",
+        "Der Blaue Reiter",
+        "Bauhaus",
+        "De Stijl"
+      ],
+      "answer": "Die Brücke",
+      "explanation": "Die Brücke a fost un grup expresionist german fondat de tineri artiști precum Ernst Ludwig Kirchner.",
+      "id": "art-079"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist este cunoscut pentru tabloul „Sărutul” realizat în stil Art Nouveau vienez și pentru portretul Adelei Bloch-Bauer I?",
+      "options": [
+        "Gustav Klimt",
+        "Egon Schiele",
+        "Oskar Kokoschka",
+        "Koloman Moser"
+      ],
+      "answer": "Gustav Klimt",
+      "explanation": "Klimt a fost figura centrală a Secesiunii vieneze și a folosit intens aurul în perioada sa matură.",
+      "id": "art-080"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Portretul Adelei Bloch-Bauer I”?",
+      "options": [
+        "Gustav Klimt",
+        "Egon Schiele",
+        "Edvard Munch",
+        "Alphonse Mucha"
+      ],
+      "answer": "Gustav Klimt",
+      "explanation": "Portretul Adelei Bloch-Bauer I, realizat de Klimt în 1907, este una dintre cele mai cunoscute lucrări ale perioadei sale de aur.",
+      "id": "art-081"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a creat panourile „Nufărul” pentru Orangerie din Paris?",
+      "options": [
+        "Claude Monet",
+        "Auguste Renoir",
+        "Camille Pissarro",
+        "Alfred Sisley"
+      ],
+      "answer": "Claude Monet",
+      "explanation": "Marile panouri cu nuferi de Monet sunt instalate în sălile ovale ale Musée de l’Orangerie din Paris.",
+      "id": "art-082"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care pictor a realizat „Autoportret cu pălărie de paie” și numeroase alte autoportrete în anii 1880?",
+      "options": [
+        "Vincent van Gogh",
+        "Paul Gauguin",
+        "Émile Bernard",
+        "Georges Seurat"
+      ],
+      "answer": "Vincent van Gogh",
+      "explanation": "Vincent van Gogh a realizat numeroase autoportrete, inclusiv versiuni în care poartă pălărie de paie, mai ales în perioada pariziană.",
+      "id": "art-083"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Atelierul pictorului”, lucrare-manifest a realismului?",
+      "options": [
+        "Gustave Courbet",
+        "Jean-François Millet",
+        "Honoré Daumier",
+        "Jean-Baptiste-Camille Corot"
+      ],
+      "answer": "Gustave Courbet",
+      "explanation": "Courbet a prezentat „Atelierul pictorului” în 1855 ca o alegorie a vieții sale artistice și sociale.",
+      "id": "art-084"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor a realizat „Culegătoarele de spice”?",
+      "options": [
+        "Jean-François Millet",
+        "Gustave Courbet",
+        "Camille Corot",
+        "Honoré Daumier"
+      ],
+      "answer": "Jean-François Millet",
+      "explanation": "Millet a pictat „Culegătoarele de spice” în 1857, reprezentând munca rurală fără idealizare academică.",
+      "id": "art-085"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Absintul”, o scenă de cafenea cu două personaje izolate?",
+      "options": [
+        "Edgar Degas",
+        "Édouard Manet",
+        "Henri de Toulouse-Lautrec",
+        "Pierre-Auguste Renoir"
+      ],
+      "answer": "Edgar Degas",
+      "explanation": "„Absintul” de Degas este o imagine celebră a alienării în viața urbană pariziană.",
+      "id": "art-086"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care pictor a fost fascinat de dansatoare și a realizat numeroase scene de repetiții de balet?",
+      "options": [
+        "Edgar Degas",
+        "Claude Monet",
+        "Georges Seurat",
+        "Paul Signac"
+      ],
+      "answer": "Edgar Degas",
+      "explanation": "Degas a reprezentat frecvent balerine, surprinzând repetiții, gesturi cotidiene și unghiuri neobișnuite.",
+      "id": "art-087"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „La Moulin Rouge” și a creat afișe celebre pentru viața de noapte pariziană?",
+      "options": [
+        "Henri de Toulouse-Lautrec",
+        "Georges Seurat",
+        "Paul Gauguin",
+        "Maurice Denis"
+      ],
+      "answer": "Henri de Toulouse-Lautrec",
+      "explanation": "Toulouse-Lautrec a documentat vizual cabaretele și lumea spectacolului din Montmartre.",
+      "id": "art-088"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce mișcare artistică olandeză este asociată cu Piet Mondrian și Theo van Doesburg?",
+      "options": [
+        "De Stijl",
+        "CoBrA",
+        "Bauhaus",
+        "Secesiunea vieneză"
+      ],
+      "answer": "De Stijl",
+      "explanation": "De Stijl promova abstracția geometrică, liniile ortogonale și culorile primare.",
+      "id": "art-089"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect este autorul vilei Savoye de la Poissy?",
+      "options": [
+        "Le Corbusier",
+        "Walter Gropius",
+        "Ludwig Mies van der Rohe",
+        "Alvar Aalto"
+      ],
+      "answer": "Le Corbusier",
+      "explanation": "Villa Savoye este un exemplu canonic al celor cinci puncte ale arhitecturii formulate de Le Corbusier.",
+      "id": "art-090"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect a proiectat Pavilionul German de la Barcelona din 1929, cunoscut și ca Pavilionul Barcelona?",
+      "options": [
+        "Ludwig Mies van der Rohe",
+        "Walter Gropius",
+        "Le Corbusier",
+        "Marcel Breuer"
+      ],
+      "answer": "Ludwig Mies van der Rohe",
+      "explanation": "Pavilionul Barcelona, proiectat de Mies van der Rohe împreună cu Lilly Reich, este o capodoperă a modernismului.",
+      "id": "art-091"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect american a proiectat casa Fallingwater?",
+      "options": [
+        "Frank Lloyd Wright",
+        "Louis Kahn",
+        "Philip Johnson",
+        "Eero Saarinen"
+      ],
+      "answer": "Frank Lloyd Wright",
+      "explanation": "Fallingwater a fost proiectată de Frank Lloyd Wright pentru familia Kaufmann și integrează casa în peisajul cascadei.",
+      "id": "art-092"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Broadway Boogie Woogie”?",
+      "options": [
+        "Piet Mondrian",
+        "Paul Klee",
+        "Wassily Kandinsky",
+        "Theo van Doesburg"
+      ],
+      "answer": "Piet Mondrian",
+      "explanation": "Mondrian a realizat „Broadway Boogie Woogie” după mutarea la New York, inspirat de ritmul orașului și muzica boogie-woogie.",
+      "id": "art-093"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor rus este adesea considerat unul dintre pionierii abstracției și a scris „Despre spiritual în artă”?",
+      "options": [
+        "Wassily Kandinsky",
+        "Kazimir Malevici",
+        "Marc Chagall",
+        "Ilya Repin"
+      ],
+      "answer": "Wassily Kandinsky",
+      "explanation": "Kandinsky a teoretizat relația dintre culoare, formă și experiența spirituală în „Despre spiritual în artă”.",
+      "id": "art-094"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Eu și satul”, combinând imagini din folclorul evreiesc și satul natal?",
+      "options": [
+        "Marc Chagall",
+        "Chaim Soutine",
+        "Amedeo Modigliani",
+        "Wassily Kandinsky"
+      ],
+      "answer": "Marc Chagall",
+      "explanation": "„Eu și satul” este una dintre lucrările timpurii reprezentative ale lui Marc Chagall.",
+      "id": "art-095"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist este cunoscut pentru portrete cu gâturi și fețe alungite?",
+      "options": [
+        "Amedeo Modigliani",
+        "Chaim Soutine",
+        "Egon Schiele",
+        "Oskar Kokoschka"
+      ],
+      "answer": "Amedeo Modigliani",
+      "explanation": "Modigliani a dezvoltat un stil recognoscibil prin figuri alungite, ochi migdalați și simplificarea volumelor.",
+      "id": "art-096"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce sculptor britanic este cunoscut pentru forme organice abstracte și sculpturi monumentale cu goluri?",
+      "options": [
+        "Henry Moore",
+        "Barbara Hepworth",
+        "Antony Gormley",
+        "Eduardo Paolozzi"
+      ],
+      "answer": "Henry Moore",
+      "explanation": "Henry Moore a realizat sculpturi abstracte inspirate de corpul uman, adesea perforate de goluri interioare.",
+      "id": "art-097"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce sculptoriță britanică a lucrat frecvent cu forme abstracte perforate și a fost asociată cu modernismul din St Ives?",
+      "options": [
+        "Barbara Hepworth",
+        "Rachel Whiteread",
+        "Louise Bourgeois",
+        "Elisabeth Frink"
+      ],
+      "answer": "Barbara Hepworth",
+      "explanation": "Barbara Hepworth a fost o figură centrală a sculpturii moderne britanice și a comunității artistice din St Ives.",
+      "id": "art-098"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a creat sculptura „Pasărea în văzduh”?",
+      "options": [
+        "Constantin Brâncuși",
+        "Jean Arp",
+        "Henry Moore",
+        "Naum Gabo"
+      ],
+      "answer": "Constantin Brâncuși",
+      "explanation": "Brâncuși a realizat o serie de sculpturi intitulate „Pasărea în văzduh”, reduse la o formă aerodinamică esențializată.",
+      "id": "art-099"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen artistic desemnează lipirea pe suprafață a unor fragmente de hârtie, ziar, textile sau alte materiale?",
+      "options": [
+        "Colaj",
+        "Frescă",
+        "Grisaille",
+        "Encaustică"
+      ],
+      "answer": "Colaj",
+      "explanation": "Colajul a devenit esențial în cubismul sintetic și ulterior în numeroase practici moderne și contemporane.",
+      "id": "art-100"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tehnică de imprimare inventată la sfârșitul secolului al XVIII-lea folosește principiul respingerii dintre apă și grăsime?",
+      "options": [
+        "Litografia",
+        "Xilogravura",
+        "Linogravura",
+        "Acvatinta"
+      ],
+      "answer": "Litografia",
+      "explanation": "Litografia se bazează pe incompatibilitatea dintre apă și substanțele grase aplicate pe o suprafață plană.",
+      "id": "art-101"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen desemnează o pictură realizată predominant în tonuri de gri pentru a imita efectul sculpturii?",
+      "options": [
+        "Grisaille",
+        "Sfumato",
+        "Impasto",
+        "Gouache"
+      ],
+      "answer": "Grisaille",
+      "explanation": "Grisaille este o tehnică monocromă, de obicei în griuri, folosită uneori pentru a simula sculptura sau relieful.",
+      "id": "art-102"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tehnică este asociată în mod special cu Leonardo da Vinci și cu trecerile foarte fine dintre tonuri?",
+      "options": [
+        "Sfumato",
+        "Pointilism",
+        "Frottage",
+        "Sgraffito"
+      ],
+      "answer": "Sfumato",
+      "explanation": "Sfumato creează tranziții delicate, fără contururi dure, vizibile mai ales în portretele lui Leonardo.",
+      "id": "art-103"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Venus la oglindă” („Rokeby Venus”)?",
+      "options": [
+        "Diego Velázquez",
+        "Francisco de Zurbarán",
+        "Bartolomé Murillo",
+        "El Greco"
+      ],
+      "answer": "Diego Velázquez",
+      "explanation": "„Rokeby Venus” este singurul nud feminin supraviețuitor atribuit cu certitudine lui Velázquez.",
+      "id": "art-104"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor manierist este cunoscut pentru figurile alungite și pentru „Madona cu gâtul lung”?",
+      "options": [
+        "Parmigianino",
+        "Pontormo",
+        "Bronzino",
+        "Tintoretto"
+      ],
+      "answer": "Parmigianino",
+      "explanation": "„Madona cu gâtul lung” este una dintre lucrările definitorii ale manierismului italian.",
+      "id": "art-105"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Coborârea de pe cruce” aflată astăzi la Muzeul Prado, una dintre capodoperele picturii flamande?",
+      "options": [
+        "Rogier van der Weyden",
+        "Jan van Eyck",
+        "Hans Memling",
+        "Hugo van der Goes"
+      ],
+      "answer": "Rogier van der Weyden",
+      "explanation": "„Coborârea de pe cruce” a lui Rogier van der Weyden este celebră pentru intensitatea emoțională și compoziția sa compactă.",
+      "id": "art-106"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor flamand a realizat tripticul „Altarul din Gent” împreună cu fratele său Hubert?",
+      "options": [
+        "Jan van Eyck",
+        "Pieter Bruegel cel Bătrân",
+        "Peter Paul Rubens",
+        "Anthony van Dyck"
+      ],
+      "answer": "Jan van Eyck",
+      "explanation": "„Altarul din Gent” este asociat cu frații Hubert și Jan van Eyck, Jan fiind responsabil de o mare parte a execuției finale.",
+      "id": "art-107"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Vânătorii în zăpadă”?",
+      "options": [
+        "Pieter Bruegel cel Bătrân",
+        "Hieronymus Bosch",
+        "Jan Steen",
+        "Jacob van Ruisdael"
+      ],
+      "answer": "Pieter Bruegel cel Bătrân",
+      "explanation": "„Vânătorii în zăpadă” face parte dintr-un ciclu sezonier pictat de Bruegel în 1565.",
+      "id": "art-108"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor baroc flamand este autorul lucrării „Ridicarea crucii”?",
+      "options": [
+        "Peter Paul Rubens",
+        "Anthony van Dyck",
+        "Jacob Jordaens",
+        "Frans Snyders"
+      ],
+      "answer": "Peter Paul Rubens",
+      "explanation": "Rubens a realizat „Ridicarea crucii” pentru Catedrala Maicii Domnului din Anvers.",
+      "id": "art-109"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a devenit celebru pentru portretele aristocratice ale curții engleze a regelui Carol I?",
+      "options": [
+        "Anthony van Dyck",
+        "Peter Paul Rubens",
+        "Frans Hals",
+        "Joshua Reynolds"
+      ],
+      "answer": "Anthony van Dyck",
+      "explanation": "Anthony van Dyck a fost pictor principal la curtea lui Carol I și a influențat profund portretistica britanică.",
+      "id": "art-110"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor spaniol este asociat cu orașul Toledo și cu figuri alungite, intens spiritualizate?",
+      "options": [
+        "El Greco",
+        "Velázquez",
+        "Murillo",
+        "Sorolla"
+      ],
+      "answer": "El Greco",
+      "explanation": "El Greco a lucrat în Toledo și a dezvoltat un stil personal cu figuri alungite și cromatică expresivă.",
+      "id": "art-111"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce pictor venețian renascentist este autorul lucrării „Venus din Urbino”?",
+      "options": [
+        "Titian",
+        "Tintoretto",
+        "Veronese",
+        "Giorgione"
+      ],
+      "answer": "Titian",
+      "explanation": "Titian a pictat „Venus din Urbino” în 1538, una dintre cele mai influente reprezentări ale nudului renascentist.",
+      "id": "art-112"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Furtuna”, o lucrare enigmatică a Renașterii venețiene?",
+      "options": [
+        "Giorgione",
+        "Titian",
+        "Tintoretto",
+        "Bellini"
+      ],
+      "answer": "Giorgione",
+      "explanation": "„Furtuna” este una dintre puținele lucrări atribuite în mod general lui Giorgione.",
+      "id": "art-113"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a realizat „Nunta din Cana”, enorma pânză aflată la Luvru în aceeași sală cu Mona Lisa?",
+      "options": [
+        "Paolo Veronese",
+        "Tintoretto",
+        "Titian",
+        "Caravaggio"
+      ],
+      "answer": "Paolo Veronese",
+      "explanation": "„Nunta din Cana” de Veronese este una dintre cele mai mari pânze din colecția Luvrului.",
+      "id": "art-114"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a pictat „Miracolul sclavului”, una dintre lucrările sale venețiene dinamice?",
+      "options": [
+        "Tintoretto",
+        "Veronese",
+        "Titian",
+        "Giorgione"
+      ],
+      "answer": "Tintoretto",
+      "explanation": "Tintoretto este cunoscut pentru perspective dramatice, mișcare și compoziții energice, vizibile în „Miracolul sclavului”.",
+      "id": "art-115"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect a proiectat Vila Rotonda de lângă Vicenza?",
+      "options": [
+        "Andrea Palladio",
+        "Filippo Brunelleschi",
+        "Donato Bramante",
+        "Giacomo Barozzi da Vignola"
+      ],
+      "answer": "Andrea Palladio",
+      "explanation": "Villa Almerico Capra, cunoscută drept La Rotonda, este una dintre cele mai influente opere ale lui Andrea Palladio.",
+      "id": "art-116"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen arhitectural desemnează un fronton triunghiular susținut de coloane, caracteristic templelor clasice?",
+      "options": [
+        "Pediment",
+        "Triforiu",
+        "Pinaclu",
+        "Tambur"
+      ],
+      "answer": "Pediment",
+      "explanation": "Pedimentul este frontonul triunghiular întâlnit frecvent în arhitectura greacă și în stilurile inspirate din clasicism.",
+      "id": "art-117"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tip de coloană grecească are capitelul decorat cu volute spiralate?",
+      "options": [
+        "Ionică",
+        "Dorică",
+        "Corintică",
+        "Toscană"
+      ],
+      "answer": "Ionică",
+      "explanation": "Ordinul ionic se recunoaște ușor prin volutele spiralate ale capitelului.",
+      "id": "art-118"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce ordin clasic este caracterizat prin capiteluri bogat decorate cu frunze de acant?",
+      "options": [
+        "Corintic",
+        "Doric",
+        "Ionic",
+        "Toscan"
+      ],
+      "answer": "Corintic",
+      "explanation": "Capitelul corintic este decorat în mod tradițional cu frunze de acant și are un aspect mai elaborat decât cele dorice sau ionice.",
+      "id": "art-119"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce muzeu găzduiește „Guernica” de Picasso?",
+      "options": [
+        "Museo Reina Sofía",
+        "Muzeul Prado",
+        "Muzeul Luvru",
+        "Tate Modern"
+      ],
+      "answer": "Museo Reina Sofía",
+      "explanation": "„Guernica” este expusă la Museo Nacional Centro de Arte Reina Sofía din Madrid.",
+      "id": "art-120"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce muzeu se află „Noaptea înstelată” de Van Gogh?",
+      "options": [
+        "Museum of Modern Art din New York",
+        "Metropolitan Museum of Art",
+        "National Gallery din Londra",
+        "Musée d’Orsay"
+      ],
+      "answer": "Museum of Modern Art din New York",
+      "explanation": "„Noaptea înstelată” se află în colecția Museum of Modern Art (MoMA) din New York.",
+      "id": "art-121"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce muzeu se află „Nașterea lui Venus” de Botticelli?",
+      "options": [
+        "Galeria Uffizi",
+        "Muzeul Luvru",
+        "Muzeul Prado",
+        "Alte Pinakothek"
+      ],
+      "answer": "Galeria Uffizi",
+      "explanation": "„Nașterea lui Venus” este expusă la Galeria Uffizi din Florența.",
+      "id": "art-122"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce muzeu londonez este găzduit în fosta centrală electrică Bankside?",
+      "options": [
+        "Tate Modern",
+        "National Gallery",
+        "Victoria and Albert Museum",
+        "Courtauld Gallery"
+      ],
+      "answer": "Tate Modern",
+      "explanation": "Tate Modern a fost amenajat în fosta Bankside Power Station, pe malul sudic al Tamisei.",
+      "id": "art-123"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect a proiectat Muzeul Guggenheim din Bilbao?",
+      "options": [
+        "Frank Gehry",
+        "Santiago Calatrava",
+        "Renzo Piano",
+        "Norman Foster"
+      ],
+      "answer": "Frank Gehry",
+      "explanation": "Muzeul Guggenheim Bilbao, inaugurat în 1997, este una dintre cele mai cunoscute clădiri ale lui Frank Gehry.",
+      "id": "art-124"
+    },
+    {
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce arhitect a proiectat piramida de sticlă din curtea Luvrului?",
+      "options": [
+        "I. M. Pei",
+        "Jean Nouvel",
+        "Renzo Piano",
+        "Tadao Ando"
+      ],
+      "answer": "I. M. Pei",
+      "explanation": "Piramida Luvrului a fost proiectată de arhitectul I. M. Pei ca nouă intrare principală în muzeu.",
+      "id": "art-125"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost organizat Salon des Refusés la Paris, expoziția asociată cu respingerea lucrărilor de către Salonul oficial?",
+      "answer": "1863",
+      "explanation": "Salon des Refusés a fost organizat în 1863 la ordinul lui Napoleon al III-lea, pentru a expune lucrări respinse de juriul Salonului oficial.",
+      "id": "art-126"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost finalizată statuia „David” a lui Michelangelo?",
+      "answer": "1504",
+      "explanation": "Michelangelo a încheiat lucrul la „David” în 1504, după aproximativ trei ani de muncă.",
+      "id": "art-127"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost inaugurată prima Bienală de Artă de la Veneția?",
+      "answer": "1895",
+      "explanation": "Prima Expoziție Internațională de Artă a orașului Veneția, originea Bienalei, a fost inaugurată în 1895.",
+      "id": "art-128"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor a realizat „Înmormântarea contelui de Orgaz”?",
+      "options": [
+        "El Greco",
+        "Velázquez",
+        "Zurbarán",
+        "Murillo"
+      ],
+      "answer": "El Greco",
+      "explanation": "El Greco a pictat „Înmormântarea contelui de Orgaz” pentru biserica Santo Tomé din Toledo.",
+      "id": "art-129"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a pictat „Ambasadorii”, lucrare celebră pentru craniul anamorfotic din prim-plan?",
+      "options": [
+        "Hans Holbein cel Tânăr",
+        "Albrecht Dürer",
+        "Lucas Cranach cel Bătrân",
+        "Matthias Grünewald"
+      ],
+      "answer": "Hans Holbein cel Tânăr",
+      "explanation": "„Ambasadorii” de Holbein include un craniu distorsionat care devine lizibil doar dintr-un unghi oblic.",
+      "id": "art-130"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist german a realizat gravura „Melencolia I”?",
+      "options": [
+        "Albrecht Dürer",
+        "Hans Holbein cel Tânăr",
+        "Lucas Cranach cel Bătrân",
+        "Martin Schongauer"
+      ],
+      "answer": "Albrecht Dürer",
+      "explanation": "„Melencolia I” din 1514 este una dintre cele trei așa-numite gravuri magistrale ale lui Albrecht Dürer.",
+      "id": "art-131"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a pictat „Isenheim Altarpiece” împreună cu atelierul său, în special panourile pictate?",
+      "options": [
+        "Matthias Grünewald",
+        "Albrecht Dürer",
+        "Hans Baldung Grien",
+        "Lucas Cranach cel Bătrân"
+      ],
+      "answer": "Matthias Grünewald",
+      "explanation": "Panourile pictate ale Retablului de la Isenheim sunt opera lui Matthias Grünewald; sculpturile sunt asociate cu Nikolaus Hagenauer.",
+      "id": "art-132"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor flamand a realizat „Nunta țărănească”?",
+      "options": [
+        "Pieter Bruegel cel Bătrân",
+        "Pieter Brueghel cel Tânăr",
+        "Jan Steen",
+        "David Teniers cel Tânăr"
+      ],
+      "answer": "Pieter Bruegel cel Bătrân",
+      "explanation": "„Nunta țărănească” este una dintre scenele de viață rurală celebre ale lui Pieter Bruegel cel Bătrân.",
+      "id": "art-133"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a pictat „Lecția de anatomie a doctorului Tulp”?",
+      "options": [
+        "Rembrandt",
+        "Frans Hals",
+        "Jan Steen",
+        "Gerard ter Borch"
+      ],
+      "answer": "Rembrandt",
+      "explanation": "Rembrandt a pictat „Lecția de anatomie a doctorului Nicolaes Tulp” în 1632.",
+      "id": "art-134"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor olandez este cunoscut pentru peisajul „Moara de la Wijk bij Duurstede”?",
+      "options": [
+        "Jacob van Ruisdael",
+        "Meindert Hobbema",
+        "Aelbert Cuyp",
+        "Salomon van Ruysdael"
+      ],
+      "answer": "Jacob van Ruisdael",
+      "explanation": "Jacob van Ruisdael a fost unul dintre cei mai importanți peisagiști ai Epocii de Aur olandeze.",
+      "id": "art-135"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist francez a pictat „Pelerinaj la Cythera”?",
+      "options": [
+        "Antoine Watteau",
+        "Jean-Honoré Fragonard",
+        "François Boucher",
+        "Jean-Baptiste Greuze"
+      ],
+      "answer": "Antoine Watteau",
+      "explanation": "„Pelerinaj la Cythera” este o lucrare emblematică a genului fête galante asociat cu Watteau.",
+      "id": "art-136"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor rococo a realizat „Leagănul” („The Swing”)?",
+      "options": [
+        "Jean-Honoré Fragonard",
+        "François Boucher",
+        "Antoine Watteau",
+        "Jean-Baptiste-Siméon Chardin"
+      ],
+      "answer": "Jean-Honoré Fragonard",
+      "explanation": "„Leagănul” este una dintre cele mai cunoscute imagini ale rococoului francez.",
+      "id": "art-137"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor este autorul lucrării „Jurământul Horaților”?",
+      "options": [
+        "Jacques-Louis David",
+        "Jean-Auguste-Dominique Ingres",
+        "Antoine-Jean Gros",
+        "Théodore Géricault"
+      ],
+      "answer": "Jacques-Louis David",
+      "explanation": "„Jurământul Horaților” este o lucrare majoră a neoclasicismului francez.",
+      "id": "art-138"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor neoclasic a realizat „Marea Odaliscă”?",
+      "options": [
+        "Jean-Auguste-Dominique Ingres",
+        "Jacques-Louis David",
+        "Jean-Baptiste Greuze",
+        "William-Adolphe Bouguereau"
+      ],
+      "answer": "Jean-Auguste-Dominique Ingres",
+      "explanation": "Ingres a pictat „Marea Odaliscă” în 1814, alungind deliberat anatomia figurii.",
+      "id": "art-139"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor englez a realizat „Temeraire remorcat spre ultimul ei loc de ancorare”?",
+      "options": [
+        "J. M. W. Turner",
+        "John Constable",
+        "William Blake",
+        "Thomas Gainsborough"
+      ],
+      "answer": "J. M. W. Turner",
+      "explanation": "Turner a pictat „The Fighting Temeraire” în 1839, folosind lumina și culoarea într-un mod foarte liber pentru epocă.",
+      "id": "art-140"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor englez este autorul peisajului „The Hay Wain”?",
+      "options": [
+        "John Constable",
+        "J. M. W. Turner",
+        "Thomas Gainsborough",
+        "Samuel Palmer"
+      ],
+      "answer": "John Constable",
+      "explanation": "John Constable a pictat „The Hay Wain” în 1821, inspirat de peisajul rural din Suffolk.",
+      "id": "art-141"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist prerafaelit a pictat „Ophelia”?",
+      "options": [
+        "John Everett Millais",
+        "Dante Gabriel Rossetti",
+        "William Holman Hunt",
+        "Edward Burne-Jones"
+      ],
+      "answer": "John Everett Millais",
+      "explanation": "„Ophelia” de Millais este una dintre cele mai cunoscute lucrări ale Frăției Prerafaelite.",
+      "id": "art-142"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care dintre acești artiști a fost membru fondator al Frăției Prerafaelite?",
+      "options": [
+        "Dante Gabriel Rossetti",
+        "James McNeill Whistler",
+        "John Singer Sargent",
+        "Walter Sickert"
+      ],
+      "answer": "Dante Gabriel Rossetti",
+      "explanation": "Rossetti a fost unul dintre fondatorii Frăției Prerafaelite în 1848.",
+      "id": "art-143"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist american a pictat „Arrangement in Grey and Black No. 1”, cunoscută popular drept „Mama lui Whistler”?",
+      "options": [
+        "James McNeill Whistler",
+        "John Singer Sargent",
+        "Thomas Eakins",
+        "Winslow Homer"
+      ],
+      "answer": "James McNeill Whistler",
+      "explanation": "Portretul mamei lui Whistler este cunoscut oficial ca „Arrangement in Grey and Black No. 1”.",
+      "id": "art-144"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor american a realizat „The Gross Clinic”?",
+      "options": [
+        "Thomas Eakins",
+        "Winslow Homer",
+        "John Singer Sargent",
+        "George Bellows"
+      ],
+      "answer": "Thomas Eakins",
+      "explanation": "„The Gross Clinic” din 1875 este una dintre cele mai importante picturi realiste americane din secolul al XIX-lea.",
+      "id": "art-145"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist american este cunoscut pentru acuarele și picturi marine precum „The Gulf Stream”?",
+      "options": [
+        "Winslow Homer",
+        "Thomas Eakins",
+        "George Inness",
+        "Frederic Church"
+      ],
+      "answer": "Winslow Homer",
+      "explanation": "Winslow Homer a reprezentat frecvent marea, pescarii și confruntarea omului cu natura.",
+      "id": "art-146"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a pictat „Madame X”, portret care a provocat scandal la Salonul din Paris din 1884?",
+      "options": [
+        "John Singer Sargent",
+        "James McNeill Whistler",
+        "Thomas Eakins",
+        "Édouard Manet"
+      ],
+      "answer": "John Singer Sargent",
+      "explanation": "„Madame X” de Sargent a fost primit cu ostilitate la Salonul din 1884, în special din cauza poziției inițiale a bretelei rochiei.",
+      "id": "art-147"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor simbolist elvețian este cunoscut pentru „Insula morților”?",
+      "options": [
+        "Arnold Böcklin",
+        "Ferdinand Hodler",
+        "Odilon Redon",
+        "Gustave Moreau"
+      ],
+      "answer": "Arnold Böcklin",
+      "explanation": "Böcklin a realizat mai multe versiuni ale „Insulei morților”, imagine cu mare influență în cultura europeană.",
+      "id": "art-148"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist simbolist francez a realizat numeroase imagini onirice cu ochi, flori și creaturi fantastice?",
+      "options": [
+        "Odilon Redon",
+        "Gustave Moreau",
+        "Pierre Puvis de Chavannes",
+        "Maurice Denis"
+      ],
+      "answer": "Odilon Redon",
+      "explanation": "Odilon Redon a lucrat atât în alb-negru, cât și în pastel și culoare, dezvoltând o imagistică simbolistă foarte personală.",
+      "id": "art-149"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor norvegian a realizat „Madonna” și „Pubertatea”, pe lângă „Strigătul”?",
+      "options": [
+        "Edvard Munch",
+        "Christian Krohg",
+        "Harald Sohlberg",
+        "Nikolai Astrup"
+      ],
+      "answer": "Edvard Munch",
+      "explanation": "Munch a explorat teme precum anxietatea, iubirea, boala și sexualitatea în numeroase cicluri de lucrări.",
+      "id": "art-150"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist vienez este cunoscut pentru autoportrete tensionate și desene ale corpului uman, murind în 1918 la numai 28 de ani?",
+      "options": [
+        "Egon Schiele",
+        "Gustav Klimt",
+        "Oskar Kokoschka",
+        "Richard Gerstl"
+      ],
+      "answer": "Egon Schiele",
+      "explanation": "Egon Schiele a murit în 1918, în timpul pandemiei de gripă, la vârsta de 28 de ani.",
+      "id": "art-151"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist vienez asociat expresionismului a pictat „Mireasa vântului” („The Bride of the Wind”)?",
+      "options": [
+        "Oskar Kokoschka",
+        "Egon Schiele",
+        "Gustav Klimt",
+        "Richard Gerstl"
+      ],
+      "answer": "Oskar Kokoschka",
+      "explanation": "Oskar Kokoschka a pictat „Mireasa vântului” în 1913–1914, lucrare legată de relația sa cu Alma Mahler.",
+      "id": "art-152"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a creat lucrarea „Calul albastru I”?",
+      "options": [
+        "Franz Marc",
+        "August Macke",
+        "Wassily Kandinsky",
+        "Paul Klee"
+      ],
+      "answer": "Franz Marc",
+      "explanation": "Franz Marc, membru al Der Blaue Reiter, a folosit frecvent animale în culori simbolice intense.",
+      "id": "art-153"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist elvețiano-german a realizat lucrarea „Twittering Machine” și a predat la Bauhaus?",
+      "options": [
+        "Paul Klee",
+        "Johannes Itten",
+        "Josef Albers",
+        "Lyonel Feininger"
+      ],
+      "answer": "Paul Klee",
+      "explanation": "Paul Klee a predat la Bauhaus și a combinat desenul, culoarea și semnele într-un limbaj extrem de personal.",
+      "id": "art-154"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a fost directorul cursului preliminar de la Bauhaus și este asociat cu teoria culorii și „Arta culorii”?",
+      "options": [
+        "Johannes Itten",
+        "László Moholy-Nagy",
+        "Josef Albers",
+        "Oskar Schlemmer"
+      ],
+      "answer": "Johannes Itten",
+      "explanation": "Johannes Itten a dezvoltat cursul preliminar Bauhaus și a formulat o teorie influentă a contrastelor cromatice.",
+      "id": "art-155"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist și profesor Bauhaus este cunoscut pentru seria „Homage to the Square”?",
+      "options": [
+        "Josef Albers",
+        "Paul Klee",
+        "Wassily Kandinsky",
+        "László Moholy-Nagy"
+      ],
+      "answer": "Josef Albers",
+      "explanation": "Josef Albers a explorat sistematic percepția culorii în seria „Homage to the Square”.",
+      "id": "art-156"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist Bauhaus a creat „Light-Space Modulator”, lucrare importantă pentru arta cinetică și studiul luminii?",
+      "options": [
+        "László Moholy-Nagy",
+        "Oskar Schlemmer",
+        "Marcel Breuer",
+        "Lyonel Feininger"
+      ],
+      "answer": "László Moholy-Nagy",
+      "explanation": "Moholy-Nagy a experimentat cu fotografie, film, lumină și materiale industriale la Bauhaus.",
+      "id": "art-157"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist Bauhaus a creat costumele și scenografia pentru „Triadic Ballet”?",
+      "options": [
+        "Oskar Schlemmer",
+        "Paul Klee",
+        "Josef Albers",
+        "Georg Muche"
+      ],
+      "answer": "Oskar Schlemmer",
+      "explanation": "„Triadic Ballet” al lui Oskar Schlemmer combină dansul, geometria și costumele sculpturale.",
+      "id": "art-158"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist rus a creat „Monumentul pentru Internaționala a III-a”, cunoscut ca Turnul lui Tatlin?",
+      "options": [
+        "Vladimir Tatlin",
+        "El Lissitzky",
+        "Naum Gabo",
+        "Alexander Rodchenko"
+      ],
+      "answer": "Vladimir Tatlin",
+      "explanation": "Proiectul lui Tatlin din 1919–1920 a devenit un simbol al constructivismului rus, deși nu a fost construit la scară reală.",
+      "id": "art-159"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist rus este asociat cu seria de compoziții „Proun”?",
+      "options": [
+        "El Lissitzky",
+        "Kazimir Malevici",
+        "Alexander Rodchenko",
+        "Naum Gabo"
+      ],
+      "answer": "El Lissitzky",
+      "explanation": "El Lissitzky a numit „Proun” lucrările sale care explorau tranziția dintre pictură, design și arhitectură.",
+      "id": "art-160"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce fotograf și artist constructivist rus este cunoscut pentru unghiuri radicale și compoziții diagonale?",
+      "options": [
+        "Alexander Rodchenko",
+        "El Lissitzky",
+        "Vladimir Tatlin",
+        "Sergei Eisenstein"
+      ],
+      "answer": "Alexander Rodchenko",
+      "explanation": "Rodchenko a folosit perspective neobișnuite și diagonale puternice în fotografie și design grafic.",
+      "id": "art-161"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a creat „Fountain”, ready-made-ul semnat „R. Mutt”?",
+      "options": [
+        "Marcel Duchamp",
+        "Man Ray",
+        "Francis Picabia",
+        "Jean Arp"
+      ],
+      "answer": "Marcel Duchamp",
+      "explanation": "„Fountain” din 1917 este unul dintre cele mai influente ready-made-uri ale lui Marcel Duchamp.",
+      "id": "art-162"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist și fotograf dadaist/suprarealist a realizat „Le Violon d’Ingres”?",
+      "options": [
+        "Man Ray",
+        "Marcel Duchamp",
+        "Francis Picabia",
+        "André Masson"
+      ],
+      "answer": "Man Ray",
+      "explanation": "Man Ray a fotografiat spatele lui Kiki de Montparnasse și a adăugat formele de f ale unei viori în „Le Violon d’Ingres”.",
+      "id": "art-163"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a dezvoltat tehnica frottage, folosind frecarea creionului peste suprafețe texturate?",
+      "options": [
+        "Max Ernst",
+        "Joan Miró",
+        "André Masson",
+        "Yves Tanguy"
+      ],
+      "answer": "Max Ernst",
+      "explanation": "Max Ernst a folosit frottage-ul pentru a genera texturi și forme neașteptate în practica suprarealistă.",
+      "id": "art-164"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist suprarealist spaniol a pictat „Carnavalul Arlechinului”?",
+      "options": [
+        "Joan Miró",
+        "Salvador Dalí",
+        "Óscar Domínguez",
+        "Remedios Varo"
+      ],
+      "answer": "Joan Miró",
+      "explanation": "„Carnavalul Arlechinului” este una dintre lucrările suprarealiste timpurii reprezentative ale lui Joan Miró.",
+      "id": "art-165"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist belgian a pictat „Trădarea imaginilor”, cu celebra pipă și textul „Ceci n’est pas une pipe”?",
+      "options": [
+        "René Magritte",
+        "Paul Delvaux",
+        "James Ensor",
+        "Marcel Broodthaers"
+      ],
+      "answer": "René Magritte",
+      "explanation": "Magritte a explorat relația dintre obiect, imagine și limbaj în „Trădarea imaginilor”.",
+      "id": "art-166"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor belgian este cunoscut pentru „Intrarea lui Hristos în Bruxelles în 1889” și pentru măști grotesce?",
+      "options": [
+        "James Ensor",
+        "René Magritte",
+        "Paul Delvaux",
+        "Fernand Khnopff"
+      ],
+      "answer": "James Ensor",
+      "explanation": "James Ensor a folosit măști, carnavaluri și grotescul pentru a critica societatea burgheză.",
+      "id": "art-167"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist mexican a realizat mari fresce publice precum cele din Palacio Nacional din Ciudad de México?",
+      "options": [
+        "Diego Rivera",
+        "José Clemente Orozco",
+        "David Alfaro Siqueiros",
+        "Rufino Tamayo"
+      ],
+      "answer": "Diego Rivera",
+      "explanation": "Diego Rivera a fost una dintre figurile majore ale muralismului mexican și a realizat vaste cicluri istorice în clădiri publice.",
+      "id": "art-168"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce muralist mexican a pictat „Prometeu” la Pomona College?",
+      "options": [
+        "José Clemente Orozco",
+        "Diego Rivera",
+        "David Alfaro Siqueiros",
+        "Rufino Tamayo"
+      ],
+      "answer": "José Clemente Orozco",
+      "explanation": "Orozco a pictat fresca „Prometeu” în 1930 la Pomona College din California.",
+      "id": "art-169"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce muralist mexican a experimentat cu materiale industriale și tehnici precum aerograful și proiecția fotografică?",
+      "options": [
+        "David Alfaro Siqueiros",
+        "Diego Rivera",
+        "José Clemente Orozco",
+        "Dr. Atl"
+      ],
+      "answer": "David Alfaro Siqueiros",
+      "explanation": "Siqueiros a fost interesat de tehnici moderne și materiale industriale pentru pictura murală.",
+      "id": "art-170"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist american a pictat „Autumn Rhythm (Number 30)”?",
+      "options": [
+        "Jackson Pollock",
+        "Willem de Kooning",
+        "Mark Rothko",
+        "Barnett Newman"
+      ],
+      "answer": "Jackson Pollock",
+      "explanation": "„Autumn Rhythm (Number 30)” este una dintre cele mai cunoscute picturi gestuale ale lui Jackson Pollock.",
+      "id": "art-171"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor al expresionismului abstract a realizat seria „Woman”, caracterizată prin figuri feminine agresiv deformate?",
+      "options": [
+        "Willem de Kooning",
+        "Franz Kline",
+        "Clyfford Still",
+        "Robert Motherwell"
+      ],
+      "answer": "Willem de Kooning",
+      "explanation": "Willem de Kooning a lucrat repetat asupra temei „Woman”, combinând figurația cu gestualitatea expresionistă.",
+      "id": "art-172"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist este asociat cu picturile de mari câmpuri cromatice dreptunghiulare, precum „Orange and Yellow”?",
+      "options": [
+        "Mark Rothko",
+        "Barnett Newman",
+        "Ad Reinhardt",
+        "Kenneth Noland"
+      ],
+      "answer": "Mark Rothko",
+      "explanation": "Rothko a dezvoltat compoziții cu câmpuri cromatice suspendate, destinate unei experiențe contemplative.",
+      "id": "art-173"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor american a folosit frecvent benzi verticale de culoare separate de „zips”?",
+      "options": [
+        "Barnett Newman",
+        "Mark Rothko",
+        "Franz Kline",
+        "Morris Louis"
+      ],
+      "answer": "Barnett Newman",
+      "explanation": "Barnett Newman numea „zips” benzile verticale care structurează suprafețele sale cromatice.",
+      "id": "art-174"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist pop a adaptat estetica benzilor desenate și punctele Ben-Day în lucrări precum „Whaam!”?",
+      "options": [
+        "Roy Lichtenstein",
+        "Andy Warhol",
+        "Tom Wesselmann",
+        "James Rosenquist"
+      ],
+      "answer": "Roy Lichtenstein",
+      "explanation": "Roy Lichtenstein a preluat limbajul grafic al benzilor desenate și l-a transformat în pictură monumentală.",
+      "id": "art-175"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist pop a realizat lucrarea „Just what is it that makes today’s homes so different, so appealing?”?",
+      "options": [
+        "Richard Hamilton",
+        "Peter Blake",
+        "David Hockney",
+        "Eduardo Paolozzi"
+      ],
+      "answer": "Richard Hamilton",
+      "explanation": "Colajul lui Richard Hamilton din 1956 este considerat una dintre imaginile timpurii definitorii ale artei Pop britanice.",
+      "id": "art-176"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist britanic a pictat „A Bigger Splash”?",
+      "options": [
+        "David Hockney",
+        "Peter Blake",
+        "Lucian Freud",
+        "Francis Bacon"
+      ],
+      "answer": "David Hockney",
+      "explanation": "„A Bigger Splash” din 1967 este una dintre imaginile emblematice ale perioadei californiene a lui David Hockney.",
+      "id": "art-177"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor britanic este cunoscut pentru triptice și portrete deformate, inclusiv numeroase studii după Velázquez?",
+      "options": [
+        "Francis Bacon",
+        "Lucian Freud",
+        "David Hockney",
+        "Frank Auerbach"
+      ],
+      "answer": "Francis Bacon",
+      "explanation": "Francis Bacon a reinterpretat obsesiv imaginea papei Inocențiu al X-lea după portretul lui Velázquez.",
+      "id": "art-178"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pictor britanic, nepot al lui Sigmund Freud, este cunoscut pentru portrete și nuduri pictate cu observație intensă?",
+      "options": [
+        "Lucian Freud",
+        "Francis Bacon",
+        "Frank Auerbach",
+        "Stanley Spencer"
+      ],
+      "answer": "Lucian Freud",
+      "explanation": "Lucian Freud a devenit cunoscut pentru portrete și studii ale corpului realizate prin ședințe îndelungate de pozat.",
+      "id": "art-179"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist american a realizat „Flag” și „Target”, folosind imagini familiare ca obiecte picturale?",
+      "options": [
+        "Jasper Johns",
+        "Robert Rauschenberg",
+        "Cy Twombly",
+        "Ellsworth Kelly"
+      ],
+      "answer": "Jasper Johns",
+      "explanation": "Jasper Johns a transformat simboluri comune precum steagul și ținta în subiecte de analiză picturală.",
+      "id": "art-180"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a numit „Combines” lucrările care îmbină pictura cu obiecte reale și materiale găsite?",
+      "options": [
+        "Robert Rauschenberg",
+        "Jasper Johns",
+        "Joseph Cornell",
+        "Claes Oldenburg"
+      ],
+      "answer": "Robert Rauschenberg",
+      "explanation": "Rauschenberg a folosit termenul „Combines” pentru lucrări hibride între pictură și sculptură.",
+      "id": "art-181"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce sculptor pop este cunoscut pentru versiuni monumentale ale obiectelor cotidiene, precum „Clothespin” și „Spoonbridge and Cherry”?",
+      "options": [
+        "Claes Oldenburg",
+        "Donald Judd",
+        "Richard Serra",
+        "Dan Flavin"
+      ],
+      "answer": "Claes Oldenburg",
+      "explanation": "Oldenburg a mărit obiecte banale până la scară monumentală, adesea împreună cu Coosje van Bruggen.",
+      "id": "art-182"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist minimalist este cunoscut pentru „specific objects” și volume geometrice repetate?",
+      "options": [
+        "Donald Judd",
+        "Dan Flavin",
+        "Carl Andre",
+        "Sol LeWitt"
+      ],
+      "answer": "Donald Judd",
+      "explanation": "Donald Judd a respins atât pictura, cât și sculptura tradițională, preferând obiecte industriale seriale pe care le numea „specific objects”.",
+      "id": "art-183"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist minimalist a folosit tuburi fluorescente comerciale ca material principal?",
+      "options": [
+        "Dan Flavin",
+        "Donald Judd",
+        "Robert Morris",
+        "Richard Serra"
+      ],
+      "answer": "Dan Flavin",
+      "explanation": "Dan Flavin a creat instalații din tuburi fluorescente standard, folosind lumina și spațiul ca materiale artistice.",
+      "id": "art-184"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist conceptual a formulat propoziții-instrucțiuni care puteau fi executate de alții și este cunoscut pentru „Wall Drawings”?",
+      "options": [
+        "Sol LeWitt",
+        "Joseph Kosuth",
+        "Lawrence Weiner",
+        "On Kawara"
+      ],
+      "answer": "Sol LeWitt",
+      "explanation": "În practica lui Sol LeWitt, ideea și instrucțiunea puteau avea prioritate față de execuția fizică realizată de artist.",
+      "id": "art-185"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist conceptual a realizat „One and Three Chairs”, prezentând un scaun, fotografia lui și definiția cuvântului „chair”?",
+      "options": [
+        "Joseph Kosuth",
+        "Sol LeWitt",
+        "Bruce Nauman",
+        "Robert Barry"
+      ],
+      "answer": "Joseph Kosuth",
+      "explanation": "„One and Three Chairs” analizează relația dintre obiect, imagine și limbaj.",
+      "id": "art-186"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect japonez este cunoscut pentru Biserica Luminii din Ibaraki?",
+      "options": [
+        "Tadao Ando",
+        "Kengo Kuma",
+        "Arata Isozaki",
+        "Kenzo Tange"
+      ],
+      "answer": "Tadao Ando",
+      "explanation": "Biserica Luminii a lui Tadao Ando folosește beton aparent și o tăietură cruciformă de lumină în peretele altarului.",
+      "id": "art-187"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect finlandez a proiectat Sanatoriul Paimio și este asociat cu un modernism umanist?",
+      "options": [
+        "Alvar Aalto",
+        "Eero Saarinen",
+        "Eliel Saarinen",
+        "Jørn Utzon"
+      ],
+      "answer": "Alvar Aalto",
+      "explanation": "Alvar Aalto a combinat principiile modernismului cu materiale naturale și atenție pentru experiența utilizatorului.",
+      "id": "art-188"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect a proiectat Opera din Sydney?",
+      "options": [
+        "Jørn Utzon",
+        "Eero Saarinen",
+        "Kenzo Tange",
+        "Pier Luigi Nervi"
+      ],
+      "answer": "Jørn Utzon",
+      "explanation": "Arhitectul danez Jørn Utzon a proiectat Opera din Sydney, recunoscută prin acoperișurile sale în formă de cochilii.",
+      "id": "art-189"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect a proiectat terminalul TWA Flight Center de la aeroportul JFK?",
+      "options": [
+        "Eero Saarinen",
+        "Alvar Aalto",
+        "Philip Johnson",
+        "Oscar Niemeyer"
+      ],
+      "answer": "Eero Saarinen",
+      "explanation": "TWA Flight Center este una dintre cele mai expresive clădiri ale lui Eero Saarinen, cu forme curbe inspirate de zbor.",
+      "id": "art-190"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect brazilian este asociat cu numeroase clădiri civice din Brasília, inclusiv Catedrala?",
+      "options": [
+        "Oscar Niemeyer",
+        "Lúcio Costa",
+        "Paulo Mendes da Rocha",
+        "Affonso Eduardo Reidy"
+      ],
+      "answer": "Oscar Niemeyer",
+      "explanation": "Oscar Niemeyer a proiectat multe dintre clădirile monumentale ale noii capitale Brasília; planul urban general aparține lui Lúcio Costa.",
+      "id": "art-191"
+    },
+    {
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce arhitect a proiectat Seagram Building din New York împreună cu Philip Johnson?",
+      "options": [
+        "Ludwig Mies van der Rohe",
+        "Walter Gropius",
+        "Eero Saarinen",
+        "Louis Kahn"
+      ],
+      "answer": "Ludwig Mies van der Rohe",
+      "explanation": "Seagram Building este una dintre clădirile emblematice ale International Style și ale arhitecturii corporative moderne.",
+      "id": "art-192"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost prezentat ready-made-ul „Fountain” al lui Marcel Duchamp?",
+      "answer": "1917",
+      "explanation": "Duchamp a trimis „Fountain”, semnat „R. Mutt”, la expoziția Society of Independent Artists din New York în 1917.",
+      "id": "art-193"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost inaugurat Museum of Modern Art (MoMA) din New York?",
+      "answer": "1929",
+      "explanation": "Museum of Modern Art din New York a fost fondat și deschis publicului în 1929.",
+      "id": "art-194"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost inaugurată Opera din Sydney?",
+      "answer": "1973",
+      "explanation": "Opera din Sydney a fost inaugurată oficial în 1973.",
+      "id": "art-195"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a scris tratatul renascentist „De pictura” („Despre pictură”), fundamental pentru teoria perspectivei?",
+      "options": [
+        "Leon Battista Alberti",
+        "Giorgio Vasari",
+        "Lorenzo Ghiberti",
+        "Piero della Francesca"
+      ],
+      "answer": "Leon Battista Alberti",
+      "explanation": "Leon Battista Alberti a scris „De pictura” în 1435, formulând principii importante despre perspectivă, compoziție și reprezentare.",
+      "id": "art-196"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a pictat ciclul de fresce „Legenda Adevăratei Cruci” din Arezzo?",
+      "options": [
+        "Piero della Francesca",
+        "Fra Angelico",
+        "Masaccio",
+        "Domenico Ghirlandaio"
+      ],
+      "answer": "Piero della Francesca",
+      "explanation": "Piero della Francesca a realizat ciclul „Legenda Adevăratei Cruci” în biserica San Francesco din Arezzo.",
+      "id": "art-197"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor este autorul frescei „Banii tributului” din Capela Brancacci?",
+      "options": [
+        "Masaccio",
+        "Masolino",
+        "Filippino Lippi",
+        "Fra Angelico"
+      ],
+      "answer": "Masaccio",
+      "explanation": "„Banii tributului” este una dintre frescele esențiale ale lui Masaccio în Capela Brancacci și demonstrează folosirea perspectivei și a luminii unitare.",
+      "id": "art-198"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a pictat „Buna Vestire” aflată în mănăstirea San Marco din Florența, într-un limbaj de profundă simplitate spirituală?",
+      "options": [
+        "Fra Angelico",
+        "Fra Filippo Lippi",
+        "Domenico Ghirlandaio",
+        "Perugino"
+      ],
+      "answer": "Fra Angelico",
+      "explanation": "Fra Angelico a realizat numeroase fresce pentru conventul San Marco din Florența, inclusiv celebra „Buna Vestire”.",
+      "id": "art-199"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor renascentist a realizat „Camera degli Sposi” din Palatul Ducal de la Mantova?",
+      "options": [
+        "Andrea Mantegna",
+        "Correggio",
+        "Piero della Francesca",
+        "Luca Signorelli"
+      ],
+      "answer": "Andrea Mantegna",
+      "explanation": "Andrea Mantegna a decorat Camera degli Sposi cu fresce și efecte iluzioniste, inclusiv celebrul oculus pictat pe tavan.",
+      "id": "art-200"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a pictat cupola Catedralei din Parma cu „Adormirea Maicii Domnului”, folosind un spectaculos efect iluzionist ascensional?",
+      "options": [
+        "Correggio",
+        "Parmigianino",
+        "Tintoretto",
+        "Veronese"
+      ],
+      "answer": "Correggio",
+      "explanation": "Correggio a creat în cupola Catedralei din Parma o compoziție radicală de figuri văzute în perspectivă de jos în sus.",
+      "id": "art-201"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen desemnează reprezentarea unei forme puternic scurtate în perspectivă pentru a sugera adâncimea?",
+      "options": [
+        "Racursiu",
+        "Sfumato",
+        "Grisaille",
+        "Pentimento"
+      ],
+      "answer": "Racursiu",
+      "explanation": "Racursiul reprezintă o formă orientată spre privitor astfel încât dimensiunile ei apar comprimate, creând iluzia adâncimii.",
+      "id": "art-202"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen desemnează o modificare făcută de artist în timpul execuției, vizibilă ulterior prin straturile de vopsea?",
+      "options": [
+        "Pentimento",
+        "Carton",
+        "Impasto",
+        "Sinopie"
+      ],
+      "answer": "Pentimento",
+      "explanation": "Un pentimento este o schimbare de compoziție sau desen realizată de artist și devenită vizibilă prin îmbătrânirea sau transparența straturilor.",
+      "id": "art-203"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce termen italian desemnează desenul pregătitor trasat pe stratul de bază al unei fresce?",
+      "options": [
+        "Sinopie",
+        "Giornata",
+        "Predella",
+        "Cartellino"
+      ],
+      "answer": "Sinopie",
+      "explanation": "Sinopia este desenul pregătitor realizat pe tencuiala de bază înaintea aplicării stratului final pentru frescă.",
+      "id": "art-204"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește porțiunea de frescă pe care pictorul o poate executa într-o singură zi, cât timp tencuiala rămâne umedă?",
+      "options": [
+        "Giornata",
+        "Sinopie",
+        "Spolvero",
+        "Impasto"
+      ],
+      "answer": "Giornata",
+      "explanation": "În frescă, fiecare „giornata” corespunde unei suprafețe pregătite și pictate într-o singură zi de lucru.",
+      "id": "art-205"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce tehnică de transfer al desenului presupune perforarea contururilor unui carton și tamponarea cu pulbere de cărbune?",
+      "options": [
+        "Spolvero",
+        "Frottage",
+        "Monotipie",
+        "Mezzotintă"
+      ],
+      "answer": "Spolvero",
+      "explanation": "Spolvero transferă desenul prin mici găuri în carton, peste care se aplică pulbere pentru a marca punctele pe suport.",
+      "id": "art-206"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor venețian este considerat maestru al culorii și a influențat puternic pictura europeană de la Rubens la Velázquez?",
+      "options": [
+        "Titian",
+        "Mantegna",
+        "Perugino",
+        "Piero della Francesca"
+      ],
+      "answer": "Titian",
+      "explanation": "Titian a dezvoltat un limbaj pictural bazat pe culoare și tușă care a influențat generații de artiști europeni.",
+      "id": "art-207"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor a realizat „Bacchus și Ariadna” pentru ciclul comandat de Alfonso d’Este?",
+      "options": [
+        "Titian",
+        "Giorgione",
+        "Veronese",
+        "Tintoretto"
+      ],
+      "answer": "Titian",
+      "explanation": "Titian a pictat „Bacchus și Ariadna” pentru Camerino d’Alabastro al ducelui Alfonso I d’Este din Ferrara.",
+      "id": "art-208"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist manierist a pictat „Coborârea de pe cruce” din Capela Capponi, cu figuri luminoase și instabile?",
+      "options": [
+        "Pontormo",
+        "Bronzino",
+        "Parmigianino",
+        "Rosso Fiorentino"
+      ],
+      "answer": "Pontormo",
+      "explanation": "„Coborârea de pe cruce” a lui Pontormo este una dintre imaginile definitorii ale manierismului florentin.",
+      "id": "art-209"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor de curte al familiei Medici este autorul sofisticatului „Portret al Eleonorei de Toledo cu fiul ei Giovanni”?",
+      "options": [
+        "Bronzino",
+        "Pontormo",
+        "Vasari",
+        "Parmigianino"
+      ],
+      "answer": "Bronzino",
+      "explanation": "Bronzino a fost unul dintre marii portretiști ai manierismului florentin și pictor de curte al familiei Medici.",
+      "id": "art-210"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor a realizat „Învierea” din Sansepolcro, admirată pentru monumentalitatea și geometria figurilor?",
+      "options": [
+        "Piero della Francesca",
+        "Luca Signorelli",
+        "Perugino",
+        "Domenico Veneziano"
+      ],
+      "answer": "Piero della Francesca",
+      "explanation": "„Învierea” de Piero della Francesca este o frescă celebră din Museo Civico din Sansepolcro.",
+      "id": "art-211"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a pictat scenele apocaliptice din Capela San Brizio a Catedralei din Orvieto, influențând ulterior pe Michelangelo?",
+      "options": [
+        "Luca Signorelli",
+        "Pinturicchio",
+        "Perugino",
+        "Ghirlandaio"
+      ],
+      "answer": "Luca Signorelli",
+      "explanation": "Luca Signorelli a pictat ciclul cu Judecata de Apoi din Capela San Brizio, remarcabil pentru studiul corpului uman.",
+      "id": "art-212"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce arhitect renascentist a proiectat Tempietto din San Pietro in Montorio la Roma?",
+      "options": [
+        "Donato Bramante",
+        "Andrea Palladio",
+        "Giacomo della Porta",
+        "Giulio Romano"
+      ],
+      "answer": "Donato Bramante",
+      "explanation": "Tempietto-ul lui Bramante este o expresie concentrată a idealurilor arhitecturii Renașterii Înalte.",
+      "id": "art-213"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce arhitect a început proiectul noii Bazilici Sfântul Petru în 1506 sub papa Iuliu al II-lea?",
+      "options": [
+        "Donato Bramante",
+        "Michelangelo",
+        "Carlo Maderno",
+        "Gian Lorenzo Bernini"
+      ],
+      "answer": "Donato Bramante",
+      "explanation": "Bramante a fost primul arhitect principal al proiectului noii Bazilici Sfântul Petru, înainte ca planul să fie modificat de succesorii săi.",
+      "id": "art-214"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce arhitect a proiectat Biblioteca Laurenziana din Florența și vestibulul ei cu scara monumentală?",
+      "options": [
+        "Michelangelo",
+        "Bramante",
+        "Palladio",
+        "Giulio Romano"
+      ],
+      "answer": "Michelangelo",
+      "explanation": "Michelangelo a proiectat Biblioteca Laurenziana pentru familia Medici, folosind elemente clasice într-un mod tensionat și neconvențional.",
+      "id": "art-215"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce arhitect și pictor manierist a realizat Palazzo del Te din Mantova?",
+      "options": [
+        "Giulio Romano",
+        "Jacopo Sansovino",
+        "Vignola",
+        "Baldassare Peruzzi"
+      ],
+      "answer": "Giulio Romano",
+      "explanation": "Palazzo del Te, proiectat de Giulio Romano pentru Federico II Gonzaga, este o capodoperă a manierismului arhitectural.",
+      "id": "art-216"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce arhitect a scris tratatul „Cele patru cărți ale arhitecturii”, publicat în 1570?",
+      "options": [
+        "Andrea Palladio",
+        "Sebastiano Serlio",
+        "Vignola",
+        "Leon Battista Alberti"
+      ],
+      "answer": "Andrea Palladio",
+      "explanation": "„I quattro libri dell’architettura” al lui Palladio a avut o influență enormă asupra arhitecturii europene și americane.",
+      "id": "art-217"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor baroc a realizat „Judith decapitându-l pe Holofern”, una dintre cele mai puternice interpretări caravaggiste ale subiectului?",
+      "options": [
+        "Artemisia Gentileschi",
+        "Sofonisba Anguissola",
+        "Lavinia Fontana",
+        "Elisabetta Sirani"
+      ],
+      "answer": "Artemisia Gentileschi",
+      "explanation": "Artemisia Gentileschi a reluat de mai multe ori episodul biblic al Iuditei, folosind un naturalism dramatic influențat de Caravaggio.",
+      "id": "art-218"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor spaniol baroc este cunoscut pentru naturi statice auster iluminate și pentru scene religioase cu călugări?",
+      "options": [
+        "Francisco de Zurbarán",
+        "Murillo",
+        "Velázquez",
+        "Ribera"
+      ],
+      "answer": "Francisco de Zurbarán",
+      "explanation": "Zurbarán a combinat tenebrismul cu o atenție extraordinară pentru volume, textile și obiecte cotidiene.",
+      "id": "art-219"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor originar din Spania, activ la Napoli, este cunoscut pentru martiri și filosofi redați cu naturalism sever?",
+      "options": [
+        "Jusepe de Ribera",
+        "Francisco de Zurbarán",
+        "Bartolomé Murillo",
+        "Alonso Cano"
+      ],
+      "answer": "Jusepe de Ribera",
+      "explanation": "Ribera a lucrat în principal la Napoli și este asociat cu un naturalism tenebrist de mare intensitate.",
+      "id": "art-220"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor francez baroc a realizat „Et in Arcadia ego”?",
+      "options": [
+        "Nicolas Poussin",
+        "Claude Lorrain",
+        "Georges de La Tour",
+        "Simon Vouet"
+      ],
+      "answer": "Nicolas Poussin",
+      "explanation": "„Et in Arcadia ego” este una dintre cele mai cunoscute compoziții clasice și meditative ale lui Nicolas Poussin.",
+      "id": "art-221"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor francez este celebru pentru peisaje ideale cu porturi și lumină aurie, influențând ulterior pe Turner?",
+      "options": [
+        "Claude Lorrain",
+        "Nicolas Poussin",
+        "Watteau",
+        "Fragonard"
+      ],
+      "answer": "Claude Lorrain",
+      "explanation": "Claude Lorrain a construit peisaje ideale în care lumina și atmosfera au un rol esențial.",
+      "id": "art-222"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor baroc francez este cunoscut pentru scene nocturne luminate de lumânare, precum „Magdalena pocăită”?",
+      "options": [
+        "Georges de La Tour",
+        "Philippe de Champaigne",
+        "Simon Vouet",
+        "Le Nain"
+      ],
+      "answer": "Georges de La Tour",
+      "explanation": "Georges de La Tour a folosit surse de lumină ascunse sau vizibile pentru a crea scene nocturne austere și contemplative.",
+      "id": "art-223"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a pictat „Meninele” astfel încât regele și regina apar reflectați într-o oglindă din fundal?",
+      "options": [
+        "Diego Velázquez",
+        "El Greco",
+        "Francisco Goya",
+        "Juan Carreño de Miranda"
+      ],
+      "answer": "Diego Velázquez",
+      "explanation": "În „Las Meninas”, oglinda din fundal reflectă imaginile regelui Filip al IV-lea și reginei Mariana de Austria.",
+      "id": "art-224"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor neerlandez a realizat „Vedere din Delft”?",
+      "options": [
+        "Johannes Vermeer",
+        "Pieter de Hooch",
+        "Jacob van Ruisdael",
+        "Aelbert Cuyp"
+      ],
+      "answer": "Johannes Vermeer",
+      "explanation": "„Vedere din Delft” este una dintre rarele vedute urbane cunoscute ale lui Vermeer.",
+      "id": "art-225"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor olandez este asociat cu portrete de grup energice, precum „Ofițerii companiei de miliție Sfântul Gheorghe”?",
+      "options": [
+        "Frans Hals",
+        "Rembrandt",
+        "Bartholomeus van der Helst",
+        "Gerard ter Borch"
+      ],
+      "answer": "Frans Hals",
+      "explanation": "Frans Hals este renumit pentru tușa liberă și vivacitatea portretelor individuale și de grup.",
+      "id": "art-226"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictoriță olandeză din secolul al XVII-lea este cunoscută pentru autoportrete și scene de gen, fiind redescoperită în secolul XX?",
+      "options": [
+        "Judith Leyster",
+        "Rachel Ruysch",
+        "Maria Sibylla Merian",
+        "Clara Peeters"
+      ],
+      "answer": "Judith Leyster",
+      "explanation": "Judith Leyster a fost membră a breslei Sfântului Luca din Haarlem și a lucrat într-un stil apropiat de Frans Hals.",
+      "id": "art-227"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictoriță neerlandeză este celebră pentru naturi statice cu flori extrem de elaborate și o carieră de mare succes?",
+      "options": [
+        "Rachel Ruysch",
+        "Judith Leyster",
+        "Clara Peeters",
+        "Maria van Oosterwijck"
+      ],
+      "answer": "Rachel Ruysch",
+      "explanation": "Rachel Ruysch a fost una dintre cele mai apreciate pictorițe de naturi statice florale din Epoca de Aur olandeză.",
+      "id": "art-228"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor rococo a fost pictor al curții lui Ludovic al XV-lea și este cunoscut pentru scene pastorale și mitologice senzuale?",
+      "options": [
+        "François Boucher",
+        "Watteau",
+        "Fragonard",
+        "Chardin"
+      ],
+      "answer": "François Boucher",
+      "explanation": "François Boucher a fost unul dintre cei mai influenți pictori rococo francezi și a lucrat pentru curtea lui Ludovic al XV-lea.",
+      "id": "art-229"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor francez a realizat naturi statice și scene domestice austere, precum „Bula de săpun”, în contrast cu frivolitatea rococo?",
+      "options": [
+        "Jean-Baptiste-Siméon Chardin",
+        "François Boucher",
+        "Fragonard",
+        "Watteau"
+      ],
+      "answer": "Jean-Baptiste-Siméon Chardin",
+      "explanation": "Chardin a fost apreciat pentru naturi statice și scene intime, construite prin tonalități subtile și observație atentă.",
+      "id": "art-230"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptor neoclasic italian a realizat „Psyche reînviată de sărutul lui Amor”?",
+      "options": [
+        "Antonio Canova",
+        "Bertel Thorvaldsen",
+        "Jean-Antoine Houdon",
+        "François Rude"
+      ],
+      "answer": "Antonio Canova",
+      "explanation": "Antonio Canova a fost una dintre figurile majore ale sculpturii neoclasice europene.",
+      "id": "art-231"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptor danez neoclasic a fost un rival important al lui Antonio Canova la Roma?",
+      "options": [
+        "Bertel Thorvaldsen",
+        "Jean-Baptiste Carpeaux",
+        "François Rude",
+        "Antoine-Louis Barye"
+      ],
+      "answer": "Bertel Thorvaldsen",
+      "explanation": "Thorvaldsen a avut un atelier major la Roma și a fost considerat, alături de Canova, unul dintre principalii sculptori neoclasici.",
+      "id": "art-232"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptor francez a realizat reliefurile dinamice cunoscute drept „La Marseillaise” pe Arcul de Triumf din Paris?",
+      "options": [
+        "François Rude",
+        "Jean-Baptiste Carpeaux",
+        "Auguste Rodin",
+        "Antoine Bourdelle"
+      ],
+      "answer": "François Rude",
+      "explanation": "Grupul sculptural „Plecarea voluntarilor din 1792”, cunoscut ca „La Marseillaise”, este opera lui François Rude.",
+      "id": "art-233"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptor a realizat grupul „Dansul” pentru fațada Operei Garnier, provocând controverse în secolul al XIX-lea?",
+      "options": [
+        "Jean-Baptiste Carpeaux",
+        "François Rude",
+        "Auguste Rodin",
+        "David d’Angers"
+      ],
+      "answer": "Jean-Baptiste Carpeaux",
+      "explanation": "„Dansul” lui Carpeaux a fost criticat pentru energia și nuditatea figurilor atunci când a fost instalat pe Opera Garnier.",
+      "id": "art-234"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a realizat „Porțile Infernului”, proiect sculptural inspirat de „Divina Comedie”?",
+      "options": [
+        "Auguste Rodin",
+        "Antoine Bourdelle",
+        "Camille Claudel",
+        "Aristide Maillol"
+      ],
+      "answer": "Auguste Rodin",
+      "explanation": "Rodin a lucrat decenii la „Porțile Infernului”; numeroase sculpturi celebre, inclusiv „Gânditorul”, provin din acest proiect.",
+      "id": "art-235"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptoriță franceză a realizat „Vârsta maturității” și a lucrat îndeaproape cu Auguste Rodin?",
+      "options": [
+        "Camille Claudel",
+        "Louise Bourgeois",
+        "Germaine Richier",
+        "Niki de Saint Phalle"
+      ],
+      "answer": "Camille Claudel",
+      "explanation": "Camille Claudel a fost o sculptoriță remarcabilă, colaboratoare și parteneră a lui Rodin, cu o operă independentă importantă.",
+      "id": "art-236"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a creat „Unique Forms of Continuity in Space”, sculptură emblematică a futurismului?",
+      "options": [
+        "Umberto Boccioni",
+        "Giacomo Balla",
+        "Gino Severini",
+        "Carlo Carrà"
+      ],
+      "answer": "Umberto Boccioni",
+      "explanation": "Sculptura lui Boccioni din 1913 urmărește să reprezinte simultan corpul în mișcare și spațiul din jurul său.",
+      "id": "art-237"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor futurist a realizat „Dinamismul unui câine în lesă”?",
+      "options": [
+        "Giacomo Balla",
+        "Umberto Boccioni",
+        "Gino Severini",
+        "Carlo Carrà"
+      ],
+      "answer": "Giacomo Balla",
+      "explanation": "Balla a repetat succesiv picioarele, coada și lesa pentru a sugera mișcarea rapidă, asemenea cronofotografiei.",
+      "id": "art-238"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor futurist a reprezentat frecvent dansatori și viața de noapte pariziană în compoziții fragmentate?",
+      "options": [
+        "Gino Severini",
+        "Giacomo Balla",
+        "Carlo Carrà",
+        "Luigi Russolo"
+      ],
+      "answer": "Gino Severini",
+      "explanation": "Gino Severini a combinat interesul futurist pentru dinamism cu experiența sa directă a vieții pariziene.",
+      "id": "art-239"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist dadaist german a creat colaje politice folosind fotomontajul și a realizat „Cut with the Kitchen Knife”?",
+      "options": [
+        "Hannah Höch",
+        "Raoul Hausmann",
+        "George Grosz",
+        "John Heartfield"
+      ],
+      "answer": "Hannah Höch",
+      "explanation": "Hannah Höch a fost una dintre cele mai importante practicante ale fotomontajului în dadaismul berlinez.",
+      "id": "art-240"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist german a folosit fotomontajul ca armă satirică împotriva nazismului în reviste și afișe?",
+      "options": [
+        "John Heartfield",
+        "George Grosz",
+        "Otto Dix",
+        "Kurt Schwitters"
+      ],
+      "answer": "John Heartfield",
+      "explanation": "John Heartfield a realizat fotomontaje politice extrem de incisive, publicate mai ales în revista AIZ.",
+      "id": "art-241"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist dadaist german a creat proiectul ambiental „Merzbau”?",
+      "options": [
+        "Kurt Schwitters",
+        "Hugo Ball",
+        "Hans Arp",
+        "Raoul Hausmann"
+      ],
+      "answer": "Kurt Schwitters",
+      "explanation": "„Merzbau” a fost o construcție/instalație în continuă transformare realizată de Schwitters în propria locuință din Hanovra.",
+      "id": "art-242"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist suprarealist a dezvoltat metoda „paranoic-critică”?",
+      "options": [
+        "Salvador Dalí",
+        "Max Ernst",
+        "André Masson",
+        "Yves Tanguy"
+      ],
+      "answer": "Salvador Dalí",
+      "explanation": "Dalí a descris metoda paranoic-critică drept un procedeu de producere și interpretare a imaginilor ambigue și asociațiilor delirante controlate.",
+      "id": "art-243"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist suprarealist a dezvoltat tehnica decalcomaniei în pictură, în special în anii 1930?",
+      "options": [
+        "Óscar Domínguez",
+        "Joan Miró",
+        "Man Ray",
+        "Paul Delvaux"
+      ],
+      "answer": "Óscar Domínguez",
+      "explanation": "Óscar Domínguez a popularizat decalcomania în cercul suprarealist, presând și desprinzând suprafețe vopsite pentru a produce forme accidentale.",
+      "id": "art-244"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictoriță suprarealistă spaniolă, activă în Mexic, este cunoscută pentru scene alchimice și personaje în spații fantastice?",
+      "options": [
+        "Remedios Varo",
+        "Maruja Mallo",
+        "Leonora Carrington",
+        "Frida Kahlo"
+      ],
+      "answer": "Remedios Varo",
+      "explanation": "Remedios Varo a combinat în picturile sale imagini de alchimie, știință, misticism și narațiuni fantastice.",
+      "id": "art-245"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artistă britanico-mexicană a pictat „The Giantess” și a fost asociată cu suprarealismul?",
+      "options": [
+        "Leonora Carrington",
+        "Dorothea Tanning",
+        "Eileen Agar",
+        "Remedios Varo"
+      ],
+      "answer": "Leonora Carrington",
+      "explanation": "Leonora Carrington a dezvoltat o iconografie fantastică influențată de mitologie, alchimie și literatură.",
+      "id": "art-246"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictoriță americană asociată suprarealismului a realizat „Eine Kleine Nachtmusik”?",
+      "options": [
+        "Dorothea Tanning",
+        "Kay Sage",
+        "Lee Miller",
+        "Leonora Carrington"
+      ],
+      "answer": "Dorothea Tanning",
+      "explanation": "„Eine Kleine Nachtmusik” din 1943 este una dintre cele mai cunoscute picturi ale Dorotheei Tanning.",
+      "id": "art-247"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist american de origine armeană a pictat „The Liver Is the Cock’s Comb” și este considerat o punte între suprarealism și expresionismul abstract?",
+      "options": [
+        "Arshile Gorky",
+        "Mark Rothko",
+        "Willem de Kooning",
+        "Barnett Newman"
+      ],
+      "answer": "Arshile Gorky",
+      "explanation": "Arshile Gorky a integrat automatismul și biomorfismul suprarealist într-un limbaj care a influențat expresionismul abstract american.",
+      "id": "art-248"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor al expresionismului abstract este asociat cu lucrarea „Elegy to the Spanish Republic”?",
+      "options": [
+        "Robert Motherwell",
+        "Franz Kline",
+        "Clyfford Still",
+        "Ad Reinhardt"
+      ],
+      "answer": "Robert Motherwell",
+      "explanation": "Robert Motherwell a realizat o serie vastă intitulată „Elegy to the Spanish Republic”, bazată pe forme negre și ovale recurente.",
+      "id": "art-249"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor al expresionismului abstract a folosit mari forme negre gestuale pe fundal alb, fiind asociat cu lucrări precum „Chief”?",
+      "options": [
+        "Franz Kline",
+        "Robert Motherwell",
+        "Ad Reinhardt",
+        "Philip Guston"
+      ],
+      "answer": "Franz Kline",
+      "explanation": "Franz Kline este cunoscut pentru compoziții energice alb-negru, realizate cu gesturi largi.",
+      "id": "art-250"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a realizat picturi aproape monocrome negre, susținând ideea unei „ultime picturi” abstracte?",
+      "options": [
+        "Ad Reinhardt",
+        "Barnett Newman",
+        "Mark Rothko",
+        "Frank Stella"
+      ],
+      "answer": "Ad Reinhardt",
+      "explanation": "În anii 1960, Ad Reinhardt a creat picturi negre cu variații tonale subtile, împingând abstracția spre reducție extremă.",
+      "id": "art-251"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor american a creat „Mountains and Sea”, lucrare importantă pentru dezvoltarea Color Field painting?",
+      "options": [
+        "Helen Frankenthaler",
+        "Joan Mitchell",
+        "Lee Krasner",
+        "Elaine de Kooning"
+      ],
+      "answer": "Helen Frankenthaler",
+      "explanation": "„Mountains and Sea” din 1952 a folosit tehnica soak-stain, cu vopsea diluată absorbită direct în pânză negrunduită.",
+      "id": "art-252"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist este asociat cu tehnica „soak-stain” și cu mari pânze în care culoarea pătrunde în fibra pânzei?",
+      "options": [
+        "Helen Frankenthaler",
+        "Agnes Martin",
+        "Bridget Riley",
+        "Louise Nevelson"
+      ],
+      "answer": "Helen Frankenthaler",
+      "explanation": "Frankenthaler a dezvoltat tehnica soak-stain, care a influențat artiști precum Morris Louis și Kenneth Noland.",
+      "id": "art-253"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce pictor Color Field a turnat vopsea diluată pe pânze negrunduite în lucrări precum seria „Veils”?",
+      "options": [
+        "Morris Louis",
+        "Kenneth Noland",
+        "Jules Olitski",
+        "Ellsworth Kelly"
+      ],
+      "answer": "Morris Louis",
+      "explanation": "Morris Louis a creat seria „Veils” prin turnarea vopselei acrilice diluate pe pânze mari, lăsând culoarea să se infiltreze în material.",
+      "id": "art-254"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist minimalist a realizat sculpturi din plăci de oțel dispuse direct pe podea și este cunoscut pentru „Equivalent” series?",
+      "options": [
+        "Carl Andre",
+        "Donald Judd",
+        "Robert Morris",
+        "Tony Smith"
+      ],
+      "answer": "Carl Andre",
+      "explanation": "Carl Andre a tratat podeaua galeriei ca spațiu sculptural și a folosit unități industriale repetate, adesea fără soclu.",
+      "id": "art-255"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce sculptor minimalist a explorat volume simple și percepția corporală a spațiului în lucrări precum „L-Beams”?",
+      "options": [
+        "Robert Morris",
+        "Carl Andre",
+        "Donald Judd",
+        "Tony Smith"
+      ],
+      "answer": "Robert Morris",
+      "explanation": "Robert Morris a fost o figură-cheie a minimalismului și a teoretizat relația dintre obiect, spațiu și spectator.",
+      "id": "art-256"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a realizat instalația de teren „Spiral Jetty” în Great Salt Lake?",
+      "options": [
+        "Robert Smithson",
+        "Michael Heizer",
+        "Walter De Maria",
+        "Richard Long"
+      ],
+      "answer": "Robert Smithson",
+      "explanation": "„Spiral Jetty” din 1970 este o lucrare emblematică a Land Art-ului, construită din rocă, pământ și sare în Great Salt Lake, Utah.",
+      "id": "art-257"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a realizat „The Lightning Field”, instalație de Land Art formată din sute de stâlpi metalici în New Mexico?",
+      "options": [
+        "Walter De Maria",
+        "Robert Smithson",
+        "Michael Heizer",
+        "James Turrell"
+      ],
+      "answer": "Walter De Maria",
+      "explanation": "„The Lightning Field” constă într-o rețea de 400 de stâlpi din oțel inoxidabil amplasați într-un peisaj izolat din New Mexico.",
+      "id": "art-258"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a creat monumentala lucrare de Land Art „Double Negative” în Nevada?",
+      "options": [
+        "Michael Heizer",
+        "Robert Smithson",
+        "Walter De Maria",
+        "Dennis Oppenheim"
+      ],
+      "answer": "Michael Heizer",
+      "explanation": "„Double Negative” este alcătuită din două tăieturi masive excavate în stânca de pe Mormon Mesa, Nevada.",
+      "id": "art-259"
+    },
+    {
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist britanic de Land Art este cunoscut pentru mersul pe jos ca practică artistică și pentru lucrarea „A Line Made by Walking”?",
+      "options": [
+        "Richard Long",
+        "Andy Goldsworthy",
+        "Hamish Fulton",
+        "David Nash"
+      ],
+      "answer": "Richard Long",
+      "explanation": "Richard Long a transformat traseul, mersul și intervențiile minimale în peisaj în elemente centrale ale practicii sale.",
+      "id": "art-260"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Armory Show la New York, expoziția care a introdus publicul american pe scară largă în avangarda europeană?",
+      "answer": "1913",
+      "explanation": "International Exhibition of Modern Art, cunoscută drept Armory Show, s-a deschis la New York în 1913.",
+      "id": "art-261"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost deschis Muzeul Guggenheim din Bilbao?",
+      "answer": "1997",
+      "explanation": "Guggenheim Bilbao, proiectat de Frank Gehry, a fost inaugurat în 1997.",
+      "id": "art-262"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost deschisă Tate Modern la Londra?",
+      "answer": "2000",
+      "explanation": "Tate Modern a fost deschisă publicului în anul 2000 în fosta centrală Bankside.",
+      "id": "art-263"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen desemnează poziția sculpturală în care greutatea corpului este transferată pe un picior, producând o asimetrie naturală a șoldurilor și umerilor?",
+      "options": [
+        "Contrapposto",
+        "Hieratism",
+        "Anamorfroză",
+        "Isocefalie"
+      ],
+      "answer": "Contrapposto",
+      "explanation": "Contrapposto-ul, dezvoltat în sculptura greacă clasică, sugerează echilibrul viu al corpului prin distribuirea greutății pe un singur picior.",
+      "id": "art-264"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care sculptură greacă este asociată cu canonul proporțiilor formulat de Policlet?",
+      "options": [
+        "Doryphoros",
+        "Laocoon",
+        "Nike din Samothrace",
+        "Discobolul"
+      ],
+      "answer": "Doryphoros",
+      "explanation": "„Doryphoros” sau „Purtătorul de suliță” a fost conceput de Policlet ca demonstrație a canonului său de proporții și echilibru.",
+      "id": "art-265"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a sculptat originalul grec al „Discobolului”, cunoscut astăzi mai ales prin copii romane?",
+      "options": [
+        "Myron",
+        "Policlet",
+        "Praxiteles",
+        "Lysippos"
+      ],
+      "answer": "Myron",
+      "explanation": "„Discobolul” este atribuit sculptorului grec Myron, activ în secolul al V-lea î.Hr.",
+      "id": "art-266"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce sculptor grec este asociat cu „Afrodita din Knidos”, unul dintre primele nuduri feminine monumentale ale artei grecești?",
+      "options": [
+        "Praxiteles",
+        "Scopas",
+        "Lysippos",
+        "Phidias"
+      ],
+      "answer": "Praxiteles",
+      "explanation": "„Afrodita din Knidos” a lui Praxiteles a devenit un model extrem de influent pentru reprezentarea nudului feminin în Antichitate.",
+      "id": "art-267"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce sculptor este asociat cu programul sculptural al Partenonului din Atena?",
+      "options": [
+        "Phidias",
+        "Myron",
+        "Policlet",
+        "Praxiteles"
+      ],
+      "answer": "Phidias",
+      "explanation": "Phidias a coordonat programul sculptural al Partenonului în epoca lui Pericle și a realizat statuia colosală a Atenei Parthenos.",
+      "id": "art-268"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește tehnica metalurgică prin care un relief este modelat prin ciocănirea metalului dinspre spate?",
+      "options": [
+        "Repoussé",
+        "Niello",
+        "Cloisonné",
+        "Champlevé"
+      ],
+      "answer": "Repoussé",
+      "explanation": "În repoussé, tabla metalică este modelată din partea posterioară pentru a crea forme în relief pe față.",
+      "id": "art-269"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tehnică de emailare separă zonele colorate cu mici compartimente metalice lipite pe suprafață?",
+      "options": [
+        "Cloisonné",
+        "Champlevé",
+        "Repoussé",
+        "Damascinare"
+      ],
+      "answer": "Cloisonné",
+      "explanation": "Cloisonné folosește benzi sau fire metalice pentru a crea compartimente umplute ulterior cu email colorat.",
+      "id": "art-270"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen desemnează decorația sculpturală islamică în formă de celule sau nișe suprapuse, asemănătoare stalactitelor?",
+      "options": [
+        "Muqarnas",
+        "Mihrab",
+        "Minbar",
+        "Mashrabiya"
+      ],
+      "answer": "Muqarnas",
+      "explanation": "Muqarnas este o formă ornamentală tridimensională folosită în bolți, cupole, cornișe și portaluri în arhitectura islamică.",
+      "id": "art-271"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În arhitectura unei moschei, ce element indică direcția spre Mecca?",
+      "options": [
+        "Mihrab",
+        "Minaret",
+        "Sahn",
+        "Minbar"
+      ],
+      "answer": "Mihrab",
+      "explanation": "Mihrabul este nișa din peretele qibla care indică direcția rugăciunii spre Mecca.",
+      "id": "art-272"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce palat-fortăreață din Granada este una dintre capodoperele arhitecturii nasride?",
+      "options": [
+        "Alhambra",
+        "Alcázarul din Segovia",
+        "Mezquita din Córdoba",
+        "Medina Azahara"
+      ],
+      "answer": "Alhambra",
+      "explanation": "Alhambra a fost dezvoltată în principal de dinastia nasridă și este celebră pentru curți, apă, stucaturi și geometrie ornamentală.",
+      "id": "art-273"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen japonez desemnează „imagini ale lumii plutitoare”, genul de stampe asociat cu Hokusai și Hiroshige?",
+      "options": [
+        "Ukiyo-e",
+        "Yamato-e",
+        "Sumi-e",
+        "Rinpa"
+      ],
+      "answer": "Ukiyo-e",
+      "explanation": "Ukiyo-e a înflorit în perioada Edo și a reprezentat actori, curtezane, peisaje și scene ale vieții urbane.",
+      "id": "art-274"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist japonez a creat seria „Cele cincizeci și trei de stații ale Tōkaidō”?",
+      "options": [
+        "Utagawa Hiroshige",
+        "Katsushika Hokusai",
+        "Kitagawa Utamaro",
+        "Tōshūsai Sharaku"
+      ],
+      "answer": "Utagawa Hiroshige",
+      "explanation": "Hiroshige a devenit celebru pentru peisajele ukiyo-e, iar seria Tōkaidō este una dintre cele mai influente creații ale sale.",
+      "id": "art-275"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pictor japonez din perioada Muromachi, călugăr zen, este considerat un maestru al picturii cu tuș neagră?",
+      "options": [
+        "Sesshū Tōyō",
+        "Ogata Kōrin",
+        "Kanō Eitoku",
+        "Tawaraya Sōtatsu"
+      ],
+      "answer": "Sesshū Tōyō",
+      "explanation": "Sesshū Tōyō este una dintre figurile majore ale picturii japoneze cu cerneală, influențată de tradiția chineză Song și de zen.",
+      "id": "art-276"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist al școlii Rinpa este asociat cu ecranele „Iriși”?",
+      "options": [
+        "Ogata Kōrin",
+        "Kanō Eitoku",
+        "Sesshū Tōyō",
+        "Itō Jakuchū"
+      ],
+      "answer": "Ogata Kōrin",
+      "explanation": "Ogata Kōrin a realizat celebrele paravane cu iriși, folosind forme decorative simplificate pe fond auriu.",
+      "id": "art-277"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen chinez desemnează tradiția picturii de cărturari, în care expresia personală și caligrafia erau adesea mai importante decât realismul descriptiv?",
+      "options": [
+        "Wenrenhua",
+        "Gongbi",
+        "Ukiyo-e",
+        "Mandala"
+      ],
+      "answer": "Wenrenhua",
+      "explanation": "Wenrenhua, sau pictura literati, era practicată de cărturari și valoriza gestul personal, poezia și caligrafia.",
+      "id": "art-278"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tehnică chineză de pictură este caracterizată prin contururi precise și aplicarea meticuloasă a culorii?",
+      "options": [
+        "Gongbi",
+        "Xieyi",
+        "Sumi-e",
+        "Wenrenhua"
+      ],
+      "answer": "Gongbi",
+      "explanation": "Gongbi este o manieră atentă și precisă de pictură, bazată pe linii fine și detaliu controlat.",
+      "id": "art-279"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce sit indian este celebru pentru peșteri budiste decorate cu picturi murale și sculpturi datând în principal din Antichitatea târzie?",
+      "options": [
+        "Ajanta",
+        "Khajuraho",
+        "Sanchi",
+        "Mahabalipuram"
+      ],
+      "answer": "Ajanta",
+      "explanation": "Peșterile Ajanta din Maharashtra conțin unele dintre cele mai importante picturi și sculpturi budiste din India antică.",
+      "id": "art-280"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Bronzurile Chola din sudul Indiei sunt cunoscute în special pentru reprezentările cărei divinități ca Nataraja?",
+      "options": [
+        "Shiva",
+        "Vishnu",
+        "Brahma",
+        "Ganesha"
+      ],
+      "answer": "Shiva",
+      "explanation": "Nataraja îl reprezintă pe Shiva ca „Regele Dansului”, într-o imagine centrală a sculpturii de bronz Chola.",
+      "id": "art-281"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce împărat mogul a comandat marele manuscris ilustrat „Hamzanama”?",
+      "options": [
+        "Akbar",
+        "Shah Jahan",
+        "Aurangzeb",
+        "Babur"
+      ],
+      "answer": "Akbar",
+      "explanation": "Împăratul Akbar a patronat un atelier imperial vast, iar „Hamzanama” a fost unul dintre cele mai ambițioase proiecte ilustrate ale domniei sale.",
+      "id": "art-282"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce oraș nigerian este faimos pentru capetele naturaliste din alamă și teracotă asociate culturii yoruba medievale?",
+      "options": [
+        "Ife",
+        "Benin City",
+        "Timbuktu",
+        "Kano"
+      ],
+      "answer": "Ife",
+      "explanation": "Arta din Ife este celebră pentru portrete naturaliste din alamă și teracotă, realizate în special între secolele XII și XV.",
+      "id": "art-283"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Așa-numitele „Bronzuri din Benin” provin istoric din ce regat african?",
+      "options": [
+        "Regatul Benin",
+        "Imperiul Mali",
+        "Regatul Kongo",
+        "Regatul Aksum"
+      ],
+      "answer": "Regatul Benin",
+      "explanation": "Bronzurile din Benin au fost realizate pentru curtea Oba din Regatul Benin, în actuala Nigeria.",
+      "id": "art-284"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce cultură precolumbiană din Mexic este asociată cu monumentalele capete de bazalt?",
+      "options": [
+        "Olmecă",
+        "Zapotecă",
+        "Toltecă",
+        "Mixtecă"
+      ],
+      "answer": "Olmecă",
+      "explanation": "Civilizația olmecă este cunoscută pentru capetele colosale din bazalt, realizate în mileniul I î.Hr.",
+      "id": "art-285"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "„Piatra Soarelui”, numită adesea „Calendarul aztec”, aparține cărei civilizații?",
+      "options": [
+        "Mexica/Aztecă",
+        "Maya",
+        "Olmecă",
+        "Teotihuacan"
+      ],
+      "answer": "Mexica/Aztecă",
+      "explanation": "Piatra Soarelui a fost sculptată de mexica și sintetizează concepte cosmologice și calendare, fără a fi un simplu calendar în sens modern.",
+      "id": "art-286"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen desemnează stâlpii de piatră sculptați cu texte și imagini folosiți frecvent de mayași pentru comemorarea conducătorilor și evenimentelor?",
+      "options": [
+        "Stele",
+        "Moai",
+        "Kiva",
+        "Huaca"
+      ],
+      "answer": "Stele",
+      "explanation": "Civilizația maya a ridicat numeroase stele inscripționate cu hieroglife și portrete ale conducătorilor.",
+      "id": "art-287"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce cultură din Peru a creat celebrul vas-portret și ceramica realistă asociată coastelor nordice?",
+      "options": [
+        "Moche",
+        "Nazca",
+        "Chavín",
+        "Tiwanaku"
+      ],
+      "answer": "Moche",
+      "explanation": "Ceramica Moche este cunoscută pentru vase-portret extrem de realiste și pentru scene narative complexe.",
+      "id": "art-288"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tehnică fotografică timpurie, introdusă public în 1839, producea o imagine unică pe o placă metalică argintată?",
+      "options": [
+        "Dagherotipia",
+        "Calotipia",
+        "Cianotipia",
+        "Ambrotipia"
+      ],
+      "answer": "Dagherotipia",
+      "explanation": "Dagherotipia, asociată cu Louis Daguerre, producea imagini foarte detaliate direct pe o placă de cupru argintată.",
+      "id": "art-289"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce procedeu fotografic al lui William Henry Fox Talbot folosea un negativ pe hârtie din care puteau fi realizate mai multe copii pozitive?",
+      "options": [
+        "Calotipia",
+        "Dagherotipia",
+        "Ferotipia",
+        "Autochromul"
+      ],
+      "answer": "Calotipia",
+      "explanation": "Calotipia a introdus principiul negativ-pozitiv pe hârtie, permițând multiplicarea fotografiilor.",
+      "id": "art-290"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fotograf a realizat seria de studii ale mișcării calului care a demonstrat că toate cele patru copite pot părăsi simultan solul?",
+      "options": [
+        "Eadweard Muybridge",
+        "Étienne-Jules Marey",
+        "Nadar",
+        "Roger Fenton"
+      ],
+      "answer": "Eadweard Muybridge",
+      "explanation": "Muybridge a folosit secvențe fotografice rapide pentru a analiza mișcarea animalelor și oamenilor.",
+      "id": "art-291"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fotograf francez este asociat cu conceptul „momentului decisiv”?",
+      "options": [
+        "Henri Cartier-Bresson",
+        "Robert Doisneau",
+        "Eugène Atget",
+        "Brassaï"
+      ],
+      "answer": "Henri Cartier-Bresson",
+      "explanation": "Cartier-Bresson a popularizat ideea surprinderii unui moment în care forma și evenimentul se aliniază într-o compoziție decisivă.",
+      "id": "art-292"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fotograf american a fondat revista Camera Work și galeria „291” la New York?",
+      "options": [
+        "Alfred Stieglitz",
+        "Edward Steichen",
+        "Paul Strand",
+        "Ansel Adams"
+      ],
+      "answer": "Alfred Stieglitz",
+      "explanation": "Stieglitz a promovat fotografia ca artă și a introdus publicului american numeroși artiști europeni moderni prin galeria 291.",
+      "id": "art-293"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup fotografic american, asociat cu Ansel Adams și Edward Weston, promova claritatea și focalizarea precisă?",
+      "options": [
+        "Group f/64",
+        "Photo-Secession",
+        "Magnum Photos",
+        "New Topographics"
+      ],
+      "answer": "Group f/64",
+      "explanation": "Group f/64 a susținut fotografia directă, cu profunzime mare de câmp și detaliu clar, în opoziție cu estetica pictorialistă.",
+      "id": "art-294"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fotograf german este cunoscut pentru portretele tipologice din proiectul „Oamenii secolului XX”?",
+      "options": [
+        "August Sander",
+        "Germaine Krull",
+        "Ilse Bing",
+        "Lotte Jacobi"
+      ],
+      "answer": "August Sander",
+      "explanation": "August Sander, fotograf german, a documentat sistematic tipuri sociale și profesionale în proiectul „Oamenii secolului XX”.",
+      "id": "art-295"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce fotograf a realizat imaginea „Migrant Mother” în timpul Marii Crize economice din SUA?",
+      "options": [
+        "Dorothea Lange",
+        "Walker Evans",
+        "Margaret Bourke-White",
+        "Berenice Abbott"
+      ],
+      "answer": "Dorothea Lange",
+      "explanation": "Dorothea Lange a realizat „Migrant Mother” în 1936 în cadrul documentării condițiilor sociale pentru Farm Security Administration.",
+      "id": "art-296"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă a creat instalația „The Dinner Party”, dedicată istoriei femeilor?",
+      "options": [
+        "Judy Chicago",
+        "Miriam Schapiro",
+        "Barbara Kruger",
+        "Cindy Sherman"
+      ],
+      "answer": "Judy Chicago",
+      "explanation": "„The Dinner Party” este o instalație monumentală creată de Judy Chicago cu numeroși colaboratori, dedicată femeilor din istorie și mitologie.",
+      "id": "art-297"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă este cunoscută pentru seria fotografică „Untitled Film Stills”, în care se înscenează în stereotipuri feminine cinematografice?",
+      "options": [
+        "Cindy Sherman",
+        "Sherrie Levine",
+        "Barbara Kruger",
+        "Nan Goldin"
+      ],
+      "answer": "Cindy Sherman",
+      "explanation": "Cindy Sherman a creat „Untitled Film Stills” între 1977 și 1980, interpretând personaje feminine fictive inspirate de cinema.",
+      "id": "art-298"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă folosește texte albe și roșii peste imagini fotografice, în lucrări precum „Your body is a battleground”?",
+      "options": [
+        "Barbara Kruger",
+        "Jenny Holzer",
+        "Cindy Sherman",
+        "Martha Rosler"
+      ],
+      "answer": "Barbara Kruger",
+      "explanation": "Barbara Kruger combină imagini mass-media cu texte directe pentru a critica puterea, consumul, genul și reprezentarea.",
+      "id": "art-299"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă conceptuală este asociată cu „Truisms”, propoziții scurte proiectate sau afișate în spațiul public?",
+      "options": [
+        "Jenny Holzer",
+        "Barbara Kruger",
+        "Yoko Ono",
+        "Adrian Piper"
+      ],
+      "answer": "Jenny Holzer",
+      "explanation": "Jenny Holzer folosește limbajul ca material artistic în afișe, panouri LED și proiecții monumentale.",
+      "id": "art-300"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă a realizat sculptura monumentală în formă de păianjen intitulată „Maman”?",
+      "options": [
+        "Louise Bourgeois",
+        "Niki de Saint Phalle",
+        "Eva Hesse",
+        "Rebecca Horn"
+      ],
+      "answer": "Louise Bourgeois",
+      "explanation": "„Maman” este una dintre cele mai cunoscute sculpturi ale Louisei Bourgeois și leagă imaginea păianjenului de figura maternă.",
+      "id": "art-301"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă germană-americană este asociată cu postminimalismul și lucrări din latex și fibră de sticlă, precum „Repetition Nineteen III”?",
+      "options": [
+        "Eva Hesse",
+        "Agnes Martin",
+        "Anne Truitt",
+        "Louise Nevelson"
+      ],
+      "answer": "Eva Hesse",
+      "explanation": "Eva Hesse a folosit materiale industriale fragile și forme repetitive pentru a destabiliza rigiditatea minimalismului.",
+      "id": "art-302"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă este cunoscută pentru instalațiile imersive cu buline și camere cu oglinzi infinite?",
+      "options": [
+        "Yayoi Kusama",
+        "Yoko Ono",
+        "Chiharu Shiota",
+        "Mariko Mori"
+      ],
+      "answer": "Yayoi Kusama",
+      "explanation": "Yayoi Kusama a făcut din repetiția bulinelor și din Infinity Mirror Rooms elemente centrale ale practicii sale.",
+      "id": "art-303"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist german a realizat acțiunea „I Like America and America Likes Me”, în care a petrecut mai multe zile într-o galerie alături de un coiot?",
+      "options": [
+        "Joseph Beuys",
+        "Anselm Kiefer",
+        "Sigmar Polke",
+        "Gerhard Richter"
+      ],
+      "answer": "Joseph Beuys",
+      "explanation": "Joseph Beuys a realizat acțiunea la New York în 1974, folosind coiotul într-o construcție simbolică despre cultura americană.",
+      "id": "art-304"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist german este cunoscut pentru picturi monumentale despre memoria istorică germană și materiale precum plumbul, paiele și cenușa?",
+      "options": [
+        "Anselm Kiefer",
+        "Gerhard Richter",
+        "Georg Baselitz",
+        "Jörg Immendorff"
+      ],
+      "answer": "Anselm Kiefer",
+      "explanation": "Anselm Kiefer investighează istoria, mitologia și memoria Germaniei prin picturi și instalații cu materiale grele și degradabile.",
+      "id": "art-305"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist german a pictat atât lucrări fotorealiste estompate, cât și compoziții abstracte realizate cu racleta?",
+      "options": [
+        "Gerhard Richter",
+        "Sigmar Polke",
+        "Georg Baselitz",
+        "A. R. Penck"
+      ],
+      "answer": "Gerhard Richter",
+      "explanation": "Gerhard Richter a alternat între picturi figurative bazate pe fotografii și mari abstracții realizate cu straturi de culoare răzuite.",
+      "id": "art-306"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist german a inversat frecvent figurile în picturile sale, expunându-le cu susul în jos?",
+      "options": [
+        "Georg Baselitz",
+        "Gerhard Richter",
+        "Anselm Kiefer",
+        "Markus Lüpertz"
+      ],
+      "answer": "Georg Baselitz",
+      "explanation": "Din 1969, Georg Baselitz a început să picteze și să expună frecvent motivele inversate, separând subiectul de lectura narativă obișnuită.",
+      "id": "art-307"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist italian asociat cu Arte Povera a realizat „Venus of the Rags”, combinând o statuie clasicizantă cu o grămadă de haine?",
+      "options": [
+        "Michelangelo Pistoletto",
+        "Jannis Kounellis",
+        "Mario Merz",
+        "Giuseppe Penone"
+      ],
+      "answer": "Michelangelo Pistoletto",
+      "explanation": "„Venus of the Rags” pune în contrast idealul clasic cu materiale cotidiene, uzate și abundente.",
+      "id": "art-308"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist Arte Povera este cunoscut pentru structuri în formă de iglu realizate din materiale diverse?",
+      "options": [
+        "Mario Merz",
+        "Michelangelo Pistoletto",
+        "Jannis Kounellis",
+        "Alighiero Boetti"
+      ],
+      "answer": "Mario Merz",
+      "explanation": "Mario Merz a folosit igluul ca formă recurentă și a integrat adesea seria Fibonacci în lucrările sale.",
+      "id": "art-309"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist Arte Povera a expus în 1969 cai vii într-o galerie din Roma?",
+      "options": [
+        "Jannis Kounellis",
+        "Mario Merz",
+        "Giuseppe Penone",
+        "Luciano Fabro"
+      ],
+      "answer": "Jannis Kounellis",
+      "explanation": "În 1969, Kounellis a prezentat doisprezece cai vii la Galleria L’Attico din Roma, extinzând radical ideea de material artistic.",
+      "id": "art-310"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist american este asociat cu „One and Three Chairs” și cu ideea că arta poate funcționa ca investigație a limbajului?",
+      "options": [
+        "Joseph Kosuth",
+        "Lawrence Weiner",
+        "Robert Barry",
+        "Douglas Huebler"
+      ],
+      "answer": "Joseph Kosuth",
+      "explanation": "Kosuth a pus în centrul artei conceptuale relația dintre obiect, reprezentare, definiție și limbaj.",
+      "id": "art-311"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist conceptual a formulat afirmația „The artist may construct the piece” ca parte a unei lucrări în care execuția fizică putea fi opțională?",
+      "options": [
+        "Lawrence Weiner",
+        "Sol LeWitt",
+        "Joseph Kosuth",
+        "Robert Morris"
+      ],
+      "answer": "Lawrence Weiner",
+      "explanation": "În „Declaration of Intent” din 1968, Lawrence Weiner a afirmat că lucrarea poate exista ca propoziție, fără a fi neapărat executată material.",
+      "id": "art-312"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist japonez a realizat seria „Date Paintings”, fiecare pânză purtând doar data zilei în care a fost pictată?",
+      "options": [
+        "On Kawara",
+        "Hiroshi Sugimoto",
+        "Yayoi Kusama",
+        "Lee Ufan"
+      ],
+      "answer": "On Kawara",
+      "explanation": "On Kawara a început seria „Today”, sau Date Paintings, în 1966, pictând data conform convenției locului în care se afla.",
+      "id": "art-313"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist american a realizat sculptura publică „Tilted Arc”, îndepărtată după o controversă majoră la New York?",
+      "options": [
+        "Richard Serra",
+        "Donald Judd",
+        "Tony Smith",
+        "Carl Andre"
+      ],
+      "answer": "Richard Serra",
+      "explanation": "„Tilted Arc”, o placă curbată de oțel instalată în Federal Plaza, a devenit un caz emblematic în dezbaterea despre arta publică și spațiul comun.",
+      "id": "art-314"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist a creat instalații de lumină și spații perceptuale precum proiectul Roden Crater?",
+      "options": [
+        "James Turrell",
+        "Dan Flavin",
+        "Robert Irwin",
+        "Doug Wheeler"
+      ],
+      "answer": "James Turrell",
+      "explanation": "James Turrell folosește lumina ca material și transformă percepția spațiului; Roden Crater este proiectul său de lungă durată într-un crater vulcanic din Arizona.",
+      "id": "art-315"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist britanic a creat lucrarea „The Physical Impossibility of Death in the Mind of Someone Living”, cu un rechin conservat în formaldehidă?",
+      "options": [
+        "Damien Hirst",
+        "Tracey Emin",
+        "Marc Quinn",
+        "Jake Chapman"
+      ],
+      "answer": "Damien Hirst",
+      "explanation": "Lucrarea lui Damien Hirst din 1991 prezintă un rechin tigru conservat în formaldehidă și a devenit emblematică pentru Young British Artists.",
+      "id": "art-316"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă britanică a realizat instalația „My Bed”?",
+      "options": [
+        "Tracey Emin",
+        "Sarah Lucas",
+        "Rachel Whiteread",
+        "Jenny Saville"
+      ],
+      "answer": "Tracey Emin",
+      "explanation": "„My Bed” a expus patul artistei și obiecte personale, transformând experiența intimă într-o instalație autobiografică.",
+      "id": "art-317"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce sculptoriță britanică a realizat „House”, o turnare în beton a spațiului interior al unei case londoneze?",
+      "options": [
+        "Rachel Whiteread",
+        "Barbara Hepworth",
+        "Tracey Emin",
+        "Alison Wilding"
+      ],
+      "answer": "Rachel Whiteread",
+      "explanation": "„House” din 1993 a fost o turnare a volumului interior al unei case terasate și a făcut-o pe Whiteread una dintre figurile majore ale sculpturii britanice contemporane.",
+      "id": "art-318"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist chinez contemporan a realizat instalația „Sunflower Seeds” la Tate Modern, alcătuită din milioane de semințe de porțelan pictate manual?",
+      "options": [
+        "Ai Weiwei",
+        "Cai Guo-Qiang",
+        "Xu Bing",
+        "Yue Minjun"
+      ],
+      "answer": "Ai Weiwei",
+      "explanation": "„Sunflower Seeds” a folosit milioane de semințe de porțelan realizate și pictate manual de meșteșugari din Jingdezhen.",
+      "id": "art-319"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist chinez este cunoscut pentru instalația „Book from the Sky”, realizată cu mii de caractere chinezești inventate și ilizibile?",
+      "options": [
+        "Xu Bing",
+        "Ai Weiwei",
+        "Cai Guo-Qiang",
+        "Huang Yong Ping"
+      ],
+      "answer": "Xu Bing",
+      "explanation": "Xu Bing a tipărit cărți și suluri cu caractere inventate care arată autentic, dar nu pot fi citite, problematizând limbajul și autoritatea textului.",
+      "id": "art-320"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist chinez este cunoscut pentru desene și spectacole cu praf de pușcă, inclusiv proiecte pirotehnice monumentale?",
+      "options": [
+        "Cai Guo-Qiang",
+        "Xu Bing",
+        "Ai Weiwei",
+        "Zhang Huan"
+      ],
+      "answer": "Cai Guo-Qiang",
+      "explanation": "Cai Guo-Qiang folosește praful de pușcă atât pentru desene arse pe hârtie, cât și pentru evenimente pirotehnice la scară mare.",
+      "id": "art-321"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă sârbă este cunoscută pentru performance-ul „The Artist Is Present”?",
+      "options": [
+        "Marina Abramović",
+        "Mona Hatoum",
+        "Ana Mendieta",
+        "ORLAN"
+      ],
+      "answer": "Marina Abramović",
+      "explanation": "În „The Artist Is Present” la MoMA în 2010, Abramović a stat față în față, în tăcere, cu vizitatorii pentru perioade îndelungate.",
+      "id": "art-322"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă cubanezo-americană a creat seria „Silueta”, combinând amprenta corpului cu pământ, foc și materiale naturale?",
+      "options": [
+        "Ana Mendieta",
+        "Marina Abramović",
+        "Carolee Schneemann",
+        "Mona Hatoum"
+      ],
+      "answer": "Ana Mendieta",
+      "explanation": "În seria „Silueta”, Mendieta a integrat conturul corpului feminin în peisaj, folosind pământ, nisip, vegetație, foc și sânge.",
+      "id": "art-323"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen desemnează picturile de natură statică din secolul al XVII-lea care folosesc cranii, ceasuri și obiecte efemere pentru a sugera caracterul trecător al vieții?",
+      "options": [
+        "Vanitas",
+        "Bodegón",
+        "Capriccio",
+        "Vedută"
+      ],
+      "answer": "Vanitas",
+      "explanation": "Vanitas este un tip de natură statică moralizatoare, foarte răspândit în arta neerlandeză, care amintește de inevitabilitatea morții și de efemeritatea bunurilor lumești.",
+      "id": "art-324"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce termen italian desemnează o vedere urbană pictată cu precizie topografică, asociată în special cu Veneția secolului al XVIII-lea?",
+      "options": [
+        "Vedută",
+        "Capriccio",
+        "Istoria",
+        "Bambocciata"
+      ],
+      "answer": "Vedută",
+      "explanation": "Veduta este o reprezentare detaliată a unui oraș sau peisaj urban, practicată de artiști precum Canaletto și Bernardo Bellotto.",
+      "id": "art-325"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pictor venețian este cel mai cunoscut pentru vedute precise ale Veneției și ale Canalului Grande?",
+      "options": [
+        "Canaletto",
+        "Francesco Guardi",
+        "Tiepolo",
+        "Pietro Longhi"
+      ],
+      "answer": "Canaletto",
+      "explanation": "Canaletto a devenit celebru pentru vedutele venețiene foarte detaliate, cumpărate frecvent de călători ai Grand Tour-ului.",
+      "id": "art-326"
+    },
+    {
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pictor venețian a realizat vaste fresce iluzioniste în palate europene, inclusiv la Würzburg?",
+      "options": [
+        "Giovanni Battista Tiepolo",
+        "Canaletto",
+        "Francesco Guardi",
+        "Sebastiano Ricci"
+      ],
+      "answer": "Giovanni Battista Tiepolo",
+      "explanation": "Tiepolo a pictat monumentalele fresce ale Reședinței din Würzburg, culminând cu ampla compoziție de pe tavanul scării imperiale.",
+      "id": "art-327"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost finalizată cupola Catedralei din Florența proiectată de Brunelleschi?",
+      "answer": "1436",
+      "explanation": "Cupola Domului din Florența a fost terminată și catedrala a fost consacrată în 1436; lanterna a fost finalizată ulterior.",
+      "id": "art-328"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost inaugurată piramida de sticlă a Luvrului, proiectată de I. M. Pei?",
+      "answer": "1989",
+      "explanation": "Piramida Luvrului a fost inaugurată în 1989 ca parte a proiectului Grand Louvre.",
+      "id": "art-329"
+    },
+    {
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost deschis Muzeul Solomon R. Guggenheim din New York, proiectat de Frank Lloyd Wright?",
+      "answer": "1959",
+      "explanation": "Muzeul Guggenheim de pe Fifth Avenue s-a deschis în 1959, la câteva luni după moartea lui Frank Lloyd Wright.",
+      "id": "art-330"
+    }
+  ]
+}

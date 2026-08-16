@@ -542,6 +542,60 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duelWonByForfeit => 'The opponent never came back to the match.';
 
   @override
+  String get matchChatOpen => 'Open battle chat';
+
+  @override
+  String get matchChatTitle => 'Battle chronicle';
+
+  @override
+  String get matchChatEphemeral =>
+      'Messages from this match vanish after the battle.';
+
+  @override
+  String get matchChatEmpty =>
+      'The scroll is empty. Send your opponent a reaction.';
+
+  @override
+  String get matchChatReactions => 'QUICK REACTIONS';
+
+  @override
+  String get matchReactionGoodLuck => 'Good luck!';
+
+  @override
+  String get matchReactionNiceMove => 'Nice move!';
+
+  @override
+  String get matchReactionWow => 'Wow!';
+
+  @override
+  String get matchReactionWellPlayed => 'Well played!';
+
+  @override
+  String get matchChatHint => 'Write a battle message…';
+
+  @override
+  String get matchChatSend => 'Send message';
+
+  @override
+  String get matchChatTextLocked =>
+      'Free text unlocks after 10 correct answers. Reactions remain available.';
+
+  @override
+  String get matchChatMuted => 'Your chat is temporarily restricted.';
+
+  @override
+  String get matchChatTooFast => 'Too many messages. Wait a few seconds.';
+
+  @override
+  String get matchChatLinksLocked => 'Links unlock at a higher trust tier.';
+
+  @override
+  String get matchChatClosed => 'This match chat has closed.';
+
+  @override
+  String get matchChatInvalid => 'The message could not be sent.';
+
+  @override
   String get loginEyebrow => 'PLAYER ACCOUNT';
 
   @override
@@ -601,4 +655,364 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get backLabel => 'Back';
+
+  @override
+  String get socialTitle => 'Friends and messages';
+
+  @override
+  String get socialTabFriends => 'Friends';
+
+  @override
+  String get socialTabMessages => 'Messages';
+
+  @override
+  String get socialNeedAccountTitle => 'Social features need an account';
+
+  @override
+  String get socialNeedAccountBody =>
+      'Sign in to have friends, conversations and chat.';
+
+  @override
+  String get socialErrorTitle => 'We couldn\'t load the social section';
+
+  @override
+  String get friendsAddHint => 'Username';
+
+  @override
+  String get friendsAddAction => 'Send request';
+
+  @override
+  String get friendsIncomingRequests => 'Incoming requests';
+
+  @override
+  String get friendsOutgoingRequests => 'Sent requests';
+
+  @override
+  String get friendsRequestSent => 'Pending';
+
+  @override
+  String get friendsListTitle => 'Your friends';
+
+  @override
+  String get friendsEmpty => 'No friends yet. Search for someone by username.';
+
+  @override
+  String get friendsAccept => 'Accept';
+
+  @override
+  String get friendsDecline => 'Decline';
+
+  @override
+  String get friendsOpenChat => 'Open conversation';
+
+  @override
+  String get friendsBlock => 'Block';
+
+  @override
+  String get friendsBlockTitle => 'Block this player?';
+
+  @override
+  String friendsBlockBody(String name) {
+    return '$name won\'t be able to message you, and the friendship ends.';
+  }
+
+  @override
+  String get conversationsTitle => 'Conversations';
+
+  @override
+  String get conversationsEmpty => 'No conversations yet.';
+
+  @override
+  String get conversationEmpty => 'Write the first message.';
+
+  @override
+  String get messageRequestsTitle => 'Message requests';
+
+  @override
+  String get messageRequestsExplainer =>
+      'Someone who isn\'t your friend wants to message you. Accept only if you want to continue.';
+
+  @override
+  String get messageRequestAccept => 'Accept request';
+
+  @override
+  String get chatComposerHint => 'Write a message…';
+
+  @override
+  String get chatSend => 'Send';
+
+  @override
+  String get chatMutedNotice =>
+      'Your chat is temporarily paused because of repeated messages.';
+
+  @override
+  String get chatReportTitle => 'Report message';
+
+  @override
+  String get chatReportHint => 'What\'s wrong?';
+
+  @override
+  String get chatReportSend => 'Send report';
+
+  @override
+  String get chatReportSent => 'Report sent.';
+
+  @override
+  String get privacyTitle => 'Privacy';
+
+  @override
+  String get privacyDmTitle => 'Who can message you directly';
+
+  @override
+  String get privacyDmLocked =>
+      'Minor accounts receive direct messages from friends only.';
+
+  @override
+  String get privacyDmEveryone => 'Anyone';
+
+  @override
+  String get privacyDmFriends => 'Friends only';
+
+  @override
+  String get privacyDmNobody => 'Nobody';
+
+  @override
+  String trustCorrectAnswers(int count) {
+    return '$count correct';
+  }
+
+  @override
+  String trustAnswersToNextTier(int count) {
+    return '$count more correct answers to the next tier.';
+  }
+
+  @override
+  String get trustMaxTier => 'You\'ve reached the highest trust tier.';
+
+  @override
+  String get trustTierNewcomer => 'Newcomer';
+
+  @override
+  String get trustTierApprentice => 'Apprentice';
+
+  @override
+  String get trustTierContributor => 'Contributor';
+
+  @override
+  String get trustTierEstablished => 'Established';
+
+  @override
+  String get trustTierExperienced => 'Experienced';
+
+  @override
+  String get trustTierExpert => 'Expert';
+
+  @override
+  String get trustTierCommunityMaster => 'Community master';
+
+  @override
+  String get trustTierElite => 'Elite';
+
+  @override
+  String get trustTierCommunityLegend => 'Community legend';
+
+  @override
+  String get homeGuestTitle => 'Playing without an account';
+
+  @override
+  String get homeGuestAction => 'Create account';
+
+  @override
+  String get homeLoadingProfile => 'Loading profile…';
+
+  @override
+  String homeCoins(int count) {
+    return '$count coins';
+  }
+
+  @override
+  String get homeContinueEyebrow => 'Continue the conquest';
+
+  @override
+  String get homeStartEyebrow => 'First realm';
+
+  @override
+  String get homeRealmsTitle => 'Realms of the kingdom';
+
+  @override
+  String get homeRealmsAction => 'View map';
+
+  @override
+  String homeRankPosition(int position) {
+    return 'Rank $position';
+  }
+
+  @override
+  String homeMatchesPlayed(int count) {
+    return '$count online matches';
+  }
+
+  @override
+  String get homeDuelLocked => 'Needs verified email';
+
+  @override
+  String get navHome => 'Home';
+
+  @override
+  String get navCampaign => 'Campaign';
+
+  @override
+  String get navChat => 'Chat';
+
+  @override
+  String get navRanking => 'Ranking';
+
+  @override
+  String get navMultiplayer => 'Multiplayer';
+
+  @override
+  String get navProfile => 'Profile';
+
+  @override
+  String get navSettings => 'Settings';
+
+  @override
+  String get homeMenu => 'Menu';
+
+  @override
+  String homeCrystals(int count) {
+    final intl.NumberFormat countNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countString crystals';
+  }
+
+  @override
+  String get homeModeCampaign => 'Campaign';
+
+  @override
+  String get homeModeCampaignDesc => 'Advance and conquer new territories.';
+
+  @override
+  String get homeModeMultiplayer => 'Multiplayer';
+
+  @override
+  String get homeModeMultiplayerDesc =>
+      'Challenge players from all over the world.';
+
+  @override
+  String get homeModeChat => 'Chat';
+
+  @override
+  String get homeModeChatDesc => 'Talk with your allies and friends.';
+
+  @override
+  String get homeModeRanking => 'Ranking';
+
+  @override
+  String get homeModeRankingDesc => 'See the finest strategists of the realm.';
+
+  @override
+  String get homeRecentProgress => 'Recent progress';
+
+  @override
+  String get homeContinue => 'Continue';
+
+  @override
+  String get homeKingdomTitle => 'Your kingdom';
+
+  @override
+  String get homeKingdomTerritories => 'Territories';
+
+  @override
+  String get homeKingdomStars => 'Stars';
+
+  @override
+  String get homeKingdomMatches => 'Online matches';
+
+  @override
+  String get homePlayerTitleDefault => 'Question Conqueror';
+
+  @override
+  String get settingsTitle => 'Settings';
+
+  @override
+  String get settingsAccount => 'Account';
+
+  @override
+  String get settingsAccountId => 'Account ID';
+
+  @override
+  String get settingsAccountIdCopied => 'Account ID copied.';
+
+  @override
+  String get settingsConnectedEmail => 'Signed in with email';
+
+  @override
+  String get settingsChangePassword => 'Change password';
+
+  @override
+  String get settingsGuestTitle => 'You are not signed in';
+
+  @override
+  String get settingsGuestBody =>
+      'Settings are kept on this device even without an account.';
+
+  @override
+  String get settingsSound => 'Sound';
+
+  @override
+  String get settingsMusic => 'Music';
+
+  @override
+  String get settingsEffects => 'Effects';
+
+  @override
+  String get settingsVibration => 'Vibration';
+
+  @override
+  String get settingsNotifications => 'Notifications';
+
+  @override
+  String get settingsPush => 'Push notifications';
+
+  @override
+  String get settingsPushDesc => 'Get notified about rewards and events.';
+
+  @override
+  String get settingsGameplay => 'Gameplay';
+
+  @override
+  String get settingsConfirmActions => 'Action confirmations';
+
+  @override
+  String get settingsConfirmActionsDesc =>
+      'Ask for confirmation on important actions.';
+
+  @override
+  String get settingsTutorials => 'Tutorials';
+
+  @override
+  String get settingsTutorialsDesc => 'Show in-game tips and tutorials.';
+
+  @override
+  String get settingsDataSaver => 'Data saver';
+
+  @override
+  String get settingsDataSaverDesc => 'Reduce data and battery usage.';
+
+  @override
+  String get settingsLanguageSection => 'Language and appearance';
+
+  @override
+  String get settingsLanguage => 'Language';
+
+  @override
+  String settingsVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get settingsOpenAccount => 'Open account';
 }

@@ -120,8 +120,8 @@ Monorepo recomandat:
 
 Modelele pentru prietenie și chat, achievements și badge-uri, profil/avatar,
 trepte de rang și monetizare **nu se dublează aici**. Sunt definite în
-[`docs/features-social-progression.md`](docs/features-social-progression.md)
-(secțiunile 2.9, 3.5, 4.10, 5.4 și 8.9).
+[`owner-plan.md`](owner-plan.md)
+(secțiunile 2.9, 3.5, 4.10, 5.4 și 9.7).
 
 Stare actuală a implementării: treptele de rang sunt calculate din `users.elo_rating`
 ca **configurație statică în cod** (`backend/api/src/ranks/rank-tiers.ts`), nu ca
@@ -199,8 +199,8 @@ Obiectiv: să depășim clar cele ~25.000 de întrebări ale conQUIZtador2, cu *
 > **Extensie:** sistemele sociale și de progresie (login avansat, chat cu trepte de
 > încredere, achievements 1000+, customizare profil, 20+ trepte de rang, retenție și
 > monetizare extinsă) sunt detaliate în
-> [`docs/features-social-progression.md`](docs/features-social-progression.md), cu
-> maparea lor pe fazele de mai jos în secțiunea 9 a acelui document. Nu le dubla aici.
+> [`owner-plan.md`](owner-plan.md), cu maparea lor pe fazele de mai jos în
+> secțiunea 16 a acelui document. Nu le dubla aici.
 
 ### Faza 0 — Fundație (Săpt. 1-3)
 - Setup monorepo, infra docker-compose (Postgres, Redis, MinIO), schema DB inițială + migrări.

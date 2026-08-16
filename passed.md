@@ -7,6 +7,16 @@ Acest fișier nu bifează și nu ascunde pașii incompleți. El este lista oblig
 
 ## De reluat din Pasul 6 — banca de întrebări
 
+- [ ] Verifică factual cele 20 de pachete mobile din
+  `mobile/assets/questions/<category>.json` (50 de întrebări/categorie, 1.000 în
+  total) înainte de conectarea lor la campania sau rotația live. Lotul este
+  intenționat `source=ai` / `reviewStatus=pending`; validarea automată confirmă
+  structura, unicitatea și coerența răspunsurilor, nu adevărul factual.
+
+- [ ] Verifică factual lotul inițial de 60 de întrebări (3 pentru fiecare dintre
+  cele 20 de categorii cerute) și aprobă individual numai întrebările confirmate.
+  Lotul este intenționat `AI/PENDING`; vezi ADR 0010.
+
 - [ ] Rulează și validează manual preflight-ul complet de 10 întrebări: 5 Biologie + 5 Istoria României, cu generator și verificator suficient de corecte și rapide.
   - Situație la amânare: există 2 întrebări reale de Biologie, ambele `PENDING`; preflight-ul nu este complet.
 - [ ] Rulează orchestratorul cu un provider AI real până la aproximativ 5.000 de întrebări distribuite pe categorii și dificultăți.
@@ -61,3 +71,20 @@ Ce **nu** schimbă asta:
 3. Rulează batch-ul de aproximativ 5.000.
 4. Aprobă numai eșantionul verificat.
 5. Rulează verificările DB/API și actualizează checklist-ul din `init.md`.
+
+## De reluat în Faza 2 conform `owner-plan.md`
+
+Aceste puncte nu sunt bifate de duelul Duo sau de chatul de meci și trebuie
+închise înainte de trecerea la Faza 3:
+
+- [ ] Înlocuiește modelul hardcodat Duo cu un motor generic `N=2..8`, păstrând
+  Duo ca profil compatibil; vezi ADR 0009.
+- [ ] Implementează partide private cu cod și boți configurabili peste motorul
+  generic, nu ca ramură separată Duo-only.
+- [ ] Adaugă țară/limbă în onboarding și matchmaking regional de bază: România
+  pentru RO și pool global pentru EN.
+- [ ] Extinde anti-repetiția de la lista per meci la istoric persistent,
+  cooldown și selecție ponderată server-side.
+- [ ] Clarifică explicit cu proprietarul soarta campaniei offline existente:
+  `owner-plan.md` §7 nu dorește o campanie solo secvențială, dar ADR 0004 și
+  cererea anterioară au aprobat-o. Până atunci se păstrează și nu se extinde.

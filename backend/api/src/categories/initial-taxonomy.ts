@@ -1,5 +1,6 @@
 export interface TaxonomyNode {
   readonly id: string;
+  readonly code?: string;
   readonly name: string;
   readonly icon: string;
 }
@@ -11,6 +12,7 @@ export interface TaxonomyRoot extends TaxonomyNode {
 export const INITIAL_CATEGORY_TAXONOMY = [
   {
     id: '10000000-0000-4000-8000-000000000001',
+    code: 'history',
     name: 'Istorie',
     icon: 'landmark',
     children: [
@@ -26,6 +28,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
       {
         id: '11000000-0000-4000-8000-000000000003',
+        code: 'medieval',
         name: 'Evul Mediu',
         icon: 'castle',
       },
@@ -44,10 +47,17 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         name: 'Civilizații și imperii',
         icon: 'civilizations',
       },
+      {
+        id: '11000000-0000-4000-8000-000000000007',
+        code: 'wars',
+        name: 'Războaie',
+        icon: 'crossed-swords',
+      },
     ],
   },
   {
     id: '10000000-0000-4000-8000-000000000002',
+    code: 'geography',
     name: 'Geografie',
     icon: 'public',
     children: [
@@ -85,6 +95,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
   },
   {
     id: '10000000-0000-4000-8000-000000000003',
+    code: 'science',
     name: 'Știință',
     icon: 'science',
     children: [
@@ -105,6 +116,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
       {
         id: '13000000-0000-4000-8000-000000000004',
+        code: 'space',
         name: 'Astronomie',
         icon: 'astronomy',
       },
@@ -115,13 +127,33 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
       {
         id: '13000000-0000-4000-8000-000000000006',
+        code: 'technology',
         name: 'Tehnologie și informatică',
         icon: 'technology',
+      },
+      {
+        id: '13000000-0000-4000-8000-000000000007',
+        code: 'gaming',
+        name: 'Jocuri video',
+        icon: 'gaming',
+      },
+      {
+        id: '13000000-0000-4000-8000-000000000008',
+        code: 'animals',
+        name: 'Animale',
+        icon: 'animals',
+      },
+      {
+        id: '13000000-0000-4000-8000-000000000009',
+        code: 'logic',
+        name: 'Logică',
+        icon: 'logic',
       },
     ],
   },
   {
     id: '10000000-0000-4000-8000-000000000004',
+    code: 'sports',
     name: 'Sport',
     icon: 'sports',
     children: [
@@ -163,6 +195,18 @@ export const INITIAL_CATEGORY_TAXONOMY = [
     icon: 'movie-music',
     children: [
       {
+        id: '15000000-0000-4000-8000-000000000007',
+        code: 'movies',
+        name: 'Filme',
+        icon: 'movie',
+      },
+      {
+        id: '15000000-0000-4000-8000-000000000008',
+        code: 'music',
+        name: 'Muzică',
+        icon: 'music',
+      },
+      {
         id: '15000000-0000-4000-8000-000000000001',
         name: 'Cinema românesc',
         icon: 'romanian-cinema',
@@ -196,6 +240,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
   },
   {
     id: '10000000-0000-4000-8000-000000000006',
+    code: 'literature',
     name: 'Literatură',
     icon: 'menu-book',
     children: [
@@ -221,6 +266,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
       {
         id: '16000000-0000-4000-8000-000000000005',
+        code: 'mythology',
         name: 'Basme și mitologie',
         icon: 'mythology',
       },
@@ -290,7 +336,95 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
     ],
   },
+  {
+    id: '19000000-0000-4000-8000-000000000001',
+    code: 'general-knowledge',
+    name: 'Cultură generală',
+    icon: 'general-knowledge',
+    children: [
+      {
+        id: '19100000-0000-4000-8000-000000000001',
+        name: 'Cunoaștere mixtă',
+        icon: 'mixed-knowledge',
+      },
+    ],
+  },
+  {
+    id: '19000000-0000-4000-8000-000000000002',
+    code: 'art',
+    name: 'Artă',
+    icon: 'art',
+    children: [
+      {
+        id: '19200000-0000-4000-8000-000000000001',
+        name: 'Arte vizuale',
+        icon: 'visual-arts',
+      },
+    ],
+  },
+  {
+    id: '19000000-0000-4000-8000-000000000003',
+    code: 'cars',
+    name: 'Automobile',
+    icon: 'cars',
+    children: [
+      {
+        id: '19300000-0000-4000-8000-000000000001',
+        name: 'Istorie și inginerie auto',
+        icon: 'car-engineering',
+      },
+    ],
+  },
+  {
+    id: '19000000-0000-4000-8000-000000000004',
+    code: 'economy',
+    name: 'Economie',
+    icon: 'economy',
+    children: [
+      {
+        id: '19400000-0000-4000-8000-000000000001',
+        name: 'Economie generală',
+        icon: 'economy-basics',
+      },
+    ],
+  },
+  {
+    id: '19000000-0000-4000-8000-000000000005',
+    code: 'royal-challenge',
+    name: 'Provocarea Regală',
+    icon: 'royal-challenge',
+    children: [
+      {
+        id: '19500000-0000-4000-8000-000000000001',
+        name: 'Întrebări de elită',
+        icon: 'elite-questions',
+      },
+    ],
+  },
 ] as const satisfies readonly TaxonomyRoot[];
+
+export const OWNER_GAMEPLAY_CATEGORY_CODES = [
+  'geography',
+  'history',
+  'science',
+  'wars',
+  'gaming',
+  'movies',
+  'music',
+  'sports',
+  'general-knowledge',
+  'technology',
+  'mythology',
+  'animals',
+  'space',
+  'literature',
+  'art',
+  'cars',
+  'logic',
+  'economy',
+  'medieval',
+  'royal-challenge',
+] as const;
 
 export const INITIAL_TAXONOMY_ROOT_COUNT = INITIAL_CATEGORY_TAXONOMY.length;
 export const INITIAL_TAXONOMY_CHILD_COUNT = INITIAL_CATEGORY_TAXONOMY.reduce(
@@ -305,6 +439,7 @@ export function validateTaxonomyDefinition(
 ): void {
   const ids = new Set<string>();
   const rootNames = new Set<string>();
+  const codes = new Set<string>();
   const uuidPattern =
     /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -320,6 +455,7 @@ export function validateTaxonomyDefinition(
     }
     ids.add(root.id);
     rootNames.add(root.name);
+    registerCode(root, codes);
 
     const childNames = new Set<string>();
     for (const child of root.children) {
@@ -333,6 +469,24 @@ export function validateTaxonomyDefinition(
       }
       ids.add(child.id);
       childNames.add(child.name);
+      registerCode(child, codes);
     }
   }
+
+  for (const code of OWNER_GAMEPLAY_CATEGORY_CODES) {
+    if (!codes.has(code)) {
+      throw new Error(`Categoria cerută lipsește din taxonomy: ${code}`);
+    }
+  }
+}
+
+function registerCode(node: TaxonomyNode, codes: Set<string>): void {
+  if (node.code === undefined) return;
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(node.code)) {
+    throw new Error(`Cod invalid în taxonomy: ${node.code}`);
+  }
+  if (codes.has(node.code)) {
+    throw new Error(`Cod duplicat în taxonomy: ${node.code}`);
+  }
+  codes.add(node.code);
 }

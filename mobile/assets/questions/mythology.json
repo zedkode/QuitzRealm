@@ -1,0 +1,708 @@
+{
+  "id": "mythology",
+  "name": "Mythology",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "mythology-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce mitologie provine personajul Zeus?",
+      "options": [
+        "Egipteană",
+        "Japoneză",
+        "Aztecă",
+        "Greacă"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Zeus”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce rol sau simbol este asociat personajul Zeus?",
+      "options": [
+        "Soarele și artele",
+        "Vânătoarea",
+        "Cerul și fulgerul",
+        "Lumea morților"
+      ],
+      "answer": "Cerul și fulgerul",
+      "explanation": "Pentru „Zeus”, răspunsul corect este „Cerul și fulgerul”."
+    },
+    {
+      "id": "mythology-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce mitologie provine personajul Poseidon?",
+      "options": [
+        "Polineziană",
+        "Greacă",
+        "Aztecă",
+        "Hindusă"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Poseidon”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce rol sau simbol este asociat personajul Poseidon?",
+      "options": [
+        "Marea",
+        "Vânătoarea",
+        "Înțelepciunea și războiul",
+        "Tunetul"
+      ],
+      "answer": "Marea",
+      "explanation": "Pentru „Poseidon”, răspunsul corect este „Marea”."
+    },
+    {
+      "id": "mythology-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce mitologie provine personajul Athena?",
+      "options": [
+        "Polineziană",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Athena”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce rol sau simbol este asociat personajul Athena?",
+      "options": [
+        "Vicleșugul",
+        "Dragostea și magia",
+        "Înțelepciunea",
+        "Tunetul"
+      ],
+      "answer": "Înțelepciunea",
+      "explanation": "Pentru „Athena”, răspunsul corect este „Înțelepciunea”."
+    },
+    {
+      "id": "mythology-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce mitologie provine personajul Hades?",
+      "options": [
+        "Egipteană",
+        "Greacă",
+        "Geto-dacică",
+        "Nordică"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Hades”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce rol sau simbol este asociat personajul Hades?",
+      "options": [
+        "Lumea morților",
+        "Dragostea și magia",
+        "Legea și curajul",
+        "Îmbălsămarea"
+      ],
+      "answer": "Lumea morților",
+      "explanation": "Pentru „Hades”, răspunsul corect este „Lumea morților”."
+    },
+    {
+      "id": "mythology-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce mitologie provine personajul Apollo?",
+      "options": [
+        "Egipteană",
+        "Japoneză",
+        "Aztecă",
+        "Greacă"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Apollo”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce rol sau simbol este asociat personajul Apollo?",
+      "options": [
+        "Soarele",
+        "Magia și maternitatea",
+        "Soarele și artele",
+        "Îmbălsămarea"
+      ],
+      "answer": "Soarele și artele",
+      "explanation": "Pentru „Apollo”, răspunsul corect este „Soarele și artele”."
+    },
+    {
+      "id": "mythology-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce mitologie provine personajul Artemis?",
+      "options": [
+        "Polineziană",
+        "Greacă",
+        "Aztecă",
+        "Hindusă"
+      ],
+      "answer": "Greacă",
+      "explanation": "Pentru „Artemis”, răspunsul corect este „Greacă”."
+    },
+    {
+      "id": "mythology-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce rol sau simbol este asociat personajul Artemis?",
+      "options": [
+        "Vânătoarea",
+        "Magia și maternitatea",
+        "Viața de apoi",
+        "Regalitatea și cerul"
+      ],
+      "answer": "Vânătoarea",
+      "explanation": "Pentru „Artemis”, răspunsul corect este „Vânătoarea”."
+    },
+    {
+      "id": "mythology-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce mitologie provine personajul Odin?",
+      "options": [
+        "Polineziană",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Nordică"
+      ],
+      "answer": "Nordică",
+      "explanation": "Pentru „Odin”, răspunsul corect este „Nordică”."
+    },
+    {
+      "id": "mythology-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce rol sau simbol este asociat personajul Odin?",
+      "options": [
+        "Furtunile și marea",
+        "Șarpele cu pene",
+        "Înțelepciunea și războiul",
+        "Regalitatea și cerul"
+      ],
+      "answer": "Înțelepciunea și războiul",
+      "explanation": "Pentru „Odin”, răspunsul corect este „Înțelepciunea și războiul”."
+    },
+    {
+      "id": "mythology-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce mitologie provine personajul Thor?",
+      "options": [
+        "Egipteană",
+        "Nordică",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Nordică",
+      "explanation": "Pentru „Thor”, răspunsul corect este „Nordică”."
+    },
+    {
+      "id": "mythology-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce rol sau simbol este asociat personajul Thor?",
+      "options": [
+        "Tunetul",
+        "Șarpele cu pene",
+        "Ploaia",
+        "Înlăturarea obstacolelor"
+      ],
+      "answer": "Tunetul",
+      "explanation": "Pentru „Thor”, răspunsul corect este „Tunetul”."
+    },
+    {
+      "id": "mythology-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce mitologie provine personajul Loki?",
+      "options": [
+        "Egipteană",
+        "Japoneză",
+        "Aztecă",
+        "Nordică"
+      ],
+      "answer": "Nordică",
+      "explanation": "Pentru „Loki”, răspunsul corect este „Nordică”."
+    },
+    {
+      "id": "mythology-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce rol sau simbol este asociat personajul Loki?",
+      "options": [
+        "Cunoașterea și artele",
+        "Erou cultural și pescar",
+        "Vicleșugul",
+        "Înlăturarea obstacolelor"
+      ],
+      "answer": "Vicleșugul",
+      "explanation": "Pentru „Loki”, răspunsul corect este „Vicleșugul”."
+    },
+    {
+      "id": "mythology-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce mitologie provine personajul Freyja?",
+      "options": [
+        "Polineziană",
+        "Nordică",
+        "Aztecă",
+        "Hindusă"
+      ],
+      "answer": "Nordică",
+      "explanation": "Pentru „Freyja”, răspunsul corect este „Nordică”."
+    },
+    {
+      "id": "mythology-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce rol sau simbol este asociat personajul Freyja?",
+      "options": [
+        "Dragostea și magia",
+        "Erou cultural și pescar",
+        "Rege-erou",
+        "Divinitate și nemurire"
+      ],
+      "answer": "Dragostea și magia",
+      "explanation": "Pentru „Freyja”, răspunsul corect este „Dragostea și magia”."
+    },
+    {
+      "id": "mythology-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce mitologie provine personajul Tyr?",
+      "options": [
+        "Polineziană",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Nordică"
+      ],
+      "answer": "Nordică",
+      "explanation": "Pentru „Tyr”, răspunsul corect este „Nordică”."
+    },
+    {
+      "id": "mythology-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce rol sau simbol este asociat personajul Tyr?",
+      "options": [
+        "Cerul și fulgerul",
+        "Marea",
+        "Legea și curajul",
+        "Divinitate și nemurire"
+      ],
+      "answer": "Legea și curajul",
+      "explanation": "Pentru „Tyr”, răspunsul corect este „Legea și curajul”."
+    },
+    {
+      "id": "mythology-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce mitologie provine personajul Anubis?",
+      "options": [
+        "Nordică",
+        "Egipteană",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Egipteană",
+      "explanation": "Pentru „Anubis”, răspunsul corect este „Egipteană”."
+    },
+    {
+      "id": "mythology-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce rol sau simbol este asociat personajul Anubis?",
+      "options": [
+        "Îmbălsămarea",
+        "Marea",
+        "Înțelepciunea",
+        "Lumea morților"
+      ],
+      "answer": "Îmbălsămarea",
+      "explanation": "Pentru „Anubis”, răspunsul corect este „Îmbălsămarea”."
+    },
+    {
+      "id": "mythology-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce mitologie provine personajul Ra?",
+      "options": [
+        "Nordică",
+        "Japoneză",
+        "Aztecă",
+        "Egipteană"
+      ],
+      "answer": "Egipteană",
+      "explanation": "Pentru „Ra”, răspunsul corect este „Egipteană”."
+    },
+    {
+      "id": "mythology-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce rol sau simbol este asociat personajul Ra?",
+      "options": [
+        "Soarele și artele",
+        "Vânătoarea",
+        "Soarele",
+        "Lumea morților"
+      ],
+      "answer": "Soarele",
+      "explanation": "Pentru „Ra”, răspunsul corect este „Soarele”."
+    },
+    {
+      "id": "mythology-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce mitologie provine personajul Isis?",
+      "options": [
+        "Polineziană",
+        "Egipteană",
+        "Aztecă",
+        "Hindusă"
+      ],
+      "answer": "Egipteană",
+      "explanation": "Pentru „Isis”, răspunsul corect este „Egipteană”."
+    },
+    {
+      "id": "mythology-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce rol sau simbol este asociat personajul Isis?",
+      "options": [
+        "Magia și maternitatea",
+        "Vânătoarea",
+        "Înțelepciunea și războiul",
+        "Tunetul"
+      ],
+      "answer": "Magia și maternitatea",
+      "explanation": "Pentru „Isis”, răspunsul corect este „Magia și maternitatea”."
+    },
+    {
+      "id": "mythology-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce mitologie provine personajul Osiris?",
+      "options": [
+        "Polineziană",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Egipteană"
+      ],
+      "answer": "Egipteană",
+      "explanation": "Pentru „Osiris”, răspunsul corect este „Egipteană”."
+    },
+    {
+      "id": "mythology-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce rol sau simbol este asociat personajul Osiris?",
+      "options": [
+        "Vicleșugul",
+        "Dragostea și magia",
+        "Viața de apoi",
+        "Tunetul"
+      ],
+      "answer": "Viața de apoi",
+      "explanation": "Pentru „Osiris”, răspunsul corect este „Viața de apoi”."
+    },
+    {
+      "id": "mythology-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce mitologie provine personajul Horus?",
+      "options": [
+        "Nordică",
+        "Egipteană",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Egipteană",
+      "explanation": "Pentru „Horus”, răspunsul corect este „Egipteană”."
+    },
+    {
+      "id": "mythology-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce rol sau simbol este asociat personajul Horus?",
+      "options": [
+        "Regalitatea și cerul",
+        "Dragostea și magia",
+        "Legea și curajul",
+        "Îmbălsămarea"
+      ],
+      "answer": "Regalitatea și cerul",
+      "explanation": "Pentru „Horus”, răspunsul corect este „Regalitatea și cerul”."
+    },
+    {
+      "id": "mythology-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce mitologie provine personajul Amaterasu?",
+      "options": [
+        "Nordică",
+        "Egipteană",
+        "Aztecă",
+        "Japoneză"
+      ],
+      "answer": "Japoneză",
+      "explanation": "Pentru „Amaterasu”, răspunsul corect este „Japoneză”."
+    },
+    {
+      "id": "mythology-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce rol sau simbol este asociat personajul Amaterasu?",
+      "options": [
+        "Magia și maternitatea",
+        "Viața de apoi",
+        "Soarele",
+        "Îmbălsămarea"
+      ],
+      "answer": "Soarele",
+      "explanation": "Pentru „Amaterasu”, răspunsul corect este „Soarele”."
+    },
+    {
+      "id": "mythology-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce mitologie provine personajul Susanoo?",
+      "options": [
+        "Polineziană",
+        "Japoneză",
+        "Aztecă",
+        "Hindusă"
+      ],
+      "answer": "Japoneză",
+      "explanation": "Pentru „Susanoo”, răspunsul corect este „Japoneză”."
+    },
+    {
+      "id": "mythology-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce rol sau simbol este asociat personajul Susanoo?",
+      "options": [
+        "Furtunile și marea",
+        "Magia și maternitatea",
+        "Viața de apoi",
+        "Regalitatea și cerul"
+      ],
+      "answer": "Furtunile și marea",
+      "explanation": "Pentru „Susanoo”, răspunsul corect este „Furtunile și marea”."
+    },
+    {
+      "id": "mythology-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce mitologie provine personajul Quetzalcoatl?",
+      "options": [
+        "Polineziană",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Aztecă"
+      ],
+      "answer": "Aztecă",
+      "explanation": "Pentru „Quetzalcoatl”, răspunsul corect este „Aztecă”."
+    },
+    {
+      "id": "mythology-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce rol sau simbol este asociat personajul Quetzalcoatl?",
+      "options": [
+        "Furtunile și marea",
+        "Ploaia",
+        "Șarpele cu pene",
+        "Regalitatea și cerul"
+      ],
+      "answer": "Șarpele cu pene",
+      "explanation": "Pentru „Quetzalcoatl”, răspunsul corect este „Șarpele cu pene”."
+    },
+    {
+      "id": "mythology-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce mitologie provine personajul Tlaloc?",
+      "options": [
+        "Nordică",
+        "Aztecă",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Aztecă",
+      "explanation": "Pentru „Tlaloc”, răspunsul corect este „Aztecă”."
+    },
+    {
+      "id": "mythology-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce rol sau simbol este asociat personajul Tlaloc?",
+      "options": [
+        "Ploaia",
+        "Șarpele cu pene",
+        "Înlăturarea obstacolelor",
+        "Cunoașterea și artele"
+      ],
+      "answer": "Ploaia",
+      "explanation": "Pentru „Tlaloc”, răspunsul corect este „Ploaia”."
+    },
+    {
+      "id": "mythology-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Din ce mitologie provine personajul Ganesha?",
+      "options": [
+        "Nordică",
+        "Egipteană",
+        "Japoneză",
+        "Hindusă"
+      ],
+      "answer": "Hindusă",
+      "explanation": "Pentru „Ganesha”, răspunsul corect este „Hindusă”."
+    },
+    {
+      "id": "mythology-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce rol sau simbol este asociat personajul Ganesha?",
+      "options": [
+        "Erou cultural și pescar",
+        "Rege-erou",
+        "Înlăturarea obstacolelor",
+        "Cunoașterea și artele"
+      ],
+      "answer": "Înlăturarea obstacolelor",
+      "explanation": "Pentru „Ganesha”, răspunsul corect este „Înlăturarea obstacolelor”."
+    },
+    {
+      "id": "mythology-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Din ce mitologie provine personajul Saraswati?",
+      "options": [
+        "Polineziană",
+        "Hindusă",
+        "Japoneză",
+        "Aztecă"
+      ],
+      "answer": "Hindusă",
+      "explanation": "Pentru „Saraswati”, răspunsul corect este „Hindusă”."
+    },
+    {
+      "id": "mythology-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce rol sau simbol este asociat personajul Saraswati?",
+      "options": [
+        "Cunoașterea și artele",
+        "Rege-erou",
+        "Divinitate și nemurire",
+        "Cerul și fulgerul"
+      ],
+      "answer": "Cunoașterea și artele",
+      "explanation": "Pentru „Saraswati”, răspunsul corect este „Cunoașterea și artele”."
+    },
+    {
+      "id": "mythology-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Din ce mitologie provine personajul Maui?",
+      "options": [
+        "Hindusă",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Polineziană"
+      ],
+      "answer": "Polineziană",
+      "explanation": "Pentru „Maui”, răspunsul corect este „Polineziană”."
+    },
+    {
+      "id": "mythology-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce rol sau simbol este asociat personajul Maui?",
+      "options": [
+        "Marea",
+        "Înțelepciunea",
+        "Erou cultural și pescar",
+        "Cerul și fulgerul"
+      ],
+      "answer": "Erou cultural și pescar",
+      "explanation": "Pentru „Maui”, răspunsul corect este „Erou cultural și pescar”."
+    },
+    {
+      "id": "mythology-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Din ce mitologie provine personajul Gilgameș?",
+      "options": [
+        "Nordică",
+        "Mesopotamiană",
+        "Geto-dacică",
+        "Greacă"
+      ],
+      "answer": "Mesopotamiană",
+      "explanation": "Pentru „Gilgameș”, răspunsul corect este „Mesopotamiană”."
+    },
+    {
+      "id": "mythology-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce rol sau simbol este asociat personajul Gilgameș?",
+      "options": [
+        "Rege-erou",
+        "Înțelepciunea",
+        "Lumea morților",
+        "Soarele și artele"
+      ],
+      "answer": "Rege-erou",
+      "explanation": "Pentru „Gilgameș”, răspunsul corect este „Rege-erou”."
+    },
+    {
+      "id": "mythology-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Din ce mitologie provine personajul Zamolxis?",
+      "options": [
+        "Nordică",
+        "Egipteană",
+        "Japoneză",
+        "Geto-dacică"
+      ],
+      "answer": "Geto-dacică",
+      "explanation": "Pentru „Zamolxis”, răspunsul corect este „Geto-dacică”."
+    },
+    {
+      "id": "mythology-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce rol sau simbol este asociat personajul Zamolxis?",
+      "options": [
+        "Vânătoarea",
+        "Înțelepciunea și războiul",
+        "Divinitate și nemurire",
+        "Soarele și artele"
+      ],
+      "answer": "Divinitate și nemurire",
+      "explanation": "Pentru „Zamolxis”, răspunsul corect este „Divinitate și nemurire”."
+    }
+  ]
+}

@@ -1,0 +1,3636 @@
+{
+  "id": "logic",
+  "name": "Logică",
+  "questions": [
+    {
+      "id": "logic-001",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 3, 6, 9, 12, ...?",
+      "answer": "15",
+      "explanation": "Se adaugă constant 3. Aplicând aceeași regulă ultimului termen obținem 15. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-002",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 2, 4, 8, 16, ...?",
+      "answer": "32",
+      "explanation": "Fiecare termen se dublează. Aplicând aceeași regulă ultimului termen obținem 32. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-003",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 1, 4, 9, 16, ...?",
+      "answer": "25",
+      "explanation": "Sunt pătratele numerelor 1,2,3,4,5. Aplicând aceeași regulă ultimului termen obținem 25. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-004",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 1, 2, 4, 7, 11, ...?",
+      "answer": "16",
+      "explanation": "Diferențele sunt +1,+2,+3,+4,+5. Aplicând aceeași regulă ultimului termen obținem 16. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-005",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 10, 9, 7, 4, 0, ...?",
+      "answer": "-5",
+      "explanation": "Diferențele sunt -1,-2,-3,-4,-5. Aplicând aceeași regulă ultimului termen obținem -5. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-006",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 1, 1, 2, 3, 5, 8, ...?",
+      "answer": "13",
+      "explanation": "Fiecare termen este suma celor doi anteriori. Aplicând aceeași regulă ultimului termen obținem 13. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-007",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 4, 7, 13, 22, 34, ...?",
+      "answer": "49",
+      "explanation": "Diferențele 3,6,9,12 cresc cu 3; urmează 15. Aplicând aceeași regulă ultimului termen obținem 49. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-008",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 2, 6, 12, 20, 30, ...?",
+      "answer": "42",
+      "explanation": "Termenii urmează n(n+1), iar următorul este 6×7. Aplicând aceeași regulă ultimului termen obținem 42. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-009",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 81, 27, 9, 3, ...?",
+      "answer": "1",
+      "explanation": "Fiecare termen este împărțit la 3. Aplicând aceeași regulă ultimului termen obținem 1. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-010",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 1, 3, 6, 10, 15, ...?",
+      "answer": "21",
+      "explanation": "Diferențele sunt 2,3,4,5, apoi 6. Aplicând aceeași regulă ultimului termen obținem 21. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-011",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 30, 25, 21, 18, 16, ...?",
+      "answer": "15",
+      "explanation": "Diferențele sunt -5,-4,-3,-2, apoi -1. Aplicând aceeași regulă ultimului termen obținem 15. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-012",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 3, 9, 27, 81, ...?",
+      "answer": "243",
+      "explanation": "Fiecare termen este înmulțit cu 3. Aplicând aceeași regulă ultimului termen obținem 243. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-013",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 5, 10, 20, 40, ...?",
+      "answer": "80",
+      "explanation": "Fiecare termen se dublează. Aplicând aceeași regulă ultimului termen obținem 80. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-014",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 20, 18, 15, 11, 6, ...?",
+      "answer": "0",
+      "explanation": "Se scad succesiv 2,3,4,5,6. Aplicând aceeași regulă ultimului termen obținem 0. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-015",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Care este următorul număr din șirul 7, 14, 28, 56, ...?",
+      "answer": "112",
+      "explanation": "Șirul este geometric cu rația 2. Aplicând aceeași regulă ultimului termen obținem 112. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți meri sunt pomi. Copacul a este măr. Ce rezultă sigur?",
+      "options": [
+        "Copacul A este pom",
+        "Copacul a nu este pomi",
+        "Nu se poate deduce nimic",
+        "Toți pomi sunt meri"
+      ],
+      "answer": "Copacul A este pom",
+      "explanation": "Premisa include întreaga clasă «meri» în clasa «pomi». Exemplul dat aparține primei clase, deci aparține și celei de-a doua."
+    },
+    {
+      "id": "logic-017",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți medici sunt persoane cu studii medicale. Ana este medic. Ce rezultă sigur?",
+      "options": [
+        "Toți persoane cu studii medicale sunt medici",
+        "Nu se poate deduce nimic",
+        "Ana are studii medicale",
+        "Ana nu este persoane cu studii medicale"
+      ],
+      "answer": "Ana are studii medicale",
+      "explanation": "Premisa include întreaga clasă «medici» în clasa «persoane cu studii medicale». Exemplul dat aparține primei clase, deci aparține și celei de-a doua."
+    },
+    {
+      "id": "logic-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți romane sunt cărți. Volumul x este roman. Ce rezultă sigur?",
+      "options": [
+        "Volumul x nu este cărți",
+        "Nu se poate deduce nimic",
+        "Volumul X este carte",
+        "Toți cărți sunt romane"
+      ],
+      "answer": "Volumul X este carte",
+      "explanation": "Premisa include întreaga clasă «romane» în clasa «cărți». Exemplul dat aparține primei clase, deci aparține și celei de-a doua."
+    },
+    {
+      "id": "logic-019",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți stele sunt corpuri cerești. Soarele este stea. Ce rezultă sigur?",
+      "options": [
+        "Soarele este corp ceresc",
+        "Soarele nu este corpuri cerești",
+        "Nu se poate deduce nimic",
+        "Toți corpuri cerești sunt stele"
+      ],
+      "answer": "Soarele este corp ceresc",
+      "explanation": "Premisa include întreaga clasă «stele» în clasa «corpuri cerești». Exemplul dat aparține primei clase, deci aparține și celei de-a doua."
+    },
+    {
+      "id": "logic-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți pătrate sunt patrulatere. Figura a este pătrat. Ce rezultă sigur?",
+      "options": [
+        "Nu se poate deduce nimic",
+        "Figura a nu este patrulatere",
+        "Figura A este patrulater",
+        "Toți patrulatere sunt pătrate"
+      ],
+      "answer": "Figura A este patrulater",
+      "explanation": "Premisa include întreaga clasă «pătrate» în clasa «patrulatere». Exemplul dat aparține primei clase, deci aparține și celei de-a doua."
+    },
+    {
+      "id": "logic-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Niciun element din «pătrate» nu aparține clasei «cercuri». Figura b este pătrat. Ce urmează?",
+      "options": [
+        "Figura b aparține ambelor clase",
+        "Toate elementele «cercuri» sunt «pătrate»",
+        "Figura B nu este cerc",
+        "Nu există nicio concluzie"
+      ],
+      "answer": "Figura B nu este cerc",
+      "explanation": "Premisa declară clasele incompatibile. Apartenența obiectului la una dintre ele exclude logic apartenența simultană la cealaltă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Niciun element din «pești» nu aparține clasei «mamifere». Delfinul este mamifer. Ce urmează?",
+      "options": [
+        "Delfinul nu este pește",
+        "Toate elementele «mamifere» sunt «pești»",
+        "Delfinul aparține ambelor clase",
+        "Nu există nicio concluzie"
+      ],
+      "answer": "Delfinul nu este pește",
+      "explanation": "Premisa declară clasele incompatibile. Apartenența obiectului la una dintre ele exclude logic apartenența simultană la cealaltă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-023",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Niciun element din «triunghiuri» nu aparține clasei «figuri cu patru laturi». Figura c este patru laturi. Ce urmează?",
+      "options": [
+        "Figura C nu este triunghi",
+        "Nu există nicio concluzie",
+        "Toate elementele «figuri cu patru laturi» sunt «triunghiuri»",
+        "Figura c aparține ambelor clase"
+      ],
+      "answer": "Figura C nu este triunghi",
+      "explanation": "Premisa declară clasele incompatibile. Apartenența obiectului la una dintre ele exclude logic apartenența simultană la cealaltă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Niciun element din «numere pare» nu aparține clasei «numere impare». 12 este par. Ce urmează?",
+      "options": [
+        "Nu există nicio concluzie",
+        "12 aparține ambelor clase",
+        "Toate elementele «numere impare» sunt «numere pare»",
+        "12 nu este impar"
+      ],
+      "answer": "12 nu este impar",
+      "explanation": "Premisa declară clasele incompatibile. Apartenența obiectului la una dintre ele exclude logic apartenența simultană la cealaltă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-025",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Niciun element din «reptile» nu aparține clasei «păsări». Animalul y este reptilă. Ce urmează?",
+      "options": [
+        "Toate elementele «păsări» sunt «reptile»",
+        "Animalul Y nu este pasăre",
+        "Nu există nicio concluzie",
+        "Animalul y aparține ambelor clase"
+      ],
+      "answer": "Animalul Y nu este pasăre",
+      "explanation": "Premisa declară clasele incompatibile. Apartenența obiectului la una dintre ele exclude logic apartenența simultană la cealaltă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Dacă plouă, strada este udă. Plouă.",
+      "options": [
+        "Nu există nori",
+        "Strada este udă",
+        "Va ploua mâine",
+        "Strada este uscată"
+      ],
+      "answer": "Strada este udă",
+      "explanation": "Este modus ponens: antecedentul este afirmat, deci consecventul urmează. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-027",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Dacă bateria este complet descărcată, telefonul nu pornește. Telefonul pornește.",
+      "options": [
+        "Telefonul nu are baterie",
+        "Telefonul are 100%",
+        "Bateria nu este complet descărcată",
+        "Bateria este nouă"
+      ],
+      "answer": "Bateria nu este complet descărcată",
+      "explanation": "Este modus tollens: faptul observat contrazice consecventul negativ și exclude antecedentul. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Dacă un număr este multiplu de 4, este par. 28 este multiplu de 4.",
+      "options": [
+        "28 este prim",
+        "28 este par",
+        "28 este impar",
+        "28 este multiplu de 9"
+      ],
+      "answer": "28 este par",
+      "explanation": "Antecedentul condiționalei este satisfăcut de 28, astfel proprietatea de a fi par urmează direct. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-029",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Dacă alarma sună, Andrei se trezește. Andrei nu s-a trezit.",
+      "options": [
+        "Alarma nu a sunat",
+        "Andrei nu are alarmă",
+        "Alarma a sunat încet",
+        "Este noapte"
+      ],
+      "answer": "Alarma nu a sunat",
+      "explanation": "Negarea consecventului permite negarea antecedentului prin modus tollens. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-030",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Toți câinii sunt mamifere. Rex este mamifer. Este sigur că Rex este câine?",
+      "options": [
+        "Doar dacă are patru picioare",
+        "Doar dacă latră",
+        "Nu",
+        "Da"
+      ],
+      "answer": "Nu",
+      "explanation": "Ar fi afirmarea consecventului. Mamiferele includ multe clase, deci statutul de mamifer nu dovedește că Rex este câine."
+    },
+    {
+      "id": "logic-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum se numește «Dacă P atunci Q; P; deci Q»?",
+      "options": [
+        "Negarea antecedentului",
+        "Modus tollens",
+        "Afirmarea consecventului",
+        "Modus ponens"
+      ],
+      "answer": "Modus ponens",
+      "explanation": "Definiția corectă este «Modus ponens». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-032",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cum se numește «Dacă P atunci Q; nu Q; deci nu P»?",
+      "options": [
+        "Modus ponens",
+        "Afirmarea consecventului",
+        "Falsa dilemă",
+        "Modus tollens"
+      ],
+      "answer": "Modus tollens",
+      "explanation": "Definiția corectă este «Modus tollens». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-033",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o tautologie?",
+      "options": [
+        "O formulă adevărată în toate interpretările",
+        "O concluzie probabilă",
+        "O propoziție fără sens",
+        "O formulă falsă mereu"
+      ],
+      "answer": "O formulă adevărată în toate interpretările",
+      "explanation": "Definiția corectă este «O formulă adevărată în toate interpretările». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-034",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o contradicție logică?",
+      "options": [
+        "O premisă nedovedită",
+        "O formulă adevărată o singură dată",
+        "O formulă falsă în toate interpretările",
+        "O formulă adevărată mereu"
+      ],
+      "answer": "O formulă falsă în toate interpretările",
+      "explanation": "Definiția corectă este «O formulă falsă în toate interpretările». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-035",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă că un argument este valid?",
+      "options": [
+        "Nu poate avea premise adevărate și concluzie falsă",
+        "Concluzia este populară",
+        "Argumentul este lung",
+        "Toate premisele sunt factual adevărate"
+      ],
+      "answer": "Nu poate avea premise adevărate și concluzie falsă",
+      "explanation": "Definiția corectă este «Nu poate avea premise adevărate și concluzie falsă». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-036",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce eroare apare din «Dacă P atunci Q; Q; deci P»?",
+      "options": [
+        "Silogism disjunctiv",
+        "Afirmarea consecventului",
+        "Modus tollens",
+        "Modus ponens"
+      ],
+      "answer": "Afirmarea consecventului",
+      "explanation": "Definiția corectă este «Afirmarea consecventului». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-037",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce eroare apare din «Dacă P atunci Q; nu P; deci nu Q»?",
+      "options": [
+        "Silogism ipotetic",
+        "Negarea antecedentului",
+        "Afirmarea consecventului",
+        "Modus tollens"
+      ],
+      "answer": "Negarea antecedentului",
+      "explanation": "Definiția corectă este «Negarea antecedentului». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o premisă?",
+      "options": [
+        "Un exemplu fără rol",
+        "O afirmație folosită ca sprijin pentru concluzie",
+        "Concluzia finală",
+        "O întrebare retorică"
+      ],
+      "answer": "O afirmație folosită ca sprijin pentru concluzie",
+      "explanation": "Definiția corectă este «O afirmație folosită ca sprijin pentru concluzie». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-039",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o condiție suficientă?",
+      "options": [
+        "O condiție obligatorie dar insuficientă",
+        "O condiție care, dacă este îndeplinită, garantează rezultatul",
+        "O condiție imposibilă",
+        "O condiție irelevantă"
+      ],
+      "answer": "O condiție care, dacă este îndeplinită, garantează rezultatul",
+      "explanation": "Definiția corectă este «O condiție care, dacă este îndeplinită, garantează rezultatul». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-040",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o condiție necesară?",
+      "options": [
+        "O condiție care garantează singură rezultatul",
+        "O condiție fără de care rezultatul nu poate avea loc",
+        "O concluzie circulară",
+        "O condiție opțională"
+      ],
+      "answer": "O condiție fără de care rezultatul nu poate avea loc",
+      "explanation": "Definiția corectă este «O condiție fără de care rezultatul nu poate avea loc». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este un contraexemplu?",
+      "options": [
+        "Un caz care falsifică o afirmație universală",
+        "Un exemplu care confirmă regula",
+        "O definiție alternativă",
+        "O premisă ascunsă"
+      ],
+      "answer": "Un caz care falsifică o afirmație universală",
+      "explanation": "Definiția corectă este «Un caz care falsifică o afirmație universală». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-042",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este concluzia unui argument?",
+      "options": [
+        "Un exemplu",
+        "Orice premisă",
+        "O întrebare",
+        "Afirmația pe care premisele încearcă să o susțină"
+      ],
+      "answer": "Afirmația pe care premisele încearcă să o susțină",
+      "explanation": "Definiția corectă este «Afirmația pe care premisele încearcă să o susțină». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-043",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o disjuncție inclusivă?",
+      "options": [
+        "Nici P, nici Q",
+        "Exact una dintre P și Q",
+        "P și Q obligatoriu",
+        "P sau Q sau ambele"
+      ],
+      "answer": "P sau Q sau ambele",
+      "explanation": "Definiția corectă este «P sau Q sau ambele». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-044",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce este o conjuncție?",
+      "options": [
+        "O implicație",
+        "Afirmația că P și Q sunt ambele adevărate",
+        "Exact una este adevărată",
+        "Negația lui P"
+      ],
+      "answer": "Afirmația că P și Q sunt ambele adevărate",
+      "explanation": "Definiția corectă este «Afirmația că P și Q sunt ambele adevărate». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-045",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce face negația logică?",
+      "options": [
+        "Elimină premisele",
+        "Unește două propoziții",
+        "Transformă orice propoziție în tautologie",
+        "Inversează valoarea de adevăr a propoziției"
+      ],
+      "answer": "Inversează valoarea de adevăr a propoziției",
+      "explanation": "Definiția corectă este «Inversează valoarea de adevăr a propoziției». Termenul descrie o relație standard folosită în analiza argumentelor și a propozițiilor."
+    },
+    {
+      "id": "logic-046",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ana este mai înaltă decât Bogdan, iar Bogdan mai înalt decât Carmen. Cine este cea mai înaltă?",
+      "options": [
+        "Carmen",
+        "Bogdan",
+        "Nu se poate determina",
+        "Ana"
+      ],
+      "answer": "Ana",
+      "explanation": "Ordinea este Ana > Bogdan > Carmen, deci Ana este deasupra amândurora. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-047",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Mara ajunge înaintea lui Dan, iar Dan înaintea Ioanei. Cine ajunge ultima?",
+      "options": [
+        "Dan",
+        "Nu se poate determina",
+        "Ioana",
+        "Mara"
+      ],
+      "answer": "Ioana",
+      "explanation": "Ordinea temporală este Mara–Dan–Ioana, astfel Ioana este ultima. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cutia roșie este mai grea decât cea albastră, iar albastra mai grea decât verdea. Care este cea mai ușoară?",
+      "options": [
+        "Nu se poate determina",
+        "Albastră",
+        "Roșie",
+        "Verde"
+      ],
+      "answer": "Verde",
+      "explanation": "Relația este roșu > albastru > verde, deci verde are greutatea minimă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-049",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Alex termină înaintea lui Vlad, dar după Radu. Care este ordinea?",
+      "options": [
+        "Radu, Vlad, Alex",
+        "Alex, Radu, Vlad",
+        "Radu, Alex, Vlad",
+        "Vlad, Alex, Radu"
+      ],
+      "answer": "Radu, Alex, Vlad",
+      "explanation": "Alex este între Radu și Vlad, deci ordinea este complet determinată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-050",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "L este la stânga lui M, iar M la stânga lui N. Cine este la mijloc?",
+      "options": [
+        "N",
+        "M",
+        "L",
+        "Nu se poate determina"
+      ],
+      "answer": "M",
+      "explanation": "Pozițiile formează L–M–N, iar M este singurul element intermediar. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-051",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Într-o clasă, 12 joacă fotbal, 9 baschet, 4 ambele. Câți joacă cel puțin unul?",
+      "answer": "17",
+      "explanation": "Incluziune-excluziune: 12+9-4=17; intersecția se scade pentru a evita dubla numărare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-052",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Dacă 8 persoane se salută fiecare cu fiecare o singură dată, câte strângeri de mână sunt?",
+      "answer": "28",
+      "explanation": "Fiecare strângere este o pereche distinctă, iar C(8,2)=28. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-053",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Dacă 7 echipe joacă fiecare o dată cu fiecare, câte meciuri sunt?",
+      "answer": "21",
+      "explanation": "Fiecare meci corespunde unei perechi de echipe, deci C(7,2)=21. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-054",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte perechi distincte se formează din 10 obiecte?",
+      "answer": "45",
+      "explanation": "Alegerea a două obiecte fără ordine este C(10,2)=45. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-055",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Un cod are două poziții, fiecare cu 0,1,2 și repetare permisă. Câte coduri există?",
+      "answer": "9",
+      "explanation": "Fiecare poziție are trei opțiuni independente, deci 3×3=9. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-056",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Într-un grup de 30, 18 beau cafea, 15 ceai, 7 ambele. Câte beau cel puțin una?",
+      "answer": "26",
+      "explanation": "Reuniunea este 18+15-7=26 prin formula incluziunii-excluziunii. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-057",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte ținute poți forma din 4 tricouri și 3 pantaloni?",
+      "answer": "12",
+      "explanation": "Fiecare tricou se poate combina cu fiecare pereche de pantaloni, deci 4×3=12. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-058",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte alegeri ordonate există pentru două poziții dacă prima are 2 opțiuni și a doua 5?",
+      "answer": "10",
+      "explanation": "Principiul produsului dă 2×5=10 combinații ordonate. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-059",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte submulțimi are o mulțime cu 3 elemente?",
+      "answer": "8",
+      "explanation": "Fiecare element poate fi inclus sau exclus independent, astfel 2³=8. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-060",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte aranjamente diferite au trei obiecte distincte?",
+      "answer": "6",
+      "explanation": "Numărul permutărilor a trei obiecte distincte este 3!=6. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-061",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 2, 3, 5, 8, 12, 17, ...?",
+      "answer": "23",
+      "explanation": "Diferențele cresc 1,2,3,4,5; urmează 6. Aplicând regula încă o dată obținem 23. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-062",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 1, 2, 6, 24, 120, ...?",
+      "answer": "720",
+      "explanation": "Sunt factoriale consecutive, următorul fiind 6!. Aplicând regula încă o dată obținem 720. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-063",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 2, 5, 10, 17, 26, ...?",
+      "answer": "37",
+      "explanation": "Termenii urmează n²+1. Aplicând regula încă o dată obținem 37. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-064",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 3, 4, 7, 11, 18, 29, ...?",
+      "answer": "47",
+      "explanation": "Fiecare termen nou este suma celor doi anteriori. Aplicând regula încă o dată obținem 47. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-065",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 6, 11, 21, 41, 81, ...?",
+      "answer": "161",
+      "explanation": "Regula este ×2−1. Aplicând regula încă o dată obținem 161. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-066",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 1, 8, 27, 64, ...?",
+      "answer": "125",
+      "explanation": "Sunt cuburile numerelor naturale. Aplicând regula încă o dată obținem 125. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-067",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 14, 18, 27, 43, 68, ...?",
+      "answer": "104",
+      "explanation": "Diferențele sunt 4,9,16,25; urmează 36. Aplicând regula încă o dată obținem 104. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-068",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 5, 8, 14, 23, 35, ...?",
+      "answer": "50",
+      "explanation": "Diferențele sunt 3,6,9,12; urmează 15. Aplicând regula încă o dată obținem 50. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-069",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 100, 50, 52, 26, 28, 14, ...?",
+      "answer": "16",
+      "explanation": "Operațiile alternează ÷2 și +2. Aplicând regula încă o dată obținem 16. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-070",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 4, 12, 11, 33, 32, 96, ...?",
+      "answer": "95",
+      "explanation": "Operațiile alternează ×3 și −1. Aplicând regula încă o dată obținem 95. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-071",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 2, 7, 15, 26, 40, ...?",
+      "answer": "57",
+      "explanation": "Diferențele cresc cu 3: 5,8,11,14,17. Aplicând regula încă o dată obținem 57. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-072",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 64, 32, 16, 8, ...?",
+      "answer": "4",
+      "explanation": "Fiecare termen se înjumătățește. Aplicând regula încă o dată obținem 4. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-073",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 1, 4, 13, 40, 121, ...?",
+      "answer": "364",
+      "explanation": "Regula este ×3+1. Aplicând regula încă o dată obținem 364. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-074",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 2, 9, 28, 65, ...?",
+      "answer": "126",
+      "explanation": "Termenii sunt n³+1. Aplicând regula încă o dată obținem 126. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-075",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Care este următorul număr din șirul 11, 13, 17, 19, 23, ...?",
+      "answer": "29",
+      "explanation": "Șirul enumeră numere prime consecutive. Aplicând regula încă o dată obținem 29. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Dacă P implică Q, iar Q implică R, ce urmează?",
+      "options": [
+        "R implică P",
+        "Q implică P",
+        "Nu există relație",
+        "P implică R"
+      ],
+      "answer": "P implică R",
+      "explanation": "Silogismul ipotetic compune cele două implicații. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "«A numai dacă B» înseamnă că:",
+      "options": [
+        "B este necesară pentru A",
+        "A este necesară pentru B",
+        "B este suficientă pentru A obligatoriu",
+        "A și B sunt incompatibile"
+      ],
+      "answer": "B este necesară pentru A",
+      "explanation": "Expresia se formalizează A→B. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "«A dacă B» înseamnă că:",
+      "options": [
+        "A și B sunt incompatibile",
+        "B este suficientă pentru A",
+        "A este suficientă pentru B",
+        "A este necesară pentru B"
+      ],
+      "answer": "B este suficientă pentru A",
+      "explanation": "Expresia se formalizează B→A. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Toți A sunt B. Niciun B nu este C. Ce urmează?",
+      "options": [
+        "Toți B sunt A",
+        "Niciun A nu este C",
+        "Unii A sunt C",
+        "Toți C sunt A"
+      ],
+      "answer": "Niciun A nu este C",
+      "explanation": "A este inclus în B, iar B este disjunct de C. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Unii A sunt B. Toți B sunt C. Ce urmează?",
+      "options": [
+        "Toți A sunt C",
+        "Unii A sunt C",
+        "Toți C sunt B",
+        "Niciun A nu este C"
+      ],
+      "answer": "Unii A sunt C",
+      "explanation": "Martorii din A∩B sunt automat și C. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Niciun A nu este B. Toți C sunt A. Ce urmează?",
+      "options": [
+        "Toți B sunt C",
+        "Niciun C nu este B",
+        "Niciun A nu este C",
+        "Unii C sunt B"
+      ],
+      "answer": "Niciun C nu este B",
+      "explanation": "C este submulțime a lui A, iar A nu se intersectează cu B. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P∨Q este adevărată, P este falsă. Ce rezultă?",
+      "options": [
+        "Q este adevărată",
+        "P devine adevărată",
+        "Q este falsă",
+        "Nu se poate deduce"
+      ],
+      "answer": "Q este adevărată",
+      "explanation": "Disjuncția inclusivă cere cel puțin o componentă adevărată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Exact una dintre P și Q este adevărată, P este adevărată. Ce rezultă?",
+      "options": [
+        "Q este falsă",
+        "Q este adevărată",
+        "Ambele sunt false",
+        "Ambele sunt adevărate"
+      ],
+      "answer": "Q este falsă",
+      "explanation": "XOR cere valori diferite pentru cele două componente. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P și Q sunt adevărate. Ce valoare are P∧Q?",
+      "options": [
+        "Contradicție",
+        "Fals",
+        "Adevărat",
+        "Indeterminat"
+      ],
+      "answer": "Adevărat",
+      "explanation": "Conjuncția este adevărată numai când ambele componente sunt adevărate. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P este adevărată, Q falsă. Ce valoare are P∧Q?",
+      "options": [
+        "Adevărat",
+        "Fals",
+        "Tautologie",
+        "Indeterminat"
+      ],
+      "answer": "Fals",
+      "explanation": "O singură componentă falsă face conjuncția falsă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P este falsă, Q adevărată. Ce valoare are P∨Q?",
+      "options": [
+        "Adevărat",
+        "Fals",
+        "Contradicție",
+        "Indeterminat"
+      ],
+      "answer": "Adevărat",
+      "explanation": "Cel puțin Q este adevărată, deci disjuncția este adevărată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Dacă P→Q este falsă, ce trebuie să fie cazul?",
+      "options": [
+        "P falsă și Q adevărată",
+        "Ambele false",
+        "P adevărată și Q falsă",
+        "Ambele adevărate"
+      ],
+      "answer": "P adevărată și Q falsă",
+      "explanation": "Implicația materială este falsă într-o singură configurație. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Dacă P este falsă, ce valoare are P→Q indiferent de Q?",
+      "options": [
+        "Identică cu Q",
+        "Adevărat",
+        "Fals",
+        "Indeterminată"
+      ],
+      "answer": "Adevărat",
+      "explanation": "Antecedentul fals face implicația materială adevărată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P↔Q este adevărată. Ce știm?",
+      "options": [
+        "Ambele obligatoriu false",
+        "Ambele sunt obligatoriu adevărate",
+        "Au valori opuse",
+        "P și Q au aceeași valoare"
+      ],
+      "answer": "P și Q au aceeași valoare",
+      "explanation": "Bicondiționala este adevărată când valorile coincid. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "P este echivalentă cu Q, iar Q este falsă. Ce urmează?",
+      "options": [
+        "P este adevărată",
+        "P este falsă",
+        "P este indeterminată",
+        "Nu există legătură"
+      ],
+      "answer": "P este falsă",
+      "explanation": "Echivalența cere aceeași valoare de adevăr. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Ad hominem»?",
+      "options": [
+        "este adevărată în unele interpretări și falsă în altele",
+        "consideră ceva adevărat doar fiindcă mulți îl cred",
+        "este valid și are premise adevărate",
+        "atacă persoana în locul argumentului"
+      ],
+      "answer": "atacă persoana în locul argumentului",
+      "explanation": "Termenul «Ad hominem» desemnează situația în care atacă persoana în locul argumentului. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Falsa dilemă»?",
+      "options": [
+        "presupune cauzalitate doar din succesiune temporală",
+        "este atât cerută pentru rezultat, cât și capabilă să-l garanteze",
+        "prezintă artificial doar două opțiuni când există și altele",
+        "atacă persoana în locul argumentului"
+      ],
+      "answer": "prezintă artificial doar două opțiuni când există și altele",
+      "explanation": "Termenul «Falsa dilemă» desemnează situația în care prezintă artificial doar două opțiuni când există și altele. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Generalizare pripită»?",
+      "options": [
+        "atacă persoana în locul argumentului",
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "presupune cauzalitate doar din succesiune temporală",
+        "afirmă că exact una dintre două propoziții este adevărată"
+      ],
+      "answer": "trage o concluzie generală dintr-un eșantion insuficient",
+      "explanation": "Termenul «Generalizare pripită» desemnează situația în care trage o concluzie generală dintr-un eșantion insuficient. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Apel la popularitate»?",
+      "options": [
+        "prezintă artificial doar două opțiuni când există și altele",
+        "consideră ceva adevărat doar fiindcă mulți îl cred",
+        "exprimă «dacă și numai dacă»",
+        "presupune cauzalitate doar din succesiune temporală"
+      ],
+      "answer": "consideră ceva adevărat doar fiindcă mulți îl cred",
+      "explanation": "Termenul «Apel la popularitate» desemnează situația în care consideră ceva adevărat doar fiindcă mulți îl cred. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Argument circular»?",
+      "options": [
+        "înlocuiește poziția adversă cu una mai slabă",
+        "consideră ceva adevărat doar fiindcă mulți îl cred",
+        "presupune concluzia în premise",
+        "tratează lipsa dovezii drept dovadă decisivă"
+      ],
+      "answer": "presupune concluzia în premise",
+      "explanation": "Termenul «Argument circular» desemnează situația în care presupune concluzia în premise. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Disjuncție exclusivă»?",
+      "options": [
+        "afirmă că exact una dintre două propoziții este adevărată",
+        "tratează lipsa dovezii drept dovadă decisivă",
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "presupune cauzalitate doar din succesiune temporală"
+      ],
+      "answer": "afirmă că exact una dintre două propoziții este adevărată",
+      "explanation": "Termenul «Disjuncție exclusivă» desemnează situația în care afirmă că exact una dintre două propoziții este adevărată. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Bicondițională»?",
+      "options": [
+        "exprimă «dacă și numai dacă»",
+        "afirmă că exact una dintre două propoziții este adevărată",
+        "presupune concluzia în premise",
+        "este adevărată în unele interpretări și falsă în altele"
+      ],
+      "answer": "exprimă «dacă și numai dacă»",
+      "explanation": "Termenul «Bicondițională» desemnează situația în care exprimă «dacă și numai dacă». Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Propoziție contingentă»?",
+      "options": [
+        "afirmă că exact una dintre două propoziții este adevărată",
+        "este adevărată în unele interpretări și falsă în altele",
+        "exprimă «dacă și numai dacă»",
+        "presupune concluzia în premise"
+      ],
+      "answer": "este adevărată în unele interpretări și falsă în altele",
+      "explanation": "Termenul «Propoziție contingentă» desemnează situația în care este adevărată în unele interpretări și falsă în altele. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Argument solid»?",
+      "options": [
+        "presupune cauzalitate doar din succesiune temporală",
+        "este valid și are premise adevărate",
+        "exprimă «dacă și numai dacă»",
+        "înlocuiește poziția adversă cu una mai slabă"
+      ],
+      "answer": "este valid și are premise adevărate",
+      "explanation": "Termenul «Argument solid» desemnează situația în care este valid și are premise adevărate. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Echivocație»?",
+      "options": [
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "schimbă sensul aceluiași termen în argument",
+        "prezintă artificial doar două opțiuni când există și altele",
+        "este atât cerută pentru rezultat, cât și capabilă să-l garanteze"
+      ],
+      "answer": "schimbă sensul aceluiași termen în argument",
+      "explanation": "Termenul «Echivocație» desemnează situația în care schimbă sensul aceluiași termen în argument. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Om de paie»?",
+      "options": [
+        "înlocuiește poziția adversă cu una mai slabă",
+        "schimbă sensul aceluiași termen în argument",
+        "este atât cerută pentru rezultat, cât și capabilă să-l garanteze",
+        "presupune concluzia în premise"
+      ],
+      "answer": "înlocuiește poziția adversă cu una mai slabă",
+      "explanation": "Termenul «Om de paie» desemnează situația în care înlocuiește poziția adversă cu una mai slabă. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Apel la ignoranță»?",
+      "options": [
+        "tratează lipsa dovezii drept dovadă decisivă",
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "este adevărată în unele interpretări și falsă în altele",
+        "presupune concluzia în premise"
+      ],
+      "answer": "tratează lipsa dovezii drept dovadă decisivă",
+      "explanation": "Termenul «Apel la ignoranță» desemnează situația în care tratează lipsa dovezii drept dovadă decisivă. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Post hoc»?",
+      "options": [
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "presupune cauzalitate doar din succesiune temporală",
+        "prezintă artificial doar două opțiuni când există și altele",
+        "schimbă sensul aceluiași termen în argument"
+      ],
+      "answer": "presupune cauzalitate doar din succesiune temporală",
+      "explanation": "Termenul «Post hoc» desemnează situația în care presupune cauzalitate doar din succesiune temporală. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Falsă analogie»?",
+      "options": [
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "transferă concluzia pe baza asemănărilor nerelevante",
+        "este adevărată în unele interpretări și falsă în altele",
+        "presupune cauzalitate doar din succesiune temporală"
+      ],
+      "answer": "transferă concluzia pe baza asemănărilor nerelevante",
+      "explanation": "Termenul «Falsă analogie» desemnează situația în care transferă concluzia pe baza asemănărilor nerelevante. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul «Condiție necesară și suficientă»?",
+      "options": [
+        "trage o concluzie generală dintr-un eșantion insuficient",
+        "consideră ceva adevărat doar fiindcă mulți îl cred",
+        "este atât cerută pentru rezultat, cât și capabilă să-l garanteze",
+        "transferă concluzia pe baza asemănărilor nerelevante"
+      ],
+      "answer": "este atât cerută pentru rezultat, cât și capabilă să-l garanteze",
+      "explanation": "Termenul «Condiție necesară și suficientă» desemnează situația în care este atât cerută pentru rezultat, cât și capabilă să-l garanteze. Aceasta este utilizarea standard în analiza logică a argumentelor."
+    },
+    {
+      "id": "logic-106",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Un cod are 3 poziții, fiecare cu 4 simboluri și repetare permisă. Câte coduri există?",
+      "answer": "64",
+      "explanation": "Principiul produsului dă 4³=64 combinații. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-107",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte moduri există de a alege 2 persoane din 9?",
+      "answer": "36",
+      "explanation": "Ordinea nu contează, deci C(9,2)=36. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-108",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte aranjamente au A,B,C,D?",
+      "answer": "24",
+      "explanation": "Patru obiecte distincte au 4!=24 permutări. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-109",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Din 50 persoane, 31 știu engleză, 24 franceză, 15 ambele. Câte știu exact una?",
+      "answer": "25",
+      "explanation": "Doar engleză sunt 16, doar franceză 9, total 25. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-110",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Ai 5 rute pentru prima etapă și 4 pentru a doua. Câte trasee complete există?",
+      "answer": "20",
+      "explanation": "Principiul produsului dă 5×4=20. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "A înainte de B, B înainte de C, D după C. Cine este ultimul?",
+      "options": [
+        "D",
+        "C",
+        "B",
+        "A"
+      ],
+      "answer": "D",
+      "explanation": "Condițiile formează lanțul A–B–C–D. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Radu înaintea Anei, Ana înaintea lui Mihai, Ioana înaintea lui Radu. Cine este primul?",
+      "options": [
+        "Ioana",
+        "Radu",
+        "Ana",
+        "Mihai"
+      ],
+      "answer": "Ioana",
+      "explanation": "Lanțul este Ioana–Radu–Ana–Mihai. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "A sub B, C deasupra lui B. Care este ordinea de jos în sus?",
+      "options": [
+        "A,B,C",
+        "C,B,A",
+        "B,A,C",
+        "A,C,B"
+      ],
+      "answer": "A,B,C",
+      "explanation": "Relațiile fixează secvența A–B–C. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "X mai rapid decât Y, Z mai lent decât Y, W mai rapid decât X. Cine este cel mai rapid?",
+      "options": [
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "answer": "W",
+      "explanation": "Ordinea este W>X>Y>Z. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "S înainte de P, P înainte de Q, Q înainte de R. Care ordine este obligatorie?",
+      "options": [
+        "S,P,Q,R",
+        "P,S,Q,R",
+        "S,Q,P,R",
+        "R,Q,P,S"
+      ],
+      "answer": "S,P,Q,R",
+      "explanation": "Cele trei relații formează un singur lanț. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "A mai ieftin decât B, C mai scump decât B, D mai ieftin decât A. Cine este cel mai ieftin?",
+      "options": [
+        "D",
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "D",
+      "explanation": "Ordinea prețurilor este D<A<B<C. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ion mai în vârstă decât Mara, Vlad mai tânăr decât Mara, Elena mai în vârstă decât Ion. Cine este cea mai în vârstă?",
+      "options": [
+        "Elena",
+        "Ion",
+        "Mara",
+        "Vlad"
+      ],
+      "answer": "Elena",
+      "explanation": "Relațiile dau Elena>Ion>Mara>Vlad. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "B este imediat după A și C imediat după B. Ce secvență este obligatorie?",
+      "options": [
+        "A,B,C",
+        "C,B,A",
+        "B,A,C",
+        "A,C,B"
+      ],
+      "answer": "A,B,C",
+      "explanation": "«Imediat după» fixează pozițiile consecutive. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "X pleacă după Y, Z înaintea lui Y. Care este ordinea?",
+      "options": [
+        "Z,Y,X",
+        "X,Y,Z",
+        "Y,Z,X",
+        "Z,X,Y"
+      ],
+      "answer": "Z,Y,X",
+      "explanation": "Z este înainte de Y, iar X după Y. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "A este la nord de B, C la sud de B. Care este ordinea nord-sud?",
+      "options": [
+        "A,B,C",
+        "C,B,A",
+        "B,A,C",
+        "A,C,B"
+      ],
+      "answer": "A,B,C",
+      "explanation": "A este deasupra lui B, iar C dedesubt. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-121",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 1, 2, 6, 15, 31, 56, ...?",
+      "answer": "92",
+      "explanation": "Diferențele sunt pătratele 1,4,9,16,25,36. Continuarea coerentă produce 92. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-122",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 2, 3, 6, 11, 18, 27, ...?",
+      "answer": "38",
+      "explanation": "Diferențele sunt numere impare consecutive. Continuarea coerentă produce 38. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-123",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 1, 4, 10, 22, 46, ...?",
+      "answer": "94",
+      "explanation": "Regula este ×2+2 de la al doilea termen. Continuarea coerentă produce 94. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-124",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 7, 10, 16, 28, 52, ...?",
+      "answer": "100",
+      "explanation": "Diferențele 3,6,12,24 se dublează. Continuarea coerentă produce 100. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-125",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 1, 5, 14, 30, 55, ...?",
+      "answer": "91",
+      "explanation": "Diferențele sunt 4,9,16,25,36. Continuarea coerentă produce 91. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-126",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 4, 6, 12, 14, 28, 30, ...?",
+      "answer": "60",
+      "explanation": "Operațiile alternează +2 și ×2. Continuarea coerentă produce 60. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-127",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 3, 8, 18, 38, 78, ...?",
+      "answer": "158",
+      "explanation": "Regula este ×2+2. Continuarea coerentă produce 158. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-128",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 1, 10, 3, 30, 5, 50, 7, ...?",
+      "answer": "70",
+      "explanation": "Două șiruri sunt intercalate: imparele și multiplii de 10 cu pas 20. Continuarea coerentă produce 70. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-129",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 2, 12, 36, 80, 150, ...?",
+      "answer": "252",
+      "explanation": "Termenii urmează n²(n+1). Continuarea coerentă produce 252. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-130",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Care este următorul număr din șirul 243, 81, 27, 9, 3, ...?",
+      "answer": "1",
+      "explanation": "Fiecare termen se împarte la 3. Continuarea coerentă produce 1. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-131",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte șiruri binare de lungime 5 există?",
+      "answer": "32",
+      "explanation": "Fiecare poziție are două opțiuni, deci 2⁵=32. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-132",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte submulțimi are o mulțime cu 6 elemente?",
+      "answer": "64",
+      "explanation": "Fiecare element se include sau exclude independent, deci 2⁶=64. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-133",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte moduri există de a alege 3 persoane din 8?",
+      "answer": "56",
+      "explanation": "Combinarea fără ordine este C(8,3)=56. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-134",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte permutări au 5 obiecte distincte?",
+      "answer": "120",
+      "explanation": "Numărul este 5!=120. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-135",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte diagonale are un hexagon?",
+      "answer": "9",
+      "explanation": "C(6,2)=15 segmente totale minus 6 laturi lasă 9 diagonale. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este negația lui «Toți studenții au trecut»?",
+      "options": [
+        "Există cel puțin un student care nu a trecut",
+        "Unii au trecut",
+        "Toți au picat",
+        "Niciun student nu a trecut"
+      ],
+      "answer": "Există cel puțin un student care nu a trecut",
+      "explanation": "Negarea universalului produce un contraexemplu existențial. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este negația lui «Există un câine care latră»?",
+      "options": [
+        "Există un câine care nu latră",
+        "Unii câini latră",
+        "Toți câinii latră",
+        "Niciun câine nu latră"
+      ],
+      "answer": "Niciun câine nu latră",
+      "explanation": "Negarea existențialului afirmă lipsa oricărui martor. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este echivalent cu ¬(P∧Q)?",
+      "options": [
+        "¬P∨¬Q",
+        "P∨Q",
+        "¬P∧¬Q",
+        "P∧¬Q"
+      ],
+      "answer": "¬P∨¬Q",
+      "explanation": "Legea De Morgan transformă negarea conjuncției. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este echivalent cu ¬(P∨Q)?",
+      "options": [
+        "P∧Q",
+        "P∨¬Q",
+        "¬P∧¬Q",
+        "¬P∨¬Q"
+      ],
+      "answer": "¬P∧¬Q",
+      "explanation": "Legea De Morgan transformă negarea disjuncției. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este contrapozitiva lui P→Q?",
+      "options": [
+        "¬P→¬Q",
+        "Q→P",
+        "P→¬Q",
+        "¬Q→¬P"
+      ],
+      "answer": "¬Q→¬P",
+      "explanation": "Contrapozitiva este logic echivalentă cu implicația. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este conversa lui P→Q?",
+      "options": [
+        "¬P→¬Q",
+        "¬Q→¬P",
+        "Q→P",
+        "P↔Q"
+      ],
+      "answer": "Q→P",
+      "explanation": "Conversa schimbă antecedentul și consecventul. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care este inversa lui P→Q?",
+      "options": [
+        "Q→P",
+        "P∨Q",
+        "¬Q→¬P",
+        "¬P→¬Q"
+      ],
+      "answer": "¬P→¬Q",
+      "explanation": "Inversa neagă ambele componente fără a le schimba poziția. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este echivalent cu P→Q?",
+      "options": [
+        "¬P∨Q",
+        "P∨¬Q",
+        "¬P∧Q",
+        "P∧Q"
+      ],
+      "answer": "¬P∨Q",
+      "explanation": "Implicația și disjuncția au aceleași valori de adevăr. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "P și Q sunt false. Ce valoare are P↔Q?",
+      "options": [
+        "Fals",
+        "Adevărat",
+        "Indeterminat",
+        "Contradicție"
+      ],
+      "answer": "Adevărat",
+      "explanation": "Bicondiționala este adevărată când valorile coincid. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce exprimă P∧¬P?",
+      "options": [
+        "Bicondițională",
+        "Contingență",
+        "Contradicție",
+        "Tautologie"
+      ],
+      "answer": "Contradicție",
+      "explanation": "O propoziție nu poate fi simultan adevărată și falsă în logica clasică. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce exprimă P∨¬P?",
+      "options": [
+        "Tautologie",
+        "Implicație falsă",
+        "Contingență",
+        "Contradicție"
+      ],
+      "answer": "Tautologie",
+      "explanation": "Legea terțului exclus face formula mereu adevărată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Dacă P→Q și Q→P sunt ambele adevărate, ce rezultă?",
+      "options": [
+        "¬P∧¬Q obligatoriu",
+        "P∧Q obligatoriu",
+        "P↔Q",
+        "P∨Q fals"
+      ],
+      "answer": "P↔Q",
+      "explanation": "Cele două direcții ale implicației formează bicondiționala. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Dacă P este necesară pentru Q, ce implicație corespunde?",
+      "options": [
+        "¬Q→P",
+        "Q→P",
+        "P→Q",
+        "P↔Q obligatoriu"
+      ],
+      "answer": "Q→P",
+      "explanation": "Q nu poate fi adevărată fără P. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Dacă P este suficientă pentru Q, ce implicație corespunde?",
+      "options": [
+        "P↔Q obligatoriu",
+        "P→Q",
+        "¬P→Q",
+        "Q→P"
+      ],
+      "answer": "P→Q",
+      "explanation": "P garantează Q. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Poate un argument valid avea concluzie falsă?",
+      "options": [
+        "Nu, niciodată",
+        "Da, dacă cel puțin o premisă este falsă",
+        "Da, chiar cu toate premisele adevărate",
+        "Doar cu o premisă"
+      ],
+      "answer": "Da, dacă cel puțin o premisă este falsă",
+      "explanation": "Validitatea interzice doar premise toate adevărate împreună cu concluzie falsă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B. Unii B sunt C. Rezultă unii A sunt C?",
+      "options": [
+        "Niciun A nu poate fi C",
+        "Da, întotdeauna",
+        "Nu, nu necesar",
+        "Toți A sunt C"
+      ],
+      "answer": "Nu, nu necesar",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Unii A sunt B. Niciun B nu este C. Ce urmează?",
+      "options": [
+        "Unii A nu sunt C",
+        "Toți A nu sunt C",
+        "Toți A sunt B",
+        "Unii C sunt A"
+      ],
+      "answer": "Unii A nu sunt C",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B. Toți C sunt B. Rezultă toți A sunt C?",
+      "options": [
+        "Da",
+        "Doar dacă B există",
+        "Doar dacă A și C au aceeași mărime",
+        "Nu"
+      ],
+      "answer": "Nu",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Niciun A nu este B. Unii C sunt A. Ce rezultă?",
+      "options": [
+        "Toți C nu sunt B",
+        "Unii C nu sunt B",
+        "Niciun C nu este B",
+        "Unii B sunt C"
+      ],
+      "answer": "Unii C nu sunt B",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B. Niciun C nu este B. Ce rezultă?",
+      "options": [
+        "Niciun B nu este A",
+        "Niciun A nu este C",
+        "Toți C sunt A",
+        "Unii A sunt C"
+      ],
+      "answer": "Niciun A nu este C",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Unii A nu sunt B. Putem concluziona că există A?",
+      "options": [
+        "Da",
+        "Nu",
+        "Doar dacă există B",
+        "Numai dacă A este finit"
+      ],
+      "answer": "Da",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B și există un A. Există obligatoriu B?",
+      "options": [
+        "Da",
+        "Doar dacă B este finit",
+        "Nu",
+        "Doar dacă A este finit"
+      ],
+      "answer": "Da",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Niciun A nu este B. Putem concluziona că A există?",
+      "options": [
+        "Nu",
+        "Numai dacă B există",
+        "Da",
+        "Da, exact un A"
+      ],
+      "answer": "Nu",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B. Unii A sunt C. Ce urmează?",
+      "options": [
+        "Toți B sunt C",
+        "Toți C sunt A",
+        "Unii B sunt C",
+        "Niciun B nu este C"
+      ],
+      "answer": "Unii B sunt C",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Unii A sunt B și unii B sunt C. Rezultă unii A sunt C?",
+      "options": [
+        "Da, toți",
+        "Nu, nu necesar",
+        "Niciun A nu este C",
+        "Da, sigur"
+      ],
+      "answer": "Nu, nu necesar",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B și toți B sunt C. Ce urmează?",
+      "options": [
+        "Unii C nu sunt B",
+        "Toți A sunt C",
+        "Niciun A nu este C",
+        "Toți C sunt A"
+      ],
+      "answer": "Toți A sunt C",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Niciun A nu este B și niciun B nu este C. Rezultă niciun A nu este C?",
+      "options": [
+        "Doar dacă B există",
+        "Nu",
+        "Doar dacă A există",
+        "Da"
+      ],
+      "answer": "Nu",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Unii A sunt B și toți A sunt C. Ce urmează?",
+      "options": [
+        "Niciun B nu este C",
+        "Toți B sunt C",
+        "Unii B sunt C",
+        "Toți C sunt B"
+      ],
+      "answer": "Unii B sunt C",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Toți A sunt B și niciun A nu este C. Putem spune niciun B nu este C?",
+      "options": [
+        "Doar dacă A există",
+        "Da",
+        "Doar dacă B este finit",
+        "Nu"
+      ],
+      "answer": "Nu",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Există un A și niciun A nu este B. Ce urmează?",
+      "options": [
+        "B este vidă",
+        "Toate elementele nu sunt B",
+        "Există cel puțin un element care nu este B",
+        "A este vidă"
+      ],
+      "answer": "Există cel puțin un element care nu este B",
+      "explanation": "Relațiile dintre mulțimi trebuie urmărite exact; concluzia corectă este singura garantată în toate configurațiile compatibile cu premisele. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-166",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte aranjamente distincte are AAB?",
+      "answer": "3",
+      "explanation": "Cele două litere A sunt identice, deci 3!/2!=3. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-167",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Un cod de 4 cifre permite 0-9 și repetare. Câte coduri există?",
+      "answer": "10000",
+      "explanation": "Fiecare poziție are 10 alegeri, deci 10⁴=10000. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-168",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte submulțimi nevide are o mulțime cu 5 elemente?",
+      "answer": "31",
+      "explanation": "Sunt 2⁵=32 submulțimi, minus mulțimea vidă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-169",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte perechi ordonate (a,b) există dacă a are 3 opțiuni și b 5?",
+      "answer": "15",
+      "explanation": "Principiul produsului dă 3×5=15. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-170",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte moduri există de a ordona 6 obiecte distincte?",
+      "answer": "720",
+      "explanation": "Numărul permutărilor este 6!=720. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "A,B,C au profesii medic,avocat,profesor. C=profesor, A=avocat. Ce este B?",
+      "options": [
+        "Medic",
+        "Avocat",
+        "Profesor",
+        "Nu se poate determina"
+      ],
+      "answer": "Medic",
+      "explanation": "Profesiile sunt distincte, deci pentru B rămâne medic. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "X,Y,Z conțin carte,cheie,monedă. Y are cheia; X nu are carte. Ce are X?",
+      "options": [
+        "Monedă",
+        "Carte",
+        "Cheie",
+        "Nu se poate determina"
+      ],
+      "answer": "Monedă",
+      "explanation": "Cheia este ocupată, iar X nu poate avea carte, deci rămâne moneda. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "P,Q,R,S ocupă 1-4. R=4; S înainte de P; P înainte de Q. Cine este 1?",
+      "options": [
+        "S",
+        "P",
+        "Q",
+        "R"
+      ],
+      "answer": "S",
+      "explanation": "Lanțul S<P<Q ocupă pozițiile 1,2,3. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "A,B,C sunt roșie,albastră,verde. B=verde; A nu este roșie. Ce culoare are A?",
+      "options": [
+        "Albastră",
+        "Roșie",
+        "Verde",
+        "Nu se poate determina"
+      ],
+      "answer": "Albastră",
+      "explanation": "Verdele este ocupat, iar roșul este exclus pentru A. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "M,N,O au scoruri distincte. M>N și O>M. Cine este median?",
+      "options": [
+        "M",
+        "N",
+        "O",
+        "Nu se poate determina"
+      ],
+      "answer": "M",
+      "explanation": "Ordinea este O>M>N. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "A înainte de B; C după B; D înainte de A. Cine este obligatoriu primul?",
+      "options": [
+        "D",
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "D",
+      "explanation": "Relațiile formează D<A<B<C. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ana mai tânără decât Bogdan; Carmen mai în vârstă decât Bogdan. Cine este la mijloc?",
+      "options": [
+        "Bogdan",
+        "Ana",
+        "Carmen",
+        "Nu se poate determina"
+      ],
+      "answer": "Bogdan",
+      "explanation": "Ordinea este Carmen>Bogdan>Ana. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "A imediat înainte de B; C imediat înainte de D. Dacă A=1 și C=3, cine este 2?",
+      "options": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanation": "B trebuie imediat după A. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "X mai cald decât Y, Z mai rece decât Y. Care este ordinea descrescătoare?",
+      "options": [
+        "X,Y,Z",
+        "Z,Y,X",
+        "Y,X,Z",
+        "X,Z,Y"
+      ],
+      "answer": "X,Y,Z",
+      "explanation": "Relațiile dau X>Y>Z. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "P este părinte al lui Q, iar Q al lui R. Ce este P pentru R?",
+      "options": [
+        "Bunic/bunică",
+        "Frate/soră",
+        "Părinte",
+        "Fără relație"
+      ],
+      "answer": "Bunic/bunică",
+      "explanation": "Două legături părinte-copil produc relația de bunic. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-181",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Care este următorul număr: 1,2,5,16,65,...?",
+      "answer": "326",
+      "explanation": "Regula este înmulțire cu indicele următor și +1; 65×5+1=326. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-182",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Care este următorul număr: 2,4,10,28,82,...?",
+      "answer": "244",
+      "explanation": "Fiecare termen este precedentul×3−2. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-183",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Care este următorul număr: 1,3,12,60,360,...?",
+      "answer": "2520",
+      "explanation": "Factorii succesivi sunt 3,4,5,6,7. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-184",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Care este următorul număr: 2,6,15,31,56,...?",
+      "answer": "92",
+      "explanation": "Diferențele sunt 4,9,16,25,36. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-185",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte funcții există de la 3 elemente la 4 elemente?",
+      "answer": "64",
+      "explanation": "Fiecare element din domeniu are patru imagini posibile, deci 4³. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-186",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte relații binare există pe o mulțime cu 3 elemente?",
+      "answer": "512",
+      "explanation": "Produsul cartezian are 9 perechi, fiecare inclusă sau exclusă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-187",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte grafuri simple neorientate etichetate există pe 4 vârfuri?",
+      "answer": "64",
+      "explanation": "Sunt 6 muchii potențiale, fiecare prezentă sau absentă. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-188",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte permutări distincte are LEVEL?",
+      "answer": "30",
+      "explanation": "Formula este 5!/(2!2!). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-189",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte șiruri binare de lungime 6 au exact două cifre 1?",
+      "answer": "15",
+      "explanation": "Alegem două poziții dintre șase. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-190",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte comitete de 3 persoane se aleg din 10?",
+      "answer": "120",
+      "explanation": "C(10,3)=120. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-191",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte rânduri are tabelul de adevăr pentru 4 variabile?",
+      "answer": "16",
+      "explanation": "Patru variabile binare au 2⁴ combinații. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-192",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte submulțimi are o mulțime cu 8 elemente?",
+      "answer": "256",
+      "explanation": "Numărul este 2⁸. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-193",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte șiruri binare de lungime 7 au exact trei cifre 1?",
+      "answer": "35",
+      "explanation": "Alegem pozițiile prin C(7,3). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-194",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte permutări distincte are BANANA?",
+      "answer": "60",
+      "explanation": "Formula este 6!/(3!2!). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-195",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte muchii are graful complet K8?",
+      "answer": "28",
+      "explanation": "Fiecare pereche de vârfuri formează o muchie, deci C(8,2). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este negația lui ∀x(P(x)→Q(x))?",
+      "options": [
+        "∃x(¬P(x)∧Q(x))",
+        "∀x(P(x)∨Q(x))",
+        "∀x(P(x)∧¬Q(x))",
+        "∃x(P(x)∧¬Q(x))"
+      ],
+      "answer": "∃x(P(x)∧¬Q(x))",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este negația lui ∃x(P(x)∧Q(x))?",
+      "options": [
+        "∃x(¬P(x)∧¬Q(x))",
+        "∀x(P(x)∨Q(x))",
+        "∀x(¬P(x)∨¬Q(x))",
+        "∃x(P(x)→Q(x))"
+      ],
+      "answer": "∀x(¬P(x)∨¬Q(x))",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este echivalent cu P↔Q?",
+      "options": [
+        "(P→Q)∨(Q→P)",
+        "P∨Q",
+        "(P→Q)∧(Q→P)",
+        "P∧¬Q"
+      ],
+      "answer": "(P→Q)∧(Q→P)",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce relație există între implicație și contrapozitivă?",
+      "options": [
+        "Sunt echivalente doar când P este adevărat",
+        "Nu au legătură",
+        "Sunt logic echivalente",
+        "Sunt contradictorii"
+      ],
+      "answer": "Sunt logic echivalente",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce relație există între conversa și inversa aceleiași implicații?",
+      "options": [
+        "Inversa este mereu falsă",
+        "Sunt logic echivalente între ele",
+        "Conversa este tautologie",
+        "Sunt contradictorii"
+      ],
+      "answer": "Sunt logic echivalente între ele",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă satisfiabilă?",
+      "options": [
+        "Este falsă mereu",
+        "Este adevărată în toate interpretările",
+        "Nu conține variabile",
+        "Există cel puțin o interpretare adevărată"
+      ],
+      "answer": "Există cel puțin o interpretare adevărată",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă nesatisfiabilă?",
+      "options": [
+        "Există exact una",
+        "Este adevărată mereu",
+        "Nu există nicio interpretare adevărată",
+        "Nu are negații"
+      ],
+      "answer": "Nu există nicio interpretare adevărată",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă că premisele sunt inconsistente?",
+      "options": [
+        "Nu conțin negații",
+        "Toate sunt tautologii",
+        "Au exact o concluzie",
+        "Nu există model în care toate sunt simultan adevărate"
+      ],
+      "answer": "Nu există model în care toate sunt simultan adevărate",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce spune principiul exploziei?",
+      "options": [
+        "Dintr-o contradicție se poate deriva orice propoziție",
+        "Negațiile sunt interzise",
+        "O contradicție nu permite concluzii",
+        "Doar tautologiile se derivă"
+      ],
+      "answer": "Dintr-o contradicție se poate deriva orice propoziție",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este CNF?",
+      "options": [
+        "Conjuncție de clauze disjunctive",
+        "Disjuncție de conjuncții obligatoriu",
+        "Formulă fără negații",
+        "Un literal"
+      ],
+      "answer": "Conjuncție de clauze disjunctive",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este DNF?",
+      "options": [
+        "Conjuncție de disjuncții obligatoriu",
+        "O implicație",
+        "Disjuncție de termeni conjunctivi",
+        "Un cuantificator"
+      ],
+      "answer": "Disjuncție de termeni conjunctivi",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un literal?",
+      "options": [
+        "O variabilă propozițională sau negația ei",
+        "Orice formulă complexă",
+        "Un cuantificator",
+        "Doar o tautologie"
+      ],
+      "answer": "O variabilă propozițională sau negația ei",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă Γ⊨φ?",
+      "options": [
+        "φ este falsă mereu",
+        "Au aceeași lungime",
+        "φ este premisă obligatoriu",
+        "Orice model al lui Γ este și model al lui φ"
+      ],
+      "answer": "Orice model al lui Γ este și model al lui φ",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă echivalență logică?",
+      "options": [
+        "Aceeași valoare în orice interpretare",
+        "Aceeași lungime",
+        "Aceleași simboluri",
+        "Ambele atomice"
+      ],
+      "answer": "Aceeași valoare în orice interpretare",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care este negația lui ∀x∃yR(x,y)?",
+      "options": [
+        "∀x∀y¬R(x,y)",
+        "∃x∀y¬R(x,y)",
+        "∃y∀xR(x,y)",
+        "∀x∃y¬R(x,y)"
+      ],
+      "answer": "∃x∀y¬R(x,y)",
+      "explanation": "Răspunsul rezultă din regulile standard ale logicii propoziționale sau de ordinul întâi și păstrează exact condițiile de adevăr ale formulei."
+    },
+    {
+      "id": "logic-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Corelație ≠ cauzalitate»?",
+      "options": [
+        "două variabile corelate nu demonstrează singure o relație cauzală",
+        "proprietatea întregului este atribuită fiecărei părți fără justificare",
+        "o practică este declarată corectă doar pentru că este veche",
+        "sunt selectate doar dovezile favorabile concluziei"
+      ],
+      "answer": "două variabile corelate nu demonstrează singure o relație cauzală",
+      "explanation": "Această eroare apare când două variabile corelate nu demonstrează singure o relație cauzală. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Cherry-picking»?",
+      "options": [
+        "mila este folosită în locul dovezilor relevante",
+        "afirmația este evaluată doar după originea ei",
+        "proprietatea părților este atribuită întregului fără justificare",
+        "sunt selectate doar dovezile favorabile concluziei"
+      ],
+      "answer": "sunt selectate doar dovezile favorabile concluziei",
+      "explanation": "Această eroare apare când sunt selectate doar dovezile favorabile concluziei. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Moving the goalposts»?",
+      "options": [
+        "rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat",
+        "adevărul este judecat după cât de plăcute ar fi consecințele",
+        "criteriul de acceptare este schimbat după ce a fost satisfăcut",
+        "ceva este declarat superior doar pentru că este nou"
+      ],
+      "answer": "criteriul de acceptare este schimbat după ce a fost satisfăcut",
+      "explanation": "Această eroare apare când criteriul de acceptare este schimbat după ce a fost satisfăcut. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Eroarea jucătorului»?",
+      "options": [
+        "rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat",
+        "mila este folosită în locul dovezilor relevante",
+        "proprietatea părților este atribuită întregului fără justificare",
+        "se introduce o excepție nejustificată pentru propriul caz"
+      ],
+      "answer": "rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat",
+      "explanation": "Această eroare apare când rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Autoritate neadecvată»?",
+      "options": [
+        "adevărul este judecat după cât de plăcute ar fi consecințele",
+        "ceva este declarat superior doar pentru că este nou",
+        "mila este folosită în locul dovezilor relevante",
+        "opinia unei persoane fără expertiză relevantă este folosită drept dovadă"
+      ],
+      "answer": "opinia unei persoane fără expertiză relevantă este folosită drept dovadă",
+      "explanation": "Această eroare apare când opinia unei persoane fără expertiză relevantă este folosită drept dovadă. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Apel la consecințe»?",
+      "options": [
+        "sunt selectate doar dovezile favorabile concluziei",
+        "se introduce o excepție nejustificată pentru propriul caz",
+        "adevărul este judecat după cât de plăcute ar fi consecințele",
+        "două variabile corelate nu demonstrează singure o relație cauzală"
+      ],
+      "answer": "adevărul este judecat după cât de plăcute ar fi consecințele",
+      "explanation": "Această eroare apare când adevărul este judecat după cât de plăcute ar fi consecințele. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Eroarea compoziției»?",
+      "options": [
+        "proprietatea părților este atribuită întregului fără justificare",
+        "două variabile corelate nu demonstrează singure o relație cauzală",
+        "proprietatea întregului este atribuită fiecărei părți fără justificare",
+        "definiția grupului este modificată pentru a exclude contraexemple"
+      ],
+      "answer": "proprietatea părților este atribuită întregului fără justificare",
+      "explanation": "Această eroare apare când proprietatea părților este atribuită întregului fără justificare. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Eroarea diviziunii»?",
+      "options": [
+        "opinia unei persoane fără expertiză relevantă este folosită drept dovadă",
+        "proprietatea părților este atribuită întregului fără justificare",
+        "sunt selectate doar dovezile favorabile concluziei",
+        "proprietatea întregului este atribuită fiecărei părți fără justificare"
+      ],
+      "answer": "proprietatea întregului este atribuită fiecărei părți fără justificare",
+      "explanation": "Această eroare apare când proprietatea întregului este atribuită fiecărei părți fără justificare. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Apel la tradiție»?",
+      "options": [
+        "proprietatea părților este atribuită întregului fără justificare",
+        "mila este folosită în locul dovezilor relevante",
+        "întrebarea presupune deja adevărată o afirmație controversată",
+        "o practică este declarată corectă doar pentru că este veche"
+      ],
+      "answer": "o practică este declarată corectă doar pentru că este veche",
+      "explanation": "Această eroare apare când o practică este declarată corectă doar pentru că este veche. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Apel la noutate»?",
+      "options": [
+        "mila este folosită în locul dovezilor relevante",
+        "sunt selectate doar dovezile favorabile concluziei",
+        "ceva este declarat superior doar pentru că este nou",
+        "o practică este declarată corectă doar pentru că este veche"
+      ],
+      "answer": "ceva este declarat superior doar pentru că este nou",
+      "explanation": "Această eroare apare când ceva este declarat superior doar pentru că este nou. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Eroarea genetică»?",
+      "options": [
+        "afirmația este evaluată doar după originea ei",
+        "criteriul de acceptare este schimbat după ce a fost satisfăcut",
+        "mila este folosită în locul dovezilor relevante",
+        "proprietatea întregului este atribuită fiecărei părți fără justificare"
+      ],
+      "answer": "afirmația este evaluată doar după originea ei",
+      "explanation": "Această eroare apare când afirmația este evaluată doar după originea ei. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Special pleading»?",
+      "options": [
+        "proprietatea întregului este atribuită fiecărei părți fără justificare",
+        "mila este folosită în locul dovezilor relevante",
+        "se introduce o excepție nejustificată pentru propriul caz",
+        "o practică este declarată corectă doar pentru că este veche"
+      ],
+      "answer": "se introduce o excepție nejustificată pentru propriul caz",
+      "explanation": "Această eroare apare când se introduce o excepție nejustificată pentru propriul caz. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Loaded question»?",
+      "options": [
+        "mila este folosită în locul dovezilor relevante",
+        "rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat",
+        "întrebarea presupune deja adevărată o afirmație controversată",
+        "definiția grupului este modificată pentru a exclude contraexemple"
+      ],
+      "answer": "întrebarea presupune deja adevărată o afirmație controversată",
+      "explanation": "Această eroare apare când întrebarea presupune deja adevărată o afirmație controversată. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «No true Scotsman»?",
+      "options": [
+        "rezultatele independente trecute sunt tratate greșit ca influențând următorul rezultat",
+        "definiția grupului este modificată pentru a exclude contraexemple",
+        "afirmația este evaluată doar după originea ei",
+        "se introduce o excepție nejustificată pentru propriul caz"
+      ],
+      "answer": "definiția grupului este modificată pentru a exclude contraexemple",
+      "explanation": "Această eroare apare când definiția grupului este modificată pentru a exclude contraexemple. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie eroarea «Ad misericordiam»?",
+      "options": [
+        "mila este folosită în locul dovezilor relevante",
+        "adevărul este judecat după cât de plăcute ar fi consecințele",
+        "proprietatea întregului este atribuită fiecărei părți fără justificare",
+        "criteriul de acceptare este schimbat după ce a fost satisfăcut"
+      ],
+      "answer": "mila este folosită în locul dovezilor relevante",
+      "explanation": "Această eroare apare când mila este folosită în locul dovezilor relevante. Problema este că suportul oferit nu justifică în mod valid concluzia urmărită."
+    },
+    {
+      "id": "logic-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A<B, B<C, C<D. Ce rezultă?",
+      "options": [
+        "B>D",
+        "D<A",
+        "C<A",
+        "A<D"
+      ],
+      "answer": "A<D",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A înainte de C, B înainte de D, C înainte de E, D înainte de E. Ce nu poate fi primul?",
+      "options": [
+        "C",
+        "B",
+        "E",
+        "A"
+      ],
+      "answer": "E",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A înainte de B; C înainte de D. Care ordine este posibilă?",
+      "options": [
+        "C,A,D,B",
+        "D,C,A,B",
+        "A,D,C,B",
+        "B,A,C,D"
+      ],
+      "answer": "C,A,D,B",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În graful A→B, B→C, C→D, ce este garantat?",
+      "options": [
+        "B nu poate ajunge la D",
+        "A poate ajunge la D",
+        "C poate ajunge la A",
+        "D poate ajunge la A"
+      ],
+      "answer": "A poate ajunge la D",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A și B înainte de C, C înainte de D. Ce trebuie ultimul?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "answer": "D",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A bate B, B bate C, C bate D. A îl bate sigur pe D într-un joc nou?",
+      "options": [
+        "Da",
+        "Da prin tranzitivitate",
+        "Nu",
+        "Doar dacă A a câștigat clar"
+      ],
+      "answer": "Nu",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A spune adevărul exact când B minte; B exact când C spune adevărul; C spune adevărul. A?",
+      "options": [
+        "Nu se poate determina",
+        "Spune adevărul",
+        "Minte",
+        "Ambele"
+      ],
+      "answer": "Minte",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Inscripțiile «A este sigură» și «A nu este sigură» au exact una adevărată. Ce aflăm despre A?",
+      "options": [
+        "Nimic sigur",
+        "A nu este sigură",
+        "A este sigură",
+        "Ambele sunt sigure"
+      ],
+      "answer": "Nimic sigur",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "A,B,C au ranguri 1,2,3. A nu e 1, B este mai bun numeric decât A. Rangul lui B?",
+      "options": [
+        "1",
+        "2",
+        "Nu se poate determina",
+        "3"
+      ],
+      "answer": "1",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "P părinte Q, Q părinte R, R părinte S. P este?",
+      "options": [
+        "Frate/soră",
+        "Străbunic/străbunică",
+        "Părinte",
+        "Bunic/bunică"
+      ],
+      "answer": "Străbunic/străbunică",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Dacă φ este tautologie, ¬φ este?",
+      "options": [
+        "Tautologie",
+        "Contingență",
+        "Contradicție",
+        "Satisfiabilă doar uneori"
+      ],
+      "answer": "Contradicție",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Dacă φ este contradicție, ¬φ este?",
+      "options": [
+        "Tautologie",
+        "Falsă uneori",
+        "Contradicție",
+        "Contingență"
+      ],
+      "answer": "Tautologie",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce exprimă Γ⊢φ?",
+      "options": [
+        "φ este adevărată statistic",
+        "φ este derivabilă formal din Γ",
+        "φ este axiomă obligatoriu",
+        "Γ și φ sunt identice"
+      ],
+      "answer": "φ este derivabilă formal din Γ",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce exprimă soundness?",
+      "options": [
+        "Orice contradicție este permisă",
+        "Orice formulă este demonstrabilă",
+        "Tot ce este demonstrabil este semantic consecință",
+        "Nu există axiome"
+      ],
+      "answer": "Tot ce este demonstrabil este semantic consecință",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce problemă întreabă dacă o formulă booleană are o atribuire satisfăcătoare?",
+      "options": [
+        "TSP",
+        "SAT",
+        "BFS",
+        "GCD"
+      ],
+      "answer": "SAT",
+      "explanation": "Condițiile date trebuie păstrate simultan. Varianta corectă este singura care respectă toate relațiile fără a introduce presupuneri externe."
+    },
+    {
+      "id": "logic-241",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte funcții booleene cu 3 variabile există?",
+      "answer": "256",
+      "explanation": "Sunt 8 combinații de intrare și fiecare poate primi independent 0 sau 1, deci 2⁸. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-242",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte relații binare există între A cu 2 elemente și B cu 3?",
+      "answer": "64",
+      "explanation": "Produsul cartezian are 6 perechi, iar fiecare relație este o submulțime, deci 2⁶. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-243",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte ordine totale distincte există pe 5 elemente etichetate?",
+      "answer": "120",
+      "explanation": "O ordine totală corespunde unei permutări, deci 5!. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-244",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte grafuri simple neorientate etichetate există pe 5 vârfuri?",
+      "answer": "1024",
+      "explanation": "Sunt 10 muchii potențiale, fiecare prezentă sau absentă, deci 2¹⁰. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-245",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte atribuiri satisfac P∨Q∨R?",
+      "answer": "7",
+      "explanation": "Doar atribuirea toate false falsifică formula dintre cele opt posibile. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-246",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte atribuiri satisfac P∧Q pentru P,Q,R?",
+      "answer": "2",
+      "explanation": "P și Q trebuie adevărate, iar R rămâne liber. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-247",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte atribuiri satisfac P↔Q pentru P,Q,R?",
+      "answer": "4",
+      "explanation": "P și Q trebuie să coincidă, iar R poate lua două valori. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-248",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte atribuiri au exact una dintre P,Q,R adevărată?",
+      "answer": "3",
+      "explanation": "Alegem una dintre cele trei variabile ca singura adevărată. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-249",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte permutări distincte are MISSISSIPPI?",
+      "answer": "34650",
+      "explanation": "Formula este 11!/(4!4!2!). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-250",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte șiruri binare de lungime 8 au exact patru cifre 1?",
+      "answer": "70",
+      "explanation": "Alegem patru poziții dintre opt: C(8,4). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-251",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte submulțimi de cardinal 3 are o mulțime cu 10 elemente?",
+      "answer": "120",
+      "explanation": "Numărul este C(10,3). Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-252",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte bijecții există între două mulțimi cu câte 6 elemente?",
+      "answer": "720",
+      "explanation": "O bijecție este o permutare a celor șase imagini, deci 6!. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-253",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte relații reflexive există pe o mulțime cu 3 elemente?",
+      "answer": "64",
+      "explanation": "Cele trei perechi diagonale sunt obligatorii, celelalte șase sunt libere: 2⁶. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-254",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte relații simetrice există pe o mulțime cu 3 elemente?",
+      "answer": "64",
+      "explanation": "Trei bucle și trei perechi neordonate pot fi alese independent, deci 2⁶. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-255",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte muchii are K3,4?",
+      "answer": "12",
+      "explanation": "Fiecare dintre cele trei vârfuri din prima parte se conectează la toate cele patru din a doua. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care este negația lui ∀x(P(x)∨∃yR(x,y))?",
+      "options": [
+        "∃x(¬P(x)∨∃y¬R(x,y))",
+        "∃x(¬P(x)∧∀y¬R(x,y))",
+        "∀x(P(x)∧∀yR(x,y))",
+        "∀x(¬P(x)∧∃y¬R(x,y))"
+      ],
+      "answer": "∃x(¬P(x)∧∀y¬R(x,y))",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Este ∀x∃yR(x,y) echivalentă în general cu ∃y∀xR(x,y)?",
+      "options": [
+        "Nu",
+        "Da",
+        "Doar pentru domenii finite",
+        "Doar pentru relații simetrice"
+      ],
+      "answer": "Nu",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care formulă este în general mai puternică?",
+      "options": [
+        "Sunt echivalente",
+        "∃y∀xR(x,y)",
+        "∀x∃yR(x,y)",
+        "Niciuna nu o implică pe cealaltă"
+      ],
+      "answer": "∃y∀xR(x,y)",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă validitate de ordinul întâi?",
+      "options": [
+        "Este demonstrată experimental",
+        "Adevărată într-un singur model",
+        "Adevărată în orice structură relevantă",
+        "Are cel puțin un model"
+      ],
+      "answer": "Adevărată în orice structură relevantă",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă că o teorie este satisfiabilă?",
+      "options": [
+        "Există un model care satisface toate propozițiile simultan",
+        "Fiecare propoziție este tautologie",
+        "Teoria este finită",
+        "Nu are cuantificatori"
+      ],
+      "answer": "Există un model care satisface toate propozițiile simultan",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce afirmă compactitatea?",
+      "options": [
+        "Orice formulă este decidabilă",
+        "Dacă orice submulțime finită este satisfiabilă, teoria întreagă este satisfiabilă",
+        "Orice teorie este finită",
+        "Orice model este finit"
+      ],
+      "answer": "Dacă orice submulțime finită este satisfiabilă, teoria întreagă este satisfiabilă",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă că o teorie este completă semantic?",
+      "options": [
+        "Conține toate propozițiile",
+        "Nu are modele",
+        "Pentru orice φ, teoria implică φ sau ¬φ",
+        "Este finit axiomatizată"
+      ],
+      "answer": "Pentru orice φ, teoria implică φ sau ¬φ",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă că φ este independentă de T?",
+      "options": [
+        "T nu are axiome",
+        "φ este falsă în toate modelele",
+        "T nu demonstrează nici φ, nici ¬φ",
+        "φ este tautologie"
+      ],
+      "answer": "T nu demonstrează nici φ, nici ¬φ",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o relație reflexivă?",
+      "options": [
+        "Niciun x nu are xRx",
+        "Dacă xRy și yRz atunci xRz",
+        "Dacă xRy atunci yRx",
+        "Pentru orice x, xRx"
+      ],
+      "answer": "Pentru orice x, xRx",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o relație simetrică?",
+      "options": [
+        "Pentru orice x, xRx",
+        "Dacă xRy atunci yRx",
+        "Dacă xRy și yRz atunci xRz",
+        "Dacă xRy atunci x=y"
+      ],
+      "answer": "Dacă xRy atunci yRx",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o relație antisimetrică?",
+      "options": [
+        "Orice pereche este comparabilă",
+        "Dacă xRy și yRx, atunci x=y",
+        "Niciun x nu are xRx",
+        "Dacă xRy atunci yRx"
+      ],
+      "answer": "Dacă xRy și yRx, atunci x=y",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o relație tranzitivă?",
+      "options": [
+        "Dacă xRy și yRz, atunci xRz",
+        "Dacă xRy atunci x=y",
+        "Pentru orice x, xRx",
+        "Dacă xRy atunci yRx"
+      ],
+      "answer": "Dacă xRy și yRz, atunci xRz",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proprietăți are o relație de echivalență?",
+      "options": [
+        "Doar simetrică",
+        "Reflexivă, simetrică, tranzitivă",
+        "Reflexivă, antisimetrică, totală",
+        "Doar tranzitivă"
+      ],
+      "answer": "Reflexivă, simetrică, tranzitivă",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce proprietăți definește o ordine parțială?",
+      "options": [
+        "Ireflexivă, simetrică",
+        "Simetrică, tranzitivă, totală",
+        "Doar reflexivă",
+        "Reflexivă, antisimetrică, tranzitivă"
+      ],
+      "answer": "Reflexivă, antisimetrică, tranzitivă",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce adaugă o ordine totală?",
+      "options": [
+        "Comparabilitatea oricăror două elemente",
+        "Simetria",
+        "Lipsa tranzitivității",
+        "Ireflexivitatea"
+      ],
+      "answer": "Comparabilitatea oricăror două elemente",
+      "explanation": "Răspunsul urmează definițiile și teoremele standard din logica matematică. Distincția dintre variante depinde de condițiile exacte cerute de formulare."
+    },
+    {
+      "id": "logic-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un element minimal într-un poset?",
+      "options": [
+        "Elementul maxim numeric",
+        "Unicul element",
+        "Un element mai mic decât toate celelalte",
+        "Un element fără alt element strict mai mic sub el"
+      ],
+      "answer": "Un element fără alt element strict mai mic sub el",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un element minim?",
+      "options": [
+        "Un element care este ≤ tuturor celorlalte",
+        "Un element maximal",
+        "Un element fără succesor",
+        "Orice element minimal"
+      ],
+      "answer": "Un element care este ≤ tuturor celorlalte",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care diferență maximal/maximum este corectă?",
+      "options": [
+        "Pot exista mai multe maximale, dar maximumul dacă există este unic",
+        "Sunt identice",
+        "Maximal înseamnă numeric cel mai mare",
+        "Maximumul poate avea elemente deasupra"
+      ],
+      "answer": "Pot exista mai multe maximale, dar maximumul dacă există este unic",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Dacă o formulă este validă, este și satisfiabilă?",
+      "options": [
+        "Doar dacă are o variabilă",
+        "Doar în CNF",
+        "Da",
+        "Nu"
+      ],
+      "answer": "Da",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Dacă o formulă este satisfiabilă, este neapărat validă?",
+      "options": [
+        "Da",
+        "Doar fără negații",
+        "Doar dacă este atomică",
+        "Nu"
+      ],
+      "answer": "Nu",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Dacă o formulă este nesatisfiabilă, negația ei este?",
+      "options": [
+        "Fără valoare",
+        "Validă",
+        "Nesatisfiabilă",
+        "Contingentă"
+      ],
+      "answer": "Validă",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Două clase de echivalență pot avea intersecție nevidă fără să fie identice?",
+      "options": [
+        "Da",
+        "Doar pe domeniu infinit",
+        "Nu",
+        "Doar fără tranzitivitate"
+      ],
+      "answer": "Nu",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Dacă ≤ este ordine parțială, pot exista x≠y cu x≤y și y≤x?",
+      "options": [
+        "Nu",
+        "Da",
+        "Doar în ordine totală",
+        "Doar dacă este simetrică"
+      ],
+      "answer": "Nu",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Într-o ordine strictă <, poate exista x<x?",
+      "options": [
+        "Da",
+        "Doar pentru minim",
+        "Nu",
+        "Doar pe mulțimi infinite"
+      ],
+      "answer": "Nu",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Poate o relație pe domeniu nevid fi reflexivă și ireflexivă simultan?",
+      "options": [
+        "Doar dacă este simetrică",
+        "Da",
+        "Nu",
+        "Doar cu două elemente"
+      ],
+      "answer": "Nu",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este clasa de echivalență [x]?",
+      "options": [
+        "Doar x întotdeauna",
+        "Complementul domeniului",
+        "Mulțimea elementelor mai mari decât x",
+        "Mulțimea tuturor elementelor echivalente cu x"
+      ],
+      "answer": "Mulțimea tuturor elementelor echivalente cu x",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o partiție?",
+      "options": [
+        "O singură submulțime",
+        "Submulțimi nevide disjuncte două câte două care acoperă mulțimea",
+        "Complementul mulțimii",
+        "Orice listă de submulțimi"
+      ],
+      "answer": "Submulțimi nevide disjuncte două câte două care acoperă mulțimea",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un poset?",
+      "options": [
+        "O mulțime doar cu egalitate",
+        "Un graf complet",
+        "O mulțime fără relații",
+        "O mulțime împreună cu o ordine parțială"
+      ],
+      "answer": "O mulțime împreună cu o ordine parțială",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un lanț într-un poset?",
+      "options": [
+        "O clasă de echivalență",
+        "Un ciclu orientat",
+        "O submulțime în care orice două elemente sunt comparabile",
+        "O submulțime cu elemente toate incomparabile"
+      ],
+      "answer": "O submulțime în care orice două elemente sunt comparabile",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un antichain?",
+      "options": [
+        "O submulțime de elemente distincte două câte două incomparabile",
+        "O mulțime vidă obligatoriu",
+        "Un lanț total",
+        "O clasă de echivalență"
+      ],
+      "answer": "O submulțime de elemente distincte două câte două incomparabile",
+      "explanation": "Definiția corectă trebuie să respecte proprietățile structurale ale relației de ordine sau ale satisfiabilității, nu doar o intuiție numerică."
+    },
+    {
+      "id": "logic-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce paradox apare în «Această propoziție este falsă»?",
+      "options": [
+        "Paradoxul lui Russell",
+        "Paradoxul zilei de naștere",
+        "Sorites",
+        "Paradoxul mincinosului"
+      ],
+      "answer": "Paradoxul mincinosului",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce paradox privește mulțimea tuturor mulțimilor care nu se conțin pe ele însele?",
+      "options": [
+        "Sorites",
+        "Paradoxul lui Simpson",
+        "Paradoxul mincinosului",
+        "Paradoxul lui Russell"
+      ],
+      "answer": "Paradoxul lui Russell",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce paradox ilustrează vaguitatea prin eliminarea boabelor dintr-o grămadă?",
+      "options": [
+        "Mincinosului",
+        "Russell",
+        "Sorites",
+        "Monty Hall"
+      ],
+      "answer": "Sorites",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce spune principiul porumbeilor?",
+      "options": [
+        "Cutiile sunt identice",
+        "Mai multe obiecte decât cutii garantează o cutie cu cel puțin două obiecte",
+        "Obiectele trebuie ordonate",
+        "Fiecare cutie primește exact unul"
+      ],
+      "answer": "Mai multe obiecte decât cutii garantează o cutie cu cel puțin două obiecte",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu 13 persoane și 12 luni, ce este garantat?",
+      "options": [
+        "Toate au luni diferite",
+        "Cel puțin două persoane au aceeași lună de naștere",
+        "Cel puțin trei coincid",
+        "Exact două coincid"
+      ],
+      "answer": "Cel puțin două persoane au aceeași lună de naștere",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este demonstrația prin contradicție?",
+      "options": [
+        "Folosim doar probabilități",
+        "Presupunem negația concluziei și derivăm o imposibilitate",
+        "Presupunem concluzia",
+        "Verificăm doar exemple favorabile"
+      ],
+      "answer": "Presupunem negația concluziei și derivăm o imposibilitate",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este demonstrația prin contrapozitivă?",
+      "options": [
+        "Pentru P→Q demonstrăm ¬Q→¬P",
+        "Demonstrăm P∧Q",
+        "Negăm fără inversare",
+        "Demonstrăm Q→P"
+      ],
+      "answer": "Pentru P→Q demonstrăm ¬Q→¬P",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "A spune «B este mincinos». B spune «A și eu suntem de același tip». Ce combinație este consistentă?",
+      "options": [
+        "Amândoi mincinoși",
+        "A cavaler, B mincinos",
+        "A mincinos, B cavaler",
+        "Amândoi cavaleri"
+      ],
+      "answer": "A cavaler, B mincinos",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "A spune «Eu și B suntem amândoi mincinoși». Ce este A?",
+      "options": [
+        "Mincinos",
+        "Cavaler",
+        "Ambele",
+        "Nu se poate determina"
+      ],
+      "answer": "Mincinos",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În poset A<B, A<C, B<D, C<D, care pereche poate rămâne incomparabilă?",
+      "options": [
+        "A și D",
+        "C și D",
+        "A și B",
+        "B și C"
+      ],
+      "answer": "B și C",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În DAG A→C, B→C, C→D, ce trebuie înaintea lui C într-o ordine topologică?",
+      "options": [
+        "Doar A",
+        "Doar D",
+        "Niciun nod",
+        "A și B"
+      ],
+      "answer": "A și B",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Seiful se deschide iff A și B sunt introduse. A este introdusă, seiful nu se deschide. Ce rezultă?",
+      "options": [
+        "A nu este introdusă",
+        "Mecanismul este sigur defect",
+        "B nu este introdusă",
+        "B este introdusă"
+      ],
+      "answer": "B nu este introdusă",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Sistemul pornește dacă P și (Q sau R). P adevărat, Q fals, sistemul pornește. Ce rezultă?",
+      "options": [
+        "R este adevărat",
+        "P este fals",
+        "R este fals",
+        "Q este adevărat"
+      ],
+      "answer": "R este adevărat",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Dacă o relație este simetrică și antisimetrică, ce se întâmplă pentru x≠y?",
+      "options": [
+        "Trebuie să existe ambele",
+        "Nu pot exista simultan xRy și yRx",
+        "Relația este vidă obligatoriu",
+        "Relația este totală"
+      ],
+      "answer": "Nu pot exista simultan xRy și yRx",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    },
+    {
+      "id": "logic-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Într-o ordine totală, A<B<C și D<E. Ce este obligatoriu adevărat?",
+      "options": [
+        "B<D",
+        "E este ultimul",
+        "A<C",
+        "D<A"
+      ],
+      "answer": "A<C",
+      "explanation": "Condițiile trebuie satisfăcute simultan. Varianta corectă este singura care rămâne compatibilă după aplicarea proprietăților logice relevante. Explicația urmărește relația logică dintre premise și concluzie, fără presupuneri suplimentare."
+    }
+  ]
+}

@@ -15,6 +15,11 @@ import {
   PublicQuestion,
   RoundResultPayload,
 } from './game.types';
+import {
+  assertMatchParticipants,
+  DUO_MATCH_PROFILE,
+  MatchProfile,
+} from './match-profile';
 import { MatchmakingService } from './matchmaking.service';
 import { calculateRoundAwards } from './scoring';
 
@@ -58,21 +63,35 @@ export class GameService {
     this.server = server;
   }
 
-  async createMatch(userIds: string[]): Promise<MatchState> {
+  async createMatch(
+    userIds: string[],
+    profile: MatchProfile = DUO_MATCH_PROFILE,
+    categoryCodes: string[] = [],
+  ): Promise<MatchState> {
+    try {
+      assertMatchParticipants(userIds, profile);
+    } catch (error) {
+      throw new WsException((error as Error).message);
+    }
     const socketIds = await Promise.all(
       userIds.map((userId) => this.matchmaking.getSocketId(userId)),
     );
     const connectedUserIds = userIds.filter((_, index) => socketIds[index]);
-    if (connectedUserIds.length !== 2) {
-      await this.matchmaking.requeue(connectedUserIds);
-      throw new WsException('Un jucător s-a deconectat înainte de start.');
+    if (connectedUserIds.length !== profile.playerCountTarget) {
+      await this.matchmaking.requeue(connectedUserIds, profile);
+      throw new WsException(
+        'Cel puțin un jucător s-a deconectat înainte de start.',
+      );
     }
 
-    const question = await this.api.getRandomQuestion();
+    const question = await this.api.getRandomQuestion(categoryCodes);
     const startedAt = new Date();
     const state: MatchState = {
       id: randomUUID(),
-      mode: 'DUO',
+      mode: profile.persistedMode,
+      playerCountTarget: profile.playerCountTarget,
+      lobbyType: profile.lobbyType,
+      resolutionPolicy: profile.resolutionPolicy,
       status: 'active',
       mapId: 'realm-alpha',
       roundNumber: 1,
@@ -83,6 +102,7 @@ export class GameService {
         startedAt.getTime() + this.roundDurationMs,
       ).toISOString(),
       question,
+      categoryCodes,
       usedQuestionIds: [question.id],
       players: userIds.map((userId, index) => ({
         userId,
@@ -114,7 +134,9 @@ export class GameService {
     }
     server.to(this.matchRoom(state.id)).emit('match:found', {
       matchId: state.id,
-      mode: 'duo',
+      mode: profile.clientMode,
+      playerCountTarget: profile.playerCountTarget,
+      lobbyType: profile.lobbyType,
       totalRounds: state.totalRounds,
       players: state.players.map((player) => ({ userId: player.userId })),
     });
@@ -148,9 +170,14 @@ export class GameService {
         responseTimeMs: Date.now() - Date.parse(state.roundStartedAt),
         isCorrect: false,
       };
-      if (state.players.every((entry) => entry.answer)) {
+      if (
+        state.resolutionPolicy !== 'deadline' &&
+        state.players.every((entry) => entry.answer)
+      ) {
         await this.resolveRound(state);
       } else {
+        // FFA rămâne deschis până la deadline. Rezolvarea unică de sub lock
+        // vede toate răspunsurile aceleiași ferestre fixe (§12.14).
         await this.saveMatch(state);
       }
     });
@@ -344,7 +371,9 @@ export class GameService {
     state: MatchState,
   ): Promise<MatchState['question']> {
     for (let attempt = 0; attempt < 8; attempt += 1) {
-      const question = await this.api.getRandomQuestion();
+      const question = await this.api.getRandomQuestion(
+        state.categoryCodes ?? [],
+      );
       if (!state.usedQuestionIds.includes(question.id)) return question;
     }
     throw new Error('Banca de întrebări nu a livrat o întrebare nefolosită.');
@@ -367,7 +396,7 @@ export class GameService {
     endedBy: MatchEndReason = 'rounds',
   ): Promise<void> {
     const payload: PersistMatchPayload = {
-      mode: 'DUO',
+      mode: state.mode,
       mapId: state.mapId,
       startedAt: state.startedAt,
       endedAt: new Date().toISOString(),
@@ -443,7 +472,9 @@ export class GameService {
   private toSnapshot(state: MatchState): MatchSnapshotPayload {
     return {
       matchId: state.id,
-      mode: 'duo',
+      mode: state.mode === 'DUO' ? 'duo' : 'classic',
+      playerCountTarget: state.playerCountTarget,
+      lobbyType: state.lobbyType,
       status: state.status === 'paused' ? 'paused' : 'active',
       roundNumber: state.roundNumber,
       totalRounds: state.totalRounds,

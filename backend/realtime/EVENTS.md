@@ -15,8 +15,16 @@ același `JWT_ACCESS_SECRET` folosit de API. Un client neautentificat primește
 { "mode": "duo" }
 ```
 
-Adaugă jucătorul în coada FIFO `duo`. Identitatea și socket-ul sunt determinate
-server-side din sesiunea autentificată. Endpoint-ul este limitat la 10 cereri pe
+Pentru un lobby Clasic public de 4–8 jucători:
+
+```json
+{ "mode": "classic", "playerCount": 4 }
+```
+
+Adaugă jucătorul în coada FIFO separată după mod și dimensiune. Duo are implicit
+2 participanți; Clasic cere explicit `playerCount` între 4 și 8. Identitatea și
+socket-ul sunt determinate server-side din sesiunea autentificată. Evenimentul
+este limitat la 10 cereri pe
 minut și utilizator.
 
 ### `matchmaking:leave`
@@ -36,23 +44,187 @@ Clientul trimite numai valoarea răspunsului. Nu trimite `isCorrect`, scor,
 teritoriu sau rezultat. Serverul validează apartenența la meci, deadline-ul și
 faptul că jucătorul nu a răspuns deja.
 
+### `chat:match:join`
+
+```json
+{ "matchId": "uuid" }
+```
+
+Cere istoricul efemer și dreptul de scriere pentru chatul partidei. Serverul
+compară `matchId` cu partida activă din Redis și verifică apartenența în starea
+meciului; identificatorul primit de la client nu este o dovadă de acces.
+
+### `chat:match:send`
+
+```json
+{ "matchId": "uuid", "content": "Bun duel!" }
+```
+
+Trimite text liber numai jucătorilor cărora API-ul le acordă acces
+`ownMatches` sau `public`. Conturile T0 și minorii rămân la reacții presetate.
+Linkurile, mutul, blocările și limita de mesaje sunt validate server-side.
+
+### `chat:match:react`
+
+```json
+{ "matchId": "uuid", "reaction": "good_luck" }
+```
+
+Reacțiile acceptate sunt `good_luck`, `nice_move`, `wow` și `well_played`.
+Sunt disponibile inclusiv pentru T0/minori, dar respectă mutul și rate limit-ul.
+
+### `chat:global:join` / `chat:global:leave`
+
+Fără payload. Intrarea în camera publică de chat (`docs/features-social-progression.md`
+§2.2). La intrare, serverul răspunde cu `chat:global:history`.
+
+### `chat:global:send`
+
+```json
+{ "content": "salut tuturor" }
+```
+
+Maximum 500 de caractere — mai scurt decât la mesajele private, pentru că
+globalul e un flux comun și pereții de text îl fac ilizibil pentru toți.
+Cere treapta **T2** (`globalChat: "public"`), email confirmat și cont de major.
+Limitat la 5 mesaje / 10 secunde, pe utilizator, cu contorul în Redis — un
+contor în memoria procesului s-ar înmulți cu numărul de instanțe.
+
+### `chat:send`
+
+```json
+{ "conversationId": "uuid", "content": "hai la o revanșă" }
+```
+
+Mesaj într-o conversație persistentă (prieteni sau DM acceptat). Realtime **nu**
+scrie în baza de date: trimite mai departe la `POST /chat/internal/messages`,
+deci verificările (mut, blocare, treaptă pentru linkuri, filtru de limbaj,
+detecție de spam) sunt exact cele de pe ruta REST. Două căi cu reguli proprii ar
+diverge tocmai acolo unde contează.
+
 ## Evenimente server → client
+
+### `chat:match:history`
+
+```json
+{
+  "matchId": "uuid",
+  "access": "reactions",
+  "messages": []
+}
+```
+
+Răspuns la `chat:match:join`. `access` este `reactions` sau `text`; clientul îl
+afișează, dar serverul reverifică permisiunea la fiecare trimitere. Istoricul
+stă numai în Redis, maximum 50 de mesaje, cu expirare la o oră.
+
+### `chat:match:message`
+
+```json
+{
+  "id": "uuid",
+  "matchId": "uuid",
+  "senderId": "uuid",
+  "senderName": "Cavalerul",
+  "kind": "reaction",
+  "content": "well_played",
+  "createdAt": "2026-08-15T19:00:00.000Z"
+}
+```
+
+Este emis numai în camera `match:<matchId>`. `kind` este `text` sau `reaction`.
+Perechile blocate sunt excluse din livrare.
+
+### `chat:rejected` (scope `match`)
+
+```json
+{ "scope": "match", "matchId": "uuid", "reason": "tier_too_low" }
+```
+
+Motive posibile: `not_in_match`, `tier_too_low`, `muted`, `rate_limited`,
+`links_not_allowed` și `invalid`.
+
+### `chat:global:history`
+
+```json
+{
+  "messages": [
+    {
+      "id": "uuid",
+      "senderId": "uuid",
+      "senderName": "Cavalerul Zorilor",
+      "content": "salut",
+      "createdAt": "2026-08-15T21:00:00.000Z"
+    }
+  ]
+}
+```
+
+Ultimele mesaje din camera globală, ca ecranul să nu se deschidă gol. Chatul
+global e **efemer** (§2.8): trăiește doar în Redis, cel mult 100 de mesaje cu
+TTL de 24 h, atât cât un raport mai are rost. Nu ajunge în Postgres.
+
+### `chat:global:message`
+
+Același obiect ca un element din `chat:global:history`.
+
+Livrarea respectă blocările în **ambele sensuri**: mesajul nu se trimite deloc
+către cei blocați sau care l-au blocat pe expeditor. Blocarea trebuie să
+însemne „nu-l mai văd”, nu doar „nu-l mai afișez”.
+
+### `chat:message`
+
+```json
+{
+  "id": "uuid",
+  "conversationId": "uuid",
+  "senderId": "uuid",
+  "content": "hai la o revanșă",
+  "createdAt": "2026-08-15T21:00:00.000Z"
+}
+```
+
+Mesaj persistent livrat expeditorului și fiecărui participant, în camera lui
+personală `user:<id>`. `content` e textul **stocat**, deci profanitatea vine
+deja mascată — clientul nu poate afișa altceva decât s-a salvat.
+
+### `chat:rejected` (scope `global` / `direct`)
+
+```json
+{ "scope": "global", "reason": "tier_too_low" }
+```
+
+Motive la `global`: `tier_too_low`, `muted`, `rate_limited`, `invalid`.
+La `direct`, `reason` e `refused`, iar `message` conține explicația venită de la
+API (treaptă prea mică pentru linkuri, cerere de mesaj neacceptată, blocare).
+
+### `friends:presence`
+
+```json
+{ "userId": "uuid", "status": "online" }
+```
+
+Prezența din §2.3, trimisă **doar prietenilor** — nu e o difuzare globală, ci o
+notificare țintită către camerele lor personale. `status` este `online` sau
+`offline`.
 
 ### `session:ready`
 
 ```json
-{ "userId": "uuid", "activeMatchId": "uuid" }
+{ "userId": "uuid", "activeMatchId": "uuid", "friendsOnline": ["uuid"] }
 ```
 
 Confirmă că handshake-ul JWT a fost validat și sesiunea a fost înregistrată în
 Redis. `activeMatchId` este `null` dacă jucătorul nu are o partidă în desfășurare;
 când are, clientul **nu** trebuie să trimită `matchmaking:join` — serverul îl
 repune singur în partidă și îi trimite `match:state`.
+`friendsOnline` conține prietenii conectați în acel moment, ca lista de prieteni
+să nu arate pe toată lumea offline până se mișcă cineva.
 
 ### `matchmaking:queued` / `matchmaking:left`
 
 ```json
-{ "mode": "duo" }
+{ "mode": "duo", "playerCountTarget": 2, "lobbyType": "public" }
 ```
 
 ### `matchmaking:rejected`
@@ -62,7 +234,7 @@ repune singur în partidă și îi trimite `match:state`.
 ```
 
 Răspuns la `matchmaking:join` când contul nu are dreptul să joace ranked
-(`docs/features-social-progression.md` §1.3). Jucătorul **nu** a fost adăugat în
+(`owner-plan.md` §1.3). Jucătorul **nu** a fost adăugat în
 coadă. Motive posibile:
 
 | `reason` | Înțeles |
@@ -80,10 +252,17 @@ mai aștepta până la 15 minute, cât trăiește tokenul.
 {
   "matchId": "uuid",
   "mode": "duo",
+  "playerCountTarget": 2,
+  "lobbyType": "public",
   "totalRounds": 5,
   "players": [{ "userId": "uuid" }, { "userId": "uuid" }]
 }
 ```
+
+În Clasic, `mode` este `classic`, lista are 4–8 participanți, iar răspunsurile
+sunt păstrate până la expirarea ferestrei. Runda este apoi rezolvată o singură
+dată, atomic. Duo păstrează compatibilitatea existentă și poate închide fereastra
+mai devreme după ce ambii jucători au răspuns.
 
 ### `round:started`
 
@@ -178,6 +357,8 @@ Emis **numai către socket-ul care tocmai s-a reconectat**, imediat după
 {
   "matchId": "uuid",
   "mode": "duo",
+  "playerCountTarget": 2,
+  "lobbyType": "public",
   "status": "active",
   "roundNumber": 3,
   "totalRounds": 5,
@@ -251,4 +432,3 @@ ambii — nimeni nu câștigă o partidă pe care n-a jucat-o nimeni.
 `match:error` este emis dacă rezultatul calculat nu poate fi persistat în API.
 Starea rămâne în Redis cu `status = persistence_failed`; nu se raportează fals
 un meci finalizat.
-

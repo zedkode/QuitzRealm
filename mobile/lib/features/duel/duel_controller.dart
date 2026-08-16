@@ -53,6 +53,9 @@ class DuelState {
     this.resumeSecondsLeft = 0,
     this.endedByForfeit = false,
     this.rejectionReason,
+    this.chatMessages = const [],
+    this.canSendChatText = false,
+    this.chatErrorReason,
   });
 
   final DuelPhase phase;
@@ -92,6 +95,9 @@ class DuelState {
 
   /// De ce a refuzat serverul coada, când `phase == DuelPhase.blocked`.
   final DuelRejectionReason? rejectionReason;
+  final List<DuelChatMessage> chatMessages;
+  final bool canSendChatText;
+  final String? chatErrorReason;
 
   /// Adversarul lipsește; noi suntem încă în partidă.
   bool get opponentMissing => isPaused && missingUserId != myUserId;
@@ -155,6 +161,10 @@ class DuelState {
     bool clearPause = false,
     bool? endedByForfeit,
     DuelRejectionReason? rejectionReason,
+    List<DuelChatMessage>? chatMessages,
+    bool? canSendChatText,
+    String? chatErrorReason,
+    bool clearChatError = false,
   }) {
     return DuelState(
       phase: phase ?? this.phase,
@@ -179,14 +189,17 @@ class DuelState {
       errorMessage: clearError ? null : errorMessage ?? this.errorMessage,
       isPaused: clearPause ? false : isPaused ?? this.isPaused,
       missingUserId: clearPause ? null : missingUserId ?? this.missingUserId,
-      resumeDeadline: clearPause
-          ? null
-          : resumeDeadline ?? this.resumeDeadline,
+      resumeDeadline: clearPause ? null : resumeDeadline ?? this.resumeDeadline,
       resumeSecondsLeft: clearPause
           ? 0
           : resumeSecondsLeft ?? this.resumeSecondsLeft,
       endedByForfeit: endedByForfeit ?? this.endedByForfeit,
       rejectionReason: rejectionReason ?? this.rejectionReason,
+      chatMessages: chatMessages ?? this.chatMessages,
+      canSendChatText: canSendChatText ?? this.canSendChatText,
+      chatErrorReason: clearChatError
+          ? null
+          : chatErrorReason ?? this.chatErrorReason,
     );
   }
 }
@@ -227,6 +240,21 @@ class DuelController extends StateNotifier<DuelState> {
       phase: DuelPhase.waitingOpponent,
       selectedAnswer: trimmed,
     );
+  }
+
+  void sendChatMessage(String content) {
+    final matchId = state.matchId;
+    final trimmed = content.trim();
+    if (matchId == null || !state.canSendChatText || trimmed.isEmpty) return;
+    _client.sendMatchChat(matchId: matchId, content: trimmed);
+    state = state.copyWith(clearChatError: true);
+  }
+
+  void sendChatReaction(String reaction) {
+    final matchId = state.matchId;
+    if (matchId == null) return;
+    _client.sendMatchReaction(matchId: matchId, reaction: reaction);
+    state = state.copyWith(clearChatError: true);
   }
 
   Future<void> leave() async {
@@ -274,6 +302,7 @@ class DuelController extends StateNotifier<DuelState> {
           totalRounds: totalRounds,
           opponentId: opponent.isEmpty ? null : opponent,
         );
+        _client.joinMatchChat(matchId);
       case DuelRoundStarted(
         :final roundNumber,
         :final totalRounds,
@@ -351,6 +380,30 @@ class DuelController extends StateNotifier<DuelState> {
         _startTimer();
       case DuelMatchSnapshot():
         _applySnapshot(event);
+        _client.joinMatchChat(event.matchId);
+      case DuelMatchChatHistory(
+        :final matchId,
+        :final canSendText,
+        :final messages,
+      ):
+        if (matchId != state.matchId) return;
+        state = state.copyWith(
+          chatMessages: messages,
+          canSendChatText: canSendText,
+          clearChatError: true,
+        );
+      case DuelMatchChatMessageReceived(:final message):
+        if (message.matchId != state.matchId) return;
+        final withoutDuplicate = state.chatMessages
+            .where((entry) => entry.id != message.id)
+            .toList(growable: true);
+        state = state.copyWith(
+          chatMessages: [...withoutDuplicate, message],
+          clearChatError: true,
+        );
+      case DuelMatchChatRejected(:final matchId, :final reason):
+        if (matchId != state.matchId) return;
+        state = state.copyWith(chatErrorReason: reason);
       case DuelServerError(:final message):
         _timer?.cancel();
         state = state.copyWith(phase: DuelPhase.error, errorMessage: message);

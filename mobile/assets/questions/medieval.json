@@ -1,0 +1,3756 @@
+{
+  "id": "medieval",
+  "name": "Evul Mediu",
+  "questions": [
+    {
+      "id": "medieval-001",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc Bătălia de la Hastings?",
+      "answer": "1066",
+      "explanation": "Bătălia de la Hastings a avut loc în 1066. Victoria normandă a schimbat profund aristocrația, administrația și proprietatea funciară din Anglia."
+    },
+    {
+      "id": "medieval-002",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Hastings?",
+      "options": [
+        "William Cuceritorul",
+        "Saladin",
+        "Sultanatul Mameluc",
+        "Moartea Neagră"
+      ],
+      "answer": "William Cuceritorul",
+      "explanation": "William Cuceritorul este răspunsul corect pentru acest reper. Victoria normandă a schimbat profund aristocrația, administrația și proprietatea funciară din Anglia."
+    },
+    {
+      "id": "medieval-003",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc acceptarea Magna Carta la Runnymede?",
+      "answer": "1215",
+      "explanation": "acceptarea Magna Carta la Runnymede a avut loc în 1215. Baronii rebeli au impus regelui limitarea unor practici fiscale și judiciare."
+    },
+    {
+      "id": "medieval-004",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu acceptarea Magna Carta la Runnymede?",
+      "options": [
+        "Otto I",
+        "Edward al III-lea al Angliei",
+        "a patra cruciadă",
+        "Ioan al Angliei"
+      ],
+      "answer": "Ioan al Angliei",
+      "explanation": "Ioan al Angliei este răspunsul corect pentru acest reper. Baronii rebeli au impus regelui limitarea unor practici fiscale și judiciare."
+    },
+    {
+      "id": "medieval-005",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc cucerirea Constantinopolului de către otomani?",
+      "answer": "1453",
+      "explanation": "cucerirea Constantinopolului de către otomani a avut loc în 1453. Cucerirea a pus capăt Imperiului Bizantin și a transformat orașul într-un centru otoman major."
+    },
+    {
+      "id": "medieval-006",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu cucerirea Constantinopolului de către otomani?",
+      "options": [
+        "Otto I",
+        "Mehmed al II-lea",
+        "cruciații Primei Cruciade",
+        "Edward al III-lea al Angliei"
+      ],
+      "answer": "Mehmed al II-lea",
+      "explanation": "Mehmed al II-lea este răspunsul corect pentru acest reper. Cucerirea a pus capăt Imperiului Bizantin și a transformat orașul într-un centru otoman major."
+    },
+    {
+      "id": "medieval-007",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc începutul Primei Cruciade?",
+      "answer": "1096",
+      "explanation": "începutul Primei Cruciade a avut loc în 1096. Expediția a urmat apelului papei Urban al II-lea și a vizat Orientul Apropiat."
+    },
+    {
+      "id": "medieval-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu începutul Primei Cruciade?",
+      "options": [
+        "Edward al III-lea al Angliei",
+        "a patra cruciadă",
+        "Mehmed al II-lea",
+        "cruciații occidentali"
+      ],
+      "answer": "cruciații occidentali",
+      "explanation": "cruciații occidentali este răspunsul corect pentru acest reper. Expediția a urmat apelului papei Urban al II-lea și a vizat Orientul Apropiat."
+    },
+    {
+      "id": "medieval-009",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc cucerirea Ierusalimului de către Prima Cruciadă?",
+      "answer": "1099",
+      "explanation": "cucerirea Ierusalimului de către Prima Cruciadă a avut loc în 1099. Victoria a dus la formarea Regatului Ierusalimului și a altor state cruciate."
+    },
+    {
+      "id": "medieval-010",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu cucerirea Ierusalimului de către Prima Cruciadă?",
+      "options": [
+        "Otto I",
+        "cruciații Primei Cruciade",
+        "a patra cruciadă",
+        "Carol cel Mare"
+      ],
+      "answer": "cruciații Primei Cruciade",
+      "explanation": "cruciații Primei Cruciade este răspunsul corect pentru acest reper. Victoria a dus la formarea Regatului Ierusalimului și a altor state cruciate."
+    },
+    {
+      "id": "medieval-011",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc Bătălia de la Manzikert?",
+      "answer": "1071",
+      "explanation": "Bătălia de la Manzikert a avut loc în 1071. Selgiucizii au învins armata bizantină și l-au capturat pe împăratul Roman al IV-lea."
+    },
+    {
+      "id": "medieval-012",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Manzikert?",
+      "options": [
+        "Otto I",
+        "a patra cruciadă",
+        "Moartea Neagră",
+        "Alp Arslan"
+      ],
+      "answer": "Alp Arslan",
+      "explanation": "Alp Arslan este răspunsul corect pentru acest reper. Selgiucizii au învins armata bizantină și l-au capturat pe împăratul Roman al IV-lea."
+    },
+    {
+      "id": "medieval-013",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc încoronarea imperială a lui Carol cel Mare la Roma?",
+      "answer": "800",
+      "explanation": "încoronarea imperială a lui Carol cel Mare la Roma a avut loc în 800. Ceremonia realizată de papa Leon al III-lea a întărit ideea imperiului creștin occidental."
+    },
+    {
+      "id": "medieval-014",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu încoronarea imperială a lui Carol cel Mare la Roma?",
+      "options": [
+        "Sultanatul Mameluc",
+        "Moartea Neagră",
+        "Carol cel Mare",
+        "cruciații occidentali"
+      ],
+      "answer": "Carol cel Mare",
+      "explanation": "Carol cel Mare este răspunsul corect pentru acest reper. Ceremonia realizată de papa Leon al III-lea a întărit ideea imperiului creștin occidental."
+    },
+    {
+      "id": "medieval-015",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc sosirea documentată a Morții Negre în marile porturi europene mediteraneene?",
+      "answer": "1347",
+      "explanation": "sosirea documentată a Morții Negre în marile porturi europene mediteraneene a avut loc în 1347. Epidemia s-a răspândit rapid și a produs o catastrofă demografică în Europa."
+    },
+    {
+      "id": "medieval-016",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu sosirea documentată a Morții Negre în marile porturi europene mediteraneene?",
+      "options": [
+        "William Cuceritorul",
+        "Moartea Neagră",
+        "Carol cel Mare",
+        "Sultanatul Mameluc"
+      ],
+      "answer": "Moartea Neagră",
+      "explanation": "Moartea Neagră este răspunsul corect pentru acest reper. Epidemia s-a răspândit rapid și a produs o catastrofă demografică în Europa."
+    },
+    {
+      "id": "medieval-017",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc declanșarea Războiului de O Sută de Ani?",
+      "answer": "1337",
+      "explanation": "declanșarea Războiului de O Sută de Ani a avut loc în 1337. Conflictul anglo-francez a avut cauze dinastice, feudale și teritoriale."
+    },
+    {
+      "id": "medieval-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu declanșarea Războiului de O Sută de Ani?",
+      "options": [
+        "Edward al III-lea al Angliei",
+        "Mehmed al II-lea",
+        "Moartea Neagră",
+        "Carol cel Mare"
+      ],
+      "answer": "Edward al III-lea al Angliei",
+      "explanation": "Edward al III-lea al Angliei este răspunsul corect pentru acest reper. Conflictul anglo-francez a avut cauze dinastice, feudale și teritoriale."
+    },
+    {
+      "id": "medieval-019",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc Bătălia de la Crécy?",
+      "answer": "1346",
+      "explanation": "Bătălia de la Crécy a avut loc în 1346. Victoria engleză a demonstrat eficiența infanteriei și a arcașilor în fața cavaleriei franceze."
+    },
+    {
+      "id": "medieval-020",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Crécy?",
+      "options": [
+        "Henric al V-lea",
+        "Edward al III-lea al Angliei",
+        "William Cuceritorul",
+        "Ioan al Angliei"
+      ],
+      "answer": "Edward al III-lea al Angliei",
+      "explanation": "Edward al III-lea al Angliei este răspunsul corect pentru acest reper. Victoria engleză a demonstrat eficiența infanteriei și a arcașilor în fața cavaleriei franceze."
+    },
+    {
+      "id": "medieval-021",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc recucerirea Ierusalimului de către Saladin?",
+      "answer": "1187",
+      "explanation": "recucerirea Ierusalimului de către Saladin a avut loc în 1187. Victoria de la Hattin a permis recucerirea orașului de la Regatul Ierusalimului."
+    },
+    {
+      "id": "medieval-022",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu recucerirea Ierusalimului de către Saladin?",
+      "options": [
+        "Sultanatul Mameluc",
+        "Saladin",
+        "Edward al III-lea al Angliei",
+        "Otto I"
+      ],
+      "answer": "Saladin",
+      "explanation": "Saladin este răspunsul corect pentru acest reper. Victoria de la Hattin a permis recucerirea orașului de la Regatul Ierusalimului."
+    },
+    {
+      "id": "medieval-023",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc jefuirea Constantinopolului de către a patra cruciadă?",
+      "answer": "1204",
+      "explanation": "jefuirea Constantinopolului de către a patra cruciadă a avut loc în 1204. Cucerirea a fragmentat temporar Imperiul Bizantin și a creat Imperiul Latin."
+    },
+    {
+      "id": "medieval-024",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu jefuirea Constantinopolului de către a patra cruciadă?",
+      "options": [
+        "cruciații Primei Cruciade",
+        "cruciații occidentali",
+        "Sultanatul Mameluc",
+        "a patra cruciadă"
+      ],
+      "answer": "a patra cruciadă",
+      "explanation": "a patra cruciadă este răspunsul corect pentru acest reper. Cucerirea a fragmentat temporar Imperiul Bizantin și a creat Imperiul Latin."
+    },
+    {
+      "id": "medieval-025",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc încoronarea lui Otto I ca împărat?",
+      "answer": "962",
+      "explanation": "încoronarea lui Otto I ca împărat a avut loc în 962. Încoronarea a legat monarhia germană de tradiția imperială occidentală."
+    },
+    {
+      "id": "medieval-026",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu încoronarea lui Otto I ca împărat?",
+      "options": [
+        "a patra cruciadă",
+        "Moartea Neagră",
+        "Mehmed al II-lea",
+        "Otto I"
+      ],
+      "answer": "Otto I",
+      "explanation": "Otto I este răspunsul corect pentru acest reper. Încoronarea a legat monarhia germană de tradiția imperială occidentală. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-027",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc Bătălia de la Agincourt?",
+      "answer": "1415",
+      "explanation": "Bătălia de la Agincourt a avut loc în 1415. Englezii au obținut o victorie majoră în Războiul de O Sută de Ani."
+    },
+    {
+      "id": "medieval-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Agincourt?",
+      "options": [
+        "Henric al V-lea",
+        "Ioan al Angliei",
+        "William Cuceritorul",
+        "Edward al III-lea al Angliei"
+      ],
+      "answer": "Henric al V-lea",
+      "explanation": "Henric al V-lea este răspunsul corect pentru acest reper. Englezii au obținut o victorie majoră în Războiul de O Sută de Ani."
+    },
+    {
+      "id": "medieval-029",
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a avut loc căderea Acrei în mâinile mamelucilor?",
+      "answer": "1291",
+      "explanation": "căderea Acrei în mâinile mamelucilor a avut loc în 1291. Căderea orașului a încheiat existența principalelor posesiuni cruciate continentale din Levant."
+    },
+    {
+      "id": "medieval-030",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine sau ce entitate este asociată direct cu căderea Acrei în mâinile mamelucilor?",
+      "options": [
+        "Saladin",
+        "Mehmed al II-lea",
+        "cruciații Primei Cruciade",
+        "Sultanatul Mameluc"
+      ],
+      "answer": "Sultanatul Mameluc",
+      "explanation": "Sultanatul Mameluc este răspunsul corect pentru acest reper. Căderea orașului a încheiat existența principalelor posesiuni cruciate continentale din Levant."
+    },
+    {
+      "id": "medieval-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „vasal”?",
+      "options": [
+        "persoana aflată în prima etapă de formare într-o meserie",
+        "un om legat prin fidelitate de un senior",
+        "spațiul destinat copierii manuscriselor",
+        "o reședință fortificată cu rol militar și administrativ"
+      ],
+      "answer": "un om legat prin fidelitate de un senior",
+      "explanation": "„vasal” desemnează un om legat prin fidelitate de un senior. Vasalitatea era o relație personală care varia mult între regiuni și perioade."
+    },
+    {
+      "id": "medieval-032",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „vasal”?",
+      "options": [
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+        "Scolastica organiza argumente pro și contra în școli și universități",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale",
+        "Vasalul putea primi protecție sau un feud în schimbul loialității și serviciului"
+      ],
+      "answer": "Vasalul putea primi protecție sau un feud în schimbul loialității și serviciului",
+      "explanation": "În practică, vasalul putea primi protecție sau un feud în schimbul loialității și serviciului. Vasalitatea era o relație personală care varia mult între regiuni și perioade."
+    },
+    {
+      "id": "medieval-033",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „feud”?",
+      "options": [
+        "o comunitate religioasă organizată după o regulă",
+        "sistemul de identificare prin blazoane și simboluri",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică",
+        "un bun sau drept acordat în cadrul unei relații feudale"
+      ],
+      "answer": "un bun sau drept acordat în cadrul unei relații feudale",
+      "explanation": "„feud” desemnează un bun sau drept acordat în cadrul unei relații feudale. Acordarea feudului era legată adesea de obligații militare sau politice."
+    },
+    {
+      "id": "medieval-034",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „feud”?",
+      "options": [
+        "Feudul putea include pământ, venituri sau jurisdicții",
+        "Zeciuiala putea fi plătită în produse agricole sau bani",
+        "Heraldica diferenția familii, persoane și instituții",
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor"
+      ],
+      "answer": "Feudul putea include pământ, venituri sau jurisdicții",
+      "explanation": "În practică, feudul putea include pământ, venituri sau jurisdicții. Acordarea feudului era legată adesea de obligații militare sau politice."
+    },
+    {
+      "id": "medieval-035",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „iobăgie”?",
+      "options": [
+        "un om legat prin fidelitate de un senior",
+        "o comunitate religioasă organizată după o regulă",
+        "o formă de dependență rurală față de domeniu și senior",
+        "o călătorie religioasă spre un loc considerat sfânt"
+      ],
+      "answer": "o formă de dependență rurală față de domeniu și senior",
+      "explanation": "„iobăgie” desemnează o formă de dependență rurală față de domeniu și senior. Iobăgia nu era identică sclaviei și a avut forme regionale foarte diferite."
+    },
+    {
+      "id": "medieval-036",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „iobăgie”?",
+      "options": [
+        "Iobagul avea libertate juridică și economică limitată",
+        "Pelerinajul conecta regiuni îndepărtate prin circulația oamenilor",
+        "Vasalul putea primi protecție sau un feud în schimbul loialității și serviciului",
+        "Catedrala era centrul liturgic al autorității episcopale"
+      ],
+      "answer": "Iobagul avea libertate juridică și economică limitată",
+      "explanation": "În practică, iobagul avea libertate juridică și economică limitată. Iobăgia nu era identică sclaviei și a avut forme regionale foarte diferite."
+    },
+    {
+      "id": "medieval-037",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „breaslă”?",
+      "options": [
+        "spațiul destinat copierii manuscriselor",
+        "o asociație profesională de meșteșugari sau negustori",
+        "o reședință fortificată cu rol militar și administrativ",
+        "persoana aflată în prima etapă de formare într-o meserie"
+      ],
+      "answer": "o asociație profesională de meșteșugari sau negustori",
+      "explanation": "„breaslă” desemnează o asociație profesională de meșteșugari sau negustori. Breslele au devenit instituții importante ale economiei urbane medievale."
+    },
+    {
+      "id": "medieval-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „breaslă”?",
+      "options": [
+        "Heraldica diferenția familii, persoane și instituții",
+        "Relicvele puteau atrage pelerini și prestigiu religios",
+        "Pelerinajul conecta regiuni îndepărtate prin circulația oamenilor",
+        "Breasla putea controla accesul la profesie și standardele de producție"
+      ],
+      "answer": "Breasla putea controla accesul la profesie și standardele de producție",
+      "explanation": "În practică, breasla putea controla accesul la profesie și standardele de producție. Breslele au devenit instituții importante ale economiei urbane medievale."
+    },
+    {
+      "id": "medieval-039",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „castel”?",
+      "options": [
+        "o reședință fortificată cu rol militar și administrativ",
+        "o călătorie religioasă spre un loc considerat sfânt",
+        "spațiul destinat copierii manuscriselor",
+        "o asociație profesională de meșteșugari sau negustori"
+      ],
+      "answer": "o reședință fortificată cu rol militar și administrativ",
+      "explanation": "„castel” desemnează o reședință fortificată cu rol militar și administrativ. Fortificația era și simbol al autorității senioriale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-040",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „castel”?",
+      "options": [
+        "Heraldica diferenția familii, persoane și instituții",
+        "Catedrala era centrul liturgic al autorității episcopale",
+        "Castelul putea controla drumuri, domenii și puncte strategice",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale"
+      ],
+      "answer": "Castelul putea controla drumuri, domenii și puncte strategice",
+      "explanation": "În practică, castelul putea controla drumuri, domenii și puncte strategice. Fortificația era și simbol al autorității senioriale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „mănăstire”?",
+      "options": [
+        "o formă de dependență rurală față de domeniu și senior",
+        "sistemul de identificare prin blazoane și simboluri",
+        "o comunitate religioasă organizată după o regulă",
+        "un om legat prin fidelitate de un senior"
+      ],
+      "answer": "o comunitate religioasă organizată după o regulă",
+      "explanation": "„mănăstire” desemnează o comunitate religioasă organizată după o regulă. Multe mănăstiri dețineau domenii și păstrau manuscrise. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-042",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „mănăstire”?",
+      "options": [
+        "Vasalul putea primi protecție sau un feud în schimbul loialității și serviciului",
+        "Iobagul avea libertate juridică și economică limitată",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale",
+        "Relicvele puteau atrage pelerini și prestigiu religios"
+      ],
+      "answer": "Mănăstirea putea avea funcții spirituale, economice și culturale",
+      "explanation": "În practică, mănăstirea putea avea funcții spirituale, economice și culturale. Multe mănăstiri dețineau domenii și păstrau manuscrise. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-043",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „zeciuială”?",
+      "options": [
+        "biserica principală a unei dieceze, cu scaunul episcopului",
+        "un bun sau drept acordat în cadrul unei relații feudale",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică",
+        "o contribuție datorată Bisericii, frecvent aproximativ a zecea parte"
+      ],
+      "answer": "o contribuție datorată Bisericii, frecvent aproximativ a zecea parte",
+      "explanation": "„zeciuială” desemnează o contribuție datorată bisericii, frecvent aproximativ a zecea parte. Venitul susținea clerul, bisericile și activitățile ecleziastice."
+    },
+    {
+      "id": "medieval-044",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „zeciuială”?",
+      "options": [
+        "Mănăstirea putea avea funcții spirituale, economice și culturale",
+        "Zeciuiala putea fi plătită în produse agricole sau bani",
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+        "Castelul putea controla drumuri, domenii și puncte strategice"
+      ],
+      "answer": "Zeciuiala putea fi plătită în produse agricole sau bani",
+      "explanation": "În practică, zeciuiala putea fi plătită în produse agricole sau bani. Venitul susținea clerul, bisericile și activitățile ecleziastice."
+    },
+    {
+      "id": "medieval-045",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „turnir”?",
+      "options": [
+        "o formă de dependență rurală față de domeniu și senior",
+        "o reședință fortificată cu rol militar și administrativ",
+        "o competiție militară și aristocratică între cavaleri",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică"
+      ],
+      "answer": "o competiție militară și aristocratică între cavaleri",
+      "explanation": "„turnir” desemnează o competiție militară și aristocratică între cavaleri. Regulile și formele turnirului s-au modificat mult în timp."
+    },
+    {
+      "id": "medieval-046",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „turnir”?",
+      "options": [
+        "Turnirul combina antrenamentul militar cu prestigiul social",
+        "Ucenicul învăța sub autoritatea unui meșter",
+        "Zeciuiala putea fi plătită în produse agricole sau bani",
+        "Castelul putea controla drumuri, domenii și puncte strategice"
+      ],
+      "answer": "Turnirul combina antrenamentul militar cu prestigiul social",
+      "explanation": "În practică, turnirul combina antrenamentul militar cu prestigiul social. Regulile și formele turnirului s-au modificat mult în timp."
+    },
+    {
+      "id": "medieval-047",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „scolastică”?",
+      "options": [
+        "o reședință fortificată cu rol militar și administrativ",
+        "spațiul destinat copierii manuscriselor",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică",
+        "biserica principală a unei dieceze, cu scaunul episcopului"
+      ],
+      "answer": "o metodă intelectuală bazată pe analiză și dezbatere logică",
+      "explanation": "„scolastică” desemnează o metodă intelectuală bazată pe analiză și dezbatere logică. Ea a influențat puternic filosofia și teologia occidentului medieval."
+    },
+    {
+      "id": "medieval-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „scolastică”?",
+      "options": [
+        "Heraldica diferenția familii, persoane și instituții",
+        "Scolastica organiza argumente pro și contra în școli și universități",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale",
+        "Feudul putea include pământ, venituri sau jurisdicții"
+      ],
+      "answer": "Scolastica organiza argumente pro și contra în școli și universități",
+      "explanation": "În practică, scolastica organiza argumente pro și contra în școli și universități. Ea a influențat puternic filosofia și teologia occidentului medieval."
+    },
+    {
+      "id": "medieval-049",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „relicvă”?",
+      "options": [
+        "o comunitate religioasă organizată după o regulă",
+        "un obiect sau rămășiță asociată unui sfânt",
+        "spațiul destinat copierii manuscriselor",
+        "biserica principală a unei dieceze, cu scaunul episcopului"
+      ],
+      "answer": "un obiect sau rămășiță asociată unui sfânt",
+      "explanation": "„relicvă” desemnează un obiect sau rămășiță asociată unui sfânt. Cultul relicvelor a influențat geografia pelerinajelor și economia sanctuarelor."
+    },
+    {
+      "id": "medieval-050",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „relicvă”?",
+      "options": [
+        "Relicvele puteau atrage pelerini și prestigiu religios",
+        "Heraldica diferenția familii, persoane și instituții",
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+        "Ucenicul învăța sub autoritatea unui meșter"
+      ],
+      "answer": "Relicvele puteau atrage pelerini și prestigiu religios",
+      "explanation": "În practică, relicvele puteau atrage pelerini și prestigiu religios. Cultul relicvelor a influențat geografia pelerinajelor și economia sanctuarelor."
+    },
+    {
+      "id": "medieval-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „pelerinaj”?",
+      "options": [
+        "o competiție militară și aristocratică între cavaleri",
+        "o călătorie religioasă spre un loc considerat sfânt",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică",
+        "o formă de dependență rurală față de domeniu și senior"
+      ],
+      "answer": "o călătorie religioasă spre un loc considerat sfânt",
+      "explanation": "„pelerinaj” desemnează o călătorie religioasă spre un loc considerat sfânt. Ierusalim, Roma și Santiago de Compostela au fost destinații majore."
+    },
+    {
+      "id": "medieval-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „pelerinaj”?",
+      "options": [
+        "Pelerinajul conecta regiuni îndepărtate prin circulația oamenilor",
+        "Feudul putea include pământ, venituri sau jurisdicții",
+        "Catedrala era centrul liturgic al autorității episcopale",
+        "Zeciuiala putea fi plătită în produse agricole sau bani"
+      ],
+      "answer": "Pelerinajul conecta regiuni îndepărtate prin circulația oamenilor",
+      "explanation": "În practică, pelerinajul conecta regiuni îndepărtate prin circulația oamenilor. Ierusalim, Roma și Santiago de Compostela au fost destinații majore."
+    },
+    {
+      "id": "medieval-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „heraldică”?",
+      "options": [
+        "o reședință fortificată cu rol militar și administrativ",
+        "un om legat prin fidelitate de un senior",
+        "o asociație profesională de meșteșugari sau negustori",
+        "sistemul de identificare prin blazoane și simboluri"
+      ],
+      "answer": "sistemul de identificare prin blazoane și simboluri",
+      "explanation": "„heraldică” desemnează sistemul de identificare prin blazoane și simboluri. Sistemul s-a dezvoltat în contextul aristocratic și militar occidental."
+    },
+    {
+      "id": "medieval-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „heraldică”?",
+      "options": [
+        "Castelul putea controla drumuri, domenii și puncte strategice",
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+        "Heraldica diferenția familii, persoane și instituții",
+        "Scolastica organiza argumente pro și contra în școli și universități"
+      ],
+      "answer": "Heraldica diferenția familii, persoane și instituții",
+      "explanation": "În practică, heraldica diferenția familii, persoane și instituții. Sistemul s-a dezvoltat în contextul aristocratic și militar occidental. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „scriptorium”?",
+      "options": [
+        "o formă de dependență rurală față de domeniu și senior",
+        "o contribuție datorată Bisericii, frecvent aproximativ a zecea parte",
+        "spațiul destinat copierii manuscriselor",
+        "o comunitate religioasă organizată după o regulă"
+      ],
+      "answer": "spațiul destinat copierii manuscriselor",
+      "explanation": "„scriptorium” desemnează spațiul destinat copierii manuscriselor. Copierea manuală făcea manuscrisele costisitoare și valoroase. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-056",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „scriptorium”?",
+      "options": [
+        "Ucenicul învăța sub autoritatea unui meșter",
+        "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+        "Scolastica organiza argumente pro și contra în școli și universități",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale"
+      ],
+      "answer": "Scriptoriul monastic contribuia la reproducerea și păstrarea textelor",
+      "explanation": "În practică, scriptoriul monastic contribuia la reproducerea și păstrarea textelor. Copierea manuală făcea manuscrisele costisitoare și valoroase. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-057",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „catedrală”?",
+      "options": [
+        "o comunitate religioasă organizată după o regulă",
+        "persoana aflată în prima etapă de formare într-o meserie",
+        "biserica principală a unei dieceze, cu scaunul episcopului",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică"
+      ],
+      "answer": "biserica principală a unei dieceze, cu scaunul episcopului",
+      "explanation": "„catedrală” desemnează biserica principală a unei dieceze, cu scaunul episcopului. Termenul derivă din cathedra, adică scaunul episcopului. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-058",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „catedrală”?",
+      "options": [
+        "Catedrala era centrul liturgic al autorității episcopale",
+        "Castelul putea controla drumuri, domenii și puncte strategice",
+        "Iobagul avea libertate juridică și economică limitată",
+        "Mănăstirea putea avea funcții spirituale, economice și culturale"
+      ],
+      "answer": "Catedrala era centrul liturgic al autorității episcopale",
+      "explanation": "În practică, catedrala era centrul liturgic al autorității episcopale. Termenul derivă din cathedra, adică scaunul episcopului. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-059",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce descrie termenul medieval „ucenic”?",
+      "options": [
+        "biserica principală a unei dieceze, cu scaunul episcopului",
+        "o metodă intelectuală bazată pe analiză și dezbatere logică",
+        "o contribuție datorată Bisericii, frecvent aproximativ a zecea parte",
+        "persoana aflată în prima etapă de formare într-o meserie"
+      ],
+      "answer": "persoana aflată în prima etapă de formare într-o meserie",
+      "explanation": "„ucenic” desemnează persoana aflată în prima etapă de formare într-o meserie. După formare putea avansa spre statutul de calfă și apoi maestru."
+    },
+    {
+      "id": "medieval-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Care afirmație este corectă despre „ucenic”?",
+      "options": [
+        "Iobagul avea libertate juridică și economică limitată",
+        "Relicvele puteau atrage pelerini și prestigiu religios",
+        "Turnirul combina antrenamentul militar cu prestigiul social",
+        "Ucenicul învăța sub autoritatea unui meșter"
+      ],
+      "answer": "Ucenicul învăța sub autoritatea unui meșter",
+      "explanation": "În practică, ucenicul învăța sub autoritatea unui meșter. După formare putea avansa spre statutul de calfă și apoi maestru."
+    },
+    {
+      "id": "medieval-061",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Bouvines?",
+      "answer": "1214",
+      "explanation": "Bătălia de la Bouvines a avut loc în 1214. Victoria a consolidat puterea capetiană și a slăbit coaliția adversă."
+    },
+    {
+      "id": "medieval-062",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Bouvines?",
+      "options": [
+        "Henric al V-lea și papa Calixt al II-lea",
+        "Mihail al VIII-lea Paleologul",
+        "Filip al II-lea al Franței",
+        "alianța polono-lituaniană"
+      ],
+      "answer": "Filip al II-lea al Franței",
+      "explanation": "Filip al II-lea al Franței este răspunsul corect pentru acest reper. Victoria a consolidat puterea capetiană și a slăbit coaliția adversă."
+    },
+    {
+      "id": "medieval-063",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Legnano?",
+      "answer": "1176",
+      "explanation": "Bătălia de la Legnano a avut loc în 1176. Comunele nord-italiene au învins armata lui Frederic Barbarossa. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-064",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Legnano?",
+      "options": [
+        "Edward de Woodstock",
+        "Alfonso al VI-lea",
+        "Liga Lombardă",
+        "Biserica latină și Biserica greacă"
+      ],
+      "answer": "Liga Lombardă",
+      "explanation": "Liga Lombardă este răspunsul corect pentru acest reper. Comunele nord-italiene au învins armata lui Frederic Barbarossa. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-065",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc semnarea Concordatului de la Worms?",
+      "answer": "1122",
+      "explanation": "semnarea Concordatului de la Worms a avut loc în 1122. Acordul a redus conflictul privind învestitura episcopilor. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu semnarea Concordatului de la Worms?",
+      "options": [
+        "Filip al II-lea al Franței",
+        "papi rivali la Roma și Avignon",
+        "Henric al V-lea și papa Calixt al II-lea",
+        "coaliția regatelor creștine iberice"
+      ],
+      "answer": "Henric al V-lea și papa Calixt al II-lea",
+      "explanation": "Henric al V-lea și papa Calixt al II-lea este răspunsul corect pentru acest reper. Acordul a redus conflictul privind învestitura episcopilor."
+    },
+    {
+      "id": "medieval-067",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Hattin?",
+      "answer": "1187",
+      "explanation": "Bătălia de la Hattin a avut loc în 1187. Victoria a distrus mare parte din armata Regatului Ierusalimului."
+    },
+    {
+      "id": "medieval-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Hattin?",
+      "options": [
+        "Mihail al VIII-lea Paleologul",
+        "Edward de Woodstock",
+        "Robert Bruce",
+        "Saladin"
+      ],
+      "answer": "Saladin",
+      "explanation": "Saladin este răspunsul corect pentru acest reper. Victoria a distrus mare parte din armata Regatului Ierusalimului. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-069",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Marea Schismă dintre Roma și Constantinopol, datată convențional?",
+      "answer": "1054",
+      "explanation": "Marea Schismă dintre Roma și Constantinopol, datată convențional a avut loc în 1054. Ruptura s-a dezvoltat gradual, dar anul a devenit reperul convențional."
+    },
+    {
+      "id": "medieval-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Marea Schismă dintre Roma și Constantinopol, datată convențional?",
+      "options": [
+        "Saladin",
+        "coaliția regatelor creștine iberice",
+        "Biserica latină și Biserica greacă",
+        "Edward de Woodstock"
+      ],
+      "answer": "Biserica latină și Biserica greacă",
+      "explanation": "Biserica latină și Biserica greacă este răspunsul corect pentru acest reper. Ruptura s-a dezvoltat gradual, dar anul a devenit reperul convențional."
+    },
+    {
+      "id": "medieval-071",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Tours/Poitiers împotriva unei armate omeiade?",
+      "answer": "732",
+      "explanation": "Bătălia de la Tours/Poitiers împotriva unei armate omeiade a avut loc în 732. Forțele france au învins o armată omeiadă într-un episod devenit ulterior foarte simbolic."
+    },
+    {
+      "id": "medieval-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Tours/Poitiers împotriva unei armate omeiade?",
+      "options": [
+        "papi rivali la Roma și Avignon",
+        "Carol Martel",
+        "Biserica latină și Biserica greacă",
+        "Conciliul de la Konstanz"
+      ],
+      "answer": "Carol Martel",
+      "explanation": "Carol Martel este răspunsul corect pentru acest reper. Forțele france au învins o armată omeiadă într-un episod devenit ulterior foarte simbolic."
+    },
+    {
+      "id": "medieval-073",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Bannockburn?",
+      "answer": "1314",
+      "explanation": "Bătălia de la Bannockburn a avut loc în 1314. Victoria a consolidat cauza independenței Scoției. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Bannockburn?",
+      "options": [
+        "Robert Bruce",
+        "Liga Lombardă",
+        "Biserica latină și Biserica greacă",
+        "coaliția regatelor creștine iberice"
+      ],
+      "answer": "Robert Bruce",
+      "explanation": "Robert Bruce este răspunsul corect pentru acest reper. Victoria a consolidat cauza independenței Scoției. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-075",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Las Navas de Tolosa?",
+      "answer": "1212",
+      "explanation": "Bătălia de la Las Navas de Tolosa a avut loc în 1212. Înfrângerea almohazilor a schimbat balanța de putere din Peninsula Iberică."
+    },
+    {
+      "id": "medieval-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Las Navas de Tolosa?",
+      "options": [
+        "Baiazid I",
+        "Henric al V-lea și papa Calixt al II-lea",
+        "coaliția regatelor creștine iberice",
+        "Filip al II-lea al Franței"
+      ],
+      "answer": "coaliția regatelor creștine iberice",
+      "explanation": "coaliția regatelor creștine iberice este răspunsul corect pentru acest reper. Înfrângerea almohazilor a schimbat balanța de putere din Peninsula Iberică."
+    },
+    {
+      "id": "medieval-077",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Poitiers din Războiul de O Sută de Ani?",
+      "answer": "1356",
+      "explanation": "Bătălia de la Poitiers din Războiul de O Sută de Ani a avut loc în 1356. Regele Ioan al II-lea al Franței a fost capturat de englezi."
+    },
+    {
+      "id": "medieval-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Poitiers din Războiul de O Sută de Ani?",
+      "options": [
+        "Robert Bruce",
+        "Biserica latină și Biserica greacă",
+        "Carol Martel",
+        "Edward de Woodstock"
+      ],
+      "answer": "Edward de Woodstock",
+      "explanation": "Edward de Woodstock este răspunsul corect pentru acest reper. Regele Ioan al II-lea al Franței a fost capturat de englezi."
+    },
+    {
+      "id": "medieval-079",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc începutul Marii Schisme Occidentale?",
+      "answer": "1378",
+      "explanation": "începutul Marii Schisme Occidentale a avut loc în 1378. Lumea catolică s-a împărțit între obediențe papale concurente. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu începutul Marii Schisme Occidentale?",
+      "options": [
+        "Carol Martel",
+        "papi rivali la Roma și Avignon",
+        "Robert Bruce",
+        "Baiazid I"
+      ],
+      "answer": "papi rivali la Roma și Avignon",
+      "explanation": "papi rivali la Roma și Avignon este răspunsul corect pentru acest reper. Lumea catolică s-a împărțit între obediențe papale concurente."
+    },
+    {
+      "id": "medieval-081",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc începerea Conciliului de la Konstanz?",
+      "answer": "1414",
+      "explanation": "începerea Conciliului de la Konstanz a avut loc în 1414. Conciliul a urmărit încheierea schismei și reforma instituțională a Bisericii."
+    },
+    {
+      "id": "medieval-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu începerea Conciliului de la Konstanz?",
+      "options": [
+        "Liga Lombardă",
+        "Conciliul de la Konstanz",
+        "Saladin",
+        "Carol Martel"
+      ],
+      "answer": "Conciliul de la Konstanz",
+      "explanation": "Conciliul de la Konstanz este răspunsul corect pentru acest reper. Conciliul a urmărit încheierea schismei și reforma instituțională a Bisericii."
+    },
+    {
+      "id": "medieval-083",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc recucerirea Constantinopolului de către Imperiul de la Niceea?",
+      "answer": "1261",
+      "explanation": "recucerirea Constantinopolului de către Imperiul de la Niceea a avut loc în 1261. Evenimentul a restaurat Imperiul Bizantin în capitala sa tradițională."
+    },
+    {
+      "id": "medieval-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu recucerirea Constantinopolului de către Imperiul de la Niceea?",
+      "options": [
+        "Mihail al VIII-lea Paleologul",
+        "Edward de Woodstock",
+        "papi rivali la Roma și Avignon",
+        "Biserica latină și Biserica greacă"
+      ],
+      "answer": "Mihail al VIII-lea Paleologul",
+      "explanation": "Mihail al VIII-lea Paleologul este răspunsul corect pentru acest reper. Evenimentul a restaurat Imperiul Bizantin în capitala sa tradițională."
+    },
+    {
+      "id": "medieval-085",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Nicopole?",
+      "answer": "1396",
+      "explanation": "Bătălia de la Nicopole a avut loc în 1396. Cruciada occidentală a fost învinsă de otomani în Balcani."
+    },
+    {
+      "id": "medieval-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Nicopole?",
+      "options": [
+        "Conciliul de la Konstanz",
+        "Baiazid I",
+        "Alfonso al VI-lea",
+        "Robert Bruce"
+      ],
+      "answer": "Baiazid I",
+      "explanation": "Baiazid I este răspunsul corect pentru acest reper. Cruciada occidentală a fost învinsă de otomani în Balcani. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-087",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc Bătălia de la Grunwald/Tannenberg?",
+      "answer": "1410",
+      "explanation": "Bătălia de la Grunwald/Tannenberg a avut loc în 1410. Victoria a slăbit profund puterea Ordinului Teutonic. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Grunwald/Tannenberg?",
+      "options": [
+        "Mihail al VIII-lea Paleologul",
+        "Biserica latină și Biserica greacă",
+        "alianța polono-lituaniană",
+        "Filip al II-lea al Franței"
+      ],
+      "answer": "alianța polono-lituaniană",
+      "explanation": "alianța polono-lituaniană este răspunsul corect pentru acest reper. Victoria a slăbit profund puterea Ordinului Teutonic. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-089",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a avut loc cucerirea Toledo-ului de către Alfonso al VI-lea?",
+      "answer": "1085",
+      "explanation": "cucerirea Toledo-ului de către Alfonso al VI-lea a avut loc în 1085. Cucerirea a fost unul dintre marile succese timpurii ale Reconquistei."
+    },
+    {
+      "id": "medieval-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine sau ce entitate este asociată direct cu cucerirea Toledo-ului de către Alfonso al VI-lea?",
+      "options": [
+        "alianța polono-lituaniană",
+        "Biserica latină și Biserica greacă",
+        "papi rivali la Roma și Avignon",
+        "Alfonso al VI-lea"
+      ],
+      "answer": "Alfonso al VI-lea",
+      "explanation": "Alfonso al VI-lea este răspunsul corect pentru acest reper. Cucerirea a fost unul dintre marile succese timpurii ale Reconquistei."
+    },
+    {
+      "id": "medieval-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „omagiu feudal”?",
+      "options": [
+        "excluderea din comuniunea sacramentală a Bisericii",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior",
+        "o ilustrație pictată într-un manuscris",
+        "un oraș cu un anumit grad de autoguvernare"
+      ],
+      "answer": "ceremonia prin care vasalul își recunoștea loialitatea față de senior",
+      "explanation": "„omagiu feudal” desemnează ceremonia prin care vasalul își recunoștea loialitatea față de senior. Era frecvent urmat sau însoțit de jurământul de fidelitate."
+    },
+    {
+      "id": "medieval-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „omagiu feudal”?",
+      "options": [
+        "Comuna putea avea consiliu, jurisdicție și privilegii fiscale",
+        "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor",
+        "Omagiul formaliza relația personală dintre senior și vasal",
+        "Cronica reflecta perspectiva și interesele autorului medieval"
+      ],
+      "answer": "Omagiul formaliza relația personală dintre senior și vasal",
+      "explanation": "În practică, omagiul formaliza relația personală dintre senior și vasal. Era frecvent urmat sau însoțit de jurământul de fidelitate."
+    },
+    {
+      "id": "medieval-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „investitură feudală”?",
+      "options": [
+        "un oraș cu un anumit grad de autoguvernare",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior",
+        "actul prin care seniorul acorda feudul sau drepturile asociate",
+        "grupul artelor liberale format din gramatică, retorică și dialectică"
+      ],
+      "answer": "actul prin care seniorul acorda feudul sau drepturile asociate",
+      "explanation": "„investitură feudală” desemnează actul prin care seniorul acorda feudul sau drepturile asociate. Ea completa juridic relația dintre senior și vasal."
+    },
+    {
+      "id": "medieval-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „investitură feudală”?",
+      "options": [
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Investitura putea fi simbolizată prin predarea unui obiect",
+        "Calfa putea lucra pentru salariu în meseria sa",
+        "Disputatio era centrală în pedagogia universitară medievală"
+      ],
+      "answer": "Investitura putea fi simbolizată prin predarea unui obiect",
+      "explanation": "În practică, investitura putea fi simbolizată prin predarea unui obiect. Ea completa juridic relația dintre senior și vasal."
+    },
+    {
+      "id": "medieval-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „comună medievală”?",
+      "options": [
+        "o hartă nautică detaliată pentru coaste și porturi",
+        "un oraș cu un anumit grad de autoguvernare",
+        "o comunitate religioasă organizată după reguli și tradiții comune",
+        "o ilustrație pictată într-un manuscris"
+      ],
+      "answer": "un oraș cu un anumit grad de autoguvernare",
+      "explanation": "„comună medievală” desemnează un oraș cu un anumit grad de autoguvernare. Multe orașe au obținut aceste drepturi prin negociere sau conflict."
+    },
+    {
+      "id": "medieval-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „comună medievală”?",
+      "options": [
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+        "Investitura putea fi simbolizată prin predarea unui obiect",
+        "Comuna putea avea consiliu, jurisdicție și privilegii fiscale"
+      ],
+      "answer": "Comuna putea avea consiliu, jurisdicție și privilegii fiscale",
+      "explanation": "În practică, comuna putea avea consiliu, jurisdicție și privilegii fiscale. Multe orașe au obținut aceste drepturi prin negociere sau conflict."
+    },
+    {
+      "id": "medieval-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „calfă”?",
+      "options": [
+        "un lucrător calificat aflat între ucenic și maestru",
+        "un document care acorda orașului privilegii și libertăți",
+        "o dezbatere academică formală bazată pe argumente pro și contra",
+        "excluderea din comuniunea sacramentală a Bisericii"
+      ],
+      "answer": "un lucrător calificat aflat între ucenic și maestru",
+      "explanation": "„calfă” desemnează un lucrător calificat aflat între ucenic și maestru. Pentru a deveni maestru trebuia adesea să îndeplinească cerințele breslei."
+    },
+    {
+      "id": "medieval-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „calfă”?",
+      "options": [
+        "Calfa putea lucra pentru salariu în meseria sa",
+        "Aplicată unui conducător, putea avea efecte politice importante",
+        "Quadriviumul reprezenta componenta matematică a educației medievale",
+        "Dreptul canonic reglementa instituții, căsătorii și disciplina clerului"
+      ],
+      "answer": "Calfa putea lucra pentru salariu în meseria sa",
+      "explanation": "În practică, calfa putea lucra pentru salariu în meseria sa. Pentru a deveni maestru trebuia adesea să îndeplinească cerințele breslei."
+    },
+    {
+      "id": "medieval-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „drept canonic”?",
+      "options": [
+        "o hartă nautică detaliată pentru coaste și porturi",
+        "un lucrător calificat aflat între ucenic și maestru",
+        "o relatare a evenimentelor, adesea organizată cronologic",
+        "sistemul juridic al Bisericii"
+      ],
+      "answer": "sistemul juridic al Bisericii",
+      "explanation": "„drept canonic” desemnează sistemul juridic al bisericii. A devenit un pilon al culturii juridice medievale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „drept canonic”?",
+      "options": [
+        "Triviumul oferea instrumentele lingvistice și logice de bază",
+        "Investitura putea fi simbolizată prin predarea unui obiect",
+        "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor",
+        "Dreptul canonic reglementa instituții, căsătorii și disciplina clerului"
+      ],
+      "answer": "Dreptul canonic reglementa instituții, căsătorii și disciplina clerului",
+      "explanation": "În practică, dreptul canonic reglementa instituții, căsătorii și disciplina clerului. A devenit un pilon al culturii juridice medievale."
+    },
+    {
+      "id": "medieval-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „excomunicare”?",
+      "options": [
+        "un document care acorda orașului privilegii și libertăți",
+        "excluderea din comuniunea sacramentală a Bisericii",
+        "suspendarea anumitor servicii religioase într-un teritoriu",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior"
+      ],
+      "answer": "excluderea din comuniunea sacramentală a Bisericii",
+      "explanation": "„excomunicare” desemnează excluderea din comuniunea sacramentală a bisericii. Excomunicarea era una dintre cele mai severe sancțiuni ecleziastice. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „excomunicare”?",
+      "options": [
+        "Quadriviumul reprezenta componenta matematică a educației medievale",
+        "Triviumul oferea instrumentele lingvistice și logice de bază",
+        "Aplicată unui conducător, putea avea efecte politice importante",
+        "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor"
+      ],
+      "answer": "Aplicată unui conducător, putea avea efecte politice importante",
+      "explanation": "În practică, aplicată unui conducător, putea avea efecte politice importante. Excomunicarea era una dintre cele mai severe sancțiuni ecleziastice."
+    },
+    {
+      "id": "medieval-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „interdict ecleziastic”?",
+      "options": [
+        "actul prin care seniorul acorda feudul sau drepturile asociate",
+        "o comunitate religioasă organizată după reguli și tradiții comune",
+        "suspendarea anumitor servicii religioase într-un teritoriu",
+        "o ilustrație pictată într-un manuscris"
+      ],
+      "answer": "suspendarea anumitor servicii religioase într-un teritoriu",
+      "explanation": "„interdict ecleziastic” desemnează suspendarea anumitor servicii religioase într-un teritoriu. Papalitatea l-a folosit uneori în conflictele cu monarhii. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „interdict ecleziastic”?",
+      "options": [
+        "Quadriviumul reprezenta componenta matematică a educației medievale",
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur",
+        "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor"
+      ],
+      "answer": "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor",
+      "explanation": "În practică, interdictul putea pune presiune asupra unui conducător prin afectarea supușilor. Papalitatea l-a folosit uneori în conflictele cu monarhii."
+    },
+    {
+      "id": "medieval-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „ordin monastic”?",
+      "options": [
+        "sistemul juridic al Bisericii",
+        "o comunitate religioasă organizată după reguli și tradiții comune",
+        "un document care acorda orașului privilegii și libertăți",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior"
+      ],
+      "answer": "o comunitate religioasă organizată după reguli și tradiții comune",
+      "explanation": "„ordin monastic” desemnează o comunitate religioasă organizată după reguli și tradiții comune. Benedictinii și cistercienii sunt exemple importante."
+    },
+    {
+      "id": "medieval-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „ordin monastic”?",
+      "options": [
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Calfa putea lucra pentru salariu în meseria sa",
+        "Aplicată unui conducător, putea avea efecte politice importante",
+        "Cronica reflecta perspectiva și interesele autorului medieval"
+      ],
+      "answer": "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+      "explanation": "În practică, ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare. Benedictinii și cistercienii sunt exemple importante."
+    },
+    {
+      "id": "medieval-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „trivium”?",
+      "options": [
+        "excluderea din comuniunea sacramentală a Bisericii",
+        "o comunitate religioasă organizată după reguli și tradiții comune",
+        "actul prin care seniorul acorda feudul sau drepturile asociate",
+        "grupul artelor liberale format din gramatică, retorică și dialectică"
+      ],
+      "answer": "grupul artelor liberale format din gramatică, retorică și dialectică",
+      "explanation": "„trivium” desemnează grupul artelor liberale format din gramatică, retorică și dialectică. Era fundamentul studiilor înaintea disciplinelor avansate. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „trivium”?",
+      "options": [
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+        "Triviumul oferea instrumentele lingvistice și logice de bază",
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur",
+        "Portulanul era folosit de navigatorii mediteraneeni"
+      ],
+      "answer": "Triviumul oferea instrumentele lingvistice și logice de bază",
+      "explanation": "În practică, triviumul oferea instrumentele lingvistice și logice de bază. Era fundamentul studiilor înaintea disciplinelor avansate. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „quadrivium”?",
+      "options": [
+        "o ilustrație pictată într-un manuscris",
+        "grupul artelor liberale format din gramatică, retorică și dialectică",
+        "grupul artelor liberale format din aritmetică, geometrie, muzică și astronomie",
+        "o hartă nautică detaliată pentru coaste și porturi"
+      ],
+      "answer": "grupul artelor liberale format din aritmetică, geometrie, muzică și astronomie",
+      "explanation": "„quadrivium” desemnează grupul artelor liberale format din aritmetică, geometrie, muzică și astronomie. Împreună cu triviumul forma cele șapte arte liberale."
+    },
+    {
+      "id": "medieval-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „quadrivium”?",
+      "options": [
+        "Quadriviumul reprezenta componenta matematică a educației medievale",
+        "Investitura putea fi simbolizată prin predarea unui obiect",
+        "Disputatio era centrală în pedagogia universitară medievală",
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare"
+      ],
+      "answer": "Quadriviumul reprezenta componenta matematică a educației medievale",
+      "explanation": "În practică, quadriviumul reprezenta componenta matematică a educației medievale. Împreună cu triviumul forma cele șapte arte liberale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „disputatio”?",
+      "options": [
+        "o dezbatere academică formală bazată pe argumente pro și contra",
+        "un document care acorda orașului privilegii și libertăți",
+        "sistemul juridic al Bisericii",
+        "grupul artelor liberale format din gramatică, retorică și dialectică"
+      ],
+      "answer": "o dezbatere academică formală bazată pe argumente pro și contra",
+      "explanation": "„disputatio” desemnează o dezbatere academică formală bazată pe argumente pro și contra. Profesorul formula problema, obiecțiile și răspunsul argumentat."
+    },
+    {
+      "id": "medieval-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „disputatio”?",
+      "options": [
+        "Disputatio era centrală în pedagogia universitară medievală",
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Cronica reflecta perspectiva și interesele autorului medieval",
+        "Omagiul formaliza relația personală dintre senior și vasal"
+      ],
+      "answer": "Disputatio era centrală în pedagogia universitară medievală",
+      "explanation": "În practică, disputatio era centrală în pedagogia universitară medievală. Profesorul formula problema, obiecțiile și răspunsul argumentat. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „miniatură”?",
+      "options": [
+        "sistemul juridic al Bisericii",
+        "o ilustrație pictată într-un manuscris",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior",
+        "o comunitate religioasă organizată după reguli și tradiții comune"
+      ],
+      "answer": "o ilustrație pictată într-un manuscris",
+      "explanation": "„miniatură” desemnează o ilustrație pictată într-un manuscris. Ea completa textul cu imagini religioase, istorice sau decorative. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „miniatură”?",
+      "options": [
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur",
+        "Dreptul canonic reglementa instituții, căsătorii și disciplina clerului",
+        "Interdictul putea pune presiune asupra unui conducător prin afectarea supușilor",
+        "Investitura putea fi simbolizată prin predarea unui obiect"
+      ],
+      "answer": "Miniatura putea folosi pigmenți scumpi și foiță de aur",
+      "explanation": "În practică, miniatura putea folosi pigmenți scumpi și foiță de aur. Ea completa textul cu imagini religioase, istorice sau decorative."
+    },
+    {
+      "id": "medieval-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „cronică”?",
+      "options": [
+        "o hartă nautică detaliată pentru coaste și porturi",
+        "sistemul juridic al Bisericii",
+        "o relatare a evenimentelor, adesea organizată cronologic",
+        "o ilustrație pictată într-un manuscris"
+      ],
+      "answer": "o relatare a evenimentelor, adesea organizată cronologic",
+      "explanation": "„cronică” desemnează o relatare a evenimentelor, adesea organizată cronologic. Este o sursă istorică importantă, dar trebuie analizată critic."
+    },
+    {
+      "id": "medieval-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „cronică”?",
+      "options": [
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Cronica reflecta perspectiva și interesele autorului medieval",
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur"
+      ],
+      "answer": "Cronica reflecta perspectiva și interesele autorului medieval",
+      "explanation": "În practică, cronica reflecta perspectiva și interesele autorului medieval. Este o sursă istorică importantă, dar trebuie analizată critic."
+    },
+    {
+      "id": "medieval-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „portulan”?",
+      "options": [
+        "un oraș cu un anumit grad de autoguvernare",
+        "suspendarea anumitor servicii religioase într-un teritoriu",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior",
+        "o hartă nautică detaliată pentru coaste și porturi"
+      ],
+      "answer": "o hartă nautică detaliată pentru coaste și porturi",
+      "explanation": "„portulan” desemnează o hartă nautică detaliată pentru coaste și porturi. Liniile de direcție și detaliile costiere îl făceau practic pentru navigație."
+    },
+    {
+      "id": "medieval-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „portulan”?",
+      "options": [
+        "Triviumul oferea instrumentele lingvistice și logice de bază",
+        "Portulanul era folosit de navigatorii mediteraneeni",
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur",
+        "Investitura putea fi simbolizată prin predarea unui obiect"
+      ],
+      "answer": "Portulanul era folosit de navigatorii mediteraneeni",
+      "explanation": "În practică, portulanul era folosit de navigatorii mediteraneeni. Liniile de direcție și detaliile costiere îl făceau practic pentru navigație."
+    },
+    {
+      "id": "medieval-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce descrie termenul medieval „chartă urbană”?",
+      "options": [
+        "o comunitate religioasă organizată după reguli și tradiții comune",
+        "grupul artelor liberale format din aritmetică, geometrie, muzică și astronomie",
+        "un document care acorda orașului privilegii și libertăți",
+        "ceremonia prin care vasalul își recunoștea loialitatea față de senior"
+      ],
+      "answer": "un document care acorda orașului privilegii și libertăți",
+      "explanation": "„chartă urbană” desemnează un document care acorda orașului privilegii și libertăți. Ea era esențială pentru statutul juridic al multor orașe."
+    },
+    {
+      "id": "medieval-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Care afirmație este corectă despre „chartă urbană”?",
+      "options": [
+        "Ordinele puteau pune accent diferit pe rugăciune, muncă sau predicare",
+        "Calfa putea lucra pentru salariu în meseria sa",
+        "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+        "Miniatura putea folosi pigmenți scumpi și foiță de aur"
+      ],
+      "answer": "Carta putea confirma piețe, taxe, jurisdicție sau autoguvernare",
+      "explanation": "În practică, carta putea confirma piețe, taxe, jurisdicție sau autoguvernare. Ea era esențială pentru statutul juridic al multor orașe."
+    },
+    {
+      "id": "medieval-121",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc semnarea Tratatului de la Verdun?",
+      "answer": "843",
+      "explanation": "semnarea Tratatului de la Verdun a avut loc în 843. Imperiul Carolingian a fost împărțit în trei mari regate."
+    },
+    {
+      "id": "medieval-122",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu semnarea Tratatului de la Verdun?",
+      "options": [
+        "Batu Han și Subutai",
+        "fiii lui Ludovic cel Pios",
+        "Carol al IV-lea",
+        "Henric al V-lea"
+      ],
+      "answer": "fiii lui Ludovic cel Pios",
+      "explanation": "fiii lui Ludovic cel Pios este răspunsul corect pentru acest reper. Imperiul Carolingian a fost împărțit în trei mari regate."
+    },
+    {
+      "id": "medieval-123",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Lechfeld?",
+      "answer": "955",
+      "explanation": "Bătălia de la Lechfeld a avut loc în 955. Victoria a oprit marile raiduri maghiare spre vest și a întărit prestigiul lui Otto."
+    },
+    {
+      "id": "medieval-124",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Lechfeld?",
+      "options": [
+        "Otto I",
+        "Timur",
+        "fiii lui Ludovic cel Pios",
+        "Batu Han și Subutai"
+      ],
+      "answer": "Otto I",
+      "explanation": "Otto I este răspunsul corect pentru acest reper. Victoria a oprit marile raiduri maghiare spre vest și a întărit prestigiul lui Otto."
+    },
+    {
+      "id": "medieval-125",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc episodul de la Canossa?",
+      "answer": "1077",
+      "explanation": "episodul de la Canossa a avut loc în 1077. Împăratul a căutat ridicarea excomunicării în conflictul cu Grigore al VII-lea."
+    },
+    {
+      "id": "medieval-126",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu episodul de la Canossa?",
+      "options": [
+        "Murad al II-lea",
+        "Henric al IV-lea",
+        "João I al Portugaliei",
+        "armata mongolă"
+      ],
+      "answer": "Henric al IV-lea",
+      "explanation": "Henric al IV-lea este răspunsul corect pentru acest reper. Împăratul a căutat ridicarea excomunicării în conflictul cu Grigore al VII-lea."
+    },
+    {
+      "id": "medieval-127",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc emiterea Bulei de Aur a lui Carol al IV-lea?",
+      "answer": "1356",
+      "explanation": "emiterea Bulei de Aur a lui Carol al IV-lea a avut loc în 1356. Documentul a reglementat mai clar alegerea monarhului romano-german."
+    },
+    {
+      "id": "medieval-128",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu emiterea Bulei de Aur a lui Carol al IV-lea?",
+      "options": [
+        "fiii lui Ludovic cel Pios",
+        "Simon de Montfort",
+        "Carol al IV-lea",
+        "Timur"
+      ],
+      "answer": "Carol al IV-lea",
+      "explanation": "Carol al IV-lea este răspunsul corect pentru acest reper. Documentul a reglementat mai clar alegerea monarhului romano-german. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-129",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc începutul Cruciadei Albigensiene?",
+      "answer": "1209",
+      "explanation": "începutul Cruciadei Albigensiene a avut loc în 1209. Cruciada a vizat catarismul și protectorii săi din Languedoc. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-130",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu începutul Cruciadei Albigensiene?",
+      "options": [
+        "Batu Han și Subutai",
+        "Simon de Montfort",
+        "Timur",
+        "Jean Bureau"
+      ],
+      "answer": "Simon de Montfort",
+      "explanation": "Simon de Montfort este răspunsul corect pentru acest reper. Cruciada a vizat catarismul și protectorii săi din Languedoc."
+    },
+    {
+      "id": "medieval-131",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Muret?",
+      "answer": "1213",
+      "explanation": "Bătălia de la Muret a avut loc în 1213. Victoria a slăbit puterea nobilimii occitane și influența Aragonului."
+    },
+    {
+      "id": "medieval-132",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Muret?",
+      "options": [
+        "Otto I",
+        "Simon de Montfort",
+        "milițiile flamande",
+        "Timur"
+      ],
+      "answer": "Simon de Montfort",
+      "explanation": "Simon de Montfort este răspunsul corect pentru acest reper. Victoria a slăbit puterea nobilimii occitane și influența Aragonului."
+    },
+    {
+      "id": "medieval-133",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia Pintenilor de Aur de la Courtrai?",
+      "answer": "1302",
+      "explanation": "Bătălia Pintenilor de Aur de la Courtrai a avut loc în 1302. Infanteria flamandă a învins o armată franceză dominată de cavalerie."
+    },
+    {
+      "id": "medieval-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia Pintenilor de Aur de la Courtrai?",
+      "options": [
+        "armata mongolă",
+        "Henric al IV-lea",
+        "milițiile flamande",
+        "Murad al II-lea"
+      ],
+      "answer": "milițiile flamande",
+      "explanation": "milițiile flamande este răspunsul corect pentru acest reper. Infanteria flamandă a învins o armată franceză dominată de cavalerie."
+    },
+    {
+      "id": "medieval-135",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Mohi?",
+      "answer": "1241",
+      "explanation": "Bătălia de la Mohi a avut loc în 1241. Mongolii au învins decisiv armata regelui Béla al IV-lea."
+    },
+    {
+      "id": "medieval-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Mohi?",
+      "options": [
+        "Jean Bureau",
+        "Simon de Montfort",
+        "Henric al V-lea",
+        "Batu Han și Subutai"
+      ],
+      "answer": "Batu Han și Subutai",
+      "explanation": "Batu Han și Subutai este răspunsul corect pentru acest reper. Mongolii au învins decisiv armata regelui Béla al IV-lea."
+    },
+    {
+      "id": "medieval-137",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Legnica?",
+      "answer": "1241",
+      "explanation": "Bătălia de la Legnica a avut loc în 1241. Forțele mongole au învins o coaliție europeană în Silezia."
+    },
+    {
+      "id": "medieval-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Legnica?",
+      "options": [
+        "Jean Bureau",
+        "Otto I",
+        "Henric al IV-lea",
+        "armata mongolă"
+      ],
+      "answer": "armata mongolă",
+      "explanation": "armata mongolă este răspunsul corect pentru acest reper. Forțele mongole au învins o coaliție europeană în Silezia. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-139",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Aljubarrota?",
+      "answer": "1385",
+      "explanation": "Bătălia de la Aljubarrota a avut loc în 1385. Victoria a consolidat independența Portugaliei și dinastia de Aviz."
+    },
+    {
+      "id": "medieval-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Aljubarrota?",
+      "options": [
+        "João I al Portugaliei",
+        "Ferdinand de Aragon și Isabella de Castilia",
+        "Batu Han și Subutai",
+        "Otto I"
+      ],
+      "answer": "João I al Portugaliei",
+      "explanation": "João I al Portugaliei este răspunsul corect pentru acest reper. Victoria a consolidat independența Portugaliei și dinastia de Aviz."
+    },
+    {
+      "id": "medieval-141",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Ankara?",
+      "answer": "1402",
+      "explanation": "Bătălia de la Ankara a avut loc în 1402. Baiazid I a fost învins și capturat, provocând Interregnul Otoman."
+    },
+    {
+      "id": "medieval-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Ankara?",
+      "options": [
+        "Batu Han și Subutai",
+        "Timur",
+        "Jean Bureau",
+        "milițiile flamande"
+      ],
+      "answer": "Timur",
+      "explanation": "Timur este răspunsul corect pentru acest reper. Baiazid I a fost învins și capturat, provocând Interregnul Otoman. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-143",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc semnarea Tratatului de la Troyes?",
+      "answer": "1420",
+      "explanation": "semnarea Tratatului de la Troyes a avut loc în 1420. Regele englez a fost recunoscut moștenitor al tronului Franței."
+    },
+    {
+      "id": "medieval-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu semnarea Tratatului de la Troyes?",
+      "options": [
+        "Carol al IV-lea",
+        "fiii lui Ludovic cel Pios",
+        "Batu Han și Subutai",
+        "Henric al V-lea"
+      ],
+      "answer": "Henric al V-lea",
+      "explanation": "Henric al V-lea este răspunsul corect pentru acest reper. Regele englez a fost recunoscut moștenitor al tronului Franței."
+    },
+    {
+      "id": "medieval-145",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Castillon?",
+      "answer": "1453",
+      "explanation": "Bătălia de la Castillon a avut loc în 1453. Artileria franceză a contribuit decisiv la victoria care a încheiat practic Războiul de O Sută de Ani."
+    },
+    {
+      "id": "medieval-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Castillon?",
+      "options": [
+        "Jean Bureau",
+        "Batu Han și Subutai",
+        "armata mongolă",
+        "Henric al IV-lea"
+      ],
+      "answer": "Jean Bureau",
+      "explanation": "Jean Bureau este răspunsul corect pentru acest reper. Artileria franceză a contribuit decisiv la victoria care a încheiat practic Războiul de O Sută de Ani."
+    },
+    {
+      "id": "medieval-147",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc Bătălia de la Varna?",
+      "answer": "1444",
+      "explanation": "Bătălia de la Varna a avut loc în 1444. Coaliția creștină a fost învinsă, iar regele Vladislav al III-lea a murit."
+    },
+    {
+      "id": "medieval-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Varna?",
+      "options": [
+        "Carol al IV-lea",
+        "milițiile flamande",
+        "Henric al V-lea",
+        "Murad al II-lea"
+      ],
+      "answer": "Murad al II-lea",
+      "explanation": "Murad al II-lea este răspunsul corect pentru acest reper. Coaliția creștină a fost învinsă, iar regele Vladislav al III-lea a murit."
+    },
+    {
+      "id": "medieval-149",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc căderea Regatului Granadei?",
+      "answer": "1492",
+      "explanation": "căderea Regatului Granadei a avut loc în 1492. Cucerirea a pus capăt ultimului stat musulman independent din Peninsula Iberică."
+    },
+    {
+      "id": "medieval-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sau ce entitate este asociată direct cu căderea Regatului Granadei?",
+      "options": [
+        "Ferdinand de Aragon și Isabella de Castilia",
+        "Carol al IV-lea",
+        "fiii lui Ludovic cel Pios",
+        "João I al Portugaliei"
+      ],
+      "answer": "Ferdinand de Aragon și Isabella de Castilia",
+      "explanation": "Ferdinand de Aragon și Isabella de Castilia este răspunsul corect pentru acest reper. Cucerirea a pus capăt ultimului stat musulman independent din Peninsula Iberică."
+    },
+    {
+      "id": "medieval-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „târgurile din Champagne”?",
+      "options": [
+        "o rețea de mari târguri comerciale care legau nordul și sudul Europei",
+        "arta formală a redactării scrisorilor și documentelor",
+        "atelierul autorizat în care erau bătute monede",
+        "un grup comercial care traversa Sahara cu animale de povară"
+      ],
+      "answer": "o rețea de mari târguri comerciale care legau nordul și sudul Europei",
+      "explanation": "„târgurile din Champagne” desemnează o rețea de mari târguri comerciale care legau nordul și sudul europei. Au fost esențiale pentru comerțul european din secolele XII-XIII."
+    },
+    {
+      "id": "medieval-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „târgurile din Champagne”?",
+      "options": [
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul",
+        "Ius commune oferea juriștilor un cadru comun de interpretare",
+        "Târgurile facilitau schimbul de textile, produse mediteraneene și credit",
+        "Corveea putea însemna muncă agricolă, transport sau construcții"
+      ],
+      "answer": "Târgurile facilitau schimbul de textile, produse mediteraneene și credit",
+      "explanation": "În practică, târgurile facilitau schimbul de textile, produse mediteraneene și credit. Au fost esențiale pentru comerțul european din secolele XII-XIII."
+    },
+    {
+      "id": "medieval-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „cambia”?",
+      "options": [
+        "un instrument financiar pentru transferul valorii între comercianți",
+        "o moară asupra căreia seniorul avea un monopol local",
+        "un grup comercial care traversa Sahara cu animale de povară",
+        "elita bogată care domina politica multor orașe"
+      ],
+      "answer": "un instrument financiar pentru transferul valorii între comercianți",
+      "explanation": "„cambia” desemnează un instrument financiar pentru transferul valorii între comercianți. A contribuit la dezvoltarea creditului și finanțelor comerciale."
+    },
+    {
+      "id": "medieval-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „cambia”?",
+      "options": [
+        "Producția de postav a susținut prosperitatea orașelor flamande",
+        "Țăranii puteau fi obligați să folosească moara contra taxă",
+        "Cambia reducea riscul transportului fizic de monedă",
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul"
+      ],
+      "answer": "Cambia reducea riscul transportului fizic de monedă",
+      "explanation": "În practică, cambia reducea riscul transportului fizic de monedă. A contribuit la dezvoltarea creditului și finanțelor comerciale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „monetărie”?",
+      "options": [
+        "munca obligatorie prestată de țărani pentru senior",
+        "un manuscris devoțional destinat rugăciunilor la diferite ore",
+        "atelierul autorizat în care erau bătute monede",
+        "un grup comercial care traversa Sahara cu animale de povară"
+      ],
+      "answer": "atelierul autorizat în care erau bătute monede",
+      "explanation": "„monetărie” desemnează atelierul autorizat în care erau bătute monede. Dreptul de batere a monedei era un privilegiu politic important."
+    },
+    {
+      "id": "medieval-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „monetărie”?",
+      "options": [
+        "Monetăria transforma metalul în monedă recunoscută de autoritate",
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+        "Corveea putea însemna muncă agricolă, transport sau construcții",
+        "Debasarea permitea emiterea unei cantități mai mari de monedă"
+      ],
+      "answer": "Monetăria transforma metalul în monedă recunoscută de autoritate",
+      "explanation": "În practică, monetăria transforma metalul în monedă recunoscută de autoritate. Dreptul de batere a monedei era un privilegiu politic important."
+    },
+    {
+      "id": "medieval-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „debasarea monedei”?",
+      "options": [
+        "un sistem de taxare a circulației mărfurilor",
+        "atelierul autorizat în care erau bătute monede",
+        "arta formală a redactării scrisorilor și documentelor",
+        "reducerea proporției de metal prețios din monedă"
+      ],
+      "answer": "reducerea proporției de metal prețios din monedă",
+      "explanation": "„debasarea monedei” desemnează reducerea proporției de metal prețios din monedă. Practica putea produce neîncredere și creșteri de prețuri."
+    },
+    {
+      "id": "medieval-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „debasarea monedei”?",
+      "options": [
+        "Debasarea permitea emiterea unei cantități mai mari de monedă",
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+        "Monetăria transforma metalul în monedă recunoscută de autoritate",
+        "Cambia reducea riscul transportului fizic de monedă"
+      ],
+      "answer": "Debasarea permitea emiterea unei cantități mai mari de monedă",
+      "explanation": "În practică, debasarea permitea emiterea unei cantități mai mari de monedă. Practica putea produce neîncredere și creșteri de prețuri."
+    },
+    {
+      "id": "medieval-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „vamă”?",
+      "options": [
+        "o moară asupra căreia seniorul avea un monopol local",
+        "un produs textil de lână de mare valoare comercială",
+        "un sistem de taxare a circulației mărfurilor",
+        "o notă explicativă adăugată unui text de drept"
+      ],
+      "answer": "un sistem de taxare a circulației mărfurilor",
+      "explanation": "„vamă” desemnează un sistem de taxare a circulației mărfurilor. Taxele puteau fi percepute la poduri, porturi și frontiere."
+    },
+    {
+      "id": "medieval-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „vamă”?",
+      "options": [
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+        "Ius commune oferea juriștilor un cadru comun de interpretare",
+        "Glossatorii interpretau textele romane prin note marginale și interliniare",
+        "Cartea de ore a devenit foarte populară în rândul elitelor laice"
+      ],
+      "answer": "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+      "explanation": "În practică, vămile alimentau veniturile orașelor, seniorilor și monarhilor. Taxele puteau fi percepute la poduri, porturi și frontiere."
+    },
+    {
+      "id": "medieval-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „Drumul Mătăsii”?",
+      "options": [
+        "un instrument financiar pentru transferul valorii între comercianți",
+        "un grup comercial care traversa Sahara cu animale de povară",
+        "o rețea de rute comerciale între Eurasia orientală și occidentală",
+        "atelierul autorizat în care erau bătute monede"
+      ],
+      "answer": "o rețea de rute comerciale între Eurasia orientală și occidentală",
+      "explanation": "„Drumul Mătăsii” desemnează o rețea de rute comerciale între eurasia orientală și occidentală. Nu a existat o singură cale continuă numită literalmente astfel în Evul Mediu."
+    },
+    {
+      "id": "medieval-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „Drumul Mătăsii”?",
+      "options": [
+        "Patricienii controlau frecvent consiliile și funcțiile municipale",
+        "Rutele transportau mărfuri, tehnologii, idei și religii",
+        "Târgurile facilitau schimbul de textile, produse mediteraneene și credit",
+        "Cartea de ore a devenit foarte populară în rândul elitelor laice"
+      ],
+      "answer": "Rutele transportau mărfuri, tehnologii, idei și religii",
+      "explanation": "În practică, rutele transportau mărfuri, tehnologii, idei și religii. Nu a existat o singură cale continuă numită literalmente astfel în Evul Mediu."
+    },
+    {
+      "id": "medieval-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „caravană transsahariană”?",
+      "options": [
+        "o notă explicativă adăugată unui text de drept",
+        "un grup comercial care traversa Sahara cu animale de povară",
+        "atelierul autorizat în care erau bătute monede",
+        "elita bogată care domina politica multor orașe"
+      ],
+      "answer": "un grup comercial care traversa Sahara cu animale de povară",
+      "explanation": "„caravană transsahariană” desemnează un grup comercial care traversa sahara cu animale de povară. Rețelele caravaniere au legat Africa de Vest de lumea mediteraneană."
+    },
+    {
+      "id": "medieval-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „caravană transsahariană”?",
+      "options": [
+        "Cămilele permiteau transportul sării, aurului și altor bunuri",
+        "Producția de postav a susținut prosperitatea orașelor flamande",
+        "Corveea putea însemna muncă agricolă, transport sau construcții",
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor"
+      ],
+      "answer": "Cămilele permiteau transportul sării, aurului și altor bunuri",
+      "explanation": "În practică, cămilele permiteau transportul sării, aurului și altor bunuri. Rețelele caravaniere au legat Africa de Vest de lumea mediteraneană."
+    },
+    {
+      "id": "medieval-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „patriciat urban”?",
+      "options": [
+        "un grup comercial care traversa Sahara cu animale de povară",
+        "elita bogată care domina politica multor orașe",
+        "o notă explicativă adăugată unui text de drept",
+        "un produs textil de lână de mare valoare comercială"
+      ],
+      "answer": "elita bogată care domina politica multor orașe",
+      "explanation": "„patriciat urban” desemnează elita bogată care domina politica multor orașe. Puterea lor provenea adesea din comerț și proprietăți."
+    },
+    {
+      "id": "medieval-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „patriciat urban”?",
+      "options": [
+        "Cămilele permiteau transportul sării, aurului și altor bunuri",
+        "Patricienii controlau frecvent consiliile și funcțiile municipale",
+        "Debasarea permitea emiterea unei cantități mai mari de monedă",
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor"
+      ],
+      "answer": "Patricienii controlau frecvent consiliile și funcțiile municipale",
+      "explanation": "În practică, patricienii controlau frecvent consiliile și funcțiile municipale. Puterea lor provenea adesea din comerț și proprietăți. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „moară banală”?",
+      "options": [
+        "un sistem de taxare a circulației mărfurilor",
+        "un instrument financiar pentru transferul valorii între comercianți",
+        "elita bogată care domina politica multor orașe",
+        "o moară asupra căreia seniorul avea un monopol local"
+      ],
+      "answer": "o moară asupra căreia seniorul avea un monopol local",
+      "explanation": "„moară banală” desemnează o moară asupra căreia seniorul avea un monopol local. Instituția făcea parte din drepturile senioriale numite banalități."
+    },
+    {
+      "id": "medieval-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „moară banală”?",
+      "options": [
+        "Patricienii controlau frecvent consiliile și funcțiile municipale",
+        "Corveea putea însemna muncă agricolă, transport sau construcții",
+        "Debasarea permitea emiterea unei cantități mai mari de monedă",
+        "Țăranii puteau fi obligați să folosească moara contra taxă"
+      ],
+      "answer": "Țăranii puteau fi obligați să folosească moara contra taxă",
+      "explanation": "În practică, țăranii puteau fi obligați să folosească moara contra taxă. Instituția făcea parte din drepturile senioriale numite banalități."
+    },
+    {
+      "id": "medieval-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „corvee”?",
+      "options": [
+        "un manuscris devoțional destinat rugăciunilor la diferite ore",
+        "un produs textil de lână de mare valoare comercială",
+        "munca obligatorie prestată de țărani pentru senior",
+        "atelierul autorizat în care erau bătute monede"
+      ],
+      "answer": "munca obligatorie prestată de țărani pentru senior",
+      "explanation": "„corvee” desemnează munca obligatorie prestată de țărani pentru senior. Ea era una dintre obligațiile economice ale populației dependente."
+    },
+    {
+      "id": "medieval-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „corvee”?",
+      "options": [
+        "Patricienii controlau frecvent consiliile și funcțiile municipale",
+        "Corveea putea însemna muncă agricolă, transport sau construcții",
+        "Rutele transportau mărfuri, tehnologii, idei și religii",
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul"
+      ],
+      "answer": "Corveea putea însemna muncă agricolă, transport sau construcții",
+      "explanation": "În practică, corveea putea însemna muncă agricolă, transport sau construcții. Ea era una dintre obligațiile economice ale populației dependente."
+    },
+    {
+      "id": "medieval-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „ius commune”?",
+      "options": [
+        "un produs textil de lână de mare valoare comercială",
+        "cultura juridică europeană bazată pe drept roman și canonic",
+        "reducerea proporției de metal prețios din monedă",
+        "arta formală a redactării scrisorilor și documentelor"
+      ],
+      "answer": "cultura juridică europeană bazată pe drept roman și canonic",
+      "explanation": "„ius commune” desemnează cultura juridică europeană bazată pe drept roman și canonic. Nu a eliminat drepturile locale și cutumiare."
+    },
+    {
+      "id": "medieval-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „ius commune”?",
+      "options": [
+        "Monetăria transforma metalul în monedă recunoscută de autoritate",
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul",
+        "Ius commune oferea juriștilor un cadru comun de interpretare",
+        "Corveea putea însemna muncă agricolă, transport sau construcții"
+      ],
+      "answer": "Ius commune oferea juriștilor un cadru comun de interpretare",
+      "explanation": "În practică, ius commune oferea juriștilor un cadru comun de interpretare. Nu a eliminat drepturile locale și cutumiare."
+    },
+    {
+      "id": "medieval-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „glosă juridică”?",
+      "options": [
+        "o notă explicativă adăugată unui text de drept",
+        "un grup comercial care traversa Sahara cu animale de povară",
+        "un manuscris devoțional destinat rugăciunilor la diferite ore",
+        "o moară asupra căreia seniorul avea un monopol local"
+      ],
+      "answer": "o notă explicativă adăugată unui text de drept",
+      "explanation": "„glosă juridică” desemnează o notă explicativă adăugată unui text de drept. Metoda a fost importantă pentru renașterea studiului juridic la Bologna."
+    },
+    {
+      "id": "medieval-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „glosă juridică”?",
+      "options": [
+        "Rutele transportau mărfuri, tehnologii, idei și religii",
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+        "Glossatorii interpretau textele romane prin note marginale și interliniare",
+        "Patricienii controlau frecvent consiliile și funcțiile municipale"
+      ],
+      "answer": "Glossatorii interpretau textele romane prin note marginale și interliniare",
+      "explanation": "În practică, glossatorii interpretau textele romane prin note marginale și interliniare. Metoda a fost importantă pentru renașterea studiului juridic la Bologna."
+    },
+    {
+      "id": "medieval-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „ars dictaminis”?",
+      "options": [
+        "un instrument financiar pentru transferul valorii între comercianți",
+        "o rețea de mari târguri comerciale care legau nordul și sudul Europei",
+        "o moară asupra căreia seniorul avea un monopol local",
+        "arta formală a redactării scrisorilor și documentelor"
+      ],
+      "answer": "arta formală a redactării scrisorilor și documentelor",
+      "explanation": "„ars dictaminis” desemnează arta formală a redactării scrisorilor și documentelor. A fost importantă pentru administrație și diplomație. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „ars dictaminis”?",
+      "options": [
+        "Glossatorii interpretau textele romane prin note marginale și interliniare",
+        "Cartea de ore a devenit foarte populară în rândul elitelor laice",
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul",
+        "Rutele transportau mărfuri, tehnologii, idei și religii"
+      ],
+      "answer": "Disciplina oferea reguli privind salutul, argumentarea și stilul",
+      "explanation": "În practică, disciplina oferea reguli privind salutul, argumentarea și stilul. A fost importantă pentru administrație și diplomație. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „carte de ore”?",
+      "options": [
+        "o notă explicativă adăugată unui text de drept",
+        "un manuscris devoțional destinat rugăciunilor la diferite ore",
+        "munca obligatorie prestată de țărani pentru senior",
+        "reducerea proporției de metal prețios din monedă"
+      ],
+      "answer": "un manuscris devoțional destinat rugăciunilor la diferite ore",
+      "explanation": "„carte de ore” desemnează un manuscris devoțional destinat rugăciunilor la diferite ore. Exemplarele de lux erau adesea bogat iluminate."
+    },
+    {
+      "id": "medieval-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „carte de ore”?",
+      "options": [
+        "Cartea de ore a devenit foarte populară în rândul elitelor laice",
+        "Debasarea permitea emiterea unei cantități mai mari de monedă",
+        "Disciplina oferea reguli privind salutul, argumentarea și stilul",
+        "Târgurile facilitau schimbul de textile, produse mediteraneene și credit"
+      ],
+      "answer": "Cartea de ore a devenit foarte populară în rândul elitelor laice",
+      "explanation": "În practică, cartea de ore a devenit foarte populară în rândul elitelor laice. Exemplarele de lux erau adesea bogat iluminate."
+    },
+    {
+      "id": "medieval-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce descrie termenul medieval „postav flamand”?",
+      "options": [
+        "atelierul autorizat în care erau bătute monede",
+        "o rețea de rute comerciale între Eurasia orientală și occidentală",
+        "o moară asupra căreia seniorul avea un monopol local",
+        "un produs textil de lână de mare valoare comercială"
+      ],
+      "answer": "un produs textil de lână de mare valoare comercială",
+      "explanation": "„postav flamand” desemnează un produs textil de lână de mare valoare comercială. Materia primă provenea adesea din lâna engleză."
+    },
+    {
+      "id": "medieval-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Care afirmație este corectă despre „postav flamand”?",
+      "options": [
+        "Vămile alimentau veniturile orașelor, seniorilor și monarhilor",
+        "Producția de postav a susținut prosperitatea orașelor flamande",
+        "Cartea de ore a devenit foarte populară în rândul elitelor laice",
+        "Corveea putea însemna muncă agricolă, transport sau construcții"
+      ],
+      "answer": "Producția de postav a susținut prosperitatea orașelor flamande",
+      "explanation": "În practică, producția de postav a susținut prosperitatea orașelor flamande. Materia primă provenea adesea din lâna engleză. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-181",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Ain Jalut?",
+      "answer": "1260",
+      "explanation": "Bătălia de la Ain Jalut a avut loc în 1260. Victoria a oprit extinderea directă a Ilhanatului spre Egipt."
+    },
+    {
+      "id": "medieval-182",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Ain Jalut?",
+      "options": [
+        "Sultanatul Mameluc",
+        "Frederic I Barbarossa și Liga Lombardă",
+        "Edward al III-lea al Angliei",
+        "Kilij Arslan al II-lea"
+      ],
+      "answer": "Sultanatul Mameluc",
+      "explanation": "Sultanatul Mameluc este răspunsul corect pentru acest reper. Victoria a oprit extinderea directă a Ilhanatului spre Egipt. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-183",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc semnarea Păcii de la Konstanz?",
+      "answer": "1183",
+      "explanation": "semnarea Păcii de la Konstanz a avut loc în 1183. Acordul a recunoscut autonomia largă a comunelor lombarde."
+    },
+    {
+      "id": "medieval-184",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu semnarea Păcii de la Konstanz?",
+      "options": [
+        "Kilij Arslan al II-lea",
+        "Edward I al Angliei",
+        "Frederic I Barbarossa și Liga Lombardă",
+        "Confederația Elvețiană"
+      ],
+      "answer": "Frederic I Barbarossa și Liga Lombardă",
+      "explanation": "Frederic I Barbarossa și Liga Lombardă este răspunsul corect pentru acest reper. Acordul a recunoscut autonomia largă a comunelor lombarde."
+    },
+    {
+      "id": "medieval-185",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc emiterea Bulei de Aur a Siciliei pentru Boemia?",
+      "answer": "1212",
+      "explanation": "emiterea Bulei de Aur a Siciliei pentru Boemia a avut loc în 1212. Documentul a confirmat privilegii și statut ereditar pentru coroana boemă."
+    },
+    {
+      "id": "medieval-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu emiterea Bulei de Aur a Siciliei pentru Boemia?",
+      "options": [
+        "forțele khwarezmiene și egiptene",
+        "Sultanatul Mameluc",
+        "Frederic al II-lea",
+        "cruciații Primei Cruciade"
+      ],
+      "answer": "Frederic al II-lea",
+      "explanation": "Frederic al II-lea este răspunsul corect pentru acest reper. Documentul a confirmat privilegii și statut ereditar pentru coroana boemă."
+    },
+    {
+      "id": "medieval-187",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Kleidion?",
+      "answer": "1014",
+      "explanation": "Bătălia de la Kleidion a avut loc în 1014. Victoria bizantină a slăbit decisiv Primul Țarat Bulgar. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Kleidion?",
+      "options": [
+        "cruciații Primei Cruciade",
+        "Kilij Arslan al II-lea",
+        "Vasile al II-lea",
+        "Confederația Elvețiană"
+      ],
+      "answer": "Vasile al II-lea",
+      "explanation": "Vasile al II-lea este răspunsul corect pentru acest reper. Victoria bizantină a slăbit decisiv Primul Țarat Bulgar. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-189",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Myriokephalon?",
+      "answer": "1176",
+      "explanation": "Bătălia de la Myriokephalon a avut loc în 1176. Selgiucizii de Rum au învins armata lui Manuel I Comnenul."
+    },
+    {
+      "id": "medieval-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Myriokephalon?",
+      "options": [
+        "rebelii sicilieni",
+        "Kilij Arslan al II-lea",
+        "Sultanatul Mameluc",
+        "forțele khwarezmiene și egiptene"
+      ],
+      "answer": "Kilij Arslan al II-lea",
+      "explanation": "Kilij Arslan al II-lea este răspunsul corect pentru acest reper. Selgiucizii de Rum au învins armata lui Manuel I Comnenul."
+    },
+    {
+      "id": "medieval-191",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Morgarten?",
+      "answer": "1315",
+      "explanation": "Bătălia de la Morgarten a avut loc în 1315. Forțele confederate au învins o armată habsburgică într-un teren dificil."
+    },
+    {
+      "id": "medieval-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Morgarten?",
+      "options": [
+        "Richard I",
+        "rebelii sicilieni",
+        "Confederația Elvețiană timpurie",
+        "forțele khwarezmiene și egiptene"
+      ],
+      "answer": "Confederația Elvețiană timpurie",
+      "explanation": "Confederația Elvețiană timpurie este răspunsul corect pentru acest reper. Forțele confederate au învins o armată habsburgică într-un teren dificil."
+    },
+    {
+      "id": "medieval-193",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Sempach?",
+      "answer": "1386",
+      "explanation": "Bătălia de la Sempach a avut loc în 1386. Victoria a consolidat autonomia confederaților față de Habsburgi. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Sempach?",
+      "options": [
+        "Confederația Elvețiană",
+        "Sultanatul Mameluc",
+        "forțele khwarezmiene și egiptene",
+        "rebelii sicilieni"
+      ],
+      "answer": "Confederația Elvețiană",
+      "explanation": "Confederația Elvețiană este răspunsul corect pentru acest reper. Victoria a consolidat autonomia confederaților față de Habsburgi. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-195",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Tagliacozzo?",
+      "answer": "1268",
+      "explanation": "Bătălia de la Tagliacozzo a avut loc în 1268. Conradin a fost învins și apoi executat la Napoli."
+    },
+    {
+      "id": "medieval-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Tagliacozzo?",
+      "options": [
+        "Edward I al Angliei",
+        "Carol de Anjou",
+        "Kilij Arslan al II-lea",
+        "rebelii sicilieni"
+      ],
+      "answer": "Carol de Anjou",
+      "explanation": "Carol de Anjou este răspunsul corect pentru acest reper. Conradin a fost învins și apoi executat la Napoli."
+    },
+    {
+      "id": "medieval-197",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Benevento?",
+      "answer": "1266",
+      "explanation": "Bătălia de la Benevento a avut loc în 1266. Manfred de Sicilia a fost învins și ucis în luptă."
+    },
+    {
+      "id": "medieval-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Benevento?",
+      "options": [
+        "Edward al III-lea al Angliei",
+        "Carol de Anjou",
+        "cruciații Primei Cruciade",
+        "Confederația Elvețiană"
+      ],
+      "answer": "Carol de Anjou",
+      "explanation": "Carol de Anjou este răspunsul corect pentru acest reper. Manfred de Sicilia a fost învins și ucis în luptă."
+    },
+    {
+      "id": "medieval-199",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc izbucnirea Vecerniilor Siciliene?",
+      "answer": "1282",
+      "explanation": "izbucnirea Vecerniilor Siciliene a avut loc în 1282. Revolta împotriva dominației angevine a declanșat un conflict mediteranean. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu izbucnirea Vecerniilor Siciliene?",
+      "options": [
+        "forțele khwarezmiene și egiptene",
+        "rebelii sicilieni",
+        "Frederic al II-lea",
+        "Edward I al Angliei"
+      ],
+      "answer": "rebelii sicilieni",
+      "explanation": "rebelii sicilieni este răspunsul corect pentru acest reper. Revolta împotriva dominației angevine a declanșat un conflict mediteranean. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-201",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Dorylaeum din Prima Cruciadă?",
+      "answer": "1097",
+      "explanation": "Bătălia de la Dorylaeum din Prima Cruciadă a avut loc în 1097. Victoria a permis continuarea înaintării cruciaților prin Anatolia."
+    },
+    {
+      "id": "medieval-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Dorylaeum din Prima Cruciadă?",
+      "options": [
+        "Edward al III-lea al Angliei",
+        "Edward I al Angliei",
+        "cruciații Primei Cruciade",
+        "Carol de Anjou"
+      ],
+      "answer": "cruciații Primei Cruciade",
+      "explanation": "cruciații Primei Cruciade este răspunsul corect pentru acest reper. Victoria a permis continuarea înaintării cruciaților prin Anatolia. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-203",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Arsuf?",
+      "answer": "1191",
+      "explanation": "Bătălia de la Arsuf a avut loc în 1191. Armata cruciată a învins forțele lui Saladin pe coasta Levantului."
+    },
+    {
+      "id": "medieval-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Arsuf?",
+      "options": [
+        "Richard I",
+        "forțele khwarezmiene și egiptene",
+        "Frederic I Barbarossa și Liga Lombardă",
+        "Edward al III-lea al Angliei"
+      ],
+      "answer": "Richard I",
+      "explanation": "Richard I este răspunsul corect pentru acest reper. Armata cruciată a învins forțele lui Saladin pe coasta Levantului."
+    },
+    {
+      "id": "medieval-205",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la La Forbie?",
+      "answer": "1244",
+      "explanation": "Bătălia de la La Forbie a avut loc în 1244. Coaliția cruciată și siriană a suferit o înfrângere devastatoare."
+    },
+    {
+      "id": "medieval-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la La Forbie?",
+      "options": [
+        "forțele khwarezmiene și egiptene",
+        "Richard I",
+        "Edward al III-lea al Angliei",
+        "Confederația Elvețiană timpurie"
+      ],
+      "answer": "forțele khwarezmiene și egiptene",
+      "explanation": "forțele khwarezmiene și egiptene este răspunsul corect pentru acest reper. Coaliția cruciată și siriană a suferit o înfrângere devastatoare."
+    },
+    {
+      "id": "medieval-207",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc Bătălia de la Falkirk?",
+      "answer": "1298",
+      "explanation": "Bătălia de la Falkirk a avut loc în 1298. Armata engleză l-a învins pe William Wallace și forțele scoțiene."
+    },
+    {
+      "id": "medieval-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Falkirk?",
+      "options": [
+        "Confederația Elvețiană timpurie",
+        "Edward I al Angliei",
+        "Kilij Arslan al II-lea",
+        "Confederația Elvețiană"
+      ],
+      "answer": "Edward I al Angliei",
+      "explanation": "Edward I al Angliei este răspunsul corect pentru acest reper. Armata engleză l-a învins pe William Wallace și forțele scoțiene."
+    },
+    {
+      "id": "medieval-209",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc semnarea Păcii de la Brétigny?",
+      "answer": "1360",
+      "explanation": "semnarea Păcii de la Brétigny a avut loc în 1360. Tratatul a oferit temporar Angliei mari concesii teritoriale în Franța."
+    },
+    {
+      "id": "medieval-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine sau ce entitate este asociată direct cu semnarea Păcii de la Brétigny?",
+      "options": [
+        "Sultanatul Mameluc",
+        "Edward al III-lea al Angliei",
+        "Edward I al Angliei",
+        "Richard I"
+      ],
+      "answer": "Edward al III-lea al Angliei",
+      "explanation": "Edward al III-lea al Angliei este răspunsul corect pentru acest reper. Tratatul a oferit temporar Angliei mari concesii teritoriale în Franța."
+    },
+    {
+      "id": "medieval-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „principe elector”?",
+      "options": [
+        "un principe cu dreptul de a participa la alegerea regelui romano-german",
+        "un slujitor de rang înalt, juridic neliber, folosit în administrație și cavalerie",
+        "un teritoriu sau venit acordat unui membru secundar al dinastiei",
+        "puterea de a ordona, interzice și sancționa"
+      ],
+      "answer": "un principe cu dreptul de a participa la alegerea regelui romano-german",
+      "explanation": "„principe elector” desemnează un principe cu dreptul de a participa la alegerea regelui romano-german. Bula de Aur din 1356 a definit mai clar colegiul electoral."
+    },
+    {
+      "id": "medieval-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „principe elector”?",
+      "options": [
+        "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+        "Marca era condusă de regulă de un marchiz",
+        "Imunitatea putea transfera atribuții fiscale și judiciare instituției religioase",
+        "Primogenitura reducea fragmentarea patrimoniilor dinastice"
+      ],
+      "answer": "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+      "explanation": "În practică, principii electori au devenit o elită constituțională a Sfântului Imperiu Roman. Bula de Aur din 1356 a definit mai clar colegiul electoral."
+    },
+    {
+      "id": "medieval-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „Dietă Imperială”?",
+      "options": [
+        "adunarea politică a stărilor Sfântului Imperiu Roman",
+        "transmiterea preferențială a moștenirii către primul fiu",
+        "un act normativ regal împărțit în capitole",
+        "ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului"
+      ],
+      "answer": "adunarea politică a stărilor Sfântului Imperiu Roman",
+      "explanation": "„Dietă Imperială” desemnează adunarea politică a stărilor sfântului imperiu roman. Dieta era o componentă esențială a guvernării imperiale."
+    },
+    {
+      "id": "medieval-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „Dietă Imperială”?",
+      "options": [
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+        "Imunitatea putea transfera atribuții fiscale și judiciare instituției religioase",
+        "Împăratul negocia aici cu principii, prelații și orașele imperiale"
+      ],
+      "answer": "Împăratul negocia aici cu principii, prelații și orașele imperiale",
+      "explanation": "În practică, împăratul negocia aici cu principii, prelații și orașele imperiale. Dieta era o componentă esențială a guvernării imperiale."
+    },
+    {
+      "id": "medieval-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „marcă”?",
+      "options": [
+        "ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului",
+        "un teritoriu de frontieră cu funcție militară specială",
+        "situația în care același monarh conduce două state juridic distincte",
+        "un teritoriu sau venit acordat unui membru secundar al dinastiei"
+      ],
+      "answer": "un teritoriu de frontieră cu funcție militară specială",
+      "explanation": "„marcă” desemnează un teritoriu de frontieră cu funcție militară specială. Poziția de frontieră justifica atribuții militare mai accentuate."
+    },
+    {
+      "id": "medieval-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „marcă”?",
+      "options": [
+        "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+        "Bannum exprima autoritatea coercitivă a conducătorului",
+        "Apanajul oferea resurse prinților fără divizarea formală a coroanei",
+        "Marca era condusă de regulă de un marchiz"
+      ],
+      "answer": "Marca era condusă de regulă de un marchiz",
+      "explanation": "În practică, marca era condusă de regulă de un marchiz. Poziția de frontieră justifica atribuții militare mai accentuate."
+    },
+    {
+      "id": "medieval-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „apanaj”?",
+      "options": [
+        "o concesiune condiționată de folosință a pământului",
+        "un teritoriu sau venit acordat unui membru secundar al dinastiei",
+        "un trimis regal carolingian însărcinat cu inspecția autorităților locale",
+        "puterea de a ordona, interzice și sancționa"
+      ],
+      "answer": "un teritoriu sau venit acordat unui membru secundar al dinastiei",
+      "explanation": "„apanaj” desemnează un teritoriu sau venit acordat unui membru secundar al dinastiei. Uneori apanajele deveneau centre de putere rivale."
+    },
+    {
+      "id": "medieval-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „apanaj”?",
+      "options": [
+        "Veniturile domeniului susțineau curtea și administrația regelui",
+        "Vogt-ul putea exercita funcții judiciare și militare",
+        "Precaria era frecvent asociată cu proprietăți ecleziastice",
+        "Apanajul oferea resurse prinților fără divizarea formală a coroanei"
+      ],
+      "answer": "Apanajul oferea resurse prinților fără divizarea formală a coroanei",
+      "explanation": "În practică, apanajul oferea resurse prinților fără divizarea formală a coroanei. Uneori apanajele deveneau centre de putere rivale."
+    },
+    {
+      "id": "medieval-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „uniune personală”?",
+      "options": [
+        "un principe cu dreptul de a participa la alegerea regelui romano-german",
+        "situația în care același monarh conduce două state juridic distincte",
+        "statutul de dependență directă față de împărat",
+        "un slujitor de rang înalt, juridic neliber, folosit în administrație și cavalerie"
+      ],
+      "answer": "situația în care același monarh conduce două state juridic distincte",
+      "explanation": "„uniune personală” desemnează situația în care același monarh conduce două state juridic distincte. Uniunea nu era echivalentă automat cu fuziunea politică."
+    },
+    {
+      "id": "medieval-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „uniune personală”?",
+      "options": [
+        "Veniturile domeniului susțineau curtea și administrația regelui",
+        "Imunitatea putea transfera atribuții fiscale și judiciare instituției religioase",
+        "Marca era condusă de regulă de un marchiz",
+        "Statele puteau păstra instituții, legi și administrații separate"
+      ],
+      "answer": "Statele puteau păstra instituții, legi și administrații separate",
+      "explanation": "În practică, statele puteau păstra instituții, legi și administrații separate. Uniunea nu era echivalentă automat cu fuziunea politică."
+    },
+    {
+      "id": "medieval-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „domeniu regal”?",
+      "options": [
+        "un protector laic al unei instituții ecleziastice",
+        "ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului",
+        "un act normativ regal împărțit în capitole",
+        "un teritoriu de frontieră cu funcție militară specială"
+      ],
+      "answer": "ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului",
+      "explanation": "„domeniu regal” desemnează ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului. Puterea monarhului depindea mult de mărimea și productivitatea domeniului."
+    },
+    {
+      "id": "medieval-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „domeniu regal”?",
+      "options": [
+        "Marca era condusă de regulă de un marchiz",
+        "Ministerialii puteau deține castele și funcții importante",
+        "Veniturile domeniului susțineau curtea și administrația regelui",
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar"
+      ],
+      "answer": "Veniturile domeniului susțineau curtea și administrația regelui",
+      "explanation": "În practică, veniturile domeniului susțineau curtea și administrația regelui. Puterea monarhului depindea mult de mărimea și productivitatea domeniului."
+    },
+    {
+      "id": "medieval-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „primogenitură”?",
+      "options": [
+        "puterea de a ordona, interzice și sancționa",
+        "un act normativ regal împărțit în capitole",
+        "transmiterea preferențială a moștenirii către primul fiu",
+        "ansamblul pământurilor și veniturilor aflate direct sub controlul monarhului"
+      ],
+      "answer": "transmiterea preferențială a moștenirii către primul fiu",
+      "explanation": "„primogenitură” desemnează transmiterea preferențială a moștenirii către primul fiu. Adoptarea ei a variat între regiuni și perioade. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „primogenitură”?",
+      "options": [
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Împăratul negocia aici cu principii, prelații și orașele imperiale",
+        "Primogenitura reducea fragmentarea patrimoniilor dinastice",
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar"
+      ],
+      "answer": "Primogenitura reducea fragmentarea patrimoniilor dinastice",
+      "explanation": "În practică, primogenitura reducea fragmentarea patrimoniilor dinastice. Adoptarea ei a variat între regiuni și perioade. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „ministerialis”?",
+      "options": [
+        "un teritoriu sau venit acordat unui membru secundar al dinastiei",
+        "un slujitor de rang înalt, juridic neliber, folosit în administrație și cavalerie",
+        "adunarea politică a stărilor Sfântului Imperiu Roman",
+        "situația în care același monarh conduce două state juridic distincte"
+      ],
+      "answer": "un slujitor de rang înalt, juridic neliber, folosit în administrație și cavalerie",
+      "explanation": "„ministerialis” desemnează un slujitor de rang înalt, juridic neliber, folosit în administrație și cavalerie. Instituția este caracteristică mai ales lumii germane medievale."
+    },
+    {
+      "id": "medieval-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „ministerialis”?",
+      "options": [
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Ministerialii puteau deține castele și funcții importante",
+        "Bannum exprima autoritatea coercitivă a conducătorului",
+        "Marca era condusă de regulă de un marchiz"
+      ],
+      "answer": "Ministerialii puteau deține castele și funcții importante",
+      "explanation": "În practică, ministerialii puteau deține castele și funcții importante. Instituția este caracteristică mai ales lumii germane medievale. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „Reichsfreiheit”?",
+      "options": [
+        "un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești",
+        "un teritoriu de frontieră cu funcție militară specială",
+        "situația în care același monarh conduce două state juridic distincte",
+        "statutul de dependență directă față de împărat"
+      ],
+      "answer": "statutul de dependență directă față de împărat",
+      "explanation": "„Reichsfreiheit” desemnează statutul de dependență directă față de împărat. Orașe, abații și principate puteau beneficia de acest statut."
+    },
+    {
+      "id": "medieval-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „Reichsfreiheit”?",
+      "options": [
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar",
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Vogt-ul putea exercita funcții judiciare și militare",
+        "Precaria era frecvent asociată cu proprietăți ecleziastice"
+      ],
+      "answer": "Un teritoriu imediat imperial nu avea un senior teritorial intermediar",
+      "explanation": "În practică, un teritoriu imediat imperial nu avea un senior teritorial intermediar. Orașe, abații și principate puteau beneficia de acest statut."
+    },
+    {
+      "id": "medieval-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „missus dominicus”?",
+      "options": [
+        "puterea de a ordona, interzice și sancționa",
+        "un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești",
+        "un trimis regal carolingian însărcinat cu inspecția autorităților locale",
+        "un act normativ regal împărțit în capitole"
+      ],
+      "answer": "un trimis regal carolingian însărcinat cu inspecția autorităților locale",
+      "explanation": "„missus dominicus” desemnează un trimis regal carolingian însărcinat cu inspecția autorităților locale. Instituția ajuta conducerea unui imperiu vast și descentralizat."
+    },
+    {
+      "id": "medieval-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „missus dominicus”?",
+      "options": [
+        "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar",
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Apanajul oferea resurse prinților fără divizarea formală a coroanei"
+      ],
+      "answer": "Missi dominici supravegheau aplicarea ordinelor regale",
+      "explanation": "În practică, missi dominici supravegheau aplicarea ordinelor regale. Instituția ajuta conducerea unui imperiu vast și descentralizat. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „capitular carolingian”?",
+      "options": [
+        "un act normativ regal împărțit în capitole",
+        "un trimis regal carolingian însărcinat cu inspecția autorităților locale",
+        "un protector laic al unei instituții ecleziastice",
+        "situația în care același monarh conduce două state juridic distincte"
+      ],
+      "answer": "un act normativ regal împărțit în capitole",
+      "explanation": "„capitular carolingian” desemnează un act normativ regal împărțit în capitole. Ele sunt surse importante pentru guvernarea carolingiană. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „capitular carolingian”?",
+      "options": [
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar",
+        "Bannum exprima autoritatea coercitivă a conducătorului",
+        "Capitularele tratau administrația, disciplina și reforma ecleziastică",
+        "Marca era condusă de regulă de un marchiz"
+      ],
+      "answer": "Capitularele tratau administrația, disciplina și reforma ecleziastică",
+      "explanation": "În practică, capitularele tratau administrația, disciplina și reforma ecleziastică. Ele sunt surse importante pentru guvernarea carolingiană. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „bannum”?",
+      "options": [
+        "puterea de a ordona, interzice și sancționa",
+        "un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești",
+        "o concesiune condiționată de folosință a pământului",
+        "un act normativ regal împărțit în capitole"
+      ],
+      "answer": "puterea de a ordona, interzice și sancționa",
+      "explanation": "„bannum” desemnează puterea de a ordona, interzice și sancționa. Conceptul era important pentru jurisdicția seniorială și regală. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „bannum”?",
+      "options": [
+        "Bannum exprima autoritatea coercitivă a conducătorului",
+        "Principii electori au devenit o elită constituțională a Sfântului Imperiu Roman",
+        "Capitularele tratau administrația, disciplina și reforma ecleziastică",
+        "Primogenitura reducea fragmentarea patrimoniilor dinastice"
+      ],
+      "answer": "Bannum exprima autoritatea coercitivă a conducătorului",
+      "explanation": "În practică, bannum exprima autoritatea coercitivă a conducătorului. Conceptul era important pentru jurisdicția seniorială și regală. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „precaria”?",
+      "options": [
+        "un trimis regal carolingian însărcinat cu inspecția autorităților locale",
+        "o concesiune condiționată de folosință a pământului",
+        "un principe cu dreptul de a participa la alegerea regelui romano-german",
+        "statutul de dependență directă față de împărat"
+      ],
+      "answer": "o concesiune condiționată de folosință a pământului",
+      "explanation": "„precaria” desemnează o concesiune condiționată de folosință a pământului. Ea putea combina cedarea formală a proprietății cu recuperarea folosinței."
+    },
+    {
+      "id": "medieval-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „precaria”?",
+      "options": [
+        "Missi dominici supravegheau aplicarea ordinelor regale",
+        "Statele puteau păstra instituții, legi și administrații separate",
+        "Precaria era frecvent asociată cu proprietăți ecleziastice",
+        "Primogenitura reducea fragmentarea patrimoniilor dinastice"
+      ],
+      "answer": "Precaria era frecvent asociată cu proprietăți ecleziastice",
+      "explanation": "În practică, precaria era frecvent asociată cu proprietăți ecleziastice. Ea putea combina cedarea formală a proprietății cu recuperarea folosinței."
+    },
+    {
+      "id": "medieval-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „Vogt”?",
+      "options": [
+        "un protector laic al unei instituții ecleziastice",
+        "statutul de dependență directă față de împărat",
+        "transmiterea preferențială a moștenirii către primul fiu",
+        "un trimis regal carolingian însărcinat cu inspecția autorităților locale"
+      ],
+      "answer": "un protector laic al unei instituții ecleziastice",
+      "explanation": "„Vogt” desemnează un protector laic al unei instituții ecleziastice. Mănăstirile și episcopiile foloseau astfel de protectori seculari. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „Vogt”?",
+      "options": [
+        "Vogt-ul putea exercita funcții judiciare și militare",
+        "Marca era condusă de regulă de un marchiz",
+        "Veniturile domeniului susțineau curtea și administrația regelui",
+        "Apanajul oferea resurse prinților fără divizarea formală a coroanei"
+      ],
+      "answer": "Vogt-ul putea exercita funcții judiciare și militare",
+      "explanation": "În practică, vogt-ul putea exercita funcții judiciare și militare. Mănăstirile și episcopiile foloseau astfel de protectori seculari. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce descrie termenul medieval „imunitate ecleziastică”?",
+      "options": [
+        "un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești",
+        "adunarea politică a stărilor Sfântului Imperiu Roman",
+        "situația în care același monarh conduce două state juridic distincte",
+        "statutul de dependență directă față de împărat"
+      ],
+      "answer": "un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești",
+      "explanation": "„imunitate ecleziastică” desemnează un privilegiu care limita intervenția funcționarilor seculari pe domenii bisericești. Ea întărea autonomia politică și economică a unor abații și episcopii."
+    },
+    {
+      "id": "medieval-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Care afirmație este corectă despre „imunitate ecleziastică”?",
+      "options": [
+        "Ministerialii puteau deține castele și funcții importante",
+        "Un teritoriu imediat imperial nu avea un senior teritorial intermediar",
+        "Vogt-ul putea exercita funcții judiciare și militare",
+        "Imunitatea putea transfera atribuții fiscale și judiciare instituției religioase"
+      ],
+      "answer": "Imunitatea putea transfera atribuții fiscale și judiciare instituției religioase",
+      "explanation": "În practică, imunitatea putea transfera atribuții fiscale și judiciare instituției religioase. Ea întărea autonomia politică și economică a unor abații și episcopii."
+    },
+    {
+      "id": "medieval-241",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc stabilirea curții papale la Avignon?",
+      "answer": "1309",
+      "explanation": "stabilirea curții papale la Avignon a avut loc în 1309. Începutul perioadei avignoneze a mutat centrul efectiv al papalității în sudul Franței."
+    },
+    {
+      "id": "medieval-242",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu stabilirea curții papale la Avignon?",
+      "options": [
+        "papa Clement al V-lea",
+        "Baibars",
+        "Jan Žižka",
+        "Dmitri Donskoi"
+      ],
+      "answer": "papa Clement al V-lea",
+      "explanation": "papa Clement al V-lea este răspunsul corect pentru acest reper. Începutul perioadei avignoneze a mutat centrul efectiv al papalității în sudul Franței."
+    },
+    {
+      "id": "medieval-243",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc revenirea papei Grigore al XI-lea la Roma?",
+      "answer": "1377",
+      "explanation": "revenirea papei Grigore al XI-lea la Roma a avut loc în 1377. Revenirea a încheiat perioada principală a reședinței papale de la Avignon."
+    },
+    {
+      "id": "medieval-244",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu revenirea papei Grigore al XI-lea la Roma?",
+      "options": [
+        "Grigore al XI-lea",
+        "papa Clement al V-lea",
+        "Jan Žižka",
+        "utraquiștii moderați și catolicii boemi"
+      ],
+      "answer": "Grigore al XI-lea",
+      "explanation": "Grigore al XI-lea este răspunsul corect pentru acest reper. Revenirea a încheiat perioada principală a reședinței papale de la Avignon."
+    },
+    {
+      "id": "medieval-245",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc execuția lui Jan Hus la Konstanz?",
+      "answer": "1415",
+      "explanation": "execuția lui Jan Hus la Konstanz a avut loc în 1415. Condamnarea reformatorului ceh a alimentat conflictul religios din Boemia."
+    },
+    {
+      "id": "medieval-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu execuția lui Jan Hus la Konstanz?",
+      "options": [
+        "Jan Hus",
+        "Richard I, Filip al II-lea și Frederic Barbarossa",
+        "Baldwin al IV-lea al Ierusalimului",
+        "Dmitri Donskoi"
+      ],
+      "answer": "Jan Hus",
+      "explanation": "Jan Hus este răspunsul corect pentru acest reper. Condamnarea reformatorului ceh a alimentat conflictul religios din Boemia. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-247",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Prima Defenestrare de la Praga?",
+      "answer": "1419",
+      "explanation": "Prima Defenestrare de la Praga a avut loc în 1419. Episodul a accelerat izbucnirea războaielor husite. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Prima Defenestrare de la Praga?",
+      "options": [
+        "Jan Hus",
+        "utraquiștii moderați și catolicii boemi",
+        "Hülegü",
+        "husiții radicali"
+      ],
+      "answer": "husiții radicali",
+      "explanation": "husiții radicali este răspunsul corect pentru acest reper. Episodul a accelerat izbucnirea războaielor husite. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-249",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc căderea Edessei în mâinile lui Zengi?",
+      "answer": "1144",
+      "explanation": "căderea Edessei în mâinile lui Zengi a avut loc în 1144. Căderea primului stat cruciat important a contribuit la declanșarea celei de-a doua cruciade."
+    },
+    {
+      "id": "medieval-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu căderea Edessei în mâinile lui Zengi?",
+      "options": [
+        "otomanii",
+        "utraquiștii moderați și catolicii boemi",
+        "Grigore al XI-lea",
+        "Zengi"
+      ],
+      "answer": "Zengi",
+      "explanation": "Zengi este răspunsul corect pentru acest reper. Căderea primului stat cruciat important a contribuit la declanșarea celei de-a doua cruciade."
+    },
+    {
+      "id": "medieval-251",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc începutul celei de-a doua cruciade?",
+      "answer": "1147",
+      "explanation": "începutul celei de-a doua cruciade a avut loc în 1147. Expediția a răspuns căderii Edessei, dar nu și-a atins obiectivele principale."
+    },
+    {
+      "id": "medieval-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu începutul celei de-a doua cruciade?",
+      "options": [
+        "Ludovic al VII-lea și Conrad al III-lea",
+        "Jan Hus",
+        "Jan Žižka",
+        "papa Clement al V-lea"
+      ],
+      "answer": "Ludovic al VII-lea și Conrad al III-lea",
+      "explanation": "Ludovic al VII-lea și Conrad al III-lea este răspunsul corect pentru acest reper. Expediția a răspuns căderii Edessei, dar nu și-a atins obiectivele principale."
+    },
+    {
+      "id": "medieval-253",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Montgisard?",
+      "answer": "1177",
+      "explanation": "Bătălia de la Montgisard a avut loc în 1177. O forță cruciată mai mică a obținut o victorie surprinzătoare asupra lui Saladin."
+    },
+    {
+      "id": "medieval-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Montgisard?",
+      "options": [
+        "Baldwin al IV-lea al Ierusalimului",
+        "Zengi",
+        "Ludovic al VII-lea și Conrad al III-lea",
+        "Hoarda de Aur"
+      ],
+      "answer": "Baldwin al IV-lea al Ierusalimului",
+      "explanation": "Baldwin al IV-lea al Ierusalimului este răspunsul corect pentru acest reper. O forță cruciată mai mică a obținut o victorie surprinzătoare asupra lui Saladin."
+    },
+    {
+      "id": "medieval-255",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc începutul celei de-a treia cruciade?",
+      "answer": "1189",
+      "explanation": "începutul celei de-a treia cruciade a avut loc în 1189. Cruciada a fost declanșată de pierderea Ierusalimului din 1187."
+    },
+    {
+      "id": "medieval-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu începutul celei de-a treia cruciade?",
+      "options": [
+        "Baldwin al IV-lea al Ierusalimului",
+        "Richard I, Filip al II-lea și Frederic Barbarossa",
+        "husiții radicali",
+        "Jan Žižka"
+      ],
+      "answer": "Richard I, Filip al II-lea și Frederic Barbarossa",
+      "explanation": "Richard I, Filip al II-lea și Frederic Barbarossa este răspunsul corect pentru acest reper. Cruciada a fost declanșată de pierderea Ierusalimului din 1187."
+    },
+    {
+      "id": "medieval-257",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc cucerirea Bagdadului de către mongoli?",
+      "answer": "1258",
+      "explanation": "cucerirea Bagdadului de către mongoli a avut loc în 1258. Căderea Bagdadului a pus capăt califatului abbasid local ca mare putere politică."
+    },
+    {
+      "id": "medieval-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu cucerirea Bagdadului de către mongoli?",
+      "options": [
+        "Dmitri Donskoi",
+        "Hoarda de Aur",
+        "Hülegü",
+        "Ludovic al VII-lea și Conrad al III-lea"
+      ],
+      "answer": "Hülegü",
+      "explanation": "Hülegü este răspunsul corect pentru acest reper. Căderea Bagdadului a pus capăt califatului abbasid local ca mare putere politică."
+    },
+    {
+      "id": "medieval-259",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc cucerirea Antiohiei de către mameluci?",
+      "answer": "1268",
+      "explanation": "cucerirea Antiohiei de către mameluci a avut loc în 1268. Căderea Antiohiei a redus drastic puterea statelor cruciate din nordul Levantului."
+    },
+    {
+      "id": "medieval-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu cucerirea Antiohiei de către mameluci?",
+      "options": [
+        "otomanii",
+        "Jan Hus",
+        "Baibars",
+        "Richard I, Filip al II-lea și Frederic Barbarossa"
+      ],
+      "answer": "Baibars",
+      "explanation": "Baibars este răspunsul corect pentru acest reper. Căderea Antiohiei a redus drastic puterea statelor cruciate din nordul Levantului."
+    },
+    {
+      "id": "medieval-261",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Kulikovo?",
+      "answer": "1380",
+      "explanation": "Bătălia de la Kulikovo a avut loc în 1380. Victoria asupra forțelor lui Mamai a devenit un reper al consolidării Moscovei."
+    },
+    {
+      "id": "medieval-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Kulikovo?",
+      "options": [
+        "Zengi",
+        "Ludovic al VII-lea și Conrad al III-lea",
+        "Dmitri Donskoi",
+        "husiții radicali"
+      ],
+      "answer": "Dmitri Donskoi",
+      "explanation": "Dmitri Donskoi este răspunsul corect pentru acest reper. Victoria asupra forțelor lui Mamai a devenit un reper al consolidării Moscovei."
+    },
+    {
+      "id": "medieval-263",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Maritsa?",
+      "answer": "1371",
+      "explanation": "Bătălia de la Maritsa a avut loc în 1371. Victoria a accelerat expansiunea otomană în Balcani. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Maritsa?",
+      "options": [
+        "Hoarda de Aur",
+        "Jan Hus",
+        "otomanii",
+        "husiții radicali"
+      ],
+      "answer": "otomanii",
+      "explanation": "otomanii este răspunsul corect pentru acest reper. Victoria a accelerat expansiunea otomană în Balcani. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-265",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Vorskla?",
+      "answer": "1399",
+      "explanation": "Bătălia de la Vorskla a avut loc în 1399. Vytautas și aliații săi au suferit o înfrângere severă în fața tătarilor."
+    },
+    {
+      "id": "medieval-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Vorskla?",
+      "options": [
+        "Ludovic al VII-lea și Conrad al III-lea",
+        "papa Clement al V-lea",
+        "Hoarda de Aur",
+        "Baldwin al IV-lea al Ierusalimului"
+      ],
+      "answer": "Hoarda de Aur",
+      "explanation": "Hoarda de Aur este răspunsul corect pentru acest reper. Vytautas și aliații săi au suferit o înfrângere severă în fața tătarilor."
+    },
+    {
+      "id": "medieval-267",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Vítkov Hill?",
+      "answer": "1420",
+      "explanation": "Bătălia de la Vítkov Hill a avut loc în 1420. Husiții au apărat Praga împotriva unei armate cruciate."
+    },
+    {
+      "id": "medieval-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Vítkov Hill?",
+      "options": [
+        "Zengi",
+        "Grigore al XI-lea",
+        "Jan Žižka",
+        "Richard I, Filip al II-lea și Frederic Barbarossa"
+      ],
+      "answer": "Jan Žižka",
+      "explanation": "Jan Žižka este răspunsul corect pentru acest reper. Husiții au apărat Praga împotriva unei armate cruciate. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-269",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc Bătălia de la Lipany?",
+      "answer": "1434",
+      "explanation": "Bătălia de la Lipany a avut loc în 1434. Înfrângerea taboriților radicali a schimbat cursul războaielor husite. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sau ce entitate este asociată direct cu Bătălia de la Lipany?",
+      "options": [
+        "utraquiștii moderați și catolicii boemi",
+        "Jan Žižka",
+        "Richard I, Filip al II-lea și Frederic Barbarossa",
+        "Jan Hus"
+      ],
+      "answer": "utraquiștii moderați și catolicii boemi",
+      "explanation": "utraquiștii moderați și catolicii boemi este răspunsul corect pentru acest reper. Înfrângerea taboriților radicali a schimbat cursul războaielor husite."
+    },
+    {
+      "id": "medieval-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „allodiu”?",
+      "options": [
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "o colecție de afirmații despre prerogativele papale din epoca gregoriană",
+        "o concesiune de pământ sau venit pentru folosință și serviciu",
+        "un pământ deținut liber, fără obligația de a fi ținut de la un senior"
+      ],
+      "answer": "un pământ deținut liber, fără obligația de a fi ținut de la un senior",
+      "explanation": "„allodiu” desemnează un pământ deținut liber, fără obligația de a fi ținut de la un senior. Forma exactă a proprietății libere varia regional."
+    },
+    {
+      "id": "medieval-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „allodiu”?",
+      "options": [
+        "Simonia a fost condamnată repetat de reformatorii Bisericii",
+        "Allodiul se deosebea de feud prin absența unei dependențe feudale asupra titlului",
+        "Assize-urile au contribuit la dezvoltarea justiției regale și a common law",
+        "Commenda împărțea riscul și profitul între investitor și negustor"
+      ],
+      "answer": "Allodiul se deosebea de feud prin absența unei dependențe feudale asupra titlului",
+      "explanation": "În practică, allodiul se deosebea de feud prin absența unei dependențe feudale asupra titlului. Forma exactă a proprietății libere varia regional."
+    },
+    {
+      "id": "medieval-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „beneficium”?",
+      "options": [
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "o concesiune de pământ sau venit pentru folosință și serviciu",
+        "ideea transferului legitim al autorității imperiale între imperii",
+        "dreptul seniorului de a administra moștenirea unui vasal minor"
+      ],
+      "answer": "o concesiune de pământ sau venit pentru folosință și serviciu",
+      "explanation": "„beneficium” desemnează o concesiune de pământ sau venit pentru folosință și serviciu. Instituția s-a dezvoltat în lumea francă timpurie."
+    },
+    {
+      "id": "medieval-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „beneficium”?",
+      "options": [
+        "Textul exprima o concepție puternică despre autoritatea papei",
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Conceptul a susținut dezvoltarea monarhiei papale medievale",
+        "Beneficium-ul este adesea analizat ca precursor al feudului"
+      ],
+      "answer": "Beneficium-ul este adesea analizat ca precursor al feudului",
+      "explanation": "În practică, beneficium-ul este adesea analizat ca precursor al feudului. Instituția s-a dezvoltat în lumea francă timpurie. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „plenitudo potestatis”?",
+      "options": [
+        "o deplasare periodică a judecătorilor regali prin comitatele Angliei",
+        "ideea plenitudinii autorității papale",
+        "un pământ deținut liber, fără obligația de a fi ținut de la un senior",
+        "cumpărarea sau vânzarea funcțiilor și bunurilor spirituale"
+      ],
+      "answer": "ideea plenitudinii autorității papale",
+      "explanation": "„plenitudo potestatis” desemnează ideea plenitudinii autorității papale. A fost invocat în conflictele dintre papalitate și puterile seculare. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „plenitudo potestatis”?",
+      "options": [
+        "Conceptul a susținut dezvoltarea monarhiei papale medievale",
+        "Beneficium-ul este adesea analizat ca precursor al feudului",
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Commenda împărțea riscul și profitul între investitor și negustor"
+      ],
+      "answer": "Conceptul a susținut dezvoltarea monarhiei papale medievale",
+      "explanation": "În practică, conceptul a susținut dezvoltarea monarhiei papale medievale. A fost invocat în conflictele dintre papalitate și puterile seculare."
+    },
+    {
+      "id": "medieval-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „translatio imperii”?",
+      "options": [
+        "un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă",
+        "cumpărarea sau vânzarea funcțiilor și bunurilor spirituale",
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "ideea transferului legitim al autorității imperiale între imperii"
+      ],
+      "answer": "ideea transferului legitim al autorității imperiale între imperii",
+      "explanation": "„translatio imperii” desemnează ideea transferului legitim al autorității imperiale între imperii. A fost folosit în gândirea politică medievală."
+    },
+    {
+      "id": "medieval-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „translatio imperii”?",
+      "options": [
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Scutagiul permitea coroanei engleze să transforme obligația militară în venit",
+        "Beneficium-ul este adesea analizat ca precursor al feudului",
+        "Conceptul justifica simbolic continuitatea Romei în noi imperii"
+      ],
+      "answer": "Conceptul justifica simbolic continuitatea Romei în noi imperii",
+      "explanation": "În practică, conceptul justifica simbolic continuitatea Romei în noi imperii. A fost folosit în gândirea politică medievală. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    },
+    {
+      "id": "medieval-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „Dictatus Papae”?",
+      "options": [
+        "ideea transferului legitim al autorității imperiale între imperii",
+        "o colecție de afirmații despre prerogativele papale din epoca gregoriană",
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică",
+        "un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă"
+      ],
+      "answer": "o colecție de afirmații despre prerogativele papale din epoca gregoriană",
+      "explanation": "„Dictatus Papae” desemnează o colecție de afirmații despre prerogativele papale din epoca gregoriană. Este asociat cu reforma lui Grigore al VII-lea."
+    },
+    {
+      "id": "medieval-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „Dictatus Papae”?",
+      "options": [
+        "Privilegiul concentra comerțul și taxele în centre favorizate",
+        "Textul exprima o concepție puternică despre autoritatea papei",
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Mortmain-ul reducea posibilitatea revenirii feudului prin succesiune"
+      ],
+      "answer": "Textul exprima o concepție puternică despre autoritatea papei",
+      "explanation": "În practică, textul exprima o concepție puternică despre autoritatea papei. Este asociat cu reforma lui Grigore al VII-lea."
+    },
+    {
+      "id": "medieval-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „scutagiu”?",
+      "options": [
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "o colecție de afirmații despre prerogativele papale din epoca gregoriană",
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică",
+        "o plată în bani în locul serviciului militar feudal"
+      ],
+      "answer": "o plată în bani în locul serviciului militar feudal",
+      "explanation": "„scutagiu” desemnează o plată în bani în locul serviciului militar feudal. Monarhul putea folosi banii pentru alte forme de recrutare."
+    },
+    {
+      "id": "medieval-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „scutagiu”?",
+      "options": [
+        "Scutagiul permitea coroanei engleze să transforme obligația militară în venit",
+        "Seniorul controla temporar veniturile până la majoratul moștenitorului",
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Privilegiul concentra comerțul și taxele în centre favorizate"
+      ],
+      "answer": "Scutagiul permitea coroanei engleze să transforme obligația militară în venit",
+      "explanation": "În practică, scutagiul permitea coroanei engleze să transforme obligația militară în venit. Monarhul putea folosi banii pentru alte forme de recrutare."
+    },
+    {
+      "id": "medieval-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „wardship feudal”?",
+      "options": [
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "ideea plenitudinii autorității papale",
+        "dreptul seniorului de a administra moștenirea unui vasal minor",
+        "obligația negustorilor de a opri și oferi mărfurile spre vânzare într-un anumit oraș"
+      ],
+      "answer": "dreptul seniorului de a administra moștenirea unui vasal minor",
+      "explanation": "„wardship feudal” desemnează dreptul seniorului de a administra moștenirea unui vasal minor. Instituția putea deveni o sursă importantă de venit."
+    },
+    {
+      "id": "medieval-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „wardship feudal”?",
+      "options": [
+        "Conceptul a susținut dezvoltarea monarhiei papale medievale",
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Seniorul controla temporar veniturile până la majoratul moștenitorului",
+        "Commenda împărțea riscul și profitul între investitor și negustor"
+      ],
+      "answer": "Seniorul controla temporar veniturile până la majoratul moștenitorului",
+      "explanation": "În practică, seniorul controla temporar veniturile până la majoratul moștenitorului. Instituția putea deveni o sursă importantă de venit."
+    },
+    {
+      "id": "medieval-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „escheat”?",
+      "options": [
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică",
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă"
+      ],
+      "answer": "revenirea unui feud sau pământ la senior în anumite condiții",
+      "explanation": "„escheat” desemnează revenirea unui feud sau pământ la senior în anumite condiții. Era o componentă a drepturilor feudale de proprietate."
+    },
+    {
+      "id": "medieval-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „escheat”?",
+      "options": [
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Beneficium-ul este adesea analizat ca precursor al feudului",
+        "Privilegiul concentra comerțul și taxele în centre favorizate"
+      ],
+      "answer": "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+      "explanation": "În practică, escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave. Era o componentă a drepturilor feudale de proprietate."
+    },
+    {
+      "id": "medieval-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „mortmain”?",
+      "options": [
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "dreptul seniorului de a administra moștenirea unui vasal minor",
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică"
+      ],
+      "answer": "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică",
+      "explanation": "„mortmain” desemnează deținerea permanentă a pământului de către o corporație, mai ales ecleziastică. Monarhii au încercat uneori să limiteze astfel de transferuri către Biserică."
+    },
+    {
+      "id": "medieval-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „mortmain”?",
+      "options": [
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Mortmain-ul reducea posibilitatea revenirii feudului prin succesiune",
+        "Textul exprima o concepție puternică despre autoritatea papei",
+        "Assize-urile au contribuit la dezvoltarea justiției regale și a common law"
+      ],
+      "answer": "Mortmain-ul reducea posibilitatea revenirii feudului prin succesiune",
+      "explanation": "În practică, mortmain-ul reducea posibilitatea revenirii feudului prin succesiune. Monarhii au încercat uneori să limiteze astfel de transferuri către Biserică."
+    },
+    {
+      "id": "medieval-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „simonie”?",
+      "options": [
+        "cumpărarea sau vânzarea funcțiilor și bunurilor spirituale",
+        "ideea transferului legitim al autorității imperiale între imperii",
+        "ideea plenitudinii autorității papale",
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică"
+      ],
+      "answer": "cumpărarea sau vânzarea funcțiilor și bunurilor spirituale",
+      "explanation": "„simonie” desemnează cumpărarea sau vânzarea funcțiilor și bunurilor spirituale. Lupta împotriva ei a fost importantă în reforma ecleziastică medievală."
+    },
+    {
+      "id": "medieval-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „simonie”?",
+      "options": [
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Simonia a fost condamnată repetat de reformatorii Bisericii",
+        "Privilegiul concentra comerțul și taxele în centre favorizate"
+      ],
+      "answer": "Simonia a fost condamnată repetat de reformatorii Bisericii",
+      "explanation": "În practică, simonia a fost condamnată repetat de reformatorii Bisericii. Lupta împotriva ei a fost importantă în reforma ecleziastică medievală."
+    },
+    {
+      "id": "medieval-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „commenda”?",
+      "options": [
+        "ideea plenitudinii autorității papale",
+        "un mare centru comercial extern al negustorilor hanseatici",
+        "un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă",
+        "o plată în bani în locul serviciului militar feudal"
+      ],
+      "answer": "un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă",
+      "explanation": "„commenda” desemnează un contract comercial prin care un investitor finanța o călătorie sau afacere maritimă. A fost utilizată intens în comerțul mediteranean."
+    },
+    {
+      "id": "medieval-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „commenda”?",
+      "options": [
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Simonia a fost condamnată repetat de reformatorii Bisericii",
+        "Allodiul se deosebea de feud prin absența unei dependențe feudale asupra titlului",
+        "Commenda împărțea riscul și profitul între investitor și negustor"
+      ],
+      "answer": "Commenda împărțea riscul și profitul între investitor și negustor",
+      "explanation": "În practică, commenda împărțea riscul și profitul între investitor și negustor. A fost utilizată intens în comerțul mediteranean."
+    },
+    {
+      "id": "medieval-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „kontor hanseatic”?",
+      "options": [
+        "un mare centru comercial extern al negustorilor hanseatici",
+        "dreptul seniorului de a administra moștenirea unui vasal minor",
+        "deținerea permanentă a pământului de către o corporație, mai ales ecleziastică",
+        "o procedură sau reglementare juridică regală în Anglia medievală"
+      ],
+      "answer": "un mare centru comercial extern al negustorilor hanseatici",
+      "explanation": "„kontor hanseatic” desemnează un mare centru comercial extern al negustorilor hanseatici. Exemple importante au existat la Londra, Bruges, Bergen și Novgorod."
+    },
+    {
+      "id": "medieval-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „kontor hanseatic”?",
+      "options": [
+        "Scutagiul permitea coroanei engleze să transforme obligația militară în venit",
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Seniorul controla temporar veniturile până la majoratul moștenitorului"
+      ],
+      "answer": "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+      "explanation": "În practică, kontorul oferea depozite, reguli și reprezentare comunității de negustori. Exemple importante au existat la Londra, Bruges, Bergen și Novgorod."
+    },
+    {
+      "id": "medieval-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „drept de etapă”?",
+      "options": [
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "un pământ deținut liber, fără obligația de a fi ținut de la un senior",
+        "revenirea unui feud sau pământ la senior în anumite condiții",
+        "obligația negustorilor de a opri și oferi mărfurile spre vânzare într-un anumit oraș"
+      ],
+      "answer": "obligația negustorilor de a opri și oferi mărfurile spre vânzare într-un anumit oraș",
+      "explanation": "„drept de etapă” desemnează obligația negustorilor de a opri și oferi mărfurile spre vânzare într-un anumit oraș. În spațiul german este cunoscut prin termenul Stapelrecht."
+    },
+    {
+      "id": "medieval-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „drept de etapă”?",
+      "options": [
+        "Commenda împărțea riscul și profitul între investitor și negustor",
+        "Privilegiul concentra comerțul și taxele în centre favorizate",
+        "Mortmain-ul reducea posibilitatea revenirii feudului prin succesiune",
+        "Beneficium-ul este adesea analizat ca precursor al feudului"
+      ],
+      "answer": "Privilegiul concentra comerțul și taxele în centre favorizate",
+      "explanation": "În practică, privilegiul concentra comerțul și taxele în centre favorizate. În spațiul german este cunoscut prin termenul Stapelrecht."
+    },
+    {
+      "id": "medieval-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „assize”?",
+      "options": [
+        "obligația negustorilor de a opri și oferi mărfurile spre vânzare într-un anumit oraș",
+        "ideea plenitudinii autorității papale",
+        "o procedură sau reglementare juridică regală în Anglia medievală",
+        "un mare centru comercial extern al negustorilor hanseatici"
+      ],
+      "answer": "o procedură sau reglementare juridică regală în Anglia medievală",
+      "explanation": "„assize” desemnează o procedură sau reglementare juridică regală în anglia medievală. Termenul putea desemna atât norme, cât și sesiuni judiciare."
+    },
+    {
+      "id": "medieval-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „assize”?",
+      "options": [
+        "Assize-urile au contribuit la dezvoltarea justiției regale și a common law",
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Escheat-ul putea apărea la lipsa moștenitorilor sau pentru delicte grave",
+        "Allodiul se deosebea de feud prin absența unei dependențe feudale asupra titlului"
+      ],
+      "answer": "Assize-urile au contribuit la dezvoltarea justiției regale și a common law",
+      "explanation": "În practică, assize-urile au contribuit la dezvoltarea justiției regale și a common law. Termenul putea desemna atât norme, cât și sesiuni judiciare."
+    },
+    {
+      "id": "medieval-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce descrie termenul medieval „eyre”?",
+      "options": [
+        "o plată în bani în locul serviciului militar feudal",
+        "o deplasare periodică a judecătorilor regali prin comitatele Angliei",
+        "un pământ deținut liber, fără obligația de a fi ținut de la un senior",
+        "un mare centru comercial extern al negustorilor hanseatici"
+      ],
+      "answer": "o deplasare periodică a judecătorilor regali prin comitatele Angliei",
+      "explanation": "„eyre” desemnează o deplasare periodică a judecătorilor regali prin comitatele angliei. Judecătorii audiau cauze și verificau administrația locală."
+    },
+    {
+      "id": "medieval-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Care afirmație este corectă despre „eyre”?",
+      "options": [
+        "Kontorul oferea depozite, reguli și reprezentare comunității de negustori",
+        "Assize-urile au contribuit la dezvoltarea justiției regale și a common law",
+        "Eyre-ul extindea prezența justiției regale în teritoriu",
+        "Mortmain-ul reducea posibilitatea revenirii feudului prin succesiune"
+      ],
+      "answer": "Eyre-ul extindea prezența justiției regale în teritoriu",
+      "explanation": "În practică, eyre-ul extindea prezența justiției regale în teritoriu. Judecătorii audiau cauze și verificau administrația locală. Informația trebuie înțeleasă în contextul instituțiilor, conflictelor și transformărilor specifice lumii medievale."
+    }
+  ]
+}

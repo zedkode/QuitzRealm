@@ -1,0 +1,708 @@
+{
+  "id": "music",
+  "name": "Music",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "music-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a compus sau a interpretat creația Anotimpurile?",
+      "options": [
+        "Ludwig van Beethoven",
+        "Piotr Ilici Ceaikovski",
+        "George Enescu",
+        "Antonio Vivaldi"
+      ],
+      "answer": "Antonio Vivaldi",
+      "explanation": "Pentru „Anotimpurile”, răspunsul corect este „Antonio Vivaldi”."
+    },
+    {
+      "id": "music-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce gen muzical este asociată în principal creația Anotimpurile?",
+      "options": [
+        "Jazz simfonic",
+        "Jazz",
+        "Muzică barocă",
+        "Muzică orchestrală"
+      ],
+      "answer": "Muzică barocă",
+      "explanation": "Pentru „Anotimpurile”, răspunsul corect este „Muzică barocă”."
+    },
+    {
+      "id": "music-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus sau a interpretat creația Mica serenadă?",
+      "options": [
+        "George Gershwin",
+        "Wolfgang Amadeus Mozart",
+        "George Enescu",
+        "Maurice Ravel"
+      ],
+      "answer": "Wolfgang Amadeus Mozart",
+      "explanation": "Pentru „Mica serenadă”, răspunsul corect este „Wolfgang Amadeus Mozart”."
+    },
+    {
+      "id": "music-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce gen muzical este asociată în principal creația Mica serenadă?",
+      "options": [
+        "Muzică clasică",
+        "Jazz",
+        "Jazz vocal",
+        "Rock and roll"
+      ],
+      "answer": "Muzică clasică",
+      "explanation": "Pentru „Mica serenadă”, răspunsul corect este „Muzică clasică”."
+    },
+    {
+      "id": "music-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus sau a interpretat creația Simfonia a IX-a?",
+      "options": [
+        "George Gershwin",
+        "Duke Ellington",
+        "Louis Armstrong",
+        "Ludwig van Beethoven"
+      ],
+      "answer": "Ludwig van Beethoven",
+      "explanation": "Pentru „Simfonia a IX-a”, răspunsul corect este „Ludwig van Beethoven”."
+    },
+    {
+      "id": "music-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce gen muzical este asociată în principal creația Simfonia a IX-a?",
+      "options": [
+        "Soul",
+        "Rock psihedelic",
+        "Muzică clasică",
+        "Rock and roll"
+      ],
+      "answer": "Muzică clasică",
+      "explanation": "Pentru „Simfonia a IX-a”, răspunsul corect este „Muzică clasică”."
+    },
+    {
+      "id": "music-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus sau a interpretat creația Lacul lebedelor?",
+      "options": [
+        "Elvis Presley",
+        "Piotr Ilici Ceaikovski",
+        "Louis Armstrong",
+        "Chuck Berry"
+      ],
+      "answer": "Piotr Ilici Ceaikovski",
+      "explanation": "Pentru „Lacul lebedelor”, răspunsul corect este „Piotr Ilici Ceaikovski”."
+    },
+    {
+      "id": "music-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce gen muzical este asociată în principal creația Lacul lebedelor?",
+      "options": [
+        "Balet",
+        "Rock psihedelic",
+        "Rock",
+        "Funk"
+      ],
+      "answer": "Balet",
+      "explanation": "Pentru „Lacul lebedelor”, răspunsul corect este „Balet”."
+    },
+    {
+      "id": "music-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus sau a interpretat creația Rapsodia Română nr. 1?",
+      "options": [
+        "Elvis Presley",
+        "Aretha Franklin",
+        "The Jimi Hendrix Experience",
+        "George Enescu"
+      ],
+      "answer": "George Enescu",
+      "explanation": "Pentru „Rapsodia Română nr. 1”, răspunsul corect este „George Enescu”."
+    },
+    {
+      "id": "music-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce gen muzical este asociată în principal creația Rapsodia Română nr. 1?",
+      "options": [
+        "Disco",
+        "Pop",
+        "Muzică orchestrală",
+        "Funk"
+      ],
+      "answer": "Muzică orchestrală",
+      "explanation": "Pentru „Rapsodia Română nr. 1”, răspunsul corect este „Muzică orchestrală”."
+    },
+    {
+      "id": "music-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a compus sau a interpretat creația Boléro?",
+      "options": [
+        "Stevie Wonder",
+        "Maurice Ravel",
+        "The Jimi Hendrix Experience",
+        "Queen"
+      ],
+      "answer": "Maurice Ravel",
+      "explanation": "Pentru „Boléro”, răspunsul corect este „Maurice Ravel”."
+    },
+    {
+      "id": "music-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce gen muzical este asociată în principal creația Boléro?",
+      "options": [
+        "Muzică orchestrală",
+        "Pop",
+        "Grunge",
+        "Heavy metal"
+      ],
+      "answer": "Muzică orchestrală",
+      "explanation": "Pentru „Boléro”, răspunsul corect este „Muzică orchestrală”."
+    },
+    {
+      "id": "music-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus sau a interpretat creația Rhapsody in Blue?",
+      "options": [
+        "Stevie Wonder",
+        "ABBA",
+        "Michael Jackson",
+        "George Gershwin"
+      ],
+      "answer": "George Gershwin",
+      "explanation": "Pentru „Rhapsody in Blue”, răspunsul corect este „George Gershwin”."
+    },
+    {
+      "id": "music-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce gen muzical este asociată în principal creația Rhapsody in Blue?",
+      "options": [
+        "R&B",
+        "Hip-hop",
+        "Jazz simfonic",
+        "Heavy metal"
+      ],
+      "answer": "Jazz simfonic",
+      "explanation": "Pentru „Rhapsody in Blue”, răspunsul corect este „Jazz simfonic”."
+    },
+    {
+      "id": "music-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus sau a interpretat creația Take the A Train?",
+      "options": [
+        "Nirvana",
+        "Duke Ellington",
+        "Michael Jackson",
+        "Madonna"
+      ],
+      "answer": "Duke Ellington",
+      "explanation": "Pentru „Take the A Train”, răspunsul corect este „Duke Ellington”."
+    },
+    {
+      "id": "music-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce gen muzical este asociată în principal creația Take the A Train?",
+      "options": [
+        "Jazz",
+        "Hip-hop",
+        "Pop soul",
+        "Synth-pop"
+      ],
+      "answer": "Jazz",
+      "explanation": "Pentru „Take the A Train”, răspunsul corect este „Jazz”."
+    },
+    {
+      "id": "music-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus sau a interpretat creația What a Wonderful World?",
+      "options": [
+        "Nirvana",
+        "Metallica",
+        "TLC",
+        "Louis Armstrong"
+      ],
+      "answer": "Louis Armstrong",
+      "explanation": "Pentru „What a Wonderful World”, răspunsul corect este „Louis Armstrong”."
+    },
+    {
+      "id": "music-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce gen muzical este asociată în principal creația What a Wonderful World?",
+      "options": [
+        "Muzică barocă",
+        "Muzică clasică",
+        "Jazz vocal",
+        "Synth-pop"
+      ],
+      "answer": "Jazz vocal",
+      "explanation": "Pentru „What a Wonderful World”, răspunsul corect este „Jazz vocal”."
+    },
+    {
+      "id": "music-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus sau a interpretat creația Johnny B. Goode?",
+      "options": [
+        "Beyoncé",
+        "Chuck Berry",
+        "TLC",
+        "Eminem"
+      ],
+      "answer": "Chuck Berry",
+      "explanation": "Pentru „Johnny B. Goode”, răspunsul corect este „Chuck Berry”."
+    },
+    {
+      "id": "music-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce gen muzical este asociată în principal creația Johnny B. Goode?",
+      "options": [
+        "Rock and roll",
+        "Muzică clasică",
+        "Balet",
+        "Muzică orchestrală"
+      ],
+      "answer": "Rock and roll",
+      "explanation": "Pentru „Johnny B. Goode”, răspunsul corect este „Rock and roll”."
+    },
+    {
+      "id": "music-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a compus sau a interpretat creația Jailhouse Rock?",
+      "options": [
+        "Beyoncé",
+        "Adele",
+        "The Weeknd",
+        "Elvis Presley"
+      ],
+      "answer": "Elvis Presley",
+      "explanation": "Pentru „Jailhouse Rock”, răspunsul corect este „Elvis Presley”."
+    },
+    {
+      "id": "music-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce gen muzical este asociată în principal creația Jailhouse Rock?",
+      "options": [
+        "Jazz simfonic",
+        "Jazz",
+        "Rock and roll",
+        "Muzică orchestrală"
+      ],
+      "answer": "Rock and roll",
+      "explanation": "Pentru „Jailhouse Rock”, răspunsul corect este „Rock and roll”."
+    },
+    {
+      "id": "music-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus sau a interpretat creația Respect?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Aretha Franklin",
+        "The Weeknd",
+        "Antonio Vivaldi"
+      ],
+      "answer": "Aretha Franklin",
+      "explanation": "Pentru „Respect”, răspunsul corect este „Aretha Franklin”."
+    },
+    {
+      "id": "music-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce gen muzical este asociată în principal creația Respect?",
+      "options": [
+        "Soul",
+        "Jazz",
+        "Jazz vocal",
+        "Rock and roll"
+      ],
+      "answer": "Soul",
+      "explanation": "Pentru „Respect”, răspunsul corect este „Soul”."
+    },
+    {
+      "id": "music-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus sau a interpretat creația Purple Haze?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Piotr Ilici Ceaikovski",
+        "The Jimi Hendrix Experience"
+      ],
+      "answer": "The Jimi Hendrix Experience",
+      "explanation": "Pentru „Purple Haze”, răspunsul corect este „The Jimi Hendrix Experience”."
+    },
+    {
+      "id": "music-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce gen muzical este asociată în principal creația Purple Haze?",
+      "options": [
+        "Soul",
+        "Rock",
+        "Rock psihedelic",
+        "Rock and roll"
+      ],
+      "answer": "Rock psihedelic",
+      "explanation": "Pentru „Purple Haze”, răspunsul corect este „Rock psihedelic”."
+    },
+    {
+      "id": "music-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus sau a interpretat creația Bohemian Rhapsody?",
+      "options": [
+        "Maurice Ravel",
+        "Queen",
+        "Piotr Ilici Ceaikovski",
+        "George Enescu"
+      ],
+      "answer": "Queen",
+      "explanation": "Pentru „Bohemian Rhapsody”, răspunsul corect este „Queen”."
+    },
+    {
+      "id": "music-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce gen muzical este asociată în principal creația Bohemian Rhapsody?",
+      "options": [
+        "Rock",
+        "Rock psihedelic",
+        "Funk",
+        "Disco"
+      ],
+      "answer": "Rock",
+      "explanation": "Pentru „Bohemian Rhapsody”, răspunsul corect este „Rock”."
+    },
+    {
+      "id": "music-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus sau a interpretat creația Superstition?",
+      "options": [
+        "Maurice Ravel",
+        "George Gershwin",
+        "Duke Ellington",
+        "Stevie Wonder"
+      ],
+      "answer": "Stevie Wonder",
+      "explanation": "Pentru „Superstition”, răspunsul corect este „Stevie Wonder”."
+    },
+    {
+      "id": "music-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce gen muzical este asociată în principal creația Superstition?",
+      "options": [
+        "Pop",
+        "Grunge",
+        "Funk",
+        "Disco"
+      ],
+      "answer": "Funk",
+      "explanation": "Pentru „Superstition”, răspunsul corect este „Funk”."
+    },
+    {
+      "id": "music-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a compus sau a interpretat creația Dancing Queen?",
+      "options": [
+        "Chuck Berry",
+        "ABBA",
+        "Duke Ellington",
+        "Louis Armstrong"
+      ],
+      "answer": "ABBA",
+      "explanation": "Pentru „Dancing Queen”, răspunsul corect este „ABBA”."
+    },
+    {
+      "id": "music-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce gen muzical este asociată în principal creația Dancing Queen?",
+      "options": [
+        "Disco",
+        "Grunge",
+        "Heavy metal",
+        "R&B"
+      ],
+      "answer": "Disco",
+      "explanation": "Pentru „Dancing Queen”, răspunsul corect este „Disco”."
+    },
+    {
+      "id": "music-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus sau a interpretat creația Billie Jean?",
+      "options": [
+        "Chuck Berry",
+        "Elvis Presley",
+        "Aretha Franklin",
+        "Michael Jackson"
+      ],
+      "answer": "Michael Jackson",
+      "explanation": "Pentru „Billie Jean”, răspunsul corect este „Michael Jackson”."
+    },
+    {
+      "id": "music-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce gen muzical este asociată în principal creația Billie Jean?",
+      "options": [
+        "Hip-hop",
+        "Pop soul",
+        "Pop",
+        "R&B"
+      ],
+      "answer": "Pop",
+      "explanation": "Pentru „Billie Jean”, răspunsul corect este „Pop”."
+    },
+    {
+      "id": "music-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus sau a interpretat creația Like a Prayer?",
+      "options": [
+        "Queen",
+        "Madonna",
+        "Aretha Franklin",
+        "The Jimi Hendrix Experience"
+      ],
+      "answer": "Madonna",
+      "explanation": "Pentru „Like a Prayer”, răspunsul corect este „Madonna”."
+    },
+    {
+      "id": "music-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce gen muzical este asociată în principal creația Like a Prayer?",
+      "options": [
+        "Pop",
+        "Pop soul",
+        "Synth-pop",
+        "Muzică barocă"
+      ],
+      "answer": "Pop",
+      "explanation": "Pentru „Like a Prayer”, răspunsul corect este „Pop”."
+    },
+    {
+      "id": "music-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus sau a interpretat creația Smells Like Teen Spirit?",
+      "options": [
+        "Queen",
+        "Stevie Wonder",
+        "ABBA",
+        "Nirvana"
+      ],
+      "answer": "Nirvana",
+      "explanation": "Pentru „Smells Like Teen Spirit”, răspunsul corect este „Nirvana”."
+    },
+    {
+      "id": "music-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce gen muzical este asociată în principal creația Smells Like Teen Spirit?",
+      "options": [
+        "Muzică clasică",
+        "Balet",
+        "Grunge",
+        "Muzică barocă"
+      ],
+      "answer": "Grunge",
+      "explanation": "Pentru „Smells Like Teen Spirit”, răspunsul corect este „Grunge”."
+    },
+    {
+      "id": "music-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus sau a interpretat creația Nothing Else Matters?",
+      "options": [
+        "Madonna",
+        "Metallica",
+        "ABBA",
+        "Michael Jackson"
+      ],
+      "answer": "Metallica",
+      "explanation": "Pentru „Nothing Else Matters”, răspunsul corect este „Metallica”."
+    },
+    {
+      "id": "music-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce gen muzical este asociată în principal creația Nothing Else Matters?",
+      "options": [
+        "Heavy metal",
+        "Balet",
+        "Muzică orchestrală",
+        "Jazz simfonic"
+      ],
+      "answer": "Heavy metal",
+      "explanation": "Pentru „Nothing Else Matters”, răspunsul corect este „Heavy metal”."
+    },
+    {
+      "id": "music-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine a compus sau a interpretat creația No Scrubs?",
+      "options": [
+        "Madonna",
+        "Nirvana",
+        "Metallica",
+        "TLC"
+      ],
+      "answer": "TLC",
+      "explanation": "Pentru „No Scrubs”, răspunsul corect este „TLC”."
+    },
+    {
+      "id": "music-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cu ce gen muzical este asociată în principal creația No Scrubs?",
+      "options": [
+        "Jazz",
+        "Jazz vocal",
+        "R&B",
+        "Jazz simfonic"
+      ],
+      "answer": "R&B",
+      "explanation": "Pentru „No Scrubs”, răspunsul corect este „R&B”."
+    },
+    {
+      "id": "music-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus sau a interpretat creația Lose Yourself?",
+      "options": [
+        "Beyoncé",
+        "Eminem",
+        "Metallica",
+        "TLC"
+      ],
+      "answer": "Eminem",
+      "explanation": "Pentru „Lose Yourself”, răspunsul corect este „Eminem”."
+    },
+    {
+      "id": "music-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce gen muzical este asociată în principal creația Lose Yourself?",
+      "options": [
+        "Hip-hop",
+        "Jazz vocal",
+        "Rock and roll",
+        "Soul"
+      ],
+      "answer": "Hip-hop",
+      "explanation": "Pentru „Lose Yourself”, răspunsul corect este „Hip-hop”."
+    },
+    {
+      "id": "music-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus sau a interpretat creația Crazy in Love?",
+      "options": [
+        "Eminem",
+        "Adele",
+        "The Weeknd",
+        "Beyoncé"
+      ],
+      "answer": "Beyoncé",
+      "explanation": "Pentru „Crazy in Love”, răspunsul corect este „Beyoncé”."
+    },
+    {
+      "id": "music-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cu ce gen muzical este asociată în principal creația Crazy in Love?",
+      "options": [
+        "Rock psihedelic",
+        "Rock",
+        "R&B",
+        "Soul"
+      ],
+      "answer": "R&B",
+      "explanation": "Pentru „Crazy in Love”, răspunsul corect este „R&B”."
+    },
+    {
+      "id": "music-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus sau a interpretat creația Rolling in the Deep?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Adele",
+        "The Weeknd",
+        "Antonio Vivaldi"
+      ],
+      "answer": "Adele",
+      "explanation": "Pentru „Rolling in the Deep”, răspunsul corect este „Adele”."
+    },
+    {
+      "id": "music-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cu ce gen muzical este asociată în principal creația Rolling in the Deep?",
+      "options": [
+        "Pop soul",
+        "Rock",
+        "Funk",
+        "Disco"
+      ],
+      "answer": "Pop soul",
+      "explanation": "Pentru „Rolling in the Deep”, răspunsul corect este „Pop soul”."
+    },
+    {
+      "id": "music-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus sau a interpretat creația Blinding Lights?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Piotr Ilici Ceaikovski",
+        "The Weeknd"
+      ],
+      "answer": "The Weeknd",
+      "explanation": "Pentru „Blinding Lights”, răspunsul corect este „The Weeknd”."
+    },
+    {
+      "id": "music-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cu ce gen muzical este asociată în principal creația Blinding Lights?",
+      "options": [
+        "Pop",
+        "Grunge",
+        "Synth-pop",
+        "Disco"
+      ],
+      "answer": "Synth-pop",
+      "explanation": "Pentru „Blinding Lights”, răspunsul corect este „Synth-pop”."
+    }
+  ]
+}

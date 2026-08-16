@@ -1,0 +1,708 @@
+{
+  "id": "technology",
+  "name": "Technology",
+  "source": "ai",
+  "reviewStatus": "pending",
+  "questions": [
+    {
+      "id": "technology-001",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă abrevierea CPU?",
+      "options": [
+        "Random Access Memory",
+        "Read-Only Memory",
+        "Solid-State Drive",
+        "Central Processing Unit"
+      ],
+      "answer": "Central Processing Unit",
+      "explanation": "Pentru „CPU”, răspunsul corect este „Central Processing Unit”."
+    },
+    {
+      "id": "technology-002",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce domeniu este folosită în principal abrevierea CPU?",
+      "options": [
+        "Stocare de date",
+        "Stocare magnetică",
+        "Procesoare",
+        "Stocare firmware"
+      ],
+      "answer": "Procesoare",
+      "explanation": "Pentru „CPU”, răspunsul corect este „Procesoare”."
+    },
+    {
+      "id": "technology-003",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă abrevierea GPU?",
+      "options": [
+        "Universal Serial Bus",
+        "Graphics Processing Unit",
+        "Solid-State Drive",
+        "Hard Disk Drive"
+      ],
+      "answer": "Graphics Processing Unit",
+      "explanation": "Pentru „GPU”, răspunsul corect este „Graphics Processing Unit”."
+    },
+    {
+      "id": "technology-004",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce domeniu este folosită în principal abrevierea GPU?",
+      "options": [
+        "Grafică digitală",
+        "Stocare magnetică",
+        "Conectarea perifericelor",
+        "Semnal audio-video"
+      ],
+      "answer": "Grafică digitală",
+      "explanation": "Pentru „GPU”, răspunsul corect este „Grafică digitală”."
+    },
+    {
+      "id": "technology-005",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă abrevierea RAM?",
+      "options": [
+        "Universal Serial Bus",
+        "High-Definition Multimedia Interface",
+        "Hypertext Transfer Protocol",
+        "Random Access Memory"
+      ],
+      "answer": "Random Access Memory",
+      "explanation": "Pentru „RAM”, răspunsul corect este „Random Access Memory”."
+    },
+    {
+      "id": "technology-006",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce domeniu este folosită în principal abrevierea RAM?",
+      "options": [
+        "Web",
+        "Web securizat",
+        "Memorie volatilă",
+        "Semnal audio-video"
+      ],
+      "answer": "Memorie volatilă",
+      "explanation": "Pentru „RAM”, răspunsul corect este „Memorie volatilă”."
+    },
+    {
+      "id": "technology-007",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă abrevierea ROM?",
+      "options": [
+        "Uniform Resource Locator",
+        "Read-Only Memory",
+        "Hypertext Transfer Protocol",
+        "Hypertext Transfer Protocol Secure"
+      ],
+      "answer": "Read-Only Memory",
+      "explanation": "Pentru „ROM”, răspunsul corect este „Read-Only Memory”."
+    },
+    {
+      "id": "technology-008",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce domeniu este folosită în principal abrevierea ROM?",
+      "options": [
+        "Stocare firmware",
+        "Web securizat",
+        "Adresarea resurselor web",
+        "Structura paginilor web"
+      ],
+      "answer": "Stocare firmware",
+      "explanation": "Pentru „ROM”, răspunsul corect este „Stocare firmware”."
+    },
+    {
+      "id": "technology-009",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă abrevierea SSD?",
+      "options": [
+        "Uniform Resource Locator",
+        "HyperText Markup Language",
+        "Cascading Style Sheets",
+        "Solid-State Drive"
+      ],
+      "answer": "Solid-State Drive",
+      "explanation": "Pentru „SSD”, răspunsul corect este „Solid-State Drive”."
+    },
+    {
+      "id": "technology-010",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce domeniu este folosită în principal abrevierea SSD?",
+      "options": [
+        "Stilizarea paginilor web",
+        "Baze de date",
+        "Stocare de date",
+        "Structura paginilor web"
+      ],
+      "answer": "Stocare de date",
+      "explanation": "Pentru „SSD”, răspunsul corect este „Stocare de date”."
+    },
+    {
+      "id": "technology-011",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă abrevierea HDD?",
+      "options": [
+        "Application Programming Interface",
+        "Hard Disk Drive",
+        "Cascading Style Sheets",
+        "Structured Query Language"
+      ],
+      "answer": "Hard Disk Drive",
+      "explanation": "Pentru „HDD”, răspunsul corect este „Hard Disk Drive”."
+    },
+    {
+      "id": "technology-012",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce domeniu este folosită în principal abrevierea HDD?",
+      "options": [
+        "Stocare magnetică",
+        "Baze de date",
+        "Integrare software",
+        "Rezolvarea numelor de internet"
+      ],
+      "answer": "Stocare magnetică",
+      "explanation": "Pentru „HDD”, răspunsul corect este „Stocare magnetică”."
+    },
+    {
+      "id": "technology-013",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă abrevierea USB?",
+      "options": [
+        "Application Programming Interface",
+        "Domain Name System",
+        "Internet Protocol",
+        "Universal Serial Bus"
+      ],
+      "answer": "Universal Serial Bus",
+      "explanation": "Pentru „USB”, răspunsul corect este „Universal Serial Bus”."
+    },
+    {
+      "id": "technology-014",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce domeniu este folosită în principal abrevierea USB?",
+      "options": [
+        "Adresarea în rețea",
+        "Rețele locale",
+        "Conectarea perifericelor",
+        "Rezolvarea numelor de internet"
+      ],
+      "answer": "Conectarea perifericelor",
+      "explanation": "Pentru „USB”, răspunsul corect este „Conectarea perifericelor”."
+    },
+    {
+      "id": "technology-015",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă abrevierea HDMI?",
+      "options": [
+        "Wide Area Network",
+        "High-Definition Multimedia Interface",
+        "Internet Protocol",
+        "Local Area Network"
+      ],
+      "answer": "High-Definition Multimedia Interface",
+      "explanation": "Pentru „HDMI”, răspunsul corect este „High-Definition Multimedia Interface”."
+    },
+    {
+      "id": "technology-016",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce domeniu este folosită în principal abrevierea HDMI?",
+      "options": [
+        "Semnal audio-video",
+        "Rețele locale",
+        "Rețele extinse",
+        "Tuneluri de rețea"
+      ],
+      "answer": "Semnal audio-video",
+      "explanation": "Pentru „HDMI”, răspunsul corect este „Semnal audio-video”."
+    },
+    {
+      "id": "technology-017",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă abrevierea HTTP?",
+      "options": [
+        "Wide Area Network",
+        "Virtual Private Network",
+        "Global Positioning System",
+        "Hypertext Transfer Protocol"
+      ],
+      "answer": "Hypertext Transfer Protocol",
+      "explanation": "Pentru „HTTP”, răspunsul corect este „Hypertext Transfer Protocol”."
+    },
+    {
+      "id": "technology-018",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce domeniu este folosită în principal abrevierea HTTP?",
+      "options": [
+        "Navigație prin satelit",
+        "Comunicații la distanță mică",
+        "Web",
+        "Tuneluri de rețea"
+      ],
+      "answer": "Web",
+      "explanation": "Pentru „HTTP”, răspunsul corect este „Web”."
+    },
+    {
+      "id": "technology-019",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă abrevierea HTTPS?",
+      "options": [
+        "Quick Response",
+        "Hypertext Transfer Protocol Secure",
+        "Global Positioning System",
+        "Near Field Communication"
+      ],
+      "answer": "Hypertext Transfer Protocol Secure",
+      "explanation": "Pentru „HTTPS”, răspunsul corect este „Hypertext Transfer Protocol Secure”."
+    },
+    {
+      "id": "technology-020",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce domeniu este folosită în principal abrevierea HTTPS?",
+      "options": [
+        "Web securizat",
+        "Comunicații la distanță mică",
+        "Coduri bidimensionale",
+        "Inteligență artificială"
+      ],
+      "answer": "Web securizat",
+      "explanation": "Pentru „HTTPS”, răspunsul corect este „Web securizat”."
+    },
+    {
+      "id": "technology-021",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă abrevierea URL?",
+      "options": [
+        "Quick Response",
+        "Artificial Intelligence",
+        "Internet of Things",
+        "Uniform Resource Locator"
+      ],
+      "answer": "Uniform Resource Locator",
+      "explanation": "Pentru „URL”, răspunsul corect este „Uniform Resource Locator”."
+    },
+    {
+      "id": "technology-022",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce domeniu este folosită în principal abrevierea URL?",
+      "options": [
+        "Dispozitive conectate",
+        "Procesoare",
+        "Adresarea resurselor web",
+        "Inteligență artificială"
+      ],
+      "answer": "Adresarea resurselor web",
+      "explanation": "Pentru „URL”, răspunsul corect este „Adresarea resurselor web”."
+    },
+    {
+      "id": "technology-023",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă abrevierea HTML?",
+      "options": [
+        "Graphics Processing Unit",
+        "HyperText Markup Language",
+        "Internet of Things",
+        "Central Processing Unit"
+      ],
+      "answer": "HyperText Markup Language",
+      "explanation": "Pentru „HTML”, răspunsul corect este „HyperText Markup Language”."
+    },
+    {
+      "id": "technology-024",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce domeniu este folosită în principal abrevierea HTML?",
+      "options": [
+        "Structura paginilor web",
+        "Procesoare",
+        "Grafică digitală",
+        "Memorie volatilă"
+      ],
+      "answer": "Structura paginilor web",
+      "explanation": "Pentru „HTML”, răspunsul corect este „Structura paginilor web”."
+    },
+    {
+      "id": "technology-025",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă abrevierea CSS?",
+      "options": [
+        "Graphics Processing Unit",
+        "Random Access Memory",
+        "Read-Only Memory",
+        "Cascading Style Sheets"
+      ],
+      "answer": "Cascading Style Sheets",
+      "explanation": "Pentru „CSS”, răspunsul corect este „Cascading Style Sheets”."
+    },
+    {
+      "id": "technology-026",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce domeniu este folosită în principal abrevierea CSS?",
+      "options": [
+        "Stocare firmware",
+        "Stocare de date",
+        "Stilizarea paginilor web",
+        "Memorie volatilă"
+      ],
+      "answer": "Stilizarea paginilor web",
+      "explanation": "Pentru „CSS”, răspunsul corect este „Stilizarea paginilor web”."
+    },
+    {
+      "id": "technology-027",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă abrevierea SQL?",
+      "options": [
+        "Hard Disk Drive",
+        "Structured Query Language",
+        "Read-Only Memory",
+        "Solid-State Drive"
+      ],
+      "answer": "Structured Query Language",
+      "explanation": "Pentru „SQL”, răspunsul corect este „Structured Query Language”."
+    },
+    {
+      "id": "technology-028",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce domeniu este folosită în principal abrevierea SQL?",
+      "options": [
+        "Baze de date",
+        "Stocare de date",
+        "Stocare magnetică",
+        "Conectarea perifericelor"
+      ],
+      "answer": "Baze de date",
+      "explanation": "Pentru „SQL”, răspunsul corect este „Baze de date”."
+    },
+    {
+      "id": "technology-029",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă abrevierea API?",
+      "options": [
+        "Hard Disk Drive",
+        "Universal Serial Bus",
+        "High-Definition Multimedia Interface",
+        "Application Programming Interface"
+      ],
+      "answer": "Application Programming Interface",
+      "explanation": "Pentru „API”, răspunsul corect este „Application Programming Interface”."
+    },
+    {
+      "id": "technology-030",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce domeniu este folosită în principal abrevierea API?",
+      "options": [
+        "Semnal audio-video",
+        "Web",
+        "Integrare software",
+        "Conectarea perifericelor"
+      ],
+      "answer": "Integrare software",
+      "explanation": "Pentru „API”, răspunsul corect este „Integrare software”."
+    },
+    {
+      "id": "technology-031",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă abrevierea DNS?",
+      "options": [
+        "Hypertext Transfer Protocol Secure",
+        "Domain Name System",
+        "High-Definition Multimedia Interface",
+        "Hypertext Transfer Protocol"
+      ],
+      "answer": "Domain Name System",
+      "explanation": "Pentru „DNS”, răspunsul corect este „Domain Name System”."
+    },
+    {
+      "id": "technology-032",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce domeniu este folosită în principal abrevierea DNS?",
+      "options": [
+        "Rezolvarea numelor de internet",
+        "Web",
+        "Web securizat",
+        "Adresarea resurselor web"
+      ],
+      "answer": "Rezolvarea numelor de internet",
+      "explanation": "Pentru „DNS”, răspunsul corect este „Rezolvarea numelor de internet”."
+    },
+    {
+      "id": "technology-033",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă abrevierea IP?",
+      "options": [
+        "Hypertext Transfer Protocol Secure",
+        "Uniform Resource Locator",
+        "HyperText Markup Language",
+        "Internet Protocol"
+      ],
+      "answer": "Internet Protocol",
+      "explanation": "Pentru „IP”, răspunsul corect este „Internet Protocol”."
+    },
+    {
+      "id": "technology-034",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce domeniu este folosită în principal abrevierea IP?",
+      "options": [
+        "Structura paginilor web",
+        "Stilizarea paginilor web",
+        "Adresarea în rețea",
+        "Adresarea resurselor web"
+      ],
+      "answer": "Adresarea în rețea",
+      "explanation": "Pentru „IP”, răspunsul corect este „Adresarea în rețea”."
+    },
+    {
+      "id": "technology-035",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă abrevierea LAN?",
+      "options": [
+        "Structured Query Language",
+        "Local Area Network",
+        "HyperText Markup Language",
+        "Cascading Style Sheets"
+      ],
+      "answer": "Local Area Network",
+      "explanation": "Pentru „LAN”, răspunsul corect este „Local Area Network”."
+    },
+    {
+      "id": "technology-036",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce domeniu este folosită în principal abrevierea LAN?",
+      "options": [
+        "Rețele locale",
+        "Stilizarea paginilor web",
+        "Baze de date",
+        "Integrare software"
+      ],
+      "answer": "Rețele locale",
+      "explanation": "Pentru „LAN”, răspunsul corect este „Rețele locale”."
+    },
+    {
+      "id": "technology-037",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă abrevierea WAN?",
+      "options": [
+        "Structured Query Language",
+        "Application Programming Interface",
+        "Domain Name System",
+        "Wide Area Network"
+      ],
+      "answer": "Wide Area Network",
+      "explanation": "Pentru „WAN”, răspunsul corect este „Wide Area Network”."
+    },
+    {
+      "id": "technology-038",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce domeniu este folosită în principal abrevierea WAN?",
+      "options": [
+        "Rezolvarea numelor de internet",
+        "Adresarea în rețea",
+        "Rețele extinse",
+        "Integrare software"
+      ],
+      "answer": "Rețele extinse",
+      "explanation": "Pentru „WAN”, răspunsul corect este „Rețele extinse”."
+    },
+    {
+      "id": "technology-039",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă abrevierea VPN?",
+      "options": [
+        "Local Area Network",
+        "Virtual Private Network",
+        "Domain Name System",
+        "Internet Protocol"
+      ],
+      "answer": "Virtual Private Network",
+      "explanation": "Pentru „VPN”, răspunsul corect este „Virtual Private Network”."
+    },
+    {
+      "id": "technology-040",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce domeniu este folosită în principal abrevierea VPN?",
+      "options": [
+        "Tuneluri de rețea",
+        "Adresarea în rețea",
+        "Rețele locale",
+        "Rețele extinse"
+      ],
+      "answer": "Tuneluri de rețea",
+      "explanation": "Pentru „VPN”, răspunsul corect este „Tuneluri de rețea”."
+    },
+    {
+      "id": "technology-041",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce înseamnă abrevierea GPS?",
+      "options": [
+        "Local Area Network",
+        "Wide Area Network",
+        "Virtual Private Network",
+        "Global Positioning System"
+      ],
+      "answer": "Global Positioning System",
+      "explanation": "Pentru „GPS”, răspunsul corect este „Global Positioning System”."
+    },
+    {
+      "id": "technology-042",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce domeniu este folosită în principal abrevierea GPS?",
+      "options": [
+        "Tuneluri de rețea",
+        "Comunicații la distanță mică",
+        "Navigație prin satelit",
+        "Rețele extinse"
+      ],
+      "answer": "Navigație prin satelit",
+      "explanation": "Pentru „GPS”, răspunsul corect este „Navigație prin satelit”."
+    },
+    {
+      "id": "technology-043",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce înseamnă abrevierea NFC?",
+      "options": [
+        "Quick Response",
+        "Near Field Communication",
+        "Virtual Private Network",
+        "Global Positioning System"
+      ],
+      "answer": "Near Field Communication",
+      "explanation": "Pentru „NFC”, răspunsul corect este „Near Field Communication”."
+    },
+    {
+      "id": "technology-044",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce domeniu este folosită în principal abrevierea NFC?",
+      "options": [
+        "Comunicații la distanță mică",
+        "Navigație prin satelit",
+        "Coduri bidimensionale",
+        "Inteligență artificială"
+      ],
+      "answer": "Comunicații la distanță mică",
+      "explanation": "Pentru „NFC”, răspunsul corect este „Comunicații la distanță mică”."
+    },
+    {
+      "id": "technology-045",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce înseamnă abrevierea QR?",
+      "options": [
+        "Near Field Communication",
+        "Artificial Intelligence",
+        "Internet of Things",
+        "Quick Response"
+      ],
+      "answer": "Quick Response",
+      "explanation": "Pentru „QR”, răspunsul corect este „Quick Response”."
+    },
+    {
+      "id": "technology-046",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce domeniu este folosită în principal abrevierea QR?",
+      "options": [
+        "Dispozitive conectate",
+        "Procesoare",
+        "Coduri bidimensionale",
+        "Inteligență artificială"
+      ],
+      "answer": "Coduri bidimensionale",
+      "explanation": "Pentru „QR”, răspunsul corect este „Coduri bidimensionale”."
+    },
+    {
+      "id": "technology-047",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce înseamnă abrevierea AI?",
+      "options": [
+        "Graphics Processing Unit",
+        "Artificial Intelligence",
+        "Internet of Things",
+        "Central Processing Unit"
+      ],
+      "answer": "Artificial Intelligence",
+      "explanation": "Pentru „AI”, răspunsul corect este „Artificial Intelligence”."
+    },
+    {
+      "id": "technology-048",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce domeniu este folosită în principal abrevierea AI?",
+      "options": [
+        "Inteligență artificială",
+        "Procesoare",
+        "Grafică digitală",
+        "Memorie volatilă"
+      ],
+      "answer": "Inteligență artificială",
+      "explanation": "Pentru „AI”, răspunsul corect este „Inteligență artificială”."
+    },
+    {
+      "id": "technology-049",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce înseamnă abrevierea IoT?",
+      "options": [
+        "Graphics Processing Unit",
+        "Random Access Memory",
+        "Read-Only Memory",
+        "Internet of Things"
+      ],
+      "answer": "Internet of Things",
+      "explanation": "Pentru „IoT”, răspunsul corect este „Internet of Things”."
+    },
+    {
+      "id": "technology-050",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce domeniu este folosită în principal abrevierea IoT?",
+      "options": [
+        "Stocare firmware",
+        "Stocare de date",
+        "Dispozitive conectate",
+        "Memorie volatilă"
+      ],
+      "answer": "Dispozitive conectate",
+      "explanation": "Pentru „IoT”, răspunsul corect este „Dispozitive conectate”."
+    }
+  ]
+}
