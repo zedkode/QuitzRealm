@@ -64,7 +64,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String levelBadge(int level) {
-    return 'Nivel $level';
+    return 'Nivel de cont $level';
   }
 
   @override
@@ -324,7 +324,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String resultLevelUp(int level) {
-    return 'Nivel nou: $level!';
+    return 'Nivel de cont nou: $level!';
   }
 
   @override
@@ -1019,4 +1019,183 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get settingsOpenAccount => 'Deschide contul';
+
+  @override
+  String get accountLevelLabel => 'Nivel de cont';
+
+  @override
+  String get categoryAnimals => 'Animale';
+
+  @override
+  String get categoryArt => 'Artă';
+
+  @override
+  String get categoryCars => 'Mașini';
+
+  @override
+  String get categoryEconomy => 'Economie';
+
+  @override
+  String get categoryGaming => 'Gaming';
+
+  @override
+  String get categoryGeneralKnowledge => 'Cultură generală';
+
+  @override
+  String get categoryGeography => 'Geografie';
+
+  @override
+  String get categoryHistory => 'Istorie';
+
+  @override
+  String get categoryLiterature => 'Literatură';
+
+  @override
+  String get categoryLogic => 'Logică';
+
+  @override
+  String get categoryMedieval => 'Medieval';
+
+  @override
+  String get categoryMovies => 'Filme';
+
+  @override
+  String get categoryMusic => 'Muzică';
+
+  @override
+  String get categoryMythology => 'Mitologie';
+
+  @override
+  String get categoryRoyalChallenge => 'Provocare regală';
+
+  @override
+  String get categoryScience => 'Știință';
+
+  @override
+  String get categorySpace => 'Spațiu';
+
+  @override
+  String get categorySports => 'Sport';
+
+  @override
+  String get categoryTechnology => 'Tehnologie';
+
+  @override
+  String get categoryWars => 'Războaie';
+
+  @override
+  String get trainingTitle => 'Antrenament';
+
+  @override
+  String get trainingSubtitle =>
+      'Alege categoriile și exersează fără presiune.';
+
+  @override
+  String get trainingSelectAll => 'Toate categoriile';
+
+  @override
+  String get trainingClear => 'Golește selecția';
+
+  @override
+  String trainingSelectedCount(int count) {
+    return '$count categorii alese';
+  }
+
+  @override
+  String trainingAllSelected(int count) {
+    return 'Toate cele $count categorii';
+  }
+
+  @override
+  String get trainingStart => 'Începe runda';
+
+  @override
+  String get trainingLength => 'Lungimea rundei';
+
+  @override
+  String get trainingLengthShort => 'Scurtă';
+
+  @override
+  String get trainingLengthMedium => 'Medie';
+
+  @override
+  String get trainingLengthLong => 'Lungă';
+
+  @override
+  String get trainingMastery => 'Măiestrie';
+
+  @override
+  String get trainingMasteryNone => 'Neînceput';
+
+  @override
+  String get trainingMasteryBronze => 'Bronz';
+
+  @override
+  String get trainingMasterySilver => 'Argint';
+
+  @override
+  String get trainingMasteryGold => 'Aur';
+
+  @override
+  String trainingCorrectOf(int correct, int answered) {
+    return '$correct corecte din $answered';
+  }
+
+  @override
+  String get trainingRoundDone => 'Rundă încheiată';
+
+  @override
+  String get trainingPlayAgain => 'Încă o rundă';
+
+  @override
+  String get trainingBack => 'Înapoi la categorii';
+
+  @override
+  String get trainingEmpty => 'Nu am găsit întrebări pentru categoriile alese.';
+
+  @override
+  String get homeModeTrainingDesc => 'Exersează pe categoriile alese de tine.';
+
+  @override
+  String get playTitle => 'Joacă';
+
+  @override
+  String get playSubtitle =>
+      'Alege modul și categoriile, apoi caută adversari.';
+
+  @override
+  String get playMode => 'Mod de joc';
+
+  @override
+  String get playModeDuo => 'Duel 1v1';
+
+  @override
+  String get playModeDuoDesc => 'Față în față, pe rang.';
+
+  @override
+  String get playModeClassic => 'Clasic';
+
+  @override
+  String get playModeClassicDesc =>
+      'Mai mulți jucători, cucerire de teritorii.';
+
+  @override
+  String get playPlayerCount => 'Număr de jucători';
+
+  @override
+  String get playCategories => 'Categorii';
+
+  @override
+  String get playCategoriesNote =>
+      'Serverul folosește categoriile pe care le vreți amândoi. Dacă nu se potrivesc, meciul rulează pe toate.';
+
+  @override
+  String get playFindMatch => 'Caută meci';
+
+  @override
+  String get playModeSoon => 'În pregătire';
+
+  @override
+  String get playModeClassicSoon =>
+      'Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.';
 }

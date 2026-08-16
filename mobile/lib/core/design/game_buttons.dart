@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../ui/game_icons.dart';
+import 'entrance.dart';
 import 'quizrealm_tokens.dart';
 
 /// Butonul principal: umplere albastră în degradeu, ramă aurie, iconiță la
@@ -47,70 +48,77 @@ class _PrimaryGameButtonState extends State<PrimaryGameButton> {
       enabled: enabled,
       label: widget.label,
       child: ExcludeSemantics(
-        child: GestureDetector(
-          onTapDown: enabled ? (_) => setState(() => _pressed = true) : null,
-          onTapUp: enabled ? (_) => setState(() => _pressed = false) : null,
-          onTapCancel: enabled ? () => setState(() => _pressed = false) : null,
-          onTap: widget.onPressed,
-          child: AnimatedScale(
-            // Apăsarea se simte prin scădere de scară, nu prin ripple: pe un
-            // buton cu ramă pictată, ripple-ul Material taie colțurile.
-            scale: _pressed ? 0.98 : 1,
-            duration: QuizRealmDurations.tap,
-            child: Opacity(
-              opacity: enabled ? 1 : 0.45,
-              child: Container(
-                height: widget.height,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: QuizRealmSpacing.md,
-                ),
-                decoration: BoxDecoration(
-                  gradient: QuizRealmGradients.primaryButton,
-                  borderRadius: BorderRadius.circular(QuizRealmRadius.md),
-                  border: Border.all(
-                    color: QuizRealmColors.gold,
-                    width: widget.emphasized
-                        ? QuizRealmBorders.emphasis
-                        : QuizRealmBorders.frame,
+        child: PulseGlow(
+          // Doar acțiunea dominantă pulsează. Dacă ar pulsa tot, nimic n-ar mai
+          // ieși în evidență și ecranul ar deveni agitat.
+          enabled: widget.emphasized && enabled,
+          child: GestureDetector(
+            onTapDown: enabled ? (_) => setState(() => _pressed = true) : null,
+            onTapUp: enabled ? (_) => setState(() => _pressed = false) : null,
+            onTapCancel: enabled
+                ? () => setState(() => _pressed = false)
+                : null,
+            onTap: widget.onPressed,
+            child: AnimatedScale(
+              // Apăsarea se simte prin scădere de scară, nu prin ripple: pe un
+              // buton cu ramă pictată, ripple-ul Material taie colțurile.
+              scale: _pressed ? 0.98 : 1,
+              duration: QuizRealmDurations.tap,
+              child: Opacity(
+                opacity: enabled ? 1 : 0.45,
+                child: Container(
+                  height: widget.height,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: QuizRealmSpacing.md,
                   ),
-                  boxShadow: widget.emphasized && enabled
-                      ? QuizRealmShadows.electricGlow
-                      : QuizRealmShadows.panel,
-                ),
-                child: Row(
-                  children: [
-                    if (widget.symbol != null) ...[
-                      GameIcon(
-                        widget.symbol!,
-                        size: 24,
-                        color: QuizRealmColors.goldBright,
-                      ),
-                      const SizedBox(width: QuizRealmSpacing.sm),
-                    ],
-                    Expanded(
-                      child: Text(
-                        widget.label.toUpperCase(),
-                        textAlign: TextAlign.center,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: QuizRealmTypography.buttonLabel.copyWith(
-                          fontSize: widget.emphasized ? 20 : 17,
+                  decoration: BoxDecoration(
+                    gradient: QuizRealmGradients.primaryButton,
+                    borderRadius: BorderRadius.circular(QuizRealmRadius.md),
+                    border: Border.all(
+                      color: QuizRealmColors.gold,
+                      width: widget.emphasized
+                          ? QuizRealmBorders.emphasis
+                          : QuizRealmBorders.frame,
+                    ),
+                    boxShadow: widget.emphasized && enabled
+                        ? QuizRealmShadows.electricGlow
+                        : QuizRealmShadows.panel,
+                  ),
+                  child: Row(
+                    children: [
+                      if (widget.symbol != null) ...[
+                        GameIcon(
+                          widget.symbol!,
+                          size: 24,
+                          color: QuizRealmColors.goldBright,
+                        ),
+                        const SizedBox(width: QuizRealmSpacing.sm),
+                      ],
+                      Expanded(
+                        child: Text(
+                          widget.label.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: QuizRealmTypography.buttonLabel.copyWith(
+                            fontSize: widget.emphasized ? 20 : 17,
+                          ),
                         ),
                       ),
-                    ),
-                    if (widget.showChevron) ...[
-                      const SizedBox(width: QuizRealmSpacing.sm),
-                      GameIcon(
-                        GameSymbol.chevronRight,
-                        size: 20,
-                        color: widget.emphasized
-                            ? QuizRealmColors.electricGlow
-                            : QuizRealmColors.gold,
-                      ),
-                    ] else if (widget.symbol != null)
-                      // Păstrează eticheta centrată optic față de iconiță.
-                      const SizedBox(width: 32),
-                  ],
+                      if (widget.showChevron) ...[
+                        const SizedBox(width: QuizRealmSpacing.sm),
+                        GameIcon(
+                          GameSymbol.chevronRight,
+                          size: 20,
+                          color: widget.emphasized
+                              ? QuizRealmColors.electricGlow
+                              : QuizRealmColors.gold,
+                        ),
+                      ] else if (widget.symbol != null)
+                        // Păstrează eticheta centrată optic față de iconiță.
+                        const SizedBox(width: 32),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -178,7 +186,10 @@ class SecondaryGameButton extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: QuizRealmColors.backgroundDeep,
                   borderRadius: BorderRadius.circular(QuizRealmRadius.md),
-                  border: Border.all(color: color, width: QuizRealmBorders.hairline + 0.5),
+                  border: Border.all(
+                    color: color,
+                    width: QuizRealmBorders.hairline + 0.5,
+                  ),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,

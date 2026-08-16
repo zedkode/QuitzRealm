@@ -10,16 +10,23 @@ import '../../core/ui/game_frame.dart';
 import '../../core/ui/game_icons.dart';
 import '../../core/ui/realm_backdrop.dart';
 import '../../domain/duel/duel_events.dart';
+import '../../domain/duel/match_preferences.dart';
 import '../../domain/question/quiz_question.dart';
 import '../../l10n/app_localizations.dart';
 import '../battle/widgets/answer_option.dart';
 import '../battle/widgets/battle_hud.dart';
 import 'duel_controller.dart';
 import 'widgets/duel_scoreboard.dart';
+import 'widgets/match_standings.dart';
+import 'widgets/territory_board.dart';
 
 /// Duel 1v1 online. Toate verdictele vin de la server; ecranul doar le arată.
 class DuelScreen extends ConsumerStatefulWidget {
-  const DuelScreen({super.key});
+  const DuelScreen({super.key, this.preferences = MatchPreferences.defaults});
+
+  /// Modul și categoriile alese pe ecranul „Joacă". Implicitul păstrează
+  /// comportamentul vechi: duel 1v1 pe toate categoriile.
+  final MatchPreferences preferences;
 
   @override
   ConsumerState<DuelScreen> createState() => _DuelScreenState();
@@ -32,7 +39,7 @@ class _DuelScreenState extends ConsumerState<DuelScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) ref.read(duelControllerProvider.notifier).start();
+      if (mounted) ref.read(duelControllerProvider.notifier).start(widget.preferences);
     });
   }
 
@@ -566,14 +573,36 @@ class _DuelRoundView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          DuelScoreboard(
-            youLabel: l10n.duelYou,
-            opponentLabel: l10n.duelOpponent,
-            youScore: state.myPoints,
-            opponentScore: state.opponentPoints,
-            youTerritories: state.myTerritories,
-            opponentTerritories: state.opponentTerritories,
-          ),
+          // Tabla de joc apare doar la Clasic, unde serverul trimite hartă.
+          if (state.territoryMap != null && state.territory != null) ...[
+            TerritoryBoard(
+              map: state.territoryMap!,
+              ownership: state.territory!,
+              myUserId: state.myUserId,
+              playerOrder: state.standings
+                  .map((standing) => standing.userId)
+                  .toList(growable: false),
+            ),
+            const SizedBox(height: 10),
+          ],
+          // Față-în-față doar când chiar sunt doi. La Clasic, afișajul de duel
+          // ar arăta un adversar și i-ar ascunde pe ceilalți.
+          if (state.isMultiplayer)
+            MatchStandings(
+              standings: state.standings,
+              myUserId: state.myUserId,
+              youLabel: l10n.duelYou,
+              opponentLabel: l10n.duelOpponent,
+            )
+          else
+            DuelScoreboard(
+              youLabel: l10n.duelYou,
+              opponentLabel: l10n.duelOpponent,
+              youScore: state.myPoints,
+              opponentScore: state.opponentPoints,
+              youTerritories: state.myTerritories,
+              opponentTerritories: state.opponentTerritories,
+            ),
           const SizedBox(height: 10),
           Row(
             children: [

@@ -58,6 +58,16 @@ export interface MatchState {
   /** Termenul până la care jucătorul deconectat își păstrează locul. */
   resumeDeadlineAt?: string;
   question: InternalQuestion;
+  /** Harta de teritorii; absentă la Duo, care nu are hartă de disputat. */
+  territory?: MatchTerritoryState;
+  /** Jucătorii scoși din faza activă, în ordinea eliminării (§12.6). */
+  eliminated?: Array<{ userId: string; roundNumber: number }>;
+  /** Cuceririle din runda tocmai încheiată, pentru animația din client. */
+  lastConquests?: Array<{
+    territoryId: string;
+    winnerId: string;
+    previousOwnerId: string | null;
+  }>;
   /** Întrebările deja folosite, ca o partidă să nu repete aceeași întrebare. */
   /// Categoriile din care se trag întrebările. Lista goală = toate.
   /// Se fixează la crearea partidei și nu se mai schimbă: altfel runda 4 ar
@@ -80,6 +90,9 @@ export interface MatchSnapshotPayload {
   status: 'active' | 'paused';
   roundNumber: number;
   totalRounds: number;
+  /** Harta completă, trimisă la reconectare ca ecranul să se poată reconstrui. */
+  territoryMap?: import('./territory-map').TerritoryMap;
+  territory?: TerritorySnapshot;
   deadlineAt: string;
   resumeDeadlineAt: string | null;
   question: PublicQuestion;
@@ -90,6 +103,19 @@ export interface MatchSnapshotPayload {
     hasAnswered: boolean;
     connected: boolean;
   }>;
+}
+
+/**
+ * Harta și proprietatea, prezente doar la modul Clasic. Duo rămâne pe scorul
+ * simplu: are doi jucători și nicio hartă de disputat.
+ */
+export interface MatchTerritoryState {
+  map: import('./territory-map').TerritoryMap;
+  ownership: import('./territory-state').TerritoryOwnership;
+  /** Teritoriul liber pus în joc în runda curentă; `null` în faza de luptă. */
+  contestedTerritoryId: string | null;
+  /** Țintele declarate în runda de luptă curentă: `userId → territoryId`. */
+  attacks?: Record<string, string>;
 }
 
 export interface PersistMatchPayload {
@@ -113,10 +139,26 @@ export interface MatchFinishedPayload {
   players: PersistMatchPayload['players'];
 }
 
+/** Fotografia hărții trimisă clientului. Clientul doar o desenează. */
+export interface TerritorySnapshot {
+  ownership: Record<string, string | null>;
+  contestedTerritoryId: string | null;
+}
+
 export interface RoundResultPayload {
   matchId: string;
   roundNumber: number;
   totalRounds: number;
+  /** Absent la Duo, care nu are hartă. */
+  territory?: TerritorySnapshot;
+  /** Jucătorii eliminați în runda aceasta; trec în mod spectator (§12.6). */
+  eliminatedUserIds?: string[];
+  /** Teritoriile care au schimbat stăpânul în urma atacurilor. */
+  conquests?: Array<{
+    territoryId: string;
+    winnerId: string;
+    previousOwnerId: string | null;
+  }>;
   /** Răspunsul corect, dezvăluit abia după închiderea rundei. */
   correctAnswer: string;
   players: Array<{

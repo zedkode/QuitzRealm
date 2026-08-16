@@ -437,3 +437,448 @@ comutatorul de temă: aplicația are o singură temă implementată.
 - Rămân de reconstruit: Chat (05, 06), Campanie (07), Clasament (08),
   Multiplayer (09), Duel live (10). Selecția de categorii per meci e gata pe
   server și așteaptă ecranul de Multiplayer ca să primească interfață.
+
+---
+
+## 2026-08-16 (II) — Claude — Întrebările noi în joc, emulator, divergență de structură
+
+### Ce am găsit
+
+Catalogul celor 20 de categorii (`owner_question_pack_catalog.dart`) era **cod
+mort**: pachetele intrau în APK, dar niciun ecran nu le folosea. Campania juca
+doar pachetele românești vechi. Între timp proprietarul a **șters** toate
+pachetele vechi (`istorie.json`, `romania.json`, `geografie.json`, …), deci două
+ținuturi trimiteau la fișiere inexistente — jocul ar fi crăpat acolo.
+
+### Ce am făcut
+
+- Am repointat cele 9 ținuturi pe pachetele de categorii (istorie→history,
+  arte→art, mituri→mythology etc.). **Identificatorii ținuturilor rămân cei
+  vechi**: cheia de progres salvată e `<chapterId>/<etapă>`, iar redenumirea ar
+  fi șters în tăcere progresul jucătorilor.
+- `CategoryRoundSource` (nou): compune o rundă din mai multe categorii, cu
+  **deduplicare**. „Cultură Generală" reia intenționat 114 întrebări din
+  literatură/istorie/geografie; fără filtru, o rundă pe două categorii bifate ar
+  fi pus aceeași întrebare de două ori. Zero duplicate *în interiorul* unui
+  pachet — conținutul e curat.
+- Testele de pachete erau lipite de lotul inițial (exact 50/pachet, 1000 total,
+  `source: ai`). Le-am rescris pe invarianți care rezistă la creștere: id-uri
+  unice global, texte unice în pachet, 4 variante distincte, explicație
+  prezentă, dificultăți 1–5. Tipul `numeric` (645 întrebări) e valid și acceptat.
+- Terminologie `owner-plan.md` §7.3: „Nivel de cont", nu „Nivel".
+
+### Emulator
+
+Nu exista niciunul. Am instalat `system-images;android-36;google_apis;x86_64` și
+am creat AVD-ul `quizrealm`. Pe el am găsit și corectat două defecte reale:
+`Flexible` are implicit `flex: 1`, deci antetul rezerva jumătate de rând gol și
+împingea butonul de meniu în mijlocul ecranului; iar descrierile cartonașelor se
+tăiau la jumătate de frază. Emulatorul e instabil cu `swiftshader_indirect` —
+moare după câteva minute.
+
+### Divergență de structură — cere decizia proprietarului
+
+`docs/structura-joc.md` (nou). Pe scurt: `owner-plan.md` §7.3 spune că jocul
+**nu are și nu va avea campanie de nivele secvențiale**, dar aplicația e
+construită exact așa (9 ținuturi, stele, deblocare), iar multiplayer-ul — miezul
+după `plan.md` §0 — e subțire. În același timp, capturile de design **aprobate**
+conțin „Campanie" ca mod. Cele două nu pot fi ambele adevărate. Nu am retras
+nimic din campanie; am propus trei variante, cu recomandare pentru compromisul
+„Antrenament pe categorii" (sancționat de `plan.md` §6).
+
+### Stare
+
+- `flutter analyze`: curat. `flutter test`: **119 trec, 0 cad**.
+- 20 de pachete, **6.485 întrebări**. `sports`, `technology`, `wars` sunt încă la
+  50 — proprietarul mai lucrează la ele.
+- Interfața de selecție a categoriilor per meci încă lipsește; stratul de date
+  (`CategoryRoundSource`) și serverul (`agreeOnCategories`) sunt gata.
+
+---
+
+## 2026-08-16 (III) — Claude — Opțiunea C: Antrenament pe categorii
+
+Proprietarul a ales **varianta C** din `docs/structura-joc.md`: campania
+secvențială e înlocuită cu „Antrenament pe categorii", cu progres vizibil, fără
+hartă de nivele. Rezolvă contradicția dintre `owner-plan.md` §7.3 (fără campanie
+secvențială) și capturile aprobate (care cereau progres solo).
+
+### Livrat
+
+- `domain/training/category_progress.dart` — progres per categorie, cu trepte de
+  măiestrie (bronz 25 / argint 100 / aur 250 **răspunsuri corecte**, nu runde
+  jucate: altfel s-ar putea acumula răspunzând la întâmplare).
+- `data/training/category_progress_store.dart` — persistență.
+- `features/training/` — controller, ecran de selecție (toate cele 20 de
+  categorii, bifare multiplă, lungime scurtă/medie/lungă), ecran de rundă.
+- `core/design/quiz_widgets.dart` — `QuizQuestionCard`, `QuizAnswerButton`,
+  `MatchProgressBar` (cerute în specificația de design). Răspunsul corect/greșit
+  are **și** iconiță, nu doar culoare — verde/roșu singur e inaccesibil.
+- Rute `/antrenament` și `/antrenament/runda`; fila „Campanie" și cartonașul de
+  pe ecranul principal duc acum la antrenament.
+- Etichetele categoriilor trec prin i18n (ro+en), nu prin numele din fișierele
+  de pachet: fișierele sunt scrise în română.
+
+### Decizii de reținut
+
+- **Nicio categorie nu se deblochează prin alta.** §7.3 interzice progresul
+  secvențial prin conținut, iar `plan.md` §6 cere antrenamentul pentru onboarding
+  și testarea băncii — o poartă l-ar contrazice. Progresul se vede ca măiestrie.
+- `BattleStage` a primit `secondsOverride`; antrenamentul folosește 30s, nu 9-15s
+  ca asalturile. `plan.md` §6 spune „mod **fără presiune**".
+- `BattleController` a fost **refolosit** neschimbat — aceeași logică de joc.
+- Progresul pe categorii se scrie din ecran, nu din `onFinished`: doar ecranul
+  știe din ce categorie a venit fiecare întrebare.
+
+### Verificat pe emulator (AVD `quizrealm`)
+
+Selecția celor 20 de categorii, pornirea rundei, o întrebare reală din
+`science.json` cu explicație și dezvăluirea răspunsului corect. Iconițele de
+categorie existau deja în `assets/game/icons/quiz-categories/`.
+
+### Stare
+
+`flutter analyze` curat, `flutter test` **119/119**. Ecranul vechi de hartă
+(`/harta`) și campania rămân în cod, nescoase din uz — pot deveni tabla modului
+Clasic (`plan.md` §6), conform recomandării din `docs/structura-joc.md`.
+
+---
+
+## 2026-08-16 (IV) — Claude — Efectele înapoi; release pe telefon
+
+Proprietarul a semnalat că trecerea la `QuizRealmScaffold` a **scos** efectele și
+animațiile din joc. Avea dreptate: scaffold-ul nou punea un gradient static în
+locul lui `RealmBackdrop` (cer animat, aurore, praf de stele), iar ecranele noi
+n-aveau nicio animație de intrare.
+
+### Reparat
+
+- `QuizRealmScaffold` folosește din nou `RealmBackdrop`, cu `backdropAccent` per
+  ecran, ca secțiunile să nu arate toate la fel.
+- `core/design/entrance.dart` (nou): `EntranceFade`, helperul `staggered()`,
+  `PulseGlow`, `ShakeOnChange`.
+- Ecranul principal și selecția de categorii intră decalat (55 ms/element —
+  peste ~70 ms, un ecran cu șase panouri se lasă așteptat).
+- Butonul principal *emphasized* pulsează; doar el, altfel nimic n-ar mai ieși
+  în evidență.
+- La răspuns greșit sau timp expirat, cardul întrebării se scutură. La răspuns
+  corect **nu** — e semnal, nu decor.
+
+### Bug real prins de teste
+
+`EntranceFade` folosea `Future.delayed`, care supraviețuiește widget-ului: la
+ieșirea rapidă dintr-un ecran rămâneau zeci de temporizatoare care se trezeau pe
+un arbore distrus. Înlocuit cu `Timer` anulat în `dispose`.
+
+### Livrat pe telefon
+
+APK **release** construit cu endpointurile de producție
+(`quizrealmapi` / `quizrealmws.dohotstudio.com`), instalat pe `SM-S938B`.
+Verificat pe dispozitiv cu contul real: profil „Andrei", 1085/1200 XP, 18/27
+teritorii, 33/81 stele, toate ecranele se desenează.
+
+### Stare
+
+`flutter analyze` curat, `flutter test` **119/119**.
+
+### Ce urmează din owner-plan.md (neînceput)
+
+Turul acesta a mers pe design și pe livrarea pe telefon. Rămân, în ordinea din
+`plan.md` §6 și `docs/structura-joc.md`: ecranul de moduri („Joacă" → Clasic /
+Blitz / Duo / Privată), selecția de categorii în matchmaking (serverul e gata cu
+`agreeOnCategories`), modul Clasic cu harta ca tablă de meci.
+
+---
+
+## 2026-08-16 (V) — Claude — Ecranul „Joacă" și categoriile în matchmaking
+
+### Golul închis
+
+Serverul accepta de mult `mode` și `categoryCodes` în `matchmaking:join`, dar
+clientul trimitea `{'mode': 'duo'}` **hardcodat**, fără categorii. Munca de pe
+server (`agreeOnCategories`, preferințe în Redis) era inaccesibilă din aplicație.
+
+### Livrat
+
+- `domain/duel/match_preferences.dart` — `MatchMode` (duo/classic) cu `wireValue`
+  separat de `name`, ca o redenumire în Dart să nu rupă tăcut contractul de rețea;
+  `MatchPreferences` cu serializare în parametri de rută.
+- `RealtimeClient.joinQueue(preferences)` — categoriile lipsesc din mesaj când
+  lista e goală, pentru că pe server absența preferinței înseamnă „accept orice".
+- `DuelController.start(preferences)` — preferințele se rețin, fiindcă intrarea în
+  coadă are loc abia la confirmarea sesiunii, nu la apăsarea butonului.
+- `features/play/play_setup_screen.dart` — rută `/joaca`: mod, număr de jucători
+  (doar la Clasic), grilă de categorii, buton „Caută meci".
+- `features/categories/category_picker_grid.dart` — grila de categorii extrasă și
+  folosită **și** la antrenament, **și** la meci; înainte era duplicată.
+- Bara de jos: a patra filă alternează Clasament ↔ Multiplayer, ca în capturi.
+
+### Decizii
+
+- Enumerarea are doar `duo` și `classic`, deși `plan.md` §6 listează și Blitz și
+  Partidă privată: serverul nu le are, iar un buton care trimite un mod refuzat
+  ar fi o promisiune falsă.
+- Sub grilă apare explicit că serverul folosește **intersecția** preferințelor
+  celor doi jucători, cu revenire la „toate" — altfel jucătorul ar crede că
+  meciul i-a ignorat bifele.
+
+### Teste
+
+Două teste noi verifică exact ce conta: modul și categoriile alese ajung la
+server, iar lipsa preferințelor înseamnă duel pe toate categoriile. Fără ele,
+ecranul de pregătire ar fi putut rămâne decor.
+
+`flutter analyze` curat, `flutter test` **121/121**. APK release instalat pe
+`SM-S938B` și verificat pe dispozitiv.
+
+### Rămâne
+
+Modul Clasic propriu-zis (harta ca tablă de meci, `plan.md` §6 + §7) și
+ecranele care încă folosesc stilul vechi: chat, clasament, duel, cont.
+
+---
+
+## 2026-08-16 (VI) — Claude — Constrângerile reale ale modului Clasic
+
+### Bug propriu, prins la verificarea serverului
+
+Ecranul „Joacă" oferea 2/4/6/8 jucători la Clasic, dar `publicMatchProfile` din
+`backend/realtime/src/game/match-profile.ts` **respinge orice sub 4**. Un meci
+pornit cu 2 ar fi fost refuzat, iar jucătorul ar fi văzut o eroare fără motiv.
+Corectat: `MatchPreferences.classicPlayerCounts = [4, 6, 8]`, cu test care leagă
+lista de regula de pe server.
+
+### Clasic e vizibil, dar nu selectabil — deliberat
+
+Serverul suportă Clasic (profil propriu, `resolutionPolicy: 'deadline'`, 4-8
+jucători). **Clientul nu.** `DuelState` are `myPoints`/`opponentPoints` și
+`opponentId` — un singur adversar, ales cu `playerIds.firstWhere(...)`. Într-o
+partidă de patru, ecranul ar arăta unul din trei adversari și ar ascunde restul.
+
+Am marcat modul „În pregătire" în loc să-l las selectabil: datele tuturor
+jucătorilor **există deja** în `lastResult.players`, deci lipsa e strict de
+prezentare, dar un meci care arată greșit e mai rău decât unul care lipsește.
+
+**Următorul pas real pentru Clasic:** înlocuirea perechii
+`myPoints`/`opponentPoints` cu un clasament per jucător în `DuelState` și un
+`duel_scoreboard` care afișează N jucători. E o modificare a codului de duel
+funcțional, deci cere atenție și teste, nu un patch rapid.
+
+### Stare
+
+`flutter analyze` curat, `flutter test` **126/126** (5 teste noi pe
+`MatchPreferences`). APK release instalat pe `SM-S938B` și verificat: modul,
+categoriile și fila de Multiplayer din bara de jos arată corect.
+
+---
+
+## 2026-08-16 (VII) — Claude — Clasament multi-jucător; modul Clasic deblocat
+
+### Ce bloca Clasicul
+
+`DuelState` reducea orice partidă la perechea „eu / adversar":
+`myPoints`/`opponentPoints` și un `opponentId` ales cu
+`playerIds.firstWhere(...)`. Într-o partidă de patru, doi jucători din trei
+dispăreau din ecran, deși datele lor **soseau deja** în `lastResult.players`.
+
+### Soluție — aditivă, fără a rescrie duelul
+
+- `domain/duel/duel_standing.dart` — `DuelStanding` + `sortedStandings()`.
+  Ordonare: puncte → teritorii → `userId`. Ultimul criteriu nu e decorativ:
+  fără el, doi jucători la egalitate își schimbă locurile la fiecare
+  redesenare. Lista rezultată e `List.unmodifiable`.
+- `DuelState.standings` (nou), plus `isMultiplayer` și `myPosition`.
+  `myPoints`/`opponentPoints` **rămân neatinse**, deci afișajul 1v1 existent
+  funcționează exact ca înainte.
+- Populat din `DuelRoundResult` și din instantaneul de reconectare (acolo se
+  păstrează și `connected`, ca un jucător deconectat să se vadă în listă, nu să
+  dispară).
+- `features/duel/widgets/match_standings.dart` — clasament pentru N jucători,
+  cu locul meu evidențiat și iconiță pentru cel deconectat. Ecranul de duel
+  alege între față-în-față și clasament după `state.isMultiplayer`.
+- Modul **Clasic e din nou selectabil** pe ecranul „Joacă".
+
+### Teste (132 în total, toate trec)
+
+`test/domain/duel_standing_test.dart` — ordonare, stabilitate la egalitate,
+păstrarea tuturor celor 8 jucători, imutabilitate.
+`duel_controller_test.dart` — o partidă de patru păstrează tot clasamentul și
+calculează corect `myPosition`; un duel obișnuit **nu** e tratat ca multi-jucător.
+
+### Stare
+
+`flutter analyze` curat. APK release instalat pe `SM-S938B`; verificat pe
+dispozitiv: Clasic selectabil, numărul de jucători 4/6/8, categoriile vizibile.
+
+### Rămâne
+
+Harta ca tablă de meci pentru Clasic (`plan.md` §6-§7) — clasamentul e acum
+corect, dar cucerirea de teritorii se vede doar ca număr, nu pe hartă.
+Ecranele chat, clasament, cont încă folosesc stilul vechi.
+
+---
+
+## 2026-08-16 (VIII) — Claude — Modelul de teritorii (fundația modului Clasic)
+
+### Constatarea care a schimbat abordarea
+
+Serverul trimite doar `territoriesWon` — un **număr**, nu identitatea
+teritoriilor. Nu există noțiunea de hartă nicăieri în `backend/realtime`. Deci
+harta ca tablă de meci nu era o problemă de client: aș fi inventat cine ce
+deține, exact ce n-am voie.
+
+### Livrat: `backend/realtime/src/game/territory-map.ts`
+
+Modul **pur**, fără stare, fără ceas, fără Redis. Generează harta pe server;
+clientul n-o calculează niciodată singur — două calcule independente ar putea
+diverge, iar doi jucători ar vedea hărți diferite ale aceleiași partide.
+
+- Grilă hexagonală în coordonate axiale, generată în spirală (conexă și compactă;
+  generarea pe rânduri ar lăsa margini unde jucătorii n-ar avea ce ataca).
+- Adiacență explicită și **reciprocă**, cerută de §12.2 pentru faza de atac.
+- Sursă de aleator injectabilă ⇒ hartă reproductibilă dintr-o sămânță. Fără asta,
+  un bug de poziționare n-ar putea fi reprodus.
+
+### Două lucruri învățate din eșecuri de test, nu din presupuneri
+
+1. **Aserțiune inventată de mine.** Primul test cerea `teritorii >= jucători * 6`
+   — o formulă pe care o scrisesem eu, nu din plan. Înlocuită cu intervalele
+   reale din §12.2.
+2. **Defect real de algoritm.** Alegerea lacomă „cel mai depărtat teritoriu"
+   împrăștia bazele spre margine și rămânea fără locuri neadiacente, așa că baze
+   ale unor jucători diferiți ajungeau lipite — partida s-ar fi decis în prima
+   rundă. Reparat prin construcție: bazele se aleg dintr-o **subrețea** de celule
+   cu același `(q + 2r) mod 3`, care nu pot fi vecine, pentru că orice pas către
+   un vecin schimbă restul cu ±1.
+
+### Abatere conștientă de la plan
+
+§12.2 dă numere marcate „orientativ". Le-am depășit (8 jucători: 54 în loc de
+40-48) dintr-un motiv geometric măsurabil: subrețeaua fără vecini e exact o
+treime din hartă, deci 16 baze cer minimum 48 de celule **fără nicio rezervă**.
+Testul verifică acum pragul real (`teritorii >= baze * 3`), nu tabelul.
+
+### Stare
+
+`npx jest src/game`: **28/28 trec** (12 noi). Modulul nu e încă legat de motorul
+de partidă — pasul următor e transportul hărții în `match:found`/snapshot și
+apoi randarea ei în client.
+
+---
+
+## 2026-08-16 (IX) — Claude — Teritoriile intră în motorul de partidă
+
+Continuare directă a modelului de hartă. Acum harta e parte din partidă, nu doar
+un modul izolat.
+
+### Livrat
+
+- `territory-state.ts` (nou, pur, 12 teste): proprietatea asupra teritoriilor,
+  faza partidei (`capture` → `battle` când nu mai e nimic liber), alegerea
+  teritoriului contestat, teritoriile atacabile, eliminarea, numărătoarea.
+  `claimTerritory` întoarce o **copie** — starea se serializează în Redis, iar
+  mutațiile ascunse peste un obiect partajat produc stări imposibil de explicat.
+- `MatchState.territory` — hartă + proprietate + teritoriul contestat.
+  Generat la `createMatch` **doar pentru `classic`**; Duo rămâne neatins, cu
+  contorul lui simplu. A-i inventa o hartă ar schimba un mod care funcționează.
+- La rezolvarea rundei, câștigătorul primește **un teritoriu anume** de pe hartă,
+  nu un increment. Contoarele `territoriesWon` se **recalculează din hartă**, nu
+  se incrementează: harta e sursa de adevăr, iar o sumă ținută separat s-ar
+  desincroniza tăcut.
+- Transport: `round:result` primește `territory` (proprietate + teritoriul
+  contestat următor); `match:snapshot` primește în plus `territoryMap` — harta
+  întreagă. Harta merge **doar în snapshot**: e imuabilă, retrimiterea ei la
+  fiecare rundă ar fi risipă. Documentat în `EVENTS.md`.
+
+### Decizie de design
+
+Teritoriul contestat se alege cu preferință pentru **granițele existente**. Fără
+asta harta s-ar umple în pete rupte între ele, iar faza de luptă ar începe cu
+jucători care n-au granițe comune și n-au pe cine ataca.
+
+### Stare
+
+`npx tsc --noEmit` curat. `npx jest` pe realtime: **44/44 trec**, inclusiv e2e.
+Duo nu s-a schimbat în niciun test.
+
+### Rămâne pentru Clasic
+
+1. Faza de luptă (§12.3 faza 2): alegerea țintei, rezolvare simultană,
+   departajare la atacuri multiple pe aceeași țintă.
+2. Eliminare + mod spectator (§12.6).
+3. Clientul: modelele Dart pentru hartă, randarea hexagonală și animația de
+   cucerire (`plan.md` §7).
+
+---
+
+## 2026-08-16 (X) — Claude — Eliminare, spectator și tabla de joc în client
+
+### Server: eliminare + mod spectator (§12.6)
+
+- `elimination.ts` (nou, pur, 9 teste): `newlyEliminated` (nu elimină de două ori
+  același jucător — ordinea decide locul final și o dublură ar falsifica-o),
+  `finalPlacement`, `isSpectator`.
+- Clasamentul final: supraviețuitorii după teritorii → scor → departajare
+  stabilă; eliminații după ei, în **ordine inversă a eliminării**. Cine rezistă
+  mai mult primește un loc mai bun, ca la battle royale.
+- `MatchState.eliminated` + `eliminatedUserIds` în `round:result`.
+- **Refuzul e pe server**: un spectator care încearcă să răspundă primește
+  `WsException`. Clientul poate ascunde butoanele, dar nu poate fi crezut pe
+  cuvânt.
+
+### Client: modele + tabla hexagonală
+
+- `domain/duel/territory_map.dart` — `HexCoordinates`, `Territory`,
+  `TerritoryMap`, `TerritoryOwnership`. Doar de citire: harta vine de la server.
+  Un mesaj malformat dă o hartă goală, nu o excepție în mijlocul partidei.
+- `TerritoryOwnership.changedSince()` — exact teritoriile care și-au schimbat
+  stăpânul. Animația se bazează pe lista asta; fără ea harta ar pâlpâi întreagă
+  la fiecare rundă.
+- `features/duel/widgets/territory_board.dart` — `CustomPainter` cu hexagoane
+  „pointy-top", rază calculată din întinderea reală a hărții (o hartă de 8
+  jucători are aproape dublul celulelor uneia de 4 și ar ieși din ecran cu o
+  valoare fixă). Cucerirea curge în culoare cu halou care se stinge (`plan.md`
+  §7); teritoriul contestat are contur auriu îngroșat.
+- Culoarea mea e mereu albastrul regal, indiferent de ordinea din lobby — ca
+  să-mi găsesc teritoriile dintr-o privire.
+
+### Stare
+
+Realtime: **53/53**. Mobil: **138/138**. `tsc --noEmit` și `flutter analyze`
+curate.
+
+### Rămâne pentru Clasic
+
+1. Faza de luptă (§12.3 faza 2) — singura piesă de reguli care lipsește.
+   Până la ea, eliminarea nu se poate declanșa în joc: în faza de capturare
+   nimeni nu pierde teritorii.
+2. Legarea `territory_board` în ecranul de duel (parsarea `territory` din
+   `round:result` și `territoryMap` din snapshot în `RealtimeClient`).
+
+---
+
+## 2026-08-16 (XI) — Claude — Harta legată cap la cap în client
+
+Ultima piesă de transport: harta ajunge de la server pe ecran.
+
+- `RealtimeClient` parsează `territory` din `round:result` și `territoryMap` +
+  `territory` din `match:state`. Harta vine **doar** în snapshot, fiind imuabilă.
+- `DuelRoundResult` poartă `territory` și `eliminatedUserIds`;
+  `DuelMatchSnapshot` poartă harta întreagă.
+- `DuelState` ține `territoryMap`, `territory`, `spectatorUserIds` și expune
+  `amSpectator`. Eliminații se acumulează între runde, nu se înlocuiesc.
+- Ecranul de duel randează `TerritoryBoard` **doar** când serverul chiar a
+  trimis hartă — la Duo nu apare nimic, iar modul existent rămâne identic.
+- Ordinea culorilor vine din clasament, deci e stabilă pe toată partida.
+
+### Stare
+
+Mobil: **139/139**. Realtime: **53/53**. `flutter analyze` și `tsc --noEmit`
+curate. APK release construit, dar **neinstalat**: telefonul s-a deconectat de la
+laptop între build și install.
+
+### Rămâne pentru Clasic
+
+Faza de luptă (§12.3 faza 2) — ultima piesă de reguli. Până la ea, harta se umple
+în faza de capturare și se oprește; nimeni nu pierde teritorii, deci eliminarea
+și spectatorul (deja implementate și testate) nu se pot declanșa în joc.

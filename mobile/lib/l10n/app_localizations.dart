@@ -197,7 +197,7 @@ abstract class AppLocalizations {
   /// No description provided for @levelBadge.
   ///
   /// In ro, this message translates to:
-  /// **'Nivel {level}'**
+  /// **'Nivel de cont {level}'**
   String levelBadge(int level);
 
   /// No description provided for @xpProgress.
@@ -629,7 +629,7 @@ abstract class AppLocalizations {
   /// No description provided for @resultLevelUp.
   ///
   /// In ro, this message translates to:
-  /// **'Nivel nou: {level}!'**
+  /// **'Nivel de cont nou: {level}!'**
   String resultLevelUp(int level);
 
   /// No description provided for @resultChapterCleared.
@@ -1873,6 +1873,342 @@ abstract class AppLocalizations {
   /// In ro, this message translates to:
   /// **'Deschide contul'**
   String get settingsOpenAccount;
+
+  /// Eticheta nivelului de cont (owner-plan 7.3)
+  ///
+  /// In ro, this message translates to:
+  /// **'Nivel de cont'**
+  String get accountLevelLabel;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Animale'**
+  String get categoryAnimals;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Artă'**
+  String get categoryArt;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Mașini'**
+  String get categoryCars;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Economie'**
+  String get categoryEconomy;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Gaming'**
+  String get categoryGaming;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Cultură generală'**
+  String get categoryGeneralKnowledge;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Geografie'**
+  String get categoryGeography;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Istorie'**
+  String get categoryHistory;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Literatură'**
+  String get categoryLiterature;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Logică'**
+  String get categoryLogic;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Medieval'**
+  String get categoryMedieval;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Filme'**
+  String get categoryMovies;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Muzică'**
+  String get categoryMusic;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Mitologie'**
+  String get categoryMythology;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Provocare regală'**
+  String get categoryRoyalChallenge;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Știință'**
+  String get categoryScience;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Spațiu'**
+  String get categorySpace;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Sport'**
+  String get categorySports;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Tehnologie'**
+  String get categoryTechnology;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Războaie'**
+  String get categoryWars;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Antrenament'**
+  String get trainingTitle;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Alege categoriile și exersează fără presiune.'**
+  String get trainingSubtitle;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Toate categoriile'**
+  String get trainingSelectAll;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Golește selecția'**
+  String get trainingClear;
+
+  /// No description provided for @trainingSelectedCount.
+  ///
+  /// In ro, this message translates to:
+  /// **'{count} categorii alese'**
+  String trainingSelectedCount(int count);
+
+  /// No description provided for @trainingAllSelected.
+  ///
+  /// In ro, this message translates to:
+  /// **'Toate cele {count} categorii'**
+  String trainingAllSelected(int count);
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Începe runda'**
+  String get trainingStart;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Lungimea rundei'**
+  String get trainingLength;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Scurtă'**
+  String get trainingLengthShort;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Medie'**
+  String get trainingLengthMedium;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Lungă'**
+  String get trainingLengthLong;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Măiestrie'**
+  String get trainingMastery;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Neînceput'**
+  String get trainingMasteryNone;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Bronz'**
+  String get trainingMasteryBronze;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Argint'**
+  String get trainingMasterySilver;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Aur'**
+  String get trainingMasteryGold;
+
+  /// No description provided for @trainingCorrectOf.
+  ///
+  /// In ro, this message translates to:
+  /// **'{correct} corecte din {answered}'**
+  String trainingCorrectOf(int correct, int answered);
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Rundă încheiată'**
+  String get trainingRoundDone;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Încă o rundă'**
+  String get trainingPlayAgain;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Înapoi la categorii'**
+  String get trainingBack;
+
+  /// Antrenament pe categorii
+  ///
+  /// In ro, this message translates to:
+  /// **'Nu am găsit întrebări pentru categoriile alese.'**
+  String get trainingEmpty;
+
+  /// Cartonasul de antrenament
+  ///
+  /// In ro, this message translates to:
+  /// **'Exersează pe categoriile alese de tine.'**
+  String get homeModeTrainingDesc;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Joacă'**
+  String get playTitle;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Alege modul și categoriile, apoi caută adversari.'**
+  String get playSubtitle;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Mod de joc'**
+  String get playMode;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Duel 1v1'**
+  String get playModeDuo;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Față în față, pe rang.'**
+  String get playModeDuoDesc;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Clasic'**
+  String get playModeClassic;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Mai mulți jucători, cucerire de teritorii.'**
+  String get playModeClassicDesc;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Număr de jucători'**
+  String get playPlayerCount;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Categorii'**
+  String get playCategories;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Serverul folosește categoriile pe care le vreți amândoi. Dacă nu se potrivesc, meciul rulează pe toate.'**
+  String get playCategoriesNote;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Caută meci'**
+  String get playFindMatch;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'În pregătire'**
+  String get playModeSoon;
+
+  /// Ecranul de pregatire a meciului
+  ///
+  /// In ro, this message translates to:
+  /// **'Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.'**
+  String get playModeClassicSoon;
 }
 
 class _AppLocalizationsDelegate

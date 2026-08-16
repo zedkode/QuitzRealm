@@ -1,5 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quiz_realm/domain/duel/duel_events.dart';
+import 'package:quiz_realm/domain/duel/match_preferences.dart';
+import 'package:quiz_realm/domain/duel/territory_map.dart';
 import 'package:quiz_realm/features/duel/duel_controller.dart';
 
 import '../../support/fake_realtime_client.dart';
@@ -391,4 +393,175 @@ void main() {
 
     expect(controller.state.chatErrorReason, isNull);
   });
+
+  test('modul și categoriile alese ajung la server', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start(
+      const MatchPreferences(
+        mode: MatchMode.classic,
+        categoryCodes: ['history', 'logic'],
+        playerCount: 4,
+      ),
+    );
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    // Fără asta, ecranul de pregătire ar fi doar decor: jucătorul bifează
+    // categorii, iar meciul le ignoră.
+    expect(client.queuePreferences?.mode, MatchMode.classic);
+    expect(client.queuePreferences?.categoryCodes, ['history', 'logic']);
+    expect(client.queuePreferences?.playerCount, 4);
+  });
+
+  test('fără preferințe intră în coadă pe duel și pe toate categoriile', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    expect(client.queuePreferences?.mode, MatchMode.duo);
+    expect(client.queuePreferences?.categoryCodes, isEmpty);
+  });
+
+
+  test('o partidă cu patru jucători păstrează tot clasamentul', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    client.emit(
+      const DuelRoundResult(
+        roundNumber: 1,
+        totalRounds: 5,
+        correctAnswer: 'x',
+        players: [
+          DuelPlayerScore(
+            userId: 'me',
+            score: 20,
+            territoriesWon: 1,
+            isCorrect: true,
+          ),
+          DuelPlayerScore(
+            userId: 'b',
+            score: 50,
+            territoriesWon: 2,
+            isCorrect: true,
+          ),
+          DuelPlayerScore(
+            userId: 'c',
+            score: 10,
+            territoriesWon: 0,
+            isCorrect: false,
+          ),
+          DuelPlayerScore(
+            userId: 'd',
+            score: 30,
+            territoriesWon: 1,
+            isCorrect: true,
+          ),
+        ],
+      ),
+    );
+    await settle();
+
+    // Înainte, starea reținea doar „eu + un adversar", iar ceilalți doi
+    // dispăreau din ecran fără urmă.
+    expect(controller.state.standings, hasLength(4));
+    expect(controller.state.isMultiplayer, isTrue);
+    expect(controller.state.standings.first.userId, 'b');
+    expect(controller.state.myPosition, 3);
+  });
+
+  test('duelul obișnuit nu e tratat ca partidă cu mai mulți', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    client.emit(
+      const DuelRoundResult(
+        roundNumber: 1,
+        totalRounds: 5,
+        correctAnswer: 'x',
+        players: [
+          DuelPlayerScore(
+            userId: 'me',
+            score: 20,
+            territoriesWon: 1,
+            isCorrect: true,
+          ),
+          DuelPlayerScore(
+            userId: 'rival',
+            score: 10,
+            territoriesWon: 0,
+            isCorrect: false,
+          ),
+        ],
+      ),
+    );
+    await settle();
+
+    expect(controller.state.isMultiplayer, isFalse);
+    expect(controller.state.myPoints, 20);
+    expect(controller.state.opponentPoints, 10);
+  });
+
+
+  test('harta și eliminările din rundă ajung în stare', () async {
+    final client = FakeRealtimeClient();
+    final controller = DuelController(client);
+    addTearDown(controller.dispose);
+
+    await controller.start();
+    client.emit(const DuelSessionReady('me'));
+    await settle();
+
+    client.emit(
+      const DuelRoundResult(
+        roundNumber: 2,
+        totalRounds: 5,
+        correctAnswer: 'x',
+        players: [
+          DuelPlayerScore(
+            userId: 'me',
+            score: 10,
+            territoriesWon: 3,
+            isCorrect: true,
+          ),
+          DuelPlayerScore(
+            userId: 'rival',
+            score: 5,
+            territoriesWon: 0,
+            isCorrect: false,
+          ),
+        ],
+        territory: TerritoryOwnership(
+          owners: {'t0': 'me', 't1': null},
+          contestedTerritoryId: 't1',
+        ),
+        eliminatedUserIds: ['rival'],
+      ),
+    );
+    await settle();
+
+    expect(controller.state.territory?.ownerOf('t0'), 'me');
+    expect(controller.state.territory?.contestedTerritoryId, 't1');
+    expect(controller.state.spectatorUserIds, contains('rival'));
+    // Eu n-am fost eliminat, deci pot răspunde în continuare.
+    expect(controller.state.amSpectator, isFalse);
+  });
+
 }

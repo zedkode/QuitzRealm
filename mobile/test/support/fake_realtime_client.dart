@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:quiz_realm/core/network/realtime_client.dart';
+import 'package:quiz_realm/domain/duel/match_preferences.dart';
 import 'package:quiz_realm/domain/duel/duel_events.dart';
 import 'package:quiz_realm/domain/question/quiz_question.dart';
 
@@ -29,8 +30,17 @@ class FakeRealtimeClient implements RealtimeClient {
   @override
   Future<bool> connect() async => connectResult;
 
+  /// Preferințele cu care s-a intrat în coadă — testele verifică pe ele că
+  /// modul și categoriile alese chiar ajung la server.
+  MatchPreferences? queuePreferences;
+
   @override
-  void joinQueue() => joinedQueue = true;
+  void joinQueue([
+    MatchPreferences preferences = MatchPreferences.defaults,
+  ]) {
+    joinedQueue = true;
+    queuePreferences = preferences;
+  }
 
   @override
   void leaveQueue() => leftQueue = true;

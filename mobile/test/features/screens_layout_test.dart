@@ -61,7 +61,7 @@ void main() {
         expect(tester.takeException(), isNull);
         // Rândul de moduri e partea cea mai strâmtă a ecranului: patru
         // cartonașe pe lățimea telefonului. Dacă se revarsă, se revarsă aici.
-        expect(find.byKey(const Key('menu-campaign')), findsOneWidget);
+        expect(find.byKey(const Key('menu-training')), findsOneWidget);
         expect(find.byKey(const Key('menu-duel')), findsOneWidget);
         expect(find.byKey(const Key('menu-social')), findsOneWidget);
         expect(find.byKey(const Key('menu-leaderboard')), findsOneWidget);

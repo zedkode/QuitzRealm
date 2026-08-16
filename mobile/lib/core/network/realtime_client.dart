@@ -4,6 +4,8 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:socket_io_client/socket_io_client.dart' as io;
 
 import '../../domain/duel/duel_events.dart';
+import '../../domain/duel/match_preferences.dart';
+import '../../domain/duel/territory_map.dart';
 import '../../domain/question/quiz_question.dart';
 import 'api_client.dart';
 
@@ -123,6 +125,12 @@ class RealtimeClient {
                       .whereType<DuelPlayerScore>()
                       .toList(growable: false)
                 : const [],
+            territory: _parseTerritory(map['territory']),
+            eliminatedUserIds: map['eliminatedUserIds'] is List
+                ? (map['eliminatedUserIds']! as List)
+                      .map((id) => id.toString())
+                      .toList(growable: false)
+                : const [],
           ),
         );
       })
@@ -195,6 +203,10 @@ class RealtimeClient {
                       .whereType<DuelPlayerSnapshot>()
                       .toList(growable: false)
                 : const [],
+            territoryMap: _asMap(map['territoryMap']) == null
+                ? null
+                : TerritoryMap.fromJson(_asMap(map['territoryMap'])!),
+            territory: _parseTerritory(map['territory']),
           ),
         );
       })
@@ -235,7 +247,27 @@ class RealtimeClient {
       ..onDisconnect((_) => _emit(const DuelDisconnected()));
   }
 
-  void joinQueue() => _socket?.emit('matchmaking:join', {'mode': 'duo'});
+  /// Intră în coada de matchmaking cu preferințele jucătorului.
+  ///
+  /// Categoriile lipsesc din mesaj când lista e goală: pe server, absența
+  /// preferinței înseamnă „accept orice", iar o listă goală trimisă explicit ar
+  /// fi doar zgomot în validare.
+  void joinQueue([MatchPreferences preferences = MatchPreferences.defaults]) {
+    _socket?.emit('matchmaking:join', {
+      'mode': preferences.mode.wireValue,
+      if (preferences.categoryCodes.isNotEmpty)
+        'categoryCodes': preferences.categoryCodes,
+      if (preferences.playerCount != null)
+        'playerCount': preferences.playerCount,
+    });
+  }
+
+  /// Citește blocul de teritorii dintr-un mesaj. `null` la Duo, unde lipsește.
+  TerritoryOwnership? _parseTerritory(Object? raw) {
+    final map = _asMap(raw);
+    if (map == null) return null;
+    return TerritoryOwnership.fromJson(map);
+  }
 
   void leaveQueue() => _socket?.emit('matchmaking:leave');
 

@@ -1,3 +1,4 @@
+import 'territory_map.dart';
 import '../question/quiz_question.dart';
 
 /// Evenimentele contractului Socket.IO din `backend/realtime/EVENTS.md`,
@@ -97,12 +98,20 @@ class DuelRoundResult extends DuelEvent {
     required this.totalRounds,
     required this.correctAnswer,
     required this.players,
+    this.territory,
+    this.eliminatedUserIds = const [],
   });
 
   final int roundNumber;
   final int totalRounds;
   final String correctAnswer;
   final List<DuelPlayerScore> players;
+
+  /// Proprietatea asupra teritoriilor. Absentă la Duo, care n-are hartă.
+  final TerritoryOwnership? territory;
+
+  /// Jucătorii care tocmai au trecut în mod spectator (§12.6).
+  final List<String> eliminatedUserIds;
 }
 
 enum DuelOutcome { win, loss, draw }
@@ -190,6 +199,8 @@ class DuelMatchSnapshot extends DuelEvent {
     required this.question,
     required this.players,
     this.resumeDeadline,
+    this.territoryMap,
+    this.territory,
   });
 
   final String matchId;
@@ -200,6 +211,10 @@ class DuelMatchSnapshot extends DuelEvent {
   final DateTime? resumeDeadline;
   final QuizQuestion question;
   final List<DuelPlayerSnapshot> players;
+
+  /// Harta întreagă; vine doar în snapshot, fiind imuabilă pe toată partida.
+  final TerritoryMap? territoryMap;
+  final TerritoryOwnership? territory;
 }
 
 enum DuelChatMessageKind { text, reaction }

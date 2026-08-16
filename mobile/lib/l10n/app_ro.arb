@@ -16,7 +16,7 @@
   "worldMapEyebrow": "HARTA REGATULUI",
   "worldMapTitle": "Alege-ți ținutul",
   "worldMapHint": "Atinge un ținut cucerit pentru a-i deschide asalturile.",
-  "levelBadge": "Nivel {level}",
+  "levelBadge": "Nivel de cont {level}",
   "@levelBadge": {
     "placeholders": {
       "level": {
@@ -261,7 +261,7 @@
       }
     }
   },
-  "resultLevelUp": "Nivel nou: {level}!",
+  "resultLevelUp": "Nivel de cont nou: {level}!",
   "@resultLevelUp": {
     "placeholders": {
       "level": {
@@ -774,5 +774,244 @@
   "settingsOpenAccount": "Deschide contul",
   "@settingsOpenAccount": {
     "description": "Ecranul de setari"
+  },
+  "accountLevelLabel": "Nivel de cont",
+  "@accountLevelLabel": {
+    "description": "Eticheta nivelului de cont (owner-plan 7.3)"
+  },
+  "categoryAnimals": "Animale",
+  "@categoryAnimals": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryArt": "Artă",
+  "@categoryArt": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryCars": "Mașini",
+  "@categoryCars": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryEconomy": "Economie",
+  "@categoryEconomy": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryGaming": "Gaming",
+  "@categoryGaming": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryGeneralKnowledge": "Cultură generală",
+  "@categoryGeneralKnowledge": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryGeography": "Geografie",
+  "@categoryGeography": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryHistory": "Istorie",
+  "@categoryHistory": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryLiterature": "Literatură",
+  "@categoryLiterature": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryLogic": "Logică",
+  "@categoryLogic": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryMedieval": "Medieval",
+  "@categoryMedieval": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryMovies": "Filme",
+  "@categoryMovies": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryMusic": "Muzică",
+  "@categoryMusic": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryMythology": "Mitologie",
+  "@categoryMythology": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryRoyalChallenge": "Provocare regală",
+  "@categoryRoyalChallenge": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryScience": "Știință",
+  "@categoryScience": {
+    "description": "Antrenament pe categorii"
+  },
+  "categorySpace": "Spațiu",
+  "@categorySpace": {
+    "description": "Antrenament pe categorii"
+  },
+  "categorySports": "Sport",
+  "@categorySports": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryTechnology": "Tehnologie",
+  "@categoryTechnology": {
+    "description": "Antrenament pe categorii"
+  },
+  "categoryWars": "Războaie",
+  "@categoryWars": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingTitle": "Antrenament",
+  "@trainingTitle": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingSubtitle": "Alege categoriile și exersează fără presiune.",
+  "@trainingSubtitle": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingSelectAll": "Toate categoriile",
+  "@trainingSelectAll": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingClear": "Golește selecția",
+  "@trainingClear": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingSelectedCount": "{count} categorii alese",
+  "@trainingSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trainingAllSelected": "Toate cele {count} categorii",
+  "@trainingAllSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trainingStart": "Începe runda",
+  "@trainingStart": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingLength": "Lungimea rundei",
+  "@trainingLength": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingLengthShort": "Scurtă",
+  "@trainingLengthShort": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingLengthMedium": "Medie",
+  "@trainingLengthMedium": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingLengthLong": "Lungă",
+  "@trainingLengthLong": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingMastery": "Măiestrie",
+  "@trainingMastery": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingMasteryNone": "Neînceput",
+  "@trainingMasteryNone": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingMasteryBronze": "Bronz",
+  "@trainingMasteryBronze": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingMasterySilver": "Argint",
+  "@trainingMasterySilver": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingMasteryGold": "Aur",
+  "@trainingMasteryGold": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingCorrectOf": "{correct} corecte din {answered}",
+  "@trainingCorrectOf": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "answered": {
+        "type": "int"
+      }
+    }
+  },
+  "trainingRoundDone": "Rundă încheiată",
+  "@trainingRoundDone": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingPlayAgain": "Încă o rundă",
+  "@trainingPlayAgain": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingBack": "Înapoi la categorii",
+  "@trainingBack": {
+    "description": "Antrenament pe categorii"
+  },
+  "trainingEmpty": "Nu am găsit întrebări pentru categoriile alese.",
+  "@trainingEmpty": {
+    "description": "Antrenament pe categorii"
+  },
+  "homeModeTrainingDesc": "Exersează pe categoriile alese de tine.",
+  "@homeModeTrainingDesc": {
+    "description": "Cartonasul de antrenament"
+  },
+  "playTitle": "Joacă",
+  "@playTitle": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playSubtitle": "Alege modul și categoriile, apoi caută adversari.",
+  "@playSubtitle": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playMode": "Mod de joc",
+  "@playMode": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeDuo": "Duel 1v1",
+  "@playModeDuo": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeDuoDesc": "Față în față, pe rang.",
+  "@playModeDuoDesc": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeClassic": "Clasic",
+  "@playModeClassic": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeClassicDesc": "Mai mulți jucători, cucerire de teritorii.",
+  "@playModeClassicDesc": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playPlayerCount": "Număr de jucători",
+  "@playPlayerCount": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playCategories": "Categorii",
+  "@playCategories": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playCategoriesNote": "Serverul folosește categoriile pe care le vreți amândoi. Dacă nu se potrivesc, meciul rulează pe toate.",
+  "@playCategoriesNote": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playFindMatch": "Caută meci",
+  "@playFindMatch": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeSoon": "În pregătire",
+  "@playModeSoon": {
+    "description": "Ecranul de pregatire a meciului"
+  },
+  "playModeClassicSoon": "Serverul îl suportă deja, dar ecranul de meci arată deocamdată un singur adversar.",
+  "@playModeClassicSoon": {
+    "description": "Ecranul de pregatire a meciului"
   }
 }

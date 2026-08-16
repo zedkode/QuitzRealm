@@ -15,6 +15,17 @@ import {
   PublicQuestion,
   RoundResultPayload,
 } from './game.types';
+import { canAttack, resolveAttacks } from './battle-resolution';
+import { isSpectator, newlyEliminated } from './elimination';
+import { buildTerritoryMap } from './territory-map';
+import {
+  attackableBy,
+  claimTerritory,
+  initialOwnership,
+  phaseFor,
+  pickContestedTerritory,
+  territoryCounts,
+} from './territory-state';
 import {
   assertMatchParticipants,
   DUO_MATCH_PROFILE,
@@ -113,6 +124,22 @@ export class GameService {
       })),
     };
 
+    // Harta există doar la Clasic. Duo are doi jucători și niciun teritoriu de
+    // disputat; a-i inventa o hartă ar schimba un mod care funcționează.
+    if (profile.clientMode === 'classic') {
+      const map = buildTerritoryMap(userIds);
+      const ownership = initialOwnership(map);
+      state.territory = {
+        map,
+        ownership,
+        contestedTerritoryId: pickContestedTerritory(map, ownership),
+      };
+      const counts = territoryCounts(ownership, userIds);
+      for (const player of state.players) {
+        player.territoriesWon = counts[player.userId] ?? 0;
+      }
+    }
+
     await this.redis.client.set(
       this.matchKey(state.id),
       JSON.stringify(state),
@@ -144,6 +171,43 @@ export class GameService {
     return state;
   }
 
+  /// Înregistrează ținta de atac a unui jucător pentru runda de luptă curentă.
+  async declareAttack(userId: string, matchId: string, territoryId: string) {
+    await this.withMatchLock(matchId, async () => {
+      const state = await this.loadMatch(matchId);
+      if (state.status !== 'active') {
+        throw new WsException('Partida nu mai este activă.');
+      }
+      if (!state.territory) {
+        throw new WsException('Modul acesta nu are hartă de cucerit.');
+      }
+      if (phaseFor(state.territory.ownership) !== 'battle') {
+        throw new WsException('Faza de luptă nu a început încă.');
+      }
+      if (isSpectator(userId, state.eliminated ?? [])) {
+        throw new WsException('Ești în mod spectator și nu mai poți ataca.');
+      }
+      if (!state.players.some((player) => player.userId === userId)) {
+        throw new WsException('Jucătorul nu aparține acestei partide.');
+      }
+
+      const attackable = attackableBy(
+        state.territory.map,
+        state.territory.ownership,
+        userId,
+      );
+      if (!canAttack(userId, territoryId, attackable)) {
+        throw new WsException('Teritoriul nu e la granița ta.');
+      }
+
+      state.territory.attacks = {
+        ...(state.territory.attacks ?? {}),
+        [userId]: territoryId,
+      };
+      await this.saveMatch(state);
+    });
+  }
+
   async submitAnswer(userId: string, dto: SubmitAnswerDto): Promise<void> {
     await this.withMatchLock(dto.matchId, async () => {
       const state = await this.loadMatch(dto.matchId);
@@ -159,6 +223,12 @@ export class GameService {
       }
       if (player.answer) {
         throw new WsException('Răspunsul a fost deja înregistrat.');
+      }
+      // Eliminatul rămâne în partidă și o vede mai departe, dar nu mai
+      // influențează rezultatul (§12.6). Verificarea stă pe server: clientul
+      // poate ascunde butoanele, dar nu poate fi crezut pe cuvânt.
+      if (isSpectator(userId, state.eliminated ?? [])) {
+        throw new WsException('Ești în mod spectator și nu mai poți răspunde.');
       }
 
       const normalizedAnswer = dto.answer.trim();
@@ -329,6 +399,18 @@ export class GameService {
         answer: player.answer?.value ?? null,
         responseTimeMs: player.answer?.responseTimeMs ?? null,
       })),
+      ...(state.territory
+        ? {
+            territory: {
+              ownership: state.territory.ownership,
+              contestedTerritoryId: state.territory.contestedTerritoryId,
+            },
+            eliminatedUserIds: (state.eliminated ?? [])
+              .filter((record) => record.roundNumber === state.roundNumber)
+              .map((record) => record.userId),
+            conquests: state.lastConquests ?? [],
+          }
+        : {}),
     };
     this.getServer().to(this.matchRoom(state.id)).emit('round:result', result);
 
@@ -488,6 +570,17 @@ export class GameService {
         hasAnswered: player.answer !== undefined,
         connected: player.disconnectedAt === undefined,
       })),
+      // La reconectare clientul primește harta întreagă: n-o poate reconstrui
+      // singur, iar fără ea ecranul de Clasic ar rămâne gol.
+      ...(state.territory
+        ? {
+            territoryMap: state.territory.map,
+            territory: {
+              ownership: state.territory.ownership,
+              contestedTerritoryId: state.territory.contestedTerritoryId,
+            },
+          }
+        : {}),
     };
   }
 
@@ -505,8 +598,88 @@ export class GameService {
         player.answer.isCorrect = award.isCorrect;
       }
       player.score += award.scoreDelta;
-      player.territoriesWon += award.territoryDelta;
       if (award.isCorrect) player.correctAnswers += 1;
+
+      // La Clasic, teritoriul câștigat e unul **anume** de pe hartă, nu un
+      // contor. La Duo rămâne contorul, ca modul existent să nu se schimbe.
+      if (!state.territory) {
+        player.territoriesWon += award.territoryDelta;
+      } else if (
+        award.territoryDelta > 0 &&
+        phaseFor(state.territory.ownership) === 'capture'
+      ) {
+        const contested = state.territory.contestedTerritoryId;
+        if (contested) {
+          state.territory.ownership = claimTerritory(
+            state.territory.ownership,
+            contested,
+            player.userId,
+          );
+        }
+      }
+    }
+
+    // Faza de luptă are propria regulă: nu câștigă cel mai rapid din rundă, ci
+    // cel mai rapid **dintre atacatorii aceleiași ținte** (§12.3 faza 2).
+    if (state.territory && phaseFor(state.territory.ownership) === 'battle') {
+      const answers: Record<
+        string,
+        { isCorrect: boolean; responseTimeMs: number | null }
+      > = {};
+      for (const player of state.players) {
+        answers[player.userId] = {
+          isCorrect: player.answer?.isCorrect ?? false,
+          responseTimeMs: player.answer?.responseTimeMs ?? null,
+        };
+      }
+
+      state.lastConquests = resolveAttacks(
+        state.territory.attacks ?? {},
+        answers,
+        state.territory.ownership,
+      );
+      for (const conquest of state.lastConquests) {
+        state.territory.ownership = claimTerritory(
+          state.territory.ownership,
+          conquest.territoryId,
+          conquest.winnerId,
+        );
+      }
+      // Declarațiile nu se moștenesc: fiecare rundă de luptă cere o țintă nouă.
+      state.territory.attacks = {};
+    } else if (state.territory) {
+      state.lastConquests = [];
+    }
+
+    if (state.territory) {
+      // Contoarele se recalculează din hartă, nu se incrementează: harta e
+      // sursa de adevăr, iar o sumă ținută separat s-ar putea desincroniza.
+      const counts = territoryCounts(
+        state.territory.ownership,
+        state.players.map((player) => player.userId),
+      );
+      for (const player of state.players) {
+        player.territoriesWon = counts[player.userId] ?? 0;
+      }
+      state.territory.contestedTerritoryId = pickContestedTerritory(
+        state.territory.map,
+        state.territory.ownership,
+      );
+
+      const fresh = newlyEliminated(
+        state.territory.ownership,
+        state.players.map((player) => player.userId),
+        state.eliminated ?? [],
+      );
+      if (fresh.length > 0) {
+        state.eliminated = [
+          ...(state.eliminated ?? []),
+          ...fresh.map((userId) => ({
+            userId,
+            roundNumber: state.roundNumber,
+          })),
+        ];
+      }
     }
   }
 

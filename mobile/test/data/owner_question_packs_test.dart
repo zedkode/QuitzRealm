@@ -25,7 +25,6 @@ void main() {
     );
 
     final globalIds = <String>{};
-    final globalTexts = <String>{};
     final totals = <String, int>{};
 
     for (final definition in ownerQuestionPacks) {
@@ -47,6 +46,12 @@ void main() {
       totals[definition.code] = pack.questions.length;
 
       final difficulties = <int>{};
+      // Textele se verifică **în interiorul** pachetului. Între pachete,
+      // suprapunerea e intenționată: „Cultură Generală" reia întrebări din
+      // literatură, istorie și geografie. Ca să nu ajungă de două ori în
+      // aceeași rundă când jucătorul bifează ambele categorii, deduplicarea se
+      // face la compunerea rundei — vezi `CategoryRoundSource`.
+      final packTexts = <String>{};
       for (final question in pack.questions) {
         expect(
           globalIds.add(question.id),
@@ -54,9 +59,9 @@ void main() {
           reason: 'id dublat: ${question.id}',
         );
         expect(
-          globalTexts.add(question.text.toLowerCase().trim()),
+          packTexts.add(question.text.toLowerCase().trim()),
           isTrue,
-          reason: 'întrebare dublată: ${question.text}',
+          reason: 'întrebare dublată în ${definition.code}: ${question.text}',
         );
         expect(
           question.explanation.trim(),

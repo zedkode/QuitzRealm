@@ -37,8 +37,8 @@ class HomeNavigation extends StatelessWidget {
       QuizRealmNavItem(
         tab: QuizRealmTab.campaign,
         symbol: GameSymbol.map,
-        label: l10n.navCampaign,
-        route: '/harta',
+        label: l10n.trainingTitle,
+        route: '/antrenament',
       ),
       QuizRealmNavItem(
         tab: QuizRealmTab.chat,
@@ -46,12 +46,22 @@ class HomeNavigation extends StatelessWidget {
         label: l10n.navChat,
         route: '/social',
       ),
-      QuizRealmNavItem(
-        tab: QuizRealmTab.ranking,
-        symbol: GameSymbol.trophy,
-        label: l10n.navRanking,
-        route: '/clasament',
-      ),
+      // A patra poziție alternează Clasament ↔ Multiplayer, ca în capturi: bara
+      // arată destinația vecină ecranului curent, nu o listă fixă.
+      if (current == QuizRealmTab.multiplayer)
+        QuizRealmNavItem(
+          tab: QuizRealmTab.multiplayer,
+          symbol: GameSymbol.swords,
+          label: l10n.navMultiplayer,
+          route: '/joaca',
+        )
+      else
+        QuizRealmNavItem(
+          tab: QuizRealmTab.ranking,
+          symbol: GameSymbol.trophy,
+          label: l10n.navRanking,
+          route: '/clasament',
+        ),
       if (lastTab == QuizRealmTab.settings)
         QuizRealmNavItem(
           tab: QuizRealmTab.settings,

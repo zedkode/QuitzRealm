@@ -108,12 +108,19 @@ class GameModeCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 2),
+              // Descrierea are ~80 dp lățime pe un telefon obișnuit. La 10 px
+              // se tăia la jumătate de propoziție („Progresează și cucerește
+              // noi…"), ceea ce nu spune nimic. Mai mic și pe trei rânduri,
+              // fraza intră întreagă.
               Text(
                 description,
                 textAlign: TextAlign.center,
-                maxLines: 2,
+                maxLines: 3,
                 overflow: TextOverflow.ellipsis,
-                style: QuizRealmTypography.bodySecondary.copyWith(fontSize: 10),
+                style: QuizRealmTypography.bodySecondary.copyWith(
+                  fontSize: 9,
+                  height: 1.25,
+                ),
               ),
             ],
           ),

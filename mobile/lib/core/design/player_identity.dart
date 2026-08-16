@@ -287,7 +287,10 @@ class CurrencyCounter extends StatelessWidget {
             children: [
               Image.asset(asset, width: iconSize, height: iconSize),
               SizedBox(width: compact ? 4 : 6),
-              Flexible(
+              // Plafon de lățime: contorul nu are voie să împingă numele afară
+              // din antet dacă valoarea crește neașteptat de mult.
+              ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 92),
                 child: Text(
                   value,
                   maxLines: 1,
@@ -459,28 +462,23 @@ class PlayerIdentityHeader extends StatelessWidget {
                 ),
         ),
         const SizedBox(width: QuizRealmSpacing.sm),
-        // Contoarele se strâng pe ecrane înguste în loc să împingă numele.
-        Flexible(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  for (final currency in currencies) ...[
-                    Flexible(child: currency),
-                    const SizedBox(width: QuizRealmSpacing.xs),
-                  ],
-                  if (onMenu != null)
-                    _MenuButton(
-                      onTap: onMenu!,
-                      semanticsLabel: menuSemanticsLabel ?? 'Meniu',
-                    ),
-                ],
-              ),
+        // Fără flex: partea din dreapta ia exact cât îi trebuie, iar numele
+        // primește tot restul. Un `Flexible` aici ar avea implicit `flex: 1` și
+        // ar rezerva jumătate din rând chiar și gol — antetul s-ar strânge în
+        // stânga, cu butonul de meniu plutind pe mijlocul ecranului.
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            for (final currency in currencies) ...[
+              currency,
+              const SizedBox(width: QuizRealmSpacing.xs),
             ],
-          ),
+            if (onMenu != null)
+              _MenuButton(
+                onTap: onMenu!,
+                semanticsLabel: menuSemanticsLabel ?? 'Meniu',
+              ),
+          ],
         ),
       ],
     );

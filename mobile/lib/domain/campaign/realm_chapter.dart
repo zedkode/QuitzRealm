@@ -6,7 +6,9 @@ final class BattleStage {
     required this.questionCount,
     required this.minDifficulty,
     required this.maxDifficulty,
+    this.secondsOverride,
   }) : assert(index >= 0),
+       assert(secondsOverride == null || secondsOverride > 0),
        assert(questionCount > 0),
        assert(minDifficulty >= 1 && minDifficulty <= maxDifficulty),
        assert(maxDifficulty <= 5);
@@ -16,12 +18,18 @@ final class BattleStage {
   final int minDifficulty;
   final int maxDifficulty;
 
+  /// Timp propriu per întrebare, când modul cere altceva decât presiunea
+  /// crescândă a asalturilor.
+  final int? secondsOverride;
+
   /// Secundele alocate per întrebare scad pe măsură ce urci în ținut.
-  int get secondsPerQuestion => switch (index) {
-    0 => 15,
-    1 => 13,
-    _ => 11,
-  };
+  int get secondsPerQuestion =>
+      secondsOverride ??
+      switch (index) {
+        0 => 15,
+        1 => 13,
+        _ => 11,
+      };
 }
 
 /// Un ținut de pe hartă. Fiecare ținut are propriul pachet de întrebări și
@@ -57,13 +65,13 @@ final class RealmChapter {
   static const all = <RealmChapter>[
     RealmChapter(
       id: 'istorie',
-      packAsset: 'assets/questions/istorie.json',
+      packAsset: 'assets/questions/history.json',
       starsToUnlock: 0,
       mapPosition: (0.545, 0.385),
     ),
     RealmChapter(
       id: 'romania',
-      packAsset: 'assets/questions/romania.json',
+      packAsset: 'assets/questions/general-knowledge.json',
       starsToUnlock: 3,
       mapPosition: (0.545, 0.605),
     ),

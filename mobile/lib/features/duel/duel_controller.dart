@@ -5,6 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/network/realtime_client.dart';
 import '../../core/providers/repository_providers.dart';
 import '../../domain/duel/duel_events.dart';
+import '../../domain/duel/duel_standing.dart';
+import '../../domain/duel/territory_map.dart';
+import '../../domain/duel/match_preferences.dart';
 import '../../domain/question/quiz_question.dart';
 
 enum DuelPhase {
@@ -46,6 +49,10 @@ class DuelState {
     this.myTerritories = 0,
     this.opponentTerritories = 0,
     this.finalScores = const [],
+    this.standings = const [],
+    this.territoryMap,
+    this.territory,
+    this.spectatorUserIds = const [],
     this.errorMessage,
     this.isPaused = false,
     this.missingUserId,
@@ -79,7 +86,35 @@ class DuelState {
   final int myTerritories;
   final int opponentTerritories;
   final List<DuelFinalScore> finalScores;
+
+  /// Clasamentul complet al partidei, ordonat. La duel are două intrări; la
+  /// Clasic, între patru și opt. `myPoints`/`opponentPoints` rămân pentru
+  /// afișajul 1v1, dar aici e adevărul întreg.
+  final List<DuelStanding> standings;
+
+  /// Harta partidei; `null` la Duo, care nu are hartă.
+  final TerritoryMap? territoryMap;
+  final TerritoryOwnership? territory;
+
+  /// Jucătorii trecuți în mod spectator (§12.6).
+  final List<String> spectatorUserIds;
+
+  /// Eu am fost eliminat: pot vedea partida, dar nu mai pot răspunde.
+  bool get amSpectator =>
+      myUserId != null && spectatorUserIds.contains(myUserId);
+
   final String? errorMessage;
+
+  /// Partida are mai mulți jucători decât un duel.
+  bool get isMultiplayer => standings.length > 2;
+
+  /// Locul meu în clasament, numărat de la 1. `null` până există clasament.
+  int? get myPosition {
+    for (var index = 0; index < standings.length; index++) {
+      if (standings[index].userId == myUserId) return index + 1;
+    }
+    return null;
+  }
 
   /// Partida e oprită pentru că un jucător s-a deconectat. Cronometrul stă,
   /// serverul refuză răspunsuri, iar locul celui lipsă e rezervat.
@@ -152,6 +187,10 @@ class DuelState {
     int? myTerritories,
     int? opponentTerritories,
     List<DuelFinalScore>? finalScores,
+    List<DuelStanding>? standings,
+    TerritoryMap? territoryMap,
+    TerritoryOwnership? territory,
+    List<String>? spectatorUserIds,
     String? errorMessage,
     bool clearError = false,
     bool? isPaused,
@@ -186,6 +225,10 @@ class DuelState {
       myTerritories: myTerritories ?? this.myTerritories,
       opponentTerritories: opponentTerritories ?? this.opponentTerritories,
       finalScores: finalScores ?? this.finalScores,
+      standings: standings ?? this.standings,
+      territoryMap: territoryMap ?? this.territoryMap,
+      territory: territory ?? this.territory,
+      spectatorUserIds: spectatorUserIds ?? this.spectatorUserIds,
       errorMessage: clearError ? null : errorMessage ?? this.errorMessage,
       isPaused: clearPause ? false : isPaused ?? this.isPaused,
       missingUserId: clearPause ? null : missingUserId ?? this.missingUserId,
@@ -218,8 +261,13 @@ class DuelController extends StateNotifier<DuelState> {
   DateTime? _deadline;
   int _myTerritories = 0;
 
-  Future<void> start() async {
+  /// Preferințele meciului curent. Se rețin pentru că intrarea în coadă are loc
+  /// abia când serverul confirmă sesiunea, nu la apăsarea butonului.
+  MatchPreferences _preferences = MatchPreferences.defaults;
+
+  Future<void> start([MatchPreferences? preferences]) async {
     _myTerritories = 0;
+    if (preferences != null) _preferences = preferences;
     state = const DuelState(phase: DuelPhase.connecting);
     _subscription ??= _client.events.listen(_onEvent);
     final connected = await _client.connect();
@@ -279,7 +327,7 @@ class DuelController extends StateNotifier<DuelState> {
           return;
         }
         state = state.copyWith(myUserId: userId, phase: DuelPhase.searching);
-        _client.joinQueue();
+        _client.joinQueue(_preferences);
       case DuelQueued():
         state = state.copyWith(phase: DuelPhase.searching);
       case DuelLeftQueue():
@@ -348,6 +396,21 @@ class DuelController extends StateNotifier<DuelState> {
           myTerritories: mine?.territoriesWon ?? state.myTerritories,
           opponentTerritories:
               theirs?.territoriesWon ?? state.opponentTerritories,
+          // Clasamentul păstrează **toți** jucătorii, nu doar perechea de mai
+          // sus: la Clasic, `theirs` e un singur adversar din mai mulți.
+          standings: sortedStandings(
+            event.players.map(
+              (player) => DuelStanding(
+                userId: player.userId,
+                points: player.score,
+                territories: player.territoriesWon,
+              ),
+            ),
+          ),
+          territory: event.territory,
+          spectatorUserIds: event.eliminatedUserIds.isEmpty
+              ? null
+              : [...state.spectatorUserIds, ...event.eliminatedUserIds],
         );
       case DuelMatchFinished(:final players, :final endedByForfeit):
         _timer?.cancel();
@@ -458,6 +521,18 @@ class DuelController extends StateNotifier<DuelState> {
       opponentPoints: theirs?.score ?? 0,
       myTerritories: mine?.territoriesWon ?? 0,
       opponentTerritories: theirs?.territoriesWon ?? 0,
+      standings: sortedStandings(
+        snapshot.players.map(
+          (player) => DuelStanding(
+            userId: player.userId,
+            points: player.score,
+            territories: player.territoriesWon,
+            connected: player.connected,
+          ),
+        ),
+      ),
+      territoryMap: snapshot.territoryMap,
+      territory: snapshot.territory,
       lastTerritoryGain: 0,
       phase: (mine?.hasAnswered ?? false)
           ? DuelPhase.waitingOpponent

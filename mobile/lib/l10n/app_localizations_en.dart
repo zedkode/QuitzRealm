@@ -63,7 +63,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String levelBadge(int level) {
-    return 'Level $level';
+    return 'Account level $level';
   }
 
   @override
@@ -322,7 +322,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String resultLevelUp(int level) {
-    return 'New level: $level!';
+    return 'New account level: $level!';
   }
 
   @override
@@ -1015,4 +1015,182 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsOpenAccount => 'Open account';
+
+  @override
+  String get accountLevelLabel => 'Account level';
+
+  @override
+  String get categoryAnimals => 'Animals';
+
+  @override
+  String get categoryArt => 'Art';
+
+  @override
+  String get categoryCars => 'Cars';
+
+  @override
+  String get categoryEconomy => 'Economy';
+
+  @override
+  String get categoryGaming => 'Gaming';
+
+  @override
+  String get categoryGeneralKnowledge => 'General knowledge';
+
+  @override
+  String get categoryGeography => 'Geography';
+
+  @override
+  String get categoryHistory => 'History';
+
+  @override
+  String get categoryLiterature => 'Literature';
+
+  @override
+  String get categoryLogic => 'Logic';
+
+  @override
+  String get categoryMedieval => 'Medieval';
+
+  @override
+  String get categoryMovies => 'Movies';
+
+  @override
+  String get categoryMusic => 'Music';
+
+  @override
+  String get categoryMythology => 'Mythology';
+
+  @override
+  String get categoryRoyalChallenge => 'Royal challenge';
+
+  @override
+  String get categoryScience => 'Science';
+
+  @override
+  String get categorySpace => 'Space';
+
+  @override
+  String get categorySports => 'Sports';
+
+  @override
+  String get categoryTechnology => 'Technology';
+
+  @override
+  String get categoryWars => 'Wars';
+
+  @override
+  String get trainingTitle => 'Training';
+
+  @override
+  String get trainingSubtitle =>
+      'Pick your categories and practise without pressure.';
+
+  @override
+  String get trainingSelectAll => 'All categories';
+
+  @override
+  String get trainingClear => 'Clear selection';
+
+  @override
+  String trainingSelectedCount(int count) {
+    return '$count categories selected';
+  }
+
+  @override
+  String trainingAllSelected(int count) {
+    return 'All $count categories';
+  }
+
+  @override
+  String get trainingStart => 'Start round';
+
+  @override
+  String get trainingLength => 'Round length';
+
+  @override
+  String get trainingLengthShort => 'Short';
+
+  @override
+  String get trainingLengthMedium => 'Medium';
+
+  @override
+  String get trainingLengthLong => 'Long';
+
+  @override
+  String get trainingMastery => 'Mastery';
+
+  @override
+  String get trainingMasteryNone => 'Not started';
+
+  @override
+  String get trainingMasteryBronze => 'Bronze';
+
+  @override
+  String get trainingMasterySilver => 'Silver';
+
+  @override
+  String get trainingMasteryGold => 'Gold';
+
+  @override
+  String trainingCorrectOf(int correct, int answered) {
+    return '$correct correct out of $answered';
+  }
+
+  @override
+  String get trainingRoundDone => 'Round complete';
+
+  @override
+  String get trainingPlayAgain => 'Another round';
+
+  @override
+  String get trainingBack => 'Back to categories';
+
+  @override
+  String get trainingEmpty => 'No questions found for the chosen categories.';
+
+  @override
+  String get homeModeTrainingDesc => 'Practise on the categories you choose.';
+
+  @override
+  String get playTitle => 'Play';
+
+  @override
+  String get playSubtitle =>
+      'Pick a mode and your categories, then find opponents.';
+
+  @override
+  String get playMode => 'Game mode';
+
+  @override
+  String get playModeDuo => 'Duel 1v1';
+
+  @override
+  String get playModeDuoDesc => 'Head to head, ranked.';
+
+  @override
+  String get playModeClassic => 'Classic';
+
+  @override
+  String get playModeClassicDesc => 'More players, territory conquest.';
+
+  @override
+  String get playPlayerCount => 'Player count';
+
+  @override
+  String get playCategories => 'Categories';
+
+  @override
+  String get playCategoriesNote =>
+      'The server uses the categories you both want. If they do not overlap, the match runs on all of them.';
+
+  @override
+  String get playFindMatch => 'Find match';
+
+  @override
+  String get playModeSoon => 'Coming soon';
+
+  @override
+  String get playModeClassicSoon =>
+      'The server already supports it, but the match screen still shows a single opponent.';
 }

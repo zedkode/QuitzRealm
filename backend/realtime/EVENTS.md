@@ -432,3 +432,57 @@ ambii — nimeni nu câștigă o partidă pe care n-a jucat-o nimeni.
 `match:error` este emis dacă rezultatul calculat nu poate fi persistat în API.
 Starea rămâne în Redis cu `status = persistence_failed`; nu se raportează fals
 un meci finalizat.
+
+---
+
+## Teritorii (mod Clasic)
+
+Câmpurile de mai jos apar **doar** la partidele `classic`. La `duo` lipsesc
+complet: modul acela n-are hartă, iar `territoriesWon` rămâne un simplu contor.
+
+Harta e generată **pe server** și trimisă clientului. Clientul n-o calculează
+niciodată singur — două calcule independente ar putea diverge, iar doi jucători
+ar vedea hărți diferite ale aceleiași partide.
+
+### `round:result` — câmp adițional
+
+```json
+{
+  "territory": {
+    "ownership": { "t0": "user-a", "t1": null, "t2": "user-b" },
+    "contestedTerritoryId": "t7"
+  }
+}
+```
+
+- `ownership` — proprietarul fiecărui teritoriu; `null` = liber, încă necucerit.
+- `contestedTerritoryId` — teritoriul liber pus în joc în runda **următoare**;
+  `null` când nu mai există teritorii libere (partida a intrat în faza de luptă).
+
+Teritoriul contestat e ales cu preferință pentru granițele existente. Fără asta,
+harta s-ar umple în pete rupte între ele, iar faza de luptă ar începe cu jucători
+care n-au granițe comune și deci n-au pe cine ataca.
+
+### `match:snapshot` — câmpuri adiționale
+
+Pe lângă `territory`, snapshotul conține și `territoryMap`: harta întreagă, cu
+teritoriile, coordonatele lor hexagonale și adiacența explicită.
+
+```json
+{
+  "territoryMap": {
+    "playerCount": 4,
+    "territories": [
+      { "id": "t0", "coordinates": { "q": 0, "r": 0 }, "neighbourIds": ["t1", "t2"] }
+    ],
+    "bases": { "user-a": ["t3", "t19"] }
+  }
+}
+```
+
+Harta apare **doar în snapshot**, nu la fiecare rundă: e imuabilă pe toată
+partida, iar retrimiterea ei la fiecare răspuns ar fi risipă de bandă. Clientul o
+primește la intrare și la reconectare, apoi actualizează doar `ownership`.
+
+Adiacența e reciprocă și verificată prin teste: dacă A îl vede pe B ca vecin dar
+B nu-l vede pe A, faza de atac ar permite lovituri într-un singur sens.

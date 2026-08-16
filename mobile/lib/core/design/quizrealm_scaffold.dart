@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../ui/game_icons.dart';
+import '../ui/realm_backdrop.dart';
 import 'quizrealm_tokens.dart';
 
 /// Structura comună a oricărui ecran: fundal, antet de identitate, titlu cu
@@ -24,7 +25,12 @@ class QuizRealmScaffold extends StatelessWidget {
     this.scrollable = true,
     this.backdrop,
     this.onRefresh,
+    this.backdropAccent = QuizRealmColors.gold,
   });
+
+  /// Culoarea aurorei din fundal. Fiecare secțiune a jocului își poate lua
+  /// tonul ei, ca ecranele să nu arate toate la fel.
+  final Color backdropAccent;
 
   /// Antetul de identitate. Absent pe ecranele de autentificare.
   final Widget? header;
@@ -44,7 +50,11 @@ class QuizRealmScaffold extends StatelessWidget {
   final bool padded;
   final bool scrollable;
 
-  /// Ilustrația de fundal, când ecranul o cere (acasă, campanie).
+  /// Ilustrația de fundal, când ecranul cere alta decât cea implicită.
+  ///
+  /// Implicit fiecare ecran primește cerul animat al jocului. Un gradient
+  /// static ar face interfața să pară oprită — fundalul viu e ce leagă ecranele
+  /// între ele și ce deosebește jocul de o aplicație obișnuită.
   final Widget? backdrop;
 
   /// Trage-pentru-reîmprospătare. Doar pe ecranele care chiar reîncarcă de pe
@@ -77,8 +87,8 @@ class QuizRealmScaffold extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: QuizRealmColors.background,
-      body: Container(
-        decoration: const BoxDecoration(gradient: QuizRealmGradients.screen),
+      body: RealmBackdrop(
+        accent: backdropAccent,
         child: Stack(
           children: [
             if (backdrop != null) Positioned.fill(child: backdrop!),

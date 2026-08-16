@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/design/game_buttons.dart';
+import '../../core/design/entrance.dart';
 import '../../core/design/gold_frame.dart';
 import '../../core/design/mode_card.dart';
 import '../../core/design/player_identity.dart';
@@ -48,7 +49,9 @@ class TitleScreen extends ConsumerWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
+        // Panourile intră unul după altul, de jos în sus: ecranul se
+        // construiește în fața jucătorului, nu apare dintr-odată.
+        children: staggered([
           const DiamondDivider(),
           _ModeRow(profile: profile, l10n: l10n),
           const SizedBox(height: QuizRealmSpacing.panelGap),
@@ -64,7 +67,7 @@ class TitleScreen extends ConsumerWidget {
           ),
           const SizedBox(height: QuizRealmSpacing.panelGap),
           _FooterActions(onHowToPlay: () => _showRules(context, l10n)),
-        ],
+        ]),
       ),
     );
   }
@@ -176,12 +179,12 @@ class _ModeRow extends StatelessWidget {
         children: [
           Expanded(
             child: GameModeCard(
-              key: const Key('menu-campaign'),
-              title: l10n.homeModeCampaign,
-              description: l10n.homeModeCampaignDesc,
-              symbol: GameSymbol.castle,
+              key: const Key('menu-training'),
+              title: l10n.trainingTitle,
+              description: l10n.homeModeTrainingDesc,
+              symbol: GameSymbol.scroll,
               tint: QuizRealmColors.royalBlue,
-              onTap: () => context.push('/harta'),
+              onTap: () => context.push('/antrenament'),
             ),
           ),
           const SizedBox(width: QuizRealmSpacing.sm),
@@ -192,7 +195,7 @@ class _ModeRow extends StatelessWidget {
               description: l10n.homeModeMultiplayerDesc,
               symbol: GameSymbol.swords,
               tint: QuizRealmColors.crimson,
-              onTap: () => context.push('/duel'),
+              onTap: () => context.push('/joaca'),
             ),
           ),
           const SizedBox(width: QuizRealmSpacing.sm),
