@@ -1,8 +1,7 @@
 # syntax=docker/dockerfile:1
 
-# Panoul web QuizRealm (Vite + Express, generat cu Manus). `pnpm`, nu `npm`:
-# lockfile-ul e pnpm, iar override-urile și `allowBuilds` stau în
-# `pnpm-workspace.yaml`.
+# Panoul web QuizRealm (Vite + Express). `pnpm`, nu `npm`: lockfile-ul e pnpm,
+# iar override-urile și `allowBuilds` stau în `pnpm-workspace.yaml`.
 
 FROM node:22-bookworm-slim AS build
 WORKDIR /app
@@ -22,13 +21,8 @@ RUN printf 'VITE_QUIZREALM_API_URL=%s\nVITE_QUIZREALM_SOCKET_URL=%s\n' \
 FROM node:22-bookworm-slim AS runtime
 ENV NODE_ENV=production
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
-# `esbuild --packages=external` lasă toate importurile nerezolvate, iar
-# `server/_core/index.ts` importă `./vite` la nivel de modul — deci `vite` (o
-# devDependency) e cerut chiar și în producție, unde ramura Vite nu rulează.
-# Un `--prod` ar pica la pornire cu ERR_MODULE_NOT_FOUND, așa că reluăm
-# `node_modules` complet din etapa de build în loc să reinstalăm.
-COPY --from=build /app/node_modules ./node_modules
+# `dist/index.js` e bundle complet (Express inclus) și `dist/public` e clientul
+# construit, deci imaginea de producție nu are nevoie de `node_modules`.
 COPY --from=build /app/dist ./dist
 USER node
 EXPOSE 3000

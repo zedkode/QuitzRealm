@@ -24,21 +24,19 @@
 ## Validation follow-up
 
 - [ ] Leagă statisticile publice și admin de surse backend reale și elimină valorile hardcodate (landing public stats conectate; Admin Dashboard încă static)
-- [ ] Înlocuiește Manus auth cu integrarea REST QuizRealm pentru email/parolă, Google OAuth și TOTP/2FA
-- [ ] Adaugă client Socket.IO real pentru lobby, matchmaking, stare conexiune, reconectare, erori și final de meci
+- [x] Înlocuiește Manus auth cu integrarea REST QuizRealm pentru email/parolă, Google OAuth și TOTP/2FA (schela Manus a fost ștearsă; `Auth.tsx` folosește exclusiv REST-ul QuizRealm. Google OAuth are butonul cablat, dar backendul rulează cu `GOOGLE_CLIENT_ID=placeholder`, deci fluxul nu e utilizabil până la configurarea credențialelor reale)
+- [ ] Adaugă client Socket.IO real pentru lobby, matchmaking, stare conexiune, reconectare, erori și final de meci (conexiunea ajunge acum pe namespace-ul corect `/game`; fluxul complet de meci rămâne netestat cu un cont real)
 - [ ] Separă logic modurile Duo, Classic și Blitz pe date reale server-side
 - [ ] Conectează profilul și leaderboard-ul la endpointuri QuizRealm reale, inclusiv leaderboard-ul de prieteni (global/profile conectate; friends view și payload mapping rămân de finalizat)
-- [ ] Protejează efectiv ruta /admin și procedurile cu rol admin (codul este implementat; aplicarea migrațiilor reale rămâne blocată de TLS TiDBCloud)
+- [x] Protejează efectiv ruta /admin și procedurile cu rol admin (migrațiile sunt aplicate pe Postgres-ul de producție)
 - [x] Implementează operațiile admin reale: user list, ban/unban, force password reset, revoke sessions, report resolution, mute, shadow-ban și question approve/reject
-
-- [ ] Aplică migrația `20260816153000_admin_roles` pe clusterul TiDBCloud după configurarea transportului TLS; `prisma migrate deploy` a fost blocat de conexiunea insecure
 
 ## Admin backend milestone
 
 - [x] Adaugă AdminGuard și AdminModule cu gating pe roluri server-side
 - [x] Adaugă endpointuri admin pentru dashboard, utilizatori, ban/unban, force-password-reset, revoke-sessions, chat reports și question review
 - [x] Adaugă test unit pentru rolurile acceptate/refuzate de AdminGuard
-- [ ] Aplică migrațiile `admin_roles` și `account_bans` pe baza de date după configurarea TLS TiDBCloud; variantele fără TLS, `sslmode=require` și `sslaccept=strict` au fost respinse de config/runtime
+- [x] Aplică migrațiile `admin_roles` și `account_bans` pe baza de date (aplicate pe Postgres-ul de producție de pe VPS prin serviciul `migrate`; blocajul TiDBCloud era pe baza de date a schelei Manus, nu pe cea a QuizRealm)
 - [x] Conectează acțiunile și listele Admin UI la răspunsurile endpointurilor, nu doar indicatorul de sincronizare; erorile API sunt afișate transparent
 
 ## Release APK și sincronizare
@@ -88,3 +86,15 @@
 - [x] Confirmă buildul cloud web după setarea minimumReleaseAge: 0 și documentează rezultatul din logurile de deployment (deployment reușit; `quizrealm-crkncvwg.manus.space`)
 - [x] Adoptă QuizRealmScaffold pe Achievements, Social și Global Chat și validează testele Flutter sociale
 - [x] Aliniază Game.tsx cu snapshotul realtime NestJS: întrebare/opțiuni/categoryId server-side, round result și emiterea `round:answer`
+
+## Deployment pe VPS și curățenia schelei Manus
+
+- [x] Publică panoul web pe infrastructura proprie: `quitzrealm.dohotstudio.com` → `127.0.0.1:13002`, în aceeași stivă compose cu api și realtime (deploymentul `manus.space` nu mai e ținta)
+- [x] Adaugă CORS pe api și pe handshake-ul Socket.IO, controlat de `WEB_APP_ORIGINS`; fără el browserul bloca fiecare cerere către backend
+- [x] Conectează clientul Socket.IO la namespace-ul `/game`; namespace-ul implicit accepta conexiunea fără auth, deci pagina raporta „signal live" pentru o conexiune moartă
+- [x] Șterge schela Manus: drizzle/TiDBCloud, OAuth și SDK-ul Manus, storage proxy, stiva tRPC, AI chat, generare de imagini, transcriere vocală, hărți Google, ComponentShowcase și runtime-ul de debug
+- [x] Înlocuiește imaginile `/manus-storage/*` (care răspundeau 500 în producție) cu SVG-urile locale din `MedievalSvg.tsx`
+- [x] Scoate scriptul de analytics cu placeholder nerezolvat din `index.html`, care servea `index.html` ca JavaScript la fiecare încărcare
+
+- [ ] Elimină valorile hardcodate rămase din `Game.tsx` (ELO, „banners in realm", timerul, lista de jucători din ecranul de luptă) și din Admin Dashboard
+- [ ] Testează fluxul complet de meci din browser cu un cont real, după ce există date de test în producție
