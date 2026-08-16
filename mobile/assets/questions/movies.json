@@ -1,708 +1,3846 @@
 {
   "id": "movies",
-  "name": "Movies",
-  "source": "ai",
-  "reviewStatus": "pending",
+  "name": "Filme",
   "questions": [
     {
       "id": "movies-001",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Cine a regizat filmul Metropolis?",
-      "options": [
-        "Orson Welles",
-        "Akira Kurosawa",
-        "Alfred Hitchcock",
-        "Fritz Lang"
-      ],
-      "answer": "Fritz Lang",
-      "explanation": "Pentru „Metropolis”, răspunsul corect este „Fritz Lang”."
+      "text": "În ce an a fost lansat filmul „Snow White and the Seven Dwarfs”?",
+      "answer": "1937",
+      "explanation": "„Snow White and the Seven Dwarfs” a fost lansat în 1937. Lungmetrajul Disney a devenit un reper major pentru animația de lung metraj produsă în Statele Unite."
     },
     {
       "id": "movies-002",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "În ce an a avut premiera filmul Metropolis?",
-      "options": [
-        "1960",
-        "1962",
-        "1927",
-        "1954"
-      ],
-      "answer": "1927",
-      "explanation": "Pentru „Metropolis”, răspunsul corect este „1927”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „The Wizard of Oz”?",
+      "answer": "1939",
+      "explanation": "„The Wizard of Oz” a fost lansat în 1939. Filmul este celebru pentru utilizarea culorii Technicolor și pentru locul său durabil în cultura populară."
     },
     {
       "id": "movies-003",
-      "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a regizat filmul The Wizard of Oz?",
-      "options": [
-        "Stanley Kubrick",
-        "Victor Fleming",
-        "Alfred Hitchcock",
-        "David Lean"
-      ],
-      "answer": "Victor Fleming",
-      "explanation": "Pentru „The Wizard of Oz”, răspunsul corect este „Victor Fleming”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „Casablanca”?",
+      "answer": "1942",
+      "explanation": "„Casablanca” a fost lansat în 1942. Drama romantică plasată în timpul celui de-Al Doilea Război Mondial a devenit unul dintre marile clasice hollywoodiene."
     },
     {
       "id": "movies-004",
-      "type": "choice",
-      "difficulty": 4,
-      "text": "În ce an a avut premiera filmul The Wizard of Oz?",
-      "options": [
-        "1939",
-        "1962",
-        "1968",
-        "1972"
-      ],
-      "answer": "1939",
-      "explanation": "Pentru „The Wizard of Oz”, răspunsul corect este „1939”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „Seven Samurai”?",
+      "answer": "1954",
+      "explanation": "„Seven Samurai” a fost lansat în 1954. Filmul lui Akira Kurosawa a influențat profund cinemaul de acțiune și numeroase producții ulterioare."
     },
     {
       "id": "movies-005",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a regizat filmul Citizen Kane?",
-      "options": [
-        "Stanley Kubrick",
-        "Francis Ford Coppola",
-        "Steven Spielberg",
-        "Orson Welles"
-      ],
-      "answer": "Orson Welles",
-      "explanation": "Pentru „Citizen Kane”, răspunsul corect este „Orson Welles”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „Psycho”?",
+      "answer": "1960",
+      "explanation": "„Psycho” a fost lansat în 1960. Thrillerul lui Alfred Hitchcock a devenit celebru pentru montaj, tensiune și scena dușului."
     },
     {
       "id": "movies-006",
-      "type": "choice",
-      "difficulty": 5,
-      "text": "În ce an a avut premiera filmul Citizen Kane?",
-      "options": [
-        "1975",
-        "1977",
-        "1941",
-        "1972"
-      ],
-      "answer": "1941",
-      "explanation": "Pentru „Citizen Kane”, răspunsul corect este „1941”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „2001: A Space Odyssey”?",
+      "answer": "1968",
+      "explanation": "„2001: A Space Odyssey” a fost lansat în 1968. Filmul lui Stanley Kubrick a redefinit ambiția vizuală și filosofică a science-fictionului cinematografic."
     },
     {
       "id": "movies-007",
-      "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a regizat filmul Seven Samurai?",
-      "options": [
-        "Ridley Scott",
-        "Akira Kurosawa",
-        "Steven Spielberg",
-        "George Lucas"
-      ],
-      "answer": "Akira Kurosawa",
-      "explanation": "Pentru „Seven Samurai”, răspunsul corect este „Akira Kurosawa”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „The Godfather”?",
+      "answer": "1972",
+      "explanation": "„The Godfather” a fost lansat în 1972. Adaptarea romanului lui Mario Puzo a devenit un reper al filmului gangster și al Noului Hollywood."
     },
     {
       "id": "movies-008",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "În ce an a avut premiera filmul Seven Samurai?",
-      "options": [
-        "1954",
-        "1977",
-        "1979",
-        "1982"
-      ],
-      "answer": "1954",
-      "explanation": "Pentru „Seven Samurai”, răspunsul corect este „1954”."
+      "text": "În ce an a fost lansat filmul „Jaws”?",
+      "answer": "1975",
+      "explanation": "„Jaws” a fost lansat în 1975. Succesul uriaș al filmului lui Steven Spielberg a contribuit la dezvoltarea modelului modern de blockbuster estival."
     },
     {
       "id": "movies-009",
-      "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a regizat filmul Psycho?",
-      "options": [
-        "Ridley Scott",
-        "Robert Zemeckis",
-        "Giuseppe Tornatore",
-        "Alfred Hitchcock"
-      ],
-      "answer": "Alfred Hitchcock",
-      "explanation": "Pentru „Psycho”, răspunsul corect este „Alfred Hitchcock”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „Star Wars”?",
+      "answer": "1977",
+      "explanation": "„Star Wars” a fost lansat în 1977. Filmul lui George Lucas a schimbat masiv piața efectelor vizuale, merchandisingului și francizelor cinematografice."
     },
     {
       "id": "movies-010",
-      "type": "choice",
-      "difficulty": 2,
-      "text": "În ce an a avut premiera filmul Psycho?",
-      "options": [
-        "1985",
-        "1988",
-        "1960",
-        "1982"
-      ],
-      "answer": "1960",
-      "explanation": "Pentru „Psycho”, răspunsul corect este „1960”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „Back to the Future”?",
+      "answer": "1985",
+      "explanation": "„Back to the Future” a fost lansat în 1985. Comedia science-fiction a combinat călătoria în timp cu o poveste de familie și a devenit un mare succes popular."
     },
     {
       "id": "movies-011",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Cine a regizat filmul Lawrence of Arabia?",
-      "options": [
-        "Quentin Tarantino",
-        "David Lean",
-        "Giuseppe Tornatore",
-        "Martin Scorsese"
-      ],
-      "answer": "David Lean",
-      "explanation": "Pentru „Lawrence of Arabia”, răspunsul corect este „David Lean”."
+      "text": "În ce an a fost lansat filmul „Titanic”?",
+      "answer": "1997",
+      "explanation": "„Titanic” a fost lansat în 1997. Filmul lui James Cameron a combinat drama romantică cu reconstrucția spectaculoasă a dezastrului navei Titanic."
     },
     {
       "id": "movies-012",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "În ce an a avut premiera filmul Lawrence of Arabia?",
-      "options": [
-        "1962",
-        "1988",
-        "1990",
-        "1993"
-      ],
-      "answer": "1962",
-      "explanation": "Pentru „Lawrence of Arabia”, răspunsul corect este „1962”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "În ce an a fost lansat filmul „The Matrix”?",
+      "answer": "1999",
+      "explanation": "„The Matrix” a fost lansat în 1999. Filmul a popularizat spectaculos efectul bullet time și a combinat acțiunea cu teme filosofice și cyberpunk."
     },
     {
       "id": "movies-013",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a regizat filmul 2001: A Space Odyssey?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Jaws”?",
       "options": [
-        "Quentin Tarantino",
-        "John Lasseter",
-        "James Cameron",
-        "Stanley Kubrick"
+        "Steven Spielberg",
+        "Peter Jackson",
+        "Hayao Miyazaki",
+        "Wes Anderson"
       ],
-      "answer": "Stanley Kubrick",
-      "explanation": "Pentru „2001: A Space Odyssey”, răspunsul corect este „Stanley Kubrick”."
+      "answer": "Steven Spielberg",
+      "explanation": "Spielberg a transformat romanul lui Peter Benchley într-un thriller care a devenit unul dintre primele blockbustere moderne. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-014",
       "type": "choice",
-      "difficulty": 4,
-      "text": "În ce an a avut premiera filmul 2001: A Space Odyssey?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Titanic”?",
       "options": [
-        "1994",
-        "1995",
-        "1968",
-        "1993"
+        "Wes Anderson",
+        "Stanley Kubrick",
+        "Hayao Miyazaki",
+        "James Cameron"
       ],
-      "answer": "1968",
-      "explanation": "Pentru „2001: A Space Odyssey”, răspunsul corect este „1968”."
+      "answer": "James Cameron",
+      "explanation": "Cameron a combinat cercetarea istorică, efectele speciale și o poveste romantică într-o producție de mare amploare. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-015",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a regizat filmul The Godfather?",
+      "difficulty": 1,
+      "text": "Cine a regizat „The Lord of the Rings: The Fellowship of the Ring”?",
       "options": [
-        "Peter Jackson",
-        "Francis Ford Coppola",
-        "James Cameron",
-        "Lana și Lilly Wachowski"
+        "Christopher Nolan",
+        "Bong Joon-ho",
+        "Quentin Tarantino",
+        "Peter Jackson"
       ],
-      "answer": "Francis Ford Coppola",
-      "explanation": "Pentru „The Godfather”, răspunsul corect este „Francis Ford Coppola”."
+      "answer": "Peter Jackson",
+      "explanation": "Jackson a adaptat universul lui Tolkien prin filmări ample în Noua Zeelandă și efecte vizuale inovatoare. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-016",
       "type": "choice",
-      "difficulty": 5,
-      "text": "În ce an a avut premiera filmul The Godfather?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Gladiator”?",
       "options": [
-        "1972",
-        "1995",
-        "1997",
-        "1999"
+        "Steven Spielberg",
+        "Ridley Scott",
+        "Bong Joon-ho",
+        "James Cameron"
       ],
-      "answer": "1972",
-      "explanation": "Pentru „The Godfather”, răspunsul corect este „1972”."
+      "answer": "Ridley Scott",
+      "explanation": "Scott a revitalizat interesul pentru epopeea istorică hollywoodiană printr-o producție spectaculoasă centrată pe personajul Maximus. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-017",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a regizat filmul Jaws?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Inception”?",
       "options": [
-        "Peter Jackson",
-        "Hayao Miyazaki",
         "Christopher Nolan",
-        "Steven Spielberg"
+        "Peter Jackson",
+        "Martin Scorsese",
+        "Hayao Miyazaki"
       ],
-      "answer": "Steven Spielberg",
-      "explanation": "Pentru „Jaws”, răspunsul corect este „Steven Spielberg”."
+      "answer": "Christopher Nolan",
+      "explanation": "Nolan a construit filmul în jurul viselor suprapuse, manipulării timpului narativ și efectelor practice complexe. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-018",
       "type": "choice",
       "difficulty": 1,
-      "text": "În ce an a avut premiera filmul Jaws?",
+      "text": "Cine a regizat „Spirited Away”?",
       "options": [
-        "2001",
-        "2008",
-        "1975",
-        "1999"
+        "Peter Jackson",
+        "James Cameron",
+        "Quentin Tarantino",
+        "Hayao Miyazaki"
       ],
-      "answer": "1975",
-      "explanation": "Pentru „Jaws”, răspunsul corect este „1975”."
+      "answer": "Hayao Miyazaki",
+      "explanation": "Miyazaki a creat una dintre cele mai apreciate animații japoneze, produsă de Studio Ghibli. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-019",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a regizat filmul Star Wars?",
+      "difficulty": 1,
+      "text": "Cine a regizat „The Shining”?",
       "options": [
-        "Denis Villeneuve",
-        "George Lucas",
-        "Christopher Nolan",
-        "Bong Joon-ho"
+        "Guillermo del Toro",
+        "Stanley Kubrick",
+        "Bong Joon-ho",
+        "James Cameron"
       ],
-      "answer": "George Lucas",
-      "explanation": "Pentru „Star Wars”, răspunsul corect este „George Lucas”."
+      "answer": "Stanley Kubrick",
+      "explanation": "Kubrick a adaptat liber romanul lui Stephen King și a creat un horror cu o identitate vizuală foarte distinctă."
     },
     {
       "id": "movies-020",
       "type": "choice",
-      "difficulty": 2,
-      "text": "În ce an a avut premiera filmul Star Wars?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Goodfellas”?",
       "options": [
-        "1977",
-        "2008",
-        "2019",
-        "2021"
+        "Stanley Kubrick",
+        "Quentin Tarantino",
+        "Martin Scorsese",
+        "Peter Jackson"
       ],
-      "answer": "1977",
-      "explanation": "Pentru „Star Wars”, răspunsul corect este „1977”."
+      "answer": "Martin Scorsese",
+      "explanation": "Scorsese a folosit voice-over, montaj rapid și mișcări elaborate de cameră pentru a descrie lumea mafiei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-021",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a regizat filmul Alien?",
+      "text": "Cine a regizat „Pulp Fiction”?",
       "options": [
-        "Denis Villeneuve",
-        "Fritz Lang",
-        "Victor Fleming",
-        "Ridley Scott"
+        "Quentin Tarantino",
+        "James Cameron",
+        "Stanley Kubrick",
+        "Martin Scorsese"
       ],
-      "answer": "Ridley Scott",
-      "explanation": "Pentru „Alien”, răspunsul corect este „Ridley Scott”."
+      "answer": "Quentin Tarantino",
+      "explanation": "Tarantino a devenit celebru pentru dialog, structură narativă necronologică și referințe ample la cultura cinematografică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-022",
       "type": "choice",
-      "difficulty": 3,
-      "text": "În ce an a avut premiera filmul Alien?",
+      "difficulty": 1,
+      "text": "Cine a regizat „The Grand Budapest Hotel”?",
       "options": [
-        "1927",
-        "1939",
-        "1979",
-        "2021"
+        "Wes Anderson",
+        "Peter Jackson",
+        "Hayao Miyazaki",
+        "Ridley Scott"
       ],
-      "answer": "1979",
-      "explanation": "Pentru „Alien”, răspunsul corect este „1979”."
+      "answer": "Wes Anderson",
+      "explanation": "Anderson a folosit compoziții simetrice, decoruri stilizate și rapoarte de aspect diferite pentru perioade narative distincte. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-023",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a regizat filmul Blade Runner?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Parasite”?",
       "options": [
-        "Akira Kurosawa",
-        "Ridley Scott",
-        "Victor Fleming",
-        "Orson Welles"
+        "Wes Anderson",
+        "James Cameron",
+        "Steven Spielberg",
+        "Bong Joon-ho"
       ],
-      "answer": "Ridley Scott",
-      "explanation": "Pentru „Blade Runner”, răspunsul corect este „Ridley Scott”."
+      "answer": "Bong Joon-ho",
+      "explanation": "Bong a combinat satira socială, thrillerul și comedia neagră într-un film despre inegalitatea de clasă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-024",
       "type": "choice",
-      "difficulty": 4,
-      "text": "În ce an a avut premiera filmul Blade Runner?",
+      "difficulty": 1,
+      "text": "Cine a regizat „Pan's Labyrinth”?",
       "options": [
-        "1982",
-        "1939",
-        "1941",
-        "1954"
+        "Christopher Nolan",
+        "Peter Jackson",
+        "James Cameron",
+        "Guillermo del Toro"
       ],
-      "answer": "1982",
-      "explanation": "Pentru „Blade Runner”, răspunsul corect este „1982”."
+      "answer": "Guillermo del Toro",
+      "explanation": "Del Toro a combinat fantezia întunecată cu violența istorică a Spaniei franchiste de după războiul civil. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-025",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a regizat filmul Back to the Future?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Neo în seria „The Matrix”?",
       "options": [
-        "Akira Kurosawa",
-        "Alfred Hitchcock",
-        "David Lean",
-        "Robert Zemeckis"
+        "Heath Ledger",
+        "Robert Downey Jr.",
+        "Arnold Schwarzenegger",
+        "Keanu Reeves"
       ],
-      "answer": "Robert Zemeckis",
-      "explanation": "Pentru „Back to the Future”, răspunsul corect este „Robert Zemeckis”."
+      "answer": "Keanu Reeves",
+      "explanation": "Reeves îl joacă pe Thomas Anderson, programatorul care descoperă că realitatea sa este o simulare controlată. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-026",
       "type": "choice",
-      "difficulty": 5,
-      "text": "În ce an a avut premiera filmul Back to the Future?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Jack Sparrow în seria „Pirates of the Caribbean”?",
       "options": [
-        "1960",
-        "1962",
-        "1985",
-        "1954"
+        "Tom Hanks",
+        "Arnold Schwarzenegger",
+        "Johnny Depp",
+        "Robert Downey Jr."
       ],
-      "answer": "1985",
-      "explanation": "Pentru „Back to the Future”, răspunsul corect este „1985”."
+      "answer": "Johnny Depp",
+      "explanation": "Depp a construit personajul prin gestică excentrică, umor și o interpretare devenită emblematică pentru franciză. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-027",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a regizat filmul Cinema Paradiso?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Forrest Gump?",
       "options": [
-        "Francis Ford Coppola",
-        "Giuseppe Tornatore",
-        "David Lean",
-        "Stanley Kubrick"
+        "Tom Hanks",
+        "Heath Ledger",
+        "Jennifer Lawrence",
+        "Emma Watson"
       ],
-      "answer": "Giuseppe Tornatore",
-      "explanation": "Pentru „Cinema Paradiso”, răspunsul corect este „Giuseppe Tornatore”."
+      "answer": "Tom Hanks",
+      "explanation": "Hanks joacă personajul titular, ale cărui experiențe fictive sunt integrate în numeroase evenimente istorice americane. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-028",
       "type": "choice",
       "difficulty": 1,
-      "text": "În ce an a avut premiera filmul Cinema Paradiso?",
+      "text": "Cine o interpretează pe Hermione Granger în filmele „Harry Potter”?",
       "options": [
-        "1988",
-        "1962",
-        "1968",
-        "1972"
+        "Emma Watson",
+        "Audrey Tautou",
+        "Keanu Reeves",
+        "Johnny Depp"
       ],
-      "answer": "1988",
-      "explanation": "Pentru „Cinema Paradiso”, răspunsul corect este „1988”."
+      "answer": "Emma Watson",
+      "explanation": "Watson a jucat rolul Hermionei de la primul film al seriei până la finalul adaptărilor cinematografice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-029",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a regizat filmul Goodfellas?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Maximus în „Gladiator”?",
       "options": [
-        "Francis Ford Coppola",
-        "Steven Spielberg",
-        "George Lucas",
-        "Martin Scorsese"
+        "Audrey Tautou",
+        "Russell Crowe",
+        "Sylvester Stallone",
+        "Gal Gadot"
       ],
-      "answer": "Martin Scorsese",
-      "explanation": "Pentru „Goodfellas”, răspunsul corect este „Martin Scorsese”."
+      "answer": "Russell Crowe",
+      "explanation": "Crowe joacă generalul roman transformat în gladiator care caută răzbunare împotriva împăratului Commodus. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-030",
       "type": "choice",
-      "difficulty": 2,
-      "text": "În ce an a avut premiera filmul Goodfellas?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Joker în „The Dark Knight”?",
       "options": [
-        "1975",
-        "1977",
-        "1990",
-        "1972"
+        "Sylvester Stallone",
+        "Heath Ledger",
+        "Tom Hanks",
+        "Emma Watson"
       ],
-      "answer": "1990",
-      "explanation": "Pentru „Goodfellas”, răspunsul corect este „1990”."
+      "answer": "Heath Ledger",
+      "explanation": "Interpretarea lui Ledger a primit postum Premiul Oscar pentru cel mai bun actor în rol secundar. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-031",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a regizat filmul Jurassic Park?",
+      "text": "Cine îl interpretează pe Rocky Balboa?",
       "options": [
-        "Giuseppe Tornatore",
-        "Steven Spielberg",
-        "Ridley Scott",
-        "Robert Zemeckis"
+        "Sylvester Stallone",
+        "Gal Gadot",
+        "Audrey Tautou",
+        "Robert Downey Jr."
       ],
-      "answer": "Steven Spielberg",
-      "explanation": "Pentru „Jurassic Park”, răspunsul corect este „Steven Spielberg”."
+      "answer": "Sylvester Stallone",
+      "explanation": "Stallone a scris scenariul original și a transformat boxerul Rocky într-unul dintre personajele sale definitorii. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-032",
       "type": "choice",
-      "difficulty": 3,
-      "text": "În ce an a avut premiera filmul Jurassic Park?",
+      "difficulty": 1,
+      "text": "Cine o interpretează pe Katniss Everdeen în seria „The Hunger Games”?",
       "options": [
-        "1993",
-        "1977",
-        "1979",
-        "1982"
+        "Gal Gadot",
+        "Tom Hanks",
+        "Arnold Schwarzenegger",
+        "Jennifer Lawrence"
       ],
-      "answer": "1993",
-      "explanation": "Pentru „Jurassic Park”, răspunsul corect este „1993”."
+      "answer": "Jennifer Lawrence",
+      "explanation": "Lawrence joacă eroina care devine treptat simbolul rezistenței împotriva regimului autoritar din Panem. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-033",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a regizat filmul Pulp Fiction?",
+      "difficulty": 1,
+      "text": "Cine îl interpretează pe Tony Stark/Iron Man în Marvel Cinematic Universe?",
       "options": [
-        "Robert Zemeckis",
-        "Giuseppe Tornatore",
-        "Martin Scorsese",
-        "Quentin Tarantino"
+        "Heath Ledger",
+        "Robert Downey Jr.",
+        "Tom Hanks",
+        "Audrey Tautou"
       ],
-      "answer": "Quentin Tarantino",
-      "explanation": "Pentru „Pulp Fiction”, răspunsul corect este „Quentin Tarantino”."
+      "answer": "Robert Downey Jr.",
+      "explanation": "Rolul lui Tony Stark a fost central pentru lansarea și dezvoltarea timpurie a Marvel Cinematic Universe. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-034",
       "type": "choice",
-      "difficulty": 4,
-      "text": "În ce an a avut premiera filmul Pulp Fiction?",
+      "difficulty": 1,
+      "text": "Cine interpretează personajul Terminator în filmul original din 1984?",
       "options": [
-        "1985",
-        "1988",
-        "1994",
-        "1982"
+        "Sylvester Stallone",
+        "Arnold Schwarzenegger",
+        "Jennifer Lawrence",
+        "Robert Downey Jr."
       ],
-      "answer": "1994",
-      "explanation": "Pentru „Pulp Fiction”, răspunsul corect este „1994”."
+      "answer": "Arnold Schwarzenegger",
+      "explanation": "Schwarzenegger joacă asasinul cibernetic trimis din viitor pentru a o ucide pe Sarah Connor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-035",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a regizat filmul Toy Story?",
+      "difficulty": 1,
+      "text": "Cine o interpretează pe Wonder Woman în filmele DC lansate începând cu anii 2010?",
       "options": [
-        "James Cameron",
-        "John Lasseter",
-        "Martin Scorsese",
-        "Quentin Tarantino"
+        "Gal Gadot",
+        "Robert Downey Jr.",
+        "Tom Hanks",
+        "Keanu Reeves"
       ],
-      "answer": "John Lasseter",
-      "explanation": "Pentru „Toy Story”, răspunsul corect este „John Lasseter”."
+      "answer": "Gal Gadot",
+      "explanation": "Gadot a introdus personajul în Batman v Superman înainte de propriile filme Wonder Woman. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-036",
       "type": "choice",
-      "difficulty": 5,
-      "text": "În ce an a avut premiera filmul Toy Story?",
+      "difficulty": 1,
+      "text": "Cine o interpretează pe Amélie Poulain în „Amélie”?",
       "options": [
-        "1995",
-        "1988",
-        "1990",
-        "1993"
+        "Sylvester Stallone",
+        "Gal Gadot",
+        "Heath Ledger",
+        "Audrey Tautou"
       ],
-      "answer": "1995",
-      "explanation": "Pentru „Toy Story”, răspunsul corect este „1995”."
+      "answer": "Audrey Tautou",
+      "explanation": "Tautou interpretează tânăra pariziană imaginativă care încearcă să influențeze discret viețile oamenilor din jur. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-037",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a regizat filmul Titanic?",
+      "difficulty": 1,
+      "text": "Cum se numește un film care continuă povestea unui film anterior?",
       "options": [
-        "John Lasseter",
-        "Lana și Lilly Wachowski",
-        "Peter Jackson",
-        "James Cameron"
+        "Antagonist",
+        "Sequel",
+        "Prequel",
+        "Cameo"
       ],
-      "answer": "James Cameron",
-      "explanation": "Pentru „Titanic”, răspunsul corect este „James Cameron”."
+      "answer": "Sequel",
+      "explanation": "Un sequel dezvoltă evenimente, personaje sau lumea narativă după filmul precedent. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-038",
       "type": "choice",
       "difficulty": 1,
-      "text": "În ce an a avut premiera filmul Titanic?",
+      "text": "Cum se numește un film plasat cronologic înaintea unei povești deja lansate?",
       "options": [
-        "1994",
-        "1995",
-        "1997",
-        "1993"
+        "Dublaj",
+        "Antagonist",
+        "Scenariu",
+        "Prequel"
       ],
-      "answer": "1997",
-      "explanation": "Pentru „Titanic”, răspunsul corect este „1997”."
+      "answer": "Prequel",
+      "explanation": "Prequelul prezintă evenimente anterioare unui film sau unei serii deja cunoscute publicului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-039",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a regizat filmul The Matrix?",
+      "difficulty": 1,
+      "text": "Cum se numește apariția foarte scurtă a unei persoane cunoscute într-un film?",
       "options": [
-        "Christopher Nolan",
-        "Lana și Lilly Wachowski",
-        "Peter Jackson",
-        "Hayao Miyazaki"
+        "Protagonist",
+        "Prim-plan",
+        "Cameo",
+        "Soundtrack"
       ],
-      "answer": "Lana și Lilly Wachowski",
-      "explanation": "Pentru „The Matrix”, răspunsul corect este „Lana și Lilly Wachowski”."
+      "answer": "Cameo",
+      "explanation": "Un cameo este de obicei o apariție scurtă, adesea surpriză, a unui actor, creator sau personalități cunoscute. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-040",
       "type": "choice",
-      "difficulty": 2,
-      "text": "În ce an a avut premiera filmul The Matrix?",
+      "difficulty": 1,
+      "text": "Cum se numește colecția de muzică asociată unui film?",
       "options": [
-        "1999",
-        "1995",
-        "1997",
-        "2001"
+        "Soundtrack",
+        "Protagonist",
+        "Sequel",
+        "Subtitrare"
       ],
-      "answer": "1999",
-      "explanation": "Pentru „The Matrix”, răspunsul corect este „1999”."
+      "answer": "Soundtrack",
+      "explanation": "Soundtrack-ul poate include muzică originală, cântece existente și alte piese folosite pe parcursul filmului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-041",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a regizat filmul The Lord of the Rings: The Fellowship of the Ring?",
+      "text": "Cum se numește textul afișat pe ecran pentru traducerea sau transcrierea dialogului?",
       "options": [
-        "Christopher Nolan",
-        "Bong Joon-ho",
-        "Denis Villeneuve",
-        "Peter Jackson"
+        "Subtitrare",
+        "Scenariu",
+        "Soundtrack",
+        "Antagonist"
       ],
-      "answer": "Peter Jackson",
-      "explanation": "Pentru „The Lord of the Rings: The Fellowship of the Ring”, răspunsul corect este „Peter Jackson”."
+      "answer": "Subtitrare",
+      "explanation": "Subtitrările permit publicului să urmărească dialogul fără înlocuirea vocii originale a actorilor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-042",
       "type": "choice",
-      "difficulty": 3,
-      "text": "În ce an a avut premiera filmul The Lord of the Rings: The Fellowship of the Ring?",
+      "difficulty": 1,
+      "text": "Cum se numește înlocuirea dialogului original cu voci înregistrate într-o altă limbă?",
       "options": [
-        "2008",
-        "2019",
-        "2001",
-        "1999"
+        "Dublaj",
+        "Cameo",
+        "Scenariu",
+        "Antagonist"
       ],
-      "answer": "2001",
-      "explanation": "Pentru „The Lord of the Rings: The Fellowship of the Ring”, răspunsul corect este „2001”."
+      "answer": "Dublaj",
+      "explanation": "Dublajul sincronizează voci noi cu imaginea pentru a adapta filmul unei alte limbi. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-043",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a regizat filmul Spirited Away?",
+      "difficulty": 1,
+      "text": "Cum se numește o succesiune de cadre montate pentru a comprima timpul sau informația?",
       "options": [
-        "Victor Fleming",
-        "Hayao Miyazaki",
-        "Denis Villeneuve",
-        "Fritz Lang"
+        "Dublaj",
+        "Montaj",
+        "Prim-plan",
+        "Prequel"
       ],
-      "answer": "Hayao Miyazaki",
-      "explanation": "Pentru „Spirited Away”, răspunsul corect este „Hayao Miyazaki”."
+      "answer": "Montaj",
+      "explanation": "Montajul poate condensa antrenamente, călătorii sau schimbări temporale într-o secvență scurtă de imagini. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-044",
       "type": "choice",
-      "difficulty": 4,
-      "text": "În ce an a avut premiera filmul Spirited Away?",
+      "difficulty": 1,
+      "text": "Cum se numește cadrul care arată foarte de aproape fața sau un detaliu important?",
       "options": [
-        "2001",
-        "2019",
-        "2021",
-        "1927"
+        "Sequel",
+        "Protagonist",
+        "Prim-plan",
+        "Cliffhanger"
       ],
-      "answer": "2001",
-      "explanation": "Pentru „Spirited Away”, răspunsul corect este „2001”."
+      "answer": "Prim-plan",
+      "explanation": "Prim-planul concentrează atenția asupra expresiei, obiectului sau detaliului relevant pentru scenă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-045",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a regizat filmul The Dark Knight?",
+      "difficulty": 1,
+      "text": "Cum se numește textul scris care descrie dialogul, acțiunea și structura unui film?",
       "options": [
-        "Victor Fleming",
-        "Orson Welles",
-        "Akira Kurosawa",
-        "Christopher Nolan"
+        "Soundtrack",
+        "Prequel",
+        "Cameo",
+        "Scenariu"
       ],
-      "answer": "Christopher Nolan",
-      "explanation": "Pentru „The Dark Knight”, răspunsul corect este „Christopher Nolan”."
+      "answer": "Scenariu",
+      "explanation": "Scenariul este documentul de bază folosit pentru organizarea poveștii și producției cinematografice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-046",
       "type": "choice",
-      "difficulty": 5,
-      "text": "În ce an a avut premiera filmul The Dark Knight?",
+      "difficulty": 1,
+      "text": "Cum se numește personajul principal al unei povești?",
       "options": [
-        "1939",
-        "1941",
-        "2008",
-        "1927"
+        "Montaj",
+        "Prim-plan",
+        "Protagonist",
+        "Scenariu"
       ],
-      "answer": "2008",
-      "explanation": "Pentru „The Dark Knight”, răspunsul corect este „2008”."
+      "answer": "Protagonist",
+      "explanation": "Protagonistul este personajul central în jurul căruia se organizează conflictul și evoluția principală. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-047",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a regizat filmul Parasite?",
+      "difficulty": 1,
+      "text": "Cum se numește personajul sau forța care se opune protagonistului?",
       "options": [
-        "David Lean",
-        "Bong Joon-ho",
-        "Akira Kurosawa",
-        "Alfred Hitchcock"
+        "Protagonist",
+        "Scenariu",
+        "Dublaj",
+        "Antagonist"
       ],
-      "answer": "Bong Joon-ho",
-      "explanation": "Pentru „Parasite”, răspunsul corect este „Bong Joon-ho”."
+      "answer": "Antagonist",
+      "explanation": "Antagonistul creează sau intensifică obstacolele care împiedică obiectivele protagonistului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-048",
       "type": "choice",
       "difficulty": 1,
-      "text": "În ce an a avut premiera filmul Parasite?",
+      "text": "Cum se numește finalul suspendat menit să lase publicul în tensiune?",
       "options": [
-        "2019",
-        "1941",
-        "1954",
-        "1960"
+        "Protagonist",
+        "Cliffhanger",
+        "Sequel",
+        "Dublaj"
       ],
-      "answer": "2019",
-      "explanation": "Pentru „Parasite”, răspunsul corect este „2019”."
+      "answer": "Cliffhanger",
+      "explanation": "Cliffhangerul întrerupe povestea într-un moment critic pentru a crea anticiparea continuării. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-049",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a regizat filmul Dune?",
+      "difficulty": 1,
+      "text": "În ce film este folosit un DeLorean ca mașină a timpului?",
       "options": [
-        "David Lean",
-        "Stanley Kubrick",
-        "Francis Ford Coppola",
-        "Denis Villeneuve"
+        "Back to the Future",
+        "Jurassic Park",
+        "Coco",
+        "The Lord of the Rings: The Return of the King"
       ],
-      "answer": "Denis Villeneuve",
-      "explanation": "Pentru „Dune”, răspunsul corect este „Denis Villeneuve”."
+      "answer": "Back to the Future",
+      "explanation": "DeLoreanul modificat de Doc Brown devine dispozitivul central pentru călătoria temporală a lui Marty McFly. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     },
     {
       "id": "movies-050",
       "type": "choice",
-      "difficulty": 2,
-      "text": "În ce an a avut premiera filmul Dune?",
+      "difficulty": 1,
+      "text": "În ce film un rechin terorizează comunitatea de pe insula fictivă Amity?",
       "options": [
-        "1962",
-        "1968",
-        "2021",
-        "1960"
+        "Coco",
+        "Jurassic Park",
+        "Jaws",
+        "Inception"
       ],
-      "answer": "2021",
-      "explanation": "Pentru „Dune”, răspunsul corect este „2021”."
+      "answer": "Jaws",
+      "explanation": "Șeful poliției Martin Brody, un biolog marin și un vânător de rechini încearcă să oprească prădătorul. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film trebuie distrus un inel în Mordor?",
+      "options": [
+        "The Lord of the Rings: The Return of the King",
+        "The Shining",
+        "Avatar",
+        "Rocky"
+      ],
+      "answer": "The Lord of the Rings: The Return of the King",
+      "explanation": "Misiunea lui Frodo și Sam ajunge la punctul final pe Muntele Doom din Mordor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film jucăriile prind viață atunci când oamenii nu sunt prezenți?",
+      "options": [
+        "Jurassic Park",
+        "Toy Story",
+        "Avatar",
+        "Inception"
+      ],
+      "answer": "Toy Story",
+      "explanation": "Pixar imaginează o lume în care Woody, Buzz și celelalte jucării sunt personaje conștiente. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film o echipă pătrunde în vise pentru a planta o idee?",
+      "options": [
+        "Inception",
+        "The Lord of the Rings: The Return of the King",
+        "Rocky",
+        "Toy Story"
+      ],
+      "answer": "Inception",
+      "explanation": "Personajele folosesc tehnologie experimentală pentru a construi și traversa niveluri succesive de vis. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film un parc tematic conține dinozauri recreați genetic?",
+      "options": [
+        "Coco",
+        "Back to the Future",
+        "Jurassic Park",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "answer": "Jurassic Park",
+      "explanation": "Compania InGen clonează dinozauri pentru un parc care scapă rapid de sub control. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film personajul principal este boxerul Rocky Balboa?",
+      "options": [
+        "Shrek",
+        "Rocky",
+        "The Shining",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "answer": "Rocky",
+      "explanation": "Povestea urmărește șansa neașteptată a unui boxer modest din Philadelphia de a lupta pentru titlu. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-056",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film oamenii ajung pe planeta Pandora și întâlnesc populația Na'vi?",
+      "options": [
+        "Avatar",
+        "Jaws",
+        "Coco",
+        "Rocky"
+      ],
+      "answer": "Avatar",
+      "explanation": "Povestea lui Jake Sully se desfășoară pe Pandora, într-un conflict legat de colonizare și resurse. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-057",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film un căpcăun verde pornește să salveze o prințesă?",
+      "options": [
+        "Back to the Future",
+        "Shrek",
+        "The Lord of the Rings: The Return of the King",
+        "Jurassic Park"
+      ],
+      "answer": "Shrek",
+      "explanation": "Shrek acceptă misiunea pentru a-și recupera mlaștina și ajunge să construiască o relație cu Fiona. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-058",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film familia Torrance locuiește iarna în hotelul Overlook?",
+      "options": [
+        "Inception",
+        "Coco",
+        "Rocky",
+        "The Shining"
+      ],
+      "answer": "The Shining",
+      "explanation": "Izolarea hotelului amplifică tensiunea psihologică și supranaturală în jurul lui Jack Torrance. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-059",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film alegerea dintre pastila roșie și cea albastră simbolizează descoperirea adevărului?",
+      "options": [
+        "Jaws",
+        "The Lord of the Rings: The Return of the King",
+        "The Matrix",
+        "Avatar"
+      ],
+      "answer": "The Matrix",
+      "explanation": "Morpheus îi oferă lui Neo alegerea care îl scoate din realitatea simulată. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "În ce film Miguel ajunge în Ținutul Morților pentru a descoperi istoria familiei sale?",
+      "options": [
+        "The Matrix",
+        "Back to the Future",
+        "Avatar",
+        "Coco"
+      ],
+      "answer": "Coco",
+      "explanation": "Animația Pixar folosește tradițiile Día de Muertos pentru o poveste despre memorie, familie și muzică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-061",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Citizen Kane”?",
+      "answer": "1941",
+      "explanation": "„Citizen Kane” a fost lansat în 1941. Filmul lui Orson Welles este cunoscut pentru structura sa narativă, imaginea cu profunzime mare și construcția personajului Kane."
+    },
+    {
+      "id": "movies-062",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Bicycle Thieves”?",
+      "answer": "1948",
+      "explanation": "„Bicycle Thieves” a fost lansat în 1948. Filmul lui Vittorio De Sica a devenit una dintre operele definitorii ale neorealismului italian."
+    },
+    {
+      "id": "movies-063",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Singin' in the Rain”?",
+      "answer": "1952",
+      "explanation": "„Singin' in the Rain” a fost lansat în 1952. Musicalul privește cu umor tranziția industriei de la filmul mut la filmul sonor."
+    },
+    {
+      "id": "movies-064",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Rear Window”?",
+      "answer": "1954",
+      "explanation": "„Rear Window” a fost lansat în 1954. Hitchcock transformă spațiul limitat al unui apartament într-un mecanism complex de suspans și voyeurism."
+    },
+    {
+      "id": "movies-065",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Lawrence of Arabia”?",
+      "answer": "1962",
+      "explanation": "„Lawrence of Arabia” a fost lansat în 1962. Epopeea lui David Lean este celebră pentru peisajele deșertice și imaginea panoramică."
+    },
+    {
+      "id": "movies-066",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „One Flew Over the Cuckoo's Nest”?",
+      "answer": "1975",
+      "explanation": "„One Flew Over the Cuckoo's Nest” a fost lansat în 1975. Filmul a câștigat cele cinci premii Oscar principale, inclusiv film, regie și actor."
+    },
+    {
+      "id": "movies-067",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Alien”?",
+      "answer": "1979",
+      "explanation": "„Alien” a fost lansat în 1979. Ridley Scott a combinat science-fictionul cu horrorul claustrofobic într-o producție devenită extrem de influentă."
+    },
+    {
+      "id": "movies-068",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Blade Runner”?",
+      "answer": "1982",
+      "explanation": "„Blade Runner” a fost lansat în 1982. Filmul a devenit un reper vizual al cyberpunkului și al science-fictionului filosofic."
+    },
+    {
+      "id": "movies-069",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Schindler's List”?",
+      "answer": "1993",
+      "explanation": "„Schindler's List” a fost lansat în 1993. Spielberg a realizat o dramă istorică despre Holocaust, filmată în mare parte alb-negru."
+    },
+    {
+      "id": "movies-070",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Toy Story”?",
+      "answer": "1995",
+      "explanation": "„Toy Story” a fost lansat în 1995. A fost primul lungmetraj realizat integral prin animație computerizată CGI. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-071",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „The Lord of the Rings: The Fellowship of the Ring”?",
+      "answer": "2001",
+      "explanation": "„The Lord of the Rings: The Fellowship of the Ring” a fost lansat în 2001. Primul film al trilogiei lui Peter Jackson a introdus publicului cinematografic amploarea Pământului de Mijloc."
+    },
+    {
+      "id": "movies-072",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat filmul „Pan's Labyrinth”?",
+      "answer": "2006",
+      "explanation": "„Pan's Labyrinth” a fost lansat în 2006. Del Toro combină o poveste fantastică întunecată cu violența Spaniei franchiste."
+    },
+    {
+      "id": "movies-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Citizen Kane”?",
+      "options": [
+        "Fernando Meirelles",
+        "Barry Jenkins",
+        "Orson Welles",
+        "Spike Lee"
+      ],
+      "answer": "Orson Welles",
+      "explanation": "Welles a fost și co-scenarist, producător și interpret al personajului Charles Foster Kane. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Vertigo”?",
+      "options": [
+        "Akira Kurosawa",
+        "Barry Jenkins",
+        "Fernando Meirelles",
+        "Alfred Hitchcock"
+      ],
+      "answer": "Alfred Hitchcock",
+      "explanation": "Hitchcock folosește obsesia, identitatea și perspectiva subiectivă pentru unul dintre cele mai analizate thrillere din istorie. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Seven Samurai”?",
+      "options": [
+        "Orson Welles",
+        "Akira Kurosawa",
+        "Florian Henckel von Donnersmarck",
+        "Alfred Hitchcock"
+      ],
+      "answer": "Akira Kurosawa",
+      "explanation": "Kurosawa a construit un film de acțiune amplu despre samurai angajați să apere un sat de bandiți. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „8½”?",
+      "options": [
+        "Ingmar Bergman",
+        "Florian Henckel von Donnersmarck",
+        "Barry Jenkins",
+        "Federico Fellini"
+      ],
+      "answer": "Federico Fellini",
+      "explanation": "Fellini transformă blocajul creativ al unui regizor într-o meditație autoreflexivă despre cinema și imaginație. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Breathless” („À bout de souffle”)?",
+      "options": [
+        "Alfonso Cuarón",
+        "Barry Jenkins",
+        "Alfred Hitchcock",
+        "Jean-Luc Godard"
+      ],
+      "answer": "Jean-Luc Godard",
+      "explanation": "Godard a folosit jump cuts și filmare flexibilă, devenind una dintre figurile definitorii ale Nouvelle Vague. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „The Seventh Seal”?",
+      "options": [
+        "Ingmar Bergman",
+        "Jean-Luc Godard",
+        "Florian Henckel von Donnersmarck",
+        "Barry Jenkins"
+      ],
+      "answer": "Ingmar Bergman",
+      "explanation": "Bergman combină drama medievală cu întrebări existențiale despre moarte, credință și sens. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Do the Right Thing”?",
+      "options": [
+        "Jean-Luc Godard",
+        "Barry Jenkins",
+        "Orson Welles",
+        "Spike Lee"
+      ],
+      "answer": "Spike Lee",
+      "explanation": "Lee explorează tensiunile rasiale și comunitare într-o zi toridă din Brooklyn. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Moonlight”?",
+      "options": [
+        "Barry Jenkins",
+        "Spike Lee",
+        "Jean-Luc Godard",
+        "Fernando Meirelles"
+      ],
+      "answer": "Barry Jenkins",
+      "explanation": "Jenkins urmărește trei etape din viața lui Chiron printr-o structură intimă și o imagine foarte expresivă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Roma” din 2018?",
+      "options": [
+        "Alfred Hitchcock",
+        "Federico Fellini",
+        "Alfonso Cuarón",
+        "Orson Welles"
+      ],
+      "answer": "Alfonso Cuarón",
+      "explanation": "Cuarón a realizat o dramă autobiografică parțială, filmată alb-negru și centrată pe o familie din Mexico City. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „The Lives of Others”?",
+      "options": [
+        "Céline Sciamma",
+        "Barry Jenkins",
+        "Ingmar Bergman",
+        "Florian Henckel von Donnersmarck"
+      ],
+      "answer": "Florian Henckel von Donnersmarck",
+      "explanation": "Filmul urmărește supravegherea Stasi și dilemele morale ale unui ofițer din Germania de Est. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „City of God”?",
+      "options": [
+        "Federico Fellini",
+        "Florian Henckel von Donnersmarck",
+        "Fernando Meirelles",
+        "Spike Lee"
+      ],
+      "answer": "Fernando Meirelles",
+      "explanation": "Meirelles a construit un film energic despre violență, sărăcie și ascensiunea crimei organizate într-o favela din Rio. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a regizat „Portrait of a Lady on Fire”?",
+      "options": [
+        "Céline Sciamma",
+        "Spike Lee",
+        "Jean-Luc Godard",
+        "Fernando Meirelles"
+      ],
+      "answer": "Céline Sciamma",
+      "explanation": "Sciamma folosește privirea, memoria și compoziția vizuală pentru o poveste de dragoste plasată în secolul al XVIII-lea. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe Vito Corleone în „The Godfather”?",
+      "options": [
+        "Linda Hamilton",
+        "Jim Carrey",
+        "Marlon Brando",
+        "Reese Witherspoon"
+      ],
+      "answer": "Marlon Brando",
+      "explanation": "Brando construiește figura patriarhului mafiot printr-o interpretare reținută, devenită una dintre cele mai imitate din cinema. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Ellen Ripley în seria „Alien”?",
+      "options": [
+        "Charlize Theron",
+        "Reese Witherspoon",
+        "Sigourney Weaver",
+        "Harrison Ford"
+      ],
+      "answer": "Sigourney Weaver",
+      "explanation": "Ripley a devenit una dintre cele mai influente eroine ale science-fictionului și filmului de acțiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Clarice Starling în „The Silence of the Lambs”?",
+      "options": [
+        "Chadwick Boseman",
+        "Uma Thurman",
+        "Harrison Ford",
+        "Jodie Foster"
+      ],
+      "answer": "Jodie Foster",
+      "explanation": "Foster joacă agentul FBI aflat în pregătire care colaborează cu Hannibal Lecter pentru investigarea unui criminal. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe Indiana Jones în filmele clasice ale seriei?",
+      "options": [
+        "Reese Witherspoon",
+        "Anthony Hopkins",
+        "Jim Carrey",
+        "Harrison Ford"
+      ],
+      "answer": "Harrison Ford",
+      "explanation": "Ford a transformat arheologul aventurier într-unul dintre personajele emblematice ale cinemaului popular american. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Sarah Connor în „Terminator 2: Judgment Day”?",
+      "options": [
+        "Uma Thurman",
+        "Marlon Brando",
+        "Charlize Theron",
+        "Linda Hamilton"
+      ],
+      "answer": "Linda Hamilton",
+      "explanation": "Hamilton prezintă o versiune radical schimbată a personajului, devenit luptător pregătit pentru viitorul război cu mașinile. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe Hannibal Lecter în „The Silence of the Lambs”?",
+      "options": [
+        "Jodie Foster",
+        "Johnny Depp",
+        "Reese Witherspoon",
+        "Anthony Hopkins"
+      ],
+      "answer": "Anthony Hopkins",
+      "explanation": "Hopkins a câștigat Oscarul pentru rol principal pentru interpretarea sa memorabilă și relativ scurtă ca timp pe ecran."
+    },
+    {
+      "id": "movies-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe Truman Burbank în „The Truman Show”?",
+      "options": [
+        "Anthony Hopkins",
+        "Linda Hamilton",
+        "Jim Carrey",
+        "Jodie Foster"
+      ],
+      "answer": "Jim Carrey",
+      "explanation": "Carrey combină comedia cu drama în rolul unui om care descoperă că întreaga sa viață este o emisiune televizată."
+    },
+    {
+      "id": "movies-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Elle Woods în „Legally Blonde”?",
+      "options": [
+        "Uma Thurman",
+        "Reese Witherspoon",
+        "Jim Carrey",
+        "Charlize Theron"
+      ],
+      "answer": "Reese Witherspoon",
+      "explanation": "Witherspoon joacă o studentă aparent superficială care își dovedește competența într-un mediu universitar elitist. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Furiosa în „Mad Max: Fury Road”?",
+      "options": [
+        "Anthony Hopkins",
+        "Marlon Brando",
+        "Chadwick Boseman",
+        "Charlize Theron"
+      ],
+      "answer": "Charlize Theron",
+      "explanation": "Theron construiește un personaj de acțiune central, motivat de salvarea femeilor captive de regimul lui Immortan Joe. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe T'Challa în „Black Panther”?",
+      "options": [
+        "Johnny Depp",
+        "Linda Hamilton",
+        "Chadwick Boseman",
+        "Marlon Brando"
+      ],
+      "answer": "Chadwick Boseman",
+      "explanation": "Boseman joacă regele Wakandei și eroul Black Panther, devenit o figură centrală în universul Marvel. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o interpretează pe Mia Wallace în „Pulp Fiction”?",
+      "options": [
+        "Anthony Hopkins",
+        "Jodie Foster",
+        "Linda Hamilton",
+        "Uma Thurman"
+      ],
+      "answer": "Uma Thurman",
+      "explanation": "Thurman apare într-unul dintre segmentele centrale ale filmului, inclusiv în celebra secvență de dans. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl interpretează pe Edward în „Edward Scissorhands”?",
+      "options": [
+        "Johnny Depp",
+        "Jim Carrey",
+        "Marlon Brando",
+        "Chadwick Boseman"
+      ],
+      "answer": "Johnny Depp",
+      "explanation": "Depp joacă un personaj artificial timid și vulnerabil, creat de un inventator și lăsat incomplet. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește sunetul care provine din lumea poveștii și poate fi auzit de personaje?",
+      "options": [
+        "Continuity editing",
+        "Frame rate",
+        "Sunet diegetic",
+        "Mise-en-scène"
+      ],
+      "answer": "Sunet diegetic",
+      "explanation": "Dialogul, radioul din cameră sau zgomotul unei mașini pot fi sunete diegetice dacă apar în lumea filmului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește muzica auzită de public, dar nu și de personaje?",
+      "options": [
+        "Sunet non-diegetic",
+        "Mise-en-scène",
+        "Long take",
+        "Sunet diegetic"
+      ],
+      "answer": "Sunet non-diegetic",
+      "explanation": "Coloana muzicală adăugată peste imagine este de obicei non-diegetică atunci când nu are o sursă în lumea poveștii."
+    },
+    {
+      "id": "movies-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește tăietura de montaj bruscă ce elimină o porțiune din continuitatea temporală a aceluiași cadru?",
+      "options": [
+        "Foley",
+        "Jump cut",
+        "Tracking shot",
+        "Aspect ratio"
+      ],
+      "answer": "Jump cut",
+      "explanation": "Jump cut-ul creează o discontinuitate vizibilă și a fost folosit celebru de cineaștii Nouvelle Vague. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește cadrul realizat în timp ce camera se deplasează pentru a urmări acțiunea?",
+      "options": [
+        "Tracking shot",
+        "Voice-over",
+        "Frame rate",
+        "Sunet diegetic"
+      ],
+      "answer": "Tracking shot",
+      "explanation": "Un tracking shot poate folosi dolly, șine, stabilizatoare sau alte sisteme pentru deplasarea fluidă a camerei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește un cadru menținut o perioadă neobișnuit de lungă fără tăieturi?",
+      "options": [
+        "Frame rate",
+        "Sunet non-diegetic",
+        "Foley",
+        "Long take"
+      ],
+      "answer": "Long take",
+      "explanation": "Long take-ul păstrează continuitatea temporală și spațială, mutând adesea complexitatea din montaj în coregrafie. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește organizarea decorului, actorilor, luminii și obiectelor în interiorul cadrului?",
+      "options": [
+        "Voice-over",
+        "Sunet diegetic",
+        "Sunet non-diegetic",
+        "Mise-en-scène"
+      ],
+      "answer": "Mise-en-scène",
+      "explanation": "Mise-en-scène descrie felul în care elementele vizibile sunt organizate pentru a produce sens, atmosferă și relații spațiale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește raportul dintre lățimea și înălțimea imaginii?",
+      "options": [
+        "Aspect ratio",
+        "Foley",
+        "Establishing shot",
+        "Frame rate"
+      ],
+      "answer": "Aspect ratio",
+      "explanation": "Raportul de aspect influențează compoziția și poate varia de la formate aproape pătrate la imagini cinematografice foarte late."
+    },
+    {
+      "id": "movies-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește narațiunea vocală suprapusă peste imagini?",
+      "options": [
+        "Sunet non-diegetic",
+        "Tracking shot",
+        "Sunet diegetic",
+        "Voice-over"
+      ],
+      "answer": "Voice-over",
+      "explanation": "Voice-over-ul poate aparține unui personaj, unui narator extern sau unei perspective a cărei fiabilitate poate fi discutată. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește numărul de cadre individuale proiectate sau înregistrate într-o secundă?",
+      "options": [
+        "Sunet diegetic",
+        "Continuity editing",
+        "Foley",
+        "Frame rate"
+      ],
+      "answer": "Frame rate",
+      "explanation": "Frame rate-ul influențează percepția mișcării și este exprimat în cadre pe secundă, precum 24 fps. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește stilul de montaj care încearcă să facă tăieturile cât mai puțin vizibile?",
+      "options": [
+        "Continuity editing",
+        "Voice-over",
+        "Frame rate",
+        "Jump cut"
+      ],
+      "answer": "Continuity editing",
+      "explanation": "Montajul de continuitate păstrează orientarea spațială, direcția privirii și succesiunea acțiunilor între cadre. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește cadrul larg folosit pentru a prezenta locul în care se desfășoară scena?",
+      "options": [
+        "Sunet non-diegetic",
+        "Establishing shot",
+        "Voice-over",
+        "Aspect ratio"
+      ],
+      "answer": "Establishing shot",
+      "explanation": "Acest cadru oferă publicului informații despre spațiu înainte de apropierea către personaje și acțiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește recrearea în studio a pașilor, hainelor și altor zgomote sincronizate cu imaginea?",
+      "options": [
+        "Jump cut",
+        "Mise-en-scène",
+        "Continuity editing",
+        "Foley"
+      ],
+      "answer": "Foley",
+      "explanation": "Artiștii Foley reproduc sunete fizice pentru a face banda sonoră mai bogată și mai convingătoare. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un fotograf imobilizat își suspectează vecinul de crimă după ce îl observă de la fereastră?",
+      "options": [
+        "Rear Window",
+        "Seven Samurai",
+        "Sunset Boulevard",
+        "Schindler's List"
+      ],
+      "answer": "Rear Window",
+      "explanation": "Personajul lui James Stewart urmărește apartamentele vecine și transformă observația într-o investigație improvizată. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un tată și fiul său caută bicicleta furată necesară pentru păstrarea unui loc de muncă?",
+      "options": [
+        "Vertigo",
+        "Alien",
+        "Seven Samurai",
+        "Bicycle Thieves"
+      ],
+      "answer": "Bicycle Thieves",
+      "explanation": "Filmul lui De Sica transformă o problemă aparent simplă într-o dramă despre sărăcie, demnitate și familie. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film o creatură extraterestră atacă echipajul navei Nostromo?",
+      "options": [
+        "Vertigo",
+        "Sunset Boulevard",
+        "Alien",
+        "Modern Times"
+      ],
+      "answer": "Alien",
+      "explanation": "Structura de horror claustrofobic folosește spațiile navei ca labirint în care echipajul este vânat. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un detectiv numit Deckard urmărește replicanți?",
+      "options": [
+        "Vertigo",
+        "Modern Times",
+        "Blade Runner",
+        "Rear Window"
+      ],
+      "answer": "Blade Runner",
+      "explanation": "Deckard este însărcinat să retragă replicanți ilegali într-un Los Angeles futurist și profund stilizat. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un om de afaceri german salvează evrei angajându-i în fabricile sale?",
+      "options": [
+        "Alien",
+        "Schindler's List",
+        "Vertigo",
+        "Rear Window"
+      ],
+      "answer": "Schindler's List",
+      "explanation": "Povestea urmărește transformarea morală a lui Oskar Schindler în contextul Holocaustului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film personajul Charles Foster Kane moare rostind cuvântul „Rosebud”?",
+      "options": [
+        "Alien",
+        "Schindler's List",
+        "Vertigo",
+        "Citizen Kane"
+      ],
+      "answer": "Citizen Kane",
+      "explanation": "Investigația asupra sensului cuvântului structurează retrospectiv viața magnatului de presă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un deținut numit McMurphy intră în conflict cu Nurse Ratched?",
+      "options": [
+        "Modern Times",
+        "One Flew Over the Cuckoo's Nest",
+        "Sunset Boulevard",
+        "Citizen Kane"
+      ],
+      "answer": "One Flew Over the Cuckoo's Nest",
+      "explanation": "Randle McMurphy sfidează autoritatea rigidă a instituției psihiatrice conduse de Nurse Ratched. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un agent britanic călătorește prin deșert și devine implicat în Revolta Arabă?",
+      "options": [
+        "One Flew Over the Cuckoo's Nest",
+        "Lawrence of Arabia",
+        "Modern Times",
+        "Alien"
+      ],
+      "answer": "Lawrence of Arabia",
+      "explanation": "Filmul urmărește relația complexă dintre T. E. Lawrence, liderii arabi și interesele imperiale britanice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un detectiv devine obsedat de o femeie pe care este angajat să o urmărească?",
+      "options": [
+        "Blade Runner",
+        "Sunset Boulevard",
+        "Vertigo",
+        "Rear Window"
+      ],
+      "answer": "Vertigo",
+      "explanation": "Hitchcock construiește povestea în jurul obsesiei, identității și manipulării percepției. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un grup de samurai organizează apărarea unui sat împotriva bandiților?",
+      "options": [
+        "Lawrence of Arabia",
+        "Sunset Boulevard",
+        "Seven Samurai",
+        "One Flew Over the Cuckoo's Nest"
+      ],
+      "answer": "Seven Samurai",
+      "explanation": "Kurosawa urmărește recrutarea și pregătirea celor șapte samurai înaintea confruntării finale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film un scenarist ajunge în casa unei foste vedete a filmului mut, Norma Desmond?",
+      "options": [
+        "One Flew Over the Cuckoo's Nest",
+        "Blade Runner",
+        "Rear Window",
+        "Sunset Boulevard"
+      ],
+      "answer": "Sunset Boulevard",
+      "explanation": "Filmul lui Billy Wilder explorează declinul unei foste vedete și iluziile industriei cinematografice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "În ce film personajul lui Chaplin este prins comic în mecanismele unei fabrici moderne?",
+      "options": [
+        "Modern Times",
+        "Blade Runner",
+        "Citizen Kane",
+        "Bicycle Thieves"
+      ],
+      "answer": "Modern Times",
+      "explanation": "Chaplin satirizează mecanizarea muncii, sărăcia și presiunile societății industriale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-121",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Metropolis”?",
+      "answer": "1927",
+      "explanation": "„Metropolis” a fost lansat în 1927. Filmul lui Fritz Lang a devenit un reper al expresionismului german și al imaginarului science-fiction urban."
+    },
+    {
+      "id": "movies-122",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „M”?",
+      "answer": "1931",
+      "explanation": "„M” a fost lansat în 1931. Lang folosește sunetul, orașul și investigația colectivă pentru un thriller despre urmărirea unui criminal."
+    },
+    {
+      "id": "movies-123",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Rashomon”?",
+      "answer": "1950",
+      "explanation": "„Rashomon” a fost lansat în 1950. Kurosawa prezintă versiuni contradictorii ale aceluiași eveniment și pune sub semnul întrebării adevărul narativ."
+    },
+    {
+      "id": "movies-124",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Tokyo Story”?",
+      "answer": "1953",
+      "explanation": "„Tokyo Story” a fost lansat în 1953. Yasujirō Ozu construiește o dramă familială despre generații, îmbătrânire și schimbare socială."
+    },
+    {
+      "id": "movies-125",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „The 400 Blows”?",
+      "answer": "1959",
+      "explanation": "„The 400 Blows” a fost lansat în 1959. Filmul lui François Truffaut a devenit una dintre operele definitorii ale Nouvelle Vague."
+    },
+    {
+      "id": "movies-126",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „8½”?",
+      "answer": "1963",
+      "explanation": "„8½” a fost lansat în 1963. Fellini transformă criza creativă a unui regizor într-o structură fluidă între realitate, amintire și fantezie."
+    },
+    {
+      "id": "movies-127",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Persona”?",
+      "answer": "1966",
+      "explanation": "„Persona” a fost lansat în 1966. Bergman explorează identitatea și relația dintre o actriță tăcută și asistenta care o îngrijește."
+    },
+    {
+      "id": "movies-128",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Stalker”?",
+      "answer": "1979",
+      "explanation": "„Stalker” a fost lansat în 1979. Tarkovsky folosește călătoria prin Zona misterioasă pentru o meditație filosofică asupra dorinței și credinței."
+    },
+    {
+      "id": "movies-129",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Cinema Paradiso”?",
+      "answer": "1988",
+      "explanation": "„Cinema Paradiso” a fost lansat în 1988. Filmul lui Giuseppe Tornatore construiește o poveste nostalgică despre cinema, memorie și copilărie."
+    },
+    {
+      "id": "movies-130",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Goodfellas”?",
+      "answer": "1990",
+      "explanation": "„Goodfellas” a fost lansat în 1990. Scorsese urmărește ascensiunea și căderea lui Henry Hill în lumea mafiei americane."
+    },
+    {
+      "id": "movies-131",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Chungking Express”?",
+      "answer": "1994",
+      "explanation": "„Chungking Express” a fost lansat în 1994. Wong Kar-wai prezintă două povești romantice legate de singurătate, oraș și întâlniri întâmplătoare."
+    },
+    {
+      "id": "movies-132",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat filmul „Oldboy”?",
+      "answer": "2003",
+      "explanation": "„Oldboy” a fost lansat în 2003. Thrillerul lui Park Chan-wook urmărește un bărbat eliberat după cincisprezece ani de captivitate inexplicabilă."
+    },
+    {
+      "id": "movies-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Battleship Potemkin”?",
+      "options": [
+        "Sergei Eisenstein",
+        "Cristian Mungiu",
+        "Yasujirō Ozu",
+        "Paweł Pawlikowski"
+      ],
+      "answer": "Sergei Eisenstein",
+      "explanation": "Eisenstein a folosit montajul pentru a intensifica conflictul și emoția, celebru mai ales în secvența treptelor din Odesa."
+    },
+    {
+      "id": "movies-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „M”?",
+      "options": [
+        "Wong Kar-wai",
+        "Sergei Eisenstein",
+        "Fritz Lang",
+        "Cristian Mungiu"
+      ],
+      "answer": "Fritz Lang",
+      "explanation": "Lang combină procedee expresioniste cu utilizarea inovatoare a sunetului într-un thriller urban despre crimă și panică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Rashomon”?",
+      "options": [
+        "Akira Kurosawa",
+        "Ingmar Bergman",
+        "Werner Herzog",
+        "Fritz Lang"
+      ],
+      "answer": "Akira Kurosawa",
+      "explanation": "Kurosawa construiește povestea din mărturii incompatibile, transformând incertitudinea într-o temă centrală. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Tokyo Story”?",
+      "options": [
+        "Yasujirō Ozu",
+        "Ingmar Bergman",
+        "Wong Kar-wai",
+        "Werner Herzog"
+      ],
+      "answer": "Yasujirō Ozu",
+      "explanation": "Ozu folosește cadre joase, montaj reținut și tranziții contemplative pentru a observa tensiunile dintre generații. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „The 400 Blows”?",
+      "options": [
+        "Cristian Mungiu",
+        "François Truffaut",
+        "Wong Kar-wai",
+        "Yasujirō Ozu"
+      ],
+      "answer": "François Truffaut",
+      "explanation": "Truffaut a debutat în lungmetraj cu un film semi-autobiografic despre adolescență și alienare. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Persona”?",
+      "options": [
+        "Akira Kurosawa",
+        "Wong Kar-wai",
+        "Ingmar Bergman",
+        "Fritz Lang"
+      ],
+      "answer": "Ingmar Bergman",
+      "explanation": "Bergman reduce acțiunea la o confruntare psihologică și formală între două femei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Stalker”?",
+      "options": [
+        "Andrei Tarkovsky",
+        "Yasujirō Ozu",
+        "Cristian Mungiu",
+        "François Truffaut"
+      ],
+      "answer": "Andrei Tarkovsky",
+      "explanation": "Tarkovsky folosește cadre lungi și o atmosferă contemplativă pentru călătoria prin Zona interzisă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Aguirre, the Wrath of God”?",
+      "options": [
+        "Asghar Farhadi",
+        "Werner Herzog",
+        "Wong Kar-wai",
+        "Fritz Lang"
+      ],
+      "answer": "Werner Herzog",
+      "explanation": "Herzog urmărește degradarea unei expediții spaniole în Amazon și obsesia conducătorului Aguirre. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Chungking Express”?",
+      "options": [
+        "Wong Kar-wai",
+        "Sergei Eisenstein",
+        "Andrei Tarkovsky",
+        "Akira Kurosawa"
+      ],
+      "answer": "Wong Kar-wai",
+      "explanation": "Wong folosește ritm fragmentar, muzică repetitivă și imagine urbană pentru două povești despre singurătate. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „A Separation”?",
+      "options": [
+        "Asghar Farhadi",
+        "Fritz Lang",
+        "Andrei Tarkovsky",
+        "Werner Herzog"
+      ],
+      "answer": "Asghar Farhadi",
+      "explanation": "Farhadi construiește un conflict moral complex dintr-un divorț, responsabilitate familială și diferențe sociale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „Ida”?",
+      "options": [
+        "Akira Kurosawa",
+        "Wong Kar-wai",
+        "Paweł Pawlikowski",
+        "Werner Herzog"
+      ],
+      "answer": "Paweł Pawlikowski",
+      "explanation": "Pawlikowski folosește imagine alb-negru și compoziții austere pentru o poveste despre identitate și memorie în Polonia. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a regizat „4 Months, 3 Weeks and 2 Days”?",
+      "options": [
+        "Fritz Lang",
+        "Cristian Mungiu",
+        "Sergei Eisenstein",
+        "Werner Herzog"
+      ],
+      "answer": "Cristian Mungiu",
+      "explanation": "Mungiu urmărește în timp aproape real încercarea unei studente de a obține un avort ilegal în România comunistă."
+    },
+    {
+      "id": "movies-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare cinematografică este asociată cu decoruri deformate, umbre puternice și filme precum „The Cabinet of Dr. Caligari”?",
+      "options": [
+        "Noul Cinema Românesc",
+        "Cinema Novo",
+        "Expresionismul german",
+        "Noul Val Japonez"
+      ],
+      "answer": "Expresionismul german",
+      "explanation": "Expresionismul german a folosit stilizarea vizuală pentru a exterioriza stări psihologice și tensiuni sociale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare este asociată cu filmări în locații reale, actori neprofesioniști și Italia postbelică?",
+      "options": [
+        "Dogme 95",
+        "New Hollywood",
+        "Neorealismul italian",
+        "Third Cinema"
+      ],
+      "answer": "Neorealismul italian",
+      "explanation": "Neorealismul a urmărit viața cotidiană, sărăcia și consecințele războiului într-un stil aparent simplu și direct. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare franceză este asociată cu Godard, Truffaut și filmări mai flexibile pe stradă?",
+      "options": [
+        "Expresionismul german",
+        "Noul Cinema Românesc",
+        "Nouvelle Vague",
+        "Noul Val Cehoslovac"
+      ],
+      "answer": "Nouvelle Vague",
+      "explanation": "Nouvelle Vague a contestat convențiile studiourilor și a favorizat autorii personali, montajul liber și producțiile ușoare. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tradiție este asociată cu Eisenstein, Pudovkin și teoria montajului ca generator de sens?",
+      "options": [
+        "Noul Val Cehoslovac",
+        "Noul Val din Hong Kong",
+        "Nouvelle Vague",
+        "Montajul sovietic"
+      ],
+      "answer": "Montajul sovietic",
+      "explanation": "Cineaștii sovietici au analizat modul în care juxtapunerea cadrelor produce idei și reacții emoționale noi. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce manifest danez din 1995 a impus reguli precum filmarea în locație și evitarea efectelor artificiale?",
+      "options": [
+        "Cinema Novo",
+        "New Hollywood",
+        "Dogme 95",
+        "Noul Cinema Românesc"
+      ],
+      "answer": "Dogme 95",
+      "explanation": "Dogme 95 a încercat să reducă artificiul tehnic și să readucă atenția asupra actoriei și situației dramatice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește perioada americană asociată cu Coppola, Scorsese și alți regizori-autori din anii 1960-1970?",
+      "options": [
+        "New Hollywood",
+        "Noul Val Japonez",
+        "Montajul sovietic",
+        "Neorealismul italian"
+      ],
+      "answer": "New Hollywood",
+      "explanation": "New Hollywood a combinat libertatea autorilor cu influențe europene și teme mai întunecate decât cinemaul clasic de studio."
+    },
+    {
+      "id": "movies-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare japoneză din anii 1960 a contestat convențiile studiourilor și societatea postbelică?",
+      "options": [
+        "Noul Val Japonez",
+        "Noul Val Cehoslovac",
+        "Neorealismul italian",
+        "New Hollywood"
+      ],
+      "answer": "Noul Val Japonez",
+      "explanation": "Regizori precum Nagisa Oshima au explorat politica, sexualitatea și alienarea prin forme cinematografice radicale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce concept de cinema militant din lumea postcolonială este asociat cu Fernando Solanas și Octavio Getino?",
+      "options": [
+        "Nouvelle Vague",
+        "Third Cinema",
+        "Noul Cinema Românesc",
+        "Cinema Novo"
+      ],
+      "answer": "Third Cinema",
+      "explanation": "Third Cinema a respins atât Hollywoodul comercial, cât și cinemaul pur individualist, favorizând filme politice și anticoloniale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare braziliană este asociată cu Glauber Rocha și sloganul unei «estetici a foamei»?",
+      "options": [
+        "Noul Cinema Românesc",
+        "Noul Val Japonez",
+        "Cinema Novo",
+        "Nouvelle Vague"
+      ],
+      "answer": "Cinema Novo",
+      "explanation": "Cinema Novo a analizat sărăcia, colonialismul și violența structurală printr-un limbaj politic și modernist. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce mișcare cehoslovacă a produs cineaști precum Miloš Forman și Věra Chytilová?",
+      "options": [
+        "Noul Val Cehoslovac",
+        "Expresionismul german",
+        "Noul Val Japonez",
+        "Neorealismul italian"
+      ],
+      "answer": "Noul Val Cehoslovac",
+      "explanation": "Mișcarea a combinat umorul, critica socială și experimentul formal în anii 1960. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce curent este asociat internațional cu filme românești minimaliste și realiste apărute după 2000?",
+      "options": [
+        "Dogme 95",
+        "Noul Cinema Românesc",
+        "Noul Val din Hong Kong",
+        "New Hollywood"
+      ],
+      "answer": "Noul Cinema Românesc",
+      "explanation": "Filmele curentului folosesc frecvent cadre lungi, observație socială și abordări austere ale trecutului și prezentului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce curent este asociat cu regizori precum Tsui Hark, Ann Hui și Patrick Tam?",
+      "options": [
+        "Noul Val din Hong Kong",
+        "Montajul sovietic",
+        "Cinema Novo",
+        "Expresionismul german"
+      ],
+      "answer": "Noul Val din Hong Kong",
+      "explanation": "Mișcarea a modernizat cinemaul local prin influențe internaționale, energie vizuală și teme urbane. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește regula de continuitate care păstrează camera pe aceeași parte a unei axe imaginare dintre personaje?",
+      "options": [
+        "Deep focus",
+        "Regula de 180 de grade",
+        "Matte painting",
+        "Cross-cutting"
+      ],
+      "answer": "Regula de 180 de grade",
+      "explanation": "Respectarea axei păstrează orientarea stânga-dreapta și face relațiile spațiale mai ușor de urmărit. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește tăietura care leagă două cadre printr-o asemănare vizuală sau de acțiune?",
+      "options": [
+        "Cross-cutting",
+        "Regula de 180 de grade",
+        "Motion capture",
+        "Match cut"
+      ],
+      "answer": "Match cut",
+      "explanation": "Match cut-ul creează continuitate conceptuală sau vizuală între spații, timpuri ori obiecte diferite. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește alternarea montată între două acțiuni desfășurate în locuri diferite?",
+      "options": [
+        "Lentilă anamorfică",
+        "Efecte practice",
+        "Stop motion",
+        "Cross-cutting"
+      ],
+      "answer": "Cross-cutting",
+      "explanation": "Cross-cutting-ul sugerează adesea simultaneitate și poate construi tensiune prin apropierea progresivă a evenimentelor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește schimbarea focalizării de la un plan al imaginii la altul în același cadru?",
+      "options": [
+        "Matte painting",
+        "Match cut",
+        "Rack focus",
+        "Regula de 180 de grade"
+      ],
+      "answer": "Rack focus",
+      "explanation": "Rack focus-ul mută atenția spectatorului fără a schimba compoziția sau poziția camerei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește stilul în care planurile apropiate și îndepărtate sunt simultan clare?",
+      "options": [
+        "Rack focus",
+        "Deep focus",
+        "Rotoscopie",
+        "Cross-cutting"
+      ],
+      "answer": "Deep focus",
+      "explanation": "Deep focus-ul permite spectatorului să aleagă între mai multe niveluri de acțiune în același cadru. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește imaginea în care doar o zonă restrânsă este clară, iar restul devine neclar?",
+      "options": [
+        "Cross-cutting",
+        "Shallow focus",
+        "Rack focus",
+        "Regula de 180 de grade"
+      ],
+      "answer": "Shallow focus",
+      "explanation": "Profunzimea mică de câmp izolează subiectul și poate reduce informația vizuală din fundal. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește sistemul optic folosit pentru a comprima o imagine lată pe pelicula standard și a o extinde la proiecție?",
+      "options": [
+        "Cross-cutting",
+        "Shallow focus",
+        "Match cut",
+        "Lentilă anamorfică"
+      ],
+      "answer": "Lentilă anamorfică",
+      "explanation": "Optica anamorfă permite imagini widescreen și produce adesea reflexii și bokeh cu aspect distinct. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numesc efectele realizate fizic pe platou, nu generate exclusiv în computer?",
+      "options": [
+        "Rotoscopie",
+        "Match cut",
+        "Motion capture",
+        "Efecte practice"
+      ],
+      "answer": "Efecte practice",
+      "explanation": "Miniaturile, machiajul prostetic, exploziile controlate și mecanismele sunt exemple de efecte practice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește pictura folosită pentru a extinde decorul sau a crea peisaje imposibile?",
+      "options": [
+        "Efecte practice",
+        "Motion capture",
+        "Matte painting",
+        "Deep focus"
+      ],
+      "answer": "Matte painting",
+      "explanation": "Matte painting-ul a permis cinematografiei să creeze lumi vaste fără construirea fizică a întregului decor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește tehnica de animație în care desenul urmărește cadre filmate cu actori reali?",
+      "options": [
+        "Matte painting",
+        "Regula de 180 de grade",
+        "Rotoscopie",
+        "Shallow focus"
+      ],
+      "answer": "Rotoscopie",
+      "explanation": "Rotoscopia folosește mișcarea filmată ca referință pentru animație și poate produce gesturi foarte naturale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește animația realizată prin fotografierea succesivă a obiectelor mutate foarte puțin între cadre?",
+      "options": [
+        "Rack focus",
+        "Cross-cutting",
+        "Stop motion",
+        "Match cut"
+      ],
+      "answer": "Stop motion",
+      "explanation": "Stop motion-ul creează iluzia mișcării din obiecte fizice fotografiate cadru cu cadru. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cum se numește procesul de înregistrare a mișcărilor actorilor pentru personaje digitale?",
+      "options": [
+        "Matte painting",
+        "Cross-cutting",
+        "Rotoscopie",
+        "Motion capture"
+      ],
+      "answer": "Motion capture",
+      "explanation": "Senzorii sau camerele urmăresc performanța actorului și transferă datele către un model digital. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film aceeași crimă este relatată din perspective contradictorii?",
+      "options": [
+        "Pan's Labyrinth",
+        "The Seventh Seal",
+        "Rashomon",
+        "A Separation"
+      ],
+      "answer": "Rashomon",
+      "explanation": "Structura filmului pune sub semnul întrebării fiabilitatea memoriei, mărturiei și adevărului obiectiv. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un tată șomer caută prin Roma bicicleta de care depinde noul său loc de muncă?",
+      "options": [
+        "Pan's Labyrinth",
+        "Persona",
+        "City of God",
+        "Bicycle Thieves"
+      ],
+      "answer": "Bicycle Thieves",
+      "explanation": "Căutarea devine o explorare a sărăciei și demnității în Italia postbelică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un cavaler joacă șah cu Moartea?",
+      "options": [
+        "The Seventh Seal",
+        "Persona",
+        "Stalker",
+        "City of God"
+      ],
+      "answer": "The Seventh Seal",
+      "explanation": "Bergman folosește jocul de șah ca imagine centrală pentru confruntarea cu mortalitatea și credința. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un regizor numit Guido se confruntă cu un blocaj creativ?",
+      "options": [
+        "Bicycle Thieves",
+        "The Seventh Seal",
+        "8½",
+        "Stalker"
+      ],
+      "answer": "8½",
+      "explanation": "Fellini transformă criza artistică a protagonistului într-un film despre memorie, dorință și procesul creației. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film o actriță care refuză să vorbească este îngrijită de o asistentă pe o insulă?",
+      "options": [
+        "Cinema Paradiso",
+        "Persona",
+        "Rashomon",
+        "The Seventh Seal"
+      ],
+      "answer": "Persona",
+      "explanation": "Relația dintre Elisabet și Alma destabilizează limitele identității și ale confesiunii. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un ghid conduce doi bărbați printr-o regiune interzisă numită Zona?",
+      "options": [
+        "A Separation",
+        "Stalker",
+        "Rashomon",
+        "8½"
+      ],
+      "answer": "Stalker",
+      "explanation": "Călătoria spre Camera dorințelor devine o meditație asupra credinței, fricii și speranței. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un regizor își amintește copilăria și prietenia cu un proiecționist?",
+      "options": [
+        "Rashomon",
+        "City of God",
+        "A Separation",
+        "Cinema Paradiso"
+      ],
+      "answer": "Cinema Paradiso",
+      "explanation": "Filmul leagă nostalgia pentru cinema de maturizare, memorie și transformarea unei comunități. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un cuplu iranian se confruntă cu divorțul și consecințele unui conflict domestic?",
+      "options": [
+        "City of God",
+        "Oldboy",
+        "Pan's Labyrinth",
+        "A Separation"
+      ],
+      "answer": "A Separation",
+      "explanation": "Farhadi construiește o rețea de responsabilități morale fără a oferi răspunsuri simple. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film o fetiță întâlnește un faun într-un labirint pe fundalul Spaniei franchiste?",
+      "options": [
+        "Oldboy",
+        "The Seventh Seal",
+        "Rashomon",
+        "Pan's Labyrinth"
+      ],
+      "answer": "Pan's Labyrinth",
+      "explanation": "Fantezia și realitatea violentă coexistă pentru a explora inocența, obediența și rezistența. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film povestea crimei organizate este prezentată prin viața unor tineri dintr-o favela din Rio?",
+      "options": [
+        "Rashomon",
+        "Cinema Paradiso",
+        "City of God",
+        "Oldboy"
+      ],
+      "answer": "City of God",
+      "explanation": "Structura energică urmărește transformarea cartierului și escaladarea violenței între generații. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film un bărbat este închis fără explicație timp de cincisprezece ani?",
+      "options": [
+        "A Separation",
+        "Oldboy",
+        "City of God",
+        "Pan's Labyrinth"
+      ],
+      "answer": "Oldboy",
+      "explanation": "După eliberare, Oh Dae-su încearcă să afle cine l-a închis și de ce. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce film două studente încearcă să obțină un avort ilegal în România comunistă?",
+      "options": [
+        "Persona",
+        "Bicycle Thieves",
+        "A Separation",
+        "4 Months, 3 Weeks and 2 Days"
+      ],
+      "answer": "4 Months, 3 Weeks and 2 Days",
+      "explanation": "Filmul lui Mungiu urmărește aproape în timp real presiunea morală și instituțională asupra personajelor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-181",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „The Cabinet of Dr. Caligari”?",
+      "answer": "1920",
+      "explanation": "„The Cabinet of Dr. Caligari” a fost lansat în 1920. Filmul este un reper al expresionismului german prin decorurile deformate și atmosfera psihologică."
+    },
+    {
+      "id": "movies-182",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Battleship Potemkin”?",
+      "answer": "1925",
+      "explanation": "„Battleship Potemkin” a fost lansat în 1925. Eisenstein a transformat montajul într-un instrument central de construire a tensiunii și ideii politice."
+    },
+    {
+      "id": "movies-183",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Sunrise: A Song of Two Humans”?",
+      "answer": "1927",
+      "explanation": "„Sunrise: A Song of Two Humans” a fost lansat în 1927. F. W. Murnau a combinat mișcări sofisticate de cameră, decoruri expresive și tehnică vizuală elaborată."
+    },
+    {
+      "id": "movies-184",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „The Rules of the Game”?",
+      "answer": "1939",
+      "explanation": "„The Rules of the Game” a fost lansat în 1939. Renoir construiește o satiră socială despre aristocrație și burghezie înaintea celui de-Al Doilea Război Mondial."
+    },
+    {
+      "id": "movies-185",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Rome, Open City”?",
+      "answer": "1945",
+      "explanation": "„Rome, Open City” a fost lansat în 1945. Filmul lui Rossellini este una dintre operele fundamentale ale neorealismului italian."
+    },
+    {
+      "id": "movies-186",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „The Third Man”?",
+      "answer": "1949",
+      "explanation": "„The Third Man” a fost lansat în 1949. Carol Reed folosește Viena postbelică, umbrele și unghiurile oblice pentru un noir european memorabil."
+    },
+    {
+      "id": "movies-187",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Wild Strawberries”?",
+      "answer": "1957",
+      "explanation": "„Wild Strawberries” a fost lansat în 1957. Bergman urmărește un profesor în vârstă confruntat cu memoria, regretele și apropierea morții."
+    },
+    {
+      "id": "movies-188",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „La Dolce Vita”?",
+      "answer": "1960",
+      "explanation": "„La Dolce Vita” a fost lansat în 1960. Fellini descrie viața mondenă romană prin episoade legate de jurnalistul Marcello Rubini."
+    },
+    {
+      "id": "movies-189",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Andrei Rublev”?",
+      "answer": "1966",
+      "explanation": "„Andrei Rublev” a fost lansat în 1966. Tarkovsky construiește o meditație amplă despre artă, credință și violență în Rusia medievală."
+    },
+    {
+      "id": "movies-190",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „The Leopard”?",
+      "answer": "1963",
+      "explanation": "„The Leopard” a fost lansat în 1963. Visconti urmărește declinul aristocrației siciliene în contextul transformărilor Risorgimentului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-191",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „Paris, Texas”?",
+      "answer": "1984",
+      "explanation": "„Paris, Texas” a fost lansat în 1984. Wim Wenders combină peisajul american cu o poveste despre absență, familie și reconciliere."
+    },
+    {
+      "id": "movies-192",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat filmul „In the Mood for Love”?",
+      "answer": "2000",
+      "explanation": "„In the Mood for Love” a fost lansat în 2000. Wong Kar-wai folosește repetiția, muzica și cadrele restrânse pentru o poveste despre dorință reținută."
+    },
+    {
+      "id": "movies-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „The Cabinet of Dr. Caligari”?",
+      "options": [
+        "Luchino Visconti",
+        "Wim Wenders",
+        "Carol Reed",
+        "Robert Wiene"
+      ],
+      "answer": "Robert Wiene",
+      "explanation": "Wiene a coordonat una dintre cele mai emblematice producții ale expresionismului german, cu decoruri pictate și deformate. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „Sunrise: A Song of Two Humans”?",
+      "options": [
+        "Ingmar Bergman",
+        "Roberto Rossellini",
+        "Wong Kar-wai",
+        "F. W. Murnau"
+      ],
+      "answer": "F. W. Murnau",
+      "explanation": "Murnau a adus în Hollywood experiența sa vizuală expresionistă și a realizat un film tehnic extrem de sofisticat."
+    },
+    {
+      "id": "movies-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „The Rules of the Game”?",
+      "options": [
+        "Wong Kar-wai",
+        "Robert Wiene",
+        "Jean Renoir",
+        "Roberto Rossellini"
+      ],
+      "answer": "Jean Renoir",
+      "explanation": "Renoir a construit o satiră complexă a relațiilor sociale din Franța de dinaintea războiului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „Rome, Open City”?",
+      "options": [
+        "Andrei Tarkovsky",
+        "Jean Renoir",
+        "Roberto Rossellini",
+        "Ingmar Bergman"
+      ],
+      "answer": "Roberto Rossellini",
+      "explanation": "Rossellini a filmat Roma imediat după ocupația germană, combinând actori profesioniști și condiții de producție dificile. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „The Third Man”?",
+      "options": [
+        "Jean Renoir",
+        "Luchino Visconti",
+        "F. W. Murnau",
+        "Carol Reed"
+      ],
+      "answer": "Carol Reed",
+      "explanation": "Reed a folosit locațiile vieneze, fotografia contrastantă și unghiurile oblice pentru atmosfera filmului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „Wild Strawberries”?",
+      "options": [
+        "Wim Wenders",
+        "Ingmar Bergman",
+        "Jean Renoir",
+        "Andrei Tarkovsky"
+      ],
+      "answer": "Ingmar Bergman",
+      "explanation": "Bergman transformă o călătorie rutieră într-un proces interior de confruntare cu trecutul. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „La Dolce Vita”?",
+      "options": [
+        "Federico Fellini",
+        "Luchino Visconti",
+        "Andrei Tarkovsky",
+        "Jane Campion"
+      ],
+      "answer": "Federico Fellini",
+      "explanation": "Fellini urmărește viața mondenă romană printr-o structură episodică și imagini devenite iconice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „Andrei Rublev”?",
+      "options": [
+        "Carol Reed",
+        "Andrei Tarkovsky",
+        "Jean Renoir",
+        "Ingmar Bergman"
+      ],
+      "answer": "Andrei Tarkovsky",
+      "explanation": "Tarkovsky folosește viața pictorului de icoane ca punct de plecare pentru reflecții despre creație și credință. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „The Leopard”?",
+      "options": [
+        "Robert Wiene",
+        "Luchino Visconti",
+        "Ingmar Bergman",
+        "Wim Wenders"
+      ],
+      "answer": "Luchino Visconti",
+      "explanation": "Visconti combină amploarea istorică și observația socială într-o poveste despre declinul aristocrației siciliene. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „Paris, Texas”?",
+      "options": [
+        "Jean Renoir",
+        "Andrei Tarkovsky",
+        "Wim Wenders",
+        "Ingmar Bergman"
+      ],
+      "answer": "Wim Wenders",
+      "explanation": "Wenders combină sensibilitatea europeană cu peisajul și mitologia drumului american. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „In the Mood for Love”?",
+      "options": [
+        "Wong Kar-wai",
+        "F. W. Murnau",
+        "Andrei Tarkovsky",
+        "Roberto Rossellini"
+      ],
+      "answer": "Wong Kar-wai",
+      "explanation": "Wong transformă întâlnirile dintre doi vecini în Hong Kong într-o poveste despre timp și dorință. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a regizat „The Piano”?",
+      "options": [
+        "Carol Reed",
+        "Jane Campion",
+        "Robert Wiene",
+        "F. W. Murnau"
+      ],
+      "answer": "Jane Campion",
+      "explanation": "Campion explorează dorința, puterea și comunicarea prin povestea unei pianiste mute ajunse în Noua Zeelandă colonială. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește fenomenul prin care spectatorul atribuie o emoție diferită aceleiași fețe în funcție de cadrul alăturat?",
+      "options": [
+        "Chiaroscuro",
+        "Efectul Kuleshov",
+        "Dolly zoom",
+        "Deep focus"
+      ],
+      "answer": "Efectul Kuleshov",
+      "explanation": "Experimentul asociat cu Lev Kuleshov demonstrează puterea montajului de a produce sens din juxtapunerea cadrelor. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește conceptul lui Eisenstein care urmărea ciocnirea deliberată a imaginilor pentru un efect intelectual sau emoțional?",
+      "options": [
+        "Chiaroscuro",
+        "Dutch angle",
+        "Montajul atracțiilor",
+        "J-cut"
+      ],
+      "answer": "Montajul atracțiilor",
+      "explanation": "Eisenstein considera montajul o construcție activă de sens, nu doar o metodă de continuitate narativă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește utilizarea unei profunzimi de câmp mari pentru a păstra clare mai multe planuri?",
+      "options": [
+        "Efectul Kuleshov",
+        "Deep focus",
+        "Dolly zoom",
+        "J-cut"
+      ],
+      "answer": "Deep focus",
+      "explanation": "Tehnica permite acțiuni simultane în prim-plan și fundal fără mutarea focalizării între ele. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește iluminarea cu contraste puternice între lumină și umbră?",
+      "options": [
+        "Chiaroscuro",
+        "Efectul Kuleshov",
+        "Eyeline match",
+        "Iris shot"
+      ],
+      "answer": "Chiaroscuro",
+      "explanation": "Chiaroscuro creează volum, dramatism și atmosferă și apare frecvent în noir și expresionism. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește închiderea sau deschiderea circulară a imaginii folosită mai ales în cinemaul timpuriu?",
+      "options": [
+        "Montajul atracțiilor",
+        "Iris shot",
+        "Chiaroscuro",
+        "Dolly zoom"
+      ],
+      "answer": "Iris shot",
+      "explanation": "Iris-ul controla vizibilitatea printr-o mască circulară care putea izola un personaj sau închide scena. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește efectul optic produs prin zoom în sens opus deplasării camerei?",
+      "options": [
+        "Efectul Kuleshov",
+        "Eyeline match",
+        "Dolly zoom",
+        "L-cut"
+      ],
+      "answer": "Dolly zoom",
+      "explanation": "Dolly zoom-ul modifică dramatic perspectiva aparentă a fundalului păstrând aproximativ dimensiunea subiectului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește filtrul optic care permite focalizarea simultană a două zone aflate la distanțe foarte diferite?",
+      "options": [
+        "Iris shot",
+        "Split diopter",
+        "L-cut",
+        "Montajul atracțiilor"
+      ],
+      "answer": "Split diopter",
+      "explanation": "Split diopter-ul poate menține clar un obiect foarte apropiat și unul îndepărtat în același cadru. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește cadrul în care camera este înclinată față de orizontală pentru a produce dezechilibru vizual?",
+      "options": [
+        "Dutch angle",
+        "L-cut",
+        "Deep focus",
+        "Eyeline match"
+      ],
+      "answer": "Dutch angle",
+      "explanation": "Unghiul oblic sugerează instabilitate, tensiune sau deformarea percepției personajului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește tăietura bazată pe direcția privirii unui personaj către obiectul privit?",
+      "options": [
+        "Chiaroscuro",
+        "Montajul atracțiilor",
+        "Eyeline match",
+        "Shot/reverse shot"
+      ],
+      "answer": "Eyeline match",
+      "explanation": "Eyeline match-ul leagă logic un cadru al personajului de un cadru al obiectului sau persoanei privite. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește schema de montaj care alternează între două personaje aflate în conversație?",
+      "options": [
+        "L-cut",
+        "Eyeline match",
+        "Shot/reverse shot",
+        "J-cut"
+      ],
+      "answer": "Shot/reverse shot",
+      "explanation": "Tehnica menține orientarea spațială și permite alternarea reacțiilor și replicilor în dialog. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește tăietura în care sunetul scenei următoare începe înaintea imaginii ei?",
+      "options": [
+        "Efectul Kuleshov",
+        "L-cut",
+        "Split diopter",
+        "J-cut"
+      ],
+      "answer": "J-cut",
+      "explanation": "J-cut-ul face tranziția mai fluidă prin introducerea anticipată a sunetului următoarei scene. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește tăietura în care sunetul scenei anterioare continuă peste imaginea scenei următoare?",
+      "options": [
+        "Chiaroscuro",
+        "J-cut",
+        "L-cut",
+        "Dolly zoom"
+      ],
+      "answer": "L-cut",
+      "explanation": "L-cut-ul păstrează sunetul anterior după schimbarea imaginii și poate lega emoțional două spații. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat în primul rând Akira Kurosawa?",
+      "options": [
+        "Hong Kong",
+        "Senegal",
+        "India",
+        "Japonia"
+      ],
+      "answer": "Japonia",
+      "explanation": "Kurosawa a lucrat în industria japoneză și a influențat profund cineaști internaționali prin filmele sale istorice și contemporane."
+    },
+    {
+      "id": "movies-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat în primul rând Federico Fellini?",
+      "options": [
+        "Uniunea Sovietică",
+        "România",
+        "India",
+        "Italia"
+      ],
+      "answer": "Italia",
+      "explanation": "Fellini este una dintre figurile centrale ale cinemaului italian postbelic și ale modernismului cinematografic. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat în primul rând Ingmar Bergman?",
+      "options": [
+        "Italia",
+        "Suedia",
+        "România",
+        "Franța"
+      ],
+      "answer": "Suedia",
+      "explanation": "Bergman a devenit un reper al cinemaului suedez prin filme existențiale despre credință, familie și identitate. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce spațiu cinematografic este asociat în primul rând Andrei Tarkovsky în perioada sa de formare și celebritate?",
+      "options": [
+        "Uniunea Sovietică",
+        "India",
+        "Franța",
+        "Japonia"
+      ],
+      "answer": "Uniunea Sovietică",
+      "explanation": "Majoritatea operelor sale canonice timpurii și mature au fost realizate în sistemul cinematografic sovietic. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat cineastul Satyajit Ray?",
+      "options": [
+        "Italia",
+        "Senegal",
+        "Uniunea Sovietică",
+        "India"
+      ],
+      "answer": "India",
+      "explanation": "Ray a lucrat în principal în limba bengali și a devenit una dintre figurile majore ale cinemaului indian."
+    },
+    {
+      "id": "movies-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat cineastul Ousmane Sembène?",
+      "options": [
+        "Japonia",
+        "Iran",
+        "Suedia",
+        "Senegal"
+      ],
+      "answer": "Senegal",
+      "explanation": "Sembène este considerat una dintre figurile fondatoare ale cinemaului african subsaharian modern. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat în primul rând Abbas Kiarostami?",
+      "options": [
+        "Hong Kong",
+        "Iran",
+        "Japonia",
+        "India"
+      ],
+      "answer": "Iran",
+      "explanation": "Kiarostami a devenit una dintre figurile emblematice ale cinemaului iranian modern. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce teritoriu cinematografic este asociat Wong Kar-wai?",
+      "options": [
+        "România",
+        "Japonia",
+        "Hong Kong",
+        "Franța"
+      ],
+      "answer": "Hong Kong",
+      "explanation": "Filmele sale sunt strâns legate de spațiul urban, cultura și industria cinematografică din Hong Kong. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociată regizoarea Lucrecia Martel?",
+      "options": [
+        "Senegal",
+        "Uniunea Sovietică",
+        "Japonia",
+        "Argentina"
+      ],
+      "answer": "Argentina",
+      "explanation": "Martel este una dintre cele mai importante figuri ale cinemaului argentinian contemporan. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat Park Chan-wook?",
+      "options": [
+        "Coreea de Sud",
+        "Franța",
+        "Iran",
+        "România"
+      ],
+      "answer": "Coreea de Sud",
+      "explanation": "Park este cunoscut pentru thrillere stilizate și pentru rolul său în afirmarea globală a cinemaului sud-coreean. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociat Cristian Mungiu?",
+      "options": [
+        "Hong Kong",
+        "Japonia",
+        "Suedia",
+        "România"
+      ],
+      "answer": "România",
+      "explanation": "Mungiu este una dintre figurile centrale ale Noului Cinema Românesc. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cu ce țară este asociată în principal Agnès Varda?",
+      "options": [
+        "Franța",
+        "Hong Kong",
+        "Japonia",
+        "Iran"
+      ],
+      "answer": "Franța",
+      "explanation": "Varda a fost o figură importantă a cinemaului francez modern și a grupului Left Bank. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film un hipnotizator controlează un somnambul numit Cesare?",
+      "options": [
+        "In the Mood for Love",
+        "Battleship Potemkin",
+        "Andrei Rublev",
+        "The Cabinet of Dr. Caligari"
+      ],
+      "answer": "The Cabinet of Dr. Caligari",
+      "explanation": "Povestea folosește decoruri expresioniste și o structură narativă care destabilizează percepția realității. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film masacrul de pe treptele din Odesa devine o celebră secvență de montaj?",
+      "options": [
+        "The Piano",
+        "La Dolce Vita",
+        "The Third Man",
+        "Battleship Potemkin"
+      ],
+      "answer": "Battleship Potemkin",
+      "explanation": "Eisenstein fragmentează acțiunea pentru a intensifica violența și reacția emoțională a spectatorului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film un cuplu căsătorit este urmărit printr-un joc social tragic într-o proprietate franceză?",
+      "options": [
+        "Battleship Potemkin",
+        "The Rules of the Game",
+        "The Death of Mr. Lazarescu",
+        "The Cabinet of Dr. Caligari"
+      ],
+      "answer": "The Rules of the Game",
+      "explanation": "Renoir combină farsă, romantism și critică de clasă într-un ansamblu de personaje. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film Viena postbelică și personajul Harry Lime sunt centrale?",
+      "options": [
+        "The Third Man",
+        "The Death of Mr. Lazarescu",
+        "Andrei Rublev",
+        "In the Mood for Love"
+      ],
+      "answer": "The Third Man",
+      "explanation": "Investigația lui Holly Martins descoperă piața neagră și ambiguitatea morală a vechiului său prieten. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film un profesor vârstnic călătorește spre o ceremonie și își revede trecutul prin vise și amintiri?",
+      "options": [
+        "Aguirre, the Wrath of God",
+        "Wild Strawberries",
+        "Andrei Rublev",
+        "The Piano"
+      ],
+      "answer": "Wild Strawberries",
+      "explanation": "Bergman folosește călătoria pentru introspecția protagonistului Isak Borg. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film un jurnalist numit Marcello traversează viața mondenă a Romei?",
+      "options": [
+        "Paris, Texas",
+        "Aguirre, the Wrath of God",
+        "The Third Man",
+        "La Dolce Vita"
+      ],
+      "answer": "La Dolce Vita",
+      "explanation": "Structura episodică urmărește atracția și golul lumii celebrității, presei și aristocrației. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film este urmărită viața pictorului rus de icoane Andrei Rublev?",
+      "options": [
+        "Andrei Rublev",
+        "The Cabinet of Dr. Caligari",
+        "La Dolce Vita",
+        "The Third Man"
+      ],
+      "answer": "Andrei Rublev",
+      "explanation": "Tarkovsky folosește biografia artistului pentru a explora creația, credința și violența istorică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film o expediție spaniolă în Amazon se dezintegrează sub conducerea obsesivă a lui Aguirre?",
+      "options": [
+        "The Rules of the Game",
+        "The Death of Mr. Lazarescu",
+        "Aguirre, the Wrath of God",
+        "Battleship Potemkin"
+      ],
+      "answer": "Aguirre, the Wrath of God",
+      "explanation": "Herzog transformă căutarea El Dorado într-un studiu despre putere, delir și natură. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film un bărbat numit Travis reapare după ani de absență în deșertul texan?",
+      "options": [
+        "Paris, Texas",
+        "La Dolce Vita",
+        "The Third Man",
+        "Aguirre, the Wrath of God"
+      ],
+      "answer": "Paris, Texas",
+      "explanation": "Povestea urmărește încercarea lui Travis de a reconstrui relațiile cu fiul și fosta parteneră. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film doi vecini din Hong Kong descoperă că partenerii lor au o relație?",
+      "options": [
+        "The Piano",
+        "The Death of Mr. Lazarescu",
+        "Aguirre, the Wrath of God",
+        "In the Mood for Love"
+      ],
+      "answer": "In the Mood for Love",
+      "explanation": "Wong Kar-wai construiește tensiunea din întâlniri repetate, reținere emoțională și trecerea timpului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film Ada, o pianistă mută, ajunge în Noua Zeelandă colonială cu fiica ei?",
+      "options": [
+        "The Piano",
+        "The Death of Mr. Lazarescu",
+        "Paris, Texas",
+        "The Rules of the Game"
+      ],
+      "answer": "The Piano",
+      "explanation": "Pianul devine mijloc de expresie, negociere și autonomie pentru personajul central. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "În ce film este urmărită moartea unui pensionar din București printr-o noapte de transferuri medicale?",
+      "options": [
+        "In the Mood for Love",
+        "Andrei Rublev",
+        "The Death of Mr. Lazarescu",
+        "The Third Man"
+      ],
+      "answer": "The Death of Mr. Lazarescu",
+      "explanation": "Filmul lui Cristi Puiu observă cu umor negru și realism instituțiile medicale și fragilitatea individului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-241",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „A Trip to the Moon”?",
+      "answer": "1902",
+      "explanation": "„A Trip to the Moon” a fost lansat în 1902. Filmul lui Georges Méliès este un reper al trucajului cinematografic și al imaginației science-fiction timpurii."
+    },
+    {
+      "id": "movies-242",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „The Birth of a Nation”?",
+      "answer": "1915",
+      "explanation": "„The Birth of a Nation” a fost lansat în 1915. Filmul este important tehnic în istoria cinemaului american, dar profund rasist și propagandistic în reprezentarea sa."
+    },
+    {
+      "id": "movies-243",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Intolerance”?",
+      "answer": "1916",
+      "explanation": "„Intolerance” a fost lansat în 1916. D. W. Griffith a răspuns criticilor printr-o structură monumentală care alternează patru povești din epoci diferite."
+    },
+    {
+      "id": "movies-244",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Nosferatu”?",
+      "answer": "1922",
+      "explanation": "„Nosferatu” a fost lansat în 1922. Filmul lui F. W. Murnau adaptează neautorizat Dracula și a devenit o operă fundamentală a horrorului expresionist."
+    },
+    {
+      "id": "movies-245",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Man with a Movie Camera”?",
+      "answer": "1929",
+      "explanation": "„Man with a Movie Camera” a fost lansat în 1929. Dziga Vertov transformă filmarea și montajul într-o demonstrație a posibilităților specifice cinematografului."
+    },
+    {
+      "id": "movies-246",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „L'Atalante”?",
+      "answer": "1934",
+      "explanation": "„L'Atalante” a fost lansat în 1934. Jean Vigo combină realismul, poezia vizuală și povestea de dragoste într-un film devenit canonic ulterior."
+    },
+    {
+      "id": "movies-247",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Children of Paradise”?",
+      "answer": "1945",
+      "explanation": "„Children of Paradise” a fost lansat în 1945. Marcel Carné realizează o frescă romantică amplă despre teatrul parizian în ciuda condițiilor dificile ale ocupației."
+    },
+    {
+      "id": "movies-248",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Pather Panchali”?",
+      "answer": "1955",
+      "explanation": "„Pather Panchali” a fost lansat în 1955. Debutul lui Satyajit Ray a introdus internațional lumea rurală bengaleză printr-o observație umanistă și poetică."
+    },
+    {
+      "id": "movies-249",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Hiroshima mon amour”?",
+      "answer": "1959",
+      "explanation": "„Hiroshima mon amour” a fost lansat în 1959. Alain Resnais combină memoria personală și trauma istorică într-o structură modernistă fragmentată."
+    },
+    {
+      "id": "movies-250",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Cléo from 5 to 7”?",
+      "answer": "1962",
+      "explanation": "„Cléo from 5 to 7” a fost lansat în 1962. Agnès Varda urmărește aproape în timp real două ore din viața unei cântărețe care așteaptă rezultate medicale."
+    },
+    {
+      "id": "movies-251",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Mirror”?",
+      "answer": "1975",
+      "explanation": "„Mirror” a fost lansat în 1975. Tarkovsky construiește o autobiografie poetică din amintiri, vise, documente și fragmente temporale necronologice."
+    },
+    {
+      "id": "movies-252",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat filmul „Close-Up”?",
+      "answer": "1990",
+      "explanation": "„Close-Up” a fost lansat în 1990. Abbas Kiarostami reconstruiește un caz real și amestecă documentarul cu ficțiunea și reenactment-ul."
+    },
+    {
+      "id": "movies-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „A Trip to the Moon”?",
+      "options": [
+        "Kenji Mizoguchi",
+        "Jean Vigo",
+        "Dziga Vertov",
+        "Georges Méliès"
+      ],
+      "answer": "Georges Méliès",
+      "explanation": "Méliès a fost pionier al trucajului, decorurilor fantastice și narațiunii cinematografice spectaculoase. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Man with a Movie Camera”?",
+      "options": [
+        "Alain Resnais",
+        "Andrei Tarkovsky",
+        "Georges Méliès",
+        "Dziga Vertov"
+      ],
+      "answer": "Dziga Vertov",
+      "explanation": "Vertov explorează filmarea, montajul și viața urbană fără o poveste convențională sau actori ficționali. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „L'Atalante”?",
+      "options": [
+        "Georges Méliès",
+        "Jean Vigo",
+        "Ousmane Sembène",
+        "Alain Resnais"
+      ],
+      "answer": "Jean Vigo",
+      "explanation": "Vigo a realizat foarte puține filme înainte de moartea sa timpurie, dar influența lui asupra cinemaului francez este enormă."
+    },
+    {
+      "id": "movies-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Pather Panchali”?",
+      "options": [
+        "Satyajit Ray",
+        "Alain Resnais",
+        "Sergei Parajanov",
+        "Abbas Kiarostami"
+      ],
+      "answer": "Satyajit Ray",
+      "explanation": "Ray a început cu acest film trilogia Apu și a devenit una dintre marile figuri ale cinemaului mondial."
+    },
+    {
+      "id": "movies-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Hiroshima mon amour”?",
+      "options": [
+        "Agnès Varda",
+        "Alain Resnais",
+        "Sergei Parajanov",
+        "Ousmane Sembène"
+      ],
+      "answer": "Alain Resnais",
+      "explanation": "Resnais combină povestea de dragoste cu memoria bombardamentului atomic și limitele reprezentării traumei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Cléo from 5 to 7”?",
+      "options": [
+        "Agnès Varda",
+        "Ousmane Sembène",
+        "Satyajit Ray",
+        "Chantal Akerman"
+      ],
+      "answer": "Agnès Varda",
+      "explanation": "Varda folosește timpul aproape real și spațiul parizian pentru a urmări transformarea perspectivei personajului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Mirror”?",
+      "options": [
+        "Jean Vigo",
+        "Sergei Parajanov",
+        "Andrei Tarkovsky",
+        "Kenji Mizoguchi"
+      ],
+      "answer": "Andrei Tarkovsky",
+      "explanation": "Filmul autobiografic abandonează o cronologie convențională în favoarea memoriei și asocierii poetice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Close-Up”?",
+      "options": [
+        "Abbas Kiarostami",
+        "Satyajit Ray",
+        "Agnès Varda",
+        "Georges Méliès"
+      ],
+      "answer": "Abbas Kiarostami",
+      "explanation": "Kiarostami lucrează cu persoanele reale implicate într-un caz și destabilizează granița dintre documentar și ficțiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Sansho the Bailiff”?",
+      "options": [
+        "Dziga Vertov",
+        "Alain Resnais",
+        "Abbas Kiarostami",
+        "Kenji Mizoguchi"
+      ],
+      "answer": "Kenji Mizoguchi",
+      "explanation": "Mizoguchi folosește cadre lungi și compoziții elegante pentru o tragedie despre familie, sclavie și compasiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Black Girl” („La Noire de...”)?",
+      "options": [
+        "Dziga Vertov",
+        "Ousmane Sembène",
+        "Jean Vigo",
+        "Alain Resnais"
+      ],
+      "answer": "Ousmane Sembène",
+      "explanation": "Sembène explorează colonialismul, migrația și exploatarea prin experiența unei tinere senegaleze în Franța. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles”?",
+      "options": [
+        "Georges Méliès",
+        "Agnès Varda",
+        "Kenji Mizoguchi",
+        "Chantal Akerman"
+      ],
+      "answer": "Chantal Akerman",
+      "explanation": "Akerman transformă rutina domestică și durata cotidiană într-o experiență radicală de observație și tensiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a regizat „The Color of Pomegranates”?",
+      "options": [
+        "Sergei Parajanov",
+        "Agnès Varda",
+        "Chantal Akerman",
+        "Georges Méliès"
+      ],
+      "answer": "Sergei Parajanov",
+      "explanation": "Parajanov construiește o biografie poetică a lui Sayat-Nova prin tablouri simbolice și compoziții vizuale neconvenționale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește concepția critică potrivit căreia regizorul poate fi văzut ca autorul principal al filmului?",
+      "options": [
+        "Teoria autorului",
+        "Axa acțiunii",
+        "Elipsă",
+        "Spațiu negativ"
+      ],
+      "answer": "Teoria autorului",
+      "explanation": "Teoria autorului a fost popularizată de critica franceză și apoi dezvoltată în lumea anglofonă prin auteur theory. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește forma documentară franceză asociată cu camere portabile și interacțiunea vizibilă dintre cineast și subiect?",
+      "options": [
+        "Axa acțiunii",
+        "Cinéma vérité",
+        "Teoria autorului",
+        "Spațiu negativ"
+      ],
+      "answer": "Cinéma vérité",
+      "explanation": "Cinéma vérité acceptă adesea influența camerei și a intervievatorului asupra situației filmate. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește tradiția documentară nord-americană care urmărea observarea discretă cu echipe și echipamente ușoare?",
+      "options": [
+        "Spațiu negativ",
+        "Insert non-diegetic",
+        "Direct Cinema",
+        "Narator necreditabil"
+      ],
+      "answer": "Direct Cinema",
+      "explanation": "Direct Cinema favoriza observația și reducerea intervenției explicite a cineastului în eveniment. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește strategia inspirată de Brecht care împiedică spectatorul să se abandoneze complet iluziei dramatice?",
+      "options": [
+        "Direct Cinema",
+        "Efect de alienare brechtian",
+        "Discontinuitate temporală",
+        "Axa acțiunii"
+      ],
+      "answer": "Efect de alienare brechtian",
+      "explanation": "Tehnica atrage atenția asupra construcției spectacolului pentru a încuraja o relație critică, nu pur emoțională. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește eliminarea intenționată a unei porțiuni de timp sau acțiune din narațiune?",
+      "options": [
+        "Cinéma vérité",
+        "Elipsă",
+        "Plan-séquence",
+        "Discontinuitate temporală"
+      ],
+      "answer": "Elipsă",
+      "explanation": "Elipsa comprimă povestea prin omiterea evenimentelor pe care spectatorul le poate deduce sau care nu sunt esențiale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește un cadru introdus fără a aparține spațiului și timpului imediat al scenei?",
+      "options": [
+        "Insert non-diegetic",
+        "Discontinuitate temporală",
+        "Spațiu negativ",
+        "Cinéma vérité"
+      ],
+      "answer": "Insert non-diegetic",
+      "explanation": "Un astfel de insert poate comenta simbolic acțiunea fără a reprezenta un obiect existent în lumea imediată a personajelor."
+    },
+    {
+      "id": "movies-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește un cadru-secvență foarte lung care acoperă o unitate amplă de acțiune fără tăieturi?",
+      "options": [
+        "Plan-séquence",
+        "Narator necreditabil",
+        "Axa acțiunii",
+        "Efect de alienare brechtian"
+      ],
+      "answer": "Plan-séquence",
+      "explanation": "Plan-séquence-ul combină durata și mișcarea în interiorul cadrului, reducând fragmentarea prin montaj. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește linia imaginară folosită pentru menținerea orientării spațiale între două personaje?",
+      "options": [
+        "Axa acțiunii",
+        "Spațiu negativ",
+        "Iluminare motivată",
+        "Narator necreditabil"
+      ],
+      "answer": "Axa acțiunii",
+      "explanation": "Axa acțiunii stă la baza regulii de 180 de grade și ajută spectatorul să păstreze orientarea în spațiu."
+    },
+    {
+      "id": "movies-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește iluminarea justificată vizual de o sursă prezentă sau sugerată în scenă?",
+      "options": [
+        "Elipsă",
+        "Insert non-diegetic",
+        "Teoria autorului",
+        "Iluminare motivată"
+      ],
+      "answer": "Iluminare motivată",
+      "explanation": "Lumina motivată păstrează impresia că direcția și calitatea luminii provin logic din lumea scenei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește folosirea deliberată a spațiului gol din cadru în jurul subiectului?",
+      "options": [
+        "Narator necreditabil",
+        "Spațiu negativ",
+        "Teoria autorului",
+        "Plan-séquence"
+      ],
+      "answer": "Spațiu negativ",
+      "explanation": "Spațiul negativ poate sugera izolare, vulnerabilitate, dezechilibru sau anticiparea apariției unui element în cadru. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește ruperea deliberată a ordinii temporale lineare prin flashback-uri, anticipări sau montaje fragmentare?",
+      "options": [
+        "Efect de alienare brechtian",
+        "Discontinuitate temporală",
+        "Plan-séquence",
+        "Insert non-diegetic"
+      ],
+      "answer": "Discontinuitate temporală",
+      "explanation": "Această strategie poate reorganiza cauzalitatea și informația pentru a reflecta memoria, trauma sau subiectivitatea. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește un narator ale cărui afirmații nu pot fi acceptate complet ca adevărate?",
+      "options": [
+        "Direct Cinema",
+        "Plan-séquence",
+        "Axa acțiunii",
+        "Narator necreditabil"
+      ],
+      "answer": "Narator necreditabil",
+      "explanation": "Informația poate fi distorsionată de minciună, memorie defectuoasă, ignoranță sau percepție subiectivă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent francez din anii 1930 este asociat cu Marcel Carné și Jean Renoir și cu un ton fatalist, poetic?",
+      "options": [
+        "Noul Cinema Taiwanez",
+        "Realismul poetic francez",
+        "Third Cinema",
+        "Noul Cinema Iranian"
+      ],
+      "answer": "Realismul poetic francez",
+      "explanation": "Realismul poetic combina mediile populare cu atmosfera stilizată, romantismul și sentimentul destinului tragic. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mișcare postbelică italiană este asociată cu Rossellini, De Sica și Visconti?",
+      "options": [
+        "Free Cinema",
+        "Neorealismul italian",
+        "Noul Cinema German",
+        "Left Bank"
+      ],
+      "answer": "Neorealismul italian",
+      "explanation": "Mișcarea a favorizat locațiile reale, problemele sociale și o estetică mai puțin lustruită decât cinemaul de studio. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce grup francez modernist este asociat cu Resnais, Varda și Marker, distinct parțial de grupul Cahiers?",
+      "options": [
+        "Left Bank",
+        "Realismul poetic francez",
+        "Noul Cinema Iranian",
+        "Cinema Novo"
+      ],
+      "answer": "Left Bank",
+      "explanation": "Cineaștii Left Bank erau adesea legați de literatură, arte vizuale, documentar și experimente asupra memoriei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mișcare britanică de documentare și scurtmetraj din anii 1950 a precedat British New Wave?",
+      "options": [
+        "Realismul poetic francez",
+        "Free Cinema",
+        "Noul Cinema Taiwanez",
+        "Cinema Novo"
+      ],
+      "answer": "Free Cinema",
+      "explanation": "Free Cinema a promovat observația vieții cotidiene și producția independentă în afara convențiilor comerciale dominante. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce mișcare braziliană a formulat o critică anticolonială și o «estetică a foamei»?",
+      "options": [
+        "Realismul poetic francez",
+        "Left Bank",
+        "Noul Cinema Taiwanez",
+        "Cinema Novo"
+      ],
+      "answer": "Cinema Novo",
+      "explanation": "Cinema Novo a folosit mijloace limitate și forme moderne pentru a analiza inegalitatea și violența socială. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce concept latino-american de cinema politic a fost teoretizat de Solanas și Getino?",
+      "options": [
+        "Left Bank",
+        "Dogme 95",
+        "Third Cinema",
+        "Noul Cinema Taiwanez"
+      ],
+      "answer": "Third Cinema",
+      "explanation": "Third Cinema urmărea un cinema militant și anticolonial, diferit atât de Hollywood, cât și de autorismul apolitic. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce manifest danez a impus «Vow of Chastity» pentru producția cinematografică?",
+      "options": [
+        "Neorealismul italian",
+        "Parallel Cinema",
+        "Dogme 95",
+        "Noul Cinema Taiwanez"
+      ],
+      "answer": "Dogme 95",
+      "explanation": "Lars von Trier și Thomas Vinterberg au propus reguli menite să reducă artificiul tehnic și controlul excesiv al producției."
+    },
+    {
+      "id": "movies-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent german postbelic este asociat cu Fassbinder, Herzog și Wenders?",
+      "options": [
+        "Parallel Cinema",
+        "Cinema Novo",
+        "Noul Cinema German",
+        "Left Bank"
+      ],
+      "answer": "Noul Cinema German",
+      "explanation": "Noul Cinema German a contestat industria convențională și a confruntat istoria și identitatea Germaniei postbelice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent este asociat cu Hou Hsiao-hsien și Edward Yang?",
+      "options": [
+        "Noul Cinema Taiwanez",
+        "Third Cinema",
+        "Free Cinema",
+        "Neorealismul italian"
+      ],
+      "answer": "Noul Cinema Taiwanez",
+      "explanation": "Mișcarea a explorat modernizarea, memoria și viața urbană printr-un stil adesea contemplativ și realist. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent este asociat internațional cu Kiarostami, Makhmalbaf și alți cineaști iranieni moderni?",
+      "options": [
+        "Third Cinema",
+        "Noul Cinema Taiwanez",
+        "Noul Cinema Iranian",
+        "Free Cinema"
+      ],
+      "answer": "Noul Cinema Iranian",
+      "explanation": "Cinemaul iranian modern a devenit cunoscut pentru minimalism, metaficțiune, copii-actori și granițe fluide între documentar și ficțiune. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent este asociat cu Cristi Puiu, Cristian Mungiu și Corneliu Porumboiu?",
+      "options": [
+        "Noul Cinema Românesc",
+        "Dogme 95",
+        "Third Cinema",
+        "Noul Cinema Iranian"
+      ],
+      "answer": "Noul Cinema Românesc",
+      "explanation": "Curentul este cunoscut pentru realism, cadre lungi, umor sec și analiza instituțiilor și a tranziției postcomuniste. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce tradiție alternativă indiană este asociată cu Satyajit Ray, Mrinal Sen și Ritwik Ghatak?",
+      "options": [
+        "Parallel Cinema",
+        "Left Bank",
+        "Cinema Novo",
+        "Realismul poetic francez"
+      ],
+      "answer": "Parallel Cinema",
+      "explanation": "Parallel Cinema a oferit o alternativă realistă și artistică la producția comercială dominantă din India. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film un magician trimite o capsulă cu exploratori în ochiul Lunii?",
+      "options": [
+        "Man with a Movie Camera",
+        "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+        "Pather Panchali",
+        "A Trip to the Moon"
+      ],
+      "answer": "A Trip to the Moon",
+      "explanation": "Imaginea proiectilului înfipt în ochiul Lunii a devenit una dintre cele mai recognoscibile imagini ale cinemaului timpuriu. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film un operator și procesul de filmare devin chiar subiectul experimentului cinematografic?",
+      "options": [
+        "Hiroshima mon amour",
+        "The Color of Pomegranates",
+        "A Trip to the Moon",
+        "Man with a Movie Camera"
+      ],
+      "answer": "Man with a Movie Camera",
+      "explanation": "Vertov expune camerele, montajul și publicul, transformând cinematograful într-o demonstrație autoreflexivă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film un cuplu trăiește pe o barjă numită Atalante?",
+      "options": [
+        "The Color of Pomegranates",
+        "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+        "L'Atalante",
+        "Mirror"
+      ],
+      "answer": "L'Atalante",
+      "explanation": "Povestea de dragoste a lui Jean Vigo îmbină viața cotidiană cu imagini poetice și onirice. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film familia lui Apu trăiește într-un sat bengalez și se confruntă cu sărăcia și pierderea?",
+      "options": [
+        "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+        "Sansho the Bailiff",
+        "Mirror",
+        "Pather Panchali"
+      ],
+      "answer": "Pather Panchali",
+      "explanation": "Filmul observă copilăria, familia și mediul rural cu o sensibilitate umanistă și necosmetizată. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film o actriță franceză și un arhitect japonez discută memoria bombardamentului atomic?",
+      "options": [
+        "Hiroshima mon amour",
+        "Sansho the Bailiff",
+        "A Trip to the Moon",
+        "Close-Up"
+      ],
+      "answer": "Hiroshima mon amour",
+      "explanation": "Povestea intimă este construită în paralel cu imposibilitatea de a reprezenta complet trauma istorică. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film o cântăreață pariziană așteaptă rezultatul unei biopsii timp de aproximativ două ore?",
+      "options": [
+        "Pather Panchali",
+        "The Color of Pomegranates",
+        "Man with a Movie Camera",
+        "Cléo from 5 to 7"
+      ],
+      "answer": "Cléo from 5 to 7",
+      "explanation": "Varda folosește timpul aproape real pentru a transforma percepția de sine a personajului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film amintirile unui bărbat despre mama, copilăria și războiul sunt organizate necronologic?",
+      "options": [
+        "A Trip to the Moon",
+        "Black Girl",
+        "Mirror",
+        "Close-Up"
+      ],
+      "answer": "Mirror",
+      "explanation": "Tarkovsky combină material autobiografic, poezie, document și vis într-o structură asociativă. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film un bărbat care s-a dat drept regizorul Mohsen Makhmalbaf își reconstituie propriul caz?",
+      "options": [
+        "L'Atalante",
+        "Close-Up",
+        "Cléo from 5 to 7",
+        "A Trip to the Moon"
+      ],
+      "answer": "Close-Up",
+      "explanation": "Kiarostami distribuie persoanele reale și transformă procesul juridic într-o meditație asupra identității și cinemaului. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film doi copii aristocrați sunt vânduți în sclavie după exilul tatălui lor?",
+      "options": [
+        "Sansho the Bailiff",
+        "Cléo from 5 to 7",
+        "L'Atalante",
+        "Hiroshima mon amour"
+      ],
+      "answer": "Sansho the Bailiff",
+      "explanation": "Mizoguchi construiește o tragedie despre compasiune, autoritate și despărțirea familiei. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film o tânără senegaleză pleacă în Franța pentru a lucra ca menajeră?",
+      "options": [
+        "Black Girl",
+        "Pather Panchali",
+        "Cléo from 5 to 7",
+        "Mirror"
+      ],
+      "answer": "Black Girl",
+      "explanation": "Sembène folosește experiența personajului pentru a critica rasismul și continuitățile coloniale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film rutina zilnică a unei văduve belgiene este urmărită în cadre lungi și repetitive?",
+      "options": [
+        "Sansho the Bailiff",
+        "Pather Panchali",
+        "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+        "L'Atalante"
+      ],
+      "answer": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+      "explanation": "Akerman transformă treburile domestice și durata în centrul unei construcții cinematografice radicale. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
+    },
+    {
+      "id": "movies-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "În ce film viața poetului armean Sayat-Nova este prezentată prin tablouri simbolice, nu prin biografie convențională?",
+      "options": [
+        "Close-Up",
+        "Hiroshima mon amour",
+        "The Color of Pomegranates",
+        "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles"
+      ],
+      "answer": "The Color of Pomegranates",
+      "explanation": "Parajanov organizează filmul ca o succesiune de imagini ritualice și metaforice inspirate de cultura armeană. Explicația oferă context despre film, tehnică sau locul său în istoria cinematografiei."
     }
   ]
 }

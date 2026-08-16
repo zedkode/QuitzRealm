@@ -1,708 +1,3848 @@
 {
   "id": "music",
-  "name": "Music",
+  "name": "Muzică",
   "source": "ai",
   "reviewStatus": "pending",
   "questions": [
     {
       "id": "music-001",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Cine a compus sau a interpretat creația Anotimpurile?",
-      "options": [
-        "Ludwig van Beethoven",
-        "Piotr Ilici Ceaikovski",
-        "George Enescu",
-        "Antonio Vivaldi"
-      ],
-      "answer": "Antonio Vivaldi",
-      "explanation": "Pentru „Anotimpurile”, răspunsul corect este „Antonio Vivaldi”."
+      "text": "Câte note diferite conține o octavă cromatică în sistemul occidental cu temperament egal?",
+      "answer": "12",
+      "explanation": "O octavă cromatică este împărțită în douăsprezece semitonuri egale, de la o notă până la omonima sa din octava următoare."
     },
     {
       "id": "music-002",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce gen muzical este asociată în principal creația Anotimpurile?",
-      "options": [
-        "Jazz simfonic",
-        "Jazz",
-        "Muzică barocă",
-        "Muzică orchestrală"
-      ],
-      "answer": "Muzică barocă",
-      "explanation": "Pentru „Anotimpurile”, răspunsul corect este „Muzică barocă”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte linii are portativul muzical standard?",
+      "answer": "5",
+      "explanation": "Portativul standard folosește cinci linii orizontale și patru spații, pe care se notează înălțimile muzicale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-003",
-      "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a compus sau a interpretat creația Mica serenadă?",
-      "options": [
-        "George Gershwin",
-        "Wolfgang Amadeus Mozart",
-        "George Enescu",
-        "Maurice Ravel"
-      ],
-      "answer": "Wolfgang Amadeus Mozart",
-      "explanation": "Pentru „Mica serenadă”, răspunsul corect este „Wolfgang Amadeus Mozart”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte corzi are în mod obișnuit o chitară clasică?",
+      "answer": "6",
+      "explanation": "Chitara clasică standard are șase corzi, acordate în mod obișnuit Mi-La-Re-Sol-Si-Mi de la grav la acut. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-004",
-      "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce gen muzical este asociată în principal creația Mica serenadă?",
-      "options": [
-        "Muzică clasică",
-        "Jazz",
-        "Jazz vocal",
-        "Rock and roll"
-      ],
-      "answer": "Muzică clasică",
-      "explanation": "Pentru „Mica serenadă”, răspunsul corect este „Muzică clasică”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte clape are în mod obișnuit un pian modern de concert?",
+      "answer": "88",
+      "explanation": "Pianul modern standard are 88 de clape, dintre care 52 albe și 36 negre. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-005",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a compus sau a interpretat creația Simfonia a IX-a?",
-      "options": [
-        "George Gershwin",
-        "Duke Ellington",
-        "Louis Armstrong",
-        "Ludwig van Beethoven"
-      ],
-      "answer": "Ludwig van Beethoven",
-      "explanation": "Pentru „Simfonia a IX-a”, răspunsul corect este „Ludwig van Beethoven”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte corzi are o vioară standard?",
+      "answer": "4",
+      "explanation": "Vioara are patru corzi acordate de regulă Sol-Re-La-Mi, de la cea mai gravă la cea mai acută. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-006",
-      "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce gen muzical este asociată în principal creația Simfonia a IX-a?",
-      "options": [
-        "Soul",
-        "Rock psihedelic",
-        "Muzică clasică",
-        "Rock and roll"
-      ],
-      "answer": "Muzică clasică",
-      "explanation": "Pentru „Simfonia a IX-a”, răspunsul corect este „Muzică clasică”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte corzi are un violoncel standard?",
+      "answer": "4",
+      "explanation": "Violoncelul are patru corzi, acordate în cvinte: Do-Sol-Re-La. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-007",
-      "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a compus sau a interpretat creația Lacul lebedelor?",
-      "options": [
-        "Elvis Presley",
-        "Piotr Ilici Ceaikovski",
-        "Louis Armstrong",
-        "Chuck Berry"
-      ],
-      "answer": "Piotr Ilici Ceaikovski",
-      "explanation": "Pentru „Lacul lebedelor”, răspunsul corect este „Piotr Ilici Ceaikovski”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte corzi are în mod obișnuit un contrabas orchestral modern?",
+      "answer": "4",
+      "explanation": "Contrabasul orchestral modern are cel mai frecvent patru corzi, deși există și instrumente cu cinci. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-008",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Cu ce gen muzical este asociată în principal creația Lacul lebedelor?",
-      "options": [
-        "Balet",
-        "Rock psihedelic",
-        "Rock",
-        "Funk"
-      ],
-      "answer": "Balet",
-      "explanation": "Pentru „Lacul lebedelor”, răspunsul corect este „Balet”."
+      "text": "Câte clape albe există într-o octavă diatonică, de la Do la Si?",
+      "answer": "7",
+      "explanation": "În notația occidentală, octava diatonică folosește cele șapte nume Do, Re, Mi, Fa, Sol, La și Si. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-009",
-      "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a compus sau a interpretat creația Rapsodia Română nr. 1?",
-      "options": [
-        "Elvis Presley",
-        "Aretha Franklin",
-        "The Jimi Hendrix Experience",
-        "George Enescu"
-      ],
-      "answer": "George Enescu",
-      "explanation": "Pentru „Rapsodia Română nr. 1”, răspunsul corect este „George Enescu”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte semitonuri are o octavă?",
+      "answer": "12",
+      "explanation": "În temperamentul egal occidental, octava este împărțită în douăsprezece semitonuri. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-010",
-      "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce gen muzical este asociată în principal creația Rapsodia Română nr. 1?",
-      "options": [
-        "Disco",
-        "Pop",
-        "Muzică orchestrală",
-        "Funk"
-      ],
-      "answer": "Muzică orchestrală",
-      "explanation": "Pentru „Rapsodia Română nr. 1”, răspunsul corect este „Muzică orchestrală”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte timpi are măsura de 4/4?",
+      "answer": "4",
+      "explanation": "Măsura de 4/4 conține patru timpi, iar pătrimea reprezintă unitatea de timp. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-011",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Cine a compus sau a interpretat creația Boléro?",
-      "options": [
-        "Stevie Wonder",
-        "Maurice Ravel",
-        "The Jimi Hendrix Experience",
-        "Queen"
-      ],
-      "answer": "Maurice Ravel",
-      "explanation": "Pentru „Boléro”, răspunsul corect este „Maurice Ravel”."
+      "text": "Câte timpi are măsura de 3/4?",
+      "answer": "3",
+      "explanation": "Măsura de 3/4 are trei timpi pe măsură și este frecvent asociată cu valsul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-012",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce gen muzical este asociată în principal creația Boléro?",
-      "options": [
-        "Muzică orchestrală",
-        "Pop",
-        "Grunge",
-        "Heavy metal"
-      ],
-      "answer": "Muzică orchestrală",
-      "explanation": "Pentru „Boléro”, răspunsul corect este „Muzică orchestrală”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte semitonuri are o cvintă perfectă?",
+      "answer": "7",
+      "explanation": "De exemplu, distanța de la Do la Sol măsoară șapte semitonuri în sistemul occidental. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-013",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a compus sau a interpretat creația Rhapsody in Blue?",
+      "difficulty": 1,
+      "text": "Ce indică termenul „tempo” în muzică?",
       "options": [
-        "Stevie Wonder",
-        "ABBA",
-        "Michael Jackson",
-        "George Gershwin"
+        "Viteza de desfășurare a muzicii",
+        "Cântare încet",
+        "Combinarea simultană a sunetelor și acordurilor",
+        "Un simbol care indică o durată de tăcere"
       ],
-      "answer": "George Gershwin",
-      "explanation": "Pentru „Rhapsody in Blue”, răspunsul corect este „George Gershwin”."
+      "answer": "Viteza de desfășurare a muzicii",
+      "explanation": "Tempo-ul stabilește cât de repede sau încet se succed timpii unei piese și poate fi indicat prin termeni sau BPM."
     },
     {
       "id": "music-014",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce gen muzical este asociată în principal creația Rhapsody in Blue?",
+      "difficulty": 1,
+      "text": "Ce indică „forte” într-o partitură?",
       "options": [
-        "R&B",
-        "Hip-hop",
-        "Jazz simfonic",
-        "Heavy metal"
+        "Un simbol care indică o durată de tăcere",
+        "Un grup de note cântate simultan sau percepute ca unitate armonică",
+        "Combinarea simultană a sunetelor și acordurilor",
+        "Cântare puternică"
       ],
-      "answer": "Jazz simfonic",
-      "explanation": "Pentru „Rhapsody in Blue”, răspunsul corect este „Jazz simfonic”."
+      "answer": "Cântare puternică",
+      "explanation": "Semnul forte, notat f, cere o intensitate sonoră mai ridicată decât dinamica medie. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-015",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a compus sau a interpretat creația Take the A Train?",
+      "difficulty": 1,
+      "text": "Ce indică „piano” într-o partitură?",
       "options": [
-        "Nirvana",
-        "Duke Ellington",
-        "Michael Jackson",
-        "Madonna"
+        "Organizarea duratelor și accentelor în timp",
+        "Un dispozitiv care produce pulsații regulate pentru menținerea tempo-ului",
+        "Centrul organizatoric în jurul unei note și al unei game",
+        "Cântare încet"
       ],
-      "answer": "Duke Ellington",
-      "explanation": "Pentru „Take the A Train”, răspunsul corect este „Duke Ellington”."
+      "answer": "Cântare încet",
+      "explanation": "Semnul piano, notat p, indică o dinamică redusă și o interpretare mai delicată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-016",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce gen muzical este asociată în principal creația Take the A Train?",
+      "difficulty": 1,
+      "text": "Ce este o melodie?",
       "options": [
-        "Jazz",
-        "Hip-hop",
-        "Pop soul",
-        "Synth-pop"
+        "Viteza de desfășurare a muzicii",
+        "O succesiune organizată de sunete percepută ca linie muzicală",
+        "Un dispozitiv care produce pulsații regulate pentru menținerea tempo-ului",
+        "Cântare puternică"
       ],
-      "answer": "Jazz",
-      "explanation": "Pentru „Take the A Train”, răspunsul corect este „Jazz”."
+      "answer": "O succesiune organizată de sunete percepută ca linie muzicală",
+      "explanation": "Melodia este componenta pe care ascultătorul o poate recunoaște sau fredona independent de acompaniament. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-017",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a compus sau a interpretat creația What a Wonderful World?",
+      "difficulty": 1,
+      "text": "Ce este ritmul?",
       "options": [
-        "Nirvana",
-        "Metallica",
-        "TLC",
-        "Louis Armstrong"
+        "Organizarea duratelor și accentelor în timp",
+        "Cântare încet",
+        "O succesiune ordonată de note după un anumit model de intervale",
+        "Combinarea simultană a sunetelor și acordurilor"
       ],
-      "answer": "Louis Armstrong",
-      "explanation": "Pentru „What a Wonderful World”, răspunsul corect este „Louis Armstrong”."
+      "answer": "Organizarea duratelor și accentelor în timp",
+      "explanation": "Ritmul stabilește modelul temporal al sunetelor și pauzelor și interacționează cu metrul și tempo-ul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-018",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce gen muzical este asociată în principal creația What a Wonderful World?",
+      "text": "Ce este armonia?",
       "options": [
-        "Muzică barocă",
-        "Muzică clasică",
-        "Jazz vocal",
-        "Synth-pop"
+        "Cântare încet",
+        "Cântare puternică",
+        "Centrul organizatoric în jurul unei note și al unei game",
+        "Combinarea simultană a sunetelor și acordurilor"
       ],
-      "answer": "Jazz vocal",
-      "explanation": "Pentru „What a Wonderful World”, răspunsul corect este „Jazz vocal”."
+      "answer": "Combinarea simultană a sunetelor și acordurilor",
+      "explanation": "Armonia descrie relațiile dintre sunetele care se aud simultan și modul în care acordurile se succed. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-019",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a compus sau a interpretat creația Johnny B. Goode?",
+      "difficulty": 1,
+      "text": "Ce este un acord?",
       "options": [
-        "Beyoncé",
-        "Chuck Berry",
-        "TLC",
-        "Eminem"
+        "O secțiune care revine repetat într-un cântec",
+        "Un grup de note cântate simultan sau percepute ca unitate armonică",
+        "Un dispozitiv care produce pulsații regulate pentru menținerea tempo-ului",
+        "Cântare puternică"
       ],
-      "answer": "Chuck Berry",
-      "explanation": "Pentru „Johnny B. Goode”, răspunsul corect este „Chuck Berry”."
+      "answer": "Un grup de note cântate simultan sau percepute ca unitate armonică",
+      "explanation": "Acordurile susțin armonia și pot avea funcții diferite într-o tonalitate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-020",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce gen muzical este asociată în principal creația Johnny B. Goode?",
+      "difficulty": 1,
+      "text": "Ce este o gamă muzicală?",
       "options": [
-        "Rock and roll",
-        "Muzică clasică",
-        "Balet",
-        "Muzică orchestrală"
+        "Un grup de note cântate simultan sau percepute ca unitate armonică",
+        "Centrul organizatoric în jurul unei note și al unei game",
+        "O succesiune ordonată de note după un anumit model de intervale",
+        "Cântare încet"
       ],
-      "answer": "Rock and roll",
-      "explanation": "Pentru „Johnny B. Goode”, răspunsul corect este „Rock and roll”."
+      "answer": "O succesiune ordonată de note după un anumit model de intervale",
+      "explanation": "Gamele organizează materialul melodic și armonic și pot fi majore, minore, modale sau cromatice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-021",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a compus sau a interpretat creația Jailhouse Rock?",
+      "text": "Ce este tonalitatea unei piese?",
       "options": [
-        "Beyoncé",
-        "Adele",
-        "The Weeknd",
-        "Elvis Presley"
+        "Centrul organizatoric în jurul unei note și al unei game",
+        "Cântare puternică",
+        "Un grup de note cântate simultan sau percepute ca unitate armonică",
+        "O succesiune ordonată de note după un anumit model de intervale"
       ],
-      "answer": "Elvis Presley",
-      "explanation": "Pentru „Jailhouse Rock”, răspunsul corect este „Elvis Presley”."
+      "answer": "Centrul organizatoric în jurul unei note și al unei game",
+      "explanation": "Tonalitatea stabilește relațiile de tensiune și rezoluție dintre note și acorduri. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-022",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce gen muzical este asociată în principal creația Jailhouse Rock?",
+      "difficulty": 1,
+      "text": "Ce este o pauză în notație muzicală?",
       "options": [
-        "Jazz simfonic",
-        "Jazz",
-        "Rock and roll",
-        "Muzică orchestrală"
+        "Un simbol care indică o durată de tăcere",
+        "Cântare încet",
+        "Combinarea simultană a sunetelor și acordurilor",
+        "O succesiune organizată de sunete percepută ca linie muzicală"
       ],
-      "answer": "Rock and roll",
-      "explanation": "Pentru „Jailhouse Rock”, răspunsul corect este „Rock and roll”."
+      "answer": "Un simbol care indică o durată de tăcere",
+      "explanation": "Pauzele au valori ritmice exacte și fac parte din structura temporală a muzicii. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-023",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a compus sau a interpretat creația Respect?",
+      "difficulty": 1,
+      "text": "Ce este un metronom?",
       "options": [
-        "Wolfgang Amadeus Mozart",
-        "Aretha Franklin",
-        "The Weeknd",
-        "Antonio Vivaldi"
+        "Un simbol care indică o durată de tăcere",
+        "Cântare puternică",
+        "Viteza de desfășurare a muzicii",
+        "Un dispozitiv care produce pulsații regulate pentru menținerea tempo-ului"
       ],
-      "answer": "Aretha Franklin",
-      "explanation": "Pentru „Respect”, răspunsul corect este „Aretha Franklin”."
+      "answer": "Un dispozitiv care produce pulsații regulate pentru menținerea tempo-ului",
+      "explanation": "Metronomul ajută muzicienii să exerseze la viteze precise, de obicei exprimate în bătăi pe minut. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-024",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce gen muzical este asociată în principal creația Respect?",
+      "difficulty": 1,
+      "text": "Ce este un refren?",
       "options": [
-        "Soul",
-        "Jazz",
-        "Jazz vocal",
-        "Rock and roll"
+        "Organizarea duratelor și accentelor în timp",
+        "Cântare încet",
+        "Cântare puternică",
+        "O secțiune care revine repetat într-un cântec"
       ],
-      "answer": "Soul",
-      "explanation": "Pentru „Respect”, răspunsul corect este „Soul”."
+      "answer": "O secțiune care revine repetat într-un cântec",
+      "explanation": "Refrenul conține de obicei ideea muzicală și textuală principală și contrastează cu strofele. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-025",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a compus sau a interpretat creația Purple Haze?",
+      "difficulty": 1,
+      "text": "Din ce familie orchestrală face parte vioara?",
       "options": [
-        "Wolfgang Amadeus Mozart",
-        "Ludwig van Beethoven",
-        "Piotr Ilici Ceaikovski",
-        "The Jimi Hendrix Experience"
+        "Viola",
+        "Chitara",
+        "Orga",
+        "Instrumente cu coarde"
       ],
-      "answer": "The Jimi Hendrix Experience",
-      "explanation": "Pentru „Purple Haze”, răspunsul corect este „The Jimi Hendrix Experience”."
+      "answer": "Instrumente cu coarde",
+      "explanation": "Vioara produce sunet prin vibrația corzilor, de regulă puse în mișcare cu arcușul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-026",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce gen muzical este asociată în principal creația Purple Haze?",
+      "difficulty": 1,
+      "text": "Din ce familie face parte trompeta?",
       "options": [
-        "Soul",
-        "Rock",
-        "Rock psihedelic",
-        "Rock and roll"
+        "Instrumente de suflat din lemn",
+        "Orga",
+        "Instrumente de alamă",
+        "Chitara"
       ],
-      "answer": "Rock psihedelic",
-      "explanation": "Pentru „Purple Haze”, răspunsul corect este „Rock psihedelic”."
+      "answer": "Instrumente de alamă",
+      "explanation": "Trompeta produce sunet prin vibrația buzelor interpretului într-un muștiuc și prin coloana de aer din tub. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-027",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a compus sau a interpretat creația Bohemian Rhapsody?",
+      "difficulty": 1,
+      "text": "Din ce familie orchestrală face parte flautul?",
       "options": [
-        "Maurice Ravel",
-        "Queen",
-        "Piotr Ilici Ceaikovski",
-        "George Enescu"
+        "Instrumente de suflat din lemn",
+        "Viola",
+        "Trombonul",
+        "Percuție"
       ],
-      "answer": "Queen",
-      "explanation": "Pentru „Bohemian Rhapsody”, răspunsul corect este „Queen”."
+      "answer": "Instrumente de suflat din lemn",
+      "explanation": "Deși flautul modern este adesea metalic, clasificarea orchestrală îl păstrează în familia instrumentelor de lemn. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-028",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce gen muzical este asociată în principal creația Bohemian Rhapsody?",
+      "text": "Din ce familie face parte timpanul?",
       "options": [
-        "Rock",
-        "Rock psihedelic",
-        "Funk",
-        "Disco"
+        "Percuție",
+        "Cimpoiul",
+        "Instrumente cu coarde",
+        "Instrumente de alamă"
       ],
-      "answer": "Rock",
-      "explanation": "Pentru „Bohemian Rhapsody”, răspunsul corect este „Rock”."
+      "answer": "Percuție",
+      "explanation": "Timpanul produce sunet prin lovirea unei membrane tensionate și poate fi acordat la înălțimi precise. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-029",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a compus sau a interpretat creația Superstition?",
+      "difficulty": 1,
+      "text": "Ce instrument are clape, ciocănele și corzi în interior?",
       "options": [
-        "Maurice Ravel",
-        "George Gershwin",
-        "Duke Ellington",
-        "Stevie Wonder"
+        "Cimpoiul",
+        "Pianul",
+        "Clarinetul",
+        "Vibrafonul"
       ],
-      "answer": "Stevie Wonder",
-      "explanation": "Pentru „Superstition”, răspunsul corect este „Stevie Wonder”."
+      "answer": "Pianul",
+      "explanation": "Apăsarea unei clape pune în mișcare un mecanism care lovește corzile cu ciocănele îmbrăcate în pâslă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-030",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce gen muzical este asociată în principal creația Superstition?",
+      "difficulty": 1,
+      "text": "Ce instrument este asociat cu arcușul și are registru mai grav decât vioara, dar mai acut decât violoncelul?",
       "options": [
-        "Pop",
-        "Grunge",
-        "Funk",
-        "Disco"
+        "Clarinetul",
+        "Viola",
+        "Instrumente de suflat din lemn",
+        "Percuție"
       ],
-      "answer": "Funk",
-      "explanation": "Pentru „Superstition”, răspunsul corect este „Funk”."
+      "answer": "Viola",
+      "explanation": "Viola seamănă cu vioara, dar are corpul puțin mai mare și un registru mai grav. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-031",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a compus sau a interpretat creația Dancing Queen?",
+      "text": "Ce instrument de suflat cu ancie simplă este frecvent folosit în orchestră și jazz?",
       "options": [
-        "Chuck Berry",
-        "ABBA",
-        "Duke Ellington",
-        "Louis Armstrong"
+        "Clarinetul",
+        "Vibrafonul",
+        "Cimpoiul",
+        "Chitara"
       ],
-      "answer": "ABBA",
-      "explanation": "Pentru „Dancing Queen”, răspunsul corect este „ABBA”."
+      "answer": "Clarinetul",
+      "explanation": "Clarinetul folosește o ancie simplă fixată pe muștiuc și are un registru foarte larg. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-032",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce gen muzical este asociată în principal creația Dancing Queen?",
+      "difficulty": 1,
+      "text": "Ce instrument de suflat din alamă folosește o culisă pentru schimbarea lungimii tubului?",
       "options": [
-        "Disco",
-        "Grunge",
-        "Heavy metal",
-        "R&B"
+        "Vibrafonul",
+        "Instrumente de suflat din lemn",
+        "Orga",
+        "Trombonul"
       ],
-      "answer": "Disco",
-      "explanation": "Pentru „Dancing Queen”, răspunsul corect este „Disco”."
+      "answer": "Trombonul",
+      "explanation": "Trombonul schimbă înălțimea sunetelor prin deplasarea culisei, nu doar prin valve. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-033",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a compus sau a interpretat creația Billie Jean?",
+      "difficulty": 1,
+      "text": "Ce instrument are de obicei șase corzi și se cântă prin ciupire sau lovire?",
       "options": [
-        "Chuck Berry",
-        "Elvis Presley",
-        "Aretha Franklin",
-        "Michael Jackson"
+        "Viola",
+        "Chitara",
+        "Instrumente de suflat din lemn",
+        "Cimpoiul"
       ],
-      "answer": "Michael Jackson",
-      "explanation": "Pentru „Billie Jean”, răspunsul corect este „Michael Jackson”."
+      "answer": "Chitara",
+      "explanation": "Chitara produce sunet prin vibrația corzilor și există în variante acustice, clasice și electrice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-034",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce gen muzical este asociată în principal creația Billie Jean?",
+      "difficulty": 1,
+      "text": "Ce instrument cu claviatură produce sunet prin aer trecut prin tuburi?",
       "options": [
-        "Hip-hop",
-        "Pop soul",
-        "Pop",
-        "R&B"
+        "Clarinetul",
+        "Orga",
+        "Trombonul",
+        "Chitara"
       ],
-      "answer": "Pop",
-      "explanation": "Pentru „Billie Jean”, răspunsul corect este „Pop”."
+      "answer": "Orga",
+      "explanation": "Orga cu tuburi folosește aerul trimis prin registre diferite pentru a produce timbruri și înălțimi variate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-035",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a compus sau a interpretat creația Like a Prayer?",
+      "difficulty": 1,
+      "text": "Ce instrument de percuție acordat are lame metalice dispuse asemănător clapelor unui pian?",
       "options": [
-        "Queen",
-        "Madonna",
-        "Aretha Franklin",
-        "The Jimi Hendrix Experience"
+        "Vibrafonul",
+        "Chitara",
+        "Instrumente de suflat din lemn",
+        "Instrumente cu coarde"
       ],
-      "answer": "Madonna",
-      "explanation": "Pentru „Like a Prayer”, răspunsul corect este „Madonna”."
+      "answer": "Vibrafonul",
+      "explanation": "Vibrafonul are lame metalice și rezonatoare, iar un motor poate produce efectul său caracteristic de vibrato. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-036",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce gen muzical este asociată în principal creația Like a Prayer?",
+      "difficulty": 1,
+      "text": "Ce instrument tradițional scoțian folosește un sac cu aer și mai multe țevi?",
       "options": [
-        "Pop",
-        "Pop soul",
-        "Synth-pop",
-        "Muzică barocă"
+        "Clarinetul",
+        "Vibrafonul",
+        "Viola",
+        "Cimpoiul"
       ],
-      "answer": "Pop",
-      "explanation": "Pentru „Like a Prayer”, răspunsul corect este „Pop”."
+      "answer": "Cimpoiul",
+      "explanation": "Cimpoiul menține un flux continuu de aer către tuburile sonore prin rezervorul din piele sau material sintetic. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-037",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a compus sau a interpretat creația Smells Like Teen Spirit?",
+      "difficulty": 1,
+      "text": "Ce compozitor a scris Simfonia a IX-a cu finalul „Oda bucuriei”?",
       "options": [
-        "Queen",
-        "Stevie Wonder",
-        "ABBA",
-        "Nirvana"
+        "Eagles",
+        "Ludwig van Beethoven",
+        "Antonio Vivaldi",
+        "Wolfgang Amadeus Mozart"
       ],
-      "answer": "Nirvana",
-      "explanation": "Pentru „Smells Like Teen Spirit”, răspunsul corect este „Nirvana”."
+      "answer": "Ludwig van Beethoven",
+      "explanation": "Finalul Simfoniei a IX-a folosește textul lui Friedrich Schiller și este una dintre cele mai cunoscute lucrări ale lui Beethoven."
     },
     {
       "id": "music-038",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce gen muzical este asociată în principal creația Smells Like Teen Spirit?",
+      "text": "Ce compozitor este asociat cu „Anotimpurile”?",
       "options": [
-        "Muzică clasică",
-        "Balet",
-        "Grunge",
-        "Muzică barocă"
+        "Michael Jackson",
+        "Eagles",
+        "Prince",
+        "Antonio Vivaldi"
       ],
-      "answer": "Grunge",
-      "explanation": "Pentru „Smells Like Teen Spirit”, răspunsul corect este „Grunge”."
+      "answer": "Antonio Vivaldi",
+      "explanation": "Cele patru concerte pentru vioară descriu muzical primăvara, vara, toamna și iarna. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-039",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a compus sau a interpretat creația Nothing Else Matters?",
+      "difficulty": 1,
+      "text": "Ce compozitor a scris „Eine kleine Nachtmusik”?",
       "options": [
-        "Madonna",
-        "Metallica",
-        "ABBA",
-        "Michael Jackson"
+        "Nirvana",
+        "Adele",
+        "Wolfgang Amadeus Mozart",
+        "Piotr Ilici Ceaikovski"
       ],
-      "answer": "Metallica",
-      "explanation": "Pentru „Nothing Else Matters”, răspunsul corect este „Metallica”."
+      "answer": "Wolfgang Amadeus Mozart",
+      "explanation": "Serenada în Sol major K. 525 este una dintre cele mai cunoscute lucrări instrumentale ale lui Mozart. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-040",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce gen muzical este asociată în principal creația Nothing Else Matters?",
+      "difficulty": 1,
+      "text": "Ce compozitor a scris baletul „Lacul lebedelor”?",
       "options": [
-        "Heavy metal",
-        "Balet",
-        "Muzică orchestrală",
-        "Jazz simfonic"
+        "Piotr Ilici Ceaikovski",
+        "Nirvana",
+        "Ludwig van Beethoven",
+        "The Beatles"
       ],
-      "answer": "Heavy metal",
-      "explanation": "Pentru „Nothing Else Matters”, răspunsul corect este „Heavy metal”."
+      "answer": "Piotr Ilici Ceaikovski",
+      "explanation": "Ceaikovski a creat o partitură simfonică bogată care a devenit centrală în repertoriul de balet. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-041",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cine a compus sau a interpretat creația No Scrubs?",
+      "text": "Ce trupă a lansat albumul „Abbey Road”?",
       "options": [
-        "Madonna",
-        "Nirvana",
-        "Metallica",
-        "TLC"
+        "The Beatles",
+        "Prince",
+        "Piotr Ilici Ceaikovski",
+        "Eagles"
       ],
-      "answer": "TLC",
-      "explanation": "Pentru „No Scrubs”, răspunsul corect este „TLC”."
+      "answer": "The Beatles",
+      "explanation": "Albumul din 1969 include piese precum Come Together și celebra suită de pe partea a doua. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-042",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce gen muzical este asociată în principal creația No Scrubs?",
+      "difficulty": 1,
+      "text": "Ce artist este cunoscut drept „King of Pop”?",
       "options": [
-        "Jazz",
-        "Jazz vocal",
-        "R&B",
-        "Jazz simfonic"
+        "Michael Jackson",
+        "Wolfgang Amadeus Mozart",
+        "Prince",
+        "Eagles"
       ],
-      "answer": "R&B",
-      "explanation": "Pentru „No Scrubs”, răspunsul corect este „R&B”."
+      "answer": "Michael Jackson",
+      "explanation": "Titlul popular reflectă impactul global al lui Jackson asupra muzicii pop, dansului și videoclipului muzical. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-043",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cine a compus sau a interpretat creația Lose Yourself?",
+      "difficulty": 1,
+      "text": "Ce trupă este asociată cu Freddie Mercury?",
       "options": [
-        "Beyoncé",
-        "Eminem",
-        "Metallica",
-        "TLC"
+        "Michael Jackson",
+        "Queen",
+        "Adele",
+        "Antonio Vivaldi"
       ],
-      "answer": "Eminem",
-      "explanation": "Pentru „Lose Yourself”, răspunsul corect este „Eminem”."
+      "answer": "Queen",
+      "explanation": "Mercury a fost vocalistul principal al Queen și una dintre cele mai recognoscibile voci din rock. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-044",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce gen muzical este asociată în principal creația Lose Yourself?",
+      "difficulty": 1,
+      "text": "Ce cântăreață a lansat albumul „21”?",
       "options": [
-        "Hip-hop",
-        "Jazz vocal",
-        "Rock and roll",
-        "Soul"
+        "Ludwig van Beethoven",
+        "Nirvana",
+        "Adele",
+        "Amy Winehouse"
       ],
-      "answer": "Hip-hop",
-      "explanation": "Pentru „Lose Yourself”, răspunsul corect este „Hip-hop”."
+      "answer": "Adele",
+      "explanation": "Albumul a consolidat succesul internațional al artistei prin balade soul-pop și voce puternică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-045",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cine a compus sau a interpretat creația Crazy in Love?",
+      "difficulty": 1,
+      "text": "Ce artist este asociat cu piesa „Purple Rain”?",
       "options": [
-        "Eminem",
-        "Adele",
-        "The Weeknd",
-        "Beyoncé"
+        "Piotr Ilici Ceaikovski",
+        "Antonio Vivaldi",
+        "Wolfgang Amadeus Mozart",
+        "Prince"
       ],
-      "answer": "Beyoncé",
-      "explanation": "Pentru „Crazy in Love”, răspunsul corect este „Beyoncé”."
+      "answer": "Prince",
+      "explanation": "Prince a lansat piesa și albumul Purple Rain în legătură cu filmul muzical omonim. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-046",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce gen muzical este asociată în principal creația Crazy in Love?",
+      "difficulty": 1,
+      "text": "Ce trupă a lansat „Smells Like Teen Spirit”?",
       "options": [
-        "Rock psihedelic",
-        "Rock",
-        "R&B",
-        "Soul"
+        "Queen",
+        "Adele",
+        "Nirvana",
+        "Prince"
       ],
-      "answer": "R&B",
-      "explanation": "Pentru „Crazy in Love”, răspunsul corect este „R&B”."
+      "answer": "Nirvana",
+      "explanation": "Piesa a devenit un simbol al exploziei grunge la începutul anilor 1990. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-047",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cine a compus sau a interpretat creația Rolling in the Deep?",
+      "difficulty": 1,
+      "text": "Ce formație este asociată cu piesa „Hotel California”?",
       "options": [
-        "Wolfgang Amadeus Mozart",
-        "Adele",
-        "The Weeknd",
-        "Antonio Vivaldi"
+        "Nirvana",
+        "Prince",
+        "Michael Jackson",
+        "Eagles"
       ],
-      "answer": "Adele",
-      "explanation": "Pentru „Rolling in the Deep”, răspunsul corect este „Adele”."
+      "answer": "Eagles",
+      "explanation": "Hotel California este una dintre cele mai cunoscute piese ale trupei americane Eagles. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-048",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce gen muzical este asociată în principal creația Rolling in the Deep?",
+      "text": "Ce cântăreață este asociată cu albumul „Back to Black”?",
       "options": [
-        "Pop soul",
-        "Rock",
-        "Funk",
-        "Disco"
+        "Nirvana",
+        "Amy Winehouse",
+        "Ludwig van Beethoven",
+        "Michael Jackson"
       ],
-      "answer": "Pop soul",
-      "explanation": "Pentru „Rolling in the Deep”, răspunsul corect este „Pop soul”."
+      "answer": "Amy Winehouse",
+      "explanation": "Albumul combină soul, R&B și influențe retro, susținute de interpretarea vocală distinctă a lui Winehouse. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-049",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cine a compus sau a interpretat creația Blinding Lights?",
+      "difficulty": 1,
+      "text": "Ce gen muzical s-a dezvoltat puternic în New Orleans și pune accent pe improvizație?",
       "options": [
-        "Wolfgang Amadeus Mozart",
-        "Ludwig van Beethoven",
-        "Piotr Ilici Ceaikovski",
-        "The Weeknd"
+        "Jazz",
+        "Electronic dance music",
+        "Muzica clasică indiană",
+        "Rock"
       ],
-      "answer": "The Weeknd",
-      "explanation": "Pentru „Blinding Lights”, răspunsul corect este „The Weeknd”."
+      "answer": "Jazz",
+      "explanation": "Jazzul s-a format din întâlnirea tradițiilor afro-americane, bluesului, ragtime-ului și muzicii de fanfară. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     },
     {
       "id": "music-050",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce gen muzical este asociată în principal creația Blinding Lights?",
+      "difficulty": 1,
+      "text": "Ce gen afro-american folosește frecvent forma de 12 măsuri și blue notes?",
       "options": [
-        "Pop",
-        "Grunge",
-        "Synth-pop",
-        "Disco"
+        "Muzica clasică indiană",
+        "Electronic dance music",
+        "Blues",
+        "Reggae"
       ],
-      "answer": "Synth-pop",
-      "explanation": "Pentru „Blinding Lights”, răspunsul corect este „Synth-pop”."
+      "answer": "Blues",
+      "explanation": "Bluesul a influențat profund jazzul, rockul, soul-ul și numeroase forme de muzică populară modernă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen este asociat cu chitara electrică distorsionată, bas și baterie?",
+      "options": [
+        "Rock",
+        "Fado",
+        "Soul",
+        "Country"
+      ],
+      "answer": "Rock",
+      "explanation": "Rockul s-a dezvoltat din rock and roll și alte tradiții populare, diversificându-se în numeroase subgenuri. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen pune de obicei accent pe ritm, rime vorbite și producție bazată pe beat-uri?",
+      "options": [
+        "Electronic dance music",
+        "Hip-hop",
+        "Soul",
+        "Reggae"
+      ],
+      "answer": "Hip-hop",
+      "explanation": "Hip-hop-ul include rap, DJ-ing și sampling și s-a dezvoltat în comunitățile afro-americane și latino din New York. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen jamaican este asociat cu accentuarea contratimpului și cu Bob Marley?",
+      "options": [
+        "Reggae",
+        "Rock",
+        "Country",
+        "Hip-hop"
+      ],
+      "answer": "Reggae",
+      "explanation": "Reggae-ul s-a dezvoltat din ska și rocksteady și a devenit o formă globală de muzică jamaicană. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen este asociat cu muzica de dans electronică produsă cu sintetizatoare și drum machines?",
+      "options": [
+        "Muzica clasică indiană",
+        "Jazz",
+        "Electronic dance music",
+        "Rock"
+      ],
+      "answer": "Electronic dance music",
+      "explanation": "EDM este un termen larg pentru muzică electronică orientată spre cluburi, festivaluri și dans. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen american este asociat istoric cu Nashville și tradițiile folk sudiste?",
+      "options": [
+        "Son cubano",
+        "Country",
+        "Fado",
+        "Rock"
+      ],
+      "answer": "Country",
+      "explanation": "Country combină tradiții folk, balade, instrumente cu coarde și influențe blues. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-056",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen urban afro-american pune accent pe voce expresivă și moștenește puternic gospelul și rhythm and blues-ul?",
+      "options": [
+        "Soul",
+        "Blues",
+        "Muzica clasică indiană",
+        "Country"
+      ],
+      "answer": "Soul",
+      "explanation": "Soul-ul a devenit important în anii 1960 prin case de discuri și artiști precum Motown, Stax și Atlantic."
+    },
+    {
+      "id": "music-057",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen cubanez este asociat cu ritmuri de dans și a influențat puternic salsa?",
+      "options": [
+        "Jazz",
+        "Son cubano",
+        "Rock",
+        "Electronic dance music"
+      ],
+      "answer": "Son cubano",
+      "explanation": "Son-ul cubanez combină elemente spaniole și africane și stă la baza multor forme de muzică latino. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-058",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen portughez este asociat cu voce melancolică și guitarra portuguesa?",
+      "options": [
+        "Reggae",
+        "Muzica clasică indiană",
+        "Country",
+        "Fado"
+      ],
+      "answer": "Fado",
+      "explanation": "Fado este cunoscut pentru teme de dor, destin și melancolie, mai ales în tradițiile Lisabonei și Coimbrei. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-059",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen tradițional argentinian și uruguayan este asociat cu bandoneonul și dansul de cuplu?",
+      "options": [
+        "Blues",
+        "Rock",
+        "Tango",
+        "Soul"
+      ],
+      "answer": "Tango",
+      "explanation": "Tango-ul s-a format în zona Río de la Plata și a devenit ulterior un fenomen internațional. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Ce gen indian clasic se bazează pe concepte precum raga și tala?",
+      "options": [
+        "Tango",
+        "Jazz",
+        "Soul",
+        "Muzica clasică indiană"
+      ],
+      "answer": "Muzica clasică indiană",
+      "explanation": "Tradițiile hindustani și carnatică folosesc sisteme complexe de melodie, ritm și improvizație. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-061",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Sgt. Pepper's Lonely Hearts Club Band”?",
+      "answer": "1967",
+      "explanation": "Albumul The Beatles a devenit un reper al producției de studio și al albumului conceptual. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-062",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „The Dark Side of the Moon”?",
+      "answer": "1973",
+      "explanation": "Albumul Pink Floyd a devenit unul dintre cele mai cunoscute și longevive succese comerciale din rock. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-063",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Thriller” al lui Michael Jackson?",
+      "answer": "1982",
+      "explanation": "Thriller a devenit un fenomen global, susținut de videoclipuri, producție elaborată și numeroase hituri. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-064",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Nevermind” al trupei Nirvana?",
+      "answer": "1991",
+      "explanation": "Nevermind a propulsat grunge-ul în mainstream și a schimbat peisajul rockului anilor 1990. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-065",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „OK Computer” al trupei Radiohead?",
+      "answer": "1997",
+      "explanation": "Albumul a fost apreciat pentru producția sa, temele tehnologice și extinderea limbajului rock alternativ. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-066",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Kind of Blue” al lui Miles Davis?",
+      "answer": "1959",
+      "explanation": "Albumul este un reper al jazzului modal și include o formație de muzicieni deveniți legendari. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-067",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „What's Going On” al lui Marvin Gaye?",
+      "answer": "1971",
+      "explanation": "Albumul abordează războiul, rasismul, sărăcia și ecologia într-o formă conceptuală sofisticată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-068",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Rumours” al trupei Fleetwood Mac?",
+      "answer": "1977",
+      "explanation": "Albumul combină compoziții pop-rock foarte accesibile cu tensiuni personale reale dintre membrii trupei. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-069",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Back to Black” al lui Amy Winehouse?",
+      "answer": "2006",
+      "explanation": "Albumul a readus în mainstream sonorități soul retro printr-o producție modernă și interpretare vocală distinctă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-070",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Blue” al lui Joni Mitchell?",
+      "answer": "1971",
+      "explanation": "Blue este apreciat pentru compoziția confesivă și pentru influența sa asupra singer-songwriterilor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-071",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „The Miseducation of Lauryn Hill”?",
+      "answer": "1998",
+      "explanation": "Albumul combină hip-hop, soul și R&B și a avut un impact cultural și critic major. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-072",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "În ce an a fost lansat albumul „Discovery” al duo-ului Daft Punk?",
+      "answer": "2001",
+      "explanation": "Discovery combină house, disco, sampling și procesare vocală într-un stil devenit foarte influent. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce interval există între Do și Mi natural?",
+      "options": [
+        "Interpretarea notelor scurt și separat",
+        "O creștere treptată a intensității",
+        "Terță mare",
+        "Un model muzical repetat persistent"
+      ],
+      "answer": "Terță mare",
+      "explanation": "De la Do la Mi sunt patru semitonuri, ceea ce definește o terță mare în teoria tonală occidentală."
+    },
+    {
+      "id": "music-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce interval există între Do și Mi bemol?",
+      "options": [
+        "Un semn care coboară nota cu un semiton",
+        "O creștere treptată a intensității",
+        "Interpretarea notelor scurt și separat",
+        "Terță mică"
+      ],
+      "answer": "Terță mică",
+      "explanation": "Distanța Do-Mi bemol este de trei semitonuri și formează o terță mică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un bemol?",
+      "options": [
+        "Terță mare",
+        "Un semn care coboară nota cu un semiton",
+        "Interpretarea notelor cât mai legat și continuu",
+        "Terță mică"
+      ],
+      "answer": "Un semn care coboară nota cu un semiton",
+      "explanation": "Bemolul modifică înălțimea notei și poate apărea accidental sau în armura tonală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un diez?",
+      "options": [
+        "Un acord ale cărui note sunt cântate succesiv",
+        "Interpretarea notelor cât mai legat și continuu",
+        "O creștere treptată a intensității",
+        "Un semn care ridică nota cu un semiton"
+      ],
+      "answer": "Un semn care ridică nota cu un semiton",
+      "explanation": "Diezul modifică înălțimea notei și apare atât accidental, cât și în armura unei tonalități. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este o sincopă?",
+      "options": [
+        "O scădere treptată a intensității",
+        "O creștere treptată a intensității",
+        "Terță mică",
+        "Deplasarea accentului către o poziție ritmică slabă sau neașteptată"
+      ],
+      "answer": "Deplasarea accentului către o poziție ritmică slabă sau neașteptată",
+      "explanation": "Sincopa creează tensiune ritmică și este importantă în jazz, funk, reggae și numeroase genuri populare. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un arpegiu?",
+      "options": [
+        "Un acord ale cărui note sunt cântate succesiv",
+        "Deplasarea accentului către o poziție ritmică slabă sau neașteptată",
+        "Interpretarea notelor cât mai legat și continuu",
+        "O creștere treptată a intensității"
+      ],
+      "answer": "Un acord ale cărui note sunt cântate succesiv",
+      "explanation": "Arpegiul păstrează identitatea armonică a acordului, dar o distribuie în timp. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un ostinato?",
+      "options": [
+        "Deplasarea accentului către o poziție ritmică slabă sau neașteptată",
+        "O creștere treptată a intensității",
+        "Terță mare",
+        "Un model muzical repetat persistent"
+      ],
+      "answer": "Un model muzical repetat persistent",
+      "explanation": "Ostinato-ul poate fi melodic, ritmic sau armonic și oferă stabilitate sau tensiune repetitivă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un crescendo?",
+      "options": [
+        "O creștere treptată a intensității",
+        "Un model muzical repetat persistent",
+        "Deplasarea accentului către o poziție ritmică slabă sau neașteptată",
+        "Interpretarea notelor scurt și separat"
+      ],
+      "answer": "O creștere treptată a intensității",
+      "explanation": "Crescendo-ul produce o acumulare dinamică și este marcat în partitură prin termen sau simbol grafic. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un diminuendo?",
+      "options": [
+        "Terță mică",
+        "Un semn care ridică nota cu un semiton",
+        "O scădere treptată a intensității",
+        "Terță mare"
+      ],
+      "answer": "O scădere treptată a intensității",
+      "explanation": "Diminuendo-ul reduce progresiv dinamica și poate pregăti o încheiere sau o schimbare de caracter. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este un legato?",
+      "options": [
+        "Flexibilizarea expresivă a tempo-ului",
+        "O creștere treptată a intensității",
+        "Un acord ale cărui note sunt cântate succesiv",
+        "Interpretarea notelor cât mai legat și continuu"
+      ],
+      "answer": "Interpretarea notelor cât mai legat și continuu",
+      "explanation": "Legato-ul urmărește tranziții fluide între sunete, fără separări perceptibile inutile. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este staccato?",
+      "options": [
+        "Un semn care ridică nota cu un semiton",
+        "Interpretarea notelor cât mai legat și continuu",
+        "Interpretarea notelor scurt și separat",
+        "Un model muzical repetat persistent"
+      ],
+      "answer": "Interpretarea notelor scurt și separat",
+      "explanation": "Staccato-ul reduce durata percepută a fiecărei note și produce o articulație detașată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce este rubato?",
+      "options": [
+        "Flexibilizarea expresivă a tempo-ului",
+        "Un model muzical repetat persistent",
+        "Deplasarea accentului către o poziție ritmică slabă sau neașteptată",
+        "Interpretarea notelor scurt și separat"
+      ],
+      "answer": "Flexibilizarea expresivă a tempo-ului",
+      "explanation": "Rubato-ul permite accelerări și încetiniri locale fără abandonarea completă a pulsului general. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Clair de lune”?",
+      "options": [
+        "Gustav Holst",
+        "Igor Stravinski",
+        "Claude Debussy",
+        "Jean Sibelius"
+      ],
+      "answer": "Claude Debussy",
+      "explanation": "Piesa face parte din Suite bergamasque și este asociată cu limbajul armonic rafinat al lui Debussy. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Boléro”?",
+      "options": [
+        "Edvard Grieg",
+        "Jean Sibelius",
+        "Maurice Ravel",
+        "George Gershwin"
+      ],
+      "answer": "Maurice Ravel",
+      "explanation": "Ravel construiește lucrarea prin repetarea aproape neschimbată a aceleiași teme peste un crescendo orchestral masiv. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus opera „Carmen”?",
+      "options": [
+        "Giuseppe Verdi",
+        "Gioachino Rossini",
+        "George Gershwin",
+        "Georges Bizet"
+      ],
+      "answer": "Georges Bizet",
+      "explanation": "Opera lui Bizet folosește o poveste plasată în Sevilla și conține numeroase arii devenite extrem de cunoscute. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Rhapsody in Blue”?",
+      "options": [
+        "Jean Sibelius",
+        "Carl Orff",
+        "Igor Stravinski",
+        "George Gershwin"
+      ],
+      "answer": "George Gershwin",
+      "explanation": "Lucrarea combină elemente de jazz cu scriitură concertantă și orchestră. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „The Planets”?",
+      "options": [
+        "Gioachino Rossini",
+        "Claude Debussy",
+        "Edvard Grieg",
+        "Gustav Holst"
+      ],
+      "answer": "Gustav Holst",
+      "explanation": "Suita orchestrală prezintă șapte planete prin caractere muzicale distincte, fără a include Pământul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Carmina Burana”?",
+      "options": [
+        "Georges Bizet",
+        "Modest Mussorgski",
+        "Jean Sibelius",
+        "Carl Orff"
+      ],
+      "answer": "Carl Orff",
+      "explanation": "Lucrarea coral-orchestrală folosește texte medievale și este cunoscută mai ales prin O Fortuna. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „The Rite of Spring”?",
+      "options": [
+        "Carl Orff",
+        "Gustav Holst",
+        "Igor Stravinski",
+        "Georges Bizet"
+      ],
+      "answer": "Igor Stravinski",
+      "explanation": "Premiera baletului a devenit celebră pentru muzica ritmică radicală și reacția tumultuoasă a publicului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Finlandia”?",
+      "options": [
+        "Gioachino Rossini",
+        "Jean Sibelius",
+        "Igor Stravinski",
+        "Edvard Grieg"
+      ],
+      "answer": "Jean Sibelius",
+      "explanation": "Poemul simfonic a devenit asociat cu identitatea națională finlandeză. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Peer Gynt”?",
+      "options": [
+        "Carl Orff",
+        "Claude Debussy",
+        "Giuseppe Verdi",
+        "Edvard Grieg"
+      ],
+      "answer": "Edvard Grieg",
+      "explanation": "Grieg a scris muzică incidentală pentru piesa lui Henrik Ibsen, inclusiv Morning Mood și In the Hall of the Mountain King."
+    },
+    {
+      "id": "music-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus opera „La Traviata”?",
+      "options": [
+        "Modest Mussorgski",
+        "Gustav Holst",
+        "Giuseppe Verdi",
+        "Claude Debussy"
+      ],
+      "answer": "Giuseppe Verdi",
+      "explanation": "Verdi adaptează povestea unei curtezane pariziene într-una dintre cele mai interpretate opere ale repertoriului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „The Barber of Seville”?",
+      "options": [
+        "Carl Orff",
+        "Georges Bizet",
+        "Gustav Holst",
+        "Gioachino Rossini"
+      ],
+      "answer": "Gioachino Rossini",
+      "explanation": "Opera buffa a lui Rossini este celebră pentru energie, virtuozitate vocală și aria lui Figaro. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine a compus „Pictures at an Exhibition”?",
+      "options": [
+        "Modest Mussorgski",
+        "Igor Stravinski",
+        "Claude Debussy",
+        "Giuseppe Verdi"
+      ],
+      "answer": "Modest Mussorgski",
+      "explanation": "Suita pentru pian a fost inspirată de lucrările artistului Viktor Hartmann și a fost ulterior orchestrată celebru de Ravel."
+    },
+    {
+      "id": "music-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat albumul „The Dark Side of the Moon”?",
+      "options": [
+        "Pink Floyd",
+        "Björk",
+        "Radiohead",
+        "Led Zeppelin"
+      ],
+      "answer": "Pink Floyd",
+      "explanation": "Albumul explorează teme precum timpul, moartea și alienarea printr-o producție de studio foarte elaborată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat „Rumours”?",
+      "options": [
+        "Björk",
+        "Fleetwood Mac",
+        "Pink Floyd",
+        "Kate Bush"
+      ],
+      "answer": "Fleetwood Mac",
+      "explanation": "Albumul a fost realizat într-o perioadă de tensiuni personale intense între membrii formației. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artistă a lansat albumul „Blue” din 1971?",
+      "options": [
+        "Fleetwood Mac",
+        "Pink Floyd",
+        "Joni Mitchell",
+        "Led Zeppelin"
+      ],
+      "answer": "Joni Mitchell",
+      "explanation": "Blue este considerat un reper al compoziției confesive și al mișcării singer-songwriter. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a lansat albumul „Sign o' the Times”?",
+      "options": [
+        "Prince",
+        "Led Zeppelin",
+        "The Clash",
+        "Stevie Wonder"
+      ],
+      "answer": "Prince",
+      "explanation": "Albumul explorează funk, rock, soul și pop într-o producție diversă și ambițioasă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat „OK Computer”?",
+      "options": [
+        "The Clash",
+        "Fleetwood Mac",
+        "Stevie Wonder",
+        "Radiohead"
+      ],
+      "answer": "Radiohead",
+      "explanation": "Albumul combină rock alternativ, electronică și teme despre tehnologie și alienare. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artistă a lansat „Homogenic”?",
+      "options": [
+        "Joni Mitchell",
+        "Kate Bush",
+        "Björk",
+        "Radiohead"
+      ],
+      "answer": "Björk",
+      "explanation": "Albumul îmbină instrumente de coarde cu beat-uri electronice dure și peisaje sonore islandeze imaginare. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat „London Calling”?",
+      "options": [
+        "Led Zeppelin",
+        "Fleetwood Mac",
+        "Joni Mitchell",
+        "The Clash"
+      ],
+      "answer": "The Clash",
+      "explanation": "Albumul extinde punkul prin influențe reggae, ska, rockabilly și alte genuri. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a lansat „Songs in the Key of Life”?",
+      "options": [
+        "Stevie Wonder",
+        "Pink Floyd",
+        "Queen",
+        "Radiohead"
+      ],
+      "answer": "Stevie Wonder",
+      "explanation": "Albumul combină soul, funk, jazz și pop într-o colecție amplă și foarte influentă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat albumul „Led Zeppelin IV”?",
+      "options": [
+        "Led Zeppelin",
+        "Joni Mitchell",
+        "Radiohead",
+        "Prince"
+      ],
+      "answer": "Led Zeppelin",
+      "explanation": "Albumul include Stairway to Heaven și reprezintă una dintre lucrările centrale ale hard rockului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artistă a lansat „Hounds of Love”?",
+      "options": [
+        "Joni Mitchell",
+        "Prince",
+        "Kate Bush",
+        "Fleetwood Mac"
+      ],
+      "answer": "Kate Bush",
+      "explanation": "Albumul combină pop experimental, sintetizatoare și structuri conceptuale complexe. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce artist a lansat „Purple Rain”?",
+      "options": [
+        "Joni Mitchell",
+        "Stevie Wonder",
+        "Prince",
+        "The Clash"
+      ],
+      "answer": "Prince",
+      "explanation": "Albumul funcționează și ca soundtrack al filmului omonim și include unele dintre cele mai cunoscute piese ale sale."
+    },
+    {
+      "id": "music-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce trupă a lansat „A Night at the Opera”?",
+      "options": [
+        "Fleetwood Mac",
+        "Queen",
+        "Stevie Wonder",
+        "The Clash"
+      ],
+      "answer": "Queen",
+      "explanation": "Albumul include Bohemian Rhapsody și demonstrează abordarea elaborată a trupei asupra producției de studio. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument a fost principal pentru Louis Armstrong?",
+      "options": [
+        "Saxofonul tenor",
+        "Bandoneonul",
+        "Fado",
+        "Trompeta"
+      ],
+      "answer": "Trompeta",
+      "explanation": "Armstrong a revoluționat jazzul prin improvizația sa, frazare și prezența vocală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument este asociat în primul rând cu Charlie Parker?",
+      "options": [
+        "Saxofonul alto",
+        "Tala",
+        "Fado",
+        "Afrobeat"
+      ],
+      "answer": "Saxofonul alto",
+      "explanation": "Parker a fost una dintre figurile fondatoare ale bebopului și un improvizator extrem de influent. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument este asociat în primul rând cu Thelonious Monk?",
+      "options": [
+        "Raga",
+        "Saxofonul alto",
+        "Tala",
+        "Pianul"
+      ],
+      "answer": "Pianul",
+      "explanation": "Monk este cunoscut pentru armonii neobișnuite, ritmuri spațiate și un stil pianistic distinct. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument a fost principal pentru John Coltrane?",
+      "options": [
+        "Raga",
+        "Fado",
+        "Saxofonul tenor",
+        "Son cubano"
+      ],
+      "answer": "Saxofonul tenor",
+      "explanation": "Coltrane a extins vocabularul improvizației de jazz prin armonie, modalism și explorare spirituală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce gen este asociat cu Fela Kuti?",
+      "options": [
+        "Raga",
+        "Son cubano",
+        "Afrobeat",
+        "Trompeta"
+      ],
+      "answer": "Afrobeat",
+      "explanation": "Fela Kuti a combinat highlife, jazz, funk și ritmuri africane într-un stil politic și dansant. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce stil jamaican a precedat direct reggae-ul și are un tempo mai lent decât ska?",
+      "options": [
+        "Pianul",
+        "Rocksteady",
+        "Raga",
+        "Trompeta"
+      ],
+      "answer": "Rocksteady",
+      "explanation": "Rocksteady a apărut în Jamaica în anii 1960 și a pregătit sonoritatea timpurie a reggae-ului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument este central în tango-ul argentinian tradițional?",
+      "options": [
+        "Pianul",
+        "Afrobeat",
+        "Raga",
+        "Bandoneonul"
+      ],
+      "answer": "Bandoneonul",
+      "explanation": "Bandoneonul a devenit unul dintre cele mai recognoscibile timbruri ale tango-ului rioplatense. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce instrument este esențial în flamenco alături de voce și ritm corporal?",
+      "options": [
+        "Son cubano",
+        "Chitara flamenco",
+        "Fado",
+        "Rocksteady"
+      ],
+      "answer": "Chitara flamenco",
+      "explanation": "Chitara flamenco susține armonia, compás-ul și dialogul cu vocea și dansul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen indian descrie cadrul melodic de bază pentru improvizație?",
+      "options": [
+        "Bandoneonul",
+        "Raga",
+        "Son cubano",
+        "Pianul"
+      ],
+      "answer": "Raga",
+      "explanation": "Raga nu este doar o gamă, ci include note importante, direcții melodice și formule caracteristice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce termen indian descrie ciclul ritmic?",
+      "options": [
+        "Saxofonul tenor",
+        "Fado",
+        "Tala",
+        "Trompeta"
+      ],
+      "answer": "Tala",
+      "explanation": "Tala organizează timpul în cicluri de bătăi și accente, constituind baza ritmică a muzicii clasice indiene. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce tradiție vocală portugheză este asociată cu Amália Rodrigues?",
+      "options": [
+        "Chitara flamenco",
+        "Tala",
+        "Fado",
+        "Bandoneonul"
+      ],
+      "answer": "Fado",
+      "explanation": "Amália Rodrigues a contribuit decisiv la internaționalizarea fado-ului portughez. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Ce stil de muzică cubaneză a stat la baza multor dezvoltări ulterioare ale salsa?",
+      "options": [
+        "Bandoneonul",
+        "Saxofonul tenor",
+        "Trompeta",
+        "Son cubano"
+      ],
+      "answer": "Son cubano",
+      "explanation": "Son-ul combină elemente ritmice africane cu structuri melodice și armonice de origine spaniolă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-121",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a avut loc premiera baletului „The Rite of Spring”?",
+      "answer": "1913",
+      "explanation": "Premiera pariziană a baletului lui Stravinski și Nijinski a devenit celebră pentru reacția tumultuoasă a publicului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-122",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „A Love Supreme” al lui John Coltrane?",
+      "answer": "1965",
+      "explanation": "Suita spirituală a lui Coltrane a devenit una dintre lucrările centrale ale jazzului modern. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-123",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Pet Sounds” al trupei The Beach Boys?",
+      "answer": "1966",
+      "explanation": "Albumul a extins posibilitățile producției pop de studio prin aranjamente și tehnici neobișnuite. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-124",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Innervisions” al lui Stevie Wonder?",
+      "answer": "1973",
+      "explanation": "Albumul abordează probleme sociale și politice prin soul, funk și tehnologie de studio. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-125",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „The Rise and Fall of Ziggy Stardust and the Spiders from Mars”?",
+      "answer": "1972",
+      "explanation": "Albumul lui David Bowie dezvoltă personajul Ziggy Stardust într-un concept glam rock distinct. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-126",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Remain in Light” al trupei Talking Heads?",
+      "answer": "1980",
+      "explanation": "Albumul explorează poliritmuri, funk, influențe africane și tehnici de studio stratificate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-127",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Straight Outta Compton” al grupului N.W.A.?",
+      "answer": "1988",
+      "explanation": "Albumul a devenit un reper al gangsta rap-ului și al hip-hopului de pe Coasta de Vest. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-128",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Illmatic” al lui Nas?",
+      "answer": "1994",
+      "explanation": "Illmatic este apreciat pentru lirism, producție și concentrarea sa asupra vieții urbane din New York. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-129",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Mezzanine” al trupei Massive Attack?",
+      "answer": "1998",
+      "explanation": "Albumul a dus trip-hop-ul într-o zonă mai întunecată și mai densă sonor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-130",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Kid A” al trupei Radiohead?",
+      "answer": "2000",
+      "explanation": "Albumul a marcat o schimbare radicală spre electronică, ambient și structuri mai puțin convenționale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-131",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „To Pimp a Butterfly” al lui Kendrick Lamar?",
+      "answer": "2015",
+      "explanation": "Albumul combină hip-hop, jazz, funk și spoken word într-o lucrare despre identitate și rasă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-132",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "În ce an a fost lansat albumul „Blackstar” al lui David Bowie?",
+      "answer": "2016",
+      "explanation": "Albumul final al lui Bowie a combinat art rock, jazz și teme legate de mortalitate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o cadență autentică perfectă?",
+      "options": [
+        "O progresie V-I cu ambele acorduri în poziție fundamentală și tonica sus în acordul final",
+        "Combinarea simultană a mai multor linii melodice independente",
+        "O regrupare ritmică ce poate face trei unități să fie percepute ca două sau invers",
+        "Schimbarea centrului tonal de la o tonalitate la alta"
+      ],
+      "answer": "O progresie V-I cu ambele acorduri în poziție fundamentală și tonica sus în acordul final",
+      "explanation": "Cadența autentică perfectă produce una dintre cele mai puternice senzații de încheiere în tonalitatea funcțională. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o cadență plagală?",
+      "options": [
+        "O progresie IV-I",
+        "O idee muzicală asociată recurent cu un personaj, obiect sau concept",
+        "O notă susținută sau repetată în timp ce armoniile de deasupra se schimbă",
+        "Suprapunerea simultană a unor metri diferiți"
+      ],
+      "answer": "O progresie IV-I",
+      "explanation": "Cadența plagală este cunoscută popular și ca «cadența Amen» datorită utilizării sale în muzica religioasă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o modulație?",
+      "options": [
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O progresie V-I cu ambele acorduri în poziție fundamentală și tonica sus în acordul final",
+        "Schimbarea centrului tonal de la o tonalitate la alta",
+        "O idee muzicală asociată recurent cu un personaj, obiect sau concept"
+      ],
+      "answer": "Schimbarea centrului tonal de la o tonalitate la alta",
+      "explanation": "Modulația poate fi temporară sau structurală și este esențială în dezvoltarea armonică a muzicii tonale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o pedală armonică?",
+      "options": [
+        "O notă susținută sau repetată în timp ce armoniile de deasupra se schimbă",
+        "O formă contrapunctică bazată pe imitarea unei teme principale între voci",
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei",
+        "O progresie IV-I"
+      ],
+      "answer": "O notă susținută sau repetată în timp ce armoniile de deasupra se schimbă",
+      "explanation": "Pedala poate crea tensiune și stabilitate simultan, fiind frecvent folosită în bas. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este contrapunctul?",
+      "options": [
+        "Combinarea simultană a mai multor linii melodice independente",
+        "O formă contrapunctică bazată pe imitarea unei teme principale între voci",
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei"
+      ],
+      "answer": "Combinarea simultană a mai multor linii melodice independente",
+      "explanation": "Contrapunctul urmărește atât independența vocilor, cât și compatibilitatea lor armonică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o fugă?",
+      "options": [
+        "O idee muzicală asociată recurent cu un personaj, obiect sau concept",
+        "O formă contrapunctică bazată pe imitarea unei teme principale între voci",
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O notă susținută sau repetată în timp ce armoniile de deasupra se schimbă"
+      ],
+      "answer": "O formă contrapunctică bazată pe imitarea unei teme principale între voci",
+      "explanation": "Fuga dezvoltă un subiect prin intrări succesive, episoade și tehnici contrapunctice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o hemiolă?",
+      "options": [
+        "Schimbarea centrului tonal de la o tonalitate la alta",
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O regrupare ritmică ce poate face trei unități să fie percepute ca două sau invers",
+        "O progresie IV-I"
+      ],
+      "answer": "O regrupare ritmică ce poate face trei unități să fie percepute ca două sau invers",
+      "explanation": "Hemiola apare frecvent în muzica barocă și în tradiții ritmice spaniole sau latino. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este o blue note?",
+      "options": [
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei",
+        "O notă susținută sau repetată în timp ce armoniile de deasupra se schimbă",
+        "O idee muzicală asociată recurent cu un personaj, obiect sau concept",
+        "Combinarea simultană a mai multor linii melodice independente"
+      ],
+      "answer": "O notă intonată sau tratată expresiv între trepte standard ale gamei",
+      "explanation": "Blue notes sunt asociate în special cu treptele a treia, a cincea și a șaptea coborâte sau flexibile."
+    },
+    {
+      "id": "music-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este swing-ul în jazz?",
+      "options": [
+        "Suprapunerea simultană a unor modele ritmice diferite",
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei",
+        "O progresie IV-I"
+      ],
+      "answer": "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+      "explanation": "Swing-ul nu se reduce la o singură formulă matematică și depinde mult de stil și tempo. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este poliritmia?",
+      "options": [
+        "Suprapunerea simultană a unor modele ritmice diferite",
+        "O progresie V-I cu ambele acorduri în poziție fundamentală și tonica sus în acordul final",
+        "O regrupare ritmică ce poate face trei unități să fie percepute ca două sau invers",
+        "Schimbarea centrului tonal de la o tonalitate la alta"
+      ],
+      "answer": "Suprapunerea simultană a unor modele ritmice diferite",
+      "explanation": "Poliritmia este importantă în numeroase tradiții africane, jazz, muzică modernă și compoziție contemporană. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este polimetria?",
+      "options": [
+        "Suprapunerea simultană a unor metri diferiți",
+        "O progresie IV-I",
+        "O regrupare ritmică ce poate face trei unități să fie percepute ca două sau invers",
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei"
+      ],
+      "answer": "Suprapunerea simultană a unor metri diferiți",
+      "explanation": "Polimetria păstrează pulsații organizate în grupări metrice diferite care coincid periodic. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este un leitmotiv?",
+      "options": [
+        "Schimbarea centrului tonal de la o tonalitate la alta",
+        "O interpretare ritmică inegală și elastică a subdiviziunilor, combinată cu accent și frazare",
+        "O idee muzicală asociată recurent cu un personaj, obiect sau concept",
+        "O notă intonată sau tratată expresiv între trepte standard ale gamei"
+      ],
+      "answer": "O idee muzicală asociată recurent cu un personaj, obiect sau concept",
+      "explanation": "Leitmotivul este celebru în operele lui Wagner și a influențat profund muzica de film. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „The Well-Tempered Clavier”?",
+      "options": [
+        "Richard Wagner",
+        "Johann Sebastian Bach",
+        "Hector Berlioz",
+        "Philip Glass"
+      ],
+      "answer": "Johann Sebastian Bach",
+      "explanation": "Colecția explorează toate tonalitățile majore și minore prin perechi de preludii și fugi. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Symphonie fantastique”?",
+      "options": [
+        "Maurice Ravel",
+        "Philip Glass",
+        "Hector Berlioz",
+        "Olivier Messiaen"
+      ],
+      "answer": "Hector Berlioz",
+      "explanation": "Lucrarea folosește idée fixe pentru a reprezenta obsesia protagonistului într-un program narativ detaliat. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus ciclul „Der Ring des Nibelungen”?",
+      "options": [
+        "Charles Ives",
+        "Béla Bartók",
+        "Richard Wagner",
+        "Steve Reich"
+      ],
+      "answer": "Richard Wagner",
+      "explanation": "Tetralogia lui Wagner folosește leitmotive și o orchestră extinsă pentru o dramă muzicală monumentală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Prélude à l'après-midi d'un faune”?",
+      "options": [
+        "Johann Sebastian Bach",
+        "Maurice Ravel",
+        "Claude Debussy",
+        "Aaron Copland"
+      ],
+      "answer": "Claude Debussy",
+      "explanation": "Lucrarea este asociată cu o nouă concepție asupra culorii orchestrale și armoniei la sfârșitul secolului al XIX-lea. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „The Unanswered Question”?",
+      "options": [
+        "Aaron Copland",
+        "Benjamin Britten",
+        "Richard Wagner",
+        "Charles Ives"
+      ],
+      "answer": "Charles Ives",
+      "explanation": "Piesa suprapune grupuri instrumentale independente pentru a crea o structură filozofică neobișnuită. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Music for Strings, Percussion and Celesta”?",
+      "options": [
+        "Philip Glass",
+        "Charles Ives",
+        "Béla Bartók",
+        "Maurice Ravel"
+      ],
+      "answer": "Béla Bartók",
+      "explanation": "Bartók combină simetria formală, ritmurile complexe și timbrurile neobișnuite într-o lucrare reprezentativă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Quartet for the End of Time”?",
+      "options": [
+        "Olivier Messiaen",
+        "Béla Bartók",
+        "Claude Debussy",
+        "Hector Berlioz"
+      ],
+      "answer": "Olivier Messiaen",
+      "explanation": "Messiaen a scris lucrarea în captivitate, folosind combinații ritmice și armonice foarte personale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Different Trains”?",
+      "options": [
+        "Steve Reich",
+        "Aaron Copland",
+        "Hector Berlioz",
+        "Béla Bartók"
+      ],
+      "answer": "Steve Reich",
+      "explanation": "Lucrarea combină cvartetul de coarde cu înregistrări de voce și trenuri într-o structură repetitivă și documentară. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Einstein on the Beach”?",
+      "options": [
+        "Richard Wagner",
+        "Philip Glass",
+        "Maurice Ravel",
+        "Steve Reich"
+      ],
+      "answer": "Philip Glass",
+      "explanation": "Opera lui Glass folosește repetiție, structuri aditive și o dramaturgie neconvențională. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Appalachian Spring”?",
+      "options": [
+        "Maurice Ravel",
+        "Olivier Messiaen",
+        "Aaron Copland",
+        "Richard Wagner"
+      ],
+      "answer": "Aaron Copland",
+      "explanation": "Lucrarea evocă un imaginar american pastoral și include variații pe melodia Shaker Simple Gifts. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „Daphnis et Chloé”?",
+      "options": [
+        "Maurice Ravel",
+        "Johann Sebastian Bach",
+        "Olivier Messiaen",
+        "Hector Berlioz"
+      ],
+      "answer": "Maurice Ravel",
+      "explanation": "Baletul este celebru pentru orchestrația sa luxuriantă și pentru culminația răsăritului de soare. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine a compus „The Young Person's Guide to the Orchestra”?",
+      "options": [
+        "Charles Ives",
+        "Benjamin Britten",
+        "Maurice Ravel",
+        "Béla Bartók"
+      ],
+      "answer": "Benjamin Britten",
+      "explanation": "Lucrarea prezintă familiile orchestrei prin variații și o fugă finală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce muzician este asociat central cu dezvoltarea bebopului alături de Dizzy Gillespie?",
+      "options": [
+        "Charlie Parker",
+        "DJ Kool Herc",
+        "Lauryn Hill",
+        "Thelonious Monk"
+      ],
+      "answer": "Charlie Parker",
+      "explanation": "Parker a revoluționat vocabularul improvizației prin linii rapide, cromatism și armonie sofisticată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce pianist a compus „Round Midnight”?",
+      "options": [
+        "DJ Kool Herc",
+        "Thelonious Monk",
+        "Wu-Tang Clan",
+        "Kind of Blue"
+      ],
+      "answer": "Thelonious Monk",
+      "explanation": "Compoziția a devenit unul dintre standardele de jazz cel mai des interpretate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce album al lui Miles Davis este un reper al jazzului modal?",
+      "options": [
+        "Thelonious Monk",
+        "Charlie Parker",
+        "Massive Attack",
+        "Kind of Blue"
+      ],
+      "answer": "Kind of Blue",
+      "explanation": "Albumul reduce dependența de progresii armonice dense și oferă spațiu improvizației modale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce album al lui John Coltrane este construit în jurul unei suite spirituale în patru părți?",
+      "options": [
+        "Public Enemy",
+        "Nas",
+        "Daft Punk",
+        "A Love Supreme"
+      ],
+      "answer": "A Love Supreme",
+      "explanation": "Lucrarea exprimă explicit o dimensiune spirituală și folosește motive recurente foarte recognoscibile. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce producător și DJ este considerat una dintre figurile fondatoare ale hip-hopului din Bronx?",
+      "options": [
+        "Wu-Tang Clan",
+        "Thelonious Monk",
+        "DJ Kool Herc",
+        "Charlie Parker"
+      ],
+      "answer": "DJ Kool Herc",
+      "explanation": "Herc a extins break-urile instrumentale prin folosirea a două copii ale aceluiași disc. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce tehnică hip-hop reutilizează fragmente din înregistrări existente?",
+      "options": [
+        "A Love Supreme",
+        "Sampling",
+        "Lauryn Hill",
+        "Kind of Blue"
+      ],
+      "answer": "Sampling",
+      "explanation": "Samplingul poate transforma fragmente de tobe, voci sau armonii în material pentru o producție nouă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce grup a lansat albumul „It Takes a Nation of Millions to Hold Us Back”?",
+      "options": [
+        "Kind of Blue",
+        "Public Enemy",
+        "A Love Supreme",
+        "Charlie Parker"
+      ],
+      "answer": "Public Enemy",
+      "explanation": "Albumul combină versuri politice, producția densă a Bomb Squad și energie ritmică agresivă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artist a lansat albumul „Illmatic”?",
+      "options": [
+        "Kind of Blue",
+        "Sampling",
+        "Thelonious Monk",
+        "Nas"
+      ],
+      "answer": "Nas",
+      "explanation": "Albumul prezintă observații detaliate despre Queensbridge peste producții ale unor beatmakeri importanți din New York. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce grup a lansat „Enter the Wu-Tang (36 Chambers)”?",
+      "options": [
+        "Lauryn Hill",
+        "Thelonious Monk",
+        "Massive Attack",
+        "Wu-Tang Clan"
+      ],
+      "answer": "Wu-Tang Clan",
+      "explanation": "Albumul combină producția lo-fi a lui RZA cu identitățile distincte ale mai multor MC. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce artistă a lansat „The Miseducation of Lauryn Hill”?",
+      "options": [
+        "Nas",
+        "Massive Attack",
+        "Lauryn Hill",
+        "DJ Kool Herc"
+      ],
+      "answer": "Lauryn Hill",
+      "explanation": "Albumul unește rap, soul, reggae și R&B într-o lucrare profund personală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce duo francez este asociat cu albumul „Discovery”?",
+      "options": [
+        "Wu-Tang Clan",
+        "Charlie Parker",
+        "Daft Punk",
+        "Sampling"
+      ],
+      "answer": "Daft Punk",
+      "explanation": "Duo-ul a folosit sampling, vocoder și influențe disco pentru o formă foarte accesibilă de house. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce formație britanică a lansat albumul „Mezzanine”?",
+      "options": [
+        "A Love Supreme",
+        "Kind of Blue",
+        "Massive Attack",
+        "Thelonious Monk"
+      ],
+      "answer": "Massive Attack",
+      "explanation": "Albumul combină trip-hop, dub, electronică și rock într-o atmosferă întunecată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce instrument electronic timpuriu este controlat fără atingere directă, prin mișcarea mâinilor în câmp electromagnetic?",
+      "options": [
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+        "Delay",
+        "Compresie controlată de nivelul unui alt semnal",
+        "Thereminul"
+      ],
+      "answer": "Thereminul",
+      "explanation": "Thereminul folosește două antene pentru controlul înălțimii și volumului și are un timbru foarte recognoscibil. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce instrument electronic folosește oscilatoare și filtre pentru a genera și modela sunete?",
+      "options": [
+        "O stație software pentru înregistrare, editare și producție audio",
+        "Looper",
+        "Sintetizatorul",
+        "Un protocol pentru transmiterea informațiilor muzicale de control"
+      ],
+      "answer": "Sintetizatorul",
+      "explanation": "Sintetizatorul poate crea timbruri noi prin sinteză analogică, digitală sau hibridă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce dispozitiv repetă ciclic un fragment audio sau MIDI?",
+      "options": [
+        "O stație software pentru înregistrare, editare și producție audio",
+        "Reverb",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+        "Looper"
+      ],
+      "answer": "Looper",
+      "explanation": "Looper-ul permite înregistrarea și suprapunerea în timp real a unor fraze repetate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce efect audio repetă sunetul după o anumită întârziere?",
+      "options": [
+        "Delay",
+        "Reverb",
+        "Compresia dinamică",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio"
+      ],
+      "answer": "Delay",
+      "explanation": "Delay-ul produce ecouri controlate și poate fi sincronizat cu tempo-ul muzical. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce efect simulează reflexiile sonore ale unui spațiu?",
+      "options": [
+        "Sintetizatorul",
+        "Looper",
+        "Reverb",
+        "Compresia dinamică"
+      ],
+      "answer": "Reverb",
+      "explanation": "Reverberația poate crea impresia unei camere mici, săli mari, plăci mecanice sau spații artificiale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce proces reduce diferența dintre nivelurile sonore foarte puternice și foarte slabe?",
+      "options": [
+        "Egalizarea",
+        "Compresia dinamică",
+        "Thereminul",
+        "Looper"
+      ],
+      "answer": "Compresia dinamică",
+      "explanation": "Compresorul reduce amplitudinea semnalelor care depășesc un prag, controlând dinamica. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce proces modifică echilibrul frecvențelor unui semnal?",
+      "options": [
+        "Un protocol pentru transmiterea informațiilor muzicale de control",
+        "Egalizarea",
+        "Thereminul",
+        "Delay"
+      ],
+      "answer": "Egalizarea",
+      "explanation": "EQ-ul poate amplifica sau reduce benzi de frecvență pentru claritate, corecție sau efect creativ. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este MIDI?",
+      "options": [
+        "Thereminul",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+        "Egalizarea",
+        "Un protocol pentru transmiterea informațiilor muzicale de control"
+      ],
+      "answer": "Un protocol pentru transmiterea informațiilor muzicale de control",
+      "explanation": "MIDI transmite note, velocități, controlere și sincronizare, nu sunet audio în sine. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este un DAW?",
+      "options": [
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+        "Compresie controlată de nivelul unui alt semnal",
+        "Un protocol pentru transmiterea informațiilor muzicale de control",
+        "O stație software pentru înregistrare, editare și producție audio"
+      ],
+      "answer": "O stație software pentru înregistrare, editare și producție audio",
+      "explanation": "Un Digital Audio Workstation permite manipularea pistelor audio și MIDI într-un mediu integrat. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este un sampler?",
+      "options": [
+        "Compresie controlată de nivelul unui alt semnal",
+        "Looper",
+        "Thereminul",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio"
+      ],
+      "answer": "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+      "explanation": "Samplerele permit maparea fragmentelor pe clape, transpunere, filtrare și secvențiere. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este sidechain compression?",
+      "options": [
+        "Thereminul",
+        "Egalizarea",
+        "Compresie controlată de nivelul unui alt semnal",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio"
+      ],
+      "answer": "Compresie controlată de nivelul unui alt semnal",
+      "explanation": "În muzica electronică, kick-ul poate controla compresia altor elemente pentru efectul de pumping. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce este autotune-ul în sens tehnic general?",
+      "options": [
+        "Un protocol pentru transmiterea informațiilor muzicale de control",
+        "Corecția sau modificarea electronică a înălțimii vocale",
+        "Un instrument sau dispozitiv care redă și manipulează înregistrări audio",
+        "O stație software pentru înregistrare, editare și producție audio"
+      ],
+      "answer": "Corecția sau modificarea electronică a înălțimii vocale",
+      "explanation": "Procesarea pitch poate fi subtilă pentru corecție sau evidentă ca efect artistic. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-181",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost finalizată prima versiune a operei „Wozzeck” de Alban Berg?",
+      "answer": "1922",
+      "explanation": "Berg a finalizat opera după Primul Război Mondial, iar premiera a urmat câțiva ani mai târziu. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-182",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc premiera operei „Wozzeck”?",
+      "answer": "1925",
+      "explanation": "Premiera berlineză a operei lui Alban Berg a marcat un moment major al modernismului muzical. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-183",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a avut loc premiera operei „Einstein on the Beach”?",
+      "answer": "1976",
+      "explanation": "Opera lui Philip Glass și Robert Wilson a redefinit durata, repetiția și dramaturgia scenei muzicale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-184",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Bitches Brew” al lui Miles Davis?",
+      "answer": "1970",
+      "explanation": "Albumul a devenit un reper al jazz fusion prin instrumentație electrică și editare de studio. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-185",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Another Green World” al lui Brian Eno?",
+      "answer": "1975",
+      "explanation": "Albumul a combinat cântece, ambient și tehnici de studio care aveau să influențeze producția electronică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-186",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Trans-Europe Express” al Kraftwerk?",
+      "answer": "1977",
+      "explanation": "Albumul a consolidat estetica mecanică și electronică a grupului german. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-187",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „The Low End Theory” al A Tribe Called Quest?",
+      "answer": "1991",
+      "explanation": "Albumul combină jazz sampling, bass profund și rap relaxat într-o producție foarte influentă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-188",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Dummy” al trupei Portishead?",
+      "answer": "1994",
+      "explanation": "Dummy a devenit un reper al trip-hopului prin atmosferă cinematică și producție întunecată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-189",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Vespertine” al lui Björk?",
+      "answer": "2001",
+      "explanation": "Albumul folosește microbeats, coruri, harpă și texturi intime pentru o estetică foarte distinctă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-190",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Madvillainy” al duo-ului Madvillain?",
+      "answer": "2004",
+      "explanation": "Albumul reunește producția fragmentară a lui Madlib cu versurile dense și neconvenționale ale lui MF DOOM. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-191",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „Black Messiah” al lui D'Angelo and the Vanguard?",
+      "answer": "2014",
+      "explanation": "Albumul combină neo-soul, funk, rock și mesaj social într-o producție densă și stratificată. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-192",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "În ce an a fost lansat albumul „A Seat at the Table” al lui Solange?",
+      "answer": "2016",
+      "explanation": "Albumul explorează identitatea, autonomia și experiența afro-americană prin R&B și soul contemporan. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este substituția tritonică în jazz?",
+      "options": [
+        "Repetarea unui motiv la alte înălțimi",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Transformarea unui motiv prin schimbarea direcției intervalelor",
+        "Înlocuirea unui acord dominant cu alt acord dominant aflat la un triton distanță"
+      ],
+      "answer": "Înlocuirea unui acord dominant cu alt acord dominant aflat la un triton distanță",
+      "explanation": "Cele două dominante împart notele esențiale ale tritonului și pot conduce cromatic spre aceeași rezoluție. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este o progresie ii-V-I?",
+      "options": [
+        "Transformarea unui motiv prin schimbarea direcției intervalelor",
+        "Redarea unei succesiuni de note în ordine inversă",
+        "Conducerea individuală a vocilor între acorduri",
+        "O succesiune armonică foarte frecventă în jazz și tonalitate funcțională"
+      ],
+      "answer": "O succesiune armonică foarte frecventă în jazz și tonalitate funcțională",
+      "explanation": "Acordurile supertonică-dominantă-tonică creează o direcție armonică puternică spre centru tonal. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este o extensie de acord precum 9, 11 sau 13?",
+      "options": [
+        "Repetarea unui motiv la alte înălțimi",
+        "Împrumutarea acordurilor dintr-un mod paralel",
+        "Organizarea compoziției în jurul unei serii care conține toate cele 12 clase de înălțime",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor"
+      ],
+      "answer": "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+      "explanation": "Extensiile colorează acordurile fără a schimba neapărat funcția lor armonică fundamentală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este modal interchange?",
+      "options": [
+        "Organizarea compoziției în jurul unei serii care conține toate cele 12 clase de înălțime",
+        "Înlocuirea unui acord dominant cu alt acord dominant aflat la un triton distanță",
+        "Împrumutarea acordurilor dintr-un mod paralel",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor"
+      ],
+      "answer": "Împrumutarea acordurilor dintr-un mod paralel",
+      "explanation": "De exemplu, o tonalitate majoră poate împrumuta acorduri din minorul paralel pentru culoare armonică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este voice leading?",
+      "options": [
+        "Micșorarea proporțională a duratelor unui motiv",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Conducerea individuală a vocilor între acorduri",
+        "Repetarea unui motiv la alte înălțimi"
+      ],
+      "answer": "Conducerea individuală a vocilor între acorduri",
+      "explanation": "Un voice leading eficient urmărește mișcări mici, rezolvarea tensiunilor și independența liniilor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este o secvență muzicală?",
+      "options": [
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Transformarea unui motiv prin schimbarea direcției intervalelor",
+        "O succesiune armonică foarte frecventă în jazz și tonalitate funcțională",
+        "Repetarea unui motiv la alte înălțimi"
+      ],
+      "answer": "Repetarea unui motiv la alte înălțimi",
+      "explanation": "Secvența dezvoltă materialul melodic sau armonic păstrând modelul relațiilor dintre note. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este augmentarea ritmică?",
+      "options": [
+        "Redarea unei succesiuni de note în ordine inversă",
+        "Mărirea proporțională a duratelor unui motiv",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Micșorarea proporțională a duratelor unui motiv"
+      ],
+      "answer": "Mărirea proporțională a duratelor unui motiv",
+      "explanation": "O temă poate fi recunoscută chiar dacă valorile sale ritmice sunt extinse în mod uniform. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este diminuția ritmică?",
+      "options": [
+        "Micșorarea proporțională a duratelor unui motiv",
+        "Transformarea unui motiv prin schimbarea direcției intervalelor",
+        "Mărirea proporțională a duratelor unui motiv",
+        "Introducerea controlată a hazardului sau alegerii interpretului în compoziție"
+      ],
+      "answer": "Micșorarea proporțională a duratelor unui motiv",
+      "explanation": "Tehnica accelerează aparent o idee muzicală păstrând raporturile dintre durate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este inversiunea melodică?",
+      "options": [
+        "Conducerea individuală a vocilor între acorduri",
+        "Transformarea unui motiv prin schimbarea direcției intervalelor",
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Repetarea unui motiv la alte înălțimi"
+      ],
+      "answer": "Transformarea unui motiv prin schimbarea direcției intervalelor",
+      "explanation": "Un interval ascendent poate deveni descendent cu aceeași mărime, producând o variantă recognoscibilă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este retrogradul?",
+      "options": [
+        "Înlocuirea unui acord dominant cu alt acord dominant aflat la un triton distanță",
+        "Redarea unei succesiuni de note în ordine inversă",
+        "Repetarea unui motiv la alte înălțimi",
+        "Transformarea unui motiv prin schimbarea direcției intervalelor"
+      ],
+      "answer": "Redarea unei succesiuni de note în ordine inversă",
+      "explanation": "Retrogradul este o tehnică de transformare folosită în contrapunct și muzică serială. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este serialismul dodecafonic?",
+      "options": [
+        "O notă adăugată peste structura de bază a acordului prin continuarea terțelor",
+        "Micșorarea proporțională a duratelor unui motiv",
+        "Organizarea compoziției în jurul unei serii care conține toate cele 12 clase de înălțime",
+        "Repetarea unui motiv la alte înălțimi"
+      ],
+      "answer": "Organizarea compoziției în jurul unei serii care conține toate cele 12 clase de înălțime",
+      "explanation": "Metoda asociată cu Schoenberg evită ierarhia tonală tradițională prin tratarea tuturor claselor de sunet. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este aleatorismul muzical?",
+      "options": [
+        "Introducerea controlată a hazardului sau alegerii interpretului în compoziție",
+        "O succesiune armonică foarte frecventă în jazz și tonalitate funcțională",
+        "Micșorarea proporțională a duratelor unui motiv",
+        "Împrumutarea acordurilor dintr-un mod paralel"
+      ],
+      "answer": "Introducerea controlată a hazardului sau alegerii interpretului în compoziție",
+      "explanation": "Compozitori precum John Cage au folosit procedee de șansă pentru a redefini controlul autorului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Pierrot Lunaire”?",
+      "options": [
+        "Karlheinz Stockhausen",
+        "Arnold Schoenberg",
+        "Alban Berg",
+        "Edgard Varèse"
+      ],
+      "answer": "Arnold Schoenberg",
+      "explanation": "Lucrarea folosește Sprechstimme și un ansamblu neobișnuit, devenind un reper al expresionismului muzical. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus opera „Wozzeck”?",
+      "options": [
+        "John Cage",
+        "Alban Berg",
+        "Karlheinz Stockhausen",
+        "Edgard Varèse"
+      ],
+      "answer": "Alban Berg",
+      "explanation": "Berg combină atonalitatea cu forme tradiționale într-o dramă intensă despre alienare și violență. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Ionisation”?",
+      "options": [
+        "John Cage",
+        "Terry Riley",
+        "Edgard Varèse",
+        "George Crumb"
+      ],
+      "answer": "Edgard Varèse",
+      "explanation": "Lucrarea este una dintre primele compoziții occidentale importante dedicate aproape exclusiv percuției. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „4'33''”?",
+      "options": [
+        "Arnold Schoenberg",
+        "John Cage",
+        "Karlheinz Stockhausen",
+        "George Crumb"
+      ],
+      "answer": "John Cage",
+      "explanation": "Lucrarea transformă sunetele ambientale ale spațiului în materialul perceput al experienței muzicale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Atmosphères”?",
+      "options": [
+        "György Ligeti",
+        "Arnold Schoenberg",
+        "Steve Reich",
+        "John Cage"
+      ],
+      "answer": "György Ligeti",
+      "explanation": "Ligeti folosește micropolie și mase sonore dense în locul melodiei și ritmului convențional. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Kontakte”?",
+      "options": [
+        "Alban Berg",
+        "Karlheinz Stockhausen",
+        "John Cage",
+        "György Ligeti"
+      ],
+      "answer": "Karlheinz Stockhausen",
+      "explanation": "Lucrarea explorează relația dintre sunet electronic, percuție și pian. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Sinfonia” din 1968-69?",
+      "options": [
+        "Arnold Schoenberg",
+        "Steve Reich",
+        "Luciano Berio",
+        "John Luther Adams"
+      ],
+      "answer": "Luciano Berio",
+      "explanation": "Lucrarea combină orchestră, voci, citate muzicale și texte într-un colaj postmodern timpuriu. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „In C”?",
+      "options": [
+        "György Ligeti",
+        "Terry Riley",
+        "John Luther Adams",
+        "Alban Berg"
+      ],
+      "answer": "Terry Riley",
+      "explanation": "Piesa este considerată un reper al minimalismului și folosește fragmente scurte repetate liber. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Music for 18 Musicians”?",
+      "options": [
+        "Steve Reich",
+        "John Luther Adams",
+        "Edgard Varèse",
+        "Terry Riley"
+      ],
+      "answer": "Steve Reich",
+      "explanation": "Lucrarea dezvoltă gradual pulsații, armonii și procese repetitive într-o structură amplă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Tabula Rasa”?",
+      "options": [
+        "John Cage",
+        "Alban Berg",
+        "Arvo Pärt",
+        "Steve Reich"
+      ],
+      "answer": "Arvo Pärt",
+      "explanation": "Lucrarea este asociată cu stilul tintinnabuli dezvoltat de Pärt. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Black Angels”?",
+      "options": [
+        "John Luther Adams",
+        "Steve Reich",
+        "George Crumb",
+        "Arvo Pärt"
+      ],
+      "answer": "George Crumb",
+      "explanation": "Cvartetul electric folosește tehnici extinse și simbolism legat de război și spiritualitate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine a compus „Become Ocean”?",
+      "options": [
+        "Arnold Schoenberg",
+        "George Crumb",
+        "Luciano Berio",
+        "John Luther Adams"
+      ],
+      "answer": "John Luther Adams",
+      "explanation": "Lucrarea orchestrală creează mase sonore ample inspirate de mișcarea oceanică și teme ecologice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce muzician a fost liderul albumului „Bitches Brew”?",
+      "options": [
+        "Fela Kuti",
+        "Slint",
+        "Miles Davis",
+        "Kraftwerk"
+      ],
+      "answer": "Miles Davis",
+      "explanation": "Davis a adunat muzicieni electrici și a folosit editarea de studio pentru un nou limbaj jazz-rock. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce chitarist este asociat central cu albumul „Electric Ladyland”?",
+      "options": [
+        "Joy Division",
+        "Jaco Pastorius",
+        "Fela Kuti",
+        "Jimi Hendrix"
+      ],
+      "answer": "Jimi Hendrix",
+      "explanation": "Hendrix a extins tehnicile chitarei electrice prin feedback, efecte și producție de studio. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce trupă a lansat albumul „Remain in Light”?",
+      "options": [
+        "David Bowie",
+        "My Bloody Valentine",
+        "Fela Kuti",
+        "Talking Heads"
+      ],
+      "answer": "Talking Heads",
+      "explanation": "Albumul folosește groove-uri repetitive, poliritmie și producția lui Brian Eno. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist a lansat trilogia berlineză care include „Low”, „Heroes” și „Lodger”?",
+      "options": [
+        "Jimi Hendrix",
+        "David Bowie",
+        "My Bloody Valentine",
+        "Slint"
+      ],
+      "answer": "David Bowie",
+      "explanation": "Bowie a colaborat cu Brian Eno și Tony Visconti într-o perioadă de experiment electronic și art rock. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artist este asociat cu dezvoltarea afrobeatului?",
+      "options": [
+        "Fela Kuti",
+        "David Bowie",
+        "Slint",
+        "Miles Davis"
+      ],
+      "answer": "Fela Kuti",
+      "explanation": "Fela a combinat highlife, funk, jazz și mesaje politice în piese extinse și ritmuri dense. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce basist și compozitor a fost central în trupa Weather Report?",
+      "options": [
+        "Jimi Hendrix",
+        "Fela Kuti",
+        "David Bowie",
+        "Jaco Pastorius"
+      ],
+      "answer": "Jaco Pastorius",
+      "explanation": "Pastorius a extins rolul basului electric prin virtuozitate, armonice și un ton foarte distinct. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce grup german este asociat cu albumul „Trans-Europe Express”?",
+      "options": [
+        "Miles Davis",
+        "Jaco Pastorius",
+        "Talking Heads",
+        "Kraftwerk"
+      ],
+      "answer": "Kraftwerk",
+      "explanation": "Kraftwerk a influențat masiv synth-pop, hip-hop, techno și muzica electronică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce formație britanică a lansat albumul „Unknown Pleasures”?",
+      "options": [
+        "Kraftwerk",
+        "Joy Division",
+        "Miles Davis",
+        "Fela Kuti"
+      ],
+      "answer": "Joy Division",
+      "explanation": "Albumul a devenit un reper al post-punkului prin producția atmosferică și vocea lui Ian Curtis. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce artistă a lansat albumul „Horses”?",
+      "options": [
+        "My Bloody Valentine",
+        "Miles Davis",
+        "Patti Smith",
+        "Slint"
+      ],
+      "answer": "Patti Smith",
+      "explanation": "Albumul combină rock minimalist, poezie și energia scenei punk newyorkeze. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce trupă a lansat „Marquee Moon”?",
+      "options": [
+        "Jaco Pastorius",
+        "David Bowie",
+        "Miles Davis",
+        "Television"
+      ],
+      "answer": "Television",
+      "explanation": "Albumul este cunoscut pentru chitarele interconectate și influența sa asupra post-punkului și indie rockului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce formație a lansat „Loveless”?",
+      "options": [
+        "My Bloody Valentine",
+        "Slint",
+        "Kraftwerk",
+        "Television"
+      ],
+      "answer": "My Bloody Valentine",
+      "explanation": "Albumul este definitoriu pentru shoegaze prin straturi dense de chitară și voce eterică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce trupă a lansat „Spiderland”?",
+      "options": [
+        "Joy Division",
+        "Miles Davis",
+        "Talking Heads",
+        "Slint"
+      ],
+      "answer": "Slint",
+      "explanation": "Albumul a devenit un reper retrospectiv pentru post-rock și dinamica quiet-loud. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este sinteza subtractivă?",
+      "options": [
+        "Crearea unui timbru bogat în armonice și eliminarea frecvențelor cu filtre",
+        "Alimentarea trimisă prin cablu XLR pentru anumite microfoane și echipamente active",
+        "Modularea frecvenței unui oscilator prin alt oscilator pentru generarea de spectre complexe",
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil"
+      ],
+      "answer": "Crearea unui timbru bogat în armonice și eliminarea frecvențelor cu filtre",
+      "explanation": "Metoda este fundamentală pentru numeroase sintetizatoare analogice clasice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este sinteza FM?",
+      "options": [
+        "Un microfon cu sensibilitate maximă în față și respingere mai mare în spate",
+        "Crearea unui timbru bogat în armonice și eliminarea frecvențelor cu filtre",
+        "Marja dintre nivelul nominal și nivelul maxim înainte de clipping",
+        "Modularea frecvenței unui oscilator prin alt oscilator pentru generarea de spectre complexe"
+      ],
+      "answer": "Modularea frecvenței unui oscilator prin alt oscilator pentru generarea de spectre complexe",
+      "explanation": "Sinteza FM a devenit celebră prin sintetizatoare digitale precum Yamaha DX7. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este sinteza wavetable?",
+      "options": [
+        "Un microfon care captează aproximativ uniform din toate direcțiile",
+        "Adăugarea unui zgomot foarte mic pentru reducerea artefactelor de cuantizare",
+        "Construirea sunetului din fragmente foarte scurte numite granule",
+        "Redarea și interpolarea între forme de undă stocate într-un tabel"
+      ],
+      "answer": "Redarea și interpolarea între forme de undă stocate într-un tabel",
+      "explanation": "Tehnica permite timbre în evoluție și a fost folosită în sintetizatoare hardware și software. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este granular synthesis?",
+      "options": [
+        "Modularea frecvenței unui oscilator prin alt oscilator pentru generarea de spectre complexe",
+        "Construirea sunetului din fragmente foarte scurte numite granule",
+        "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+        "Crearea unui timbru bogat în armonice și eliminarea frecvențelor cu filtre"
+      ],
+      "answer": "Construirea sunetului din fragmente foarte scurte numite granule",
+      "explanation": "Granulele pot fi reordonate, întinse și suprapuse pentru texturi complexe. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este aliasing-ul audio digital?",
+      "options": [
+        "Apariția unor frecvențe false când semnalul conține componente peste limita Nyquist",
+        "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+        "Marja dintre nivelul nominal și nivelul maxim înainte de clipping",
+        "Un microfon cu sensibilitate maximă în față și respingere mai mare în spate"
+      ],
+      "answer": "Apariția unor frecvențe false când semnalul conține componente peste limita Nyquist",
+      "explanation": "Aliasing-ul apare dacă eșantionarea și filtrarea nu sunt suficiente pentru frecvențele semnalului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este dithering-ul audio?",
+      "options": [
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil",
+        "Adăugarea unui zgomot foarte mic pentru reducerea artefactelor de cuantizare",
+        "Marja dintre nivelul nominal și nivelul maxim înainte de clipping",
+        "Un microfon care captează aproximativ uniform din toate direcțiile"
+      ],
+      "answer": "Adăugarea unui zgomot foarte mic pentru reducerea artefactelor de cuantizare",
+      "explanation": "Dither-ul este folosit în special când se reduce adâncimea de biți a unui semnal. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este headroom-ul în audio?",
+      "options": [
+        "Alimentarea trimisă prin cablu XLR pentru anumite microfoane și echipamente active",
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil",
+        "Construirea sunetului din fragmente foarte scurte numite granule",
+        "Marja dintre nivelul nominal și nivelul maxim înainte de clipping"
+      ],
+      "answer": "Marja dintre nivelul nominal și nivelul maxim înainte de clipping",
+      "explanation": "Headroom-ul permite gestionarea vârfurilor fără distorsiune digitală sau analogică nedorită. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este clipping-ul?",
+      "options": [
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil",
+        "Crearea unui timbru bogat în armonice și eliminarea frecvențelor cu filtre",
+        "Adăugarea unui zgomot foarte mic pentru reducerea artefactelor de cuantizare",
+        "Construirea sunetului din fragmente foarte scurte numite granule"
+      ],
+      "answer": "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil",
+      "explanation": "Forma de undă este tăiată la vârfuri, generând armonice și distorsiune. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este phantom power de 48 V?",
+      "options": [
+        "Redarea și interpolarea între forme de undă stocate într-un tabel",
+        "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+        "Alimentarea trimisă prin cablu XLR pentru anumite microfoane și echipamente active",
+        "Modularea frecvenței unui oscilator prin alt oscilator pentru generarea de spectre complexe"
+      ],
+      "answer": "Alimentarea trimisă prin cablu XLR pentru anumite microfoane și echipamente active",
+      "explanation": "Microfoanele condenser folosesc frecvent alimentare phantom pentru electronica internă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un microfon cardioid?",
+      "options": [
+        "Un microfon cu sensibilitate maximă în față și respingere mai mare în spate",
+        "Adăugarea unui zgomot foarte mic pentru reducerea artefactelor de cuantizare",
+        "Construirea sunetului din fragmente foarte scurte numite granule",
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil"
+      ],
+      "answer": "Un microfon cu sensibilitate maximă în față și respingere mai mare în spate",
+      "explanation": "Modelul polar cardioid este util pentru izolarea sursei și reducerea feedbackului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este un microfon omnidirecțional?",
+      "options": [
+        "Un microfon cu sensibilitate maximă în față și respingere mai mare în spate",
+        "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+        "Distorsiunea produsă când semnalul depășește nivelul maxim disponibil",
+        "Un microfon care captează aproximativ uniform din toate direcțiile"
+      ],
+      "answer": "Un microfon care captează aproximativ uniform din toate direcțiile",
+      "explanation": "Modelul omni păstrează mult din ambianța spațiului și nu are efect de proximitate puternic. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce este proximity effect?",
+      "options": [
+        "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+        "Un microfon care captează aproximativ uniform din toate direcțiile",
+        "Alimentarea trimisă prin cablu XLR pentru anumite microfoane și echipamente active",
+        "Redarea și interpolarea între forme de undă stocate într-un tabel"
+      ],
+      "answer": "Creșterea frecvențelor joase când sursa se apropie de un microfon direcțional",
+      "explanation": "Efectul este specific în principal microfoanelor pressure-gradient și poate fi folosit creativ. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-241",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost publicat tratatul „Gradus ad Parnassum” al lui Johann Joseph Fux?",
+      "answer": "1725",
+      "explanation": "Tratatul a sistematizat pedagogic contrapunctul de specie și a influențat generații de compozitori și profesori. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-242",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a avut loc premiera operei „Tristan und Isolde”?",
+      "answer": "1865",
+      "explanation": "Opera lui Wagner a devenit un reper prin cromatismul extrem și tensiunea armonică prelungită. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-243",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost compusă în principal piesa „Pierrot Lunaire”?",
+      "answer": "1912",
+      "explanation": "Schoenberg a scris ciclul pentru voce și ansamblu în 1912, folosind tehnica Sprechstimme. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-244",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „The Black Saint and the Sinner Lady” al lui Charles Mingus?",
+      "answer": "1963",
+      "explanation": "Albumul este o suită orchestrală de jazz complexă, cu structură amplă și orchestrare foarte personală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-245",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Ascension” al lui John Coltrane?",
+      "answer": "1966",
+      "explanation": "Lucrarea reprezintă una dintre cele mai radicale extensii ale limbajului free jazz ale lui Coltrane. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-246",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Tago Mago” al trupei Can?",
+      "answer": "1971",
+      "explanation": "Albumul este un reper al krautrockului, combinând improvizație, editare de studio și ritmuri hipnotice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-247",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Another Green World”?",
+      "answer": "1975",
+      "explanation": "Brian Eno a combinat ambient, art rock și tehnici de studio într-o lucrare foarte influentă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-248",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Computer World” al trupei Kraftwerk?",
+      "answer": "1981",
+      "explanation": "Albumul explorează digitalizarea, calculatoarele și comunicarea printr-un limbaj electronic minimalist. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-249",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Selected Ambient Works 85-92” al lui Aphex Twin?",
+      "answer": "1992",
+      "explanation": "Albumul a devenit un reper al ambient techno și electronicii britanice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-250",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Endtroducing.....” al lui DJ Shadow?",
+      "answer": "1996",
+      "explanation": "Albumul este celebru pentru construcția sa aproape integrală din sampling și colaj sonor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-251",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Untrue” al lui Burial?",
+      "answer": "2007",
+      "explanation": "Albumul a redefinit percepția asupra dubstepului prin texturi nocturne, voci fragmentate și ritmuri sincopate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-252",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "În ce an a fost lansat albumul „Music Has the Right to Children” al duo-ului Boards of Canada?",
+      "answer": "1998",
+      "explanation": "Albumul a devenit un reper al electronicii IDM și ambient prin texturi analogice, nostalgice și ritmuri discrete. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este temperamentul egal cu 12 diviziuni?",
+      "options": [
+        "Un filtru cu răspuns periodic în frecvență produs adesea de întârzierea și combinarea aceluiași semnal",
+        "Rotunjirea amplitudinilor eșantionate la un număr finit de niveluri",
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează"
+      ],
+      "answer": "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+      "explanation": "Fiecare semiton are același raport de frecvență, ceea ce permite transpunerea relativ uniformă între tonalități. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este intonația justă?",
+      "options": [
+        "Un filtru care lasă frecvențele joase și atenuează frecvențele înalte",
+        "O succesiune de frecvențe aflate la multipli întregi ai unei frecvențe fundamentale",
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+        "Un sistem de acordaj bazat pe rapoarte simple între frecvențe"
+      ],
+      "answer": "Un sistem de acordaj bazat pe rapoarte simple între frecvențe",
+      "explanation": "Intervalele pot suna foarte pure într-o tonalitate, dar transpunerea produce probleme de compatibilitate între alte centre tonale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este o serie armonică?",
+      "options": [
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează",
+        "Jumătate din frecvența de eșantionare",
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+        "O succesiune de frecvențe aflate la multipli întregi ai unei frecvențe fundamentale"
+      ],
+      "answer": "O succesiune de frecvențe aflate la multipli întregi ai unei frecvențe fundamentale",
+      "explanation": "Seria armonică explică multe aspecte ale timbrului, consonanței și construcției instrumentelor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este nota fundamentală a unui sunet complex?",
+      "options": [
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+        "Cea mai joasă frecvență periodică percepută ca bază a înălțimii",
+        "Un filtru care lasă frecvențele înalte și atenuează frecvențele joase",
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează"
+      ],
+      "answer": "Cea mai joasă frecvență periodică percepută ca bază a înălțimii",
+      "explanation": "Armonicele superioare îi modelează timbrul fără a schimba în mod normal înălțimea de bază percepută. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este roughness în psihoacustică?",
+      "options": [
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează",
+        "Cea mai joasă frecvență periodică percepută ca bază a înălțimii",
+        "Poziția relativă în ciclul periodic al oscilației",
+        "Rotunjirea amplitudinilor eșantionate la un număr finit de niveluri"
+      ],
+      "answer": "Senzația de asperitate produsă de componente apropiate în frecvență care interferează",
+      "explanation": "Bătăile rapide dintre parțiale apropiate pot contribui la percepția disonanței și a tensiunii timbrale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este mascarea auditivă?",
+      "options": [
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează",
+        "Fenomenul prin care un sunet face alt sunet mai greu de perceput",
+        "Poziția relativă în ciclul periodic al oscilației",
+        "Un filtru care lasă frecvențele înalte și atenuează frecvențele joase"
+      ],
+      "answer": "Fenomenul prin care un sunet face alt sunet mai greu de perceput",
+      "explanation": "Mascarea depinde de frecvență, intensitate și timp și este importantă în mixaj și codarea audio. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este limita Nyquist?",
+      "options": [
+        "Jumătate din frecvența de eșantionare",
+        "Un filtru care lasă frecvențele înalte și atenuează frecvențele joase",
+        "Cea mai joasă frecvență periodică percepută ca bază a înălțimii",
+        "Un filtru cu răspuns periodic în frecvență produs adesea de întârzierea și combinarea aceluiași semnal"
+      ],
+      "answer": "Jumătate din frecvența de eșantionare",
+      "explanation": "Pentru a evita aliasing-ul, conținutul relevant trebuie să rămână sub această limită sau să fie filtrat. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este cuantizarea audio?",
+      "options": [
+        "O succesiune de frecvențe aflate la multipli întregi ai unei frecvențe fundamentale",
+        "Poziția relativă în ciclul periodic al oscilației",
+        "Rotunjirea amplitudinilor eșantionate la un număr finit de niveluri",
+        "Un filtru care lasă frecvențele joase și atenuează frecvențele înalte"
+      ],
+      "answer": "Rotunjirea amplitudinilor eșantionate la un număr finit de niveluri",
+      "explanation": "Adâncimea de biți stabilește câte niveluri sunt disponibile și influențează zgomotul de cuantizare. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un filtru low-pass?",
+      "options": [
+        "Un filtru care lasă frecvențele joase și atenuează frecvențele înalte",
+        "Cea mai joasă frecvență periodică percepută ca bază a înălțimii",
+        "Fenomenul prin care un sunet face alt sunet mai greu de perceput",
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic"
+      ],
+      "answer": "Un filtru care lasă frecvențele joase și atenuează frecvențele înalte",
+      "explanation": "Frecvența de cutoff și panta controlează unde și cât de rapid începe atenuarea. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un filtru high-pass?",
+      "options": [
+        "Un sistem de acordaj bazat pe rapoarte simple între frecvențe",
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează",
+        "Rotunjirea amplitudinilor eșantionate la un număr finit de niveluri",
+        "Un filtru care lasă frecvențele înalte și atenuează frecvențele joase"
+      ],
+      "answer": "Un filtru care lasă frecvențele înalte și atenuează frecvențele joase",
+      "explanation": "Este folosit pentru eliminarea rumble-ului, componentelor subsonice sau excesului de bas. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este un comb filter?",
+      "options": [
+        "Un sistem de acordaj bazat pe rapoarte simple între frecvențe",
+        "Un filtru cu răspuns periodic în frecvență produs adesea de întârzierea și combinarea aceluiași semnal",
+        "O succesiune de frecvențe aflate la multipli întregi ai unei frecvențe fundamentale",
+        "Senzația de asperitate produsă de componente apropiate în frecvență care interferează"
+      ],
+      "answer": "Un filtru cu răspuns periodic în frecvență produs adesea de întârzierea și combinarea aceluiași semnal",
+      "explanation": "Suprapunerea semnalului direct cu o copie întârziată produce serii regulate de anulări și amplificări. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce este faza unui semnal sinusoidal?",
+      "options": [
+        "Un sistem în care octava este împărțită în 12 semitonuri egale logaritmic",
+        "Fenomenul prin care un sunet face alt sunet mai greu de perceput",
+        "Un filtru care lasă frecvențele joase și atenuează frecvențele înalte",
+        "Poziția relativă în ciclul periodic al oscilației"
+      ],
+      "answer": "Poziția relativă în ciclul periodic al oscilației",
+      "explanation": "Diferențele de fază între semnale similare pot produce întărire sau anulare prin interferență. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a scris tratatul „Gradus ad Parnassum”?",
+      "options": [
+        "Johann Joseph Fux",
+        "George Crumb",
+        "Luciano Berio",
+        "Richard Wagner"
+      ],
+      "answer": "Johann Joseph Fux",
+      "explanation": "Fux a prezentat contrapunctul de specie într-o formă pedagogică ce a influențat educația muzicală occidentală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Tristan und Isolde”?",
+      "options": [
+        "Richard Wagner",
+        "Arvo Pärt",
+        "Krzysztof Penderecki",
+        "Olivier Messiaen"
+      ],
+      "answer": "Richard Wagner",
+      "explanation": "Opera împinge cromatismul tonal spre limite extreme și este celebră prin tensiunea armonică a acordului Tristan. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Le Marteau sans maître”?",
+      "options": [
+        "Arvo Pärt",
+        "Pierre Boulez",
+        "Johann Joseph Fux",
+        "Olivier Messiaen"
+      ],
+      "answer": "Pierre Boulez",
+      "explanation": "Lucrarea combină serialismul postbelic cu timbruri rafinate și texte poetice de René Char. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Gesang der Jünglinge”?",
+      "options": [
+        "Olivier Messiaen",
+        "György Ligeti",
+        "Karlheinz Stockhausen",
+        "Luciano Berio"
+      ],
+      "answer": "Karlheinz Stockhausen",
+      "explanation": "Piesa combină voce umană procesată cu sunete electronice și spațializare multicanal. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Threnody to the Victims of Hiroshima”?",
+      "options": [
+        "Pierre Boulez",
+        "Krzysztof Penderecki",
+        "Edgard Varèse",
+        "Arvo Pärt"
+      ],
+      "answer": "Krzysztof Penderecki",
+      "explanation": "Lucrarea pentru coarde folosește clustere, glissandi și tehnici extinse pentru o masă sonoră intensă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Lux Aeterna” din 1966?",
+      "options": [
+        "Richard Wagner",
+        "György Ligeti",
+        "George Crumb",
+        "Edgard Varèse"
+      ],
+      "answer": "György Ligeti",
+      "explanation": "Piesa corală folosește micropolie și mase vocale dense în locul unei melodii tradiționale. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Ancient Voices of Children”?",
+      "options": [
+        "George Crumb",
+        "Edgard Varèse",
+        "Olivier Messiaen",
+        "Richard Wagner"
+      ],
+      "answer": "George Crumb",
+      "explanation": "Lucrarea combină voce, percuție și timbruri neobișnuite într-o atmosferă ritualică și expresivă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Fratres”?",
+      "options": [
+        "Arvo Pärt",
+        "Luciano Berio",
+        "George Crumb",
+        "Karlheinz Stockhausen"
+      ],
+      "answer": "Arvo Pärt",
+      "explanation": "Lucrarea există în numeroase versiuni și este unul dintre exemplele centrale ale stilului tintinnabuli. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus opera „L'Amour de loin”?",
+      "options": [
+        "Kaija Saariaho",
+        "Olivier Messiaen",
+        "Arvo Pärt",
+        "Luciano Berio"
+      ],
+      "answer": "Kaija Saariaho",
+      "explanation": "Opera explorează distanța și dorința printr-un limbaj orchestral spectral și timbruri foarte rafinate. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Turangalîla-Symphonie”?",
+      "options": [
+        "Krzysztof Penderecki",
+        "György Ligeti",
+        "Johann Joseph Fux",
+        "Olivier Messiaen"
+      ],
+      "answer": "Olivier Messiaen",
+      "explanation": "Simfonia combină orchestra mare, pianul și ondes Martenot într-o lucrare exuberantă despre iubire și timp. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Poème électronique”?",
+      "options": [
+        "Luciano Berio",
+        "Edgard Varèse",
+        "Johann Joseph Fux",
+        "George Crumb"
+      ],
+      "answer": "Edgard Varèse",
+      "explanation": "Lucrarea electronică a fost creată pentru Pavilionul Philips de la Expoziția Mondială din Bruxelles din 1958. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine a compus „Sequenza III” pentru voce solo?",
+      "options": [
+        "Karlheinz Stockhausen",
+        "Luciano Berio",
+        "George Crumb",
+        "György Ligeti"
+      ],
+      "answer": "Luciano Berio",
+      "explanation": "Berio explorează râsul, șoapta, fragmentele de vorbire și virtuozitatea vocală într-o piesă emblematică. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce curent experimental german este asociat cu Can, Neu! și Faust?",
+      "options": [
+        "Jungle",
+        "Death metal",
+        "Free jazz",
+        "Krautrock"
+      ],
+      "answer": "Krautrock",
+      "explanation": "Termenul descrie o scenă diversă care a combinat rock, electronică, improvizație și minimalism. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen electronic din Chicago este asociat cu clubul Warehouse și DJ Frankie Knuckles?",
+      "options": [
+        "Free jazz",
+        "House",
+        "Shoegaze",
+        "Cool jazz"
+      ],
+      "answer": "House",
+      "explanation": "House-ul a dezvoltat un beat de patru pe patru, influențe disco și folosirea intensă a drum machines. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen electronic din Detroit este asociat cu Juan Atkins, Derrick May și Kevin Saunderson?",
+      "options": [
+        "Jungle",
+        "Techno",
+        "Death metal",
+        "House"
+      ],
+      "answer": "Techno",
+      "explanation": "Detroit techno a combinat futurism, funk și electronică europeană într-un limbaj de club distinct. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen britanic de la începutul anilor 1990 combină breakbeat-uri accelerate, bass puternic și sampling?",
+      "options": [
+        "Jungle",
+        "Krautrock",
+        "Cool jazz",
+        "Trip-hop"
+      ],
+      "answer": "Jungle",
+      "explanation": "Jungle a evoluat din hardcore rave și a pus accent pe breakbeat-uri fragmentate și influențe reggae și dub."
+    },
+    {
+      "id": "music-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen asociat cu Bristol combină hip-hop, dub și atmosferă cinematografică lentă?",
+      "options": [
+        "Krautrock",
+        "Trip-hop",
+        "Free jazz",
+        "Jungle"
+      ],
+      "answer": "Trip-hop",
+      "explanation": "Massive Attack, Portishead și Tricky sunt printre artiștii asociați cel mai frecvent cu termenul. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen de rock folosește frecvent texturi masive de chitară și voce îngropată în mix?",
+      "options": [
+        "Krautrock",
+        "Techno",
+        "Free jazz",
+        "Shoegaze"
+      ],
+      "answer": "Shoegaze",
+      "explanation": "Shoegaze-ul este asociat cu trupe precum My Bloody Valentine și Slowdive. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen metal este asociat cu riff-uri foarte lente, acordaje joase și atmosferă apăsătoare?",
+      "options": [
+        "Techno",
+        "Shoegaze",
+        "Doom metal",
+        "Free jazz"
+      ],
+      "answer": "Doom metal",
+      "explanation": "Doom metal preia influențe din primele albume Black Sabbath și accentuează greutatea și lentoarea. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen extrem de metal combină blast beats, growl și riff-uri foarte rapide?",
+      "options": [
+        "House",
+        "Salsa",
+        "Death metal",
+        "Free jazz"
+      ],
+      "answer": "Death metal",
+      "explanation": "Genul s-a dezvoltat în anii 1980 din thrash și alte forme extreme de metal. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce stil de jazz respinge adesea progresiile armonice și formele fixe tradiționale?",
+      "options": [
+        "Salsa",
+        "Trip-hop",
+        "Free jazz",
+        "Techno"
+      ],
+      "answer": "Free jazz",
+      "explanation": "Free jazz-ul prioritizează interacțiunea spontană, timbrul și libertatea structurală. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce stil de jazz este asociat cu forme relaxate, aranjamente rafinate și scena Coastei de Vest?",
+      "options": [
+        "Cool jazz",
+        "Shoegaze",
+        "Jungle",
+        "House"
+      ],
+      "answer": "Cool jazz",
+      "explanation": "Cool jazz-ul a apărut ca o alternativă mai reținută la energia bebopului și hard bopului. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce stil de jazz folosește instrumente electrice și influențe rock și funk?",
+      "options": [
+        "Shoegaze",
+        "Free jazz",
+        "Jazz fusion",
+        "Jungle"
+      ],
+      "answer": "Jazz fusion",
+      "explanation": "Fusion-ul a devenit important la sfârșitul anilor 1960 și începutul anilor 1970. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce gen afro-cubanez și caraibian de dans s-a dezvoltat puternic în comunitățile latino din New York?",
+      "options": [
+        "Salsa",
+        "Doom metal",
+        "Shoegaze",
+        "Cool jazz"
+      ],
+      "answer": "Salsa",
+      "explanation": "Salsa sintetizează mai multe tradiții cubaneze și caraibiene într-un limbaj orchestral și ritmic urban. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce producător este asociat central cu dezvoltarea tehnicii dub în Jamaica?",
+      "options": [
+        "King Tubby",
+        "Alice Coltrane",
+        "Aphex Twin",
+        "Lee “Scratch” Perry"
+      ],
+      "answer": "King Tubby",
+      "explanation": "King Tubby a transformat mixajul într-un proces creativ prin delay, reverb și eliminarea selectivă a elementelor. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce producător jamaican este cunoscut pentru Black Ark Studio și un stil dub extrem de experimental?",
+      "options": [
+        "King Tubby",
+        "D'Angelo",
+        "Alice Coltrane",
+        "Lee “Scratch” Perry"
+      ],
+      "answer": "Lee “Scratch” Perry",
+      "explanation": "Perry a folosit tehnici de studio neconvenționale și a avut un rol major în dezvoltarea reggae-ului și dub-ului."
+    },
+    {
+      "id": "music-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce compozitor și saxofonist a lansat albumul „The Black Saint and the Sinner Lady”?",
+      "options": [
+        "Keith Jarrett",
+        "Solange",
+        "King Tubby",
+        "Charles Mingus"
+      ],
+      "answer": "Charles Mingus",
+      "explanation": "Mingus a combinat compoziție orchestrală, improvizație și tensiune ritmică într-o suită foarte ambițioasă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă este asociată cu albumul „Journey in Satchidananda”?",
+      "options": [
+        "Solange",
+        "D'Angelo",
+        "Alice Coltrane",
+        "DJ Shadow"
+      ],
+      "answer": "Alice Coltrane",
+      "explanation": "Albumul combină jazz spiritual, harpă, moduri și influențe din muzica indiană. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce pianist este asociat cu albumul-concert „The Köln Concert”?",
+      "options": [
+        "D'Angelo",
+        "Burial",
+        "DJ Shadow",
+        "Keith Jarrett"
+      ],
+      "answer": "Keith Jarrett",
+      "explanation": "Concertul solo improvizat a devenit una dintre cele mai cunoscute și vândute înregistrări de pian jazz. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist este asociat cu albumul „Selected Ambient Works 85-92”?",
+      "options": [
+        "Aphex Twin",
+        "Burial",
+        "King Tubby",
+        "Madvillain"
+      ],
+      "answer": "Aphex Twin",
+      "explanation": "Richard D. James a combinat ambient, techno și texturi electronice personale într-un album foarte influent. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce producător a realizat albumul „Endtroducing.....”?",
+      "options": [
+        "Alice Coltrane",
+        "Solange",
+        "Lee “Scratch” Perry",
+        "DJ Shadow"
+      ],
+      "answer": "DJ Shadow",
+      "explanation": "Albumul este celebru pentru colajul aproape integral bazat pe sample-uri provenite din surse foarte diverse. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce duo a lansat albumul „Madvillainy”?",
+      "options": [
+        "King Tubby",
+        "Boards of Canada",
+        "Madvillain",
+        "DJ Shadow"
+      ],
+      "answer": "Madvillain",
+      "explanation": "Madvillain îi reunește pe rapperul MF DOOM și producătorul Madlib într-un album fragmentat și dens. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist este asociat cu albumul „Untrue”?",
+      "options": [
+        "Charles Mingus",
+        "Burial",
+        "Aphex Twin",
+        "King Tubby"
+      ],
+      "answer": "Burial",
+      "explanation": "Albumul folosește ritmuri broken beat, voci procesate și ambianțe urbane melancolice. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce duo canadian este asociat cu albumul „Music Has the Right to Children”?",
+      "options": [
+        "Boards of Canada",
+        "Aphex Twin",
+        "Charles Mingus",
+        "Keith Jarrett"
+      ],
+      "answer": "Boards of Canada",
+      "explanation": "Duo-ul folosește sintetizatoare analogice, ritmuri discrete și mostre nostalgice într-o estetică foarte recognoscibilă. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artist a lansat „Black Messiah” împreună cu The Vanguard?",
+      "options": [
+        "D'Angelo",
+        "Alice Coltrane",
+        "Aphex Twin",
+        "DJ Shadow"
+      ],
+      "answer": "D'Angelo",
+      "explanation": "Albumul revine la funk, soul și rock cu o producție densă și un mesaj social pronunțat. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
+    },
+    {
+      "id": "music-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Ce artistă a lansat „A Seat at the Table”?",
+      "options": [
+        "Burial",
+        "Alice Coltrane",
+        "Solange",
+        "Charles Mingus"
+      ],
+      "answer": "Solange",
+      "explanation": "Albumul examinează identitatea și experiența afro-americană prin R&B, soul și interludii vorbite. Explicația leagă răspunsul de contextul muzical, istoric sau tehnic relevant."
     }
   ]
 }

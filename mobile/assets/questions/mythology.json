@@ -1,708 +1,4058 @@
 {
   "id": "mythology",
-  "name": "Mythology",
+  "name": "Mitologie",
   "source": "ai",
   "reviewStatus": "pending",
   "questions": [
     {
       "id": "mythology-001",
-      "type": "choice",
+      "type": "numeric",
       "difficulty": 1,
-      "text": "Din ce mitologie provine personajul Zeus?",
-      "options": [
-        "Egipteană",
-        "Japoneză",
-        "Aztecă",
-        "Greacă"
-      ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Zeus”, răspunsul corect este „Greacă”."
+      "text": "Câte munci canonice a îndeplinit Heracle pentru regele Euristeu?",
+      "answer": "12",
+      "explanation": "Tradiția greacă standard fixează la douăsprezece muncile lui Heracle, după ce două dintre sarcinile inițiale nu au fost recunoscute de Euristeu."
     },
     {
       "id": "mythology-002",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce rol sau simbol este asociat personajul Zeus?",
-      "options": [
-        "Soarele și artele",
-        "Vânătoarea",
-        "Cerul și fulgerul",
-        "Lumea morților"
-      ],
-      "answer": "Cerul și fulgerul",
-      "explanation": "Pentru „Zeus”, răspunsul corect este „Cerul și fulgerul”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte Muze sunt în tradiția greacă clasică asociată cu Hesiod?",
+      "answer": "9",
+      "explanation": "Hesiod enumeră nouă Muze, fiice ale lui Zeus și Mnemosyne, fiecare devenind asociată ulterior cu domenii poetice și artistice."
     },
     {
       "id": "mythology-003",
-      "type": "choice",
-      "difficulty": 2,
-      "text": "Din ce mitologie provine personajul Poseidon?",
-      "options": [
-        "Polineziană",
-        "Greacă",
-        "Aztecă",
-        "Hindusă"
-      ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Poseidon”, răspunsul corect este „Greacă”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte Moire sunt numite de obicei în mitologia greacă?",
+      "answer": "3",
+      "explanation": "Clotho, Lachesis și Atropos sunt cele trei Moire care torc, măsoară și taie simbolic firul vieții. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-004",
-      "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce rol sau simbol este asociat personajul Poseidon?",
-      "options": [
-        "Marea",
-        "Vânătoarea",
-        "Înțelepciunea și războiul",
-        "Tunetul"
-      ],
-      "answer": "Marea",
-      "explanation": "Pentru „Poseidon”, răspunsul corect este „Marea”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câte Gorgone sunt surori în tradiția greacă?",
+      "answer": "3",
+      "explanation": "Stheno, Euryale și Medusa formează grupul celor trei Gorgone; dintre ele, Medusa este singura muritoare în relatarea lui Hesiod."
     },
     {
       "id": "mythology-005",
-      "type": "choice",
-      "difficulty": 3,
-      "text": "Din ce mitologie provine personajul Athena?",
-      "options": [
-        "Polineziană",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Greacă"
-      ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Athena”, răspunsul corect este „Greacă”."
+      "type": "numeric",
+      "difficulty": 1,
+      "text": "Câți Ciclopi primordiali, fii ai lui Uranus și Gaia, sunt numiți de Hesiod?",
+      "answer": "3",
+      "explanation": "Brontes, Steropes și Arges sunt cei trei Ciclopi primordiali ai Teogoniei, diferiți de ciclopii pastorali întâlniți la Homer."
     },
     {
       "id": "mythology-006",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce rol sau simbol este asociat personajul Athena?",
+      "difficulty": 1,
+      "text": "Cine este zeul grec al mării?",
       "options": [
-        "Vicleșugul",
-        "Dragostea și magia",
-        "Înțelepciunea",
-        "Tunetul"
+        "Hermes",
+        "Hera",
+        "Poseidon",
+        "Dionysos"
       ],
-      "answer": "Înțelepciunea",
-      "explanation": "Pentru „Athena”, răspunsul corect este „Înțelepciunea”."
+      "answer": "Poseidon",
+      "explanation": "Poseidon conduce mările și cutremurele și este fratele lui Zeus și Hades în genealogia olimpiană. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-007",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Din ce mitologie provine personajul Hades?",
+      "difficulty": 1,
+      "text": "Cine este zeița greacă a înțelepciunii și strategiei militare?",
       "options": [
-        "Egipteană",
-        "Greacă",
-        "Geto-dacică",
-        "Nordică"
+        "Atena",
+        "Dionysos",
+        "Artemis",
+        "Hades"
       ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Hades”, răspunsul corect este „Greacă”."
+      "answer": "Atena",
+      "explanation": "Atena este protectoarea Atenei și întruchipează strategia, meșteșugurile și inteligența mai degrabă decât furia războiului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-008",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce rol sau simbol este asociat personajul Hades?",
+      "text": "Cine este mesagerul zeilor în mitologia greacă?",
       "options": [
-        "Lumea morților",
-        "Dragostea și magia",
-        "Legea și curajul",
-        "Îmbălsămarea"
+        "Hefaistos",
+        "Hermes",
+        "Demetra",
+        "Hera"
       ],
-      "answer": "Lumea morților",
-      "explanation": "Pentru „Hades”, răspunsul corect este „Lumea morților”."
+      "answer": "Hermes",
+      "explanation": "Hermes este mesagerul olimpienilor, protector al călătorilor și negustorilor și ghid al sufletelor către lumea de jos. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-009",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Din ce mitologie provine personajul Apollo?",
+      "difficulty": 1,
+      "text": "Cine este zeul grec al lumii subpământene?",
       "options": [
-        "Egipteană",
-        "Japoneză",
-        "Aztecă",
-        "Greacă"
+        "Hades",
+        "Artemis",
+        "Hermes",
+        "Apollo"
       ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Apollo”, răspunsul corect este „Greacă”."
+      "answer": "Hades",
+      "explanation": "Hades conduce tărâmul morților și nu trebuie confundat cu Thanatos, personificarea morții propriu-zise. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-010",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce rol sau simbol este asociat personajul Apollo?",
+      "difficulty": 1,
+      "text": "Cine este zeița greacă a agriculturii și a cerealelor?",
       "options": [
-        "Soarele",
-        "Magia și maternitatea",
-        "Soarele și artele",
-        "Îmbălsămarea"
+        "Apollo",
+        "Atena",
+        "Hefaistos",
+        "Demetra"
       ],
-      "answer": "Soarele și artele",
-      "explanation": "Pentru „Apollo”, răspunsul corect este „Soarele și artele”."
+      "answer": "Demetra",
+      "explanation": "Demetra este legată de fertilitatea pământului și de ciclul anotimpurilor prin povestea fiicei sale Persefona. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-011",
       "type": "choice",
       "difficulty": 1,
-      "text": "Din ce mitologie provine personajul Artemis?",
+      "text": "Cine este zeul grec al vinului și extazului ritual?",
       "options": [
-        "Polineziană",
-        "Greacă",
-        "Aztecă",
-        "Hindusă"
+        "Apollo",
+        "Dionysos",
+        "Afrodita",
+        "Hefaistos"
       ],
-      "answer": "Greacă",
-      "explanation": "Pentru „Artemis”, răspunsul corect este „Greacă”."
+      "answer": "Dionysos",
+      "explanation": "Dionysos este asociat cu vinul, teatrul, extazul și depășirea temporară a limitelor sociale obișnuite. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-012",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce rol sau simbol este asociat personajul Artemis?",
+      "difficulty": 1,
+      "text": "Cine este zeul grec al fierăriei și focului meșteșugăresc?",
       "options": [
-        "Vânătoarea",
-        "Magia și maternitatea",
-        "Viața de apoi",
-        "Regalitatea și cerul"
+        "Hefaistos",
+        "Afrodita",
+        "Hera",
+        "Hades"
       ],
-      "answer": "Vânătoarea",
-      "explanation": "Pentru „Artemis”, răspunsul corect este „Vânătoarea”."
+      "answer": "Hefaistos",
+      "explanation": "Hefaistos este meșterul divin care fabrică arme, armuri și obiecte extraordinare pentru zei și eroi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-013",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Din ce mitologie provine personajul Odin?",
+      "difficulty": 1,
+      "text": "Cine este zeița greacă a vânătorii?",
       "options": [
-        "Polineziană",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Nordică"
+        "Hefaistos",
+        "Hades",
+        "Artemis",
+        "Afrodita"
       ],
-      "answer": "Nordică",
-      "explanation": "Pentru „Odin”, răspunsul corect este „Nordică”."
+      "answer": "Artemis",
+      "explanation": "Artemis este legată de vânătoare, natură sălbatică și protecția tinerilor și este sora geamănă a lui Apollo. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-014",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce rol sau simbol este asociat personajul Odin?",
+      "difficulty": 1,
+      "text": "Cine este zeul grec asociat cu profeția de la Delphi?",
       "options": [
-        "Furtunile și marea",
-        "Șarpele cu pene",
-        "Înțelepciunea și războiul",
-        "Regalitatea și cerul"
+        "Poseidon",
+        "Hefaistos",
+        "Hera",
+        "Apollo"
       ],
-      "answer": "Înțelepciunea și războiul",
-      "explanation": "Pentru „Odin”, răspunsul corect este „Înțelepciunea și războiul”."
+      "answer": "Apollo",
+      "explanation": "Apollo este asociat cu profeția, muzica, vindecarea și sanctuarul de la Delphi, unde vorbea prin Pythia. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-015",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Din ce mitologie provine personajul Thor?",
+      "difficulty": 1,
+      "text": "Cine este regina zeilor olimpieni și protectoarea căsătoriei?",
       "options": [
-        "Egipteană",
-        "Nordică",
-        "Geto-dacică",
-        "Greacă"
+        "Hera",
+        "Atena",
+        "Hefaistos",
+        "Artemis"
       ],
-      "answer": "Nordică",
-      "explanation": "Pentru „Thor”, răspunsul corect este „Nordică”."
+      "answer": "Hera",
+      "explanation": "Hera este soția lui Zeus și zeița instituției căsătoriei și a regalității feminine. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-016",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce rol sau simbol este asociat personajul Thor?",
+      "difficulty": 1,
+      "text": "Cine este zeița greacă a iubirii și atracției?",
       "options": [
-        "Tunetul",
-        "Șarpele cu pene",
-        "Ploaia",
-        "Înlăturarea obstacolelor"
+        "Afrodita",
+        "Hermes",
+        "Artemis",
+        "Hefaistos"
       ],
-      "answer": "Tunetul",
-      "explanation": "Pentru „Thor”, răspunsul corect este „Tunetul”."
+      "answer": "Afrodita",
+      "explanation": "Afrodita personifică atracția erotică și frumusețea și are tradiții genealogice diferite în sursele grecești. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-017",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Din ce mitologie provine personajul Loki?",
+      "difficulty": 1,
+      "text": "Cum se numește calul înaripat asociat cu eroul Bellerophon?",
       "options": [
-        "Egipteană",
-        "Japoneză",
-        "Aztecă",
-        "Nordică"
+        "Pedeapsa lui Sisif",
+        "Minotaurul",
+        "Himera",
+        "Pegas"
       ],
-      "answer": "Nordică",
-      "explanation": "Pentru „Loki”, răspunsul corect este „Nordică”."
+      "answer": "Pegas",
+      "explanation": "Pegas se naște în tradiția lui Hesiod din sângele Medusei și îl ajută pe Bellerophon în lupta cu Himera."
     },
     {
       "id": "mythology-018",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce rol sau simbol este asociat personajul Loki?",
+      "text": "Cum se numește monstrul cu trup de leu, cap de capră și coadă de șarpe în tradiția greacă?",
       "options": [
-        "Cunoașterea și artele",
-        "Erou cultural și pescar",
-        "Vicleșugul",
-        "Înlăturarea obstacolelor"
+        "Argo",
+        "Cerber",
+        "Minotaurul",
+        "Himera"
       ],
-      "answer": "Vicleșugul",
-      "explanation": "Pentru „Loki”, răspunsul corect este „Vicleșugul”."
+      "answer": "Himera",
+      "explanation": "Himera este un monstru compozit ucis de Bellerophon, care o atacă de pe Pegas. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-019",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Din ce mitologie provine personajul Freyja?",
+      "difficulty": 1,
+      "text": "Cum se numește creatura cu cap de taur și trup omenesc din labirintul cretan?",
       "options": [
-        "Polineziană",
-        "Nordică",
-        "Aztecă",
-        "Hindusă"
+        "Argo",
+        "Vasul Pandorei",
+        "Labirintul din Creta",
+        "Minotaurul"
       ],
-      "answer": "Nordică",
-      "explanation": "Pentru „Freyja”, răspunsul corect este „Nordică”."
+      "answer": "Minotaurul",
+      "explanation": "Minotaurul trăiește în labirintul construit de Daedalus și este ucis de Tezeu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-020",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce rol sau simbol este asociat personajul Freyja?",
+      "difficulty": 1,
+      "text": "Cum se numește câinele care păzește intrarea în lumea lui Hades?",
       "options": [
-        "Dragostea și magia",
-        "Erou cultural și pescar",
-        "Rege-erou",
-        "Divinitate și nemurire"
+        "Himera",
+        "Argo",
+        "Cerber",
+        "Lâna de Aur"
       ],
-      "answer": "Dragostea și magia",
-      "explanation": "Pentru „Freyja”, răspunsul corect este „Dragostea și magia”."
+      "answer": "Cerber",
+      "explanation": "Cerber păzește lumea morților pentru a împiedica sufletele să plece și pe cei vii să intre neautorizați. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-021",
       "type": "choice",
       "difficulty": 1,
-      "text": "Din ce mitologie provine personajul Tyr?",
+      "text": "Cum se numește monstrul ucis de Perseu, a cărui privire împietrea oamenii?",
       "options": [
-        "Polineziană",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Nordică"
+        "Medusa",
+        "Minotaurul",
+        "Lâna de Aur",
+        "Argo"
       ],
-      "answer": "Nordică",
-      "explanation": "Pentru „Tyr”, răspunsul corect este „Nordică”."
+      "answer": "Medusa",
+      "explanation": "Medusa este Gorgona muritoare decapitată de Perseu cu ajutor divin. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-022",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce rol sau simbol este asociat personajul Tyr?",
+      "difficulty": 1,
+      "text": "Cum se numește vasul în care Iason și argonauții pornesc după Lâna de Aur?",
       "options": [
-        "Cerul și fulgerul",
-        "Marea",
-        "Legea și curajul",
-        "Divinitate și nemurire"
+        "Argo",
+        "Himera",
+        "Pegas",
+        "Cerber"
       ],
-      "answer": "Legea și curajul",
-      "explanation": "Pentru „Tyr”, răspunsul corect este „Legea și curajul”."
+      "answer": "Argo",
+      "explanation": "Argo este corabia construită pentru expediția argonauților către Colchida. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-023",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Din ce mitologie provine personajul Anubis?",
+      "difficulty": 1,
+      "text": "Cum se numește firul folosit de Tezeu pentru a găsi drumul înapoi prin labirint?",
       "options": [
-        "Nordică",
-        "Egipteană",
-        "Geto-dacică",
-        "Greacă"
+        "Argo",
+        "Minotaurul",
+        "Vasul Pandorei",
+        "Firul Ariadnei"
       ],
-      "answer": "Egipteană",
-      "explanation": "Pentru „Anubis”, răspunsul corect este „Egipteană”."
+      "answer": "Firul Ariadnei",
+      "explanation": "Ariadna îi oferă lui Tezeu firul care îi permite să revină după uciderea Minotaurului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-024",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce rol sau simbol este asociat personajul Anubis?",
+      "difficulty": 1,
+      "text": "Cum se numește lâna miraculoasă căutată de Iason?",
       "options": [
-        "Îmbălsămarea",
-        "Marea",
-        "Înțelepciunea",
-        "Lumea morților"
+        "Medusa",
+        "Pegas",
+        "Lâna de Aur",
+        "Himera"
       ],
-      "answer": "Îmbălsămarea",
-      "explanation": "Pentru „Anubis”, răspunsul corect este „Îmbălsămarea”."
+      "answer": "Lâna de Aur",
+      "explanation": "Lâna de Aur se află în Colchida și devine obiectivul expediției argonauților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-025",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Din ce mitologie provine personajul Ra?",
+      "difficulty": 1,
+      "text": "Cum se numește cutia sau vasul deschis de Pandora în tradiția greacă popularizată ulterior?",
       "options": [
-        "Nordică",
-        "Japoneză",
-        "Aztecă",
-        "Egipteană"
+        "Argo",
+        "Labirintul din Creta",
+        "Vasul Pandorei",
+        "Firul Ariadnei"
       ],
-      "answer": "Egipteană",
-      "explanation": "Pentru „Ra”, răspunsul corect este „Egipteană”."
+      "answer": "Vasul Pandorei",
+      "explanation": "În textul grec este vorba despre un pithos, un vas mare; ideea de «cutie» provine dintr-o tradiție de traducere ulterioară."
     },
     {
       "id": "mythology-026",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce rol sau simbol este asociat personajul Ra?",
+      "difficulty": 1,
+      "text": "Cum se numește labirintul în care era ținut Minotaurul?",
       "options": [
-        "Soarele și artele",
-        "Vânătoarea",
-        "Soarele",
-        "Lumea morților"
+        "Firul Ariadnei",
+        "Vasul Pandorei",
+        "Labirintul din Creta",
+        "Argo"
       ],
-      "answer": "Soarele",
-      "explanation": "Pentru „Ra”, răspunsul corect este „Soarele”."
+      "answer": "Labirintul din Creta",
+      "explanation": "Daedalus construiește labirintul pentru regele Minos, astfel încât Minotaurul să nu poată scăpa. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-027",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Din ce mitologie provine personajul Isis?",
+      "difficulty": 1,
+      "text": "Cum se numește stânca sau pedeapsa repetată a regelui care împingea mereu un bolovan la deal?",
       "options": [
-        "Polineziană",
-        "Egipteană",
-        "Aztecă",
-        "Hindusă"
+        "Pedeapsa lui Sisif",
+        "Vasul Pandorei",
+        "Pegas",
+        "Firul Ariadnei"
       ],
-      "answer": "Egipteană",
-      "explanation": "Pentru „Isis”, răspunsul corect este „Egipteană”."
+      "answer": "Pedeapsa lui Sisif",
+      "explanation": "Sisif este condamnat în lumea de jos să împingă veșnic un bolovan care cade înainte de a ajunge la vârf."
     },
     {
       "id": "mythology-028",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce rol sau simbol este asociat personajul Isis?",
+      "text": "Cine este zeul nordic asociat cu tunetul și ciocanul Mjölnir?",
       "options": [
-        "Magia și maternitatea",
-        "Vânătoarea",
-        "Înțelepciunea și războiul",
-        "Tunetul"
+        "Thor",
+        "Baldr",
+        "Bragi",
+        "Týr"
       ],
-      "answer": "Magia și maternitatea",
-      "explanation": "Pentru „Isis”, răspunsul corect este „Magia și maternitatea”."
+      "answer": "Thor",
+      "explanation": "Thor este apărător al zeilor și oamenilor și luptă frecvent împotriva giganților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-029",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Din ce mitologie provine personajul Osiris?",
+      "difficulty": 1,
+      "text": "Cine este zeul nordic asociat cu înțelepciunea, poezia și războiul?",
       "options": [
-        "Polineziană",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Egipteană"
+        "Odin",
+        "Frigg",
+        "Freyja",
+        "Thor"
       ],
-      "answer": "Egipteană",
-      "explanation": "Pentru „Osiris”, răspunsul corect este „Egipteană”."
+      "answer": "Odin",
+      "explanation": "Odin caută neîncetat cunoaștere și este legat de rune, poezie, război și morții aleși. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-030",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce rol sau simbol este asociat personajul Osiris?",
+      "difficulty": 1,
+      "text": "Cine este zeul nordic cunoscut pentru viclenie și schimbarea formei?",
       "options": [
-        "Vicleșugul",
-        "Dragostea și magia",
-        "Viața de apoi",
-        "Tunetul"
+        "Baldr",
+        "Freyja",
+        "Týr",
+        "Loki"
       ],
-      "answer": "Viața de apoi",
-      "explanation": "Pentru „Osiris”, răspunsul corect este „Viața de apoi”."
+      "answer": "Loki",
+      "explanation": "Loki este un personaj ambiguu care îi ajută uneori pe zei, dar contribuie și la marile lor nenorociri."
     },
     {
       "id": "mythology-031",
       "type": "choice",
       "difficulty": 1,
-      "text": "Din ce mitologie provine personajul Horus?",
+      "text": "Cine este zeița nordică asociată cu iubirea, magia seiðr și o parte dintre morții în luptă?",
       "options": [
-        "Nordică",
-        "Egipteană",
-        "Geto-dacică",
-        "Greacă"
+        "Bragi",
+        "Freyja",
+        "Thor",
+        "Odin"
       ],
-      "answer": "Egipteană",
-      "explanation": "Pentru „Horus”, răspunsul corect este „Egipteană”."
+      "answer": "Freyja",
+      "explanation": "Freyja aparține Vanir și primește jumătate dintre cei căzuți în luptă în Fólkvangr. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-032",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce rol sau simbol este asociat personajul Horus?",
+      "difficulty": 1,
+      "text": "Cine este zeul nordic al fertilității și prosperității, fratele Freyjei?",
       "options": [
-        "Regalitatea și cerul",
-        "Dragostea și magia",
-        "Legea și curajul",
-        "Îmbălsămarea"
+        "Týr",
+        "Loki",
+        "Frigg",
+        "Freyr"
       ],
-      "answer": "Regalitatea și cerul",
-      "explanation": "Pentru „Horus”, răspunsul corect este „Regalitatea și cerul”."
+      "answer": "Freyr",
+      "explanation": "Freyr este asociat cu recolta, pacea și prosperitatea și aparține familiei divine Vanir. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-033",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Din ce mitologie provine personajul Amaterasu?",
+      "difficulty": 1,
+      "text": "Cine este zeul nordic care își pierde mâna când Fenrir este legat?",
       "options": [
-        "Nordică",
-        "Egipteană",
-        "Aztecă",
-        "Japoneză"
+        "Odin",
+        "Bragi",
+        "Týr",
+        "Baldr"
       ],
-      "answer": "Japoneză",
-      "explanation": "Pentru „Amaterasu”, răspunsul corect este „Japoneză”."
+      "answer": "Týr",
+      "explanation": "Týr își pune mâna în gura lupului Fenrir ca garanție și o pierde când zeii îl leagă cu Gleipnir."
     },
     {
       "id": "mythology-034",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce rol sau simbol este asociat personajul Amaterasu?",
+      "difficulty": 1,
+      "text": "Cine este zeul luminos a cărui moarte declanșează o etapă decisivă spre Ragnarök?",
       "options": [
-        "Magia și maternitatea",
-        "Viața de apoi",
-        "Soarele",
-        "Îmbălsămarea"
+        "Baldr",
+        "Bragi",
+        "Thor",
+        "Freyja"
       ],
-      "answer": "Soarele",
-      "explanation": "Pentru „Amaterasu”, răspunsul corect este „Soarele”."
+      "answer": "Baldr",
+      "explanation": "Baldr este ucis printr-un vicleșug al lui Loki, folosindu-se vulnerabilitatea sa față de vâsc. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-035",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Din ce mitologie provine personajul Susanoo?",
+      "difficulty": 1,
+      "text": "Cine este păzitorul podului Bifröst?",
       "options": [
-        "Polineziană",
-        "Japoneză",
-        "Aztecă",
-        "Hindusă"
+        "Heimdall",
+        "Týr",
+        "Hel",
+        "Freyja"
       ],
-      "answer": "Japoneză",
-      "explanation": "Pentru „Susanoo”, răspunsul corect este „Japoneză”."
+      "answer": "Heimdall",
+      "explanation": "Heimdall păzește accesul spre Ásgard și va suna Gjallarhorn la începutul confruntării finale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-036",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce rol sau simbol este asociat personajul Susanoo?",
+      "difficulty": 1,
+      "text": "Cine este soția lui Odin asociată cu regalitatea și cunoașterea destinului?",
       "options": [
-        "Furtunile și marea",
-        "Magia și maternitatea",
-        "Viața de apoi",
-        "Regalitatea și cerul"
+        "Frigg",
+        "Bragi",
+        "Týr",
+        "Hel"
       ],
-      "answer": "Furtunile și marea",
-      "explanation": "Pentru „Susanoo”, răspunsul corect este „Furtunile și marea”."
+      "answer": "Frigg",
+      "explanation": "Frigg este o mare zeiță a Æsir și mama lui Baldr în principalele izvoare nordice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-037",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Din ce mitologie provine personajul Quetzalcoatl?",
+      "difficulty": 1,
+      "text": "Cine este zeița lumii morților care poartă același nume ca tărâmul ei?",
       "options": [
-        "Polineziană",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Aztecă"
+        "Týr",
+        "Hel",
+        "Baldr",
+        "Odin"
       ],
-      "answer": "Aztecă",
-      "explanation": "Pentru „Quetzalcoatl”, răspunsul corect este „Aztecă”."
+      "answer": "Hel",
+      "explanation": "Hel, fiica lui Loki, conduce tărâmul unde ajung mulți dintre cei care nu mor în luptă. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-038",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce rol sau simbol este asociat personajul Quetzalcoatl?",
+      "text": "Cine este zeul nordic al poeziei, fiul lui Odin în tradiția eddică?",
       "options": [
-        "Furtunile și marea",
-        "Ploaia",
-        "Șarpele cu pene",
-        "Regalitatea și cerul"
+        "Thor",
+        "Frigg",
+        "Bragi",
+        "Hel"
       ],
-      "answer": "Șarpele cu pene",
-      "explanation": "Pentru „Quetzalcoatl”, răspunsul corect este „Șarpele cu pene”."
+      "answer": "Bragi",
+      "explanation": "Bragi este asociat cu poezia și elocvența și apare între zeii din Ásgard. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-039",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Din ce mitologie provine personajul Tlaloc?",
+      "difficulty": 1,
+      "text": "Cine este zeul egiptean cu cap de șacal asociat cu îmbălsămarea și ritualurile funerare?",
       "options": [
-        "Nordică",
-        "Aztecă",
-        "Geto-dacică",
-        "Greacă"
+        "Ra",
+        "Isis",
+        "Horus",
+        "Anubis"
       ],
-      "answer": "Aztecă",
-      "explanation": "Pentru „Tlaloc”, răspunsul corect este „Aztecă”."
+      "answer": "Anubis",
+      "explanation": "Anubis protejează morții și este legat de mumificare și cântărirea inimii în tradiția funerară egipteană. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-040",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce rol sau simbol este asociat personajul Tlaloc?",
+      "difficulty": 1,
+      "text": "Cine este zeul egiptean al morților și al regenerării, soțul lui Isis?",
       "options": [
-        "Ploaia",
-        "Șarpele cu pene",
-        "Înlăturarea obstacolelor",
-        "Cunoașterea și artele"
+        "Seth",
+        "Bastet",
+        "Osiris",
+        "Ghilgameș"
       ],
-      "answer": "Ploaia",
-      "explanation": "Pentru „Tlaloc”, răspunsul corect este „Ploaia”."
+      "answer": "Osiris",
+      "explanation": "Osiris devine conducător al lumii morților după ce este ucis și restaurat prin acțiunea lui Isis. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-041",
       "type": "choice",
       "difficulty": 1,
-      "text": "Din ce mitologie provine personajul Ganesha?",
+      "text": "Cine este zeița egipteană care îl reface pe Osiris și îl protejează pe Horus?",
       "options": [
-        "Nordică",
-        "Egipteană",
-        "Japoneză",
-        "Hindusă"
+        "Ra",
+        "Enkidu",
+        "Ghilgameș",
+        "Isis"
       ],
-      "answer": "Hindusă",
-      "explanation": "Pentru „Ganesha”, răspunsul corect este „Hindusă”."
+      "answer": "Isis",
+      "explanation": "Isis este una dintre cele mai importante zeițe egiptene, asociată cu magia, maternitatea și protecția regală. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-042",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Cu ce rol sau simbol este asociat personajul Ganesha?",
+      "difficulty": 1,
+      "text": "Cine este zeul egiptean cu cap de șoim asociat cu regalitatea?",
       "options": [
-        "Erou cultural și pescar",
-        "Rege-erou",
-        "Înlăturarea obstacolelor",
-        "Cunoașterea și artele"
+        "Isis",
+        "Seth",
+        "Horus",
+        "Marduk"
       ],
-      "answer": "Înlăturarea obstacolelor",
-      "explanation": "Pentru „Ganesha”, răspunsul corect este „Înlăturarea obstacolelor”."
+      "answer": "Horus",
+      "explanation": "Horus este legat de regele viu și luptă cu Seth pentru moștenirea lui Osiris. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-043",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Din ce mitologie provine personajul Saraswati?",
+      "difficulty": 1,
+      "text": "Cine este zeul egiptean asociat cu soarele și călătoria zilnică pe cer?",
       "options": [
-        "Polineziană",
-        "Hindusă",
-        "Japoneză",
-        "Aztecă"
+        "Marduk",
+        "Ra",
+        "Ghilgameș",
+        "Isis"
       ],
-      "answer": "Hindusă",
-      "explanation": "Pentru „Saraswati”, răspunsul corect este „Hindusă”."
+      "answer": "Ra",
+      "explanation": "Ra traversează cerul ziua și lumea subpământeană noaptea în ciclul solar egiptean. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-044",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Cu ce rol sau simbol este asociat personajul Saraswati?",
+      "difficulty": 1,
+      "text": "Cine este zeul egiptean asociat cu haosul, deșertul și conflictul cu Horus?",
       "options": [
-        "Cunoașterea și artele",
-        "Rege-erou",
-        "Divinitate și nemurire",
-        "Cerul și fulgerul"
+        "Anubis",
+        "Osiris",
+        "Seth",
+        "Ra"
       ],
-      "answer": "Cunoașterea și artele",
-      "explanation": "Pentru „Saraswati”, răspunsul corect este „Cunoașterea și artele”."
+      "answer": "Seth",
+      "explanation": "Seth are un rol complex: adversar al lui Horus, dar în unele tradiții și apărător al bărcii solare împotriva lui Apophis."
     },
     {
       "id": "mythology-045",
       "type": "choice",
-      "difficulty": 3,
-      "text": "Din ce mitologie provine personajul Maui?",
+      "difficulty": 1,
+      "text": "Cine este zeița egipteană reprezentată frecvent cu cap de pisică?",
       "options": [
-        "Hindusă",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Polineziană"
+        "Enkidu",
+        "Ghilgameș",
+        "Osiris",
+        "Bastet"
       ],
-      "answer": "Polineziană",
-      "explanation": "Pentru „Maui”, răspunsul corect este „Polineziană”."
+      "answer": "Bastet",
+      "explanation": "Bastet este asociată cu protecția domestică, muzica, festivitățile și, în perioade diferite, aspecte solare sau lunare. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-046",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Cu ce rol sau simbol este asociat personajul Maui?",
+      "difficulty": 1,
+      "text": "Cine este zeița mesopotamiană a iubirii și războiului cunoscută în sumeriană ca Inanna?",
       "options": [
-        "Marea",
-        "Înțelepciunea",
-        "Erou cultural și pescar",
-        "Cerul și fulgerul"
+        "Anubis",
+        "Ra",
+        "Osiris",
+        "Ishtar"
       ],
-      "answer": "Erou cultural și pescar",
-      "explanation": "Pentru „Maui”, răspunsul corect este „Erou cultural și pescar”."
+      "answer": "Ishtar",
+      "explanation": "Ishtar este forma akkadiană a Inannei și unește puterea erotică, regală și militară. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-047",
       "type": "choice",
-      "difficulty": 4,
-      "text": "Din ce mitologie provine personajul Gilgameș?",
+      "difficulty": 1,
+      "text": "Cine este eroul central al Epopeii lui Ghilgameș?",
       "options": [
-        "Nordică",
-        "Mesopotamiană",
-        "Geto-dacică",
-        "Greacă"
+        "Seth",
+        "Ghilgameș",
+        "Ishtar",
+        "Anubis"
       ],
-      "answer": "Mesopotamiană",
-      "explanation": "Pentru „Gilgameș”, răspunsul corect este „Mesopotamiană”."
+      "answer": "Ghilgameș",
+      "explanation": "Ghilgameș este regele Urukului care pornește într-o căutare a sensului vieții și nemuririi după moartea lui Enkidu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-048",
       "type": "choice",
       "difficulty": 1,
-      "text": "Cu ce rol sau simbol este asociat personajul Gilgameș?",
+      "text": "Cine este prietenul sălbatic al lui Ghilgameș creat pentru a-i deveni rival și apoi tovarăș?",
       "options": [
-        "Rege-erou",
-        "Înțelepciunea",
-        "Lumea morților",
-        "Soarele și artele"
+        "Osiris",
+        "Marduk",
+        "Enkidu",
+        "Bastet"
       ],
-      "answer": "Rege-erou",
-      "explanation": "Pentru „Gilgameș”, răspunsul corect este „Rege-erou”."
+      "answer": "Enkidu",
+      "explanation": "Enkidu este civilizat prin contact uman și devine cel mai apropiat prieten al lui Ghilgameș. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-049",
       "type": "choice",
-      "difficulty": 5,
-      "text": "Din ce mitologie provine personajul Zamolxis?",
+      "difficulty": 1,
+      "text": "Cine este zeul babilonian care devine figura centrală a poemului creației Enuma Elish?",
       "options": [
-        "Nordică",
-        "Egipteană",
-        "Japoneză",
-        "Geto-dacică"
+        "Anubis",
+        "Ishtar",
+        "Seth",
+        "Marduk"
       ],
-      "answer": "Geto-dacică",
-      "explanation": "Pentru „Zamolxis”, răspunsul corect este „Geto-dacică”."
+      "answer": "Marduk",
+      "explanation": "Marduk o învinge pe Tiamat și organizează cosmosul, consolidând simbolic prestigiul Babilonului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     },
     {
       "id": "mythology-050",
       "type": "choice",
-      "difficulty": 2,
-      "text": "Cu ce rol sau simbol este asociat personajul Zamolxis?",
+      "difficulty": 1,
+      "text": "Cine este zeul hindus reprezentat adesea cu cap de elefant?",
       "options": [
-        "Vânătoarea",
-        "Înțelepciunea și războiul",
-        "Divinitate și nemurire",
-        "Soarele și artele"
+        "Amaterasu",
+        "Ganesha",
+        "Vishnu",
+        "Lugh"
       ],
-      "answer": "Divinitate și nemurire",
-      "explanation": "Pentru „Zamolxis”, răspunsul corect este „Divinitate și nemurire”."
+      "answer": "Ganesha",
+      "explanation": "Ganesha este asociat cu începuturile favorabile, înlăturarea obstacolelor și înțelepciunea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-051",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul hindus care păstrează ordinea cosmică și are avatari precum Rama și Krishna?",
+      "options": [
+        "Vishnu",
+        "Shiva",
+        "Perun",
+        "Quetzalcoatl"
+      ],
+      "answer": "Vishnu",
+      "explanation": "Vishnu intervine prin avatari pentru restaurarea dharmei în numeroase tradiții vaișnave. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-052",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul hindus asociat cu distrugerea și transformarea cosmică?",
+      "options": [
+        "Shiva",
+        "Ganesha",
+        "Amaterasu",
+        "Nüwa"
+      ],
+      "answer": "Shiva",
+      "explanation": "Shiva unește aspecte ascetice, cosmice și familiale și este una dintre principalele divinități ale hinduismului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-053",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeița japoneză a soarelui?",
+      "options": [
+        "Lugh",
+        "Nüwa",
+        "Amaterasu",
+        "Vishnu"
+      ],
+      "answer": "Amaterasu",
+      "explanation": "Amaterasu este o divinitate centrală a tradiției shinto și strămoașă mitică a liniei imperiale japoneze. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-054",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul japonez al furtunii și fratele Amaterasuei?",
+      "options": [
+        "Nüwa",
+        "Amaterasu",
+        "Susanoo",
+        "Lugh"
+      ],
+      "answer": "Susanoo",
+      "explanation": "Susanoo este o divinitate turbulentă, celebră pentru conflictul cu Amaterasu și pentru uciderea șarpelui Yamata no Orochi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-055",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este figura chineză care, în mit, repară cerul după o catastrofă cosmică?",
+      "options": [
+        "Nüwa",
+        "Sun Wukong",
+        "Perun",
+        "Susanoo"
+      ],
+      "answer": "Nüwa",
+      "explanation": "Nüwa este o zeiță creatoare și restauratoare, asociată și cu modelarea oamenilor în unele tradiții. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-056",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este regele-maimuță din romanul și tradiția mitologică „Călătorie spre Vest”?",
+      "options": [
+        "Susanoo",
+        "Sun Wukong",
+        "Lugh",
+        "Nüwa"
+      ],
+      "answer": "Sun Wukong",
+      "explanation": "Sun Wukong are puteri magice, un toiag extensibil și devine însoțitor al călugărului Xuanzang. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-057",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul cu pene Quetzalcoatl în tradițiile mesoamericane?",
+      "options": [
+        "Māui",
+        "Lugh",
+        "Quetzalcoatl",
+        "Perun"
+      ],
+      "answer": "Quetzalcoatl",
+      "explanation": "Quetzalcoatl, «Șarpele cu pene», este asociat cu vântul, cunoașterea și creația în tradiții central-mexicane. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-058",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este semizeul polinezian cunoscut pentru pescuirea insulelor și încetinirea soarelui în diferite tradiții?",
+      "options": [
+        "Vishnu",
+        "Amaterasu",
+        "Māui",
+        "Shiva"
+      ],
+      "answer": "Māui",
+      "explanation": "Māui este un erou-trickster răspândit în numeroase culturi polineziene, cu variante locale ale acelorași isprăvi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-059",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul celtic irlandez asociat cu măiestria și numeroase abilități?",
+      "options": [
+        "Māui",
+        "Lugh",
+        "Nüwa",
+        "Amaterasu"
+      ],
+      "answer": "Lugh",
+      "explanation": "Lugh este numit Samildánach, «cel priceput în multe arte», și joacă un rol central în tradiția Tuatha Dé Danann."
+    },
+    {
+      "id": "mythology-060",
+      "type": "choice",
+      "difficulty": 1,
+      "text": "Cine este zeul slav al tunetului?",
+      "options": [
+        "Amaterasu",
+        "Perun",
+        "Susanoo",
+        "Shiva"
+      ],
+      "answer": "Perun",
+      "explanation": "Perun este o divinitate majoră a tradiției slave precreștine, asociată cu tunetul, armele și stejarul. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-061",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte divinități alcătuiesc Ogdoada de la Hermopolis în tradiția egipteană?",
+      "answer": "8",
+      "explanation": "Ogdoada este formată din patru perechi divine, masculine și feminine, care personifică aspecte ale stării primordiale înaintea creației."
+    },
+    {
+      "id": "mythology-062",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Prin câte porți trece Inanna în coborârea ei în lumea de jos, în textul sumerian?",
+      "answer": "7",
+      "explanation": "Inanna trece prin șapte porți, pierzând la fiecare câte un obiect de putere sau o piesă vestimentară înainte de a ajunge la Ereshkigal."
+    },
+    {
+      "id": "mythology-063",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte capete are Yamata no Orochi în mitologia japoneză?",
+      "answer": "8",
+      "explanation": "Yamata no Orochi este descris ca un șarpe monstruos cu opt capete și opt cozi, ucis de Susanoo."
+    },
+    {
+      "id": "mythology-064",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câți frați Pandava sunt în Mahabharata?",
+      "answer": "5",
+      "explanation": "Pandavii sunt cei cinci frați Yudhishthira, Bhima, Arjuna, Nakula și Sahadeva, personaje centrale ale conflictului din Mahabharata și ale luptei pentru tronul din Hastinapura."
+    },
+    {
+      "id": "mythology-065",
+      "type": "numeric",
+      "difficulty": 2,
+      "text": "Câte fiice ale lui Atlas sunt Pleiadele în tradiția greacă?",
+      "answer": "7",
+      "explanation": "Pleiadele sunt cele șapte surori asociate cu roiul stelar omonim și cu diferite genealogii eroice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-066",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine o ajută pe Demetra să-și recupereze parțial fiica din lumea lui Hades printr-un compromis divin?",
+      "options": [
+        "Leto",
+        "Thetis",
+        "Orfeu",
+        "Zeus"
+      ],
+      "answer": "Zeus",
+      "explanation": "Zeus intervine când absența Persefonei provoacă sterilitatea pământului și ordonă negocierea revenirii ei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-067",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este mama lui Ahile?",
+      "options": [
+        "Thetis",
+        "Ariadna",
+        "Orfeu",
+        "Oeagrus"
+      ],
+      "answer": "Thetis",
+      "explanation": "Thetis este o nereidă și mama lui Ahile, pe care încearcă în diferite tradiții să îl protejeze de mortalitate."
+    },
+    {
+      "id": "mythology-068",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este tatăl lui Perseu?",
+      "options": [
+        "Pasiphae",
+        "Thetis",
+        "Zeus",
+        "Orfeu"
+      ],
+      "answer": "Zeus",
+      "explanation": "Zeus o fecundează pe Danae, iar fiul lor Perseu va deveni ucigașul Medusei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-069",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este mama Minotaurului?",
+      "options": [
+        "Orfeu",
+        "Leto",
+        "Ariadna",
+        "Pasiphae"
+      ],
+      "answer": "Pasiphae",
+      "explanation": "Pasiphae, soția regelui Minos, dă naștere Minotaurului după episodul taurului trimis de Poseidon. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-070",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îi oferă lui Tezeu mijlocul de a ieși din labirint?",
+      "options": [
+        "Ariadna",
+        "Oeagrus",
+        "Zeus",
+        "Medeea"
+      ],
+      "answer": "Ariadna",
+      "explanation": "Ariadna îi dă lui Tezeu firul care îi permite să găsească drumul înapoi după confruntarea cu Minotaurul. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-071",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl pedepsește pe Prometeu pentru furtul focului?",
+      "options": [
+        "Oeagrus",
+        "Thetis",
+        "Tezeu",
+        "Zeus"
+      ],
+      "answer": "Zeus",
+      "explanation": "Zeus îl leagă pe Prometeu și trimite un vultur să-i devoreze ficatul, care se regenerează. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-072",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este mama lui Apollo și Artemis?",
+      "options": [
+        "Ariadna",
+        "Leto",
+        "Medeea",
+        "Pasiphae"
+      ],
+      "answer": "Leto",
+      "explanation": "Leto este urmărită de Hera și găsește în cele din urmă un loc pentru nașterea gemenilor divini. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-073",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este tatăl lui Orfeu în tradiția frecventă care îl leagă de inspirația poetică?",
+      "options": [
+        "Leto",
+        "Thetis",
+        "Oeagrus",
+        "Ariadna"
+      ],
+      "answer": "Oeagrus",
+      "explanation": "Oeagrus este numit frecvent tatăl lui Orfeu, în timp ce mama sa este muza Calliope. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-074",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este regina care îl ajută pe Iason să obțină Lâna de Aur prin magie?",
+      "options": [
+        "Oeagrus",
+        "Medeea",
+        "Zeus",
+        "Orfeu"
+      ],
+      "answer": "Medeea",
+      "explanation": "Medeea, fiica regelui Aeetes, folosește vrăji pentru a-l ajuta pe Iason să îndeplinească probele din Colchida. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-075",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este eroul care îl ucide pe Minotaur?",
+      "options": [
+        "Tezeu",
+        "Medeea",
+        "Leto",
+        "Pasiphae"
+      ],
+      "answer": "Tezeu",
+      "explanation": "Tezeu intră în labirint ca parte a tributului atenian și îl ucide pe Minotaur. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-076",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este eroul grec care coboară în lumea morților pentru a o readuce pe Euridice?",
+      "options": [
+        "Thetis",
+        "Orfeu",
+        "Oeagrus",
+        "Medeea"
+      ],
+      "answer": "Orfeu",
+      "explanation": "Orfeu înduplecă prin muzică stăpânii lumii de jos, dar pierde a doua oară pe Euridice când se întoarce să o privească."
+    },
+    {
+      "id": "mythology-077",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește ciocanul lui Thor?",
+      "options": [
+        "Mjölnir",
+        "Gleipnir",
+        "Valhalla",
+        "Sabia lui Freyr"
+      ],
+      "answer": "Mjölnir",
+      "explanation": "Mjölnir revine în mâna lui Thor și este principala sa armă împotriva giganților și monștrilor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-078",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește lupul uriaș, fiul lui Loki, legat de zei?",
+      "options": [
+        "Gjallarhorn",
+        "Bifröst",
+        "Fenrir",
+        "Mjölnir"
+      ],
+      "answer": "Fenrir",
+      "explanation": "Fenrir este legat cu Gleipnir și este destinat să se elibereze la Ragnarök. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-079",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește șarpele lumii care îl înconjoară pe Midgard?",
+      "options": [
+        "Draupnir",
+        "Yggdrasil",
+        "Fenrir",
+        "Jörmungandr"
+      ],
+      "answer": "Jörmungandr",
+      "explanation": "Jörmungandr este copilul lui Loki și adversarul cosmic al lui Thor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-080",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește corabia făcută din unghiile morților, asociată cu Ragnarök?",
+      "options": [
+        "Mjölnir",
+        "Jörmungandr",
+        "Naglfar",
+        "Gleipnir"
+      ],
+      "answer": "Naglfar",
+      "explanation": "Naglfar va naviga în timpul Ragnarökului și este descrisă ca fiind construită din unghiile morților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-081",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește legătura magică folosită pentru a-l imobiliza pe Fenrir?",
+      "options": [
+        "Valhalla",
+        "Gleipnir",
+        "Naglfar",
+        "Bifröst"
+      ],
+      "answer": "Gleipnir",
+      "explanation": "Gleipnir pare subțire, dar este făcut din lucruri imposibile și nu poate fi rupt de lup. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-082",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește cornul lui Heimdall care va anunța Ragnarökul?",
+      "options": [
+        "Fenrir",
+        "Naglfar",
+        "Gjallarhorn",
+        "Yggdrasil"
+      ],
+      "answer": "Gjallarhorn",
+      "explanation": "Heimdall va sufla în Gjallarhorn pentru a avertiza zeii când începe confruntarea finală. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-083",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește arborele cosmic al mitologiei nordice?",
+      "options": [
+        "Mjölnir",
+        "Yggdrasil",
+        "Valhalla",
+        "Jörmungandr"
+      ],
+      "answer": "Yggdrasil",
+      "explanation": "Yggdrasil leagă diferitele tărâmuri ale cosmosului și este asociat cu izvoare, ființe și destin. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-084",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește podul curcubeu care leagă Midgard de Ásgard?",
+      "options": [
+        "Bifröst",
+        "Valhalla",
+        "Gleipnir",
+        "Draupnir"
+      ],
+      "answer": "Bifröst",
+      "explanation": "Bifröst este păzit de Heimdall și constituie una dintre căile dintre tărâmul oamenilor și cel al zeilor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-085",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește sala lui Odin unde ajung o parte dintre războinicii căzuți?",
+      "options": [
+        "Valhalla",
+        "Sabia lui Freyr",
+        "Fenrir",
+        "Mjölnir"
+      ],
+      "answer": "Valhalla",
+      "explanation": "În Valhalla, einherjarii se pregătesc pentru Ragnarök sub autoritatea lui Odin. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-086",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește sabia zeului Freyr pe care acesta o pierde înainte de Ragnarök?",
+      "options": [
+        "Valhalla",
+        "Sabia lui Freyr",
+        "Mjölnir",
+        "Draupnir"
+      ],
+      "answer": "Sabia lui Freyr",
+      "explanation": "Freyr își cedează sabia lui Skírnir, iar lipsa ei devine importantă în confruntarea finală cu Surtr. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-087",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cum se numește inelul lui Odin care se multiplică periodic?",
+      "options": [
+        "Gjallarhorn",
+        "Jörmungandr",
+        "Gleipnir",
+        "Draupnir"
+      ],
+      "answer": "Draupnir",
+      "explanation": "Draupnir este un inel de aur fabricat de pitici și simbolizează bogăția și multiplicarea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-088",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este sora și rivala Inannei care conduce lumea de jos?",
+      "options": [
+        "Ea",
+        "Utnapiștim",
+        "Ereshkigal",
+        "Nut"
+      ],
+      "answer": "Ereshkigal",
+      "explanation": "Ereshkigal este regina lumii subpământene și o confruntă pe Inanna în episodul coborârii. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-089",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine îl ajută pe Ghilgameș să supraviețuiască unei încercări de nemurire oferindu-i informații despre planta vieții?",
+      "options": [
+        "Utnapiștim",
+        "Geb",
+        "Nut",
+        "Sekhmet"
+      ],
+      "answer": "Utnapiștim",
+      "explanation": "Utnapiștim, supraviețuitorul potopului, îi explică lui Ghilgameș limitele condiției umane. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-090",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița primordială a apelor sărate în Enuma Elish?",
+      "options": [
+        "Geb",
+        "Tiamat",
+        "Ereshkigal",
+        "Baal"
+      ],
+      "answer": "Tiamat",
+      "explanation": "Tiamat reprezintă apele primordiale și devine adversara lui Marduk în conflictul cosmogonic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-091",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul înțelepciunii și apelor dulci numit Enki în sumeriană?",
+      "options": [
+        "Utnapiștim",
+        "Ereshkigal",
+        "Ea",
+        "Sekhmet"
+      ],
+      "answer": "Ea",
+      "explanation": "Ea este numele akkadian al lui Enki și apare frecvent ca zeu al inteligenței, magiei și apelor subterane."
+    },
+    {
+      "id": "mythology-092",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița egipteană a cerului reprezentată adesea arcuindu-se peste lume?",
+      "options": [
+        "Nut",
+        "Sekhmet",
+        "Maat",
+        "Thoth"
+      ],
+      "answer": "Nut",
+      "explanation": "Nut reprezintă bolta cerească și îl naște simbolic pe zeul soare în ciclul cosmic zilnic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-093",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul egiptean al pământului și soțul lui Nut?",
+      "options": [
+        "Maat",
+        "Utnapiștim",
+        "Thoth",
+        "Geb"
+      ],
+      "answer": "Geb",
+      "explanation": "Geb personifică pământul și formează împreună cu Nut o pereche fundamentală în cosmogonia heliopolitană. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-094",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița egipteană asociată cu adevărul, ordinea și dreptatea cosmică?",
+      "options": [
+        "Tiamat",
+        "Baal",
+        "Maat",
+        "Nut"
+      ],
+      "answer": "Maat",
+      "explanation": "Maat reprezintă ordinea cosmică și morală, iar pana ei este folosită în judecata inimii celui mort. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-095",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul egiptean ibis sau babuin asociat cu scrierea și cunoașterea?",
+      "options": [
+        "Sekhmet",
+        "Utnapiștim",
+        "Tiamat",
+        "Thoth"
+      ],
+      "answer": "Thoth",
+      "explanation": "Thoth este scribul divin, asociat cu scrierea, calculul, luna și consemnarea judecății morților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-096",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița-leoaică egipteană asociată cu puterea distructivă a soarelui?",
+      "options": [
+        "Sekhmet",
+        "Ereshkigal",
+        "Utu",
+        "Nut"
+      ],
+      "answer": "Sekhmet",
+      "explanation": "Sekhmet este o zeiță războinică și vindecătoare, manifestând atât pericolul, cât și protecția. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-097",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul canaanit al furtunii care luptă cu Yam și Mot în ciclul ugaritic?",
+      "options": [
+        "Baal",
+        "Tiamat",
+        "Nut",
+        "Ea"
+      ],
+      "answer": "Baal",
+      "explanation": "Baal Hadad este zeul furtunii și fertilității, confruntând marea și moartea în textele ugaritice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-098",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul mesopotamian al soarelui și justiției cunoscut în akkadiană ca Shamash?",
+      "options": [
+        "Tiamat",
+        "Ea",
+        "Utu",
+        "Utnapiștim"
+      ],
+      "answer": "Utu",
+      "explanation": "Utu este numele sumerian al zeului soarelui, asociat cu lumina, adevărul și judecata. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-099",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este avatarul lui Vishnu și eroul central al Ramayanei?",
+      "options": [
+        "Susanoo",
+        "Hou Yi",
+        "Rama",
+        "Chang'e"
+      ],
+      "answer": "Rama",
+      "explanation": "Rama este regele ideal și protagonistul Ramayanei, iar povestea sa este centrală pentru tradițiile vaișnave. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-100",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este conducătorul din Lanka care o răpește pe Sita în Ramayana?",
+      "options": [
+        "Hanuman",
+        "Ravana",
+        "Agni",
+        "Hou Yi"
+      ],
+      "answer": "Ravana",
+      "explanation": "Ravana este regele rakshasa al Lankăi și principalul adversar al lui Rama. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-101",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul-maimuță devotat lui Rama?",
+      "options": [
+        "Uke Mochi",
+        "Hanuman",
+        "Susanoo",
+        "Chang'e"
+      ],
+      "answer": "Hanuman",
+      "explanation": "Hanuman este simbol al devotamentului, curajului și forței și joacă un rol crucial în salvarea Sitei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-102",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul japonez care o ucide pe Yamata no Orochi?",
+      "options": [
+        "Indra",
+        "Agni",
+        "Susanoo",
+        "Chang'e"
+      ],
+      "answer": "Susanoo",
+      "explanation": "Susanoo îmbată monstrul cu sake și îl taie, găsind apoi o sabie în una dintre cozi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-103",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița japoneză a hranei ucisă de Tsukuyomi într-o tradiție?",
+      "options": [
+        "Uke Mochi",
+        "Hou Yi",
+        "Susanoo",
+        "Saraswati"
+      ],
+      "answer": "Uke Mochi",
+      "explanation": "Moartea ei explică separarea dintre soare și lună în versiunea în care Tsukuyomi o ucide. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-104",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul chinez al tunetului reprezentat frecvent cu cioc și instrumente de percuție?",
+      "options": [
+        "Hanuman",
+        "Ravana",
+        "Uke Mochi",
+        "Leigong"
+      ],
+      "answer": "Leigong",
+      "explanation": "Leigong pedepsește fărădelegile și produce tunetul cu instrumentele sale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-105",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița chineză asociată cu luna în povestea elixirului nemuririi?",
+      "options": [
+        "Agni",
+        "Leigong",
+        "Hou Yi",
+        "Chang'e"
+      ],
+      "answer": "Chang'e",
+      "explanation": "Chang'e ajunge pe Lună după consumarea elixirului, iar povestea este legată de Festivalul de la Mijlocul Toamnei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-106",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este arcașul chinez care doboară nouă dintre cei zece sori în mit?",
+      "options": [
+        "Agni",
+        "Ravana",
+        "Hou Yi",
+        "Rama"
+      ],
+      "answer": "Hou Yi",
+      "explanation": "Hou Yi salvează lumea de arșiță doborând nouă sori și lăsând unul pe cer. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-107",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul hindus al focului?",
+      "options": [
+        "Hanuman",
+        "Agni",
+        "Hou Yi",
+        "Rama"
+      ],
+      "answer": "Agni",
+      "explanation": "Agni este focul sacrificial și mediatorul care transportă ofrandele oamenilor către zei în tradiția vedică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-108",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul vedic al furtunii și războiului care îl învinge pe Vritra?",
+      "options": [
+        "Hou Yi",
+        "Indra",
+        "Chang'e",
+        "Hanuman"
+      ],
+      "answer": "Indra",
+      "explanation": "Indra este un mare zeu al Rigvedei și eliberează apele după uciderea șarpelui Vritra. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-109",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița hindusă a cunoașterii, muzicii și învățăturii?",
+      "options": [
+        "Leigong",
+        "Agni",
+        "Hou Yi",
+        "Saraswati"
+      ],
+      "answer": "Saraswati",
+      "explanation": "Saraswati este asociată cu vorbirea, educația, muzica și artele. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-110",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul aztec al soarelui și războiului, patron al Tenochtitlanului?",
+      "options": [
+        "Tlaloc",
+        "Veles",
+        "Shango",
+        "Huitzilopochtli"
+      ],
+      "answer": "Huitzilopochtli",
+      "explanation": "Huitzilopochtli este divinitatea tutelară a mexicilor și apare central în ideologia imperială aztecă. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-111",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul aztec al ploii?",
+      "options": [
+        "Veles",
+        "Arawn",
+        "Tlaloc",
+        "Tangaroa"
+      ],
+      "answer": "Tlaloc",
+      "explanation": "Tlaloc controlează ploaia și fertilitatea agricolă și are rădăcini foarte vechi în religia mesoamericană. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-112",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul mayaș al ploii cunoscut sub numele Chaac?",
+      "options": [
+        "Medb",
+        "Chaac",
+        "Ogun",
+        "Huitzilopochtli"
+      ],
+      "answer": "Chaac",
+      "explanation": "Chaac este invocat pentru precipitații și fertilitate, fiind reprezentat cu trăsături distinctive ale nasului și colților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-113",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este eroul irlandez al ciclului Ulster cunoscut pentru furia sa de luptă?",
+      "options": [
+        "Cú Chulainn",
+        "Huitzilopochtli",
+        "Pele",
+        "Ogun"
+      ],
+      "answer": "Cú Chulainn",
+      "explanation": "Cú Chulainn apără Ulsterul și este celebru pentru transformarea violentă numită ríastrad. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-114",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este regina din Connacht care pornește războiul din Táin Bó Cúailnge?",
+      "options": [
+        "Huitzilopochtli",
+        "Ogun",
+        "Medb",
+        "Tangaroa"
+      ],
+      "answer": "Medb",
+      "explanation": "Medb urmărește taurul brun din Cooley pentru a-și egala bogăția cu cea a soțului ei Ailill. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-115",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul galez asociat cu lumea de dincolo Annwn în Mabinogion?",
+      "options": [
+        "Arawn",
+        "Shango",
+        "Pele",
+        "Veles"
+      ],
+      "answer": "Arawn",
+      "explanation": "Arawn conduce Annwn și schimbă pentru un timp locul și înfățișarea cu Pwyll. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-116",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul slav al lumii de jos, vitelor și bogăției, rival simbolic al lui Perun?",
+      "options": [
+        "Veles",
+        "Pele",
+        "Huitzilopochtli",
+        "Ogun"
+      ],
+      "answer": "Veles",
+      "explanation": "Veles este asociat cu pământul, turmele, bogăția și conflictul mitic cu zeul furtunii Perun. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-117",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul polinezian al mării foarte important în tradiția maori?",
+      "options": [
+        "Medb",
+        "Tangaroa",
+        "Huitzilopochtli",
+        "Pele"
+      ],
+      "answer": "Tangaroa",
+      "explanation": "Tangaroa este asociat cu oceanul și ființele marine, deși genealogia și statutul său variază între insule. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-118",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeița vulcanilor și focului în tradiția hawaiană?",
+      "options": [
+        "Pele",
+        "Ogun",
+        "Veles",
+        "Shango"
+      ],
+      "answer": "Pele",
+      "explanation": "Pele este legată de activitatea vulcanică, în special de pe Insula Hawaiʻi, și apare în numeroase povești locale."
+    },
+    {
+      "id": "mythology-119",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este zeul yoruba al tunetului și fulgerului?",
+      "options": [
+        "Shango",
+        "Huitzilopochtli",
+        "Cú Chulainn",
+        "Chaac"
+      ],
+      "answer": "Shango",
+      "explanation": "Shango este un orisha regal asociat cu tunetul, focul, puterea și tobele bata. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-120",
+      "type": "choice",
+      "difficulty": 2,
+      "text": "Cine este orisha yoruba al fierului și tehnologiei metalului?",
+      "options": [
+        "Medb",
+        "Shango",
+        "Ogun",
+        "Huitzilopochtli"
+      ],
+      "answer": "Ogun",
+      "explanation": "Ogun este patron al fierarilor, războinicilor și drumurilor deschise prin folosirea uneltelor de metal. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-121",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Din câte ingrediente imposibile este făcut Gleipnir în relatarea din Prose Edda?",
+      "answer": "6",
+      "explanation": "Gleipnir este făcut din șase lucruri imposibile, precum zgomotul pașilor pisicii și rădăcinile muntelui, tocmai pentru a explica de ce acestea nu mai există."
+    },
+    {
+      "id": "mythology-122",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte mâini are fiecare Hecatoncheir în Teogonia lui Hesiod?",
+      "answer": "100",
+      "explanation": "Numele Hecatoncheires înseamnă aproximativ «cei cu o sută de mâini», iar fiecare dintre cei trei frați are o sută de brațe."
+    },
+    {
+      "id": "mythology-123",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte capete are fiecare Hecatoncheir în Teogonia lui Hesiod?",
+      "answer": "50",
+      "explanation": "Hesiod îi descrie pe Briareos, Cottus și Gyges cu câte cincizeci de capete și o sută de brațe."
+    },
+    {
+      "id": "mythology-124",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câte avataruri principale sunt grupate în tradiția populară Dashavatara a lui Vishnu?",
+      "answer": "10",
+      "explanation": "Dashavatara este lista convențională a zece avatari principali ai lui Vishnu, deși ordinea și identitatea unora variază regional."
+    },
+    {
+      "id": "mythology-125",
+      "type": "numeric",
+      "difficulty": 3,
+      "text": "Câți fii ai lui Horus protejează organele în tradiția funerară egipteană?",
+      "answer": "4",
+      "explanation": "Imsety, Hapy, Duamutef și Qebehsenuef sunt cei patru fii ai lui Horus asociați cu vasele canopice și protecția organelor."
+    },
+    {
+      "id": "mythology-126",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce text grec antic este prezentată sistematic genealogia zeilor de la Chaos până la Zeus?",
+      "options": [
+        "Teogonia lui Hesiod",
+        "Epopeea lui Ghilgameș",
+        "Prose Edda",
+        "Ramayana"
+      ],
+      "answer": "Teogonia lui Hesiod",
+      "explanation": "Teogonia este una dintre sursele principale pentru genealogia divină greacă și conflictele dintre generațiile de zei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-127",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce epopee greacă este centrală mânia lui Ahile?",
+      "options": [
+        "Mabinogion",
+        "Mahabharata",
+        "Iliada",
+        "Enuma Elish"
+      ],
+      "answer": "Iliada",
+      "explanation": "Iliada tratează o perioadă scurtă din ultimul an al războiului troian, concentrându-se pe conflictul lui Ahile cu Agamemnon."
+    },
+    {
+      "id": "mythology-128",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "În ce epopee greacă este relatată întoarcerea lui Odiseu în Ithaca?",
+      "options": [
+        "Mahabharata",
+        "Kojiki",
+        "Odiseea",
+        "Ramayana"
+      ],
+      "answer": "Odiseea",
+      "explanation": "Odiseea urmărește călătoria lui Odiseu și problemele familiei sale în absența lui. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-129",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce colecție islandeză păstrează poeme mitologice precum Völuspá și Hávamál?",
+      "options": [
+        "Teogonia lui Hesiod",
+        "Epopeea lui Ghilgameș",
+        "Poetic Edda",
+        "Ramayana"
+      ],
+      "answer": "Poetic Edda",
+      "explanation": "Poetic Edda este o sursă fundamentală pentru mitologia și poezia eroică nordică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-130",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce lucrare a lui Snorri Sturluson explică mituri nordice și tehnica poeziei skaldice?",
+      "options": [
+        "Ramayana",
+        "Poetic Edda",
+        "Prose Edda",
+        "Teogonia lui Hesiod"
+      ],
+      "answer": "Prose Edda",
+      "explanation": "Prose Edda a fost scrisă în secolul al XIII-lea și păstrează numeroase narațiuni mitologice nordice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-131",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce epopee mesopotamiană urmărește căutarea nemuririi de către regele Urukului?",
+      "options": [
+        "Ramayana",
+        "Kojiki",
+        "Epopeea lui Ghilgameș",
+        "Mabinogion"
+      ],
+      "answer": "Epopeea lui Ghilgameș",
+      "explanation": "Textul combină aventuri eroice cu reflecții despre prietenie, moarte și limitele condiției umane. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-132",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce poem babilonian descrie victoria lui Marduk asupra lui Tiamat?",
+      "options": [
+        "Prose Edda",
+        "Ramayana",
+        "Enuma Elish",
+        "Mahabharata"
+      ],
+      "answer": "Enuma Elish",
+      "explanation": "Enuma Elish este un poem de creație și legitimare a supremației lui Marduk și a Babilonului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-133",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce text indian relatează războiul dintre Pandava și Kaurava?",
+      "options": [
+        "Epopeea lui Ghilgameș",
+        "Mahabharata",
+        "Iliada",
+        "Mabinogion"
+      ],
+      "answer": "Mahabharata",
+      "explanation": "Mahabharata este o epopee monumentală care include Bhagavad Gita și numeroase tradiții filozofice și mitologice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-134",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce epopee indiană îl are ca protagonist pe Rama?",
+      "options": [
+        "Iliada",
+        "Mahabharata",
+        "Ramayana",
+        "Epopeea lui Ghilgameș"
+      ],
+      "answer": "Ramayana",
+      "explanation": "Ramayana relatează exilul lui Rama, răpirea Sitei și războiul împotriva lui Ravana. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-135",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce cronică japoneză din 712 conține mituri despre Izanagi, Izanami și Amaterasu?",
+      "options": [
+        "Prose Edda",
+        "Mahabharata",
+        "Kojiki",
+        "Mabinogion"
+      ],
+      "answer": "Kojiki",
+      "explanation": "Kojiki este cea mai veche cronică japoneză păstrată și combină genealogii, mituri și tradiții politice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-136",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Ce colecție galeză medievală cuprinde cele Patru Ramuri ale Mabinogi?",
+      "options": [
+        "Teogonia lui Hesiod",
+        "Epopeea lui Ghilgameș",
+        "Mabinogion",
+        "Kojiki"
+      ],
+      "answer": "Mabinogion",
+      "explanation": "Mabinogion este numele modern pentru un grup de povestiri galeze medievale cu puternice elemente mitologice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-137",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este mama Muzelor în Teogonia lui Hesiod?",
+      "options": [
+        "Eris",
+        "Mnemosyne",
+        "Hypnos",
+        "Peneus"
+      ],
+      "answer": "Mnemosyne",
+      "explanation": "Mnemosyne, personificarea memoriei, se unește cu Zeus și dă naștere celor nouă Muze. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-138",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul primordial al cerului, tatăl Titanilor?",
+      "options": [
+        "Clymene",
+        "Thanatos",
+        "Uranus",
+        "Cronos"
+      ],
+      "answer": "Uranus",
+      "explanation": "Uranus se unește cu Gaia și este răsturnat de fiul său Cronos în succesiunea generațiilor divine. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-139",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este Titanul care îl răstoarnă pe Uranus?",
+      "options": [
+        "Hypnos",
+        "Mnemosyne",
+        "Eris",
+        "Cronos"
+      ],
+      "answer": "Cronos",
+      "explanation": "Cronos își atacă tatăl cu secera oferită de Gaia și devine conducătorul generației titanice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-140",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este Titanida asociată cu memoria?",
+      "options": [
+        "Mnemosyne",
+        "Atlas",
+        "Hypnos",
+        "Nereus"
+      ],
+      "answer": "Mnemosyne",
+      "explanation": "Mnemosyne reprezintă memoria și devine mama Muzelor prin unirea cu Zeus. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-141",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este Titanul care poartă cerul după Titanomahie?",
+      "options": [
+        "Peneus",
+        "Mnemosyne",
+        "Cronos",
+        "Atlas"
+      ],
+      "answer": "Atlas",
+      "explanation": "Atlas este condamnat de Zeus să susțină bolta cerească la marginea lumii. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-142",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este mama lui Prometeu în genealogia lui Hesiod?",
+      "options": [
+        "Nereus",
+        "Atlas",
+        "Peneus",
+        "Clymene"
+      ],
+      "answer": "Clymene",
+      "explanation": "Hesiod o numește pe oceanida Clymene drept soția lui Iapetos și mama lui Atlas, Menoitios, Prometeu și Epimeteu."
+    },
+    {
+      "id": "mythology-143",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul somnului în mitologia greacă?",
+      "options": [
+        "Hypnos",
+        "Thanatos",
+        "Nereus",
+        "Clymene"
+      ],
+      "answer": "Hypnos",
+      "explanation": "Hypnos personifică somnul și este fratele lui Thanatos în tradiția poetică greacă. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-144",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este personificarea morții pașnice?",
+      "options": [
+        "Eris",
+        "Clymene",
+        "Thanatos",
+        "Peneus"
+      ],
+      "answer": "Thanatos",
+      "explanation": "Thanatos este personificarea morții și fratele lui Hypnos, diferit de Hades, conducătorul lumii morților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-145",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița discordiei care aruncă mărul la nunta lui Peleus și Thetis?",
+      "options": [
+        "Clymene",
+        "Eris",
+        "Mnemosyne",
+        "Hypnos"
+      ],
+      "answer": "Eris",
+      "explanation": "Mărul discordiei provoacă disputa dintre Hera, Atena și Afrodita și conduce indirect spre războiul troian. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-146",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul marin bătrân care își poate schimba forma și este tatăl nereidelor în unele tradiții?",
+      "options": [
+        "Nereus",
+        "Atlas",
+        "Eris",
+        "Mnemosyne"
+      ],
+      "answer": "Nereus",
+      "explanation": "Nereus este un zeu marin profetic, descris ca drept și capabil să-și schimbe forma. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-147",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul-râu tatăl nimfei Daphne în una dintre tradițiile principale?",
+      "options": [
+        "Atlas",
+        "Eris",
+        "Peneus",
+        "Uranus"
+      ],
+      "answer": "Peneus",
+      "explanation": "Peneus este un zeu fluvial din Tesalia și apare ca tată al lui Daphne în povestea urmăririi de către Apollo."
+    },
+    {
+      "id": "mythology-148",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine sunt cei doi frați ai lui Odin care participă la uciderea lui Ymir?",
+      "options": [
+        "Sigyn",
+        "Vili și Vé",
+        "Ratatoskr",
+        "Mímir"
+      ],
+      "answer": "Vili și Vé",
+      "explanation": "Odin, Vili și Vé îl ucid pe Ymir și folosesc corpul lui pentru a forma lumea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-149",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este uriașul primordial din al cărui corp este făcut cosmosul?",
+      "options": [
+        "Borr",
+        "Ymir",
+        "Níðhöggr",
+        "Ratatoskr"
+      ],
+      "answer": "Ymir",
+      "explanation": "Din carnea, sângele, oasele și craniul lui Ymir, zeii formează pământul, mările, munții și cerul. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-150",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este vaca primordială care îl hrănește pe Ymir?",
+      "options": [
+        "Auðhumla",
+        "Borr",
+        "Vili și Vé",
+        "Sigyn"
+      ],
+      "answer": "Auðhumla",
+      "explanation": "Auðhumla îl hrănește pe Ymir cu laptele ei și linge gheața sărată din care apare Búri. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-151",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este primul strămoș al zeilor scos din gheață de Auðhumla?",
+      "options": [
+        "Sigyn",
+        "Auðhumla",
+        "Mímir",
+        "Búri"
+      ],
+      "answer": "Búri",
+      "explanation": "Búri apare treptat din blocurile sărate linsă de vaca primordială și devine strămoșul lui Odin. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-152",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este tatăl lui Odin?",
+      "options": [
+        "Surtr",
+        "Borr",
+        "Ymir",
+        "Sigyn"
+      ],
+      "answer": "Borr",
+      "explanation": "Borr, fiul lui Búri, se unește cu Bestla și devine tatăl lui Odin, Vili și Vé. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-153",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este mama lui Odin?",
+      "options": [
+        "Búri",
+        "Ymir",
+        "Bestla",
+        "Níðhöggr"
+      ],
+      "answer": "Bestla",
+      "explanation": "Bestla este o uriașă, fiica lui Bölthorn, și mama lui Odin, Vili și Vé. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-154",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine păzește izvorul înțelepciunii de la rădăcina lui Yggdrasil?",
+      "options": [
+        "Ratatoskr",
+        "Surtr",
+        "Mímir",
+        "Bestla"
+      ],
+      "answer": "Mímir",
+      "explanation": "Odin își sacrifică un ochi pentru a bea din izvorul lui Mímir și a dobândi cunoaștere. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-155",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine roade una dintre rădăcinile lui Yggdrasil?",
+      "options": [
+        "Surtr",
+        "Auðhumla",
+        "Níðhöggr",
+        "Ratatoskr"
+      ],
+      "answer": "Níðhöggr",
+      "explanation": "Dragonul sau șarpele Níðhöggr roade rădăcina copacului cosmic și apare în viziunile despre lumea morților. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-156",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine aleargă pe trunchiul lui Yggdrasil ducând insulte între vultur și Níðhöggr?",
+      "options": [
+        "Mímir",
+        "Ratatoskr",
+        "Borr",
+        "Sigyn"
+      ],
+      "answer": "Ratatoskr",
+      "explanation": "Veverița Ratatoskr transmite mesaje ostile între creaturile aflate la extremitățile arborelui cosmic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-157",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este uriașul de foc care va lupta la Ragnarök și va incendia lumea?",
+      "options": [
+        "Ymir",
+        "Búri",
+        "Mímir",
+        "Surtr"
+      ],
+      "answer": "Surtr",
+      "explanation": "Surtr vine din Muspelheim cu sabia arzătoare și îl ucide pe Freyr în confruntarea finală. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-158",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este soția lui Loki și mama lui Narfi în relatarea legării lui?",
+      "options": [
+        "Bestla",
+        "Sigyn",
+        "Mímir",
+        "Borr"
+      ],
+      "answer": "Sigyn",
+      "explanation": "Sigyn rămâne lângă Loki și ține un vas pentru a prinde veninul șarpelui suspendat deasupra lui. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-159",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul mesopotamian care ucide taurul ceresc alături de Ghilgameș?",
+      "options": [
+        "Enkidu",
+        "Atum",
+        "Shu",
+        "Ninkasi"
+      ],
+      "answer": "Enkidu",
+      "explanation": "Enkidu și Ghilgameș omoară Taurul Cerului trimis de Ishtar, fapt care contribuie la condamnarea lui Enkidu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-160",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este demonul-paznic al Pădurii Cedrilor în Epopeea lui Ghilgameș?",
+      "options": [
+        "Humbaba",
+        "Ninkasi",
+        "Enlil",
+        "Ptah"
+      ],
+      "answer": "Humbaba",
+      "explanation": "Humbaba păzește Pădurea Cedrilor la porunca zeului Enlil și este ucis de Ghilgameș și Enkidu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-161",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul sumerian al furtunii și autorității, numit Enlil?",
+      "options": [
+        "Mot",
+        "Apophis",
+        "Enlil",
+        "Ninkasi"
+      ],
+      "answer": "Enlil",
+      "explanation": "Enlil este una dintre marile divinități mesopotamiene și are un rol central în ordinea cosmică și regalitate. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-162",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița sumeriană a berii?",
+      "options": [
+        "Ninkasi",
+        "Ptah",
+        "Atum",
+        "Anat"
+      ],
+      "answer": "Ninkasi",
+      "explanation": "Ninkasi este celebrată într-un imn care păstrează informații despre producerea berii în Mesopotamia. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-163",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul egiptean care îl creează pe sine și pe alți zei în cosmogonia heliopolitană?",
+      "options": [
+        "Enlil",
+        "Ninkasi",
+        "Tefnut",
+        "Atum"
+      ],
+      "answer": "Atum",
+      "explanation": "Atum este zeul creator care apare din apele primordiale și inițiază genealogia Enneadei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-164",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul egiptean al aerului, tatăl lui Geb și Nut?",
+      "options": [
+        "Anat",
+        "Tefnut",
+        "Atum",
+        "Shu"
+      ],
+      "answer": "Shu",
+      "explanation": "Shu separă cerul Nut de pământul Geb și menține spațiul dintre ele. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-165",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița egipteană a umezelii, sora și partenera lui Shu?",
+      "options": [
+        "Tefnut",
+        "Ptah",
+        "Mot",
+        "Shu"
+      ],
+      "answer": "Tefnut",
+      "explanation": "Tefnut formează cu Shu perechea primordială din care se nasc Geb și Nut. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-166",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este monstrul-serpentin al haosului care atacă barca solară a lui Ra?",
+      "options": [
+        "Tefnut",
+        "Enkidu",
+        "Atum",
+        "Apophis"
+      ],
+      "answer": "Apophis",
+      "explanation": "Apophis sau Apep încearcă noapte de noapte să oprească ordinea solară și este respins de zeii protectori. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-167",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul creator memfitan care creează prin inimă și cuvânt în teologia lui Memphis?",
+      "options": [
+        "Anat",
+        "Mot",
+        "Apophis",
+        "Ptah"
+      ],
+      "answer": "Ptah",
+      "explanation": "Ptah concepe lucrurile în inimă și le aduce la existență prin rostire în teologia memfitană. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-168",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița canaanită războinică și soră a lui Baal în textele ugaritice?",
+      "options": [
+        "Atum",
+        "Mot",
+        "Enkidu",
+        "Anat"
+      ],
+      "answer": "Anat",
+      "explanation": "Anat este o zeiță violentă și protectoare care intervine în conflictele lui Baal cu rivalii săi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-169",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul canaanit al morții care îl învinge temporar pe Baal?",
+      "options": [
+        "Mot",
+        "Enlil",
+        "Enkidu",
+        "Shu"
+      ],
+      "answer": "Mot",
+      "explanation": "Mot personifică moartea și seceta și intră în conflict ciclic cu zeul furtunii Baal. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-170",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine rostește Bhagavad Gita pe câmpul de luptă de la Kurukshetra?",
+      "options": [
+        "Zeul Porumbului",
+        "Krishna",
+        "Orunmila",
+        "Tsukuyomi"
+      ],
+      "answer": "Krishna",
+      "explanation": "Krishna îi oferă lui Arjuna învățături despre datorie, acțiune, cunoaștere și devoțiune. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-171",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este războinicul Pandava care primește învățătura din Bhagavad Gita?",
+      "options": [
+        "Kagutsuchi",
+        "Arjuna",
+        "Tezcatlipoca",
+        "Zeul Porumbului"
+      ],
+      "answer": "Arjuna",
+      "explanation": "Arjuna ezită să lupte împotriva rudelor sale, iar această criză declanșează dialogul filozofic cu Krishna. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-172",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este soția comună a celor cinci frați Pandava?",
+      "options": [
+        "Tsukuyomi",
+        "Zeul Porumbului",
+        "Draupadi",
+        "Kali"
+      ],
+      "answer": "Draupadi",
+      "explanation": "Draupadi este o figură centrală a Mahabharatei, iar umilirea ei la curtea Kaurava intensifică conflictul. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-173",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița hindusă războinică ce îl ucide pe demonul Mahishasura?",
+      "options": [
+        "Kagutsuchi",
+        "Arjuna",
+        "Durga",
+        "Zeul Porumbului"
+      ],
+      "answer": "Durga",
+      "explanation": "Durga este creată sau manifestată prin puterile zeilor pentru a învinge demonul-bivol Mahishasura. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-174",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeița hindusă asociată cu timpul, moartea și o formă teribilă a energiei divine?",
+      "options": [
+        "Durga",
+        "Kali",
+        "Tsukuyomi",
+        "Zeul Porumbului"
+      ],
+      "answer": "Kali",
+      "explanation": "Kali reprezintă puterea distructivă și transformatoare și este venerată în numeroase tradiții shakta. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-175",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul japonez al lunii?",
+      "options": [
+        "Orunmila",
+        "Draupadi",
+        "Tsukuyomi",
+        "Kali"
+      ],
+      "answer": "Tsukuyomi",
+      "explanation": "Tsukuyomi este fratele Amaterasuei și apare în miturile shinto despre separarea soarelui și lunii. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-176",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul japonez al focului a cărui naștere o ucide pe Izanami?",
+      "options": [
+        "Krishna",
+        "Kagutsuchi",
+        "Tezcatlipoca",
+        "Orunmila"
+      ],
+      "answer": "Kagutsuchi",
+      "explanation": "Nașterea lui Kagutsuchi o arde mortal pe Izanami și provoacă mânia lui Izanagi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-177",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este figura chineză care desparte cerul de pământ în miturile de creație târzii?",
+      "options": [
+        "Draupadi",
+        "Pangu",
+        "Tsukuyomi",
+        "Kali"
+      ],
+      "answer": "Pangu",
+      "explanation": "Pangu crește între cer și pământ și, după moarte, corpul său este transformat în elemente ale lumii. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-178",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul aztec al nopții, sorții și oglinzii fumegânde?",
+      "options": [
+        "Tsukuyomi",
+        "Krishna",
+        "Arjuna",
+        "Tezcatlipoca"
+      ],
+      "answer": "Tezcatlipoca",
+      "explanation": "Tezcatlipoca este o divinitate complexă asociată cu regalitatea, conflictul, destinul și magia. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-179",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul mayaș asociat frecvent cu porumbul și renașterea?",
+      "options": [
+        "Krishna",
+        "Durga",
+        "Zeul Porumbului",
+        "Tezcatlipoca"
+      ],
+      "answer": "Zeul Porumbului",
+      "explanation": "Zeul Porumbului apare în iconografia mayașă ca figură a vegetației, ciclului agricol și regenerării. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-180",
+      "type": "choice",
+      "difficulty": 3,
+      "text": "Cine este zeul yoruba al divinației asociat cu sistemul Ifá?",
+      "options": [
+        "Orunmila",
+        "Kagutsuchi",
+        "Draupadi",
+        "Kali"
+      ],
+      "answer": "Orunmila",
+      "explanation": "Orunmila este orisha înțelepciunii și al divinației, iar preoții babalawo interpretează corpusul Ifá. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-181",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte nopți spune Odin în Hávamál că a atârnat pe copacul bătut de vânt pentru a dobândi runele?",
+      "answer": "9",
+      "explanation": "În Hávamál, Odin se sacrifică pe sine însuși timp de nouă nopți, străpuns de suliță, înainte de a zări și lua runele."
+    },
+    {
+      "id": "mythology-182",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte ingrediente imposibile enumeră Gylfaginning pentru fabricarea lui Gleipnir?",
+      "answer": "6",
+      "explanation": "Lista include zgomotul pașilor pisicii, barba femeii, rădăcinile muntelui, tendoanele ursului, respirația peștelui și saliva păsării. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-183",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câți fii ai lui Horus sunt asociați cu vasele canopice?",
+      "answer": "4",
+      "explanation": "Cei patru fii ai lui Horus au roluri funerare distincte și sunt legați de protecția unor organe și direcții."
+    },
+    {
+      "id": "mythology-184",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte perechi divine formează Ogdoada de la Hermopolis?",
+      "answer": "4",
+      "explanation": "Cele opt divinități ale Ogdoadei sunt organizate în patru perechi masculin-feminin care personifică stări primordiale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-185",
+      "type": "numeric",
+      "difficulty": 4,
+      "text": "Câte lumi sunt invocate explicit prin formula «nouă lumi» în tradiția poetică nordică?",
+      "answer": "9",
+      "explanation": "Textele nordice vorbesc despre «nouă lumi», deși listele moderne fixe ale celor nouă tărâmuri nu provin dintr-o enumerare unică antică."
+    },
+    {
+      "id": "mythology-186",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce zeiță primordială îl sfătuiește pe Cronos să îl răstoarne pe Uranus?",
+      "options": [
+        "Selene",
+        "Hyperion",
+        "Helios",
+        "Gaia"
+      ],
+      "answer": "Gaia",
+      "explanation": "Gaia, nemulțumită de modul în care Uranus își ține copiii ascunși, îl înarmează pe Cronos cu secera. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-187",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce Titan este tatăl lui Helios, Selene și Eos?",
+      "options": [
+        "Theia",
+        "Selene",
+        "Hyperion",
+        "Perses"
+      ],
+      "answer": "Hyperion",
+      "explanation": "Hyperion se unește cu Theia, iar copiii lor personifică Soarele, Luna și Aurora în genealogia hesiodică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-188",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce Titan este asociat cu inteligența și este tatăl lui Leto?",
+      "options": [
+        "Selene",
+        "Eos",
+        "Helios",
+        "Coeus"
+      ],
+      "answer": "Coeus",
+      "explanation": "Coeus se unește cu Phoebe și devine tatăl lui Leto și Asteria în genealogia lui Hesiod. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-189",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce Titanidă este mama lui Helios, Selene și Eos?",
+      "options": [
+        "Theia",
+        "Hyperion",
+        "Eos",
+        "Gaia"
+      ],
+      "answer": "Theia",
+      "explanation": "Theia este partenera lui Hyperion și mama principalelor divinități luminoase ale zilei și nopții. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-190",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce Titan este tatăl lui Prometeu?",
+      "options": [
+        "Iapetos",
+        "Theia",
+        "Asteria",
+        "Gaia"
+      ],
+      "answer": "Iapetos",
+      "explanation": "Iapetos se unește cu Clymene și are fii precum Atlas, Menoitios, Prometeu și Epimeteu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-191",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Ce zeiță este mama lui Typhon în Teogonia lui Hesiod?",
+      "options": [
+        "Gaia",
+        "Iapetos",
+        "Perses",
+        "Theia"
+      ],
+      "answer": "Gaia",
+      "explanation": "După înfrângerea Titanilor, Gaia îl naște pe Typhon împreună cu Tartarus ca ultim mare adversar al lui Zeus."
+    },
+    {
+      "id": "mythology-192",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este mama Hecatei în Teogonia lui Hesiod?",
+      "options": [
+        "Coeus",
+        "Eos",
+        "Asteria",
+        "Selene"
+      ],
+      "answer": "Asteria",
+      "explanation": "Asteria se unește cu Perses și o naște pe Hecate, divinitate căreia Hesiod îi acordă un pasaj neobișnuit de elogios."
+    },
+    {
+      "id": "mythology-193",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este tatăl Hecatei în Teogonia lui Hesiod?",
+      "options": [
+        "Selene",
+        "Perses",
+        "Coeus",
+        "Theia"
+      ],
+      "answer": "Perses",
+      "explanation": "Perses, fiul lui Crius și Eurybia, este numit tatăl Hecatei împreună cu Asteria. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-194",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița zorilor în genealogia greacă?",
+      "options": [
+        "Asteria",
+        "Eos",
+        "Theia",
+        "Hyperion"
+      ],
+      "answer": "Eos",
+      "explanation": "Eos este fiica lui Hyperion și Theia și sora lui Helios și Selene. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-195",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița lunii în genealogia titanilor?",
+      "options": [
+        "Asteria",
+        "Eos",
+        "Selene",
+        "Hyperion"
+      ],
+      "answer": "Selene",
+      "explanation": "Selene personifică Luna și este sora lui Helios și Eos. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-196",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul-soare distinct de Apollo în genealogia veche greacă?",
+      "options": [
+        "Hyperion",
+        "Helios",
+        "Coeus",
+        "Selene"
+      ],
+      "answer": "Helios",
+      "explanation": "Helios conduce carul solar și este fiul lui Hyperion și Theia; identificarea lui cu Apollo devine mai puternică ulterior."
+    },
+    {
+      "id": "mythology-197",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine păstrează merele care mențin tinerețea zeilor nordici?",
+      "options": [
+        "Iðunn",
+        "Njörðr",
+        "Víðarr",
+        "Heimdall"
+      ],
+      "answer": "Iðunn",
+      "explanation": "Iðunn păstrează merele regeneratoare, iar răpirea ei de către Þjazi îi face pe zei să îmbătrânească. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-198",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este uriașul care o răpește pe Iðunn?",
+      "options": [
+        "Thor",
+        "Hel",
+        "Váli",
+        "Þjazi"
+      ],
+      "answer": "Þjazi",
+      "explanation": "Þjazi îl constrânge pe Loki să o scoată pe Iðunn din Ásgard și o duce în fortăreața sa."
+    },
+    {
+      "id": "mythology-199",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este fiica lui Þjazi care se căsătorește cu zeul Njörðr?",
+      "options": [
+        "Njörðr",
+        "Höðr",
+        "Skaði",
+        "Thor"
+      ],
+      "answer": "Skaði",
+      "explanation": "Skaði cere compensație pentru moartea tatălui ei și ajunge să îl aleagă pe Njörðr dintre zei după picioare."
+    },
+    {
+      "id": "mythology-200",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul mării și al bogăției, tatăl lui Freyr și Freyja?",
+      "options": [
+        "Heimdall",
+        "Njörðr",
+        "Iðunn",
+        "Skaði"
+      ],
+      "answer": "Njörðr",
+      "explanation": "Njörðr aparține Vanir și este asociat cu marea, navigația, vântul și prosperitatea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-201",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul orb care îl ucide pe Baldr fără să știe consecințele?",
+      "options": [
+        "Váli",
+        "Höðr",
+        "Njörðr",
+        "Hel"
+      ],
+      "answer": "Höðr",
+      "explanation": "Loki îl determină pe Höðr să arunce vâscul fatal spre Baldr. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-202",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este fiul lui Odin născut pentru a-l răzbuna pe Baldr, conform tradiției?",
+      "options": [
+        "Surtr",
+        "Váli",
+        "Víðarr",
+        "Heimdall"
+      ],
+      "answer": "Váli",
+      "explanation": "Váli crește extrem de repede și îl ucide pe Höðr ca răzbunare pentru moartea lui Baldr. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-203",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este fiul lui Odin care îl răzbună pe tatăl său la Ragnarök ucigându-l pe Fenrir?",
+      "options": [
+        "Thor",
+        "Víðarr",
+        "Höðr",
+        "Skaði"
+      ],
+      "answer": "Víðarr",
+      "explanation": "Víðarr supraviețuiește unei părți a Ragnarökului și îl ucide pe lupul Fenrir. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-204",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul care îl va ucide pe șarpele Jörmungandr, murind apoi din venin?",
+      "options": [
+        "Váli",
+        "Iðunn",
+        "Víðarr",
+        "Thor"
+      ],
+      "answer": "Thor",
+      "explanation": "Thor îl omoară pe șarpele lumii la Ragnarök, dar face doar nouă pași înainte de a cădea otrăvit."
+    },
+    {
+      "id": "mythology-205",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul care va lupta cu Loki și îl va ucide reciproc la Ragnarök?",
+      "options": [
+        "Þjazi",
+        "Heimdall",
+        "Surtr",
+        "Víðarr"
+      ],
+      "answer": "Heimdall",
+      "explanation": "Heimdall și Loki se confruntă în final și se omoară unul pe celălalt. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-206",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este uriașul de foc care îl ucide pe Freyr la Ragnarök?",
+      "options": [
+        "Thor",
+        "Surtr",
+        "Váli",
+        "Heimdall"
+      ],
+      "answer": "Surtr",
+      "explanation": "Freyr se confruntă cu Surtr fără sabia sa magică și este învins. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-207",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este fiica lui Loki asociată cu tărâmul morților?",
+      "options": [
+        "Höðr",
+        "Surtr",
+        "Hel",
+        "Thor"
+      ],
+      "answer": "Hel",
+      "explanation": "Hel este trimisă de Odin în Niflheim și primește autoritate asupra celor morți de boală sau bătrânețe. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-208",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este vizirul Inannei care cere ajutor zeilor după coborârea ei în lumea de jos?",
+      "options": [
+        "Ninshubur",
+        "Dumuzi",
+        "Athirat",
+        "Dagan"
+      ],
+      "answer": "Ninshubur",
+      "explanation": "Inanna îi ordonă lui Ninshubur să ceară intervenția zeilor dacă ea nu se întoarce. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-209",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul care creează ființele ce o readuc pe Inanna din lumea de jos?",
+      "options": [
+        "Dumuzi",
+        "Geshtinanna",
+        "Enki",
+        "El"
+      ],
+      "answer": "Enki",
+      "explanation": "Enki creează făpturi capabile să ajungă la Ereshkigal și să obțină trupul Inannei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-210",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine îl înlocuiește în cele din urmă pe Inanna în lumea de jos o parte din an?",
+      "options": [
+        "El",
+        "Athirat",
+        "Enki",
+        "Dumuzi"
+      ],
+      "answer": "Dumuzi",
+      "explanation": "Dumuzi este ales ca substitut, iar ciclul său cu Geshtinanna explică alternanța șederii în lumea de jos. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-211",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este sora lui Dumuzi care îi împarte destinul sezonier în unele versiuni?",
+      "options": [
+        "Dagan",
+        "Enki",
+        "El",
+        "Geshtinanna"
+      ],
+      "answer": "Geshtinanna",
+      "explanation": "Geshtinanna acceptă să petreacă o parte din an în lumea de jos în locul fratelui ei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-212",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul egiptean care notează rezultatul cântăririi inimii?",
+      "options": [
+        "Athirat",
+        "Nephthys",
+        "Thoth",
+        "Ninshubur"
+      ],
+      "answer": "Thoth",
+      "explanation": "Thoth apare ca scrib divin la judecata morților și consemnează rezultatul probei inimii. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-213",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este monstrul care devorează inima celui găsit nedemn în judecata egipteană?",
+      "options": [
+        "Dagan",
+        "Isis",
+        "Athirat",
+        "Ammit"
+      ],
+      "answer": "Ammit",
+      "explanation": "Ammit combină trăsături de crocodil, leu și hipopotam și distruge inima celui care eșuează la judecată. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-214",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița egipteană reprezentată printr-un tron și al cărei nume este legat de simbolul tronului?",
+      "options": [
+        "Isis",
+        "Enki",
+        "Nephthys",
+        "Dumuzi"
+      ],
+      "answer": "Isis",
+      "explanation": "Numele și iconografia lui Isis includ semnul tronului, potrivit rolului ei în legitimitatea regală. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-215",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița egipteană soră a lui Isis și soția lui Seth?",
+      "options": [
+        "Nephthys",
+        "Dagan",
+        "Ninshubur",
+        "Thoth"
+      ],
+      "answer": "Nephthys",
+      "explanation": "Nephthys participă la lamentația și protecția lui Osiris și are funcții funerare importante. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-216",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este tatăl lui Baal în multe texte ugaritice, numit Dagan?",
+      "options": [
+        "Dagan",
+        "Isis",
+        "Geshtinanna",
+        "Ammit"
+      ],
+      "answer": "Dagan",
+      "explanation": "Dagan apare în tradiția levantină ca divinitate importantă și este legat genealogic de Baal în textele ugaritice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-217",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul suprem și patriarhul panteonului ugaritic?",
+      "options": [
+        "El",
+        "Nephthys",
+        "Dumuzi",
+        "Ninshubur"
+      ],
+      "answer": "El",
+      "explanation": "El este figura paternă și regală a adunării divine, distinctă de zeul furtunii Baal. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-218",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița mării și mama zeilor în tradiția ugaritică, consoarta lui El?",
+      "options": [
+        "Geshtinanna",
+        "Thoth",
+        "Nephthys",
+        "Athirat"
+      ],
+      "answer": "Athirat",
+      "explanation": "Athirat, cunoscută și ca Asherah în alte contexte, este marea zeiță maternă a panteonului ugaritic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-219",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița hindusă care apare ca energie divină războinică în Devi Mahatmya?",
+      "options": [
+        "Varaha",
+        "Durga",
+        "Ame-no-Uzume",
+        "Vasuki"
+      ],
+      "answer": "Durga",
+      "explanation": "Devi Mahatmya o prezintă pe Marea Zeiță în forme războinice care înving forțele demonice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-220",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este demonul-bivol ucis de Durga?",
+      "options": [
+        "Durga",
+        "Kurma",
+        "Mahishasura",
+        "Ninigi"
+      ],
+      "answer": "Mahishasura",
+      "explanation": "Mahishasura își schimbă forma în luptă, dar Durga îl învinge și restabilește ordinea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-221",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este avatara feminină sau forma seducătoare a lui Vishnu asociată cu distribuirea amritei?",
+      "options": [
+        "Jimmu",
+        "Mohini",
+        "Vasuki",
+        "Narasimha"
+      ],
+      "answer": "Mohini",
+      "explanation": "Mohini îi păcălește pe asura și asigură zeilor accesul la nectarul nemuririi în mitul baterii oceanului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-222",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeul-șarpe folosit drept frânghie la Baterea Oceanului de Lapte?",
+      "options": [
+        "Kurma",
+        "Vasuki",
+        "Jimmu",
+        "Ninigi"
+      ],
+      "answer": "Vasuki",
+      "explanation": "Zeii și demonii folosesc șarpele Vasuki în jurul muntelui Mandara pentru a bate oceanul cosmic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-223",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este muntele folosit drept ax la Baterea Oceanului de Lapte?",
+      "options": [
+        "Ame-no-Uzume",
+        "Narasimha",
+        "Vasuki",
+        "Mandara"
+      ],
+      "answer": "Mandara",
+      "explanation": "Muntele Mandara funcționează ca pivot, iar Vishnu în forma Kurma îl susține. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-224",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este avatara-țestoasă a lui Vishnu?",
+      "options": [
+        "Durga",
+        "Vasuki",
+        "Kurma",
+        "Ninigi"
+      ],
+      "answer": "Kurma",
+      "explanation": "Kurma susține muntele Mandara în timpul baterii oceanului și împiedică scufundarea lui. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-225",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este avatara-mistreț a lui Vishnu care ridică Pământul din ape?",
+      "options": [
+        "Mohini",
+        "Ninigi",
+        "Varaha",
+        "Mahishasura"
+      ],
+      "answer": "Varaha",
+      "explanation": "Varaha o salvează pe zeița Pământului și îl învinge pe demonul Hiranyaksha. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-226",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este avatara om-leu a lui Vishnu?",
+      "options": [
+        "Narasimha",
+        "Mahishasura",
+        "Vasuki",
+        "Mandara"
+      ],
+      "answer": "Narasimha",
+      "explanation": "Narasimha îl ucide pe Hiranyakashipu evitând condițiile prin care demonul credea că devenise invulnerabil. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-227",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeița japoneză care îl ademenește pe Amaterasu să iasă din peșteră prin dans?",
+      "options": [
+        "Jimmu",
+        "Varaha",
+        "Mandara",
+        "Ame-no-Uzume"
+      ],
+      "answer": "Ame-no-Uzume",
+      "explanation": "Ame-no-Uzume dansează în fața zeilor, iar râsul lor stârnește curiozitatea Amaterasuei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-228",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este zeitatea sau strămoșul japonez trimis să pacifice pământul și asociat cu coborârea cerească?",
+      "options": [
+        "Ninigi",
+        "Jimmu",
+        "Ame-no-Uzume",
+        "Mohini"
+      ],
+      "answer": "Ninigi",
+      "explanation": "Ninigi, nepotul Amaterasuei, coboară pe pământ și devine strămoș mitic al liniei imperiale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-229",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cine este primul împărat mitic al Japoniei în tradiția cronicilor imperiale?",
+      "options": [
+        "Ame-no-Uzume",
+        "Kurma",
+        "Jimmu",
+        "Varaha"
+      ],
+      "answer": "Jimmu",
+      "explanation": "Jimmu este prezentat în Kojiki și Nihon Shoki ca descendent al zeiței Amaterasu și fondator al liniei imperiale."
+    },
+    {
+      "id": "mythology-230",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește interpretarea prin care zeii străini sunt identificați cu divinități grecești considerate echivalente?",
+      "options": [
+        "Teogonie",
+        "Interpretatio graeca",
+        "Interpretatio romana",
+        "Anabasis"
+      ],
+      "answer": "Interpretatio graeca",
+      "explanation": "Grecii puteau descrie divinități egiptene, persane sau celtice folosind numele unor zei proprii cu funcții asemănătoare. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-231",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește identificarea romană a zeilor altor popoare cu divinități romane?",
+      "options": [
+        "Cosmogonie",
+        "Interpretatio romana",
+        "Interpretatio graeca",
+        "Trickster"
+      ],
+      "answer": "Interpretatio romana",
+      "explanation": "Autorii romani au tradus frecvent panteoanele străine prin corespondențe cu propriii zei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-232",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește procesul prin care două divinități sau tradiții religioase se combină într-o formă nouă?",
+      "options": [
+        "Interpretatio graeca",
+        "Escatologie",
+        "Sincretism",
+        "Trickster"
+      ],
+      "answer": "Sincretism",
+      "explanation": "Sincretismul apare frecvent în societăți cu schimb cultural intens și poate uni nume, funcții și ritualuri diferite. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-233",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește povestea care explică originea lumii?",
+      "options": [
+        "Trickster",
+        "Cosmogonie",
+        "Anabasis",
+        "Sincretism"
+      ],
+      "answer": "Cosmogonie",
+      "explanation": "O cosmogonie descrie nașterea sau organizarea cosmosului și poate începe cu haos, ape primordiale sau o divinitate creatoare."
+    },
+    {
+      "id": "mythology-234",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește povestea despre originea zeilor?",
+      "options": [
+        "Mit al potopului",
+        "Sincretism",
+        "Escatologie",
+        "Teogonie"
+      ],
+      "answer": "Teogonie",
+      "explanation": "Teogonia urmărește nașterea și genealogia divinităților, precum lucrarea lui Hesiod din Grecia antică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-235",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește povestea despre sfârșitul ordinii cosmice sau al lumii?",
+      "options": [
+        "Interpretatio graeca",
+        "Escatologie",
+        "Katabasis",
+        "Trickster"
+      ],
+      "answer": "Escatologie",
+      "explanation": "Escatologia tratează destinul final al lumii, zeilor sau oamenilor, precum Ragnarök în tradiția nordică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-236",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește un erou cultural care fură sau aduce oamenilor un element esențial al civilizației?",
+      "options": [
+        "Sincretism",
+        "Escatologie",
+        "Culture hero",
+        "Cosmogonie"
+      ],
+      "answer": "Culture hero",
+      "explanation": "Prometeu sau Māui pot fi analizați ca eroi culturali deoarece dobândesc focul sau alte beneficii pentru oameni. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-237",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește o ființă mitică înșelătoare care încalcă reguli și produce schimbări?",
+      "options": [
+        "Mit al potopului",
+        "Trickster",
+        "Escatologie",
+        "Anabasis"
+      ],
+      "answer": "Trickster",
+      "explanation": "Tricksterul poate provoca atât haos, cât și creație; Loki, Anansi sau Coyote sunt exemple bine cunoscute. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-238",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește coborârea unui personaj viu în lumea morților?",
+      "options": [
+        "Sincretism",
+        "Cosmogonie",
+        "Interpretatio graeca",
+        "Katabasis"
+      ],
+      "answer": "Katabasis",
+      "explanation": "Katabasis apare în mituri și epopei precum poveștile lui Orfeu, Odiseu, Inanna și Enea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-239",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește urcarea sau revenirea din lumea de jos, opusă katabasisului?",
+      "options": [
+        "Teogonie",
+        "Anabasis",
+        "Culture hero",
+        "Cosmogonie"
+      ],
+      "answer": "Anabasis",
+      "explanation": "În analiză mitologică, anabasis poate desemna revenirea sau ascensiunea după coborârea în lumea infernală. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-240",
+      "type": "choice",
+      "difficulty": 4,
+      "text": "Cum se numește motivul mitic al unei mari inundații care distruge o mare parte din omenire?",
+      "options": [
+        "Katabasis",
+        "Interpretatio graeca",
+        "Mit al potopului",
+        "Sincretism"
+      ],
+      "answer": "Mit al potopului",
+      "explanation": "Povești despre potop apar în Mesopotamia, tradiția biblică, Grecia și alte regiuni, dar nu provin toate dintr-o singură versiune."
+    },
+    {
+      "id": "mythology-241",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte zile complete devastează furtuna potopului înainte ca în ziua a șaptea să înceapă să se liniștească în Epopeea lui Ghilgameș?",
+      "answer": "6",
+      "explanation": "Furtuna devastează lumea timp de șase zile complete, iar în ziua a șaptea violența ei începe să se liniștească, permițându-i lui Utnapiștim să evalueze amploarea dezastrului."
+    },
+    {
+      "id": "mythology-242",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte porți ale lumii de jos traversează Inanna înainte de a ajunge la Ereshkigal?",
+      "answer": "7",
+      "explanation": "La fiecare dintre cele șapte porți, Inanna pierde un atribut al puterii sale până când ajunge lipsită de însemne."
+    },
+    {
+      "id": "mythology-243",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câți judecători Anunnaki sunt menționați în relatarea sumeriană a coborârii Inannei?",
+      "answer": "7",
+      "explanation": "Textul evocă șapte Anunnaki care judecă în lumea de jos și pronunță verdictul împotriva Inannei. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-244",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câți mari zei masculini compun Trimurti în formularea hinduistă clasică?",
+      "answer": "3",
+      "explanation": "Trimurti îi grupează pe Brahma, Vishnu și Shiva ca funcții de creație, păstrare și transformare, fără a reprezenta toate formele hinduismului."
+    },
+    {
+      "id": "mythology-245",
+      "type": "numeric",
+      "difficulty": 5,
+      "text": "Câte surori formează Pleiadele în tradiția greacă clasică?",
+      "answer": "7",
+      "explanation": "Cele șapte Pleiade sunt fiice ale lui Atlas și Pleione și sunt asociate cu roiul stelar vizibil în constelația Taurului."
+    },
+    {
+      "id": "mythology-246",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este divinitatea primordială care apare prima după Chaos în ordinea Teogoniei lui Hesiod?",
+      "options": [
+        "Chrysaor",
+        "Metis",
+        "Themis",
+        "Gaia"
+      ],
+      "answer": "Gaia",
+      "explanation": "După Chaos, Hesiod numește Gaia, Tartarus și Eros între primele realități cosmice fundamentale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-247",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este personificarea abisului profund situat sub lumea morților?",
+      "options": [
+        "Tartarus",
+        "Callirrhoe",
+        "Eros",
+        "Gaia"
+      ],
+      "answer": "Tartarus",
+      "explanation": "Tartarus este atât loc cosmic, cât și entitate primordială în tradiția hesiodică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-248",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul primordial al dorinței care apare timpuriu în Teogonia lui Hesiod?",
+      "options": [
+        "Eros",
+        "Orthrus",
+        "Themis",
+        "Metis"
+      ],
+      "answer": "Eros",
+      "explanation": "Eros apare ca o forță primordială care permite unirea și generarea înainte de imaginea ulterioară a zeului tânăr al iubirii."
+    },
+    {
+      "id": "mythology-249",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este mama lui Typhon împreună cu Tartarus în Teogonia lui Hesiod?",
+      "options": [
+        "Themis",
+        "Gaia",
+        "Tartarus",
+        "Leto"
+      ],
+      "answer": "Gaia",
+      "explanation": "Gaia îl naște pe Typhon după Titanomahie, iar acesta devine ultimul mare rival cosmic al lui Zeus. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-250",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este monstrul feminin jumătate femeie, jumătate șarpe, partenera lui Typhon în genealogia lui Hesiod?",
+      "options": [
+        "Echidna",
+        "Leto",
+        "Themis",
+        "Orthrus"
+      ],
+      "answer": "Echidna",
+      "explanation": "Echidna este mama mai multor monștri celebri, inclusiv Orthrus, Cerber și Hidra în genealogia hesiodică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-251",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este câinele cu două capete, fratele lui Cerber, în Teogonia lui Hesiod?",
+      "options": [
+        "Chrysaor",
+        "Themis",
+        "Orthrus",
+        "Tartarus"
+      ],
+      "answer": "Orthrus",
+      "explanation": "Orthrus păzește vitele lui Geryon și este ucis de Heracle în timpul uneia dintre muncile sale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-252",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este tatăl lui Geryon în genealogia lui Hesiod?",
+      "options": [
+        "Gaia",
+        "Echidna",
+        "Leto",
+        "Chrysaor"
+      ],
+      "answer": "Chrysaor",
+      "explanation": "Chrysaor, născut din Medusa, se unește cu Callirrhoe și devine tatăl monstrului Geryon. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-253",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este mama lui Geryon?",
+      "options": [
+        "Chrysaor",
+        "Callirrhoe",
+        "Echidna",
+        "Eros"
+      ],
+      "answer": "Callirrhoe",
+      "explanation": "Oceanida Callirrhoe este partenera lui Chrysaor și mama lui Geryon în Teogonia lui Hesiod. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-254",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița dreptății divine și mama Orelor împreună cu Zeus?",
+      "options": [
+        "Themis",
+        "Echidna",
+        "Eros",
+        "Tartarus"
+      ],
+      "answer": "Themis",
+      "explanation": "Themis personifică ordinea și legea divină și este mama Horai și, în unele tradiții, a Moirelor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-255",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este Oceanida care devine prima soție a lui Zeus și mama Atenei?",
+      "options": [
+        "Leto",
+        "Metis",
+        "Gaia",
+        "Callirrhoe"
+      ],
+      "answer": "Metis",
+      "explanation": "Zeus o înghite pe Metis după profeția privind copiii ei, iar Atena se naște ulterior din capul lui Zeus."
+    },
+    {
+      "id": "mythology-256",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este Titanida care îi naște lui Zeus pe Apollo și Artemis?",
+      "options": [
+        "Leto",
+        "Callirrhoe",
+        "Metis",
+        "Gaia"
+      ],
+      "answer": "Leto",
+      "explanation": "Leto este fiica lui Coeus și Phoebe și mama gemenilor Apollo și Artemis. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-257",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este poetul-islandez medieval care a compus Prose Edda?",
+      "options": [
+        "Snorri Sturluson",
+        "Hel",
+        "Loki",
+        "Angrboða"
+      ],
+      "answer": "Snorri Sturluson",
+      "explanation": "Snorri a redactat Prose Edda ca manual de poezie și mitologie pentru înțelegerea limbajului skaldic. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-258",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este profetesa care vorbește în poemul Völuspá?",
+      "options": [
+        "Constructorul fără nume",
+        "Völva",
+        "Rán",
+        "Ægir"
+      ],
+      "answer": "Völva",
+      "explanation": "Poemul este prezentat ca profeția unei völva care îi povestește lui Odin începuturile și sfârșitul cosmosului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-259",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este uriașul constructor căruia zeii îi promit soarele, luna și pe Freyja dacă termină zidul Ásgardului?",
+      "options": [
+        "Hel",
+        "Constructorul fără nume",
+        "Völva",
+        "Snorri Sturluson"
+      ],
+      "answer": "Constructorul fără nume",
+      "explanation": "În Gylfaginning, constructorul nu primește un nume și este ajutat de armăsarul Svaðilfari. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-260",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește armăsarul constructorului zidului Ásgardului?",
+      "options": [
+        "Hel",
+        "Rán",
+        "Völva",
+        "Svaðilfari"
+      ],
+      "answer": "Svaðilfari",
+      "explanation": "Svaðilfari are o forță extraordinară, iar Loki îl atrage departe transformându-se în iapă. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-261",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește calul cu opt picioare născut de Loki după episodul cu Svaðilfari?",
+      "options": [
+        "Svaðilfari",
+        "Constructorul fără nume",
+        "Hel",
+        "Sleipnir"
+      ],
+      "answer": "Sleipnir",
+      "explanation": "Loki, în formă de iapă, îl naște pe Sleipnir, care devine calul extraordinar al lui Odin. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-262",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este uriașul care deține cazanul uriaș folosit pentru berea zeilor?",
+      "options": [
+        "Svaðilfari",
+        "Angrboða",
+        "Ægir",
+        "Hymir"
+      ],
+      "answer": "Hymir",
+      "explanation": "Thor călătorește la Hymir pentru a obține un cazan suficient de mare pentru ospățul zeilor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-263",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este tatăl sau stăpânul mării care organizează ospățul zeilor după obținerea cazanului?",
+      "options": [
+        "Constructorul fără nume",
+        "Snorri Sturluson",
+        "Ægir",
+        "Sleipnir"
+      ],
+      "answer": "Ægir",
+      "explanation": "Ægir este o personificare a mării și găzduiește ospețe pentru zei în tradiția eddică. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-264",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este soția lui Ægir, asociată cu înecul și plasa pentru morți?",
+      "options": [
+        "Svaðilfari",
+        "Rán",
+        "Constructorul fără nume",
+        "Hel"
+      ],
+      "answer": "Rán",
+      "explanation": "Rán prinde marinarii înecați cu plasa ei și formează împreună cu Ægir o familie marină. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-265",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este fiica lui Loki și Angrboða care conduce tărâmul morților?",
+      "options": [
+        "Hel",
+        "Völva",
+        "Angrboða",
+        "Snorri Sturluson"
+      ],
+      "answer": "Hel",
+      "explanation": "Hel este una dintre cele trei odrasle monstruoase ale cuplului, alături de Fenrir și Jörmungandr. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-266",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este mama lui Fenrir, Jörmungandr și Hel?",
+      "options": [
+        "Snorri Sturluson",
+        "Constructorul fără nume",
+        "Ægir",
+        "Angrboða"
+      ],
+      "answer": "Angrboða",
+      "explanation": "Angrboða este o uriașă din Jötunheimr și partenera lui Loki în genealogia celor trei copii monstruoși. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-267",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este tatăl lui Fenrir, Jörmungandr și Hel?",
+      "options": [
+        "Angrboða",
+        "Rán",
+        "Loki",
+        "Hymir"
+      ],
+      "answer": "Loki",
+      "explanation": "Loki este tatăl celor trei ființe care joacă roluri majore în ordinea cosmică și în Ragnarök. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-268",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este personajul akkadian echivalent cu Ziusudra și Utnapiștim în tradițiile potopului?",
+      "options": [
+        "Nintu",
+        "Seshat",
+        "Atrahasis",
+        "Wadjet"
+      ],
+      "answer": "Atrahasis",
+      "explanation": "Atrahasis este eroul unui poem akkadian despre creația oamenilor, suprapopulare și potop. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-269",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine avertizează eroul Atrahasis despre potop?",
+      "options": [
+        "Nabu",
+        "Khnum",
+        "Lamashtu",
+        "Enki"
+      ],
+      "answer": "Enki",
+      "explanation": "Enki găsește o modalitate indirectă de a-i transmite lui Atrahasis instrucțiunile pentru supraviețuire. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-270",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița-mamă implicată în crearea oamenilor în Atrahasis?",
+      "options": [
+        "Atrahasis",
+        "Enki",
+        "Nanna-Sin",
+        "Nintu"
+      ],
+      "answer": "Nintu",
+      "explanation": "Nintu sau Mami participă la modelarea oamenilor din lut amestecat cu elementul divin al unei zeități sacrificate. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-271",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este demonul femelă asociat cu sud-vestul vântului și cu protecția sau amenințarea nașterii în Mesopotamia?",
+      "options": [
+        "Nabu",
+        "Nintu",
+        "Lamashtu",
+        "Pazuzu"
+      ],
+      "answer": "Lamashtu",
+      "explanation": "Lamashtu este o figură demonică periculoasă pentru gravide și copii, împotriva căreia se foloseau amulete. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-272",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este demonul apotropaic folosit tocmai pentru protecție împotriva lui Lamashtu?",
+      "options": [
+        "Pazuzu",
+        "Nekhbet",
+        "Nanna-Sin",
+        "Seshat"
+      ],
+      "answer": "Pazuzu",
+      "explanation": "Deși are aspect demonic, Pazuzu putea fi invocat protector împotriva altor forțe malefice, în special Lamashtu. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-273",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul scribilor din Babilonia asociat cu planeta Mercur și fiul lui Marduk?",
+      "options": [
+        "Atrahasis",
+        "Seshat",
+        "Nintu",
+        "Nabu"
+      ],
+      "answer": "Nabu",
+      "explanation": "Nabu este zeul scrierii și înțelepciunii și primește un cult major la Borsippa. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-274",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul lunii numit Nanna în sumeriană și Sin în akkadiană?",
+      "options": [
+        "Seshat",
+        "Nintu",
+        "Nanna-Sin",
+        "Lamashtu"
+      ],
+      "answer": "Nanna-Sin",
+      "explanation": "Nanna-Sin este o mare divinitate lunară venerată în special la Ur și Harran. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-275",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița egipteană-vultur asociată cu protecția Egiptului de Sus?",
+      "options": [
+        "Nanna-Sin",
+        "Nekhbet",
+        "Khnum",
+        "Atrahasis"
+      ],
+      "answer": "Nekhbet",
+      "explanation": "Nekhbet este una dintre «Cele Două Doamne» ale regalității, alături de Wadjet din Egiptul de Jos. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-276",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița-cobră protectoare a Egiptului de Jos?",
+      "options": [
+        "Wadjet",
+        "Nanna-Sin",
+        "Enki",
+        "Pazuzu"
+      ],
+      "answer": "Wadjet",
+      "explanation": "Wadjet apare în uraeus-ul regal și formează împreună cu Nekhbet simbolul unirii celor două țări. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-277",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul egiptean cu cap de berbec asociat cu insula Elephantine și cu sursele Nilului?",
+      "options": [
+        "Wadjet",
+        "Khnum",
+        "Pazuzu",
+        "Seshat"
+      ],
+      "answer": "Khnum",
+      "explanation": "Khnum este un zeu creator și olar divin, venerat în special în regiunea primei cataracte. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-278",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița egipteană a scrierii și măsurătorii asociată cu ritualul «întinderii frânghiei»?",
+      "options": [
+        "Khnum",
+        "Seshat",
+        "Nanna-Sin",
+        "Nekhbet"
+      ],
+      "answer": "Seshat",
+      "explanation": "Seshat este legată de scriere, arhive, măsurarea timpului și ritualurile de întemeiere a templelor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-279",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul creator vedic căruia îi este dedicat imnul Purusha Sukta în forma unei ființe cosmice sacrificate?",
+      "options": [
+        "Balarama",
+        "Purusha",
+        "Izanami",
+        "Varuna"
+      ],
+      "answer": "Purusha",
+      "explanation": "Purusha este ființa cosmică din al cărei sacrificiu sunt descrise elemente ale cosmosului și ordinii sociale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-280",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul vedic al ordinii cosmice și apelor, asociat puternic cu conceptul ṛta?",
+      "options": [
+        "Xiwangmu",
+        "Varuna",
+        "Devaki",
+        "Balarama"
+      ],
+      "answer": "Varuna",
+      "explanation": "Varuna supraveghează ordinea cosmică, jurămintele și moralitatea în straturile vechi ale religiei vedice. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-281",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul vedic al plantei și băuturii rituale sacre?",
+      "options": [
+        "Izanagi",
+        "Soma",
+        "Purusha",
+        "Pandu"
+      ],
+      "answer": "Soma",
+      "explanation": "Soma este atât băutura sacrificială, cât și divinitatea ei, având un rol central în numeroase imnuri din Rigveda."
+    },
+    {
+      "id": "mythology-282",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este tatăl eroilor Pandava în sensul juridic și regal al narațiunii Mahabharata?",
+      "options": [
+        "Varuna",
+        "Yu cel Mare",
+        "Kamsa",
+        "Pandu"
+      ],
+      "answer": "Pandu",
+      "explanation": "Pandu este regele considerat tatăl Pandavilor, deși fiecare fiu este conceput prin intervenția unei divinități. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-283",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este mama lui Krishna în tradiția nașterii sale?",
+      "options": [
+        "Devaki",
+        "Balarama",
+        "Soma",
+        "Kamsa"
+      ],
+      "answer": "Devaki",
+      "explanation": "Krishna se naște din Devaki și Vasudeva, dar este crescut de Yashoda și Nanda pentru a scăpa de Kamsa."
+    },
+    {
+      "id": "mythology-284",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este regele tiranic care încearcă să îl ucidă pe Krishna la naștere?",
+      "options": [
+        "Kamsa",
+        "Izanami",
+        "Yu cel Mare",
+        "Balarama"
+      ],
+      "answer": "Kamsa",
+      "explanation": "Kamsa se teme de profeția că un copil al Devakiei îl va ucide și încearcă să elimine copiii surorii sale."
+    },
+    {
+      "id": "mythology-285",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este fratele mai mare al lui Krishna, asociat cu plugul?",
+      "options": [
+        "Kamsa",
+        "Yu cel Mare",
+        "Soma",
+        "Balarama"
+      ],
+      "answer": "Balarama",
+      "explanation": "Balarama este o figură agrară și războinică importantă și apare adesea alături de Krishna. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-286",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeița japoneză care moare după nașterea zeului focului Kagutsuchi?",
+      "options": [
+        "Pandu",
+        "Izanami",
+        "Izanagi",
+        "Yu cel Mare"
+      ],
+      "answer": "Izanami",
+      "explanation": "Izanami moare arsă la nașterea lui Kagutsuchi și ajunge în Yomi, unde Izanagi încearcă să o recupereze. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-287",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul creator japonez care se purifică după întoarcerea din Yomi?",
+      "options": [
+        "Balarama",
+        "Izanagi",
+        "Kamsa",
+        "Izanami"
+      ],
+      "answer": "Izanagi",
+      "explanation": "Din purificarea lui Izanagi apar divinități importante, inclusiv Amaterasu, Tsukuyomi și Susanoo. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-288",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este regina-mamă a Occidentului în mitologia chineză, stăpâna piersicilor nemuririi?",
+      "options": [
+        "Balarama",
+        "Izanagi",
+        "Pandu",
+        "Xiwangmu"
+      ],
+      "answer": "Xiwangmu",
+      "explanation": "Xiwangmu devine în tradițiile târzii o mare zeiță a nemuririi și a paradisului occidental. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-289",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este eroul chinez asociat cu domesticirea apelor prin controlul inundațiilor și fondarea dinastiei Xia?",
+      "options": [
+        "Soma",
+        "Yu cel Mare",
+        "Varuna",
+        "Izanami"
+      ],
+      "answer": "Yu cel Mare",
+      "explanation": "Yu reușește să canalizeze apele prin lucrări îndelungate și devine model al conducătorului care ordonează lumea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-290",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine sunt gemenii eroi principali din Popol Vuh?",
+      "options": [
+        "Hunahpu și Xbalanque",
+        "Manannán mac Lir",
+        "Xiuhtecuhtli",
+        "Obatala"
+      ],
+      "answer": "Hunahpu și Xbalanque",
+      "explanation": "Gemenii înving stăpânii lumii de jos Xibalba prin inteligență, magie și jocul cu mingea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-291",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cum se numește lumea de jos în Popol Vuh?",
+      "options": [
+        "Obatala",
+        "Xiuhtecuhtli",
+        "Tlaloc",
+        "Xibalba"
+      ],
+      "answer": "Xibalba",
+      "explanation": "Xibalba este condusă de divinități ale morții și bolii și conține case ale încercărilor pentru eroi. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-292",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul aztec asociat cu ploaia și munții, venerat pe Templo Mayor alături de Huitzilopochtli?",
+      "options": [
+        "Dagda",
+        "Hunahpu și Xbalanque",
+        "Tlaloc",
+        "Obatala"
+      ],
+      "answer": "Tlaloc",
+      "explanation": "Templo Mayor avea sanctuare gemene pentru Tlaloc și Huitzilopochtli, exprimând agricultura și războiul. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-293",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul aztec al focului vechi și al vetrei, numit Xiuhtecuhtli?",
+      "options": [
+        "Xiuhtecuhtli",
+        "Deichtine",
+        "Tlaloc",
+        "Dagda"
+      ],
+      "answer": "Xiuhtecuhtli",
+      "explanation": "Xiuhtecuhtli este asociat cu focul, timpul și centrul ritual al gospodăriei și statului. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-294",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul mayaș al morții numit frecvent Ah Puch în literatura modernă?",
+      "options": [
+        "Deichtine",
+        "Xibalba",
+        "Tlaloc",
+        "Ah Puch"
+      ],
+      "answer": "Ah Puch",
+      "explanation": "Denumirea apare în studiile despre tradiția mayașă târzie, deși nomenclatura divinităților morții variază între surse. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-295",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este mama lui Cú Chulainn în tradiția irlandeză?",
+      "options": [
+        "Deichtine",
+        "Anansi",
+        "Ah Puch",
+        "Obatala"
+      ],
+      "answer": "Deichtine",
+      "explanation": "Deichtine este sora regelui Conchobar și mama eroului Cú Chulainn în principalele versiuni ale genealogiei sale. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-296",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul irlandez Dagda, descris printr-o măciucă și un cazan abundent?",
+      "options": [
+        "Ah Puch",
+        "Dagda",
+        "Manannán mac Lir",
+        "Obatala"
+      ],
+      "answer": "Dagda",
+      "explanation": "Dagda este un mare zeu al Tuatha Dé Danann, asociat cu puterea, abundența, magia și suveranitatea. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-297",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul irlandez al mării și al lumii de dincolo numit Manannán mac Lir?",
+      "options": [
+        "Tāne",
+        "Manannán mac Lir",
+        "Tlaloc",
+        "Deichtine"
+      ],
+      "answer": "Manannán mac Lir",
+      "explanation": "Manannán este asociat cu marea, insulele de dincolo și obiecte magice în tradiția irlandeză. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-298",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este tricksterul-păianjen din numeroase tradiții akan și vest-africane?",
+      "options": [
+        "Tāne",
+        "Ah Puch",
+        "Xiuhtecuhtli",
+        "Anansi"
+      ],
+      "answer": "Anansi",
+      "explanation": "Anansi câștigă frecvent prin inteligență și este legat de originea sau transmiterea poveștilor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-299",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este marele zeu creator yoruba asociat cu modelarea trupurilor umane?",
+      "options": [
+        "Dagda",
+        "Anansi",
+        "Tlaloc",
+        "Obatala"
+      ],
+      "answer": "Obatala",
+      "explanation": "Obatala este asociat cu creația corpului omenesc, puritatea și autoritatea spirituală în tradiția yoruba. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
+    },
+    {
+      "id": "mythology-300",
+      "type": "choice",
+      "difficulty": 5,
+      "text": "Cine este zeul maori al pădurilor care își separă părinții cerul și pământul?",
+      "options": [
+        "Xiuhtecuhtli",
+        "Hunahpu și Xbalanque",
+        "Ah Puch",
+        "Tāne"
+      ],
+      "answer": "Tāne",
+      "explanation": "Tāne îi separă pe Ranginui și Papatūānuku, deschizând spațiul lumii în care pot trăi urmașii lor. Detaliul este important pentru înțelegerea tradiției și a rolului personajului sau episodului în mitologie."
     }
   ]
 }
