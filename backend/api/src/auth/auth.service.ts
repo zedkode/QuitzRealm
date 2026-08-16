@@ -162,6 +162,7 @@ export class AuthService {
         email: true,
         username: true,
         displayName: true,
+        role: true,
         emailVerifiedAt: true,
         birthDate: true,
       },
@@ -175,6 +176,7 @@ export class AuthService {
       username: user.username,
       displayName: user.displayName ?? user.username,
       sessionId: payload.sid,
+      role: user.role,
       capabilities: capabilitiesFor({
         emailVerifiedAt: user.emailVerifiedAt,
         birthDate: user.birthDate,

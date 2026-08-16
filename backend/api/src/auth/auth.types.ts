@@ -1,4 +1,5 @@
 import { AccountCapabilities } from './account-policy';
+import type { AdminRole } from '@prisma/client';
 
 export interface JwtPayload {
   sub: string;
@@ -21,6 +22,7 @@ export interface AuthenticatedUser {
   username: string;
   displayName: string;
   sessionId?: string;
+  role: AdminRole;
   capabilities: AccountCapabilities;
 }
 

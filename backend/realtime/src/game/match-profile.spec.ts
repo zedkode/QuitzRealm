@@ -1,6 +1,7 @@
 import {
   assertMatchParticipants,
   DUO_MATCH_PROFILE,
+  BLITZ_MATCH_PROFILE,
   publicMatchProfile,
 } from './match-profile';
 
@@ -10,6 +11,12 @@ describe('match profiles', () => {
     expect(() =>
       assertMatchParticipants(['player-a', 'player-b'], DUO_MATCH_PROFILE),
     ).not.toThrow();
+  });
+
+  it('construiește profilul Blitz pentru doi participanți', () => {
+    const profile = publicMatchProfile('blitz');
+    expect(profile).toEqual(BLITZ_MATCH_PROFILE);
+    expect(() => assertMatchParticipants(['player-a', 'player-b'], profile)).not.toThrow();
   });
 
   it.each([4, 5, 6, 7, 8])(

@@ -13,7 +13,7 @@ import {
 import type { ClientMatchMode } from '../match-profile';
 
 export class JoinMatchmakingDto {
-  @IsIn(['duo', 'classic'])
+  @IsIn(['duo', 'classic', 'blitz'])
   mode!: ClientMatchMode;
 
   @IsOptional()

@@ -1,8 +1,8 @@
 export const MIN_MATCH_PLAYERS = 2;
 export const MAX_MATCH_PLAYERS = 8;
 
-export type ClientMatchMode = 'duo' | 'classic';
-export type PersistedMatchMode = 'DUO' | 'CLASSIC';
+export type ClientMatchMode = 'duo' | 'classic' | 'blitz';
+export type PersistedMatchMode = 'DUO' | 'CLASSIC' | 'BLITZ';
 export type MatchLobbyType = 'public';
 export type MatchResolutionPolicy = 'all-answered' | 'deadline';
 
@@ -17,6 +17,14 @@ export interface MatchProfile {
   lobbyType: MatchLobbyType;
   resolutionPolicy: MatchResolutionPolicy;
 }
+
+export const BLITZ_MATCH_PROFILE: MatchProfile = Object.freeze({
+  clientMode: 'blitz',
+  persistedMode: 'BLITZ',
+  playerCountTarget: 2,
+  lobbyType: 'public',
+  resolutionPolicy: 'deadline',
+});
 
 export const DUO_MATCH_PROFILE: MatchProfile = Object.freeze({
   clientMode: 'duo',
@@ -35,6 +43,13 @@ export function publicMatchProfile(
       throw new Error('Modul Duo necesită exact 2 jucători.');
     }
     return DUO_MATCH_PROFILE;
+  }
+
+  if (mode === 'blitz') {
+    if (requestedPlayerCount !== undefined && requestedPlayerCount !== 2) {
+      throw new Error('Modul Blitz necesită exact 2 jucători.');
+    }
+    return BLITZ_MATCH_PROFILE;
   }
 
   if (

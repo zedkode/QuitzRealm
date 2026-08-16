@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Uncial+Antiqua&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #07060b;
+  --foreground: #f7f0df;
+  --card: #12101b;
+  --card-foreground: #f7f0df;
+  --popover: #12101b;
+  --popover-foreground: #f7f0df;
+  --primary: #d9b45a;
+  --primary-foreground: #191108;
+  --secondary: #1c1730;
+  --secondary-foreground: #eee5ff;
+  --muted: #171521;
+  --muted-foreground: #a69ead;
+  --accent: #7e5cc7;
+  --accent-foreground: #fbf8ff;
+  --destructive: #e46f75;
+  --border: rgba(217, 180, 90, 0.18);
+  --input: rgba(217, 180, 90, 0.18);
+  --ring: #d9b45a;
+  --radius: 1rem;
+}
+
+* { border-color: var(--border); }
+html { background: var(--background); }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: radial-gradient(circle at 50% -10%, #21163c 0%, var(--background) 42%);
+  color: var(--foreground);
+  font-family: 'DM Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+button, a { transition: transform 160ms cubic-bezier(.23,1,.32,1), border-color 180ms ease, background 180ms ease, color 180ms ease, opacity 180ms ease; }
+button:active, a:active { transform: scale(.97); }
+::selection { background: rgba(217,180,90,.35); color: white; }
+
+.font-display { font-family: 'Uncial Antiqua', serif; }
+.text-gold { color: #e3c36a; }
+.text-violet { color: #a788ec; }
+.panel {
+  background: linear-gradient(145deg, rgba(27,22,39,.88), rgba(11,10,17,.92));
+  border: 1px solid rgba(217,180,90,.17);
+  box-shadow: 0 22px 60px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.035);
+  backdrop-filter: blur(18px);
+}
+.panel-hover:hover { border-color: rgba(217,180,90,.42); box-shadow: 0 22px 70px rgba(92,57,160,.2), inset 0 1px 0 rgba(255,255,255,.05); transform: translateY(-2px); }
+.gold-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(217,180,90,.8), transparent); }
+.eyebrow { letter-spacing: .22em; text-transform: uppercase; font-size: .68rem; font-weight: 700; color: #ae9ba9; }
+.glow-gold { box-shadow: 0 0 0 1px rgba(217,180,90,.25), 0 0 34px rgba(217,180,90,.16); }
+.glow-violet { box-shadow: 0 0 0 1px rgba(126,92,199,.32), 0 0 38px rgba(126,92,199,.2); }
+
+.starfield { position: relative; isolation: isolate; overflow: hidden; }
+.starfield::before, .starfield::after { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+.starfield::before { opacity: .65; background-image: radial-gradient(circle, rgba(244,221,157,.8) 0 1px, transparent 1.5px), radial-gradient(circle, rgba(166,136,236,.7) 0 1px, transparent 1.5px); background-size: 170px 170px, 230px 230px; background-position: 20px 20px, 90px 80px; animation: drift 18s linear infinite; }
+.starfield::after { background: radial-gradient(ellipse at 50% 0%, rgba(114,69,182,.32), transparent 58%), linear-gradient(180deg, transparent 50%, rgba(7,6,11,.7)); }
+@keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-24px,18px,0); } }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise .65s cubic-bezier(.23,1,.32,1) both; }
+
+.territory-map { position: relative; min-height: 360px; background: radial-gradient(circle at 40% 45%, rgba(125,85,188,.28), transparent 35%), linear-gradient(145deg, #151125, #090810 70%); overflow: hidden; }
+.territory-map::before { content: ''; position: absolute; inset: 12%; border: 1px solid rgba(217,180,90,.16); clip-path: polygon(9% 13%, 35% 4%, 55% 15%, 76% 7%, 96% 25%, 87% 51%, 96% 75%, 68% 90%, 44% 78%, 23% 96%, 3% 67%, 13% 46%); background: repeating-linear-gradient(135deg, rgba(217,180,90,.05) 0 2px, transparent 2px 26px); }
+.map-node { position: absolute; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); box-shadow: 0 0 28px currentColor; color: #d9b45a; background: #292041; font-size: .75rem; font-weight: 800; }
+.map-node.violet { color: #9d7fe6; background: #2a1e46; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
+@media (max-width: 700px) { .territory-map { min-height: 300px; } }
