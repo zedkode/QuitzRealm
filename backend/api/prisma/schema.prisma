@@ -70,8 +70,12 @@ model User {
   birthDate         DateTime? @map("birth_date") @db.Date
   passwordHash      String?   @map("password_hash")
   googleId          String?   @unique @map("google_id")
-  avatarId          String?   @map("avatar_id") @db.Uuid
-  frameId           String?   @map("frame_id") @db.Uuid
+  /// Țara declarată (ISO-3166 alpha-2), pentru clasamentele naționale din
+  /// `owner-plan.md` §10.4. Se schimbă rar — vezi `regionChangedAt`.
+  countryCode       String?   @map("country_code") @db.VarChar(2)
+  /// Ultima schimbare de țară. Cooldown-ul din §10.2 împiedică folosirea ei ca
+  /// să „cumperi” un clasament mai ușor prin schimbări repetate.
+  regionChangedAt   DateTime? @map("region_changed_at")
   createdAt         DateTime  @default(now()) @map("created_at")
   eloRating         Int       @default(1000) @map("elo_rating")
   xp                Int       @default(0)
@@ -94,6 +98,8 @@ model User {
   sessions           UserSession[]
   authTokens         AuthToken[]
   privacy            UserPrivacySettings?
+  profile            UserProfile?
+  links              UserLink[]
   friendshipsA       Friendship[]              @relation("FriendshipUserA")
   friendshipsB       Friendship[]              @relation("FriendshipUserB")
   friendRequestsSent Friendship[]              @relation("FriendshipRequester")
