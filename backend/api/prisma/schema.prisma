@@ -70,6 +70,11 @@ model User {
   birthDate         DateTime? @map("birth_date") @db.Date
   passwordHash      String?   @map("password_hash")
   googleId          String?   @unique @map("google_id")
+  /// Secret TOTP criptat AES-GCM; nu este niciodată expus după activare.
+  twoFactorSecret   String?   @map("two_factor_secret") @db.Text
+  twoFactorEnabledAt DateTime? @map("two_factor_enabled_at")
+  /// Coduri de recuperare păstrate doar ca hash-uri Argon2.
+  twoFactorRecoveryCodes Json? @map("two_factor_recovery_codes")
   /// Țara declarată (ISO-3166 alpha-2), pentru clasamentele naționale din
   /// `owner-plan.md` §10.4. Se schimbă rar — vezi `regionChangedAt`.
   countryCode       String?   @map("country_code") @db.VarChar(2)
@@ -97,6 +102,8 @@ model User {
   questionReports    QuestionReport[]
   sessions           UserSession[]
   authTokens         AuthToken[]
+  /// O conversie unică a progresului solo de pe un dispozitiv invitat.
+  guestMigration     GuestMigration?
   privacy            UserPrivacySettings?
   profile            UserProfile?
   links              UserLink[]
@@ -358,6 +365,21 @@ model ChatReport {
 /// O sesiune activă = un dispozitiv conectat. Refresh token-ul trăiește aici,
 /// nu pe `users`, ca un login nou să nu deconecteze celelalte dispozitive și
 /// ca fiecare sesiune să poată fi revocată separat.
+/// Transferul o singură dată al progresului de campanie jucat ca invitat.
+/// Datele rămân separate de XP/ELO online: clientul local nu poate acorda
+/// recompense competitive doar printr-un payload de migrare.
+model GuestMigration {
+  id               String   @id @default(uuid()) @db.Uuid
+  guestId          String   @unique @map("guest_id") @db.VarChar(128)
+  userId           String   @unique @map("user_id") @db.Uuid
+  campaignProgress Json     @map("campaign_progress")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("guest_migrations")
+}
+
 model UserSession {
   id               String    @id @default(uuid()) @db.Uuid
   userId           String    @map("user_id") @db.Uuid
@@ -381,6 +403,8 @@ model UserSession {
 enum AuthTokenPurpose {
   EMAIL_VERIFICATION @map("email_verification")
   PASSWORD_RESET     @map("password_reset")
+  TWO_FACTOR_LOGIN   @map("two_factor_login")
+  MOBILE_OAUTH_EXCHANGE @map("mobile_oauth_exchange")
 
   @@map("auth_token_purpose")
 }

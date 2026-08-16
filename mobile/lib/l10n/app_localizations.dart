@@ -1136,6 +1136,12 @@ abstract class AppLocalizations {
   /// **'Intră în regat'**
   String get loginButton;
 
+  /// No description provided for @continueWithGoogle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Continuă cu Google'**
+  String get continueWithGoogle;
+
   /// No description provided for @createAccountButton.
   ///
   /// In ro, this message translates to:
@@ -1159,6 +1165,72 @@ abstract class AppLocalizations {
   /// In ro, this message translates to:
   /// **'Autentificarea nu a reușit. Verifică datele și conexiunea.'**
   String get authGenericError;
+
+  /// No description provided for @twoFactorTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Confirmă autentificarea'**
+  String get twoFactorTitle;
+
+  /// No description provided for @twoFactorBody.
+  ///
+  /// In ro, this message translates to:
+  /// **'Introdu codul din aplicația de autentificare sau unul dintre codurile tale de recuperare.'**
+  String get twoFactorBody;
+
+  /// No description provided for @twoFactorCodeLabel.
+  ///
+  /// In ro, this message translates to:
+  /// **'Cod de autentificare'**
+  String get twoFactorCodeLabel;
+
+  /// No description provided for @twoFactorVerify.
+  ///
+  /// In ro, this message translates to:
+  /// **'Confirmă codul'**
+  String get twoFactorVerify;
+
+  /// No description provided for @twoFactorCancel.
+  ///
+  /// In ro, this message translates to:
+  /// **'Înapoi la autentificare'**
+  String get twoFactorCancel;
+
+  /// No description provided for @twoFactorInvalid.
+  ///
+  /// In ro, this message translates to:
+  /// **'Codul nu a fost acceptat. Încearcă din nou.'**
+  String get twoFactorInvalid;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In ro, this message translates to:
+  /// **'Ai uitat parola?'**
+  String get forgotPassword;
+
+  /// No description provided for @passwordResetTitle.
+  ///
+  /// In ro, this message translates to:
+  /// **'Resetează parola'**
+  String get passwordResetTitle;
+
+  /// No description provided for @passwordResetBody.
+  ///
+  /// In ro, this message translates to:
+  /// **'Vom trimite un link de resetare dacă adresa poate fi folosită pentru un cont.'**
+  String get passwordResetBody;
+
+  /// No description provided for @passwordResetSend.
+  ///
+  /// In ro, this message translates to:
+  /// **'Trimite linkul'**
+  String get passwordResetSend;
+
+  /// No description provided for @passwordResetSent.
+  ///
+  /// In ro, this message translates to:
+  /// **'Dacă adresa este asociată unui cont, vei primi un link de resetare.'**
+  String get passwordResetSent;
 
   /// No description provided for @fieldRequired.
   ///

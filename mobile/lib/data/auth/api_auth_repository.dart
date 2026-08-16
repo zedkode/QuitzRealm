@@ -1,7 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 
 import '../../core/network/api_client.dart';
 import '../../domain/auth/account_session.dart';
+import '../../domain/auth/two_factor_challenge.dart';
 import '../../domain/auth/auth_repository.dart';
 
 class ApiAuthRepository implements AuthRepository {
@@ -16,12 +20,79 @@ class ApiAuthRepository implements AuthRepository {
   }
 
   @override
-  Future<void> login({required String email, required String password}) async {
+  Future<TwoFactorChallenge?> login({
+    required String email,
+    required String password,
+  }) async {
     final payload = await _api.post(
       'auth/login',
       body: {'email': email.trim(), 'password': password},
     );
+    final challenge = TwoFactorChallenge.fromJson(payload);
+    if (challenge != null) return challenge;
     await _saveTokens(payload);
+    return null;
+  }
+
+  @override
+  Future<TwoFactorChallenge?> loginWithGoogle() async {
+    final state = _oauthState();
+    final authorizationUri = _api.baseUri
+        .resolve('auth/google/mobile')
+        .replace(queryParameters: {'state': state});
+    final callback = await FlutterWebAuth2.authenticate(
+      url: authorizationUri.toString(),
+      callbackUrlScheme: 'quizrealm',
+    );
+    final callbackUri = Uri.parse(callback);
+    if (callbackUri.scheme != 'quizrealm' ||
+        callbackUri.queryParameters['state'] != state) {
+      throw const FormatException('Invalid Google OAuth callback');
+    }
+    final code = callbackUri.queryParameters['code'];
+    if (code == null || code.isEmpty) {
+      throw const FormatException('Missing Google OAuth exchange code');
+    }
+    final payload = await _api.post(
+      'auth/google/mobile/exchange',
+      body: {'code': code},
+    );
+    final challenge = TwoFactorChallenge.fromJson(payload);
+    if (challenge != null) return challenge;
+    await _saveTokens(payload);
+    return null;
+  }
+
+  @override
+  Future<void> completeTwoFactorLogin({
+    required String challengeToken,
+    required String code,
+  }) async {
+    final payload = await _api.post(
+      'auth/two-factor/login',
+      body: {'challengeToken': challengeToken, 'code': code.trim()},
+    );
+    await _saveTokens(payload);
+  }
+
+  @override
+  Future<void> requestPasswordReset(String email) async {
+    await _api.post(
+      'auth/password-reset/request',
+      body: {'email': email.trim()},
+    );
+  }
+
+  @override
+  Future<void> migrateGuestProgress({
+    required String guestId,
+    required Map<String, Object?> campaignProgress,
+  }) async {
+    await _api.post(
+      'auth/guest/migrate',
+      body: {'guestId': guestId, 'campaignProgress': campaignProgress},
+      authenticated: true,
+    );
   }
 
   @override
@@ -30,17 +101,20 @@ class ApiAuthRepository implements AuthRepository {
     required String email,
     required String password,
     required DateTime birthDate,
+    String? captchaToken,
   }) async {
-    final payload = await _api.post(
-      'auth/register',
-      body: {
-        'username': username.trim(),
-        'email': email.trim(),
-        'password': password,
-        // Serverul așteaptă doar data, fără oră.
-        'birthDate': _isoDate(birthDate),
-      },
-    );
+    final body = <String, Object?>{
+      'username': username.trim(),
+      'email': email.trim(),
+      'password': password,
+      // Serverul așteaptă doar data, fără oră.
+      'birthDate': _isoDate(birthDate),
+    };
+    final normalizedCaptchaToken = captchaToken?.trim();
+    if (normalizedCaptchaToken != null && normalizedCaptchaToken.isNotEmpty) {
+      body['captchaToken'] = normalizedCaptchaToken;
+    }
+    final payload = await _api.post('auth/register', body: body);
     await _saveTokens(payload);
   }
 
@@ -86,16 +160,58 @@ class ApiAuthRepository implements AuthRepository {
   }
 
   @override
+  Future<String> startTwoFactorEnrollment({
+    required String currentPassword,
+  }) async {
+    final payload = await _api.post(
+      'auth/two-factor/setup',
+      body: {'currentPassword': currentPassword},
+      authenticated: true,
+    );
+    if (payload is! Map<String, Object?> || payload['otpauthUri'] is! String) {
+      throw const FormatException('Invalid two-factor enrollment response');
+    }
+    return payload['otpauthUri']! as String;
+  }
+
+  @override
+  Future<List<String>> confirmTwoFactorEnrollment({
+    required String currentPassword,
+    required String code,
+  }) async {
+    final payload = await _api.post(
+      'auth/two-factor/confirm',
+      body: {'currentPassword': currentPassword, 'code': code.trim()},
+      authenticated: true,
+    );
+    if (payload is! Map<String, Object?> || payload['recoveryCodes'] is! List) {
+      throw const FormatException('Invalid two-factor confirmation response');
+    }
+    return (payload['recoveryCodes'] as List).whereType<String>().toList(
+      growable: false,
+    );
+  }
+
+  @override
+  Future<void> disableTwoFactor({
+    required String currentPassword,
+    required String code,
+  }) async {
+    await _api.post(
+      'auth/two-factor/disable',
+      body: {'currentPassword': currentPassword, 'code': code.trim()},
+      authenticated: true,
+    );
+  }
+
+  @override
   Future<void> changePassword({
     required String currentPassword,
     required String newPassword,
   }) async {
     await _api.post(
       'auth/password/change',
-      body: {
-        'currentPassword': currentPassword,
-        'newPassword': newPassword,
-      },
+      body: {'currentPassword': currentPassword, 'newPassword': newPassword},
       authenticated: true,
     );
   }
@@ -111,6 +227,13 @@ class ApiAuthRepository implements AuthRepository {
     // reîmprospătate oricum, iar aplicația trebuie să pornească fără sesiune.
     await _storage.delete(key: ApiClient.accessTokenKey);
     await _storage.delete(key: ApiClient.refreshTokenKey);
+  }
+
+  String _oauthState() {
+    const alphabet =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+    final random = Random.secure();
+    return 'mobile.${List<String>.generate(43, (_) => alphabet[random.nextInt(alphabet.length)]).join()}';
   }
 
   Future<void> _saveTokens(Object? payload) async {

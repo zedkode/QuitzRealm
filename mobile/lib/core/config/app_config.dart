@@ -12,6 +12,18 @@ class AppConfig {
     defaultValue: 'http://10.0.2.2:3001',
   );
 
+  /// Cheia publică Turnstile; secretul de verificare rămâne exclusiv în API.
+  static const turnstileSiteKey = String.fromEnvironment(
+    'TURNSTILE_SITE_KEY',
+    defaultValue: '',
+  );
+
+  /// Domeniu permis în widgetul Turnstile pentru Android/iOS.
+  static const turnstileBaseUrl = String.fromEnvironment(
+    'TURNSTILE_BASE_URL',
+    defaultValue: 'https://quizrealm.app',
+  );
+
   static Uri get apiBaseUri => _normalized(apiBaseUrl);
 
   static Uri get realtimeBaseUri => _normalized(realtimeBaseUrl);

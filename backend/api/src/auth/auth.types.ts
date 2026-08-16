@@ -34,3 +34,18 @@ export interface AuthTokens {
   accessToken: string;
   refreshToken: string;
 }
+
+/// După parola corectă, un cont cu 2FA activ nu primește tokenuri până nu
+/// confirmă codul TOTP sau un cod de recuperare. Tokenul de provocare e scurt
+/// și se consumă o singură dată.
+export interface TwoFactorChallenge {
+  twoFactorRequired: true;
+  challengeToken: string;
+  expiresAt: string;
+}
+
+export type LoginResult = AuthTokens | TwoFactorChallenge;
+
+export function isTwoFactorChallenge(value: LoginResult): value is TwoFactorChallenge {
+  return 'twoFactorRequired' in value && value.twoFactorRequired === true;
+}

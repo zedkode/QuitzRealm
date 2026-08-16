@@ -618,6 +618,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get loginButton => 'Enter the realm';
 
   @override
+  String get continueWithGoogle => 'Continue with Google';
+
+  @override
   String get createAccountButton => 'Create account';
 
   @override
@@ -629,6 +632,42 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get authGenericError =>
       'Sign-in failed. Check your details and connection.';
+
+  @override
+  String get twoFactorTitle => 'Confirm sign-in';
+
+  @override
+  String get twoFactorBody =>
+      'Enter the code from your authenticator app or one of your recovery codes.';
+
+  @override
+  String get twoFactorCodeLabel => 'Authentication code';
+
+  @override
+  String get twoFactorVerify => 'Confirm code';
+
+  @override
+  String get twoFactorCancel => 'Back to sign-in';
+
+  @override
+  String get twoFactorInvalid => 'The code was not accepted. Try again.';
+
+  @override
+  String get forgotPassword => 'Forgot your password?';
+
+  @override
+  String get passwordResetTitle => 'Reset password';
+
+  @override
+  String get passwordResetBody =>
+      'We will send a reset link if this address can be used for an account.';
+
+  @override
+  String get passwordResetSend => 'Send link';
+
+  @override
+  String get passwordResetSent =>
+      'If this address belongs to an account, you will receive a reset link.';
 
   @override
   String get fieldRequired => 'This field is required.';

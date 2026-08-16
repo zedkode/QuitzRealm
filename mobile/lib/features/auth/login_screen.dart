@@ -1,7 +1,10 @@
+import 'package:cloudflare_turnstile/cloudflare_turnstile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/config/app_config.dart';
+import '../../core/providers/repository_providers.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/ui/game_button.dart';
 import '../../core/ui/game_frame.dart';
@@ -22,14 +25,17 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   final _usernameController = TextEditingController();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  final _twoFactorController = TextEditingController();
   bool _registerMode = false;
   DateTime? _birthDate;
+  String? _captchaToken;
 
   @override
   void dispose() {
     _usernameController.dispose();
     _emailController.dispose();
     _passwordController.dispose();
+    _twoFactorController.dispose();
     super.dispose();
   }
 
@@ -38,6 +44,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     final l10n = AppLocalizations.of(context);
     final auth = ref.watch(authControllerProvider);
     final loading = auth.status == AuthStatus.loading;
+    final twoFactorFlow =
+        auth.status == AuthStatus.twoFactorRequired ||
+        (loading && auth.twoFactorChallenge != null);
 
     return Scaffold(
       body: RealmBackdrop(
@@ -92,103 +101,179 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   ),
                   const SizedBox(height: 20),
                   GameFrame(
-                    child: Form(
-                      key: _formKey,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          if (_registerMode) ...[
-                            TextFormField(
-                              key: const Key('username-field'),
-                              controller: _usernameController,
-                              textInputAction: TextInputAction.next,
-                              style: GameText.body,
-                              decoration: InputDecoration(
-                                labelText: l10n.usernameLabel,
-                              ),
-                              validator: (value) =>
-                                  value == null || value.trim().isEmpty
-                                  ? l10n.fieldRequired
-                                  : null,
-                            ),
-                            const SizedBox(height: 12),
-                            _BirthDateField(
-                              value: _birthDate,
-                              onPick: _pickBirthDate,
-                            ),
-                            const SizedBox(height: 12),
-                          ],
-                          TextFormField(
-                            key: const Key('email-field'),
-                            controller: _emailController,
-                            keyboardType: TextInputType.emailAddress,
-                            textInputAction: TextInputAction.next,
-                            style: GameText.body,
-                            decoration: InputDecoration(
-                              labelText: l10n.emailLabel,
-                            ),
-                            validator: (value) =>
-                                value == null || value.trim().isEmpty
-                                ? l10n.fieldRequired
-                                : null,
-                          ),
-                          const SizedBox(height: 12),
-                          TextFormField(
-                            key: const Key('password-field'),
-                            controller: _passwordController,
-                            obscureText: true,
-                            style: GameText.body,
-                            onFieldSubmitted: (_) {
-                              if (!loading) _submit();
-                            },
-                            decoration: InputDecoration(
-                              labelText: l10n.passwordLabel,
-                              helperText: _registerMode
-                                  ? l10n.passwordHint
-                                  : null,
-                            ),
-                            validator: (value) => value == null || value.isEmpty
-                                ? l10n.fieldRequired
-                                : null,
-                          ),
-                          if (auth.hasError) ...[
-                            const SizedBox(height: 12),
-                            Text(
-                              l10n.authGenericError,
-                              key: const Key('auth-error'),
-                              style: GameText.body.copyWith(
-                                color: GamePalette.crimson,
-                              ),
-                            ),
-                          ],
-                          const SizedBox(height: 18),
-                          if (loading)
-                            const Center(child: CircularProgressIndicator())
-                          else
-                            GameButton(
-                              key: const Key('auth-submit'),
-                              label: _registerMode
-                                  ? l10n.createAccountButton
-                                  : l10n.loginButton,
-                              icon: GameSymbol.crown,
-                              onPressed: _submit,
-                            ),
-                          const SizedBox(height: 6),
-                          TextButton(
-                            onPressed: loading
-                                ? null
-                                : () => setState(
-                                    () => _registerMode = !_registerMode,
+                    child: twoFactorFlow
+                        ? _TwoFactorForm(
+                            controller: _twoFactorController,
+                            loading: loading,
+                            hasError: auth.hasError,
+                            onSubmit: () => ref
+                                .read(authControllerProvider.notifier)
+                                .completeTwoFactorLogin(
+                                  _twoFactorController.text,
+                                ),
+                            onCancel: () => ref
+                                .read(authControllerProvider.notifier)
+                                .cancelTwoFactorLogin(),
+                          )
+                        : Form(
+                            key: _formKey,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                if (_registerMode) ...[
+                                  TextFormField(
+                                    key: const Key('username-field'),
+                                    controller: _usernameController,
+                                    textInputAction: TextInputAction.next,
+                                    style: GameText.body,
+                                    decoration: InputDecoration(
+                                      labelText: l10n.usernameLabel,
+                                    ),
+                                    validator: (value) =>
+                                        value == null || value.trim().isEmpty
+                                        ? l10n.fieldRequired
+                                        : null,
                                   ),
-                            child: Text(
-                              _registerMode
-                                  ? l10n.switchToLogin
-                                  : l10n.switchToRegister,
+                                  const SizedBox(height: 12),
+                                  _BirthDateField(
+                                    value: _birthDate,
+                                    onPick: _pickBirthDate,
+                                  ),
+                                  const SizedBox(height: 12),
+                                  if (AppConfig
+                                      .turnstileSiteKey
+                                      .isNotEmpty) ...[
+                                    Container(
+                                      key: const Key('turnstile-field'),
+                                      padding: const EdgeInsets.symmetric(
+                                        vertical: 4,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: GamePalette.stone900.withValues(
+                                          alpha: 0.72,
+                                        ),
+                                        borderRadius: BorderRadius.circular(12),
+                                        border: Border.all(
+                                          color: GamePalette.gold.withValues(
+                                            alpha: 0.28,
+                                          ),
+                                        ),
+                                      ),
+                                      child: CloudflareTurnstile(
+                                        siteKey: AppConfig.turnstileSiteKey,
+                                        baseUrl: AppConfig.turnstileBaseUrl,
+                                        options: TurnstileOptions(
+                                          size: TurnstileSize.normal,
+                                          theme: TurnstileTheme.dark,
+                                          retryAutomatically: true,
+                                        ),
+                                        onTokenReceived: (token) {
+                                          if (mounted) {
+                                            setState(
+                                              () => _captchaToken = token,
+                                            );
+                                          }
+                                        },
+                                      ),
+                                    ),
+                                    const SizedBox(height: 12),
+                                  ],
+                                ],
+                                TextFormField(
+                                  key: const Key('email-field'),
+                                  controller: _emailController,
+                                  keyboardType: TextInputType.emailAddress,
+                                  textInputAction: TextInputAction.next,
+                                  style: GameText.body,
+                                  decoration: InputDecoration(
+                                    labelText: l10n.emailLabel,
+                                  ),
+                                  validator: (value) =>
+                                      value == null || value.trim().isEmpty
+                                      ? l10n.fieldRequired
+                                      : null,
+                                ),
+                                const SizedBox(height: 12),
+                                TextFormField(
+                                  key: const Key('password-field'),
+                                  controller: _passwordController,
+                                  obscureText: true,
+                                  style: GameText.body,
+                                  onFieldSubmitted: (_) {
+                                    if (!loading) _submit();
+                                  },
+                                  decoration: InputDecoration(
+                                    labelText: l10n.passwordLabel,
+                                    helperText: _registerMode
+                                        ? l10n.passwordHint
+                                        : null,
+                                  ),
+                                  validator: (value) =>
+                                      value == null || value.isEmpty
+                                      ? l10n.fieldRequired
+                                      : null,
+                                ),
+                                if (auth.hasError) ...[
+                                  const SizedBox(height: 12),
+                                  Text(
+                                    l10n.authGenericError,
+                                    key: const Key('auth-error'),
+                                    style: GameText.body.copyWith(
+                                      color: GamePalette.crimson,
+                                    ),
+                                  ),
+                                ],
+                                const SizedBox(height: 18),
+                                if (loading)
+                                  const Center(
+                                    child: CircularProgressIndicator(),
+                                  )
+                                else
+                                  GameButton(
+                                    key: const Key('auth-submit'),
+                                    label: _registerMode
+                                        ? l10n.createAccountButton
+                                        : l10n.loginButton,
+                                    icon: GameSymbol.crown,
+                                    onPressed: _submit,
+                                  ),
+                                if (!_registerMode && !loading) ...[
+                                  const SizedBox(height: 8),
+                                  GameButton(
+                                    key: const Key('google-auth-submit'),
+                                    label: l10n.continueWithGoogle,
+                                    icon: GameSymbol.crown,
+                                    compact: true,
+                                    tone: GameButtonTone.stone,
+                                    onPressed: () => ref
+                                        .read(authControllerProvider.notifier)
+                                        .loginWithGoogle(),
+                                  ),
+                                ],
+                                const SizedBox(height: 6),
+                                TextButton(
+                                  onPressed: loading
+                                      ? null
+                                      : () => setState(() {
+                                          _registerMode = !_registerMode;
+                                          _captchaToken = null;
+                                        }),
+                                  child: Text(
+                                    _registerMode
+                                        ? l10n.switchToLogin
+                                        : l10n.switchToRegister,
+                                  ),
+                                ),
+                                if (!_registerMode)
+                                  TextButton(
+                                    onPressed: loading
+                                        ? null
+                                        : _requestPasswordReset,
+                                    child: Text(l10n.forgotPassword),
+                                  ),
+                              ],
                             ),
                           ),
-                        ],
-                      ),
-                    ),
                   ),
                 ],
               ),
@@ -215,12 +300,30 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       );
   }
 
+  Future<void> _requestPasswordReset() async {
+    final l10n = AppLocalizations.of(context);
+    final email = _emailController.text.trim();
+    if (email.isEmpty) {
+      _showFormError(l10n.emailLabel);
+      return;
+    }
+    try {
+      await ref.read(authRepositoryProvider).requestPasswordReset(email);
+      if (!mounted) return;
+      _showFormError(l10n.passwordResetSent);
+    } catch (_) {
+      // Păstrăm același răspuns la client ca la API: nu dezvăluim dacă un cont
+      // există sau dacă providerul de mail a putut fi contactat.
+      if (!mounted) return;
+      _showFormError(l10n.passwordResetSent);
+    }
+  }
+
   Future<void> _pickBirthDate() async {
     final now = DateTime.now();
     final picked = await showDatePicker(
       context: context,
-      initialDate:
-          _birthDate ?? DateTime(now.year - 18, now.month, now.day),
+      initialDate: _birthDate ?? DateTime(now.year - 18, now.month, now.day),
       firstDate: DateTime(now.year - 100),
       lastDate: now,
       helpText: AppLocalizations.of(context).birthDateLabel,
@@ -242,11 +345,19 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         _showFormError(l10n.birthDateTooYoung(_minimumAgeYears));
         return;
       }
+      if (AppConfig.turnstileSiteKey.isNotEmpty &&
+          (_captchaToken == null || _captchaToken!.trim().isEmpty)) {
+        _showFormError(
+          'Completează verificarea anti-bot înainte de a continua.',
+        );
+        return;
+      }
       await controller.register(
         username: _usernameController.text,
         email: _emailController.text,
         password: _passwordController.text,
         birthDate: birthDate,
+        captchaToken: _captchaToken,
       );
     } else {
       await controller.login(
@@ -254,6 +365,86 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         password: _passwordController.text,
       );
     }
+  }
+}
+
+class _TwoFactorForm extends StatelessWidget {
+  const _TwoFactorForm({
+    required this.controller,
+    required this.loading,
+    required this.hasError,
+    required this.onSubmit,
+    required this.onCancel,
+  });
+
+  final TextEditingController controller;
+  final bool loading;
+  final bool hasError;
+  final VoidCallback onSubmit;
+  final VoidCallback onCancel;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Column(
+      key: const Key('two-factor-form'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const Center(child: GameIcon(GameSymbol.shield, size: 42)),
+        const SizedBox(height: 12),
+        Text(
+          l10n.twoFactorTitle,
+          textAlign: TextAlign.center,
+          style: GameText.title,
+        ),
+        const SizedBox(height: 8),
+        Text(
+          l10n.twoFactorBody,
+          textAlign: TextAlign.center,
+          style: GameText.bodyDim,
+        ),
+        const SizedBox(height: 18),
+        TextFormField(
+          key: const Key('two-factor-code-field'),
+          controller: controller,
+          autofocus: true,
+          autocorrect: false,
+          enableSuggestions: false,
+          textInputAction: TextInputAction.done,
+          style: GameText.body,
+          decoration: InputDecoration(labelText: l10n.twoFactorCodeLabel),
+          onFieldSubmitted: (_) {
+            if (!loading && controller.text.trim().isNotEmpty) onSubmit();
+          },
+        ),
+        if (hasError) ...[
+          const SizedBox(height: 12),
+          Text(
+            l10n.twoFactorInvalid,
+            key: const Key('two-factor-error'),
+            textAlign: TextAlign.center,
+            style: GameText.body.copyWith(color: GamePalette.crimson),
+          ),
+        ],
+        const SizedBox(height: 18),
+        if (loading)
+          const Center(child: CircularProgressIndicator())
+        else
+          GameButton(
+            key: const Key('two-factor-submit'),
+            label: l10n.twoFactorVerify,
+            icon: GameSymbol.shield,
+            onPressed: () {
+              if (controller.text.trim().isNotEmpty) onSubmit();
+            },
+          ),
+        const SizedBox(height: 6),
+        TextButton(
+          onPressed: loading ? null : onCancel,
+          child: Text(l10n.twoFactorCancel),
+        ),
+      ],
+    );
   }
 }
 

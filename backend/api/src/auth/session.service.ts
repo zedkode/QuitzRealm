@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { ThrottlerException } from '@nestjs/throttler';
 import { ConfigService } from '@nestjs/config';
 import * as argon2 from 'argon2';
 import { createHmac } from 'node:crypto';
@@ -40,6 +41,29 @@ export class SessionService {
     // IP-urile se păstrează doar ca HMAC: suficient ca să recunoaștem același
     // dispozitiv, inutil pentru cineva care ar citi tabela.
     this.ipPepper = config.getOrThrow<string>('JWT_REFRESH_SECRET');
+  }
+
+  /// Semnal de protecție pentru înregistrare: același IP + agent nu poate crea
+  /// la nesfârșit conturi care intră imediat în sesiune. Nu blocăm NAT-uri doar
+  /// după IP; cerem și aceeași amprentă de dispozitiv și o fereastră de 24h.
+  async assertRegistrationAllowed(context: SessionContext): Promise<void> {
+    const ipHash = this.hashIp(context.ipAddress);
+    const deviceLabel = this.deviceLabel(context.userAgent);
+    if (!ipHash || !deviceLabel) return;
+
+    const recent = await this.prisma.userSession.findMany({
+      where: {
+        ipHash,
+        deviceLabel,
+        createdAt: { gt: new Date(Date.now() - 24 * 60 * 60 * 1_000) },
+      },
+      select: { userId: true },
+    });
+    if (new Set(recent.map((session) => session.userId)).size >= 5) {
+      throw new ThrottlerException(
+        'Prea multe conturi au fost create recent de pe acest dispozitiv.',
+      );
+    }
   }
 
   async create({

@@ -621,6 +621,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get loginButton => 'Intră în regat';
 
   @override
+  String get continueWithGoogle => 'Continuă cu Google';
+
+  @override
   String get createAccountButton => 'Creează contul';
 
   @override
@@ -632,6 +635,42 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get authGenericError =>
       'Autentificarea nu a reușit. Verifică datele și conexiunea.';
+
+  @override
+  String get twoFactorTitle => 'Confirmă autentificarea';
+
+  @override
+  String get twoFactorBody =>
+      'Introdu codul din aplicația de autentificare sau unul dintre codurile tale de recuperare.';
+
+  @override
+  String get twoFactorCodeLabel => 'Cod de autentificare';
+
+  @override
+  String get twoFactorVerify => 'Confirmă codul';
+
+  @override
+  String get twoFactorCancel => 'Înapoi la autentificare';
+
+  @override
+  String get twoFactorInvalid => 'Codul nu a fost acceptat. Încearcă din nou.';
+
+  @override
+  String get forgotPassword => 'Ai uitat parola?';
+
+  @override
+  String get passwordResetTitle => 'Resetează parola';
+
+  @override
+  String get passwordResetBody =>
+      'Vom trimite un link de resetare dacă adresa poate fi folosită pentru un cont.';
+
+  @override
+  String get passwordResetSend => 'Trimite linkul';
+
+  @override
+  String get passwordResetSent =>
+      'Dacă adresa este asociată unui cont, vei primi un link de resetare.';
 
   @override
   String get fieldRequired => 'Acest câmp este obligatoriu.';

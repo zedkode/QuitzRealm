@@ -3,10 +3,13 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 
 import '../../data/auth/api_auth_repository.dart';
+import '../../data/auth/guest_progress_migrator.dart';
+import '../../data/progress/progress_store.dart';
 import '../../data/question/api_question_repository.dart';
 import '../../data/player/api_profile_repository.dart';
 import '../../data/rank/api_leaderboard_repository.dart';
 import '../../data/social/api_social_repository.dart';
+import '../../domain/auth/account_session.dart';
 import '../../domain/auth/auth_repository.dart';
 import '../../domain/question/question_repository.dart';
 import '../../domain/player/player_profile.dart';
@@ -38,6 +41,21 @@ final authRepositoryProvider = Provider<AuthRepository>((ref) {
   return ApiAuthRepository(
     ref.watch(apiClientProvider),
     ref.watch(secureStorageProvider),
+  );
+});
+
+/// Dispozitive conectate, folosite numai în pagina de securitate a contului.
+/// Nu păstrăm lista global: după revocare sau schimbare de parolă trebuie
+/// reîncărcată din server, nu afișată din cache ca și cum ar fi încă validă.
+final accountSessionsProvider = FutureProvider.autoDispose<List<AccountSession>>(
+  (ref) => ref.watch(authRepositoryProvider).fetchSessions(),
+);
+
+final guestProgressMigratorProvider = Provider<GuestProgressMigrator>((ref) {
+  return GuestProgressMigrator(
+    ref.watch(authRepositoryProvider),
+    ref.watch(secureStorageProvider),
+    const SharedPreferencesProgressStore(),
   );
 });
 

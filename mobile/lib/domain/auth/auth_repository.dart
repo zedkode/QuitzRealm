@@ -1,16 +1,43 @@
 import 'account_session.dart';
+import 'two_factor_challenge.dart';
 
 abstract class AuthRepository {
   Future<bool> hasSession();
 
-  Future<void> login({required String email, required String password});
+  /// Întoarce o provocare numai când contul are 2FA activ; în caz contrar,
+  /// tokenurile sunt salvate și rezultatul este `null`.
+  Future<TwoFactorChallenge?> login({
+    required String email,
+    required String password,
+  });
+
+  /// Deschide Google OAuth în browserul sistemului și finalizează callback-ul
+  /// mobil printr-un cod de schimb unic.
+  Future<TwoFactorChallenge?> loginWithGoogle();
+
+  /// Finalizează provocarea TOTP sau codul de recuperare primit după parolă.
+  Future<void> completeTwoFactorLogin({
+    required String challengeToken,
+    required String code,
+  });
+
+  /// Cere un link cu expirare scurtă. API-ul răspunde identic pentru emailuri
+  /// existente sau inexistente, pentru a nu divulga dacă un cont există.
+  Future<void> requestPasswordReset(String email);
+
+  /// Convertește o singură dată progresul necompetitiv din campania jucată ca
+  /// invitat. Serverul reduce payloadul și nu acceptă ELO, monede ori inventar.
+  Future<void> migrateGuestProgress({
+    required String guestId,
+    required Map<String, Object?> campaignProgress,
+  });
 
   Future<void> register({
     required String username,
     required String email,
     required String password,
-    /// Age gate: serverul refuză conturile sub vârsta minimă.
     required DateTime birthDate,
+    String? captchaToken,
   });
 
   Future<void> logout();
@@ -20,19 +47,27 @@ abstract class AuthRepository {
   Future<void> requestEmailVerification();
 
   // --- Securitatea contului (§1.5) ---
-
-  /// Dispozitivele conectate la cont. E singurul mod în care jucătorul poate
-  /// observa că altcineva îi folosește contul.
   Future<List<AccountSession>> fetchSessions();
-
-  /// Închide un alt dispozitiv. Sesiunea curentă nu se poate revoca de aici:
-  /// pentru asta există deconectarea.
   Future<void> revokeSession(String sessionId);
-
-  /// „Deconectează-mă de peste tot, mai puțin de aici." Întoarce câte sesiuni
-  /// s-au închis, ca ecranul să poată confirma o acțiune care altfel n-ar avea
-  /// niciun efect vizibil.
   Future<int> revokeOtherSessions();
+
+  /// Începe configurarea TOTP și întoarce URI-ul standard care poate fi scanat
+  /// de orice aplicație de autentificare. Secretul rămâne inactiv până la
+  /// confirmarea codului.
+  Future<String> startTwoFactorEnrollment({required String currentPassword});
+
+  /// Confirmă primul cod TOTP și întoarce codurile de recuperare, afișate o
+  /// singură dată utilizatorului.
+  Future<List<String>> confirmTwoFactorEnrollment({
+    required String currentPassword,
+    required String code,
+  });
+
+  /// Dezactivează 2FA numai după parolă și un cod valid TOTP/recuperare.
+  Future<void> disableTwoFactor({
+    required String currentPassword,
+    required String code,
+  });
 
   /// Schimbă parola cu parola curentă drept dovadă. Serverul închide celelalte
   /// dispozitive, dar păstrează sesiunea de aici.

@@ -13,6 +13,10 @@ class ApiClient {
 
   final Uri _baseUri;
   final http.Client _client;
+
+  /// Folosit exclusiv pentru redirecturi de autentificare inițiate în browserul
+  /// sistemului; cererile de date folosesc în continuare metodele clientului.
+  Uri get baseUri => _baseUri;
   final FlutterSecureStorage _storage;
   Future<bool>? _refreshInFlight;
 
