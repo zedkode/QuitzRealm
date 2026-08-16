@@ -313,7 +313,7 @@ interface BattleProps {
   onLeave: () => void;
 }
 
-export function Battle(props: BattleProps) {
+function Battle(props: BattleProps) {
   const {
     snapshot, matchStatus, notice, myUserId, playerOrder, territoryMap, territory,
     events, selected, onSelect, answerSubmitted, roundResult, attackTarget,
