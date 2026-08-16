@@ -1,9 +1,14 @@
 import '../rank/player_rank.dart';
+import 'profile_cosmetics.dart';
 
 /// Profilul de cont, așa cum îl livrează `GET /users/me`.
 ///
 /// Rangul, nivelul online și monedele sunt calculate de server. Clientul le
 /// afișează; progresul campaniei offline rămâne separat, în `CampaignProgress`.
+///
+/// E versiunea **scurtă**, cerută de antetul fiecărui ecran. Profilul complet
+/// (bio, status, catalog de cosmetice, linkuri) stă în `ProfileDetails` și se
+/// cere doar când se deschide pagina de profil.
 class PlayerProfile {
   const PlayerProfile({
     required this.id,
@@ -17,6 +22,7 @@ class PlayerProfile {
     this.leaderboardPosition,
     this.emailVerified = false,
     this.canPlayRanked = false,
+    this.equipped = EquippedCosmetics.empty,
   });
 
   final String id;
@@ -32,6 +38,10 @@ class PlayerProfile {
   /// Din `capabilities`: acasă avem nevoie doar de consecințe, nu de motive.
   final bool emailVerified;
   final bool canPlayRanked;
+
+  /// Ce poartă jucătorul (§4.1, §4.5). Antetul îl folosește ca să arate același
+  /// portret și aceeași ramă pe toate ecranele.
+  final EquippedCosmetics equipped;
 
   static PlayerProfile fromJson(Map<String, Object?> json) {
     int? asInt(Object? value) =>
@@ -49,17 +59,8 @@ class PlayerProfile {
           json['displayName']?.toString() ?? json['username']?.toString() ?? '',
       rank: rank is Map<String, Object?>
           ? PlayerRank.fromJson(rank)
-          : const PlayerRank(
-              key: 'novice',
-              label: '',
-              majorRank: 1,
-              division: 1,
-              order: 1,
-              totalTiers: 1,
-              elo: 0,
-              progress: 0,
-              isLegend: false,
-            ),
+          : PlayerRank.unranked,
+      equipped: EquippedCosmetics.fromJson(json['equipped']),
       level: asInt(json['level']) ?? 1,
       xp: asInt(json['xp']) ?? 0,
       coins: asInt(json['coins']) ?? 0,

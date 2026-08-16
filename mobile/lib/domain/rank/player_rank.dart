@@ -26,6 +26,23 @@ class PlayerRank {
   final double progress;
   final bool isLegend;
 
+  /// Treapta de pornire, folosită când serverul n-a trimis un rang.
+  ///
+  /// Trăiește aici, nu copiată la fiecare loc care are nevoie de ea: trei
+  /// variante scrise de mână s-ar putea abate una de alta fără ca cineva să
+  /// observe, iar `majorRank: 1` decide culoarea insignei.
+  static const unranked = PlayerRank(
+    key: 'novice',
+    label: '',
+    majorRank: 1,
+    division: null,
+    order: 1,
+    totalTiers: 1,
+    elo: 0,
+    progress: 0,
+    isLegend: false,
+  );
+
   static PlayerRank fromJson(Map<String, Object?> json) {
     final progress = json['progress'];
     final division = json['division'];
@@ -73,17 +90,7 @@ class LeaderboardEntry {
       matchesPlayed: _asInt(json['matchesPlayed']) ?? 0,
       rank: rank is Map<String, Object?>
           ? PlayerRank.fromJson(rank)
-          : const PlayerRank(
-              key: '',
-              label: '',
-              majorRank: 1,
-              division: null,
-              order: 1,
-              totalTiers: 1,
-              elo: 0,
-              progress: 0,
-              isLegend: false,
-            ),
+          : PlayerRank.unranked,
     );
   }
 }
