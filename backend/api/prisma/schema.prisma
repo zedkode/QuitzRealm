@@ -113,12 +113,71 @@ model User {
   @@map("users")
 }
 
+/// Partea editabilă a profilului din `owner-plan.md` §4.3, §4.4 și §4.8.
+///
+/// Tabel separat de `users`: se citește în alte momente decât starea de joc
+/// (ELO, monede) și crește pe cont propriu, cu fiecare secțiune nouă de profil.
+///
+/// **Abatere conștientă de la schița §4.10**: `banner_id`, `name_style_id` și
+/// `name_title_achievement_id` **nu** stau aici. Ce e echipat se citește dintr-un
+/// singur loc — `user_inventory.equipped` — pentru că altfel un cosmetic ar
+/// putea fi „echipat" în profil fără să fie deținut în inventar, iar cele două
+/// tabele s-ar contrazice tăcut. `visibility` stă tot într-un singur loc, în
+/// `user_privacy_settings`, unde §4.9 și §2.4 o cer oricum împreună.
+model UserProfile {
+  userId String @id @map("user_id") @db.Uuid
+  /// „Despre mine" (§4.3). Limita de 200 de caractere e cea din plan.
+  bio    String? @db.VarChar(200)
+  /// Statusul custom (§4.4): text scurt plus, opțional, un emoji.
+  statusText      String?   @map("status_text") @db.VarChar(80)
+  statusEmoji     String?   @map("status_emoji") @db.VarChar(16)
+  /// Statusul poate expira singur — §4.4 cere explicit varianta cu durată.
+  statusExpiresAt DateTime? @map("status_expires_at")
+  /// Culoarea de accent a paginii de profil (§4.8): o cheie dintr-un set
+  /// presetat, nu o valoare liberă, ca profilurile să rămână lizibile.
+  themeAccent     String    @default("gold") @map("theme_accent") @db.VarChar(24)
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_profiles")
+}
+
+/// Linkurile externe de pe profil (§4.6).
+///
+/// `verified` = domeniul a trecut lista de domenii permise la momentul
+/// salvării. Rămâne stocat, nu recalculat la citire: dacă lista se schimbă
+/// mâine, vrem să vedem ce a fost acceptat și când.
+model UserLink {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  label     String   @db.VarChar(32)
+  url       String   @db.VarChar(200)
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, url])
+  @@map("user_links")
+}
+
 enum DmPermission {
   EVERYONE     @map("everyone")
   FRIENDS_ONLY @map("friends_only")
   NOBODY       @map("nobody")
 
   @@map("dm_permission")
+}
+
+/// Cine îți vede statutul online (§4.9). Separată de [DmPermission]: una
+/// spune cine îți poate scrie, cealaltă cine te vede conectat.
+enum OnlineVisibility {
+  EVERYONE @map("everyone")
+  FRIENDS  @map("friends")
+  NOBODY   @map("nobody")
+
+  @@map("online_visibility")
 }
 
 enum ProfileVisibility {
@@ -137,6 +196,15 @@ model UserPrivacySettings {
   /// **impus**, nu doar implicit - vezi `capabilities.dmPermissionLocked`.
   dmPermission      DmPermission      @default(FRIENDS_ONLY) @map("dm_permission")
   profileVisibility ProfileVisibility @default(PUBLIC) @map("profile_visibility")
+  /// Cine te vede online (4.9). Implicit doar prietenii: e alegerea prudenta
+  /// pentru un cont nou, iar cine vrea sa fie vizibil tuturor o poate ridica.
+  onlineVisibility  OnlineVisibility  @default(FRIENDS) @map("online_visibility")
+  /// Invitatiile la partide de la alti jucatori (captura 04-account-settings).
+  allowMatchInvites Boolean           @default(true) @map("allow_match_invites")
+  /// Cenzura din chat. Nu opreste moderarea si raportarea - schimba doar ce
+  /// vede jucatorul, nu ce e permis sa se scrie.
+  chatCensorship    Boolean           @default(true) @map("chat_censorship")
+  chatNotifications Boolean           @default(true) @map("chat_notifications")
   updatedAt         DateTime          @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -435,18 +503,35 @@ model MatchEvent {
 }
 
 model Cosmetic {
-  id         String       @id @default(uuid()) @db.Uuid
+  id String @id @default(uuid()) @db.Uuid
+  /// Cheie stabilă, independentă de nume și de limbă. Aplicația leagă de ea
+  /// desenul și traducerea; `id`-ul e un UUID regenerat la fiecare seed, deci
+  /// n-ar putea fi scris într-un asset sau într-un fișier ARB.
+  code       String       @unique @db.VarChar(64)
   type       CosmeticType
   name       String       @db.VarChar(100)
   rarity     String       @db.VarChar(30)
   priceCoins Int          @default(0) @map("price_coins")
   priceGems  Int          @default(0) @map("price_gems")
+  /// Deblocare gratuită prin progres: nivel de cont minim (§7.3) sau treaptă de
+  /// rang minimă (§5). `null` pe amândouă = se obține doar din magazin.
+  unlockLevel     Int? @map("unlock_level")
+  unlockRankOrder Int? @map("unlock_rank_order")
+  /// Ordinea în catalog. Fără ea, lista ar depinde de ordinea inserării.
+  sortOrder       Int  @default(0) @map("sort_order")
 
   inventory UserInventory[]
 
+  @@index([type, sortOrder])
   @@map("cosmetics")
 }
 
+/// Ce deține un jucător și ce poartă acum.
+///
+/// `equipped` e **singura** sursă de adevăr pentru ce se vede pe profil. Regula
+/// „cel mult un obiect echipat per tip" nu se poate exprima ca `@@unique` —
+/// tipul stă pe `cosmetics`, nu aici — deci o impune serviciul, într-o singură
+/// tranzacție care dezechipează înainte să echipeze.
 model UserInventory {
   userId     String   @map("user_id") @db.Uuid
   cosmeticId String   @map("cosmetic_id") @db.Uuid
@@ -457,6 +542,7 @@ model UserInventory {
   cosmetic Cosmetic @relation(fields: [cosmeticId], references: [id], onDelete: Cascade)
 
   @@id([userId, cosmeticId])
+  @@index([userId, equipped])
   @@map("user_inventory")
 }
 
