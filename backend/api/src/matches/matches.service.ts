@@ -1,12 +1,16 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { MatchMode, MatchResult, MatchStatus } from '@prisma/client';
+import { AchievementsService } from '../achievements/achievements.service';
 import { PrismaService } from '../prisma/prisma.service';
 import { RecordMatchDto } from './dto/record-match.dto';
 import { calculateEloDelta } from './elo';
 
 @Injectable()
 export class MatchesService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly achievements: AchievementsService,
+  ) {}
 
   history(userId: string) {
     return this.prisma.match.findMany({
@@ -55,7 +59,7 @@ export class MatchesService {
     }
     const ratings = await this.prisma.user.findMany({
       where: { id: { in: dto.players.map((player) => player.userId) } },
-      select: { id: true, eloRating: true },
+      select: { id: true, eloRating: true, correctAnswers: true },
     });
     if (ratings.length !== dto.players.length) {
       throw new BadRequestException('Cel puțin un jucător nu există.');
@@ -63,6 +67,7 @@ export class MatchesService {
     const ratingById = new Map(
       ratings.map((user) => [user.id, user.eloRating]),
     );
+    const userById = new Map(ratings.map((user) => [user.id, user]));
     const scoreFor = (result: MatchResult): 0 | 0.5 | 1 =>
       result === MatchResult.WIN ? 1 : result === MatchResult.DRAW ? 0.5 : 0;
 
@@ -111,6 +116,16 @@ export class MatchesService {
             },
           }),
         ),
+      );
+      await this.achievements.recordValidatedMatch(
+        transaction,
+        dto.players.map((player) => ({
+          userId: player.userId,
+          correctAnswersTotal:
+            userById.get(player.userId)!.correctAnswers + player.correctAnswers,
+          result: player.result,
+          mode: dto.mode,
+        })),
       );
       return match;
     });
