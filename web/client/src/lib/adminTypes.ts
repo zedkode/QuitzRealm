@@ -15,6 +15,35 @@ export interface ActivityPoint {
   questionsAnswered: number;
 }
 
+export interface GrowthPoint {
+  day: string;
+  newPlayers: number;
+  returningPlayers: number;
+  totalPlayers: number;
+  matchesPlayed: number;
+  questionsTotal: number;
+  newReports: number;
+  revenueCents: number;
+}
+
+export interface Delta {
+  value: number;
+  deltaPct: number | null;
+}
+
+export interface Money {
+  cents: number;
+  deltaPct: number | null;
+}
+
+/// Procent derivat, cu explicația din care a ieșit. `basis` se arată la hover:
+/// un indicator compus fără bază de calcul e o cifră în care nu poți avea
+/// încredere.
+export interface DerivedPct {
+  pct: number;
+  basis: string;
+}
+
 export interface AdminOverview {
   generatedAt: string;
   kpis: {
@@ -64,4 +93,53 @@ export interface AdminOverview {
     currency: string;
     at: string | null;
   }>;
+
+  growth: {
+    series: GrowthPoint[];
+    summary: {
+      newPlayers: Delta;
+      returningPlayers: Delta;
+      totalGrowth: Delta;
+    };
+  };
+
+  storeRevenue: {
+    currency: string;
+    today: Money;
+    sevenDays: Money;
+    thirtyDays: Money;
+    topItem: { name: string; cents: number } | null;
+  };
+
+  coinEconomy: {
+    minted30d: number;
+    spent30d: number;
+    circulation: number;
+    healthy: boolean;
+    topSink: { label: string; amount: number } | null;
+  };
+
+  questionQueue: {
+    total: number;
+    buckets: NotInstrumented;
+  };
+
+  events: NotInstrumented;
+  challenges: NotInstrumented;
+  notifications: NotInstrumented;
+
+  moderationAlerts: {
+    chatReports: number;
+    playerReports: NotInstrumented;
+    offensiveNames: NotInstrumented;
+    cheatingReports: NotInstrumented;
+  };
+
+  platformOverview: {
+    contentCoverage: DerivedPct;
+    playerEngagement: DerivedPct;
+    economyBalance: DerivedPct;
+    communityHealth: DerivedPct;
+    systemPerformance: DerivedPct;
+  };
 }

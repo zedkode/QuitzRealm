@@ -16,12 +16,44 @@ export interface NotInstrumented {
 
 const notInstrumented = (reason: string): NotInstrumented => ({ available: false, reason });
 
+const derived = (pct: number, basis: string): DerivedPct => ({
+  pct: Math.round(Math.min(Math.max(pct, 0), 100) * 10) / 10,
+  basis,
+});
+
+/// Variația procentuală față de perioada anterioară.
+///
+/// `null` când nu există bază de comparație: „+100%" pornind de la zero e o
+/// afirmație goală, iar un tablou de bord nu trebuie să facă afirmații goale.
+const deltaPct = (current: number, previous: number): number | null =>
+  previous === 0 ? null : Math.round(((current - previous) / previous) * 1000) / 10;
+
 interface DailyRow {
   day: Date;
   active_players: bigint;
   new_players: bigint;
   matches_played: bigint;
   questions_answered: bigint;
+}
+
+interface GrowthRow {
+  day: Date;
+  new_players: bigint;
+  returning_players: bigint;
+  total_players: bigint;
+  matches_played: bigint;
+  questions_total: bigint;
+  new_reports: bigint;
+  revenue_cents: bigint;
+}
+
+/// Procent derivat, însoțit de explicația din care a ieșit.
+///
+/// Fără `basis`, un „74%" pe un indicator compus e o cifră pe care nimeni nu o
+/// poate verifica și în care nimeni n-ar trebui să aibă încredere.
+export interface DerivedPct {
+  pct: number;
+  basis: string;
 }
 
 @Injectable()
@@ -48,6 +80,7 @@ export class OverviewService {
       totalQuestions, questionsThisWeek, pendingQuestions,
       revenue30d, revenuePrev30d,
       series, recentActivity, topPlayers, recentTransactions,
+      growth, storeRevenue, coinEconomy, approvedQuestions, resolvedReports, totalReports,
     ] = await Promise.all([
       this.distinctSessionUsers(dayAgo),
       this.distinctSessionUsers(twoDaysAgo, dayAgo),
@@ -66,6 +99,12 @@ export class OverviewService {
       this.recentActivity(),
       this.topPlayers(),
       this.recentTransactions(),
+      this.growthSeries(),
+      this.storeRevenue(now),
+      this.coinEconomy(monthAgo),
+      this.prisma.question.count({ where: { status: QuestionStatus.APPROVED } }),
+      this.prisma.chatReport.count({ where: { resolution: { not: 'PENDING' } } }),
+      this.prisma.chatReport.count(),
     ]);
 
     return {
@@ -115,6 +154,61 @@ export class OverviewService {
       ),
       topPlayers,
       recentTransactions,
+
+      growth,
+      storeRevenue,
+      coinEconomy,
+
+      /// Coada de revizuire. Numărul total e real; împărțirea pe priorități nu
+      /// are sursă, pentru că întrebările n-au câmp de prioritate.
+      questionQueue: {
+        total: pendingQuestions,
+        buckets: notInstrumented(
+          'Întrebările n-au câmp de prioritate. Ar cere `Question.priority` sau o regulă care să o deducă din numărul de rapoarte.',
+        ),
+      },
+
+      events: notInstrumented('Nu există model de eveniment: nici activ, nici programat.'),
+      challenges: notInstrumented('Nu există model de provocare, deci nici progres de urmărit.'),
+      notifications: notInstrumented(
+        'Nu există furnizor de notificări configurat și nici model care să rețină ce s-a trimis.',
+      ),
+
+      moderationAlerts: {
+        chatReports: pendingReports,
+        playerReports: notInstrumented(
+          'Rapoartele generale de comportament n-au model separat; azi există doar `ChatReport`.',
+        ),
+        offensiveNames: notInstrumented('Nu există verificare de nume ofensatoare.'),
+        cheatingReports: notInstrumented('Nu există detecție de trișare.'),
+      },
+
+      platformOverview: {
+        contentCoverage: derived(
+          totalQuestions === 0 ? 0 : (approvedQuestions / totalQuestions) * 100,
+          `${approvedQuestions} din ${totalQuestions} întrebări sunt aprobate`,
+        ),
+        playerEngagement: derived(
+          mau === 0 ? 0 : (dau / mau) * 100,
+          `${dau} activi azi din ${mau} activi în ultimele 30 de zile`,
+        ),
+        economyBalance: derived(
+          coinEconomy.minted30d === 0 ? 0 : (coinEconomy.spent30d / coinEconomy.minted30d) * 100,
+          `${coinEconomy.spent30d} monede cheltuite față de ${coinEconomy.minted30d} emise în 30 de zile`,
+        ),
+        communityHealth: derived(
+          totalReports === 0 ? 100 : (resolvedReports / totalReports) * 100,
+          totalReports === 0
+            ? 'Niciun raport de moderare până acum'
+            : `${resolvedReports} din ${totalReports} rapoarte rezolvate`,
+        ),
+        systemPerformance: derived(
+          databaseLatencyMs === null ? 0 : Math.max(0, 100 - databaseLatencyMs),
+          databaseLatencyMs === null
+            ? 'Baza de date nu a răspuns la sondaj'
+            : `Baza de date răspunde în ${databaseLatencyMs} ms`,
+        ),
+      },
     };
   }
 
@@ -287,6 +381,155 @@ export class OverviewService {
       currency: row.currency,
       at: row.paidAt?.toISOString() ?? null,
     }));
+  }
+
+  /// Creșterea pe 30 de zile: conturi noi, conturi întoarse și total cumulat.
+  ///
+  /// „Întors" înseamnă un cont care a avut sesiune în ziua respectivă, dar s-a
+  /// înregistrat mai devreme — altfel un cont nou ar fi numărat de două ori.
+  private async growthSeries() {
+    const rows = await this.prisma.$queryRaw<GrowthRow[]>`
+      WITH days AS (
+        SELECT generate_series(date_trunc('day', now()) - interval '29 days',
+                               date_trunc('day', now()),
+                               '1 day')::timestamp AS day
+      )
+      SELECT d.day,
+             (SELECT COUNT(*) FROM "users" u
+               WHERE date_trunc('day', u."created_at") = d.day)::bigint AS new_players,
+             (SELECT COUNT(DISTINCT s."user_id") FROM "user_sessions" s
+                JOIN "users" u ON u."id" = s."user_id"
+               WHERE date_trunc('day', s."last_seen_at") = d.day
+                 AND date_trunc('day', u."created_at") < d.day)::bigint AS returning_players,
+             (SELECT COUNT(*) FROM "users" u
+               WHERE u."created_at" < d.day + interval '1 day')::bigint AS total_players,
+             (SELECT COUNT(*) FROM "matches" m
+               WHERE date_trunc('day', m."started_at") = d.day)::bigint AS matches_played,
+             (SELECT COUNT(*) FROM "questions" q
+               WHERE q."created_at" < d.day + interval '1 day')::bigint AS questions_total,
+             (SELECT COUNT(*) FROM "chat_reports" r
+               WHERE date_trunc('day', r."created_at") = d.day)::bigint AS new_reports,
+             (SELECT COALESCE(SUM(p."price_cents"), 0) FROM "purchases" p
+               WHERE p."status" = 'paid'
+                 AND date_trunc('day', p."paid_at") = d.day)::bigint AS revenue_cents
+      FROM days d
+      ORDER BY d.day
+    `;
+
+    const series = rows.map((row) => ({
+      day: row.day,
+      newPlayers: Number(row.new_players),
+      returningPlayers: Number(row.returning_players),
+      totalPlayers: Number(row.total_players),
+      matchesPlayed: Number(row.matches_played),
+      questionsTotal: Number(row.questions_total),
+      newReports: Number(row.new_reports),
+      revenueCents: Number(row.revenue_cents),
+    }));
+
+    // Ultimele 15 zile față de cele 15 dinainte: o comparație pe ferestre egale
+    // e singura care face procentul comparabil.
+    const half = Math.floor(series.length / 2);
+    const sum = (from: number, to: number, key: 'newPlayers' | 'returningPlayers') =>
+      series.slice(from, to).reduce((total, point) => total + point[key], 0);
+
+    const newRecent = sum(half, series.length, 'newPlayers');
+    const newPrevious = sum(0, half, 'newPlayers');
+    const returningRecent = sum(half, series.length, 'returningPlayers');
+    const returningPrevious = sum(0, half, 'returningPlayers');
+
+    return {
+      series,
+      summary: {
+        newPlayers: { value: newRecent, deltaPct: deltaPct(newRecent, newPrevious) },
+        returningPlayers: { value: returningRecent, deltaPct: deltaPct(returningRecent, returningPrevious) },
+        totalGrowth: {
+          value: newRecent + returningRecent,
+          deltaPct: deltaPct(newRecent + returningRecent, newPrevious + returningPrevious),
+        },
+      },
+    };
+  }
+
+  /// Venitul din bani reali, pe cele trei ferestre din tabloul de bord.
+  private async storeRevenue(now: Date) {
+    const startOfToday = new Date(now);
+    startOfToday.setHours(0, 0, 0, 0);
+    const startOfYesterday = new Date(startOfToday.getTime() - DAY_MS);
+    const sevenAgo = new Date(now.getTime() - 7 * DAY_MS);
+    const fourteenAgo = new Date(now.getTime() - 14 * DAY_MS);
+    const thirtyAgo = new Date(now.getTime() - 30 * DAY_MS);
+    const sixtyAgo = new Date(now.getTime() - 60 * DAY_MS);
+
+    const [today, yesterday, week, previousWeek, month, previousMonth, topRows] = await Promise.all([
+      this.revenueCents(startOfToday, now),
+      this.revenueCents(startOfYesterday, startOfToday),
+      this.revenueCents(sevenAgo, now),
+      this.revenueCents(fourteenAgo, sevenAgo),
+      this.revenueCents(thirtyAgo, now),
+      this.revenueCents(sixtyAgo, thirtyAgo),
+      this.prisma.purchase.groupBy({
+        by: ['gemPackId'],
+        where: { status: PurchaseStatus.PAID, paidAt: { gte: startOfToday } },
+        _sum: { priceCents: true },
+        orderBy: { _sum: { priceCents: 'desc' } },
+        take: 1,
+      }),
+    ]);
+
+    let topItem: { name: string; cents: number } | null = null;
+    if (topRows.length > 0) {
+      const pack = await this.prisma.gemPack.findUnique({
+        where: { id: topRows[0].gemPackId },
+        select: { name: true },
+      });
+      topItem = { name: pack?.name ?? 'Pachet șters', cents: topRows[0]._sum.priceCents ?? 0 };
+    }
+
+    return {
+      currency: 'RON',
+      today: { cents: today, deltaPct: deltaPct(today, yesterday) },
+      sevenDays: { cents: week, deltaPct: deltaPct(week, previousWeek) },
+      thirtyDays: { cents: month, deltaPct: deltaPct(month, previousMonth) },
+      topItem,
+    };
+  }
+
+  /// Economia de monede, citită din registru, nu din soldurile de pe conturi:
+  /// soldul spune cât e acum, registrul spune de unde vine.
+  private async coinEconomy(monthAgo: Date) {
+    const [minted, spent, circulation, topSink] = await Promise.all([
+      this.prisma.currencyLedger.aggregate({
+        where: { currency: 'COINS', delta: { gt: 0 }, createdAt: { gte: monthAgo } },
+        _sum: { delta: true },
+      }),
+      this.prisma.currencyLedger.aggregate({
+        where: { currency: 'COINS', delta: { lt: 0 }, createdAt: { gte: monthAgo } },
+        _sum: { delta: true },
+      }),
+      this.prisma.user.aggregate({ _sum: { coins: true } }),
+      this.prisma.currencyLedger.groupBy({
+        by: ['referenceType'],
+        where: { currency: 'COINS', delta: { lt: 0 }, createdAt: { gte: monthAgo } },
+        _sum: { delta: true },
+        orderBy: { _sum: { delta: 'asc' } },
+        take: 1,
+      }),
+    ]);
+
+    const minted30d = minted._sum.delta ?? 0;
+    const spent30d = Math.abs(spent._sum.delta ?? 0);
+
+    return {
+      minted30d,
+      spent30d,
+      circulation: circulation._sum.coins ?? 0,
+      /// Sănătoasă cât timp nu se emite mult mai mult decât se consumă.
+      healthy: minted30d === 0 || spent30d >= minted30d * 0.6,
+      topSink: topSink.length > 0
+        ? { label: topSink[0].referenceType ?? 'Nespecificat', amount: Math.abs(topSink[0]._sum.delta ?? 0) }
+        : null,
+    };
   }
 
   /// Latența reală a bazei de date, măsurată acum.
