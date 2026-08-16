@@ -112,6 +112,38 @@ export class AchievementsService {
     }
   }
 
+  /// Raritatea derivă din rata de deblocare globală și poate fi apelată de un
+  /// job periodic; nu este setată manual pe fiecare achievement.
+  async recalculateRarities(): Promise<void> {
+    const totalUsers = await this.prisma.user.count();
+    if (totalUsers === 0) return;
+    const achievements = await this.prisma.achievement.findMany({
+      select: { id: true },
+    });
+    await Promise.all(
+      achievements.map(async (achievement) => {
+        const unlocked = await this.prisma.userAchievement.count({
+          where: { achievementId: achievement.id, unlockedAt: { not: null } },
+        });
+        const ratio = unlocked / totalUsers;
+        const rarity =
+          ratio <= 0.001
+            ? 'MYTHIC'
+            : ratio <= 0.01
+            ? 'LEGENDARY'
+            : ratio <= 0.05
+            ? 'EPIC'
+            : ratio <= 0.2
+            ? 'RARE'
+            : 'COMMON';
+        await this.prisma.achievement.update({
+          where: { id: achievement.id },
+          data: { rarity },
+        });
+      }),
+    );
+  }
+
   async listForUser(userId: string) {
     await this.ensureCatalog();
     const rows = await this.prisma.achievement.findMany({
