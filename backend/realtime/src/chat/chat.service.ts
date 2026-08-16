@@ -15,6 +15,7 @@ export const GLOBAL_ROOM = 'chat:global';
 /// raportat și moderat. 24 h e fereastra în care un raport are încă rost.
 const GLOBAL_HISTORY_TTL_SECONDS = 86_400;
 const GLOBAL_HISTORY_SIZE = 100;
+const SHADOW_HISTORY_SIZE = 100;
 
 /// Fereastra de rate limiting pentru chatul global. Mai strictă decât la
 /// conversațiile private: expune la necunoscuți, fără niciun filtru de relație.
@@ -56,7 +57,12 @@ export type MatchSendOutcome =
   | { ok: false; reason: string };
 
 export type GlobalSendOutcome =
-  | { ok: true; message: GlobalChatMessage; excludedUserIds: string[] }
+  | {
+      ok: true;
+      message: GlobalChatMessage;
+      excludedUserIds: string[];
+      shadowBanned: boolean;
+    }
   | { ok: false; reason: string };
 
 @Injectable()
@@ -74,22 +80,17 @@ export class ChatService {
 
   /// Istoricul recent al chatului global, trimis la intrarea în cameră ca
   /// jucătorul să nu vadă un ecran gol.
-  async recentGlobal(): Promise<GlobalChatMessage[]> {
-    const raw = await this.redis.client.lrange(
-      this.globalKey(),
-      0,
-      GLOBAL_HISTORY_SIZE - 1,
-    );
-    return raw
-      .map((entry) => {
-        try {
-          return JSON.parse(entry) as GlobalChatMessage;
-        } catch {
-          return null;
-        }
-      })
-      .filter((entry): entry is GlobalChatMessage => entry !== null)
-      .reverse();
+  async recentGlobal(userId?: string): Promise<GlobalChatMessage[]> {
+    const publicMessages = await this.readGlobalHistory(this.globalKey());
+    if (!userId) return publicMessages;
+
+    // Mesajele shadow-banned nu sunt niciodată în lista publică. Le readucem
+    // exclusiv pentru autor, ca experiența lui să rămână consecventă după o
+    // reconectare, fără a dezvălui sancțiunea altor jucători.
+    const privateMessages = await this.readGlobalHistory(this.shadowKey(userId));
+    return [...publicMessages, ...privateMessages]
+      .sort((first, second) => first.createdAt.localeCompare(second.createdAt))
+      .slice(-GLOBAL_HISTORY_SIZE);
   }
 
   /// Verifică și înregistrează un mesaj global.
@@ -126,11 +127,19 @@ export class ChatService {
       content,
       createdAt: new Date().toISOString(),
     };
+    const shadowBanned =
+      context.shadowBannedUntil !== null &&
+      Date.parse(context.shadowBannedUntil) > Date.now();
+    const historyKey = shadowBanned ? this.shadowKey(userId) : this.globalKey();
     await this.redis.client
       .multi()
-      .lpush(this.globalKey(), JSON.stringify(message))
-      .ltrim(this.globalKey(), 0, GLOBAL_HISTORY_SIZE - 1)
-      .expire(this.globalKey(), GLOBAL_HISTORY_TTL_SECONDS)
+      .lpush(historyKey, JSON.stringify(message))
+      .ltrim(
+        historyKey,
+        0,
+        shadowBanned ? SHADOW_HISTORY_SIZE - 1 : GLOBAL_HISTORY_SIZE - 1,
+      )
+      .expire(historyKey, GLOBAL_HISTORY_TTL_SECONDS)
       .exec();
 
     return {
@@ -139,6 +148,7 @@ export class ChatService {
       // Blocarea se aplică la livrare, nu la afișare: cel blocat nu vede
       // mesajul deloc, iar expeditorul nu-l vede pe al lui.
       excludedUserIds: context.blockedUserIds,
+      shadowBanned,
     };
   }
 
@@ -341,8 +351,26 @@ export class ChatService {
     return true;
   }
 
+  private async readGlobalHistory(key: string): Promise<GlobalChatMessage[]> {
+    const raw = await this.redis.client.lrange(key, 0, GLOBAL_HISTORY_SIZE - 1);
+    return raw
+      .map((entry) => {
+        try {
+          return JSON.parse(entry) as GlobalChatMessage;
+        } catch {
+          return null;
+        }
+      })
+      .filter((entry): entry is GlobalChatMessage => entry !== null)
+      .reverse();
+  }
+
   private globalKey(): string {
     return `${KEY_PREFIX}:chat:global`;
+  }
+
+  private shadowKey(userId: string): string {
+    return `${KEY_PREFIX}:chat:global:shadow:${userId}`;
   }
 
   private matchChatKey(matchId: string): string {

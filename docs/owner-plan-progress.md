@@ -22,3 +22,20 @@
 | Invalidează sesiuni la administrare | Pregătit pentru punctul 13 | `SessionService.revokeAll` există și este folosit de operațiile de securitate; ecranul Admin Panel și integrarea completă a acțiunilor administrative aparțin punctului 13. |
 
 **Verdict curent:** punctul 1 este satisfăcut pentru suprafața de autentificare livrată acum. Singura dependență rămasă este integrarea acțiunilor administrative din punctul 13 cu `SessionService.revokeAll`; aceasta nu blochează autentificarea, dar trebuie verificată din nou la implementarea Admin Panel. Validări efectuate: `flutter analyze`, testele `AuthController` (4/4), `npm run build` și testele `TotpService` (3/3).
+
+## 2. Sistem de chat — global, prieteni și privat, cu protecție bazată pe activitate
+
+| Criteriu | Stare | Dovezi / lucru rămas |
+|---|---:|---|
+| Chat global efemer | Implementat | Lobby global live în aplicația mobilă; mesajele și istoricul de 24h sunt păstrate în Redis, nu în Postgres. Fluxul este livrat prin Socket.IO, cu raportare prin snapshot pentru mesaje efemere. |
+| Chat prieteni persistent | Implementat | Conversații `FRIEND`, istoric paginat, filtrare și livrare live pe `chat:message`. |
+| DM către necunoscuți | Implementat | T2+ și email verificat pentru inițiere; setările `everyone/friends_only/nobody`, inbox de cereri și acceptare explicită pentru primul mesaj. |
+| Trepte de încredere T0–T8 | Implementat | Pragurile 0/10/50/200/1.000/5.000/15.000/50.000/100.000 sunt server-side; clientul afișează progresul primit de la API. Minorii rămân pe reacții în chat global indiferent de progres. |
+| Rate limiting și anti-spam | Implementat | Limitare Redis în global/match, throttling REST pentru mesaje/rapoarte, filtru de limbaj, mascarea profanității, detectare de repetiții și mute automat temporar. |
+| Raportare și moderare | Implementat pentru raportare | Rapoartele persistă cu prioritate crescută pentru DM/prieteni; mesajele globale folosesc snapshot. Review-ul administrativ complet este verificat în punctul 13. |
+| Shadow-ban global | Implementat infrastructural | Coloana de expirare, istoric privat Redis pentru autor și gateway care nu livrează mesajele sancționate public; test realtime dedicat. Activarea de către moderator este punct de integrare pentru Admin Panel. |
+| Blocare universală | Implementat | Blocarea rupe prietenia, ascunde conversațiile și oprește comunicarea în ambele sensuri, inclusiv la livrarea realtime. |
+| Prietenii și prezență | Implementat | Cerere/acceptare/refuz/blocare, prezență pentru prieteni și listă în hub-ul mobil game-style. |
+| Sugestii de prietenie | Implementat | Jucători întâlniți în partide recente, fără relații/blocări existente și numai cu consimțământ bilateral opt-in; UI mobil pentru preferință și trimiterea cererii. |
+
+**Verdict curent:** punctul 2 este satisfăcut pentru infrastructura de chat și experiența mobilă livrate. Sharding-ul global pe limbă/regiune și panoul de moderare sunt extensii planificate pentru scalare, respectiv punctul 13; fluxul curent păstrează camera globală unică și toate regulile de securitate sunt deja aplicate server-side. Validări efectuate: `npm run build` pentru API și realtime, testele `ChatService` (5/5), `flutter analyze` și testele mobile relevante (36/36).

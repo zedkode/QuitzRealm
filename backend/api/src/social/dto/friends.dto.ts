@@ -24,3 +24,8 @@ export class RespondFriendshipDto {
   @IsBoolean()
   accept!: boolean;
 }
+
+export class UpdateFriendSuggestionPreferenceDto {
+  @IsBoolean()
+  enabled!: boolean;
+}

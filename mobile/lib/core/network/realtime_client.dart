@@ -7,6 +7,8 @@ import '../../domain/duel/duel_events.dart';
 import '../../domain/duel/match_preferences.dart';
 import '../../domain/duel/territory_map.dart';
 import '../../domain/question/quiz_question.dart';
+import '../../domain/social/social_models.dart';
+import '../../domain/social/social_realtime_event.dart';
 import 'api_client.dart';
 
 /// Singurul loc din aplicație care vorbește Socket.IO cu `backend/realtime`.
@@ -18,9 +20,11 @@ class RealtimeClient {
   final FlutterSecureStorage _storage;
 
   final _events = StreamController<DuelEvent>.broadcast();
+  final _socialEvents = StreamController<SocialRealtimeEvent>.broadcast();
   io.Socket? _socket;
 
   Stream<DuelEvent> get events => _events.stream;
+  Stream<SocialRealtimeEvent> get socialEvents => _socialEvents.stream;
 
   bool get isConnected => _socket?.connected ?? false;
 
@@ -30,6 +34,7 @@ class RealtimeClient {
     final token = await _storage.read(key: ApiClient.accessTokenKey);
     if (token == null || token.isEmpty) return false;
 
+    if (_socket?.connected ?? false) return true;
     await disconnect();
     final socket = io.io(
       _baseUri.resolve('game').toString(),
@@ -215,6 +220,27 @@ class RealtimeClient {
           ),
         );
       })
+      ..on('chat:global:history', (data) {
+        final messages = _asMap(data)?['messages'];
+        _emitSocial(
+          GlobalChatHistoryReceived(
+            messages is List
+                ? messages
+                      .map(_parseGlobalChatMessage)
+                      .whereType<GlobalChatMessage>()
+                      .toList(growable: false)
+                : const [],
+          ),
+        );
+      })
+      ..on('chat:global:message', (data) {
+        final message = _parseGlobalChatMessage(data);
+        if (message != null) _emitSocial(GlobalChatMessageReceived(message));
+      })
+      ..on('chat:message', (data) {
+        final message = _parseDirectChatMessage(data);
+        if (message != null) _emitSocial(DirectChatMessageReceived(message));
+      })
       ..on('chat:match:history', (data) {
         final map = _asMap(data);
         if (map == null) return;
@@ -238,13 +264,24 @@ class RealtimeClient {
       })
       ..on('chat:rejected', (data) {
         final map = _asMap(data);
-        if (map?['scope']?.toString() != 'match') return;
-        _emit(
-          DuelMatchChatRejected(
-            matchId: map?['matchId']?.toString() ?? '',
-            reason: map?['reason']?.toString() ?? 'invalid',
-          ),
-        );
+        final scope = map?['scope']?.toString() ?? '';
+        if (scope == 'match') {
+          _emit(
+            DuelMatchChatRejected(
+              matchId: map?['matchId']?.toString() ?? '',
+              reason: map?['reason']?.toString() ?? 'invalid',
+            ),
+          );
+          return;
+        }
+        if (scope == 'global' || scope == 'direct') {
+          _emitSocial(
+            SocialChatRejected(
+              scope: scope,
+              reason: map?['reason']?.toString() ?? 'refused',
+            ),
+          );
+        }
       })
       ..on('match:error', (data) => _emitError(data))
       ..on('server:error', (data) => _emitError(data))
@@ -288,6 +325,24 @@ class RealtimeClient {
     _socket?.emit('round:answer', {'matchId': matchId, 'answer': answer});
   }
 
+  void joinGlobalChat() => _socket?.emit('chat:global:join');
+
+  void leaveGlobalChat() => _socket?.emit('chat:global:leave');
+
+  void sendGlobalChat(String content) {
+    _socket?.emit('chat:global:send', {'content': content});
+  }
+
+  void sendDirectChat({
+    required String conversationId,
+    required String content,
+  }) {
+    _socket?.emit('chat:send', {
+      'conversationId': conversationId,
+      'content': content,
+    });
+  }
+
   void joinMatchChat(String matchId) {
     _socket?.emit('chat:match:join', {'matchId': matchId});
   }
@@ -316,10 +371,15 @@ class RealtimeClient {
   Future<void> dispose() async {
     await disconnect();
     await _events.close();
+    await _socialEvents.close();
   }
 
   void _emit(DuelEvent event) {
     if (!_events.isClosed) _events.add(event);
+  }
+
+  void _emitSocial(SocialRealtimeEvent event) {
+    if (!_socialEvents.isClosed) _socialEvents.add(event);
   }
 
   void _emitError(Object? data) {
@@ -380,6 +440,27 @@ class RealtimeClient {
         'LOSS' => DuelOutcome.loss,
         _ => DuelOutcome.draw,
       },
+    );
+  }
+
+  GlobalChatMessage? _parseGlobalChatMessage(Object? value) {
+    final map = _asMap(value);
+    return map == null ? null : GlobalChatMessage.fromJson(map);
+  }
+
+  ChatMessage? _parseDirectChatMessage(Object? value) {
+    final map = _asMap(value);
+    if (map == null) return null;
+    final id = map['id']?.toString() ?? '';
+    final conversationId = map['conversationId']?.toString() ?? '';
+    final createdAt = DateTime.tryParse(map['createdAt']?.toString() ?? '');
+    if (id.isEmpty || conversationId.isEmpty || createdAt == null) return null;
+    return ChatMessage(
+      id: id,
+      conversationId: conversationId,
+      senderId: map['senderId']?.toString() ?? '',
+      content: map['content']?.toString() ?? '',
+      createdAt: createdAt,
     );
   }
 

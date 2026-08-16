@@ -13,6 +13,7 @@ import '../../features/settings/settings_screen.dart';
 import '../../features/training/training_battle_screen.dart';
 import '../../features/training/training_setup_screen.dart';
 import '../../features/social/conversation_screen.dart';
+import '../../features/social/global_chat_screen.dart';
 import '../../features/social/social_screen.dart';
 import '../../features/title/title_screen.dart';
 
@@ -24,7 +25,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/harta',
         builder: (context, state) => const WorldMapScreen(),
       ),
-      GoRoute(path: '/cont', builder: (context, state) => const AccountScreen()),
+      GoRoute(
+        path: '/cont',
+        builder: (context, state) => const AccountScreen(),
+      ),
       GoRoute(
         path: '/antrenament',
         builder: (context, state) => const TrainingSetupScreen(),
@@ -64,6 +68,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/social',
         builder: (context, state) => const SocialScreen(),
+      ),
+      GoRoute(
+        path: '/social/global',
+        builder: (context, state) => const GlobalChatScreen(),
       ),
       GoRoute(
         path: '/social/conversatie/:id',

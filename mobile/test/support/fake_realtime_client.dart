@@ -4,6 +4,7 @@ import 'package:quiz_realm/core/network/realtime_client.dart';
 import 'package:quiz_realm/domain/duel/match_preferences.dart';
 import 'package:quiz_realm/domain/duel/duel_events.dart';
 import 'package:quiz_realm/domain/question/quiz_question.dart';
+import 'package:quiz_realm/domain/social/social_realtime_event.dart';
 
 /// Client realtime controlabil din teste: împinge evenimente în stream fără
 /// să atingă rețeaua.
@@ -12,6 +13,7 @@ class FakeRealtimeClient implements RealtimeClient {
 
   final bool connectResult;
   final _controller = StreamController<DuelEvent>.broadcast();
+  final _socialController = StreamController<SocialRealtimeEvent>.broadcast();
 
   bool joinedQueue = false;
   bool leftQueue = false;
@@ -20,9 +22,15 @@ class FakeRealtimeClient implements RealtimeClient {
   final List<String> joinedMatchChats = [];
   final List<({String matchId, String content})> sentChatMessages = [];
   final List<({String matchId, String reaction})> sentReactions = [];
+  bool joinedGlobalChat = false;
+  final List<String> sentGlobalMessages = [];
+  final List<({String conversationId, String content})> sentDirectMessages = [];
 
   @override
   Stream<DuelEvent> get events => _controller.stream;
+
+  @override
+  Stream<SocialRealtimeEvent> get socialEvents => _socialController.stream;
 
   @override
   bool get isConnected => connectResult && !disconnected;
@@ -35,9 +43,7 @@ class FakeRealtimeClient implements RealtimeClient {
   MatchPreferences? queuePreferences;
 
   @override
-  void joinQueue([
-    MatchPreferences preferences = MatchPreferences.defaults,
-  ]) {
+  void joinQueue([MatchPreferences preferences = MatchPreferences.defaults]) {
     joinedQueue = true;
     queuePreferences = preferences;
   }
@@ -56,6 +62,23 @@ class FakeRealtimeClient implements RealtimeClient {
   @override
   void sendAnswer({required String matchId, required String answer}) {
     sentAnswers.add((matchId: matchId, answer: answer));
+  }
+
+  @override
+  void joinGlobalChat() => joinedGlobalChat = true;
+
+  @override
+  void leaveGlobalChat() => joinedGlobalChat = false;
+
+  @override
+  void sendGlobalChat(String content) => sentGlobalMessages.add(content);
+
+  @override
+  void sendDirectChat({
+    required String conversationId,
+    required String content,
+  }) {
+    sentDirectMessages.add((conversationId: conversationId, content: content));
   }
 
   @override
@@ -78,10 +101,15 @@ class FakeRealtimeClient implements RealtimeClient {
   Future<void> dispose() async {
     disconnected = true;
     if (!_controller.isClosed) await _controller.close();
+    if (!_socialController.isClosed) await _socialController.close();
   }
 
   void emit(DuelEvent event) {
     if (!_controller.isClosed) _controller.add(event);
+  }
+
+  void emitSocial(SocialRealtimeEvent event) {
+    if (!_socialController.isClosed) _socialController.add(event);
   }
 
   /// Parcurge pașii până la începutul primei runde.

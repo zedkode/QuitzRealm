@@ -66,6 +66,108 @@ export class FriendsService {
     });
   }
 
+  /// Jucători întâlniți în partide recente, fără a divulga automat identitatea
+  /// nimănui: funcția cere opt-in atât de la solicitant, cât și de la candidat.
+  async suggestions(userId: string) {
+    const preference = await this.prisma.userPrivacySettings.findUnique({
+      where: { userId },
+      select: { allowFriendSuggestions: true },
+    });
+    if (!preference?.allowFriendSuggestions) {
+      return { enabled: false, suggestions: [] };
+    }
+
+    const [matches, relationships, blocks] = await Promise.all([
+      this.prisma.match.findMany({
+        where: { players: { some: { userId } } },
+        orderBy: [{ endedAt: 'desc' }, { startedAt: 'desc' }],
+        take: 30,
+        select: {
+          endedAt: true,
+          startedAt: true,
+          players: { select: { userId: true } },
+        },
+      }),
+      this.prisma.friendship.findMany({
+        where: { OR: [{ userIdA: userId }, { userIdB: userId }] },
+        select: { userIdA: true, userIdB: true },
+      }),
+      this.prisma.userBlock.findMany({
+        where: { OR: [{ blockerId: userId }, { blockedId: userId }] },
+        select: { blockerId: true, blockedId: true },
+      }),
+    ]);
+
+    const excluded = new Set<string>([userId]);
+    for (const relationship of relationships) {
+      excluded.add(
+        relationship.userIdA === userId
+          ? relationship.userIdB
+          : relationship.userIdA,
+      );
+    }
+    for (const block of blocks) {
+      excluded.add(block.blockerId === userId ? block.blockedId : block.blockerId);
+    }
+
+    const encounters = new Map<string, { sharedMatches: number; lastPlayedAt: Date }>();
+    for (const match of matches) {
+      const playedAt = match.endedAt ?? match.startedAt ?? new Date(0);
+      for (const player of match.players) {
+        if (excluded.has(player.userId)) continue;
+        const current = encounters.get(player.userId);
+        encounters.set(player.userId, {
+          sharedMatches: (current?.sharedMatches ?? 0) + 1,
+          lastPlayedAt:
+            current && current.lastPlayedAt > playedAt
+              ? current.lastPlayedAt
+              : playedAt,
+        });
+      }
+    }
+
+    const candidateIds = [...encounters.keys()];
+    if (candidateIds.length === 0) return { enabled: true, suggestions: [] };
+
+    const candidates = await this.prisma.user.findMany({
+      where: {
+        id: { in: candidateIds },
+        privacy: { is: { allowFriendSuggestions: true } },
+      },
+      select: publicUser,
+    });
+
+    const suggestions = candidates
+      .map((candidate) => {
+        const encounter = encounters.get(candidate.id)!;
+        return {
+          userId: candidate.id,
+          username: candidate.username,
+          displayName: candidate.displayName ?? candidate.username,
+          sharedMatches: encounter.sharedMatches,
+          lastPlayedAt: encounter.lastPlayedAt,
+        };
+      })
+      .sort(
+        (first, second) =>
+          second.sharedMatches - first.sharedMatches ||
+          second.lastPlayedAt.getTime() - first.lastPlayedAt.getTime(),
+      )
+      .slice(0, 12);
+
+    return { enabled: true, suggestions };
+  }
+
+  async setFriendSuggestionsEnabled(userId: string, enabled: boolean) {
+    const settings = await this.prisma.userPrivacySettings.upsert({
+      where: { userId },
+      create: { userId, allowFriendSuggestions: enabled },
+      update: { allowFriendSuggestions: enabled },
+      select: { allowFriendSuggestions: true },
+    });
+    return { enabled: settings.allowFriendSuggestions };
+  }
+
   /// Trimite o cerere de prietenie după handle.
   ///
   /// Dacă celălalt tocmai ne-a cerut nouă prietenia, cererea se transformă în

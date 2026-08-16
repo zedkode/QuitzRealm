@@ -13,6 +13,7 @@ class SocialState {
     this.conversations = const [],
     this.trust,
     this.privacy,
+    this.friendSuggestionFeed,
     this.errorMessage,
     this.busy = false,
   });
@@ -22,6 +23,7 @@ class SocialState {
   final List<Conversation> conversations;
   final TrustInfo? trust;
   final PrivacySettings? privacy;
+  final FriendSuggestionFeed? friendSuggestionFeed;
 
   /// Mesajul ultimei acțiuni eșuate (cerere respinsă, treaptă prea mică).
   /// Vine de la server: motivele reale sunt acolo, nu în client.
@@ -75,6 +77,7 @@ class SocialState {
     List<Conversation>? conversations,
     TrustInfo? trust,
     PrivacySettings? privacy,
+    FriendSuggestionFeed? friendSuggestionFeed,
     String? errorMessage,
     bool clearError = false,
     bool? busy,
@@ -85,6 +88,7 @@ class SocialState {
       conversations: conversations ?? this.conversations,
       trust: trust ?? this.trust,
       privacy: privacy ?? this.privacy,
+      friendSuggestionFeed: friendSuggestionFeed ?? this.friendSuggestionFeed,
       errorMessage: clearError ? null : errorMessage ?? this.errorMessage,
       busy: busy ?? this.busy,
     );
@@ -106,6 +110,7 @@ class SocialController extends StateNotifier<SocialState> {
         repository.fetchConversations(),
         repository.fetchTrust(),
         repository.fetchPrivacy(),
+        repository.fetchFriendSuggestions(),
       ]);
       if (!mounted) return;
       state = state.copyWith(
@@ -114,6 +119,7 @@ class SocialController extends StateNotifier<SocialState> {
         conversations: results[1] as List<Conversation>,
         trust: results[2] as TrustInfo,
         privacy: results[3] as PrivacySettings,
+        friendSuggestionFeed: results[4] as FriendSuggestionFeed,
         clearError: true,
       );
     } on ApiException catch (error) {
@@ -135,6 +141,7 @@ class SocialController extends StateNotifier<SocialState> {
     return _act(() async {
       await _ref.read(socialRepositoryProvider).requestFriendship(username);
       await _refreshFriends();
+      await _refreshFriendSuggestions();
     });
   }
 
@@ -200,14 +207,24 @@ class SocialController extends StateNotifier<SocialState> {
     });
   }
 
+  Future<bool> setFriendSuggestionsEnabled(bool enabled) {
+    return _act(() async {
+      await _ref
+          .read(socialRepositoryProvider)
+          .updateFriendSuggestionsEnabled(enabled);
+      await _refreshFriendSuggestions();
+    });
+  }
+
   /// Marchează prietenii online din anunțul de prezență primit pe socket.
   void applyPresence(Set<String> onlineUserIds) {
     if (!mounted) return;
     state = state.copyWith(
       friends: state.friends
           .map(
-            (friend) =>
-                friend.copyWith(isOnline: onlineUserIds.contains(friend.userId)),
+            (friend) => friend.copyWith(
+              isOnline: onlineUserIds.contains(friend.userId),
+            ),
           )
           .toList(growable: false),
     );
@@ -244,7 +261,10 @@ class SocialController extends StateNotifier<SocialState> {
     };
     state = state.copyWith(
       friends: friends
-          .map((friend) => friend.copyWith(isOnline: online.contains(friend.userId)))
+          .map(
+            (friend) =>
+                friend.copyWith(isOnline: online.contains(friend.userId)),
+          )
           .toList(growable: false),
     );
   }
@@ -254,6 +274,13 @@ class SocialController extends StateNotifier<SocialState> {
         .read(socialRepositoryProvider)
         .fetchConversations();
     if (mounted) state = state.copyWith(conversations: conversations);
+  }
+
+  Future<void> _refreshFriendSuggestions() async {
+    final feed = await _ref
+        .read(socialRepositoryProvider)
+        .fetchFriendSuggestions();
+    if (mounted) state = state.copyWith(friendSuggestionFeed: feed);
   }
 }
 

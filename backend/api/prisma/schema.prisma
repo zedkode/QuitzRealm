@@ -93,6 +93,10 @@ model User {
   /// Mut temporar la chat, pus automat de detectia de spam sau manual de
   /// moderare. `null` = fara restrictie.
   chatMutedUntil    DateTime? @map("chat_muted_until")
+  /// Shadow-ban limitat la chatul global: expeditorul își vede mesajele, dar
+  /// acestea nu sunt livrate celorlalți jucători. Este rezervat recidivei,
+  /// după review de moderare; nu afectează conversațiile cu prietenii/DM.
+  globalChatShadowBannedUntil DateTime? @map("global_chat_shadow_banned_until")
 
   createdQuestions   Question[]                @relation("QuestionCreator")
   reviewedQuestions  Question[]                @relation("QuestionReviewer")
@@ -208,6 +212,9 @@ model UserPrivacySettings {
   onlineVisibility  OnlineVisibility  @default(FRIENDS) @map("online_visibility")
   /// Invitatiile la partide de la alti jucatori (captura 04-account-settings).
   allowMatchInvites Boolean           @default(true) @map("allow_match_invites")
+  /// Sugestiile bazate pe jucători întâlniți recent sunt strict opt-in pentru
+  /// ambele conturi; implicarea în aceeași partidă nu publică automat o relație.
+  allowFriendSuggestions Boolean      @default(false) @map("allow_friend_suggestions")
   /// Cenzura din chat. Nu opreste moderarea si raportarea - schimba doar ce
   /// vede jucatorul, nu ce e permis sa se scrie.
   chatCensorship    Boolean           @default(true) @map("chat_censorship")

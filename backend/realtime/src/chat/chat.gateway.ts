@@ -47,10 +47,10 @@ export class ChatGateway {
 
   @SubscribeMessage('chat:global:join')
   async joinGlobal(@ConnectedSocket() client: Socket): Promise<void> {
-    this.userId(client);
+    const userId = this.userId(client);
     await client.join(GLOBAL_ROOM);
     client.emit('chat:global:history', {
-      messages: await this.chat.recentGlobal(),
+      messages: await this.chat.recentGlobal(userId),
     });
   }
 
@@ -68,6 +68,12 @@ export class ChatGateway {
     const outcome = await this.chat.sendGlobal(userId, dto.content);
     if (!outcome.ok) {
       client.emit('chat:rejected', { scope: 'global', reason: outcome.reason });
+      return;
+    }
+    if (outcome.shadowBanned) {
+      // Confirmăm mesajul numai expeditorului. Nu îl trimitem în camera
+      // globală și nici nu îl includem în istoricul public.
+      client.emit('chat:global:message', outcome.message);
       return;
     }
     this.server

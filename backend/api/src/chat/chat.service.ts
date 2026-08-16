@@ -480,7 +480,10 @@ export class ChatService {
     // liber, iar un token de 15 minute ar arata numele vechi in chat.
     const user = await this.prisma.user.findUniqueOrThrow({
       where: { id: userId },
-      select: publicUser,
+      select: {
+        ...publicUser,
+        globalChatShadowBannedUntil: true,
+      },
     });
     const blocked = await this.prisma.userBlock.findMany({
       where: { OR: [{ blockerId: userId }, { blockedId: userId }] },
@@ -492,6 +495,9 @@ export class ChatService {
       canPostLinksInGlobal: permissions.canPostLinksInGlobal,
       tier: permissions.tier,
       mutedUntil: permissions.mutedUntil,
+      shadowBannedUntil: this.activeMute(
+        user.globalChatShadowBannedUntil,
+      )?.toISOString() ?? null,
       /// Perechile blocate, în ambele sensuri: realtime nu livrează între ele.
       blockedUserIds: [
         ...new Set(
