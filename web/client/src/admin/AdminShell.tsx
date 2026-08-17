@@ -16,12 +16,15 @@ interface AdminShellProps {
 }
 
 export default function AdminShell({ user, moderationCount, children }: AdminShellProps) {
+  // Înălțime fixă pe rădăcină, cu derulare proprie în fiecare coloană: meniul
+  // are douăzeci și trei de secțiuni și, dacă ar împărți bara de derulare cu
+  // pagina, ar dispărea în sus exact când cauți altă secțiune.
   return (
-    <div className="admin-root flex min-h-screen">
+    <div className="admin-root flex h-screen overflow-hidden">
       <Sidebar moderationCount={moderationCount} />
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
         <TopBar user={user} />
-        <main className="min-w-0 flex-1 px-4 pb-8 pt-4">{children}</main>
+        <main className="admin-scroll min-w-0 flex-1 overflow-y-auto px-4 pb-8 pt-4">{children}</main>
       </div>
     </div>
   );
@@ -63,7 +66,7 @@ function Sidebar({ moderationCount }: { moderationCount?: number }) {
   const toggle = (key: string) => setOpen((previous) => ({ ...previous, [key]: !previous[key] }));
 
   return (
-    <aside className="admin-sidebar hidden w-[168px] shrink-0 flex-col lg:flex">
+    <aside className="admin-sidebar hidden h-full w-[168px] shrink-0 flex-col lg:flex">
       <Link href="/admin" className="flex shrink-0 items-center gap-2 px-3.5 py-4">
         <span className="admin-logo-mark grid h-[26px] w-[26px] shrink-0 place-items-center rounded-lg">
           <ScrollText size={13} />
@@ -217,7 +220,7 @@ function TopBar({ user }: { user: UserIdentity | null }) {
   }, []);
 
   return (
-    <header className="admin-topbar sticky top-0 z-30 flex h-[54px] shrink-0 items-center gap-3 px-4">
+    <header className="admin-topbar z-30 flex h-[54px] shrink-0 items-center gap-3 px-4">
       <label className="admin-search relative flex min-w-0 max-w-[400px] flex-1 items-center rounded-lg">
         <Search size={13} className="ml-2.5 shrink-0 text-[#5f5875]" />
         <input
