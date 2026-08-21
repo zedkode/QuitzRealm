@@ -18,6 +18,7 @@ import { ProfileModule } from './profile/profile.module';
 import { QuestionsModule } from './questions/questions.module';
 import { ReportsModule } from './reports/reports.module';
 import { SocialModule } from './social/social.module';
+import { TranslationsModule } from './translations/translations.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
@@ -49,6 +50,7 @@ import { UsersModule } from './users/users.module';
     SocialModule,
     ChatModule,
     ProfileModule,
+    TranslationsModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })

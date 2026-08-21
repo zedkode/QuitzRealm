@@ -6,6 +6,7 @@ import {
   verifyInitialCategoryTaxonomy,
 } from '../src/categories/category-taxonomy.seed';
 import { seedReferenceData } from '../src/reference-data/reference-data.seed';
+import { seedTranslationCatalog } from '../src/translations/translation-catalog.seed';
 
 async function main(): Promise<void> {
   const connectionString = process.env.DATABASE_URL;
@@ -15,6 +16,7 @@ async function main(): Promise<void> {
   });
   try {
     const referenceData = await seedReferenceData(prisma);
+    const translations = await seedTranslationCatalog(prisma);
     const seed = await seedInitialCategoryTaxonomy(prisma);
     const verification = await verifyInitialCategoryTaxonomy(prisma);
     if (!verification.valid) {
@@ -23,7 +25,7 @@ async function main(): Promise<void> {
       );
     }
     process.stdout.write(
-      `${JSON.stringify({ referenceData, seed, verification })}\n`,
+      `${JSON.stringify({ referenceData, translations, seed, verification })}\n`,
     );
   } finally {
     await prisma.$disconnect();
