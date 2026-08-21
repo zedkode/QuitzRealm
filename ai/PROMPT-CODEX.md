@@ -68,7 +68,7 @@ orice tabel de conținut creat înaintea ei va trebui migrat după. **Lanțul t�
 | Task | Ce e | Stare |
 |---|---|---|
 | ~~`SRV-001`~~ | Tabelele `languages` și `countries` | ✅ livrat de Codex, 21.08 |
-| `SRV-003` | Catalogul de traduceri în baza de date (`translations`) | ⬜ |
+| ~~`SRV-003`~~ | Catalogul de traduceri în baza de date (`translations`) | ✅ local, commit `e55d080` |
 | `SRV-004` | Contractul de răspuns localizat — interceptor + erori ca `{ code, messageKey, params }` | ⬜ |
 | `SRV-002` | Limba și țara pe cont, cu cooldown de 60–90 zile | 🟡 |
 | `SRV-005` | Banca de întrebări pe limbă, cu fallback anunțat | 🟡 |

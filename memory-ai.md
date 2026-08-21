@@ -1205,3 +1205,51 @@ hostname-urile/cutover-ul; apoi se creează automat tunelul local și DNS-ul, se
 salvează numai tokenul conectorului în `infra/.env`, se rulează `pnpm dev:tunnel`
 și se verifică public web, API, CORS și handshake-ul Socket.IO. Dezvoltarea de
 produs poate continua între timp, exclusiv local, cu `SRV-003`.
+
+
+## 2026-08-21 · 21:55 — Codex — SRV-003, catalogul de traduceri
+
+### Obiectiv
+
+Implementarea locală a catalogului multilingv editabil în PostgreSQL, cu engleza
+drept fallback explicit, fără afișarea cheilor brute și cu o suprafață API
+pregătită pentru viitorul editor administrativ `ADM-055`.
+
+### Fișiere schimbate
+
+- `backend/api/prisma/schema.prisma` și migrarea
+  `20260821210000_translations_catalog` — modelul `Translation`, cheia compusă,
+  relațiile către limbă și editor, indecșii și cheile străine aditive.
+- `backend/api/src/translations/` — catalog public, matrice administrativă cu
+  lipsurile pe limbă, upsert protejat pentru `ADMIN`/`CONTENT_EDITOR`, audit,
+  fallback englez și erori localizabile.
+- `backend/api/prisma/seed.ts` — seed create-only pentru numele celor 249 de
+  țări, cele două limbi active și cheile de sistem în română și engleză.
+- `backend/api/package.json` și lockfile — versiunea API ridicată la `1.2.0`.
+- `ai/tasks/01-server-core.md` — referința corectată de la `ADM-052` la
+  `ADM-055`, starea locală și commitul de implementare `e55d080`.
+
+### Verificări efectuate
+
+- `npx prisma format`, `npx prisma validate`, `npm run prisma:generate`,
+  `npx tsc --noEmit`, `npm run build`, Prettier și ESLint — trec.
+- `npx jest --runInBand` — 19 suite și 144 teste trec; cele 7 teste noi acoperă
+  seed-ul idempotent, fallback-ul, matricea, upsert-ul și erorile structurate.
+- Docker local — migrarea 18 s-a aplicat; primul seed a inserat 512 rânduri,
+  al doilea 0; baza are 256 de chei în două limbi și nicio dublură.
+- API Docker local este healthy; `/translations/ro` livrează 256 de intrări,
+  iar `/translations/fr` rezolvă explicit pe `en`; ruta administrativă fără
+  token răspunde 401.
+- `node scripts/check-versions.mjs` și `git diff --check` — trec.
+
+### Rezultat și blocaje
+
+`SRV-003` este implementat și verificat complet local. Rămâne `🟡 Parțial`
+numai fiindcă proprietarul a cerut ca VPS-ul, Raspberry Pi și Cloudflare să nu
+fie atinse; nu s-a făcut nicio operațiune externă în acest task.
+
+### Următorul pas
+
+`SRV-004` local — interceptorul care rezolvă limba cererii și contractul global
+de erori `{ code, messageKey, params }`. Cloudflare, Raspberry Pi și producția
+rămân amânate până la o instrucțiune explicită a proprietarului.

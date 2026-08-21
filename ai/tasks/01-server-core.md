@@ -36,12 +36,12 @@ va trebui migrat după.
 - **Depinde de:** SRV-001
 
 #### SRV-003 · Catalogul de traduceri, în baza de date
-- **Status:** ⬜ De făcut
+- **Status:** 🟡 Parțial — implementat și verificat local; aplicarea controlată în producție este amânată la cererea proprietarului.
 - **Descriere:** Textele care nu sunt cod — nume de categorii, ranguri, realizări, recompense, notificări, motive de sancțiune — trăiesc în baza de date, pe limbă, editabile din panou fără redeploy.
 - **Implementare corectă:** `translations(key, language_id, value, updated_at, updated_by)` cu cheie compusă `(key, language_id)`. Cheile urmează o convenție ierarhică stabilă: `rank.oracle.name`, `sanction.reason.cheating`. Serverul întoarce **chei plus parametri** către fronturi, nu text gata format, cu excepția conținutului scris de utilizatori. Cheia lipsă într-o limbă cade pe engleză și se raportează în ADM-055, nu se afișează cheia brută jucătorului.
 - **Finalizat:** —
 - **Sursă:** `owner-plan.md` §10.5 (de la linia 462)
-- **Commit:** —
+- **Commit:** `e55d080`
 - **Depinde de:** SRV-001
 
 #### SRV-004 · Contractul de răspuns localizat
