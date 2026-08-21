@@ -6,10 +6,37 @@ import {
   Header,
   Post,
   Query,
+  Req,
 } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
+import type { Request } from 'express';
+import { LocalizedContentService } from '../localization/localized-content.service';
+import { DEFAULT_LOCALE } from '../localization/localization.types';
 import { AuthService } from './auth.service';
 import { ResetPasswordDto } from './dto/password-reset.dto';
+
+type LocalizedRequest = Request & { locale?: string };
+
+const AUTH_PAGE_KEYS = {
+  verifyMissingTitle: 'auth.page.verify.missing.title',
+  verifyMissingMessage: 'auth.page.verify.missing.message',
+  verifyInvalidTitle: 'auth.page.verify.invalid.title',
+  verifyInvalidMessage: 'auth.page.verify.invalid.message',
+  verifySuccessTitle: 'auth.page.verify.success.title',
+  verifySuccessMessage: 'auth.page.verify.success.message',
+  resetMissingTitle: 'auth.page.reset.missing.title',
+  resetMissingMessage: 'auth.page.reset.missing.message',
+  resetFormTitle: 'auth.page.reset.form.title',
+  resetFormMessage: 'auth.page.reset.form.message',
+  resetFormLabel: 'auth.page.reset.form.label',
+  resetFormSubmit: 'auth.page.reset.form.submit',
+  resetInvalidTitle: 'auth.page.reset.invalid.title',
+  resetInvalidMessage: 'auth.page.reset.invalid.message',
+  resetSuccessTitle: 'auth.page.reset.success.title',
+  resetSuccessMessage: 'auth.page.reset.success.message',
+} as const;
+
+const AUTH_PAGE_KEY_LIST = Object.values(AUTH_PAGE_KEYS);
 
 /// Paginile deschise direct din emailuri.
 ///
@@ -22,48 +49,69 @@ import { ResetPasswordDto } from './dto/password-reset.dto';
 /// schimba nimic în emailuri.
 @Controller('auth')
 export class AuthPagesController {
-  constructor(private readonly auth: AuthService) {}
+  constructor(
+    private readonly auth: AuthService,
+    private readonly localizedContent: LocalizedContentService,
+  ) {}
 
   @Get('verify-email')
   @Throttle({ default: { limit: 10, ttl: 3_600_000 } })
   @Header('Content-Type', 'text/html; charset=utf-8')
-  async verifyEmailPage(@Query('token') token?: string): Promise<string> {
+  async verifyEmailPage(
+    @Req() request: LocalizedRequest,
+    @Query('token') token?: string,
+  ): Promise<string> {
+    const locale = request.locale ?? DEFAULT_LOCALE;
+    const copy = await this.copy(locale);
     if (!token) {
       return page(
-        'Link incomplet',
-        'Linkul de verificare nu conține un token.',
+        locale,
+        copy[AUTH_PAGE_KEYS.verifyMissingTitle],
+        copy[AUTH_PAGE_KEYS.verifyMissingMessage],
       );
     }
     try {
       await this.auth.confirmEmailVerification(token);
     } catch {
       return page(
-        'Link invalid sau expirat',
-        'Cere un link nou din aplicație, de la Setări → Cont.',
+        locale,
+        copy[AUTH_PAGE_KEYS.verifyInvalidTitle],
+        copy[AUTH_PAGE_KEYS.verifyInvalidMessage],
       );
     }
     return page(
-      'Adresă confirmată',
-      'Contul tău e verificat. Poți închide pagina și te poți întoarce în joc.',
+      locale,
+      copy[AUTH_PAGE_KEYS.verifySuccessTitle],
+      copy[AUTH_PAGE_KEYS.verifySuccessMessage],
     );
   }
 
   @Get('reset-password')
   @Throttle({ default: { limit: 10, ttl: 3_600_000 } })
   @Header('Content-Type', 'text/html; charset=utf-8')
-  resetPasswordPage(@Query('token') token?: string): string {
+  async resetPasswordPage(
+    @Req() request: LocalizedRequest,
+    @Query('token') token?: string,
+  ): Promise<string> {
+    const locale = request.locale ?? DEFAULT_LOCALE;
+    const copy = await this.copy(locale);
     if (!token) {
-      return page('Link incomplet', 'Linkul de resetare nu conține un token.');
+      return page(
+        locale,
+        copy[AUTH_PAGE_KEYS.resetMissingTitle],
+        copy[AUTH_PAGE_KEYS.resetMissingMessage],
+      );
     }
     return page(
-      'Alege o parolă nouă',
-      'Parola trebuie să aibă cel puțin 10 caractere.',
+      locale,
+      copy[AUTH_PAGE_KEYS.resetFormTitle],
+      copy[AUTH_PAGE_KEYS.resetFormMessage],
       `<form method="post" action="reset-password">
         <input type="hidden" name="token" value="${escapeHtml(token)}" />
-        <label for="password">Parolă nouă</label>
+        <label for="password">${escapeHtml(copy[AUTH_PAGE_KEYS.resetFormLabel])}</label>
         <input id="password" name="password" type="password"
                minlength="10" maxlength="128" required autocomplete="new-password" />
-        <button type="submit">Salvează parola</button>
+        <button type="submit">${escapeHtml(copy[AUTH_PAGE_KEYS.resetFormSubmit])}</button>
       </form>`,
     );
   }
@@ -71,23 +119,33 @@ export class AuthPagesController {
   @Post('reset-password')
   @Throttle({ default: { limit: 10, ttl: 3_600_000 } })
   @Header('Content-Type', 'text/html; charset=utf-8')
-  async submitResetPassword(@Body() dto: ResetPasswordDto): Promise<string> {
+  async submitResetPassword(
+    @Req() request: LocalizedRequest,
+    @Body() dto: ResetPasswordDto,
+  ): Promise<string> {
+    const locale = request.locale ?? DEFAULT_LOCALE;
+    const copy = await this.copy(locale);
     try {
       await this.auth.resetPassword(dto.token, dto.password);
     } catch (error) {
       if (error instanceof BadRequestException) {
         return page(
-          'Link invalid sau expirat',
-          'Cere o resetare nouă din ecranul de autentificare.',
+          locale,
+          copy[AUTH_PAGE_KEYS.resetInvalidTitle],
+          copy[AUTH_PAGE_KEYS.resetInvalidMessage],
         );
       }
       throw error;
     }
     return page(
-      'Parolă schimbată',
-      'Toate dispozitivele conectate au fost deconectate. ' +
-        'Autentifică-te din nou în aplicație cu parola nouă.',
+      locale,
+      copy[AUTH_PAGE_KEYS.resetSuccessTitle],
+      copy[AUTH_PAGE_KEYS.resetSuccessMessage],
     );
+  }
+
+  private copy(locale: string): Promise<Readonly<Record<string, string>>> {
+    return this.localizedContent.values(locale, AUTH_PAGE_KEY_LIST);
   }
 }
 
@@ -99,9 +157,14 @@ function escapeHtml(value: string): string {
     .replace(/"/g, '&quot;');
 }
 
-function page(title: string, message: string, extra = ''): string {
+function page(
+  locale: string,
+  title: string,
+  message: string,
+  extra = '',
+): string {
   return `<!doctype html>
-<html lang="ro">
+<html lang="${escapeHtml(locale)}">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />

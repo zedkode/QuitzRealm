@@ -1,6 +1,7 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { localizedValidationException } from './localization/validation-exception';
 import { webAppOrigins } from './web-origins';
 
 async function bootstrap() {
@@ -10,6 +11,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
       transform: true,
       whitelist: true,
+      exceptionFactory: localizedValidationException,
     }),
   );
   // Aplicația mobilă nu trimite `Origin`, deci nu depinde de CORS. Panoul web

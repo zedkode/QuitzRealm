@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
+import { LocalizationModule } from '../localization/localization.module';
 import { AuthController } from './auth.controller';
 import { CaptchaService } from './captcha.service';
 import { AuthPagesController } from './auth-pages.controller';
@@ -13,7 +14,7 @@ import { GoogleStrategy } from './strategies/google.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Module({
-  imports: [PassportModule, JwtModule.register({})],
+  imports: [PassportModule, JwtModule.register({}), LocalizationModule],
   controllers: [AuthController, AuthPagesController],
   providers: [
     AuthService,

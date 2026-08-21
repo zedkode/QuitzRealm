@@ -11,6 +11,7 @@ import { ChatModule } from './chat/chat.module';
 import { CosmeticsModule } from './cosmetics/cosmetics.module';
 import { HealthModule } from './health/health.module';
 import { LeaderboardModule } from './leaderboard/leaderboard.module';
+import { LocalizationModule } from './localization/localization.module';
 import { MailModule } from './mail/mail.module';
 import { MatchesModule } from './matches/matches.module';
 import { PrismaModule } from './prisma/prisma.module';
@@ -34,6 +35,7 @@ import { UsersModule } from './users/users.module';
       },
     ]),
     PrismaModule,
+    LocalizationModule,
     MailModule,
     HealthModule,
     AuthModule,

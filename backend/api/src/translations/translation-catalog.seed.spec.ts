@@ -2,13 +2,15 @@ import type { Prisma } from '@prisma/client';
 import { ACTIVE_LANGUAGES, COUNTRIES } from '../reference-data/reference-data';
 import {
   buildInitialTranslationCatalog,
+  SYSTEM_TRANSLATION_KEY_COUNT,
   syncInitialTranslations,
 } from './translation-catalog.seed';
 
 describe('translation catalog seed', () => {
   it('builds a complete, unique catalog for every active language', () => {
     const catalog = buildInitialTranslationCatalog();
-    const expectedPerLanguage = COUNTRIES.length + ACTIVE_LANGUAGES.length + 5;
+    const expectedPerLanguage =
+      COUNTRIES.length + ACTIVE_LANGUAGES.length + SYSTEM_TRANSLATION_KEY_COUNT;
 
     expect(catalog).toHaveLength(ACTIVE_LANGUAGES.length * expectedPerLanguage);
     expect(

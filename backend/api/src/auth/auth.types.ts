@@ -23,6 +23,8 @@ export interface AuthenticatedUser {
   displayName: string;
   sessionId?: string;
   role: AdminRole;
+  /// Populat de SRV-002; SRV-004 îl preferă față de `Accept-Language` când există.
+  languageIsoCode?: string;
   /// Suspendarea contului. Verificată la fiecare cerere, nu doar la login:
   /// altfel un ban ar intra în vigoare abia la expirarea tokenului de acces.
   bannedAt: Date | null;
@@ -51,6 +53,8 @@ export interface TwoFactorChallenge {
 
 export type LoginResult = AuthTokens | TwoFactorChallenge;
 
-export function isTwoFactorChallenge(value: LoginResult): value is TwoFactorChallenge {
+export function isTwoFactorChallenge(
+  value: LoginResult,
+): value is TwoFactorChallenge {
   return 'twoFactorRequired' in value && value.twoFactorRequired === true;
 }
