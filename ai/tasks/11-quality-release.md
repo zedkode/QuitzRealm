@@ -102,6 +102,33 @@ real și fluxurile de la un capăt la altul.
 - **Commit:** `c4963f4`
 - **Produce:** INF-011
 
+#### QA-017 · Datoria de actualizare, ținută sub control
+- **Status:** 🟡 Parțial
+- **Descriere:** 26 de dependențe în urmă la 21.08.2026, dintre care 14 salturi majore. Fără o rutină, cifra crește, iar fiecare salt devine mai scump.
+- **Implementare corectă:** `node scripts/check-updates.mjs` raportează pe toate cele patru ecosisteme. Fluxul programat rulează luni dimineața. Actualizările se fac în **loturi mici**, cu verificare reală după fiecare — pe Flutter, o compilare, nu doar analiză. Ce nu se poate actualiza intră în `scripts/dependency-pins.json` cu motiv și dată de revizuire; scriptul semnalează pin-urile expirate.
+- **Finalizat:** —
+- **Sursă:** `agents.md` §5
+- **Commit:** —
+- **Produce:** INF-011
+
+#### QA-018 · Riverpod 2 → 3
+- **Status:** ⬜ De făcut
+- **Descriere:** Saltul major cu cel mai mare impact din aplicație: Riverpod e stratul de stare al întregii aplicații Flutter.
+- **Implementare corectă:** Migrare pe module, nu dintr-o dată, cu `flutter analyze` **și** o compilare reală după fiecare modul. Nu se începe în timpul unei faze de lucru la modul Clasic — două schimbări mari peste aceleași ecrane fac imposibil de spus care a rupt ce.
+- **Finalizat:** —
+- **Sursă:** ieșirea `scripts/check-updates.mjs`
+- **Commit:** —
+- **Produce:** APP-005
+
+#### QA-019 · Deblocarea TypeScript 7 pe servere
+- **Status:** 🔒 Blocat — vezi `scripts/dependency-pins.json`
+- **Descriere:** Frontendul e deja pe TypeScript 7.0.2; cele două servere rămân pe 5.x.
+- **Implementare corectă:** TS7 a eliminat `baseUrl`, iar fără el `@types/jest@30` nu mai e descoperit — toate cele 16 suite ale API-ului cad, iar `typeRoots` explicit nu repară. Verificat pe 21.08.2026. Se deblochează fie de o versiune de `@types/jest` sau `ts-jest` compatibilă, fie de trecerea backendurilor pe vitest — pe care frontendul îl folosește deja fără probleme sub TS7. Revizuire după 01.11.2026.
+- **Finalizat:** —
+- **Sursă:** `scripts/dependency-pins.json`
+- **Commit:** —
+- **Produce:** QA-017
+
 #### QA-010 · Testarea corectitudinii competitive
 - **Status:** ⬜ De făcut
 - **Descriere:** Verificarea că un client modificat nu poate câștiga.

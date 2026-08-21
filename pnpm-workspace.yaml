@@ -8,6 +8,14 @@ packages:
   - 'admin'
 allowBuilds:
   esbuild: true
-minimumReleaseAge: 0
+# Întârziere înainte de a adopta o versiune proaspăt publicată (în minute).
+# Nu e o frână împotriva actualizărilor — regula proiectului e „ultima versiune"
+# (agents.md §5) — ci apărarea împotriva compromiterilor de lanț de aprovizionare:
+# pachetele infectate sunt de obicei depistate și retrase în primele ore. Era 0,
+# adică se instala și ce fusese publicat acum trei minute.
+minimumReleaseAge: 4320  # 3 zile
+# Override moștenit, fără motiv documentat la introducere. Înregistrat în
+# scripts/dependency-pins.json cu dată de revizuire, ca să nu rămână la
+# nesfârșit nejustificat.
 overrides:
   'tailwindcss>nanoid': 3.3.7

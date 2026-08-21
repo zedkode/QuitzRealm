@@ -110,7 +110,92 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 5. Convenții per componentă
+## 5. Dependențe — se stă pe versiunile curente
+
+Regula: **ultima versiune stabilă, pentru tot ce există deja și pentru tot ce se
+adaugă.** Un proiect care nu-și verifică dependențele adună avertismente,
+rămâne în urmă la corecții de securitate, iar salturile devin cu atât mai
+dureroase cu cât se amână mai mult.
+
+Regula are însă o formă care funcționează și una care rupe build-ul. Proiectul a
+fost oprit de două ori în august 2026 tocmai de „ultima versiune" aplicată
+mecanic, așa că forma corectă e:
+
+> **Mereu curent, verificat cu o compilare reală, și fixat doar unde e dovedit
+> incompatibil — cu motiv scris și dată de revizuire.**
+
+### 5.1 Ce face un agent
+
+1. **Verifică înainte de a începe**, nu după: `node scripts/check-updates.mjs`
+   raportează ce a rămas în urmă pe toate cele patru ecosisteme deodată — pnpm
+   pentru workspace-ul frontend, npm pentru cele două servere, pub pentru Flutter.
+2. **Actualizează în loturi mici**, nu tot deodată. Un lot = pachetele înrudite.
+   După fiecare lot, o verificare reală: `tsc --noEmit`, testele, și **o
+   compilare** pentru partea mobilă.
+3. **Nu introduce niciodată o dependință nouă la o versiune veche.** Un pachet
+   adăugat azi se adaugă la ultima versiune stabilă.
+4. **Nu lasă avertismente în urmă.** Un avertisment de analizor, de compilator
+   sau de build ori se repară, ori primește o excepție scrisă cu motiv. Zece
+   avertismente tolerate înseamnă că al unsprezecelea, cel real, nu se mai vede.
+5. **Actualizările de securitate au prioritate și termen**: cel mult o săptămână.
+
+### 5.2 Capcanele dovedite pe proiectul ăsta
+
+Trei lecții plătite deja, care nu se reînvață:
+
+- **`flutter analyze` trece cu un graf de dependențe rupt**, pentru că nu intră
+  în pub-cache. Singura dovadă că o actualizare Flutter e bună e o compilare
+  reală. O familie de pachete care implementează același `platform_interface` se
+  mută **integral, dintr-o dată** — un amestec stabil/beta pică cu „missing
+  implementations".
+- **Cea mai nouă versiune poate cere un SDK pe care lanțul de build nu-l
+  suportă.** `flutter_secure_storage 11` cere compileSdk 37; AGP 9.1.0 merge
+  până la 36. Aici „ultima versiune" nu e o opțiune, e o oprire de build.
+- **Un salt major poate rupe altceva decât pachetul actualizat.** TypeScript 7 a
+  eliminat `baseUrl`, iar fără el `@types/jest` nu mai e descoperit: toate cele
+  16 suite de teste ale API-ului cad. Pachetele frontend sunt deja pe 7.0.2,
+  pentru că folosesc vitest — deci blocajul e al jest-ului, nu al TypeScript-ului.
+
+### 5.3 Cum se fixează o versiune, când chiar trebuie
+
+Un pin e o excepție de la regulă, deci se plătește cu documentație. Se
+înregistrează în **`scripts/dependency-pins.json`**, cu:
+
+- pachetul, ecosistemul și unde se aplică,
+- versiunea la care e ținut și cea de la care e blocat,
+- **motivul verificabil** — ce anume se rupe, nu „nu merge",
+- **data de revizuire**,
+- condiția care îl deblochează.
+
+`check-updates.mjs` citește registrul și semnalează pin-urile expirate. O dată de
+revizuire pe care n-o verifică nimeni e o dată decorativă. Manifestele npm și pub
+nu suportă comentarii, de aceea motivele stau într-un singur loc, nu împrăștiate.
+
+Un pin fără intrare în registru se consideră greșeală și se scoate.
+
+### 5.4 Ce blochează build-ul și ce nu
+
+| Verificare | În CI | De ce |
+|---|---|---|
+| Vulnerabilități (`pnpm audit`, nivel înalt) | **blochează** | O vulnerabilitate cunoscută nu se livrează. |
+| Versiuni componente (`check-versions.mjs`) | **blochează** | Regula din §4. |
+| Dependențe în urmă (`check-updates.mjs`) | raport, nu blochează | Ar cădea în ziua în care orice dependință publică o versiune nouă. Un semnal care se aprinde zilnic e un semnal pe care nimeni nu-l mai citește. |
+
+Raportul de actualizări rulează programat, nu la fiecare împingere, și produce
+task-uri în `ai/tasks/`, nu build-uri roșii.
+
+### 5.5 Prospețimea nu înseamnă „publicat acum trei minute"
+
+`pnpm-workspace.yaml` are `minimumReleaseAge`, o întârziere înainte ca o versiune
+proaspăt publicată să fie adoptată. Nu e o frână împotriva actualizărilor, ci
+apărarea împotriva compromiterilor de lanț de aprovizionare: pachetele infectate
+sunt de obicei depistate și retrase în primele ore. Valoarea e de câteva zile, nu
+zero — diferența dintre „ultima versiune" și „ultima versiune care a apucat să
+fie verificată de cineva".
+
+---
+
+## 6. Convenții per componentă
 
 ### `mobile/` (Flutter)
 - State management: **Riverpod** peste tot — nu amesteca cu Provider/BLoC în același modul.
@@ -136,7 +221,7 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 6. Calitatea băncii de întrebări — reguli obligatorii pentru orice cod care o atinge
+## 7. Calitatea băncii de întrebări — reguli obligatorii pentru orice cod care o atinge
 
 - Nicio întrebare nu intră direct în rotația de joc cu `status = pending` — trebuie `approved` (fie prin verificare manuală eșantion pentru AI, fie prin moderator pentru cele din comunitate).
 - Deduplicare: înainte de inserare, verifică similaritate text cu întrebări existente în aceeași categorie (evită să umpli banca cu variații triviale ale aceleiași întrebări).
@@ -144,7 +229,7 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 7. Securitate & date
+## 8. Securitate & date
 
 - Parole: hash cu algoritm modern (bcrypt/argon2), niciodată plaintext, niciodată în loguri.
 - JWT: expirare rezonabilă + refresh token, invalidare la logout.
@@ -153,7 +238,7 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 8. Testare
+## 9. Testare
 
 - Backend: teste unitare pentru logica de scor/ELO și pentru validarea întrebărilor generate AI (acestea sunt cele mai predispuse la bug-uri costisitoare — un bug în calculul scorului sau în validarea răspunsului corect afectează direct corectitudinea jocului).
 - `realtime`: cel puțin un test de integrare care simulează o partidă `duo` completă (conectare → matchmaking → rundă → rezultat → persistare).
@@ -161,7 +246,7 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 9. Ce NU face un agent fără să întrebe
+## 10. Ce NU face un agent fără să întrebe
 
 - Nu schimbă alegerea de stack tehnic din `plan.md` (Flutter, NestJS, Postgres, Redis) fără să discute explicit motivul.
 - Nu adaugă monetizare cu bani reali (plăți efective) fără confirmare explicită — cosmeticele cu monedă câștigată în joc sunt ok din Faza 4, dar integrarea de plăți reale e o decizie separată.
@@ -170,7 +255,7 @@ timp. E și baza pentru versiunea minimă acceptată de client (`SRV-092`, `APP-
 
 ---
 
-## 10. Raportare progres
+## 11. Raportare progres
 
 La final de sesiune de lucru, agentul rezumă:
 - ce task(uri) din ce fază de `plan.md` au fost atinse,

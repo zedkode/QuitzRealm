@@ -1,0 +1,45 @@
+{
+  "$comment": "Registrul versiunilor ținute pe loc. Regula din agents.md §5: se stă pe ultima versiune, iar orice excepție trăiește aici, cu motiv verificabil și dată de revizuire. `check-updates.mjs` citește fișierul și semnalează pin-urile expirate — o dată de revizuire pe care n-o verifică nimeni e o dată decorativă. Manifestele npm și pub nu suportă comentarii, de aceea motivele stau într-un singur loc, nu împrăștiate.",
+  "pins": [
+    {
+      "package": "typescript",
+      "ecosystem": "npm",
+      "where": ["backend/api", "backend/realtime"],
+      "pinnedTo": "5.x",
+      "blockedFrom": "7.0.2",
+      "reason": "TypeScript 7 a eliminat opțiunea `baseUrl`, iar fără ea `@types/jest@30` nu mai e descoperit: toate fișierele de test cad cu «Cannot find name 'describe'». Nici `typeRoots` explicit nu repară. Verificat pe 21.08.2026: cu TS7 pică toate cele 16 suite. Pachetele frontend (shared, web, admin) sunt deja pe 7.0.2, pentru că folosesc vitest, nu jest — blocajul e strict al jest-ului.",
+      "revisitAfter": "2026-11-01",
+      "unblockCondition": "O versiune de @types/jest sau de ts-jest compatibilă cu TypeScript 7, ori trecerea backendurilor pe vitest."
+    },
+    {
+      "package": "flutter_secure_storage",
+      "ecosystem": "pub",
+      "where": ["mobile"],
+      "pinnedTo": "10.0.0",
+      "blockedFrom": "11.0.0",
+      "reason": "v11 cere compileSdk 37, iar AGP 9.1.0 merge până la 36, deci buildul Android cade la verificarea metadatelor AAR. Codul folosește doar read/write/delete, identice în ambele versiuni.",
+      "revisitAfter": "2026-10-01",
+      "unblockCondition": "O versiune de AGP care acceptă compileSdk 37."
+    },
+    {
+      "package": "flutter_inappwebview",
+      "ecosystem": "pub",
+      "where": ["mobile"],
+      "pinnedTo": "6.2.0-beta.3 (toată familia, prin dependency_overrides)",
+      "blockedFrom": "linia stabilă",
+      "reason": "Pachetul-umbrelă și cele șase implementări per platformă implementează același `platform_interface`. Un amestec stabil/beta pică la compilare cu «missing implementations», iar `flutter analyze` trece oricum, pentru că nu intră în pub-cache. Linia stabilă folosea `getDefaultProguardFile('proguard-android.txt')`, respins de AGP 9. Toată familia trebuie mutată odată, niciodată pachet cu pachet.",
+      "revisitAfter": "2026-10-01",
+      "unblockCondition": "O linie stabilă compatibilă cu AGP 9 pentru toate cele șapte pachete simultan."
+    },
+    {
+      "package": "nanoid",
+      "ecosystem": "npm",
+      "where": ["pnpm-workspace.yaml, override tailwindcss>nanoid"],
+      "pinnedTo": "3.3.7",
+      "blockedFrom": "necunoscut",
+      "reason": "Override moștenit din schela inițială, fără motiv documentat la momentul introducerii. Se păstrează până se verifică dacă mai e necesar — un override nedocumentat nu se șterge orbește, dar nici nu rămâne la nesfârșit nejustificat.",
+      "revisitAfter": "2026-09-15",
+      "unblockCondition": "Verificare că build-ul Tailwind trece fără override; dacă trece, se elimină."
+    }
+  ]
+}

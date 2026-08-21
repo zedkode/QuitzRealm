@@ -1,0 +1,62 @@
+name: 🔄 Dependențe
+
+# Regula din agents.md §5: se stă pe versiunile curente.
+#
+# Raportul de actualizări rulează **programat**, nu la fiecare împingere: dacă ar
+# cădea în ziua în care orice dependință publică o versiune nouă, ar cădea zilnic,
+# iar un semnal care se aprinde zilnic e un semnal pe care nimeni nu-l mai citește.
+# Ce blochează sunt vulnerabilitățile.
+
+on:
+  schedule:
+    # Luni dimineața, ca raportul să fie primul lucru al săptămânii.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+  pull_request:
+    # La pull request rulează doar auditul de securitate, nu și raportul.
+    paths:
+      - "**/package.json"
+      - "pnpm-lock.yaml"
+      - "mobile/pubspec.yaml"
+
+jobs:
+  audit:
+    name: Audit de securitate (blochează)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable
+
+      - name: 🔒 Vulnerabilități în workspace-ul frontend
+        run: pnpm audit --audit-level=high
+
+      - name: 🔒 Vulnerabilități în server-core
+        run: |
+          npm audit --audit-level=high --prefix backend/api
+          npm audit --audit-level=high --prefix backend/realtime
+
+  report:
+    name: Raport de actualizări (informativ)
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable
+
+      - name: 📦 Instalează manifestele
+        run: |
+          pnpm install --frozen-lockfile
+          npm install --prefix backend/api --ignore-scripts
+          npm install --prefix backend/realtime --ignore-scripts
+
+      - name: 🔄 Ce a rămas în urmă
+        run: node scripts/check-updates.mjs | tee $GITHUB_STEP_SUMMARY
+
+      - name: 🔢 Versiunile componentelor
+        run: node scripts/check-versions.mjs
