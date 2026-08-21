@@ -18,12 +18,12 @@ Prima grupă din registru, nu ultima. Orice tabel de conținut creat înainte de
 va trebui migrat după.
 
 #### SRV-001 · Tabelele de limbi și țări
-- **Status:** ⬜ De făcut
+- **Status:** 🟡 Parțial — implementat și verificat local; lipsește aplicarea controlată în producție.
 - **Descriere:** Registrul de limbi și țări suportate, cu marcajul poolului global. Baza pentru matchmaking regional, clasamente, camere de chat și banca de întrebări.
 - **Implementare corectă:** `languages(id, iso_code unique, name_key, is_global_pool, active)` și `countries(id, iso_alpha2 unique, name_key, default_language_id, active)`. `name_key` e o cheie de traducere, nu un nume în română — numele țării se traduce ca orice alt text. `is_global_pool` e `true` doar pentru engleză la lansare. Seed idempotent cu toate țările ISO-3166 și limbile active. Fără `DELETE`: o limbă retrasă primește `active = false`.
 - **Finalizat:** —
 - **Sursă:** `owner-plan.md` §10.7 (de la linia 462)
-- **Commit:** —
+- **Commit:** `36dba77`
 - **Depinde de:** —
 
 #### SRV-002 · Limba și țara pe cont, cu cooldown

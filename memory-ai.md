@@ -993,3 +993,58 @@ capturi fără sursă de date.
 - În repo au fost comise din greșeală artefacte de test:
   `mobile/test/features/failures/*.png` (imagini de diferență din goldene).
   Ar trebui șterse și adăugate în `.gitignore`.
+
+---
+
+## 2026-08-21 — Codex — SRV-001 limbi și țări
+
+### Obiectiv
+
+Implementarea registrelor de limbi și țări care fundamentează localizarea și
+matchmaking-ul regional, fără a începe SRV-002–SRV-005 și fără modificări în
+producție.
+
+### Implementare
+
+- Modele Prisma `Language` și `Country`, cu coduri unice, `name_key`, stare
+  activă, relația de limbă implicită și engleza ca singur pool global.
+- Migrare `20260821143000_languages_and_countries`, strict aditivă și cu clauze
+  de existență; retragerea se face prin `active = false`, nu prin ștergere.
+- Catalog verificat cu toate cele 249 de coduri ISO-3166-1 alpha-2 și limbile
+  active RO/EN. România și Republica Moldova au româna implicită; restul
+  folosesc engleza cât timp produsul nu declară suport pentru alte limbi.
+- Seed tranzacțional cu `upsert`, integrat în `prisma/seed.ts`, plus teste de
+  completitudine, validare și rerulare fără duplicate.
+- Versiunea `backend/api` a crescut de la `1.0.0` la `1.1.0`.
+
+### Fișiere schimbate
+
+- `backend/api/prisma/schema.prisma`
+- `backend/api/prisma/migrations/20260821143000_languages_and_countries/migration.sql`
+- `backend/api/prisma/seed.ts`
+- `backend/api/src/reference-data/reference-data.ts`
+- `backend/api/src/reference-data/reference-data.seed.ts`
+- `backend/api/src/reference-data/reference-data.spec.ts`
+- `backend/api/package.json`, `backend/api/package-lock.json`
+- `ai/tasks/01-server-core.md`, `memory-ai.md`
+
+### Verificări și rezultat
+
+- `npx prisma validate`, `npm run prisma:generate`: trecute.
+- `npx tsc --noEmit`: trecut.
+- `npx jest --runInBand`: 17/17 suite, 137/137 teste trecute.
+- `npm run build`: trecut; lint focalizat pe fișierele noi și seed: curat.
+- `npm run prisma:migrate:deploy` pe PostgreSQL local: migrarea aplicată;
+  `npx prisma migrate status`: schema la zi.
+- `npm run prisma:seed` rulat de două ori: de fiecare dată 2 limbi și 249 de
+  țări; interogarea finală confirmă zero coduri duplicate și pool global doar
+  pentru `en`.
+- `node scripts/check-versions.mjs` și `git diff --check`: trecute.
+- Commit implementare: `36dba77` (`feat(api): implement SRV-001 reference registries`).
+
+### Blocaje și următorul pas
+
+Nu există blocaj de cod. Conform definiției statusurilor, SRV-001 rămâne
+`🟡 Parțial` până când migrarea și seed-ul sunt aplicate controlat în producție;
+VPS-ul nu a fost atins în această sesiune. După deploy și verificarea numărului
+de rânduri, task-ul poate deveni `✅`, apoi lanțul continuă cu `SRV-003`.
