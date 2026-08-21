@@ -63,6 +63,37 @@ enum CosmeticType {
   TITLE      @map("title")
 }
 
+/// Limbile pe care produsul le poate folosi pentru conținut, chat și
+/// matchmaking. Retragerea unei limbi se face prin `active = false`; rândul
+/// rămâne disponibil pentru istoricul deja legat de el.
+model Language {
+  id           String  @id @default(uuid()) @db.Uuid
+  isoCode      String  @unique @map("iso_code") @db.VarChar(10)
+  nameKey      String  @map("name_key") @db.VarChar(160)
+  isGlobalPool Boolean @default(false) @map("is_global_pool")
+  active       Boolean @default(true)
+
+  defaultForCountries Country[]
+
+  @@map("languages")
+}
+
+/// Registrul ISO-3166 folosit la onboarding și la segmentarea regională.
+/// Numele afișat este întotdeauna rezolvat din `nameKey`, nu stocat într-o
+/// limbă anume în acest tabel.
+model Country {
+  id                String  @id @default(uuid()) @db.Uuid
+  isoAlpha2         String  @unique @map("iso_alpha2") @db.VarChar(2)
+  nameKey           String  @map("name_key") @db.VarChar(160)
+  defaultLanguageId String  @map("default_language_id") @db.Uuid
+  active            Boolean @default(true)
+
+  defaultLanguage Language @relation(fields: [defaultLanguageId], references: [id], onDelete: Restrict)
+
+  @@index([defaultLanguageId, active])
+  @@map("countries")
+}
+
 model User {
   id                String    @id @default(uuid()) @db.Uuid
   /// Handle unic, folosit la identificare. Se schimbă rar (vezi cooldown).
