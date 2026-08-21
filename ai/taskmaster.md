@@ -2,7 +2,7 @@
 
 **Data:** 21 august 2026
 **Surse normative:** `plan.md` §0, §6, §8, §10 și `owner-plan.md` §5, §7.3, §9, §11.
-**Documente conexe:** `ai/needdesign.md` (lipsuri din panoul de admin), `docs/structura-joc.md` (divergența de structură), `docs/project-audit-2026-08-16.md`.
+**Documente conexe:** `ai/needdesign.md` (lipsuri din panoul de admin), `docs/archive/structura-joc.md` (divergența de structură), `docs/archive/project-audit-2026-08-16.md`.
 
 > **Acesta e nivelul strategic** — faze, cronologie, decizii blocante, riscuri.
 > Nivelul de execuție, cu fiecare task în parte, stă în cele patru registre din
@@ -42,7 +42,7 @@ aprobate (`design-reference/02-home-dashboard.png`, `07-campaign.png`) conțin t
 cele 20 de categorii deja populate. **Atenție:** stelele și progresul salvate pe telefoanele
 jucătorilor actuali se pierd la orice variantă în afară de B.
 
-Deschisă din 16 august 2026 (`docs/structura-joc.md` §4).
+Deschisă din 16 august 2026 (`docs/archive/structura-joc.md` §4).
 
 ### D2 — Un sezon înseamnă o singură hartă a țării, pentru toți? *(blochează Faza 0)*
 
@@ -201,7 +201,7 @@ rezultatul e identic indiferent de client.
 - [ ] **Tabel de agregate zilnice** — fără el, D1/D7/D30 nu se pot calcula retroactiv. Merită pornit
       devreme, chiar din Faza 0.
 - [ ] Extinderea catalogului de achievements către familiile care cer metrici noi
-      (`docs/owner-plan-progress.md` §3 marchează exact ce lipsește).
+      (`docs/archive/owner-plan-progress.md` §3 marchează exact ce lipsește).
 
 **Gata când:** un jucător care intră a doua zi găsește o provocare nouă, vede cât mai are până la
 rangul următor și primește ceva pentru că s-a întors.

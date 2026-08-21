@@ -71,7 +71,7 @@ va trebui migrat după.
 - **Descriere:** Înregistrare și autentificare cu parolă, hash Argon2, fără parole în clar nicăieri.
 - **Implementare corectă:** Argon2id, DTO-uri validate, răspuns uniform anti-enumerare la e-mail inexistent.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** —
 
@@ -80,7 +80,7 @@ va trebui migrat după.
 - **Descriere:** Autentificare prin Google, cu cod de schimb consumabil o singură dată pentru clientul mobil.
 - **Implementare corectă:** Guard OAuth pe server, validare `state`, cod de schimb cu durată scurtă; clientul deschide browserul de sistem, nu un webview.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -89,7 +89,7 @@ va trebui migrat după.
 - **Descriere:** Joc fără cont, cu migrarea progresului la înregistrare, o singură dată.
 - **Implementare corectă:** `GuestMigration` marchează conversia idempotent; se migrează doar progres necompetitiv, niciodată ELO sau rang.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -98,7 +98,7 @@ va trebui migrat după.
 - **Descriere:** Al doilea factor opțional, obligatoriu pentru conturile cu rol de personal.
 - **Implementare corectă:** Secret criptat AES-GCM, coduri de recuperare ca hash Argon2, provocare de 5 minute. Obligativitatea pentru personal se aplică în ADM-058.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -107,7 +107,7 @@ va trebui migrat după.
 - **Descriere:** Access de 15 minute, refresh de 30 de zile, cu rotație și detecție de replay.
 - **Implementare corectă:** `user_sessions` cu hash de refresh, etichetă de dispozitiv, hash de IP. Reutilizarea unui token rotit revocă întregul lanț.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -125,7 +125,7 @@ va trebui migrat după.
 - **Descriere:** Protecție împotriva creării automate de conturi și a atacurilor pe endpointuri sensibile.
 - **Implementare corectă:** Throttler pe register/login, Turnstile verificat server-side, fereastră de 24 h pe combinația HMAC de IP plus etichetă de client.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -134,7 +134,7 @@ va trebui migrat după.
 - **Descriere:** Prag minim de 13 ani, cu restricții derivate server-side pentru conturile de minori.
 - **Implementare corectă:** `birth_date` ca dată, fără oră. Minorii rămân pe reacții în chatul global indiferent de treapta de încredere.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -411,7 +411,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Jucătorii își exprimă preferințele de categorii, iar serverul face intersecția.
 - **Implementare corectă:** `agreeOnCategories` intersectează preferințele, cu revenire la „toate" când intersecția e goală; `matchmaking:join` acceptă `categoryCodes`. **Serverul e gata; lipsesc doar interfețele** (WEB-021, APP-018).
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/structura-joc.md` §3, punctul 4 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 4 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** —
 
@@ -558,7 +558,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Șabloane parametrizate care generează sute de realizări fără listare manuală.
 - **Implementare corectă:** `achievement_templates`, `achievements`, `user_achievements` există; `recordValidatedMatch` acordă progres în aceeași tranzacție cu persistarea meciului, deci clientul nu poate acorda nimic. **Ce lipsește:** extinderea catalogului către familiile care cer metrici noi — categorii, acuratețe, serie, viteză, social, cosmetice, evenimente, meta. Fiecare familie cere întâi sursa ei server-side.
 - **Finalizat:** —
-- **Sursă:** `docs/owner-plan-progress.md` §3
+- **Sursă:** `docs/archive/owner-plan-progress.md` §3
 - **Commit:** —
 - **Depinde de:** SRV-022
 
@@ -643,7 +643,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Trei suprafețe de conversație, cu reguli diferite de acces.
 - **Implementare corectă:** Global efemer în Redis cu istoric de 24 h; conversații de prieteni persistente; DM cu cerere de mesaj la primul contact. Livrare prin Socket.IO.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** —
 
@@ -652,7 +652,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Cerere, acceptare, refuz, blocare, prezență pentru prieteni, sugestii din partide recente.
 - **Implementare corectă:** Blocarea rupe prietenia, ascunde conversațiile și oprește comunicarea în ambele sensuri, inclusiv la livrarea în timp real. Sugestiile cer consimțământ bilateral.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** SRV-066
 
@@ -772,7 +772,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Jucătorii raportează mesaje; rapoartele ajung într-o coadă cu prioritate.
 - **Implementare corectă:** `ChatReport` cu instantaneu al conținutului, ca raportul să rămână verificabil și după ce mesajul efemer dispare. Rapoartele din DM și de la prieteni au prioritate mai mare: contextul privat face hărțuirea mai greu de observat din afară.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** SRV-066
 
@@ -781,7 +781,7 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Limitare de rată, filtru de limbaj, detectarea repetițiilor, mut temporar automat.
 - **Implementare corectă:** Limitare Redis în global și în meci, mascarea profanității, `chat_muted_until` pus automat la depășire.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** SRV-066
 
@@ -911,6 +911,6 @@ Miezul jocului. Nimic din grupa asta nu există azi.
 - **Descriere:** Azi orice push pe `main` poate produce un release public.
 - **Implementare corectă:** Un flux de verificări la pull request — analiză, teste, build — și un flux separat de release, pornit **doar** de un tag explicit. Analiza și testele blochează deja build-ul; ce lipsește e separarea declanșatorului.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, problema 4
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, problema 4
 - **Commit:** —
 - **Depinde de:** —

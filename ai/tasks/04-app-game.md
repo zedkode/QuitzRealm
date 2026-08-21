@@ -22,7 +22,7 @@ lângă structura veche.
 - **Descriere:** Versiunea de Flutter din CI trebuie să includă Dart-ul declarat de pachet, altfel rezolvarea dependențelor cade înainte de orice compilare.
 - **Implementare corectă:** Flutter 3.47.0 în workflow, care include Dart 3.13. Analiza și testele blochează build-ul; nu mai sunt marcate ca neblocante.
 - **Finalizat:** 2026-08-16
-- **Sursă:** `docs/project-audit-2026-08-16.md`, problema 5
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, problema 5
 - **Commit:** `faa8894`
 - **Depinde de:** —
 
@@ -58,7 +58,7 @@ lângă structura veche.
 - **Descriere:** Auditul din 16 august a găsit **două limbaje vizuale concurente**: tema veche cu `GamePalette` și pergament, și sistemul `QuizRealm` cu bleumarin, aur metalic și albastru electric. Jucătorul percepe unele ecrane ca „aplicație Flutter cu skin" și altele ca „joc premium".
 - **Implementare corectă:** Tokenii `QuizRealmColors`, `QuizRealmTypography`, `GoldFrame` și `FantasyPanel` devin sursa unică. Migrarea începe cu ecranele de joc, apoi social și setări. Niciun ecran nu mai definește culori, spațieri sau raze local. Duelul a fost deja migrat.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, problema 1
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, problema 1
 - **Commit:** `1122c17`
 - **Depinde de:** —
 
@@ -67,7 +67,7 @@ lângă structura veche.
 - **Descriere:** Un singur loc prin care trec cererile, cu reînnoirea tokenului expirat.
 - **Implementare corectă:** Access de 15 minute, refresh de 30 de zile, rotație. Token-ul se păstrează în stocare securizată, niciodată în preferințe simple.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-010
 
@@ -98,7 +98,7 @@ lângă structura veche.
 - **Descriere:** E-mail și parolă, Google, invitat, al doilea factor, resetare de parolă.
 - **Implementare corectă:** Google prin browserul de sistem, nu webview — cerință a politicilor și mai sigur. Captcha la înregistrare. Conversia contului de invitat se face o singură dată și migrează doar progres necompetitiv.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-006
 
@@ -125,7 +125,7 @@ lângă structura veche.
 - **Descriere:** Profil, confidențialitate, securitate, limbă, notificări, sesiuni.
 - **Implementare corectă:** Ecranul de sesiuni cu revocare individuală există deja. Lipsesc: schimbarea țării și limbii cu cooldown afișat, preferințele de notificări pe categorie, cererea de export de date și cea de ștergere a contului cu explicația a ce rămâne anonimizat.
 - **Finalizat:** —
-- **Sursă:** `docs/owner-plan-progress.md` §1
+- **Sursă:** `docs/archive/owner-plan-progress.md` §1
 - **Commit:** —
 - **Depinde de:** SRV-002, SRV-088
 
@@ -138,7 +138,7 @@ lângă structura veche.
 - **Descriere:** Cele 9 ținuturi deblocate pe rând, cu stele per etapă, contrazic direct `owner-plan.md` §7.3. Harta e folosită ca meniu de nivele în loc de tablă de meci.
 - **Implementare corectă:** Depinde de varianta aleasă la D1. Recomandarea e **C**: campania devine „Antrenament pe categorii", cu progres prin deblocare de categorii, fără hartă secvențială. **Atenție la migrare:** stelele și progresul salvate pe telefoanele jucătorilor actuali se pierd la orice variantă în afară de B — trebuie anunțat în aplicație înainte, nu descoperit după actualizare. Fișiere atinse: `domain/campaign/`, `features/map/world_map_screen.dart`, `features/battle/`.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §4 (de la linia 87)
+- **Sursă:** `docs/archive/structura-joc.md` §4 (de la linia 87)
 - **Commit:** —
 - **Depinde de:** —
 
@@ -147,7 +147,7 @@ lângă structura veche.
 - **Descriere:** „Joacă" duce la alegerea modului, nu direct în duel.
 - **Implementare corectă:** Cele cinci moduri cu descriere scurtă și durată estimată; Clasicul evidențiat ca miez al jocului. Arată sezonul curent, facțiunea și județul la care ai acces. Terminologia: **„Nivel de cont"**, niciodată „nivel" simplu.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 3 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 3 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-035
 
@@ -183,7 +183,7 @@ lângă structura veche.
 - **Descriere:** Alegerea categoriilor preferate înainte de meci.
 - **Implementare corectă:** Selecție multiplă cu explicația că se joacă pe intersecția preferințelor și că se revine la „toate" când intersecția e goală. Serverul e gata; lipsește doar interfața.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 4 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 4 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-042
 
@@ -192,7 +192,7 @@ lângă structura veche.
 - **Descriere:** Modul solo, fără presiune. Preia rolul actual al campaniei.
 - **Implementare corectă:** `CategoryRoundSource` există deja, cu deduplicare între categorii care se suprapun. Lipsește ecranul propriu, desprins de campanie. Fără ELO, fără impact pe hartă.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 2 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 2 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-053, APP-013
 
@@ -219,7 +219,7 @@ lângă structura veche.
 - **Descriere:** Ce s-a câștigat și ce s-a schimbat pe hartă.
 - **Implementare corectă:** Defalcare de rang, XP, monede, progres de provocări și efectul asupra județului. Ecranul de rezultat trebuie migrat la sistemul de design nou. Revanșă și întoarcere în lobby.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, sprintul recomandat
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, sprintul recomandat
 - **Commit:** —
 - **Depinde de:** SRV-032, SRV-045
 
@@ -228,7 +228,7 @@ lângă structura veche.
 - **Descriere:** Comunicarea în timpul partidei, cu aceleași reguli de încredere ca restul chatului.
 - **Implementare corectă:** Reacții presetate pentru treptele mici și pentru minori; text liber de la treapta care îl permite. Trebuie migrat la sistemul de design nou.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, sprintul recomandat
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, sprintul recomandat
 - **Commit:** —
 - **Depinde de:** SRV-068
 
@@ -268,7 +268,7 @@ lângă structura veche.
 - **Descriere:** Hub social cu cereri, prezență și sugestii din partide recente.
 - **Implementare corectă:** Blocarea rupe prietenia și oprește comunicarea în ambele sensuri. Sugestiile cer consimțământ bilateral.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** `af4835a`
 - **Depinde de:** SRV-067
 
@@ -277,7 +277,7 @@ lângă structura veche.
 - **Descriere:** Cele trei suprafețe de conversație, cu inbox de cereri pentru primul mesaj de la un necunoscut.
 - **Implementare corectă:** Livrare live prin Socket.IO, istoric paginat pentru conversațiile persistente, efemer pentru global.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** SRV-066
 
@@ -308,7 +308,7 @@ lângă structura veche.
 - **Descriere:** Progres, raritate, insigne echipabile, showcase de profil.
 - **Implementare corectă:** Trei sloturi de insigne validate server-side; până la șase realizări în showcase. Raritatea vine recalculată din procentul real de deblocări.
 - **Finalizat:** anterior sesiunii curente
-- **Sursă:** `docs/owner-plan-progress.md` §3
+- **Sursă:** `docs/archive/owner-plan-progress.md` §3
 - **Commit:** `4257de5`
 - **Depinde de:** SRV-057
 
@@ -433,7 +433,7 @@ lângă structura veche.
 - **Descriere:** Capturi de referință pentru stările duelului: activ, selectat, corect, greșit, așteptare, rezultat.
 - **Implementare corectă:** Golden-urile se generează **pe CI, pe Linux**, niciodată local pe Windows: redarea fonturilor diferă și produce diferențe de sub un procent care nu sunt regresii reale. Un golden care pică local dar trece pe CI nu se regenerează.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, sprintul recomandat
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, sprintul recomandat
 - **Commit:** —
 - **Depinde de:** APP-005
 
@@ -451,7 +451,7 @@ lângă structura veche.
 - **Descriere:** APK-ul se semnează azi cu cheia de debug. Google Play nu acceptă asta.
 - **Implementare corectă:** Keystore generat și păstrat în afara depozitului, cu parola în secretele CI și o copie de siguranță în afara mașinii. **Cheia nu se poate schimba după prima publicare** — o pierdere înseamnă o aplicație nouă, cu zero instalări. E blocajul cel mai tăcut din tot registrul: nu se vede până în ziua publicării.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, problema 4
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, problema 4
 - **Commit:** —
 - **Depinde de:** —
 
@@ -460,7 +460,7 @@ lângă structura veche.
 - **Descriere:** Azi orice push pe `main` poate crea un tag și un release public.
 - **Implementare corectă:** Verificările rulează la pull request; release-ul pornește doar de la un tag semnat sau o aprobare manuală. Versiunea și numărul de build cresc controlat, nu la fiecare împingere.
 - **Finalizat:** —
-- **Sursă:** `docs/project-audit-2026-08-16.md`, problema 4
+- **Sursă:** `docs/archive/project-audit-2026-08-16.md`, problema 4
 - **Commit:** —
 - **Depinde de:** SRV-094
 

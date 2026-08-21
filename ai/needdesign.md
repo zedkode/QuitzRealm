@@ -263,8 +263,7 @@ acordat automat oricui apasă pe un link din e-mail.
 chat (T0–T8), plus 10 pentru e-mail confirmat, plus 10 pentru 2FA, minus 5 pe
 raport primit (maximum −40), minus 50 dacă e suspendat.
 
-**Ce lipsește:** pragurile sunt hardcodate. `docs/features-social-progression.md`
-§2.5 cere ca treptele de încredere să fie editabile din panou. Când se face
+**Ce lipsește:** pragurile sunt hardcodate. `owner-plan.md` §2.5 cere ca treptele de încredere să fie editabile din panou. Când se face
 ecranul **System → General Settings**, formula trebuie mutată într-un tabel de
 configurație, iar `basis` să citeze valorile configurate, nu constantele.
 

@@ -196,7 +196,7 @@ administrare** (registru separat, [`02-admin-panel.md`](02-admin-panel.md)).
 - **Descriere:** Punctul din care începe orice partidă. „Joacă" duce aici, nu direct în duel.
 - **Implementare corectă:** Cele cinci moduri ca alegeri distincte, cu descriere scurtă și durată estimată. Modul Clasic e evidențiat: e miezul jocului. Arată sezonul curent, facțiunea jucătorului și județul disputabil la care are acces.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 3 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 3 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-035
 
@@ -214,7 +214,7 @@ administrare** (registru separat, [`02-admin-panel.md`](02-admin-panel.md)).
 - **Descriere:** Jucătorul își alege categoriile preferate înainte de meci.
 - **Implementare corectă:** Selecție multiplă, cu explicația că se joacă pe **intersecția** preferințelor ambilor jucători și că se revine la „toate" când intersecția e goală. Serverul e gata de mult; lipsește doar interfața.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 4 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 4 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-042
 
@@ -241,7 +241,7 @@ administrare** (registru separat, [`02-admin-panel.md`](02-admin-panel.md)).
 - **Descriere:** Modul solo, fără presiune, pentru onboarding și pentru testarea băncii.
 - **Implementare corectă:** Alegi una sau mai multe categorii și joci o rundă. Fără ELO, fără impact pe hartă. E și modul în care un vizitator poate încerca jocul înainte să-și facă cont.
 - **Finalizat:** —
-- **Sursă:** `docs/structura-joc.md` §3, punctul 2 (de la linia 64)
+- **Sursă:** `docs/archive/structura-joc.md` §3, punctul 2 (de la linia 64)
 - **Commit:** —
 - **Depinde de:** SRV-053
 
@@ -299,7 +299,7 @@ administrare** (registru separat, [`02-admin-panel.md`](02-admin-panel.md)).
 - **Descriere:** Lista de prieteni, cine e online, cereri și sugestii.
 - **Implementare corectă:** Invitație directă la o partidă privată din listă. Prezența respectă setările de confidențialitate — cine a ales să apară offline rămâne offline.
 - **Finalizat:** —
-- **Sursă:** `docs/owner-plan-progress.md` §2
+- **Sursă:** `docs/archive/owner-plan-progress.md` §2
 - **Commit:** —
 - **Depinde de:** SRV-067
 

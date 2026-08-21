@@ -1,18 +1,43 @@
 # Registrele de task-uri QuizRealm
 
-Patru registre, unul per componentă. Împreună acoperă tot ce mai are de construit
-proiectul până la lansarea publică și după.
+Douăsprezece registre. Împreună sunt **singura listă validă** de ce mai are de
+construit proiectul. Orice altceva din depozit e ori sursă de design, ori
+procedură de operare, ori arhivă — niciunul nu e listă de lucru.
 
-| Registru | Componentă | Prefix ID |
+---
+
+## Cele două axe
+
+Registrele nu se împart într-un singur fel, pentru că munca nu e de un singur fel.
+
+**Registrele de implementare** răspund la *cine scrie codul*. Un task de aici e o
+bucată de cod într-o componentă anume.
+
+| Registru | Componentă | Prefix |
 |---|---|---|
-| [`01-server-core.md`](01-server-core.md) | Server core — `backend/api` + `backend/realtime` + date | `SRV-###` |
-| [`02-admin-panel.md`](02-admin-panel.md) | Panoul de administrare | `ADM-###` |
-| [`03-web-game.md`](03-web-game.md) | Platforma web — homepage, zona de joc, tot | `WEB-###` |
-| [`04-app-game.md`](04-app-game.md) | Aplicația Flutter | `APP-###` |
+| [`01-server-core.md`](01-server-core.md) | `backend/api` + `backend/realtime` + date | `SRV-` |
+| [`02-admin-panel.md`](02-admin-panel.md) | Panoul de administrare | `ADM-` |
+| [`03-web-game.md`](03-web-game.md) | Platforma web — homepage, zonă de joc, tot | `WEB-` |
+| [`04-app-game.md`](04-app-game.md) | Aplicația Flutter | `APP-` |
 
-Vederea strategică — faze, cronologie, decizii blocante, riscuri — rămâne în
-[`../taskmaster.md`](../taskmaster.md). Registrele de aici sunt nivelul de execuție.
-Lipsurile deja identificate în panou sunt detaliate în [`../needdesign.md`](../needdesign.md).
+**Registrele de disciplină** răspund la *ce trebuie să existe*. Un task de aici
+produce o specificație, un conținut, un activ sau o decizie — și **generează**
+task-uri în cele patru de mai sus. Câmpul `Produce` spune unde ajunge.
+
+| Registru | Disciplină | Prefix |
+|---|---|---|
+| [`05-game-design.md`](05-game-design.md) | Mecanici, moduri, echilibrare | `GD-` |
+| [`06-content-pipeline.md`](06-content-pipeline.md) | Banca de întrebări, localizare de conținut | `CNT-` |
+| [`07-art-audio.md`](07-art-audio.md) | Artă, sunet, mișcare | `ART-` |
+| [`08-growth-community.md`](08-growth-community.md) | Achiziție, retenție, comunitate | `GRW-` |
+| [`09-infra-security.md`](09-infra-security.md) | Găzduire, scalare, cost, securitate | `INF-` |
+| [`10-legal-business.md`](10-legal-business.md) | Legal, conformitate, business | `LEG-` |
+| [`11-quality-release.md`](11-quality-release.md) | Testare, verificare, livrare | `QA-` |
+| [`12-analytics-data.md`](12-analytics-data.md) | Ce se măsoară și ce decide | `DATA-` |
+
+Vederea strategică — faze, cronologie, cele cinci decizii blocante, riscuri —
+rămâne în [`../taskmaster.md`](../taskmaster.md). Lipsurile deja identificate în
+panou, cu migrarea și endpointurile necesare, în [`../needdesign.md`](../needdesign.md).
 
 ---
 
@@ -22,14 +47,13 @@ Cele trei fronturi — panou, web, aplicație — **nu au logică proprie de joc
 economie sau de progres**. Ele afișează ce spune serverul și trimit intenții.
 Serverul validează, decide și scrie.
 
-Consecința practică pentru orice task: dacă un task din `WEB-` sau `APP-`
-calculează ceva ce contează (scor, cucerire, sold, rang, recompensă), task-ul e
-greșit formulat și trebuie mutat în `SRV-`. Fronturile pot calcula doar lucruri
-cosmetice și predicții optimiste care se corectează la răspunsul serverului.
+Consecința practică: dacă un task din `WEB-` sau `APP-` calculează ceva ce
+contează — scor, cucerire, sold, rang, recompensă — task-ul e greșit formulat și
+se mută în `SRV-`. Fronturile pot calcula doar lucruri cosmetice și predicții
+optimiste care se corectează la răspunsul serverului.
 
-De aceea fiecare task de front are un câmp **Depinde de** care trimite la
-task-ul de server care îi dă datele. Un task de front fără dependență de server
-declarată e ori pur vizual, ori incomplet.
+De aceea fiecare task de front declară dependența de server. Un task de front
+fără ea e ori pur vizual, ori incomplet.
 
 ---
 
@@ -47,85 +71,117 @@ declarată e ori pur vizual, ori incomplet.
 - **Depinde de:** SRV-004, SRV-012
 ```
 
-Câmpurile **Finalizat** și **Commit** se completează la închiderea task-ului:
-data în formatul `2026-08-21 · 14:30` și hash-ul scurt al commit-ului care l-a
-livrat. Un task fără commit nu e închis, oricât de terminat pare.
+**Finalizat** și **Commit** se completează la închidere: data ca `2026-08-21 · 14:30`
+și hash-ul scurt al commit-ului. Un task fără commit nu e închis, oricât de
+terminat pare.
 
-`Depinde de` e al optulea câmp, adăugat peste cele cerute, pentru că fără el
-patru registre separate nu pot coopera — e singurul loc unde se vede că un ecran
-de aplicație așteaptă un endpoint care încă nu există.
+Registrele de disciplină folosesc `Produce` în loc de `Depinde de`, plus un câmp
+`Prioritate` acolo unde nu tot ce e listat merită făcut înainte de lansare.
 
 ### Statusuri
 
 | Simbol | Înseamnă |
 |---|---|
 | ✅ Implementat | Livrat, testat, în producție. Are dată și commit. |
-| 🟡 Parțial | Există o bucată utilizabilă, dar task-ul nu e satisfăcut integral. Ce lipsește e scris explicit. |
+| 🟡 Parțial | Există o bucată utilizabilă. Ce lipsește e scris explicit. |
 | ⬜ De făcut | Nimic încă. |
-| 🔒 Blocat | Nu se poate începe. Motivul e o decizie (`D1`–`D5` din `taskmaster.md`) sau alt task, numit explicit. |
+| 🔒 Blocat | Nu se poate începe. Motivul e o decizie (`D1`–`D5`) sau alt task, numit. |
+
+`⚖️` pe un task înseamnă că cere verificare de la un specialist înainte de a fi
+considerat închis. Apare doar în registrul legal.
 
 ---
 
-## Două reguli de arhitectură care traversează toate registrele
+## Trei reguli care traversează toate registrele
 
 ### 1. Multilingv din prima linie de cod
 
-Nu e o funcție care se adaugă la final. Orice conținut văzut de un jucător —
-întrebare, categorie, denumire de rang, text de realizare, notificare, mesaj de
-eroare — are o limbă și nu se scrie niciodată direct în cod ca text în română.
+Nu o funcție adăugată la final. Orice text văzut de un jucător — întrebare,
+categorie, rang, realizare, notificare, eroare — are o limbă și nu se scrie
+niciodată direct în cod ca șir în română.
 
-Consecința pentru task-uri:
+- Serverul întoarce **chei plus parametri**, nu text gata format. Excepțiile sunt
+  conținutul scris de utilizatori și întrebările, care au limbă proprie în bază.
+- Fiecare tabel de conținut are `language_id` sau un tabel de traduceri alături.
+  Adăugarea limbii a treia trebuie să fie populare de date, **nu** migrare.
+- Web și aplicație folosesc **același set de chei**, ca o traducere să se scrie o
+  singură dată.
 
-- Serverul nu întoarce niciodată text destinat afișării, ci **chei** plus
-  parametri. Excepțiile sunt conținutul creat de utilizatori și întrebările,
-  care au limbă proprie în baza de date.
-- Fiecare tabel de conținut are ori `language_id`, ori un tabel de traduceri
-  alăturat. Adăugarea limbii a treia trebuie să fie populare de date, **nu**
-  migrare de schemă.
-- Fronturile nu au niciun șir hardcodat. Web și aplicație folosesc același set
-  de chei, ca o traducere să se scrie o singură dată.
-
-Lansarea recomandată rămâne română + engleză (`owner-plan.md` §10.8), dar schema
-suportă orice limbă din ziua unu.
+Lansarea rămâne română + engleză; schema suportă orice limbă din ziua unu.
 
 ### 2. Nu se șterge nimic
 
-Serverul e arhiva permanentă a proiectului: conturi, parole (ca hash), meciuri,
-răspunsuri, clasamente, tranzacții, acțiuni de moderare, sesiuni. Istoria e
-imutabilă și crește; nu se rescrie și nu se curăță.
+Serverul e arhiva permanentă: conturi, parole ca hash, meciuri, răspunsuri,
+clasamente, tranzacții, acțiuni de moderare. Istoria e imutabilă și crește.
 
-Trei consecințe concrete:
+- Tabelele de istoric sunt **append-only**, impuse prin trigger, nu prin convenție.
+- „Ștergere" în interfață înseamnă **retragere din circulație** — un steag, nu un
+  `DELETE`. Un raport vechi trebuie să poată numi un obiect scos din magazin.
+- Ce se schimbă păstrează starea anterioară: un preț modificat nu rescrie
+  achizițiile de ieri.
 
-- Tabelele de istoric sunt **append-only**. Un rezultat de meci, o intrare de
-  registru sau o linie de audit nu se actualizează niciodată după scriere.
-- Ce pare „ștergere" în interfață e **retragere din circulație** — un steag
-  `active` sau o dată de retragere, niciodată un `DELETE`. Un raport vechi
-  trebuie să poată numi în continuare un obiect scos din magazin.
-- Ce se schimbă păstrează starea anterioară. Un preț modificat nu rescrie
-  achizițiile de ieri; un cont care își schimbă numele își păstrează istoricul
-  sub identificatorul stabil.
+**Tensiunea cu dreptul la ștergere e reală și are o rezolvare, nu o excepție.**
+La o cerere de ștergere, identificatorii personali dispar definitiv, iar rândurile
+de istoric rămân legate de un cont anonim, cu statisticile intacte. Un meci jucat
+rămâne un meci jucat; nu mai are nume. Task-ul e **SRV-088**, obligatoriu înainte
+de lansare.
 
-**Tensiunea cu GDPR e reală și are o rezolvare, nu o excepție.** Dreptul la
-ștergere obligă la eliminarea datelor personale la cerere. „Nu se șterge nimic"
-și „se șterge la cerere" se împacă prin **anonimizare**: la o cerere de ștergere,
-identificatorii personali (e-mail, nume, adrese, dispozitive) se elimină
-definitiv, iar rândurile de istoric rămân legate de un cont anonim, cu
-statisticile intacte. Un meci jucat rămâne un meci jucat; nu mai are nume.
-Aceeași soluție e cerută explicit în `owner-plan.md` §13.2. Task-ul care o
-implementează e **SRV-070** și e obligatoriu înainte de lansare.
+### 3. Fără pay-to-win
+
+Monetizarea nu atinge niciodată dificultatea întrebărilor, șansa de câștig sau
+rezultatul unui meci clasat. Cărțile de power-up se câștigă prin joc și sunt
+**excluse din modurile clasate**. Miza între prieteni și predicțiile pe partide
+rămân strict pe monedă din joc, care nu se cumpără cu bani reali — altfel devin
+pariu, cu tot ce implică legal.
 
 ---
 
 ## Ordinea de atac
 
-Registrele nu se parcurg de sus în jos independent. Ordinea reală e dată de
-fazele din `taskmaster.md`:
+Registrele nu se parcurg independent, de sus în jos. Ordinea reală:
 
-1. **SRV** grupele A–C (fundația de campanie, internaționalizare, istoric) —
-   deblochează totul.
-2. **SRV** grupa D (modul Clasic) împreună cu **APP** grupa C.
-3. **ADM** peste modelele noi, în paralel cu orice.
-4. **WEB** după ce contractul de joc e stabil.
+1. **Decizia D1** din `taskmaster.md` — blochează patru task-uri de aplicație și
+   orice lucru serios la modul Clasic.
+2. **SRV** grupele A–C (internaționalizare, identitate, istoric) și **DATA-005**
+   — agregatele zilnice se pornesc devreme, pentru că o zi nemăsurată e pierdută
+   definitiv.
+3. **GD-001, GD-002, GD-003** — economia, ritmul și dificultatea. Fără cifrele
+   astea, magazinul și progresul se construiesc pe presupuneri.
+4. **SRV** grupa D (campanie) împreună cu **CNT-001** — volumul de întrebări
+   necesar se calculează înainte de a începe producția.
+5. **SRV** grupa E (modul Clasic) cu **APP** grupa C.
+6. **ADM** peste modelele noi, în paralel cu orice.
+7. **WEB** după ce contractul de joc e stabil.
+8. **LEG** și **INF** pornesc devreme și rulează continuu — keystore-ul, forma
+   juridică și conturile de dezvoltator au termene de așteptare care nu se
+   comprimă în ultima săptămână.
 
-Un task de front început înainte ca dependența lui de server să fie ✅ produce
-cod care se rescrie.
+Un task de front început înainte ca dependența lui de server să fie ✅ produce cod
+care se rescrie.
+
+---
+
+## Ce mai există în depozit și ce rol are
+
+Nimic din lista de mai jos nu e listă de lucru. Registrele sunt.
+
+**Sursă de design** — de ce arată produsul așa. Registrele le citează de peste o
+sută de ori; se citesc, nu se modifică fără decizie explicită:
+`plan.md`, `owner-plan.md`, `init.md`, `agents.md`, `docs/design-system.md`.
+
+**Procedură de operare** — cum se face ceva, pas cu pas:
+`docs/deploy-vps.md`, `docs/account-recovery-runbook.md`,
+`docs/github-actions-workflow.md`, `docs/adr/`.
+
+**Inventar viu:** `ASSETS.md` (ce active există), `ASSET_GAPS.md` (ce lipsește).
+
+**Coordonare între agenți:** `memory-ai.md` — jurnalul de predare între Claude,
+Codex și ceilalți.
+
+**Arhivă** — analize datate, păstrate ca dovadă pentru task-urile care le citează,
+nu ca stare curentă: `docs/archive/`.
+
+Au fost șterse ca depășite, cu conținutul preluat în registre: `audit.md`,
+`passed.md`, `CLAUDE_HANDOFF.md` și `docs/features-social-progression.md` —
+ultimul era o versiune mai veche și mai scurtă a lui `owner-plan.md`, cu același
+titlu.
