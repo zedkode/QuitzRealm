@@ -41,6 +41,15 @@ async function main(): Promise<void> {
     const categoryIdByCode = new Map(
       categories.map((category) => [category.code, category.id]),
     );
+    const romanian = await prisma.language.findUnique({
+      where: { isoCode: 'ro' },
+      select: { id: true },
+    });
+    if (!romanian) {
+      throw new Error(
+        'Lipsește limba ro. Rulează mai întâi migrarea și prisma:seed.',
+      );
+    }
     const missing = codes.filter((code) => !categoryIdByCode.has(code));
     if (missing.length > 0) {
       throw new Error(
@@ -64,7 +73,7 @@ async function main(): Promise<void> {
         verificationSource: true,
         source: true,
         status: true,
-        language: true,
+        languageId: true,
       },
     });
     const storedById = new Map(
@@ -88,7 +97,7 @@ async function main(): Promise<void> {
         existing.correctAnswer === question.correctAnswer &&
         existing.explanation === question.explanation &&
         existing.verificationSource === null &&
-        existing.language === 'ro'
+        existing.languageId === romanian.id
       ) {
         plan.unchanged += 1;
       } else {
@@ -124,7 +133,7 @@ async function main(): Promise<void> {
           verificationSource: null,
           source: QuestionSource.AI,
           status: QuestionStatus.PENDING,
-          language: 'ro',
+          languageId: romanian.id,
         };
         await transaction.question.upsert({
           where: { id: question.id },
@@ -139,6 +148,7 @@ async function main(): Promise<void> {
         id: { in: OWNER_CATEGORY_QUESTION_PACK.map((question) => question.id) },
         source: QuestionSource.AI,
         status: QuestionStatus.PENDING,
+        languageId: romanian.id,
       },
     });
     if (

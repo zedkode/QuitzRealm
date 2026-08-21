@@ -77,6 +77,7 @@ services:
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
       GOOGLE_CALLBACK_URL: ${GOOGLE_CALLBACK_URL}
       INTERNAL_API_KEY: ${INTERNAL_API_KEY}
+      QUESTION_BANK_MIN_APPROVED_PER_CATEGORY: ${QUESTION_BANK_MIN_APPROVED_PER_CATEGORY:-1}
       APP_PUBLIC_URL: ${APP_PUBLIC_URL:-https://quizrealmapi.dohotstudio.com}
       # `resend` trimite prin API-ul resend.com; `console` doar scrie în loguri.
       MAIL_TRANSPORT: ${MAIL_TRANSPORT:-console}

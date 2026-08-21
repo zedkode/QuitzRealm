@@ -23,6 +23,7 @@ export class MatchmakingService {
 
   async unregisterConnection(userId: string, socketId: string): Promise<void> {
     await this.leave(userId);
+    await this.clearQueuePreferences([userId]);
     await this.redis.client.del(this.socketKey(socketId));
     await this.redis.client.eval(
       `

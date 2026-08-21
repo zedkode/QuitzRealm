@@ -6,10 +6,15 @@ import {
   IsOptional,
   IsString,
   IsUUID,
+  Matches,
   Max,
   MaxLength,
   Min,
 } from 'class-validator';
+
+function normalizeLanguage(value: unknown): unknown {
+  return typeof value === 'string' ? value.trim().toLowerCase() : value;
+}
 
 export class ListQuestionsDto {
   @IsOptional()
@@ -23,9 +28,7 @@ export class ListQuestionsDto {
   @Max(5)
   difficulty?: number;
 
-  /// Filtru pe mai multe categorii deodată, prin coduri stabile
-  /// (`history,science,...`). Se folosește la selecția de categorii dinaintea
-  /// unui meci: un singur `categoryId` n-ar putea exprima „istorie și știință”.
+  /** Stable category codes selected for a match. Matching is exact. */
   @IsOptional()
   @Transform(({ value }) =>
     typeof value === 'string'
@@ -41,9 +44,34 @@ export class ListQuestionsDto {
   @MaxLength(64, { each: true })
   categoryCodes?: string[];
 
+  /** Canonical language parameter used by realtime and new clients. */
   @IsOptional()
+  @Transform(({ value }) => normalizeLanguage(value))
   @IsString()
+  @MaxLength(10)
+  requestedLanguageIsoCode?: string;
+
+  /** Temporary public compatibility alias. */
+  @IsOptional()
+  @Transform(({ value }) => normalizeLanguage(value))
+  @IsString()
+  @MaxLength(10)
+  languageIsoCode?: string;
+
+  /** Legacy Flutter compatibility alias. */
+  @IsOptional()
+  @Transform(({ value }) => normalizeLanguage(value))
+  @IsString()
+  @MaxLength(10)
   language?: string;
+
+  @IsOptional()
+  @Transform(({ value }) =>
+    typeof value === 'string' ? value.trim().toUpperCase() : value,
+  )
+  @IsString()
+  @Matches(/^[A-Z]{2}$/)
+  countryCode?: string;
 
   @IsOptional()
   @Type(() => Number)

@@ -37,6 +37,7 @@ function optionsValue(
 function matchesDefinition(
   stored: NonNullable<StoredQuestion>,
   definition: CuratedSoloQuestion,
+  languageId: string,
 ): boolean {
   return (
     stored.type === definition.type &&
@@ -49,7 +50,7 @@ function matchesDefinition(
     stored.verificationSource === definition.verificationSource &&
     stored.source === definition.source &&
     stored.status === definition.status &&
-    stored.language === definition.language
+    stored.languageId === languageId
   );
 }
 
@@ -120,7 +121,10 @@ async function assertDatabasePreconditions(
   }
 }
 
-async function buildPlan(prisma: PrismaClient): Promise<PackPlan> {
+async function buildPlan(
+  prisma: PrismaClient,
+  languageId: string,
+): Promise<PackPlan> {
   const stored = await prisma.question.findMany({
     where: {
       id: { in: CURATED_SOLO_QUESTION_PACK.map((question) => question.id) },
@@ -131,13 +135,17 @@ async function buildPlan(prisma: PrismaClient): Promise<PackPlan> {
   for (const definition of CURATED_SOLO_QUESTION_PACK) {
     const existing = byId.get(definition.id);
     if (!existing) plan.created += 1;
-    else if (matchesDefinition(existing, definition)) plan.unchanged += 1;
+    else if (matchesDefinition(existing, definition, languageId))
+      plan.unchanged += 1;
     else plan.updated += 1;
   }
   return plan;
 }
 
-async function applyPack(prisma: PrismaClient): Promise<void> {
+async function applyPack(
+  prisma: PrismaClient,
+  languageId: string,
+): Promise<void> {
   await prisma.$transaction(async (transaction) => {
     for (const definition of CURATED_SOLO_QUESTION_PACK) {
       const data = {
@@ -151,7 +159,7 @@ async function applyPack(prisma: PrismaClient): Promise<void> {
         verificationSource: definition.verificationSource,
         source: definition.source,
         status: definition.status,
-        language: definition.language,
+        languageId,
       };
       await transaction.question.upsert({
         where: { id: definition.id },
@@ -162,7 +170,10 @@ async function applyPack(prisma: PrismaClient): Promise<void> {
   });
 }
 
-async function verifyStoredPack(prisma: PrismaClient): Promise<void> {
+async function verifyStoredPack(
+  prisma: PrismaClient,
+  languageId: string,
+): Promise<void> {
   const stored = await prisma.question.findMany({
     where: {
       id: { in: CURATED_SOLO_QUESTION_PACK.map((question) => question.id) },
@@ -176,7 +187,7 @@ async function verifyStoredPack(prisma: PrismaClient): Promise<void> {
   const byId = new Map(stored.map((question) => [question.id, question]));
   const mismatch = CURATED_SOLO_QUESTION_PACK.find((definition) => {
     const question = byId.get(definition.id);
-    return !question || !matchesDefinition(question, definition);
+    return !question || !matchesDefinition(question, definition, languageId);
   });
   if (mismatch) {
     throw new Error(`Verificarea DB a eșuat pentru întrebarea ${mismatch.id}.`);
@@ -195,7 +206,16 @@ async function main(): Promise<void> {
   });
   try {
     await assertDatabasePreconditions(prisma);
-    const plan = await buildPlan(prisma);
+    const language = await prisma.language.findUnique({
+      where: { isoCode: 'ro' },
+      select: { id: true },
+    });
+    if (!language) {
+      throw new Error(
+        'Lipsește limba ro. Rulează mai întâi migrarea și prisma:seed.',
+      );
+    }
+    const plan = await buildPlan(prisma, language.id);
     if (!confirmReviewed) {
       process.stdout.write(
         `${JSON.stringify({
@@ -209,8 +229,8 @@ async function main(): Promise<void> {
       return;
     }
 
-    await applyPack(prisma);
-    await verifyStoredPack(prisma);
+    await applyPack(prisma, language.id);
+    await verifyStoredPack(prisma, language.id);
     process.stdout.write(
       `${JSON.stringify({
         mode: 'applied',

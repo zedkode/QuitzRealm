@@ -2,6 +2,7 @@ import type { Prisma } from '@prisma/client';
 import { ACTIVE_LANGUAGES, COUNTRIES } from '../reference-data/reference-data';
 import {
   buildInitialTranslationCatalog,
+  QUESTION_BANK_TRANSLATION_KEYS,
   SYSTEM_TRANSLATION_KEY_COUNT,
   syncInitialTranslations,
 } from './translation-catalog.seed';
@@ -30,6 +31,9 @@ describe('translation catalog seed', () => {
       expect(
         localized.some((item) => item.key === 'system.translation.missing'),
       ).toBe(true);
+      for (const key of QUESTION_BANK_TRANSLATION_KEYS) {
+        expect(localized.some((item) => item.key === key)).toBe(true);
+      }
     }
   });
 

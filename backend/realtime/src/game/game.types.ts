@@ -15,10 +15,38 @@ export interface InternalQuestion {
   text: string;
   options: string[] | null;
   correctAnswer: string;
-  language: string;
+  languageIsoCode: string;
 }
 
 export type PublicQuestion = Omit<InternalQuestion, 'correctAnswer'>;
+
+/// Contextul exact al bÄncii din care serverul API a extras Ă®ntrebarea.
+/// `resolved*` poate diferi de `requested*` numai cĂ˘nd fallback-ul este
+/// explicit; clientul primeČ™te `messageKey` + `params`, nu text hardcodat.
+export interface QuestionBankMetadata {
+  requestedLanguageIsoCode: string;
+  resolvedLanguageIsoCode: string;
+  requestedCountryCode: string | null;
+  resolvedCountryCode: string | null;
+  fallbackApplied: boolean;
+  messageKey: string | null;
+  params: Record<string, unknown>;
+  minimumApprovedPerCategory: number;
+  requestedCategoryCodes?: string[];
+  resolvedCategoryCodes?: string[];
+}
+
+export interface QuestionSelection {
+  question: InternalQuestion;
+  bank: QuestionBankMetadata;
+}
+
+export interface QuestionSelectionRequest {
+  requestedLanguageIsoCode: string;
+  countryCode: string;
+  categoryCodes?: readonly string[];
+  difficulty?: number;
+}
 
 export interface PlayerAnswer {
   value: string;
@@ -58,6 +86,11 @@ export interface MatchState {
   /** Termenul până la care jucătorul deconectat își păstrează locul. */
   resumeDeadlineAt?: string;
   question: InternalQuestion;
+  /** PreferinČ›a contului cu care a intrat Ă®n pool; nu vine niciodatÄ din client. */
+  requestedLanguageIsoCode: string;
+  countryCode: string;
+  /** Metadatele bÄncii pentru Ă®ntrebarea rundei curente. */
+  bank: QuestionBankMetadata;
   /** Harta de teritorii; absentă la Duo, care nu are hartă de disputat. */
   territory?: MatchTerritoryState;
   /** Jucătorii scoși din faza activă, în ordinea eliminării (§12.6). */
@@ -96,6 +129,7 @@ export interface MatchSnapshotPayload {
   deadlineAt: string;
   resumeDeadlineAt: string | null;
   question: PublicQuestion;
+  bank: QuestionBankMetadata;
   players: Array<{
     userId: string;
     score: number;
@@ -161,6 +195,7 @@ export interface RoundResultPayload {
   }>;
   /** Răspunsul corect, dezvăluit abia după închiderea rundei. */
   correctAnswer: string;
+  bank: QuestionBankMetadata;
   players: Array<{
     userId: string;
     score: number;
@@ -180,6 +215,9 @@ export interface AccountCapabilities {
   canUseGlobalChat: boolean;
   canPostExternalLinks: boolean;
   dmPermissionLocked: boolean;
+  /** PreferinČ›e server-side; `null` cere finalizarea selecČ›iei de regiune. */
+  languageIsoCode: string | null;
+  countryCode: string | null;
 }
 
 /// Contextul de chat global, citit din API înainte de a lăsa un mesaj să plece.

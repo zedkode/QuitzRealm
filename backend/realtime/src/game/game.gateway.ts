@@ -11,16 +11,23 @@ import {
   WsException,
 } from '@nestjs/websockets';
 import { Namespace, Socket } from 'socket.io';
-import { ApiClientService } from '../api-client/api-client.service';
+import {
+  ApiClientService,
+  QuestionBankApiError,
+} from '../api-client/api-client.service';
 import { agreeOnCategories } from './category-selection';
 import { RealtimeAuthService } from '../auth/realtime-auth.service';
 import { PresenceService } from '../chat/presence.service';
 import { JoinMatchmakingDto } from './dto/join-matchmaking.dto';
 import { DeclareAttackDto } from './dto/declare-attack.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
-import { GameService } from './game.service';
+import {
+  GameService,
+  MatchStartQuestionTechnicalError,
+} from './game.service';
 import { MatchProfile, publicMatchProfile } from './match-profile';
 import { MatchmakingService } from './matchmaking.service';
+import { resolveMatchRegion } from './match-region';
 import { socketCorsOrigin } from '../web-origins';
 
 @WebSocketGateway({
@@ -109,6 +116,14 @@ export class GameGateway
       });
       return;
     }
+    const accountRegion = resolveMatchRegion([capabilities]);
+    if (!accountRegion.ok) {
+      client.emit('matchmaking:rejected', {
+        mode: dto.mode,
+        reason: 'region_not_selected',
+      });
+      return;
+    }
 
     let profile: MatchProfile;
     try {
@@ -128,19 +143,73 @@ export class GameGateway
       categoryCodes: requested,
     });
     if (matchedUsers) {
+      let selectedCapabilities;
+      try {
+        selectedCapabilities = await Promise.all(
+          matchedUsers.map((id) =>
+            id === userId ? capabilities : this.api.getCapabilities(id),
+          ),
+        );
+      } catch (error) {
+        // The FIFO selection has already popped these users. Put them back if
+        // account truth is temporarily unavailable instead of losing them.
+        await this.matchmaking.requeue(matchedUsers, profile);
+        throw error;
+      }
+      const selectedRegion = resolveMatchRegion(selectedCapabilities);
+      if (!selectedRegion.ok) {
+        await this.matchmaking.clearQueuePreferences(matchedUsers);
+        for (const id of matchedUsers) {
+          this.server.to(`user:${id}`).emit('matchmaking:rejected', {
+            mode: profile.clientMode,
+            reason: selectedRegion.reason,
+          });
+        }
+        return;
+      }
+
       const categoryCodes = agreeOnCategories(
         await Promise.all(
           matchedUsers.map((id) => this.matchmaking.getQueuePreferences(id)),
         ),
       );
-      await this.matchmaking.clearQueuePreferences(matchedUsers);
-      await this.game.createMatch(matchedUsers, profile, categoryCodes);
+      try {
+        await this.game.createMatch(
+          matchedUsers,
+          profile,
+          categoryCodes,
+          selectedRegion.region,
+        );
+        await this.matchmaking.clearQueuePreferences(matchedUsers);
+      } catch (error) {
+        if (error instanceof QuestionBankApiError) {
+          await this.matchmaking.clearQueuePreferences(matchedUsers);
+          for (const id of matchedUsers) {
+            this.server.to(`user:${id}`).emit('matchmaking:rejected', {
+              mode: profile.clientMode,
+              reason: 'question_bank_unavailable',
+              ...error.payload,
+            });
+          }
+          return;
+        }
+        if (error instanceof MatchStartQuestionTechnicalError) {
+          await this.matchmaking.requeue(matchedUsers, profile);
+          throw error.technicalCause;
+        }
+        // A disconnect-before-start path requeues its connected subset inside
+        // GameService; other failures may occur after state creation. Do not
+        // blindly enqueue the whole group and create duplicate active matches.
+        throw error;
+      }
     }
   }
 
   @SubscribeMessage('matchmaking:leave')
   async leaveMatchmaking(@ConnectedSocket() client: Socket): Promise<void> {
-    const profile = await this.matchmaking.leave(this.getUserId(client));
+    const userId = this.getUserId(client);
+    const profile = await this.matchmaking.leave(userId);
+    await this.matchmaking.clearQueuePreferences([userId]);
     client.emit('matchmaking:left', {
       mode: profile?.clientMode ?? 'duo',
       playerCountTarget: profile?.playerCountTarget ?? 2,

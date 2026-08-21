@@ -4,7 +4,10 @@ import { Interval } from '@nestjs/schedule';
 import { WsException } from '@nestjs/websockets';
 import { randomUUID } from 'node:crypto';
 import { Namespace, Socket } from 'socket.io';
-import { ApiClientService } from '../api-client/api-client.service';
+import {
+  ApiClientService,
+  QuestionBankApiError,
+} from '../api-client/api-client.service';
 import { RedisService } from '../redis/redis.service';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import {
@@ -13,8 +16,10 @@ import {
   MatchState,
   PersistMatchPayload,
   PublicQuestion,
+  QuestionSelection,
   RoundResultPayload,
 } from './game.types';
+import { MatchRegion } from './match-region';
 import { canAttack, resolveAttacks } from './battle-resolution';
 import { isSpectator, newlyEliminated } from './elimination';
 import { buildTerritoryMap } from './territory-map';
@@ -35,6 +40,16 @@ import { MatchmakingService } from './matchmaking.service';
 import { calculateRoundAwards } from './scoring';
 
 const KEY_PREFIX = 'quizrealm:realtime';
+
+/// The FIFO selection happened, but no deterministic bank verdict exists yet
+/// (network failure or malformed upstream response). The gateway can safely
+/// restore the selected users because match state has not been created.
+export class MatchStartQuestionTechnicalError extends Error {
+  constructor(readonly technicalCause: unknown) {
+    super('Question selection failed before match creation.');
+    this.name = 'MatchStartQuestionTechnicalError';
+  }
+}
 
 @Injectable()
 export class GameService {
@@ -78,6 +93,7 @@ export class GameService {
     userIds: string[],
     profile: MatchProfile = DUO_MATCH_PROFILE,
     categoryCodes: string[] = [],
+    region: MatchRegion,
   ): Promise<MatchState> {
     try {
       assertMatchParticipants(userIds, profile);
@@ -95,7 +111,18 @@ export class GameService {
       );
     }
 
-    const question = await this.api.getRandomQuestion(categoryCodes);
+    let selection: QuestionSelection;
+    try {
+      selection = await this.api.getRandomQuestion({
+        requestedLanguageIsoCode: region.requestedLanguageIsoCode,
+        countryCode: region.countryCode,
+        categoryCodes,
+      });
+    } catch (error) {
+      if (error instanceof QuestionBankApiError) throw error;
+      throw new MatchStartQuestionTechnicalError(error);
+    }
+    const { question, bank } = selection;
     const startedAt = new Date();
     const state: MatchState = {
       id: randomUUID(),
@@ -113,6 +140,9 @@ export class GameService {
         startedAt.getTime() + this.roundDurationMs,
       ).toISOString(),
       question,
+      requestedLanguageIsoCode: region.requestedLanguageIsoCode,
+      countryCode: region.countryCode,
+      bank,
       categoryCodes,
       usedQuestionIds: [question.id],
       players: userIds.map((userId, index) => ({
@@ -165,6 +195,7 @@ export class GameService {
       playerCountTarget: profile.playerCountTarget,
       lobbyType: profile.lobbyType,
       totalRounds: state.totalRounds,
+      bank: state.bank,
       players: state.players.map((player) => ({ userId: player.userId })),
     });
     this.emitRoundStarted(state);
@@ -391,6 +422,7 @@ export class GameService {
       roundNumber: state.roundNumber,
       totalRounds: state.totalRounds,
       correctAnswer: state.question.correctAnswer,
+      bank: state.bank,
       players: state.players.map((player) => ({
         userId: player.userId,
         score: player.score,
@@ -423,10 +455,16 @@ export class GameService {
 
   /// Trece partida la runda următoare, cu o întrebare nefolosită încă.
   private async startNextRound(state: MatchState): Promise<void> {
-    let question: MatchState['question'];
+    let selection: QuestionSelection;
     try {
-      question = await this.pickUnusedQuestion(state);
-    } catch {
+      selection = await this.pickUnusedQuestion(state);
+    } catch (error) {
+      if (error instanceof QuestionBankApiError) {
+        this.getServer().to(this.matchRoom(state.id)).emit('match:error', {
+          matchId: state.id,
+          ...error.payload,
+        });
+      }
       // Fără întrebări noi, partida se încheie cinstit cu scorul de până acum.
       await this.finalizeMatch(state);
       return;
@@ -438,8 +476,9 @@ export class GameService {
     state.deadlineAt = new Date(
       roundStartedAt.getTime() + this.roundDurationMs,
     ).toISOString();
-    state.question = question;
-    state.usedQuestionIds.push(question.id);
+    state.question = selection.question;
+    state.bank = selection.bank;
+    state.usedQuestionIds.push(selection.question.id);
     for (const player of state.players) {
       delete player.answer;
     }
@@ -451,12 +490,28 @@ export class GameService {
   /// Cere întrebări până găsește una nefolosită în partida curentă.
   private async pickUnusedQuestion(
     state: MatchState,
-  ): Promise<MatchState['question']> {
+  ): Promise<QuestionSelection> {
     for (let attempt = 0; attempt < 8; attempt += 1) {
-      const question = await this.api.getRandomQuestion(
-        state.categoryCodes ?? [],
-      );
-      if (!state.usedQuestionIds.includes(question.id)) return question;
+      const selection = await this.api.getRandomQuestion({
+        requestedLanguageIsoCode: state.requestedLanguageIsoCode,
+        countryCode: state.countryCode,
+        categoryCodes: state.categoryCodes ?? [],
+      });
+      if (!this.sameResolvedPool(state.bank, selection.bank)) {
+        throw new QuestionBankApiError(409, {
+          code: 'QUESTION_BANK_POOL_CHANGED',
+          messageKey: 'error.question_bank.unavailable',
+          params: {
+            expectedLanguage: state.bank.resolvedLanguageIsoCode,
+            expectedCountry: state.bank.resolvedCountryCode,
+            receivedLanguage: selection.bank.resolvedLanguageIsoCode,
+            receivedCountry: selection.bank.resolvedCountryCode,
+          },
+        });
+      }
+      if (!state.usedQuestionIds.includes(selection.question.id)) {
+        return selection;
+      }
     }
     throw new Error('Banca de întrebări nu a livrat o întrebare nefolosită.');
   }
@@ -470,6 +525,7 @@ export class GameService {
         totalRounds: state.totalRounds,
         deadlineAt: state.deadlineAt,
         question: this.toPublicQuestion(state.question),
+        bank: state.bank,
       });
   }
 
@@ -563,6 +619,7 @@ export class GameService {
       deadlineAt: state.deadlineAt,
       resumeDeadlineAt: state.resumeDeadlineAt ?? null,
       question: this.toPublicQuestion(state.question),
+      bank: state.bank,
       players: state.players.map((player) => ({
         userId: player.userId,
         score: player.score,
@@ -742,8 +799,20 @@ export class GameService {
       difficulty: question.difficulty,
       text: question.text,
       options: question.options,
-      language: question.language,
+      languageIsoCode: question.languageIsoCode,
     };
+  }
+
+  private sameResolvedPool(
+    current: MatchState['bank'],
+    next: MatchState['bank'],
+  ): boolean {
+    return (
+      current.resolvedLanguageIsoCode.toLowerCase() ===
+        next.resolvedLanguageIsoCode.toLowerCase() &&
+      (current.resolvedCountryCode?.toUpperCase() ?? null) ===
+        (next.resolvedCountryCode?.toUpperCase() ?? null)
+    );
   }
 
   private getServer(): Namespace {

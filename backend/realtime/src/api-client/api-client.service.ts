@@ -5,6 +5,9 @@ import {
   GlobalChatContext,
   InternalQuestion,
   PersistMatchPayload,
+  QuestionBankMetadata,
+  QuestionSelection,
+  QuestionSelectionRequest,
   StoredChatMessage,
 } from '../game/game.types';
 
@@ -21,6 +24,22 @@ export class ChatRejectedError extends Error {
   }
 }
 
+export interface LocalizedApiErrorPayload {
+  code: string;
+  messageKey: string;
+  params: Record<string, unknown>;
+}
+
+export class QuestionBankApiError extends Error {
+  constructor(
+    readonly status: number,
+    readonly payload: LocalizedApiErrorPayload,
+  ) {
+    super(payload.code);
+    this.name = 'QuestionBankApiError';
+  }
+}
+
 @Injectable()
 export class ApiClientService {
   private readonly baseUrl: string;
@@ -34,29 +53,38 @@ export class ApiClientService {
   /// `categoryCodes` gol înseamnă „toate categoriile” — exact ca bifa „Toate”
   /// din aplicație.
   async getRandomQuestion(
-    categoryCodes: readonly string[] = [],
-  ): Promise<InternalQuestion> {
-    const filter =
-      categoryCodes.length > 0
-        ? `&categoryCodes=${encodeURIComponent(categoryCodes.join(','))}`
-        : '';
+    request: QuestionSelectionRequest,
+  ): Promise<QuestionSelection> {
+    const query = new URLSearchParams({
+      requestedLanguageIsoCode: request.requestedLanguageIsoCode,
+      countryCode: request.countryCode,
+    });
+    if (request.categoryCodes && request.categoryCodes.length > 0) {
+      query.set('categoryCodes', request.categoryCodes.join(','));
+    }
+    if (request.difficulty !== undefined) {
+      query.set('difficulty', String(request.difficulty));
+    }
     const response = await fetch(
-      `${this.baseUrl}/questions/internal/random?language=ro&limit=1${filter}`,
+      `${this.baseUrl}/questions/internal/random?${query.toString()}`,
       {
         headers: { 'x-internal-api-key': this.internalApiKey },
         signal: AbortSignal.timeout(5_000),
       },
     );
     if (!response.ok) {
-      throw new BadGatewayException(
+      throw await this.toQuestionBankApiError(
+        response,
         `API-ul de întrebări a răspuns cu ${response.status}.`,
       );
     }
-    const question: unknown = await response.json();
-    if (!this.isInternalQuestion(question)) {
-      throw new BadGatewayException('API-ul a returnat o întrebare invalidă.');
+    const selection: unknown = await response.json();
+    if (!this.isQuestionSelection(selection)) {
+      throw new BadGatewayException(
+        'API-ul a returnat o selecție de întrebare invalidă.',
+      );
     }
-    return question;
+    return selection;
   }
 
   /// Capabilitățile contului, citite proaspăt din API la fiecare intrare în
@@ -76,14 +104,10 @@ export class ApiClientService {
       );
     }
     const capabilities: unknown = await response.json();
-    if (
-      !capabilities ||
-      typeof capabilities !== 'object' ||
-      typeof (capabilities as AccountCapabilities).canPlayRanked !== 'boolean'
-    ) {
+    if (!this.isAccountCapabilities(capabilities)) {
       throw new BadGatewayException('API-ul a returnat capabilități invalide.');
     }
-    return capabilities as AccountCapabilities;
+    return capabilities;
   }
 
   /// Contextul de chat global: treaptă, mut activ și lista de blocări. Se
@@ -187,7 +211,7 @@ export class ApiClientService {
       typeof question.text === 'string' &&
       validOptions &&
       typeof question.correctAnswer === 'string' &&
-      typeof question.language === 'string';
+      typeof question.languageIsoCode === 'string';
     if (!validShape) return false;
     if (question.type === 'MULTIPLE_CHOICE') {
       return (
@@ -199,6 +223,95 @@ export class ApiClientService {
     return (
       question.options === null &&
       Number.isFinite(Number(question.correctAnswer))
+    );
+  }
+
+  private isQuestionSelection(value: unknown): value is QuestionSelection {
+    if (!value || typeof value !== 'object') return false;
+    const selection = value as Record<string, unknown>;
+    return (
+      this.isInternalQuestion(selection.question) &&
+      this.isQuestionBankMetadata(selection.bank)
+    );
+  }
+
+  private isQuestionBankMetadata(
+    value: unknown,
+  ): value is QuestionBankMetadata {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+      return false;
+    }
+    const bank = value as Record<string, unknown>;
+    const nullableString = (candidate: unknown) =>
+      candidate === null || typeof candidate === 'string';
+    const stringArray = (candidate: unknown) =>
+      candidate === undefined ||
+      (Array.isArray(candidate) &&
+        candidate.every((entry) => typeof entry === 'string'));
+    return (
+      typeof bank.requestedLanguageIsoCode === 'string' &&
+      typeof bank.resolvedLanguageIsoCode === 'string' &&
+      nullableString(bank.requestedCountryCode) &&
+      nullableString(bank.resolvedCountryCode) &&
+      typeof bank.fallbackApplied === 'boolean' &&
+      nullableString(bank.messageKey) &&
+      !!bank.params &&
+      typeof bank.params === 'object' &&
+      !Array.isArray(bank.params) &&
+      Number.isInteger(bank.minimumApprovedPerCategory) &&
+      (bank.minimumApprovedPerCategory as number) >= 1 &&
+      stringArray(bank.requestedCategoryCodes) &&
+      stringArray(bank.resolvedCategoryCodes)
+    );
+  }
+
+  private isAccountCapabilities(
+    value: unknown,
+  ): value is AccountCapabilities {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+      return false;
+    }
+    const capabilities = value as Record<string, unknown>;
+    const booleans = [
+      'emailVerified',
+      'isMinor',
+      'canPlayRanked',
+      'canUseGlobalChat',
+      'canPostExternalLinks',
+      'dmPermissionLocked',
+    ];
+    return (
+      booleans.every((key) => typeof capabilities[key] === 'boolean') &&
+      (capabilities.languageIsoCode === null ||
+        typeof capabilities.languageIsoCode === 'string') &&
+      (capabilities.countryCode === null ||
+        typeof capabilities.countryCode === 'string')
+    );
+  }
+
+  private async toQuestionBankApiError(
+    response: Response,
+    transportContext: string,
+  ): Promise<QuestionBankApiError | BadGatewayException> {
+    const body: unknown = await response.json().catch(() => null);
+    return this.isLocalizedApiError(body)
+      ? new QuestionBankApiError(response.status, body)
+      : new BadGatewayException(transportContext);
+  }
+
+  private isLocalizedApiError(
+    value: unknown,
+  ): value is LocalizedApiErrorPayload {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+      return false;
+    }
+    const payload = value as Record<string, unknown>;
+    return (
+      typeof payload.code === 'string' &&
+      typeof payload.messageKey === 'string' &&
+      !!payload.params &&
+      typeof payload.params === 'object' &&
+      !Array.isArray(payload.params)
     );
   }
 }

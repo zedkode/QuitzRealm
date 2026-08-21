@@ -44,8 +44,18 @@ export class QuestionRepository {
         await transaction.$queryRaw`
           SELECT pg_advisory_xact_lock(hashtext(${job.categoryId}))::text AS "lockResult"
         `;
+        const language = await transaction.language.findUnique({
+          where: { isoCode: job.language.toLowerCase() },
+          select: { id: true, active: true },
+        });
+        if (!language?.active) {
+          throw new Error(`Limba ${job.language} nu este activă.`);
+        }
         const existing = await transaction.question.findMany({
-          where: { categoryId: job.categoryId },
+          where: {
+            categoryId: job.categoryId,
+            languageId: language.id,
+          },
           select: { text: true },
         });
         const accepted: GeneratedQuestion[] = [];
@@ -80,7 +90,7 @@ export class QuestionRepository {
               verificationSource: question.verificationSource,
               source: QuestionSource.AI,
               status: QuestionStatus.PENDING,
-              language: job.language,
+              languageId: language.id,
             })),
           });
         }

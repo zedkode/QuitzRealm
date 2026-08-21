@@ -1,9 +1,4 @@
-import {
-  BadRequestException,
-  ConflictException,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import {
   Prisma,
   QuestionSource,
@@ -14,6 +9,13 @@ import { PrismaService } from '../prisma/prisma.service';
 import { CreateQuestionDto } from './dto/create-question.dto';
 import { ListQuestionsDto } from './dto/list-questions.dto';
 import { ModerateQuestionDto } from './dto/moderate-question.dto';
+import { QuestionPoolService } from './question-pool.service';
+import {
+  questionBadRequest,
+  questionBankUnavailable,
+  questionConflict,
+  questionNotFound,
+} from './questions.errors';
 
 const publicQuestionSelect = {
   id: true,
@@ -21,67 +23,129 @@ const publicQuestionSelect = {
   categoryId: true,
   category: {
     select: {
-      name: true,
+      nameKey: true,
+      code: true,
+      countryCode: true,
       icon: true,
     },
   },
   difficulty: true,
   text: true,
   options: true,
-  language: true,
+  language: { select: { isoCode: true } },
 } satisfies Prisma.QuestionSelect;
+
+const internalQuestionSelect = {
+  ...publicQuestionSelect,
+  correctAnswer: true,
+} satisfies Prisma.QuestionSelect;
+
+type SelectedQuestion = Prisma.QuestionGetPayload<{
+  select: typeof publicQuestionSelect;
+}>;
+
+type SelectedInternalQuestion = Prisma.QuestionGetPayload<{
+  select: typeof internalQuestionSelect;
+}>;
 
 @Injectable()
 export class QuestionsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly questionPool: QuestionPoolService,
+  ) {}
 
-  listApproved(query: ListQuestionsDto) {
-    return this.prisma.question.findMany({
+  async listApproved(query: ListQuestionsDto) {
+    const requestedLanguageIsoCode =
+      this.questionPool.requestedLanguageIsoCode(query);
+    const language = await this.questionPool.requireActiveLanguage(
+      requestedLanguageIsoCode,
+    );
+    const categoryCodes = query.categoryCodes ?? [];
+    const categoryFilter: Prisma.CategoryWhereInput = {
+      ...(categoryCodes.length > 0 ? { code: { in: categoryCodes } } : {}),
+      ...(language.isGlobalPool
+        ? { countryCode: null }
+        : query.countryCode
+          ? {
+              OR: [{ countryCode: null }, { countryCode: query.countryCode }],
+            }
+          : { countryCode: null }),
+    };
+    const questions = await this.prisma.question.findMany({
       where: {
         status: QuestionStatus.APPROVED,
         categoryId: query.categoryId,
         difficulty: query.difficulty,
-        language: query.language ?? 'ro',
+        languageId: language.id,
+        ...(Object.keys(categoryFilter).length > 0
+          ? { category: categoryFilter }
+          : {}),
       },
       select: publicQuestionSelect,
       take: query.limit,
       orderBy: [{ timesAsked: 'asc' }, { createdAt: 'desc' }],
     });
+    return questions.map((question) => this.serializeQuestion(question));
   }
 
-  getApproved(id: string) {
-    return this.prisma.question.findFirstOrThrow({
+  async getPool(query: ListQuestionsDto) {
+    const resolved = await this.questionPool.resolve(query);
+    const questions = await this.prisma.question.findMany({
+      where: resolved.where,
+      select: publicQuestionSelect,
+      take: query.limit,
+      orderBy: [{ timesAsked: 'asc' }, { createdAt: 'desc' }],
+    });
+    return {
+      questions: questions.map((question) => this.serializeQuestion(question)),
+      bank: resolved.bank,
+    };
+  }
+
+  async getApproved(id: string) {
+    const question = await this.prisma.question.findFirst({
       where: { id, status: QuestionStatus.APPROVED },
       select: publicQuestionSelect,
     });
+    if (!question) {
+      throw questionNotFound('QUESTION_NOT_FOUND', 'error.question.not_found', {
+        questionId: id,
+      });
+    }
+    return this.serializeQuestion(question);
   }
 
   async getInternalRandom(query: ListQuestionsDto) {
-    const codes = query.categoryCodes ?? [];
-    const where: Prisma.QuestionWhereInput = {
-      status: QuestionStatus.APPROVED,
-      categoryId: query.categoryId,
-      difficulty: query.difficulty,
-      language: query.language ?? 'ro',
-      // Potrivire exactă pe categoria întrebării, nu pe subarbore: dacă
-      // jucătorul a bifat „Istorie” dar nu „Medieval”, o întrebare medievală
-      // n-are ce căuta în meci. Bifele trebuie să însemne ce scrie pe ele.
-      ...(codes.length > 0 ? { category: { code: { in: codes } } } : {}),
-    };
-    const count = await this.prisma.question.count({ where });
-    if (count === 0) {
-      throw new NotFoundException(
-        'Nu există întrebări aprobate pentru filtrele cerute.',
+    if (!query.requestedLanguageIsoCode) {
+      throw questionBadRequest(
+        'QUESTION_LANGUAGE_REQUIRED',
+        'error.question_bank.language_required',
       );
     }
-    return this.prisma.question.findFirst({
-      where,
+    const resolved = await this.questionPool.resolve(query);
+    const count = await this.prisma.question.count({ where: resolved.where });
+    if (count === 0) {
+      throw this.emptyResolvedPool(
+        query,
+        resolved.bank.resolvedLanguageIsoCode,
+      );
+    }
+    const question = await this.prisma.question.findFirst({
+      where: resolved.where,
       skip: Math.floor(Math.random() * count),
-      select: {
-        ...publicQuestionSelect,
-        correctAnswer: true,
-      },
+      select: internalQuestionSelect,
     });
+    if (!question) {
+      throw this.emptyResolvedPool(
+        query,
+        resolved.bank.resolvedLanguageIsoCode,
+      );
+    }
+    return {
+      question: this.serializeInternalQuestion(question),
+      bank: resolved.bank,
+    };
   }
 
   async submitAnswer(id: string, answer: string) {
@@ -94,7 +158,9 @@ export class QuestionsService {
       },
     });
     if (!question) {
-      throw new NotFoundException('Întrebarea aprobată nu a fost găsită.');
+      throw questionNotFound('QUESTION_NOT_FOUND', 'error.question.not_found', {
+        questionId: id,
+      });
     }
 
     const isCorrect = this.answersMatch(
@@ -119,11 +185,19 @@ export class QuestionsService {
 
   async createCommunity(dto: CreateQuestionDto, userId: string) {
     this.validateAnswerShape(dto);
-    await this.rejectNearDuplicate(dto.categoryId, dto.text);
+    const language = await this.questionPool.requireActiveLanguage(
+      dto.languageIsoCode,
+    );
+    await this.rejectNearDuplicate(dto.categoryId, language.id, dto.text);
     return this.prisma.question.create({
       data: {
-        ...dto,
+        type: dto.type,
+        categoryId: dto.categoryId,
+        difficulty: dto.difficulty,
+        text: dto.text,
         options: dto.options,
+        correctAnswer: dto.correctAnswer,
+        languageId: language.id,
         source: QuestionSource.COMMUNITY,
         status: QuestionStatus.PENDING,
         createdById: userId,
@@ -133,8 +207,9 @@ export class QuestionsService {
 
   moderate(id: string, dto: ModerateQuestionDto) {
     if (dto.status === QuestionStatus.PENDING) {
-      throw new BadRequestException(
-        'Moderarea trebuie să producă o stare finală.',
+      throw questionBadRequest(
+        'QUESTION_MODERATION_FINAL_STATUS_REQUIRED',
+        'error.question.moderation_final_status_required',
       );
     }
     return this.prisma.question.update({
@@ -150,17 +225,20 @@ export class QuestionsService {
   private validateAnswerShape(dto: CreateQuestionDto): void {
     if (dto.type === QuestionType.MULTIPLE_CHOICE) {
       if (!dto.options || !dto.options.includes(dto.correctAnswer)) {
-        throw new BadRequestException(
-          'Răspunsul corect trebuie să existe între cele patru variante.',
+        throw questionBadRequest(
+          'QUESTION_CORRECT_OPTION_REQUIRED',
+          'error.question.correct_option_required',
         );
       }
     } else if (dto.options) {
-      throw new BadRequestException(
-        'Întrebările numerice nu acceptă variante.',
+      throw questionBadRequest(
+        'QUESTION_NUMERIC_OPTIONS_NOT_ALLOWED',
+        'error.question.numeric_options_not_allowed',
       );
     } else if (!Number.isFinite(Number(dto.correctAnswer))) {
-      throw new BadRequestException(
-        'Răspunsul numeric trebuie să fie un număr finit.',
+      throw questionBadRequest(
+        'QUESTION_NUMERIC_ANSWER_INVALID',
+        'error.question.numeric_answer_invalid',
       );
     }
   }
@@ -170,9 +248,7 @@ export class QuestionsService {
     submitted: string,
     expected: string,
   ): boolean {
-    if (submitted.trim().length === 0) {
-      return false;
-    }
+    if (submitted.trim().length === 0) return false;
 
     if (type === QuestionType.NUMERIC) {
       const submittedNumber = Number(submitted.trim().replace(',', '.'));
@@ -189,10 +265,11 @@ export class QuestionsService {
 
   private async rejectNearDuplicate(
     categoryId: string,
+    languageId: string,
     text: string,
   ): Promise<void> {
     const candidates = await this.prisma.question.findMany({
-      where: { categoryId },
+      where: { categoryId, languageId },
       select: { text: true },
     });
     const incoming = this.tokens(text);
@@ -201,10 +278,33 @@ export class QuestionsService {
         this.jaccard(incoming, this.tokens(candidate.text)) >= 0.85,
     );
     if (duplicate) {
-      throw new ConflictException(
-        'Întrebarea este prea similară cu una existentă.',
+      throw questionConflict(
+        'QUESTION_NEAR_DUPLICATE',
+        'error.question.near_duplicate',
+        { categoryId },
       );
     }
+  }
+
+  private serializeQuestion(question: SelectedQuestion) {
+    const { language, ...publicQuestion } = question;
+    return { ...publicQuestion, languageIsoCode: language.isoCode };
+  }
+
+  private serializeInternalQuestion(question: SelectedInternalQuestion) {
+    const { language, ...internalQuestion } = question;
+    return { ...internalQuestion, languageIsoCode: language.isoCode };
+  }
+
+  private emptyResolvedPool(query: ListQuestionsDto, resolvedLanguage: string) {
+    return questionBankUnavailable({
+      requestedLanguage: this.questionPool.requestedLanguageIsoCode(query),
+      requestedCountry: query.countryCode ?? null,
+      fallbackLanguage: resolvedLanguage,
+      minimumApprovedPerCategory: this.questionPool.minimumApprovedPerCategory,
+      categoryCodes: query.categoryCodes ?? [],
+      difficulty: query.difficulty ?? null,
+    });
   }
 
   private tokens(value: string): Set<string> {

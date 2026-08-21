@@ -3,6 +3,7 @@ export interface TaxonomyNode {
   readonly code?: string;
   readonly name: string;
   readonly icon: string;
+  readonly countryCode?: string;
 }
 
 export interface TaxonomyRoot extends TaxonomyNode {
@@ -20,6 +21,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         id: '11000000-0000-4000-8000-000000000001',
         name: 'Istoria României',
         icon: 'history-romania',
+        countryCode: 'RO',
       },
       {
         id: '11000000-0000-4000-8000-000000000002',
@@ -65,6 +67,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         id: '12000000-0000-4000-8000-000000000001',
         name: 'Geografia României',
         icon: 'map-romania',
+        countryCode: 'RO',
       },
       {
         id: '12000000-0000-4000-8000-000000000002',
@@ -210,6 +213,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         id: '15000000-0000-4000-8000-000000000001',
         name: 'Cinema românesc',
         icon: 'romanian-cinema',
+        countryCode: 'RO',
       },
       {
         id: '15000000-0000-4000-8000-000000000002',
@@ -225,6 +229,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         id: '15000000-0000-4000-8000-000000000004',
         name: 'Muzică românească',
         icon: 'romanian-music',
+        countryCode: 'RO',
       },
       {
         id: '15000000-0000-4000-8000-000000000005',
@@ -248,6 +253,7 @@ export const INITIAL_CATEGORY_TAXONOMY = [
         id: '16000000-0000-4000-8000-000000000001',
         name: 'Literatură română',
         icon: 'romanian-literature',
+        countryCode: 'RO',
       },
       {
         id: '16000000-0000-4000-8000-000000000002',
@@ -301,38 +307,46 @@ export const INITIAL_CATEGORY_TAXONOMY = [
   },
   {
     id: '10000000-0000-4000-8000-000000000008',
-    name: 'România',
+    code: 'country-specific-ro',
+    name: 'Specific României',
     icon: 'flag-romania',
+    countryCode: 'RO',
     children: [
       {
         id: '18000000-0000-4000-8000-000000000001',
         name: 'Cultură și tradiții românești',
         icon: 'romanian-traditions',
+        countryCode: 'RO',
       },
       {
         id: '18000000-0000-4000-8000-000000000002',
         name: 'Personalități românești',
         icon: 'romanian-people',
+        countryCode: 'RO',
       },
       {
         id: '18000000-0000-4000-8000-000000000003',
         name: 'Instituții și simboluri naționale',
         icon: 'romanian-symbols',
+        countryCode: 'RO',
       },
       {
         id: '18000000-0000-4000-8000-000000000004',
         name: 'Județe și orașe',
         icon: 'romanian-cities',
+        countryCode: 'RO',
       },
       {
         id: '18000000-0000-4000-8000-000000000005',
         name: 'Limba română',
         icon: 'romanian-language',
+        countryCode: 'RO',
       },
       {
         id: '18000000-0000-4000-8000-000000000006',
         name: 'Natură și patrimoniu românesc',
         icon: 'romanian-heritage',
+        countryCode: 'RO',
       },
     ],
   },
@@ -401,7 +415,198 @@ export const INITIAL_CATEGORY_TAXONOMY = [
       },
     ],
   },
+  {
+    id: '19000000-0000-4000-8000-000000000006',
+    code: 'international-general-knowledge',
+    name: 'Cultură generală internațională',
+    icon: 'international-general-knowledge',
+    children: [
+      {
+        id: '19600000-0000-4000-8000-000000000001',
+        code: 'international-culture',
+        name: 'Cultură internațională',
+        icon: 'international-culture',
+      },
+    ],
+  },
 ] as const satisfies readonly TaxonomyRoot[];
+
+export const CATEGORY_TRANSLATION_LANGUAGE_CODES = ['ro', 'en'] as const;
+
+export interface CategoryTranslationDefinition {
+  readonly key: string;
+  readonly languageIsoCode:
+    (typeof CATEGORY_TRANSLATION_LANGUAGE_CODES)[number];
+  readonly value: string;
+}
+
+/**
+ * Denumirile englezești ale taxonomiei inițiale.
+ *
+ * Cheia este UUID-ul stabil al categoriei, nu numele românesc. Astfel o
+ * corectură de copy nu schimbă identitatea traducerii și nu rupe referințele
+ * existente din întrebări.
+ */
+export const CATEGORY_ENGLISH_NAMES: Readonly<Record<string, string>> =
+  Object.freeze({
+    '10000000-0000-4000-8000-000000000001': 'History',
+    '11000000-0000-4000-8000-000000000001': 'Romanian History',
+    '11000000-0000-4000-8000-000000000002': 'Antiquity',
+    '11000000-0000-4000-8000-000000000003': 'Middle Ages',
+    '11000000-0000-4000-8000-000000000004': 'Modern Era',
+    '11000000-0000-4000-8000-000000000005': '20th Century',
+    '11000000-0000-4000-8000-000000000006':
+      'Civilizations and Empires',
+    '11000000-0000-4000-8000-000000000007': 'Wars',
+    '10000000-0000-4000-8000-000000000002': 'Geography',
+    '12000000-0000-4000-8000-000000000001': 'Geography of Romania',
+    '12000000-0000-4000-8000-000000000002': 'Europe',
+    '12000000-0000-4000-8000-000000000003': 'Asia',
+    '12000000-0000-4000-8000-000000000004': 'Africa',
+    '12000000-0000-4000-8000-000000000005': 'Americas and Oceania',
+    '12000000-0000-4000-8000-000000000006': 'Physical Geography',
+    '10000000-0000-4000-8000-000000000003': 'Science',
+    '13000000-0000-4000-8000-000000000001': 'Biology',
+    '13000000-0000-4000-8000-000000000002': 'Physics',
+    '13000000-0000-4000-8000-000000000003': 'Chemistry',
+    '13000000-0000-4000-8000-000000000004': 'Astronomy',
+    '13000000-0000-4000-8000-000000000005': 'Mathematics',
+    '13000000-0000-4000-8000-000000000006':
+      'Technology and Computing',
+    '13000000-0000-4000-8000-000000000007': 'Video Games',
+    '13000000-0000-4000-8000-000000000008': 'Animals',
+    '13000000-0000-4000-8000-000000000009': 'Logic',
+    '10000000-0000-4000-8000-000000000004': 'Sports',
+    '14000000-0000-4000-8000-000000000001': 'Football',
+    '14000000-0000-4000-8000-000000000002': 'Tennis',
+    '14000000-0000-4000-8000-000000000003': 'Olympic Games',
+    '14000000-0000-4000-8000-000000000004': 'Motorsports',
+    '14000000-0000-4000-8000-000000000005':
+      'Basketball and Handball',
+    '14000000-0000-4000-8000-000000000006': 'Sports Records',
+    '10000000-0000-4000-8000-000000000005': 'Film and Music',
+    '15000000-0000-4000-8000-000000000007': 'Movies',
+    '15000000-0000-4000-8000-000000000008': 'Music',
+    '15000000-0000-4000-8000-000000000001': 'Romanian Cinema',
+    '15000000-0000-4000-8000-000000000002': 'International Film',
+    '15000000-0000-4000-8000-000000000003': 'Television Series',
+    '15000000-0000-4000-8000-000000000004': 'Romanian Music',
+    '15000000-0000-4000-8000-000000000005': 'International Music',
+    '15000000-0000-4000-8000-000000000006': 'Performing Arts',
+    '10000000-0000-4000-8000-000000000006': 'Literature',
+    '16000000-0000-4000-8000-000000000001': 'Romanian Literature',
+    '16000000-0000-4000-8000-000000000002': 'World Literature',
+    '16000000-0000-4000-8000-000000000003': 'Authors and Works',
+    '16000000-0000-4000-8000-000000000004': 'Poetry',
+    '16000000-0000-4000-8000-000000000005':
+      'Fairy Tales and Mythology',
+    '10000000-0000-4000-8000-000000000007': 'Current Affairs',
+    '17000000-0000-4000-8000-000000000001':
+      'Current Science and Technology',
+    '17000000-0000-4000-8000-000000000002':
+      'Current Culture and Entertainment',
+    '17000000-0000-4000-8000-000000000003': 'Current Sports',
+    '17000000-0000-4000-8000-000000000004': 'Society and World',
+    '10000000-0000-4000-8000-000000000008': 'Specific to Romania',
+    '18000000-0000-4000-8000-000000000001':
+      'Romanian Culture and Traditions',
+    '18000000-0000-4000-8000-000000000002': 'Romanian Personalities',
+    '18000000-0000-4000-8000-000000000003':
+      'National Institutions and Symbols',
+    '18000000-0000-4000-8000-000000000004': 'Counties and Cities',
+    '18000000-0000-4000-8000-000000000005': 'Romanian Language',
+    '18000000-0000-4000-8000-000000000006':
+      'Romanian Nature and Heritage',
+    '19000000-0000-4000-8000-000000000001': 'General Knowledge',
+    '19100000-0000-4000-8000-000000000001': 'Mixed Knowledge',
+    '19000000-0000-4000-8000-000000000002': 'Art',
+    '19200000-0000-4000-8000-000000000001': 'Visual Arts',
+    '19000000-0000-4000-8000-000000000003': 'Cars',
+    '19300000-0000-4000-8000-000000000001':
+      'Automotive History and Engineering',
+    '19000000-0000-4000-8000-000000000004': 'Economy',
+    '19400000-0000-4000-8000-000000000001': 'General Economics',
+    '19000000-0000-4000-8000-000000000005': 'Royal Challenge',
+    '19500000-0000-4000-8000-000000000001': 'Elite Questions',
+    '19000000-0000-4000-8000-000000000006':
+      'International General Knowledge',
+    '19600000-0000-4000-8000-000000000001': 'International Culture',
+  });
+
+/** Cheia din SRV-003; nu depinde de textul afișat. */
+export function categoryNameKey(node: TaxonomyNode): string {
+  const identity =
+    node.code ?? `node_${node.id.replaceAll('-', '').toLowerCase()}`;
+  return `category.${identity}.name`;
+}
+
+export function buildInitialCategoryTranslations(
+  taxonomy: readonly TaxonomyRoot[] = INITIAL_CATEGORY_TAXONOMY,
+): readonly CategoryTranslationDefinition[] {
+  const nodes = taxonomy.flatMap((root) => [root, ...root.children]);
+  return nodes.flatMap((node) => {
+    const english = CATEGORY_ENGLISH_NAMES[node.id];
+    if (!english) {
+      throw new Error(`Lipsește traducerea engleză pentru ${node.id}.`);
+    }
+    const key = categoryNameKey(node);
+    return [
+      { key, languageIsoCode: 'ro' as const, value: node.name },
+      { key, languageIsoCode: 'en' as const, value: english },
+    ];
+  });
+}
+
+export function validateCategoryTranslationDefinitions(
+  taxonomy: readonly TaxonomyRoot[] = INITIAL_CATEGORY_TAXONOMY,
+): void {
+  const nodes = taxonomy.flatMap((root) => [root, ...root.children]);
+  const expectedPairs = new Set<string>();
+  const translations = buildInitialCategoryTranslations(taxonomy);
+
+  for (const node of nodes) {
+    const key = categoryNameKey(node);
+    for (const languageIsoCode of CATEGORY_TRANSLATION_LANGUAGE_CODES) {
+      expectedPairs.add(`${key}\u0000${languageIsoCode}`);
+    }
+  }
+
+  const actualPairs = new Set<string>();
+  for (const translation of translations) {
+    const pair = `${translation.key}\u0000${translation.languageIsoCode}`;
+    if (actualPairs.has(pair)) {
+      throw new Error(
+        `Traducere duplicată pentru ${translation.key}/${translation.languageIsoCode}.`,
+      );
+    }
+    if (!expectedPairs.has(pair)) {
+      throw new Error(
+        `Traducere fără categorie pentru ${translation.key}/${translation.languageIsoCode}.`,
+      );
+    }
+    if (translation.value.trim().length === 0) {
+      throw new Error(
+        `Traducere goală pentru ${translation.key}/${translation.languageIsoCode}.`,
+      );
+    }
+    actualPairs.add(pair);
+  }
+
+  for (const pair of expectedPairs) {
+    if (!actualPairs.has(pair)) {
+      throw new Error(`Traducere lipsă pentru ${pair.replace('\u0000', '/')}.`);
+    }
+  }
+
+  if (taxonomy === INITIAL_CATEGORY_TAXONOMY) {
+    const taxonomyIds = new Set(nodes.map((node) => node.id));
+    for (const id of Object.keys(CATEGORY_ENGLISH_NAMES)) {
+      if (!taxonomyIds.has(id)) {
+        throw new Error(`Traducere engleză fără categorie pentru ${id}.`);
+      }
+    }
+  }
+}
 
 export const OWNER_GAMEPLAY_CATEGORY_CODES = [
   'geography',
@@ -440,6 +645,7 @@ export function validateTaxonomyDefinition(
   const ids = new Set<string>();
   const rootNames = new Set<string>();
   const codes = new Set<string>();
+  const nameKeys = new Set<string>();
   const uuidPattern =
     /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -456,6 +662,7 @@ export function validateTaxonomyDefinition(
     ids.add(root.id);
     rootNames.add(root.name);
     registerCode(root, codes);
+    registerNodeMetadata(root, nameKeys);
 
     const childNames = new Set<string>();
     for (const child of root.children) {
@@ -470,6 +677,7 @@ export function validateTaxonomyDefinition(
       ids.add(child.id);
       childNames.add(child.name);
       registerCode(child, codes);
+      registerNodeMetadata(child, nameKeys);
     }
   }
 
@@ -478,6 +686,29 @@ export function validateTaxonomyDefinition(
       throw new Error(`Categoria cerută lipsește din taxonomy: ${code}`);
     }
   }
+}
+
+function registerNodeMetadata(
+  node: TaxonomyNode,
+  nameKeys: Set<string>,
+): void {
+  if (node.name.trim().length === 0 || node.name.length > 100) {
+    throw new Error(`Nume invalid în taxonomy pentru ${node.id}.`);
+  }
+  if (node.icon.trim().length === 0 || node.icon.length > 100) {
+    throw new Error(`Icon invalid în taxonomy pentru ${node.id}.`);
+  }
+  if (
+    node.countryCode !== undefined &&
+    !/^[A-Z]{2}$/.test(node.countryCode)
+  ) {
+    throw new Error(`Cod de țară invalid în taxonomy: ${node.countryCode}.`);
+  }
+  const nameKey = categoryNameKey(node);
+  if (nameKey.length > 160 || nameKeys.has(nameKey)) {
+    throw new Error(`Cheie de traducere invalidă sau duplicată: ${nameKey}.`);
+  }
+  nameKeys.add(nameKey);
 }
 
 function registerCode(node: TaxonomyNode, codes: Set<string>): void {

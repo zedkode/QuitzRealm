@@ -31,6 +31,11 @@ export class QuestionsController {
     return this.questions.listApproved(query);
   }
 
+  @Get('pool')
+  getPool(@Query() query: ListQuestionsDto) {
+    return this.questions.getPool(query);
+  }
+
   @Get('internal/random')
   @UseGuards(InternalApiKeyGuard)
   getInternalRandom(@Query() query: ListQuestionsDto) {

@@ -1,3 +1,5 @@
+import { QuestionType } from '@prisma/client';
+import { Transform } from 'class-transformer';
 import {
   ArrayMaxSize,
   ArrayMinSize,
@@ -12,7 +14,6 @@ import {
   Min,
   MinLength,
 } from 'class-validator';
-import { QuestionType } from '@prisma/client';
 
 export class CreateQuestionDto {
   @IsEnum(QuestionType)
@@ -43,8 +44,10 @@ export class CreateQuestionDto {
   @MaxLength(500)
   correctAnswer!: string;
 
-  @IsOptional()
+  @Transform(({ value }) =>
+    typeof value === 'string' ? value.trim().toLowerCase() : value,
+  )
   @IsString()
   @MaxLength(10)
-  language?: string;
+  languageIsoCode!: string;
 }

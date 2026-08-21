@@ -123,6 +123,7 @@ services:
       JWT_ACCESS_EXPIRES_IN: ${JWT_ACCESS_EXPIRES_IN:-15m}
       JWT_REFRESH_EXPIRES_IN: ${JWT_REFRESH_EXPIRES_IN:-30d}
       INTERNAL_API_KEY: ${INTERNAL_API_KEY:-dezvoltare-locala}
+      QUESTION_BANK_MIN_APPROVED_PER_CATEGORY: ${QUESTION_BANK_MIN_APPROVED_PER_CATEGORY:-1}
       # Strategia Google se construiește la pornire și cere cheile, chiar dacă
       # nu le folosește nimeni local. Valorile de rezervă lasă aplicația să
       # pornească; autentificarea cu Google nu va funcționa fără chei reale.

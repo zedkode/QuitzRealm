@@ -8,6 +8,21 @@ import {
 
 export const FALLBACK_LANGUAGE_ISO_CODE = 'en';
 export const MISSING_TRANSLATION_KEY = 'system.translation.missing';
+export const QUESTION_BANK_TRANSLATION_KEYS = [
+  'question_bank.fallback.global',
+  'error.question_bank.unavailable',
+  'error.question_bank.language_required',
+  'error.question_bank.language_filter_conflict',
+  'error.question_bank.category_filter_conflict',
+  'error.question_bank.category_not_found',
+  'error.question_bank.category_region_mismatch',
+  'error.question.not_found',
+  'error.question.moderation_final_status_required',
+  'error.question.correct_option_required',
+  'error.question.numeric_options_not_allowed',
+  'error.question.numeric_answer_invalid',
+  'error.question.near_duplicate',
+] as const;
 
 export interface TranslationSeedDefinition {
   readonly key: string;
@@ -42,6 +57,31 @@ const SYSTEM_TRANSLATIONS: Readonly<
     'error.request.rate_limited': 'Too many requests. Please try again later.',
     'error.request.failed': 'The request could not be completed.',
     'error.service.unavailable': 'The service is temporarily unavailable.',
+    'question_bank.fallback.global':
+      'Questions are being served from the global {resolvedLanguage} pool.',
+    'error.question_bank.unavailable':
+      'No suitable questions are available for the requested pool.',
+    'error.question_bank.language_required':
+      'A question language must be specified.',
+    'error.question_bank.language_filter_conflict':
+      'Only one question language may be requested.',
+    'error.question_bank.category_filter_conflict':
+      'Filter questions either by category ID or by category codes, not both.',
+    'error.question_bank.category_not_found':
+      'The requested question category was not found.',
+    'error.question_bank.category_region_mismatch':
+      'The requested category is not available for this country and language.',
+    'error.question.not_found': 'The requested question was not found.',
+    'error.question.moderation_final_status_required':
+      'Moderation must choose a final question status.',
+    'error.question.correct_option_required':
+      'The correct answer must be one of the available options.',
+    'error.question.numeric_options_not_allowed':
+      'Numeric questions cannot contain answer options.',
+    'error.question.numeric_answer_invalid':
+      'The answer to a numeric question must be a valid number.',
+    'error.question.near_duplicate':
+      'A very similar question already exists in this category.',
     'auth.page.verify.missing.title': 'Incomplete link',
     'auth.page.verify.missing.message':
       'The verification link does not contain a token.',
@@ -86,6 +126,31 @@ const SYSTEM_TRANSLATIONS: Readonly<
       'Ai trimis prea multe cereri. Încearcă din nou mai târziu.',
     'error.request.failed': 'Cererea nu a putut fi finalizată.',
     'error.service.unavailable': 'Serviciul este temporar indisponibil.',
+    'question_bank.fallback.global':
+      'Întrebările sunt preluate din banca globală în limba {resolvedLanguage}.',
+    'error.question_bank.unavailable':
+      'Nu există întrebări potrivite pentru banca solicitată.',
+    'error.question_bank.language_required':
+      'Limba întrebărilor trebuie specificată.',
+    'error.question_bank.language_filter_conflict':
+      'Poate fi solicitată o singură limbă pentru întrebări.',
+    'error.question_bank.category_filter_conflict':
+      'Filtrează întrebările fie după ID-ul categoriei, fie după coduri, nu după ambele.',
+    'error.question_bank.category_not_found':
+      'Categoria de întrebări solicitată nu a fost găsită.',
+    'error.question_bank.category_region_mismatch':
+      'Categoria solicitată nu este disponibilă pentru această țară și limbă.',
+    'error.question.not_found': 'Întrebarea solicitată nu a fost găsită.',
+    'error.question.moderation_final_status_required':
+      'Moderarea trebuie să aleagă un statut final pentru întrebare.',
+    'error.question.correct_option_required':
+      'Răspunsul corect trebuie să fie una dintre opțiunile disponibile.',
+    'error.question.numeric_options_not_allowed':
+      'Întrebările numerice nu pot conține variante de răspuns.',
+    'error.question.numeric_answer_invalid':
+      'Răspunsul unei întrebări numerice trebuie să fie un număr valid.',
+    'error.question.near_duplicate':
+      'Există deja o întrebare foarte asemănătoare în această categorie.',
     'auth.page.verify.missing.title': 'Link incomplet',
     'auth.page.verify.missing.message':
       'Linkul de verificare nu conține un token.',

@@ -2,7 +2,9 @@ import 'dotenv/config';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { PrismaClient } from '@prisma/client';
 import {
+  seedInitialCategoryTranslations,
   seedInitialCategoryTaxonomy,
+  verifyInitialCategoryTranslations,
   verifyInitialCategoryTaxonomy,
 } from '../src/categories/category-taxonomy.seed';
 import { seedReferenceData } from '../src/reference-data/reference-data.seed';
@@ -18,14 +20,23 @@ async function main(): Promise<void> {
     const referenceData = await seedReferenceData(prisma);
     const translations = await seedTranslationCatalog(prisma);
     const seed = await seedInitialCategoryTaxonomy(prisma);
+    const categoryTranslations =
+      await seedInitialCategoryTranslations(prisma);
     const verification = await verifyInitialCategoryTaxonomy(prisma);
     if (!verification.valid) {
       throw new Error(
         `Verificarea taxonomy-ului a eșuat: ${verification.errors.join('; ')}`,
       );
     }
+    const categoryTranslationVerification =
+      await verifyInitialCategoryTranslations(prisma);
+    if (!categoryTranslationVerification.valid) {
+      throw new Error(
+        `Verificarea traducerilor de categorii a eșuat: ${categoryTranslationVerification.errors.join('; ')}`,
+      );
+    }
     process.stdout.write(
-      `${JSON.stringify({ referenceData, translations, seed, verification })}\n`,
+      `${JSON.stringify({ referenceData, translations, seed, categoryTranslations, verification, categoryTranslationVerification })}\n`,
     );
   } finally {
     await prisma.$disconnect();

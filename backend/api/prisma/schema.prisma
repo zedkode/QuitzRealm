@@ -76,6 +76,7 @@ model Language {
   defaultForCountries Country[]
   translations        Translation[]
   users               User[]
+  questions           Question[]
 
   @@map("languages")
 }
@@ -110,6 +111,7 @@ model Country {
 
   defaultLanguage Language @relation(fields: [defaultLanguageId], references: [id], onDelete: Restrict)
   users           User[]
+  categories      Category[]
 
   @@index([defaultLanguageId, active])
   @@map("countries")
@@ -623,18 +625,24 @@ model AuthToken {
 }
 
 model Category {
-  id       String  @id @default(uuid()) @db.Uuid
+  id       String @id @default(uuid()) @db.Uuid
   /// Identificator stabil, independent de traducerea numelui afișat.
   code     String? @unique @db.VarChar(64)
-  name     String  @db.VarChar(100)
-  parentId String? @map("parent_id") @db.Uuid
-  icon     String? @db.VarChar(100)
+  /// Cheia obligatorie din catalogul de traduceri; `name` rămâne temporar
+  /// coloana legacy în limba română pentru consumatorii nemigrați încă.
+  nameKey     String  @unique @map("name_key") @db.VarChar(160)
+  name        String  @db.VarChar(100)
+  countryCode String? @map("country_code") @db.VarChar(2)
+  parentId    String? @map("parent_id") @db.Uuid
+  icon        String? @db.VarChar(100)
 
+  country   Country?   @relation(fields: [countryCode], references: [isoAlpha2], onDelete: Restrict)
   parent    Category?  @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
   children  Category[] @relation("CategoryTree")
   questions Question[]
 
   @@unique([name, parentId])
+  @@index([countryCode])
   @@map("categories")
 }
 
@@ -654,18 +662,21 @@ model Question {
   dislikeCount       Int            @default(0) @map("dislike_count")
   timesAsked         Int            @default(0) @map("times_asked")
   timesCorrect       Int            @default(0) @map("times_correct")
-  language           String         @default("ro") @db.VarChar(10)
+  /// FK canonic pentru limba întrebării. Coloana legacy `language` există doar
+  /// fizic și este completată de trigger pentru consumatorii nemigrați încă.
+  languageId         String         @map("language_id") @db.Uuid
   createdById        String?        @map("created_by") @db.Uuid
   reviewedById       String?        @map("reviewed_by") @db.Uuid
   createdAt          DateTime       @default(now()) @map("created_at")
 
-  category   Category         @relation(fields: [categoryId], references: [id], onDelete: Restrict)
-  createdBy  User?            @relation("QuestionCreator", fields: [createdById], references: [id], onDelete: SetNull)
-  reviewedBy User?            @relation("QuestionReviewer", fields: [reviewedById], references: [id], onDelete: SetNull)
-  events     MatchEvent[]
-  reports    QuestionReport[]
+  category       Category         @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  language       Language         @relation(fields: [languageId], references: [id], onDelete: Restrict)
+  createdBy      User?            @relation("QuestionCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  reviewedBy     User?            @relation("QuestionReviewer", fields: [reviewedById], references: [id], onDelete: SetNull)
+  events         MatchEvent[]
+  reports        QuestionReport[]
 
-  @@index([categoryId, difficulty, status, language])
+  @@index([languageId, status, categoryId, difficulty])
   @@map("questions")
 }
 

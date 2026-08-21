@@ -107,9 +107,22 @@ export class UsersService {
   async getCapabilities(id: string) {
     const user = await this.prisma.user.findUniqueOrThrow({
       where: { id },
-      select: { emailVerifiedAt: true, birthDate: true },
+      select: {
+        emailVerifiedAt: true,
+        birthDate: true,
+        countryCode: true,
+        language: { select: { isoCode: true } },
+      },
     });
-    return capabilitiesFor({ ...user, now: new Date() });
+    return {
+      ...capabilitiesFor({
+        emailVerifiedAt: user.emailVerifiedAt,
+        birthDate: user.birthDate,
+        now: new Date(),
+      }),
+      countryCode: user.countryCode,
+      languageIsoCode: user.language?.isoCode ?? null,
+    };
   }
 
   /// Numele afișat se schimbă liber (§1.2) — nu are cooldown, pentru că nu e
