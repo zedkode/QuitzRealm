@@ -8,6 +8,7 @@ import {
   Patch,
   Post,
   Put,
+  Query,
   Req,
   UseGuards,
 } from '@nestjs/common';
@@ -19,6 +20,7 @@ import { UpdatePrivacyDto } from '../chat/dto/chat.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { AddLinkDto } from './dto/add-link.dto';
 import { EquipCosmeticDto } from './dto/equip-cosmetic.dto';
+import { RegionSuggestionDto } from './dto/region-suggestion.dto';
 import { UpdateProfileContentDto } from './dto/update-profile-content.dto';
 import { UpdateRegionDto } from './dto/update-region.dto';
 import { ProfileService } from './profile.service';
@@ -82,6 +84,14 @@ export class ProfileController {
     @Body() dto: UpdateRegionDto,
   ) {
     return this.profile.updateRegion(request.user.id, dto);
+  }
+
+  @Get('region/options')
+  regionOptions(@Query() suggestion: RegionSuggestionDto) {
+    return this.profile.getRegionOptions(
+      suggestion.countryCode,
+      suggestion.languageIsoCode,
+    );
   }
 }
 

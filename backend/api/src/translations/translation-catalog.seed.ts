@@ -25,7 +25,10 @@ const SYSTEM_TRANSLATIONS: Readonly<
 > = {
   en: {
     [MISSING_TRANSLATION_KEY]: 'Content unavailable',
+    'error.country.not_supported': 'The selected country is not supported.',
     'error.language.not_supported': 'The selected language is not supported.',
+    'error.region.cooldown_active':
+      'Country and language can be changed again after {availableAt}.',
     'error.translation.fallback_unavailable':
       'The translation fallback is unavailable.',
     'error.translation.invalid_key': 'The translation key is invalid.',
@@ -65,7 +68,10 @@ const SYSTEM_TRANSLATIONS: Readonly<
   },
   ro: {
     [MISSING_TRANSLATION_KEY]: 'Conținut indisponibil',
+    'error.country.not_supported': 'Țara selectată nu este disponibilă.',
     'error.language.not_supported': 'Limba selectată nu este disponibilă.',
+    'error.region.cooldown_active':
+      'Țara și limba pot fi schimbate din nou după {availableAt}.',
     'error.translation.fallback_unavailable':
       'Limba de rezervă pentru traduceri nu este disponibilă.',
     'error.translation.invalid_key': 'Cheia traducerii nu este validă.',

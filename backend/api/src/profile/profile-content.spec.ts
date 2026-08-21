@@ -7,7 +7,6 @@ import {
   checkStatusEmoji,
   checkStatusText,
   isAllowedLinkHost,
-  isSupportedCountry,
   regionChangeAvailableAt,
 } from './profile-content';
 
@@ -164,7 +163,7 @@ describe('canPublishLinks', () => {
   });
 });
 
-describe('schimbarea țării', () => {
+describe('schimbarea identității regionale', () => {
   const now = new Date('2026-08-16T12:00:00Z');
 
   it('un cont care n-a schimbat niciodată poate schimba acum', () => {
@@ -182,16 +181,5 @@ describe('schimbarea țării', () => {
 
   it('deblochează după expirarea ferestrei', () => {
     expect(canChangeRegion(new Date('2026-01-01T12:00:00Z'), now)).toBe(true);
-  });
-});
-
-describe('isSupportedCountry', () => {
-  it('acceptă indiferent de scrierea codului', () => {
-    expect(isSupportedCountry('ro')).toBe(true);
-    expect(isSupportedCountry('RO')).toBe(true);
-  });
-
-  it('respinge un cod care nu e în listă', () => {
-    expect(isSupportedCountry('ZZ')).toBe(false);
   });
 });

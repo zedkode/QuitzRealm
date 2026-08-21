@@ -1,5 +1,6 @@
 import {
   BadRequestException,
+  ConflictException,
   ForbiddenException,
   Injectable,
   Logger,
@@ -25,14 +26,13 @@ import {
 } from './cosmetic-catalog';
 import {
   MAX_PROFILE_LINKS,
-  SUPPORTED_COUNTRIES,
+  REGION_CHANGE_COOLDOWN_DAYS,
   canChangeRegion,
   canPublishLinks,
   checkBio,
   checkLink,
   checkStatusEmoji,
   checkStatusText,
-  isSupportedCountry,
   regionChangeAvailableAt,
 } from './profile-content';
 import { AddLinkDto } from './dto/add-link.dto';
@@ -60,6 +60,13 @@ const LINK_MESSAGES: Record<string, string> = {
   host_not_allowed:
     'Domeniul nu este pe lista platformelor acceptate pentru linkuri de profil.',
 };
+
+interface LockedRegionUser {
+  readonly countryCode: string | null;
+  readonly languageId: string | null;
+  readonly languageIsGlobalPool: boolean | null;
+  readonly regionChangedAt: Date | null;
+}
 
 @Injectable()
 export class ProfileService implements OnModuleInit {
@@ -414,32 +421,162 @@ export class ProfileService implements OnModuleInit {
 
   // --- Regiune (§10.2) ---
 
+  /// Catalogul pentru onboarding și setări. Indiciile venite de la client sunt
+  /// doar preselectate în răspuns; metoda nu scrie niciodată pe utilizator.
+  async getRegionOptions(
+    suggestedCountryCode?: string,
+    suggestedLanguageIsoCode?: string,
+  ) {
+    const [countries, languages] = await Promise.all([
+      this.prisma.country.findMany({
+        where: { active: true },
+        orderBy: { isoAlpha2: 'asc' },
+        select: {
+          isoAlpha2: true,
+          nameKey: true,
+          defaultLanguage: { select: { isoCode: true } },
+        },
+      }),
+      this.prisma.language.findMany({
+        where: { active: true },
+        orderBy: { isoCode: 'asc' },
+        select: { isoCode: true, nameKey: true, isGlobalPool: true },
+      }),
+    ]);
+
+    const countryCandidate = suggestedCountryCode?.trim().toUpperCase();
+    const suggestedCountry = countries.find(
+      (country) => country.isoAlpha2 === countryCandidate,
+    );
+    const languageCandidate = suggestedLanguageIsoCode?.trim().toLowerCase();
+    const suggestedLanguage = languages.find(
+      (language) => language.isoCode === languageCandidate,
+    );
+
+    return {
+      countries: countries.map((country) => ({
+        isoAlpha2: country.isoAlpha2,
+        nameKey: country.nameKey,
+        defaultLanguageIsoCode: country.defaultLanguage.isoCode,
+      })),
+      languages,
+      suggestion: {
+        countryCode: suggestedCountry?.isoAlpha2 ?? null,
+        languageIsoCode:
+          suggestedLanguage?.isoCode ??
+          suggestedCountry?.defaultLanguage.isoCode ??
+          null,
+        confirmationRequired: true,
+      },
+      cooldownDays: REGION_CHANGE_COOLDOWN_DAYS,
+    };
+  }
+
   async updateRegion(userId: string, dto: UpdateRegionDto) {
     const now = new Date();
-    const user = await this.prisma.user.findUniqueOrThrow({
-      where: { id: userId },
-      select: { countryCode: true, regionChangedAt: true },
-    });
-
     const country = dto.countryCode.toUpperCase();
-    if (!isSupportedCountry(country)) {
-      throw new BadRequestException('Țara nu este în lista acceptată.');
-    }
-    if (country === user.countryCode) {
-      return this.getMyProfile(userId);
-    }
-    // Prima alegere e gratuită: cooldown-ul are sens abia după ce există o
-    // țară de la care să pleci.
-    if (user.countryCode !== null && !canChangeRegion(user.regionChangedAt, now)) {
-      const availableAt = regionChangeAvailableAt(user.regionChangedAt, now);
-      throw new BadRequestException(
-        `Țara se poate schimba din nou după ${availableAt?.toISOString()}.`,
-      );
-    }
+    const languageIsoCode = dto.languageIsoCode.toLowerCase();
 
-    await this.prisma.user.update({
-      where: { id: userId },
-      data: { countryCode: country, regionChangedAt: now },
+    await this.prisma.$transaction(async (transaction) => {
+      // Blocarea rândului serializează cererile concurente. Fără ea, două
+      // schimbări pornite simultan ar citi același cooldown expirat și ambele
+      // ar trece înainte ca vreuna să scrie noul timestamp.
+      const users = await transaction.$queryRaw<LockedRegionUser[]>(
+        Prisma.sql`
+          SELECT
+            u."country_code" AS "countryCode",
+            u."language_id" AS "languageId",
+            l."is_global_pool" AS "languageIsGlobalPool",
+            u."region_changed_at" AS "regionChangedAt"
+          FROM "users" u
+          LEFT JOIN "languages" l ON l."id" = u."language_id"
+          WHERE u."id" = ${userId}::uuid
+          FOR UPDATE OF u
+        `,
+      );
+      const user = users[0];
+      if (!user) {
+        throw new NotFoundException({
+          code: 'USER_NOT_FOUND',
+          messageKey: 'error.resource.not_found',
+          params: {},
+        });
+      }
+
+      const storedCountry = await transaction.country.findUnique({
+        where: { isoAlpha2: country },
+        select: { isoAlpha2: true, nameKey: true, active: true },
+      });
+      if (!storedCountry?.active) {
+        throw new BadRequestException({
+          code: 'COUNTRY_NOT_SUPPORTED',
+          messageKey: 'error.country.not_supported',
+          params: { countryCode: country },
+        });
+      }
+
+      const language = await transaction.language.findUnique({
+        where: { isoCode: languageIsoCode },
+        select: {
+          id: true,
+          isoCode: true,
+          nameKey: true,
+          isGlobalPool: true,
+          active: true,
+        },
+      });
+      if (!language?.active) {
+        throw new BadRequestException({
+          code: 'LANGUAGE_NOT_SUPPORTED',
+          messageKey: 'error.language.not_supported',
+          params: { language: languageIsoCode },
+        });
+      }
+
+      if (
+        country === user.countryCode &&
+        language.id === user.languageId
+      ) {
+        return;
+      }
+
+      const hasCompleteIdentity =
+        user.countryCode !== null && user.languageId !== null;
+      if (
+        hasCompleteIdentity &&
+        !canChangeRegion(user.regionChangedAt, now)
+      ) {
+        const availableAt = regionChangeAvailableAt(user.regionChangedAt, now)!;
+        throw new ConflictException({
+          code: 'REGION_CHANGE_COOLDOWN_ACTIVE',
+          messageKey: 'error.region.cooldown_active',
+          params: {
+            availableAt: availableAt.toISOString(),
+            cooldownDays: REGION_CHANGE_COOLDOWN_DAYS,
+          },
+        });
+      }
+
+      const previousPool = user.languageIsGlobalPool
+        ? `global:${user.languageId}`
+        : `country:${user.languageId}:${user.countryCode}`;
+      const nextPool = language.isGlobalPool
+        ? `global:${language.id}`
+        : `country:${language.id}:${country}`;
+      const rankingAffected =
+        hasCompleteIdentity && previousPool !== nextPool;
+
+      await transaction.user.update({
+        where: { id: userId },
+        data: {
+          countryCode: country,
+          languageId: language.id,
+          regionChangedAt: now,
+          ...(rankingAffected
+            ? { rankRecalibrationRequestedAt: now }
+            : {}),
+        },
+      });
     });
     return this.getMyProfile(userId);
   }
@@ -458,7 +595,13 @@ export class ProfileService implements OnModuleInit {
         birthDate: true,
         googleId: true,
         countryCode: true,
+        languageId: true,
         regionChangedAt: true,
+        rankRecalibrationRequestedAt: true,
+        country: { select: { isoAlpha2: true, nameKey: true } },
+        language: {
+          select: { isoCode: true, nameKey: true, isGlobalPool: true },
+        },
         createdAt: true,
         eloRating: true,
         xp: true,
@@ -477,14 +620,44 @@ export class ProfileService implements OnModuleInit {
     });
   }
 
-  private regionOf(user: { countryCode: string | null; regionChangedAt: Date | null }) {
+  private regionOf(user: {
+    countryCode: string | null;
+    languageId: string | null;
+    regionChangedAt: Date | null;
+    rankRecalibrationRequestedAt: Date | null;
+    country: { isoAlpha2: string; nameKey: string } | null;
+    language: {
+      isoCode: string;
+      nameKey: string;
+      isGlobalPool: boolean;
+    } | null;
+  }) {
+    const selectionRequired = user.country === null || user.language === null;
     return {
-      countryCode: user.countryCode,
-      supportedCountries: SUPPORTED_COUNTRIES,
+      // Aliasurile plate păstrează citirea compatibilă pentru fronturile care
+      // vor migra la obiectele bogate în APP-010/WEB-016.
+      countryCode: user.country?.isoAlpha2 ?? null,
+      languageIsoCode: user.language?.isoCode ?? null,
+      country: user.country,
+      language: user.language,
+      selectionRequired,
+      pool:
+        user.language === null
+          ? null
+          : user.language.isGlobalPool
+            ? { kind: 'global', languageIsoCode: user.language.isoCode }
+            : user.country === null
+              ? null
+              : {
+                  kind: 'country',
+                  languageIsoCode: user.language.isoCode,
+                  countryCode: user.country.isoAlpha2,
+                },
       changeAvailableAt:
-        user.countryCode === null
+        selectionRequired
           ? null
           : regionChangeAvailableAt(user.regionChangedAt, new Date()),
+      rankRecalibrationRequestedAt: user.rankRecalibrationRequestedAt,
     };
   }
 

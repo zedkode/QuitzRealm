@@ -1,6 +1,6 @@
 /**
  * Regulile de conținut ale profilului: bio, status custom, linkuri externe și
- * schimbarea țării. Funcții pure — se testează fără bază de date și sunt
+ * schimbarea identității regionale. Funcții pure — se testează fără bază de date și sunt
  * singurul loc unde trăiesc pragurile.
  *
  * `owner-plan.md` §4.3 (bio), §4.4 (status), §4.6 (linkuri), §10.2 (țară).
@@ -194,12 +194,9 @@ export function canPublishLinks({
 }
 
 /**
- * Când devine disponibilă următoarea schimbare de țară (§10.2). `null` = acum.
- *
- * Cooldown-ul e pe **țară**, nu pe limba interfeței. Motivul din plan este
- * clasamentul național: cine sare între țări și-ar alege săptămânal cel mai
- * ușor clasament. Limba în care citești meniurile n-are nicio legătură cu asta,
- * deci rămâne o setare de dispozitiv, schimbabilă oricând.
+ * Când devine disponibilă următoarea schimbare de țară sau limbă (§10.2).
+ * `null` înseamnă că perechea poate fi schimbată acum. Ambele alegeri pot
+ * schimba pool-ul competitiv, deci folosesc aceeași fereastră de cooldown.
  */
 export function regionChangeAvailableAt(
   lastChangedAt: Date | null,
@@ -216,47 +213,4 @@ export function canChangeRegion(
   now: Date,
 ): boolean {
   return regionChangeAvailableAt(lastChangedAt, now) === null;
-}
-
-/**
- * Țările pe care le poate alege un jucător (§10.2, §10.4).
- *
- * Lista e închisă și scurtă în mod deliberat: fiecare țară de aici înseamnă un
- * clasament național care trebuie să aibă destui jucători ca să însemne ceva.
- * Se extinde din admin panel (§13.4) pe măsură ce apar jucători reali, nu
- * preventiv cu toate cele 249 de coduri ISO.
- */
-export const SUPPORTED_COUNTRIES: readonly string[] = Object.freeze([
-  'RO',
-  'MD',
-  'AT',
-  'BE',
-  'BG',
-  'CH',
-  'CZ',
-  'DE',
-  'DK',
-  'ES',
-  'FI',
-  'FR',
-  'GB',
-  'GR',
-  'HU',
-  'IE',
-  'IT',
-  'NL',
-  'NO',
-  'PL',
-  'PT',
-  'RS',
-  'SE',
-  'SK',
-  'UA',
-  'US',
-  'CA',
-  'AU',
-]);
-
-export function isSupportedCountry(code: string): boolean {
-  return SUPPORTED_COUNTRIES.includes(code.toUpperCase());
 }

@@ -165,6 +165,9 @@ export class AuthService {
         displayName: true,
         role: true,
         bannedAt: true,
+        language: {
+          select: { isoCode: true, active: true },
+        },
         emailVerifiedAt: true,
         birthDate: true,
       },
@@ -186,6 +189,9 @@ export class AuthService {
       displayName: user.displayName ?? user.username,
       sessionId: payload.sid,
       role: user.role,
+      languageIsoCode: user.language?.active
+        ? user.language.isoCode
+        : undefined,
       bannedAt: user.bannedAt,
       capabilities: capabilitiesFor({
         emailVerifiedAt: user.emailVerifiedAt,

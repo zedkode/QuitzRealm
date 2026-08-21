@@ -75,6 +75,7 @@ model Language {
 
   defaultForCountries Country[]
   translations        Translation[]
+  users               User[]
 
   @@map("languages")
 }
@@ -108,60 +109,66 @@ model Country {
   active            Boolean @default(true)
 
   defaultLanguage Language @relation(fields: [defaultLanguageId], references: [id], onDelete: Restrict)
+  users           User[]
 
   @@index([defaultLanguageId, active])
   @@map("countries")
 }
 
 model User {
-  id                          String    @id @default(uuid()) @db.Uuid
+  id                           String    @id @default(uuid()) @db.Uuid
   /// Handle unic, folosit la identificare. Se schimbă rar (vezi cooldown).
-  username                    String    @unique @db.VarChar(32)
-  role                        AdminRole @default(USER)
+  username                     String    @unique @db.VarChar(32)
+  role                         AdminRole @default(USER)
   /// Numele afișat în joc și chat; se schimbă liber. Când lipsește, se
   /// afișează `username`.
-  displayName                 String?   @map("display_name") @db.VarChar(32)
-  usernameChangedAt           DateTime? @map("username_changed_at")
-  email                       String    @unique @db.VarChar(320)
-  emailVerifiedAt             DateTime? @map("email_verified_at")
+  displayName                  String?   @map("display_name") @db.VarChar(32)
+  usernameChangedAt            DateTime? @map("username_changed_at")
+  email                        String    @unique @db.VarChar(320)
+  emailVerifiedAt              DateTime? @map("email_verified_at")
   /// Doar data, fără oră: e suficientă pentru age gate și e mai puțin
   /// identificatoare decât un timestamp complet.
-  birthDate                   DateTime? @map("birth_date") @db.Date
-  passwordHash                String?   @map("password_hash")
-  googleId                    String?   @unique @map("google_id")
+  birthDate                    DateTime? @map("birth_date") @db.Date
+  passwordHash                 String?   @map("password_hash")
+  googleId                     String?   @unique @map("google_id")
   /// Secret TOTP criptat AES-GCM; nu este niciodată expus după activare.
-  twoFactorSecret             String?   @map("two_factor_secret") @db.Text
-  twoFactorEnabledAt          DateTime? @map("two_factor_enabled_at")
+  twoFactorSecret              String?   @map("two_factor_secret") @db.Text
+  twoFactorEnabledAt           DateTime? @map("two_factor_enabled_at")
   /// Coduri de recuperare păstrate doar ca hash-uri Argon2.
-  twoFactorRecoveryCodes      Json?     @map("two_factor_recovery_codes")
+  twoFactorRecoveryCodes       Json?     @map("two_factor_recovery_codes")
   /// Țara declarată (ISO-3166 alpha-2), pentru clasamentele naționale din
   /// `owner-plan.md` §10.4. Se schimbă rar — vezi `regionChangedAt`.
-  countryCode                 String?   @map("country_code") @db.VarChar(2)
-  /// Ultima schimbare de țară. Cooldown-ul din §10.2 împiedică folosirea ei ca
-  /// să „cumperi” un clasament mai ușor prin schimbări repetate.
-  regionChangedAt             DateTime? @map("region_changed_at")
-  createdAt                   DateTime  @default(now()) @map("created_at")
-  eloRating                   Int       @default(1000) @map("elo_rating")
-  xp                          Int       @default(0)
-  level                       Int       @default(1)
-  coins                       Int       @default(0)
+  countryCode                  String?   @map("country_code") @db.VarChar(2)
+  /// Limba aleasă explicit pentru întrebări, chat și pool-ul competitiv.
+  languageId                   String?   @map("language_id") @db.Uuid
+  /// Ultima schimbare a perechii țară + limbă. Cooldown-ul din §10.2
+  /// împiedică alegerea repetată a unui pool competitiv mai ușor.
+  regionChangedAt              DateTime? @map("region_changed_at")
+  /// Semnal persistent consumat de SRV-045: rangul din vechiul pool nu se
+  /// transferă 1:1 după o schimbare de țară sau limbă.
+  rankRecalibrationRequestedAt DateTime? @map("rank_recalibration_requested_at")
+  createdAt                    DateTime  @default(now()) @map("created_at")
+  eloRating                    Int       @default(1000) @map("elo_rating")
+  xp                           Int       @default(0)
+  level                        Int       @default(1)
+  coins                        Int       @default(0)
   /// Moneda premium. Se obține **doar** cumpărând-o cu bani reali; se cheltuie
   /// pe obiecte din magazin. Ținută separat de `coins` (câștigați în joc) ca o
   /// eroare de recompensă să nu poată produce niciodată valoare plătită.
-  gems                        Int       @default(0)
+  gems                         Int       @default(0)
   /// Raspunsuri corecte cumulate. Sursa treptei de incredere din 2.5.
   /// Denormalizat intentionat: altfel fiecare mesaj de chat ar cere un COUNT
   /// peste `match_events`.
-  correctAnswers              Int       @default(0) @map("correct_answers")
+  correctAnswers               Int       @default(0) @map("correct_answers")
   /// Mut temporar la chat, pus automat de detectia de spam sau manual de
   /// moderare. `null` = fara restrictie.
-  chatMutedUntil              DateTime? @map("chat_muted_until")
+  chatMutedUntil               DateTime? @map("chat_muted_until")
   /// Shadow-ban limitat la chatul global: expeditorul își vede mesajele, dar
   /// acestea nu sunt livrate celorlalți jucători. Este rezervat recidivei,
   /// după review de moderare; nu afectează conversațiile cu prietenii/DM.
-  globalChatShadowBannedUntil DateTime? @map("global_chat_shadow_banned_until")
+  globalChatShadowBannedUntil  DateTime? @map("global_chat_shadow_banned_until")
   /// Ban la nivel de cont; null înseamnă că accesul nu este blocat.
-  bannedAt                    DateTime? @map("banned_at")
+  bannedAt                     DateTime? @map("banned_at")
 
   createdQuestions    Question[]                @relation("QuestionCreator")
   reviewedQuestions   Question[]                @relation("QuestionReviewer")
@@ -195,7 +202,11 @@ model User {
   adminActions        AdminAuditLog[]           @relation("AuditActor")
   adminActionsAgainst AdminAuditLog[]           @relation("AuditTargetUser")
   translationsUpdated Translation[]             @relation("TranslationUpdater")
+  country             Country?                  @relation(fields: [countryCode], references: [isoAlpha2], onDelete: Restrict)
+  language            Language?                 @relation(fields: [languageId], references: [id], onDelete: Restrict)
 
+  @@index([countryCode])
+  @@index([languageId])
   @@map("users")
 }
 

@@ -59,5 +59,19 @@ export async function syncReferenceData(
 export async function seedReferenceData(
   prisma: PrismaClient,
 ): Promise<ReferenceDataSeedResult> {
-  return prisma.$transaction(syncReferenceData);
+  return prisma.$transaction(async (transaction) => {
+    const result = await syncReferenceData(transaction);
+
+    // SRV-002 creează cheile ca `NOT VALID`, astfel încât o migrare peste date
+    // legacy să poată rula înaintea seed-ului. După ce catalogul este complet,
+    // validarea e fail-closed: un cod vechi invalid trebuie reparat explicit,
+    // nu reasignat tăcut unei țări sau limbi presupuse.
+    await transaction.$executeRaw(
+      Prisma.sql`ALTER TABLE "users" VALIDATE CONSTRAINT "users_country_code_fkey"`,
+    );
+    await transaction.$executeRaw(
+      Prisma.sql`ALTER TABLE "users" VALIDATE CONSTRAINT "users_language_id_fkey"`,
+    );
+    return result;
+  });
 }
