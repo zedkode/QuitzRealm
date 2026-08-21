@@ -27,12 +27,12 @@ va trebui migrat după.
 - **Depinde de:** —
 
 #### SRV-002 · Limba și țara pe cont, cu cooldown
-- **Status:** 🟡 Parțial
+- **Status:** 🟡 Parțial — implementat și verificat local; aplicarea controlată în producție este amânată la cererea proprietarului, iar semnalul persistent de recalibrare va fi consumat de SRV-045 când acel sistem devine deblocat.
 - **Descriere:** Fiecare cont are o țară (identitate de clasament) și o limbă (bancă de întrebări și cameră de chat), două alegeri distincte, schimbabile rar.
 - **Implementare corectă:** `users.country_code` și `users.region_changed_at` există deja. Lipsesc `users.language_id`, legătura către `countries`, și aplicarea cooldown-ului de 60–90 de zile la schimbare. Alegerea se confirmă explicit de jucător la onboarding — sugerată din locale-ul dispozitivului sau IP, **niciodată impusă tăcut**. La schimbarea care afectează clasamentul se declanșează recalibrarea din SRV-045, nu transfer 1:1 al rangului.
 - **Finalizat:** —
 - **Sursă:** `owner-plan.md` §10.1–§10.2 (de la linia 462)
-- **Commit:** —
+- **Commit:** `dac4eec`
 - **Depinde de:** SRV-001
 
 #### SRV-003 · Catalogul de traduceri, în baza de date

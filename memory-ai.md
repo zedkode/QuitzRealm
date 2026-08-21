@@ -1308,3 +1308,58 @@ major neverificat.
 `SRV-002` exclusiv local — `language_id` și legătura țării pe cont, alegerea
 explicită și cooldown-ul regional. Producția și tunelurile rămân amânate până
 la instrucțiunea expresă a proprietarului.
+
+
+## 2026-08-21 · 22:52 — Codex — SRV-002, țara și limba pe cont
+
+### Obiectiv
+
+Completarea identității regionale a contului cu două alegeri distincte și
+confirmate explicit: țara pentru identitatea regională și limba pentru banca de
+întrebări, chat și pool-ul competitiv. Ambele folosesc un cooldown comun de 90
+de zile, impus exclusiv de server.
+
+### Fișiere schimbate
+
+- `backend/api/prisma/schema.prisma` și migrarea
+  `20260821225500_user_region_language` — `users.language_id`, relații reale
+  către `languages` și `countries`, indecși și semnalul persistent
+  `rank_recalibration_requested_at` pentru integrarea ulterioară cu SRV-045.
+- `backend/api/src/profile/` — catalog de opțiuni bazat pe date active, sugestii
+  fără scriere automată, confirmarea obligatorie a perechii țară + limbă,
+  cooldown tranzacțional și răspuns cu pool global sau de țară.
+- `backend/api/src/auth/auth.service.ts` — preferința activă a contului alimentează
+  `languageIsoCode`, seam-ul de localizare creat în SRV-004.
+- `backend/api/src/reference-data/reference-data.seed.ts` și catalogul de
+  traduceri — validarea fail-closed a cheilor străine după seed și erorile noi
+  în română și engleză.
+- `backend/api/package.json` și lockfile — versiunea API ridicată la `1.4.0`.
+
+### Verificări efectuate
+
+- Testele focalizate au pornit cu 6 eșecuri înaintea implementării și au ajuns
+  la 9/9 pentru selecție, sugestie fără atribuire, concurență/cooldown,
+  idempotentă, pool global, recalibrare și preferința de localizare.
+- `npx tsc --noEmit` și `npx jest --runInBand` — 27 suite și 168 teste trec.
+- Migrarea 19 s-a aplicat pe PostgreSQL local; ambele chei străine sunt
+  validate, iar coloanele noi au tipurile așteptate.
+- Seed-ul local păstrează 2 limbi și 249 de țări; prima rulare a adăugat cele 4
+  traduceri noi, iar repetarea a inserat 0 rânduri.
+- Imaginea Docker API `1.4.0` s-a compilat real, containerul local este healthy,
+  `/health` răspunde `database: up`, iar Nest a mapat rutele de citire și scriere.
+- `node scripts/check-versions.mjs`, testele de stil pentru fișierele noi și
+  `git diff --check` trec. Auditul npm rămâne blocajul Prisma deja documentat în
+  `QA-009`; nu s-a aplicat downgrade-ul sugerat de `--force`.
+
+### Rezultat și blocaje
+
+Implementarea `SRV-002` este completă local în commitul `dac4eec`. Schimbarea
+unui pool competitiv marchează persistent cererea de recalibrare, fără a reseta
+acum ELO-ul legacy și fără a implementa prematur SRV-045, care este încă blocat
+de dependențele sale. Nu s-a atins VPS-ul, Raspberry Pi, Cloudflare sau DNS.
+
+### Următorul pas
+
+`SRV-005` exclusiv local — migrarea băncii de întrebări la `language_id`,
+traducerea categoriilor și fallback-ul explicit către pool-ul global. Producția
+și tunelurile rămân amânate până la instrucțiunea expresă a proprietarului.
