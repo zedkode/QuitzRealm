@@ -67,7 +67,7 @@ orice tabel de conținut creat înaintea ei va trebui migrat după. **Lanțul t�
 
 | Task | Ce e | Stare |
 |---|---|---|
-| `SRV-001` | Tabelele `languages` și `countries`, cu seed idempotent | ⬜ |
+| ~~`SRV-001`~~ | Tabelele `languages` și `countries` | ✅ livrat de Codex, 21.08 |
 | `SRV-003` | Catalogul de traduceri în baza de date (`translations`) | ⬜ |
 | `SRV-004` | Contractul de răspuns localizat — interceptor + erori ca `{ code, messageKey, params }` | ⬜ |
 | `SRV-002` | Limba și țara pe cont, cu cooldown de 60–90 zile | 🟡 |
@@ -166,5 +166,5 @@ proiecte**. Limitează orice operație la stiva
 - Dacă un task pare să contrazică `plan.md`, **nu improviza**: semnalează
   conflictul și propune fie ajustarea planului, fie a task-ului.
 
-Începe cu `SRV-001`. Confirmă-mi întâi ce ai înțeles că trebuie făcut și cum
+Începe cu `SRV-003`. Confirmă-mi întâi ce ai înțeles că trebuie făcut și cum
 plănuiești să verifici, apoi scrie cod.

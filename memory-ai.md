@@ -1048,3 +1048,100 @@ Nu există blocaj de cod. Conform definiției statusurilor, SRV-001 rămâne
 `🟡 Parțial` până când migrarea și seed-ul sunt aplicate controlat în producție;
 VPS-ul nu a fost atins în această sesiune. După deploy și verificarea numărului
 de rânduri, task-ul poate deveni `✅`, apoi lanțul continuă cu `SRV-003`.
+
+
+## 2026-08-21 — Claude — Restructurare, registre de task-uri, mediu local
+
+### Obiectiv
+
+Reorganizarea proiectului pe componente separate, transformarea planului într-un
+registru de execuție folosibil de mai mulți agenți, și construirea unui mediu de
+dezvoltare local ca migrările să nu mai fie probate pe producție.
+
+### Ce s-a schimbat structural — de citit înainte de orice task
+
+- **Panoul de administrare a ieșit din `web/`** într-un pachet propriu, `admin/`.
+  Servit sub `/admin` din același proces Express, dar cu bundle separat: până
+  acum fiecare vizitator al paginii de start descărca 338 kB de panou. Bundle-ul
+  public a scăzut de la 525 la 388 kB JS.
+- **`shared/`** e nou: clientul HTTP, sesiunea și tipurile comune celor două
+  aplicații web. Ce folosește una singură rămâne la ea.
+- **Workspace pnpm la rădăcină** (`shared`, `web`, `admin`). Imaginea web se
+  construiește din rădăcina depozitului, nu din `web/`.
+- `backend/` și `mobile/` au rămas cu numele lor: conțineau deja doar ce le
+  aparține, iar redenumirea ar fi atins pipeline-ul de release fără câștig.
+
+### Reguli noi, obligatorii
+
+- **Se lucrează numai din `ai/tasks/`** — douăsprezece registre, 402 task-uri.
+  Niciun cod fără ID de task; niciun task închis fără dată și hash de commit
+  completate în registru. `agents.md` §1.1 și `init.md`, Regula zero.
+- **Versionare** pe fiecare componentă livrabilă, verificată de
+  `scripts/check-versions.mjs`, care rulează în CI înainte de orice build.
+- **Dependențe**: ultima versiune stabilă, verificată cu o compilare reală.
+  Excepțiile trăiesc în `scripts/dependency-pins.json` cu motiv și dată de
+  revizuire; `scripts/check-updates.mjs` raportează ce a rămas în urmă și
+  semnalează pin-urile expirate. `agents.md` §5.
+- **`minimumReleaseAge`** a trecut de la 0 la trei zile. Lockfile-ul conținea
+  șapte pachete publicate în ultimele trei zile, unul de ieri — protecția pnpm
+  împotriva compromiterilor de lanț de aprovizionare era complet dezactivată.
+
+### Blocaj de dependință, de respectat
+
+**TypeScript rămâne pe 5.x pe cele două servere.** TS7 a eliminat `baseUrl`, iar
+fără el `@types/jest` nu mai e descoperit: toate suitele API cad. Nici `typeRoots`
+explicit nu repară. Pachetele frontend sunt deja pe 7.0.2 pentru că folosesc
+vitest — blocajul e al jest-ului. Detalii și dată de revizuire în
+`scripts/dependency-pins.json`. **Nu-l urca.**
+
+### Mediu local (INF-005, închis)
+
+Stiva completă rulează pe mașina proprie. Două moduri, din același
+`infra/docker-compose.yml`:
+
+- implicit — servicii cu stare în Docker, aplicații native (`pnpm dev:data`,
+  `pnpm dev:migrate`, apoi `dev:api` / `dev:realtime` / `dev:web` / `dev:admin`);
+- `pnpm dev:full` — tot în Docker, cu imaginea care ajunge pe VPS.
+
+Cele două moduri **nu pot rula simultan** — aceleași porturi. Procedura completă
+în `docs/dev-local.md`. Migrările se probează local, niciodată pe producție.
+
+Două capcane găsite pornindu-l: API-ul nu pornește fără `GOOGLE_CLIENT_ID`
+(strategia Google se construiește la pornire și o cere prin `getOrThrow`);
+compose-ul local trimite valori de rezervă, iar reparația reală e înregistrată ca
+**INF-019**. Și `dev:migrate` reconstruiește acum imaginea înainte de rulare —
+fără asta, o migrare adusă cu `git pull` nu ajunge în container și pare deja
+aplicată.
+
+### Curățenie de documente
+
+Șterse ca depășite: `audit.md`, `passed.md`, `CLAUDE_HANDOFF.md` și
+`docs/features-social-progression.md` (o versiune mai veche și mai scurtă a lui
+`owner-plan.md`, cu același titlu). Mutate în `docs/archive/`: analizele datate
+încă citate ca sursă de task-uri. `plan.md`, `owner-plan.md`, `init.md` și
+`agents.md` rămân normative.
+
+### Verificări efectuate
+
+- `pnpm -r check` — cele trei pachete frontend trec.
+- Build web și admin; serverul de producție servește `/` și `/admin/` cu căile
+  de assets corecte.
+- API: 137 teste trec (inclusiv cele trei adăugate de Codex la SRV-001).
+  Realtime: 65 teste.
+- Migrarea SRV-001 e aplicată pe baza locală: `languages` are 2 rânduri,
+  `countries` 249.
+- VPS reconstruit și verificat: cele cinci containere healthy, `/`, `/admin/` și
+  `/health` răspund 200.
+
+### Blocaje
+
+- **Decizia D1** din `ai/taskmaster.md` e deschisă din 16 august și blochează
+  patru task-uri de aplicație: campania secvențială din `mobile/` contrazice
+  `owner-plan.md` §7.3. Nu se ia de un agent.
+- D2, D3 și D4 blochează tot blocul de campanie (`SRV-027`, `SRV-029`, `SRV-032`).
+
+### Următorul pas
+
+`SRV-003` — catalogul de traduceri în baza de date, apoi `SRV-004`, `SRV-002`,
+`SRV-005`. `SRV-021` împreună cu `DATA-005` se pot face în paralel și sunt
+urgente: o zi netrecută prin agregare e pierdută definitiv.
