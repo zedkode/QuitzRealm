@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Ban, Check } from "lucide-react";
-import { quizRealmApi } from "@/lib/quizrealm";
+import { adminApi } from "@/lib/api";
 import AdminPage, { AdminNotice, usePanelAction } from "./AdminPage";
 
 interface PendingQuestion {
@@ -24,7 +24,7 @@ export default function QuestionReviewPage() {
   const { notice, run, clearNotice } = usePanelAction();
 
   const load = useCallback(() => {
-    Promise.all([quizRealmApi.adminQuestions("PENDING"), quizRealmApi.adminQuestionStats()])
+    Promise.all([adminApi.questions("PENDING"), adminApi.questionStats()])
       .then(([rows, catalog]) => {
         setQuestions(Array.isArray(rows) ? (rows as PendingQuestion[]) : []);
         setStats((catalog ?? {}) as CatalogStats);
@@ -57,13 +57,13 @@ export default function QuestionReviewPage() {
             <span className="min-w-[220px] flex-1 text-[11.5px] leading-5 text-[#ded6f0]">{question.text}</span>
             <span className="flex shrink-0 gap-1.5">
               <button
-                onClick={() => run("Întrebare aprobată", () => quizRealmApi.adminReviewQuestion(question.id, "APPROVED"), load)}
+                onClick={() => run("Întrebare aprobată", () => adminApi.reviewQuestion(question.id, "APPROVED"), load)}
                 className="flex items-center gap-1 rounded-md border border-[#34d399]/30 px-2.5 py-1 text-[10px] text-[#6ee7b7] hover:border-[#34d399]/60"
               >
                 <Check size={11} /> Aprobă
               </button>
               <button
-                onClick={() => run("Întrebare respinsă", () => quizRealmApi.adminReviewQuestion(question.id, "REJECTED"), load)}
+                onClick={() => run("Întrebare respinsă", () => adminApi.reviewQuestion(question.id, "REJECTED"), load)}
                 className="flex items-center gap-1 rounded-md border border-[#f87171]/30 px-2.5 py-1 text-[10px] text-[#fca5a5] hover:border-[#f87171]/60"
               >
                 <Ban size={11} /> Respinge

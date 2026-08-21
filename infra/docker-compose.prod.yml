@@ -124,7 +124,10 @@ services:
   # publice, deci URL-urile intră în bundle la build.
   web:
     build:
-      context: ../web
+      # Contextul e rădăcina depozitului: imaginea construiește workspace-ul
+      # (shared + web + admin) și servește ambele aplicații dintr-un proces.
+      context: ..
+      dockerfile: web/Dockerfile
       args:
         VITE_QUIZREALM_API_URL: ${WEB_API_URL:-https://quizrealmapi.dohotstudio.com}
         VITE_QUIZREALM_SOCKET_URL: ${WEB_SOCKET_URL:-https://quizrealmws.dohotstudio.com}

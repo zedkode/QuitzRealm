@@ -210,7 +210,7 @@ rangul următor și primește ceva pentru că s-a întors.
 
 ## Faza 5 — Panoul de admin, complet · săptămânile 13–21, în paralel
 
-**Depinde de:** Fazele 0, 4. **Atinge:** `web/client/src/admin`. **Referință:** `ai/needdesign.md`.
+**Depinde de:** Fazele 0, 4. **Atinge:** `admin/src`. **Referință:** `ai/needdesign.md`.
 
 - [ ] Modelul `Sanction` — motiv, durată, cine a ridicat-o, legătură cu contestația. Azi există un
       singur câmp, `users.banned_at`: un ban și o suspendare sunt același lucru.

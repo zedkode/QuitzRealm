@@ -1,0 +1,13 @@
+# Monorepo-ul frontend. Fiecare pachet conține doar ce îi trebuie lui:
+#   shared/ — contractul cu serverul, folosit de amândouă
+#   web/    — site public + zona de joc
+#   admin/  — panoul de administrare
+packages:
+  - 'shared'
+  - 'web'
+  - 'admin'
+allowBuilds:
+  esbuild: true
+minimumReleaseAge: 0
+overrides:
+  'tailwindcss>nanoid': 3.3.7

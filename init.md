@@ -4,6 +4,20 @@
 
 ---
 
+## Regula zero — de unde se lucrează
+
+**Singura listă validă de lucru din proiect e `ai/tasks/`.** Douăsprezece
+registre acoperă serverul core, panoul de administrare, platforma web,
+aplicația, plus disciplinele care nu sunt cod: design de joc, conținut, artă și
+sunet, creștere, infrastructură, legal, calitate, analiză.
+
+Niciun agent nu scrie cod pentru ceva ce nu are ID de task într-un registru.
+Niciun task nu se închide fără dată și hash de commit completate acolo.
+Fișierul de față descrie **cum e organizat** proiectul; `ai/tasks/` descrie **ce
+se construiește**. Nu confunda cele două.
+
+---
+
 ## Pas 0 — Prerechizite de mediu
 
 Verifică/instalează (nu presupune că există deja):
@@ -17,26 +31,66 @@ Verifică/instalează (nu presupune că există deja):
 
 ## Pas 1 — Structura monorepo
 
-Creează structura de directoare exact așa:
+> **Actualizat 21 august 2026.** Panoul de administrare a fost scos din `web/`
+> într-un pachet propriu, iar contractul comun cu serverul a fost extras în
+> `shared/`. Structura de mai jos e cea curentă și e **obligatorie** — vezi
+> `agents.md` §3 pentru regula completă.
+
+Regula: **o componentă livrabilă = un folder, care conține tot ce îi trebuie ei
+și nimic ce aparține alteia.**
 
 ```
 quizrealm/
-├── plan.md
-├── init.md
-├── agents.md
-├── mobile/                  # aplicația Flutter
-├── backend/
-│   ├── api/                 # NestJS REST API
-│   ├── realtime/            # serviciu Socket.IO pentru partide live
-│   └── workers/             # job-uri (generare AI întrebări, moderare, leaderboard)
-├── infra/
-│   ├── docker-compose.yml
-│   └── migrations/
+├── ai/
+│   ├── tasks/               # ⚠️ SINGURA listă validă de lucru (12 registre)
+│   ├── taskmaster.md        # faze, cronologie, decizii blocante
+│   └── needdesign.md        # lipsuri cunoscute din panou
+├── plan.md                  # viziune + arhitectură (sursă de design)
+├── owner-plan.md            # sisteme sociale, ranguri, turnee, i18n, mecanici unice
+├── init.md                  # acest fișier — structură + bootstrap
+├── agents.md                # reguli obligatorii pentru agenți
+├── package.json             # rădăcina workspace-ului pnpm (shared + web + admin)
+├── pnpm-workspace.yaml
+├── scripts/
+│   └── check-versions.mjs   # verifică regula de versionare, rulează în CI
+│
+├── backend/                 # SERVER CORE — singura sursă de adevăr
+│   ├── api/                 # NestJS REST + Prisma + toate regulile de joc
+│   ├── realtime/            # Socket.IO, motorul de partidă, matchmaking
+│   └── workers/             # job-uri programate
+│
+├── shared/                  # contractul frontend: client HTTP, sesiune, tipuri comune
+├── web/                     # SITE PUBLIC + ZONA DE JOC (fără nimic de admin)
+├── admin/                   # PANOUL DE ADMINISTRARE (aplicație separată, servită la /admin)
+├── mobile/                  # APLICAȚIA FLUTTER
+│
+├── infra/                   # compose de producție, tunel, variabile de exemplu
+├── design-reference/        # capturi aprobate de design
 └── docs/
-    └── adr/                 # Architecture Decision Records, unul per decizie majoră
+    ├── adr/                 # Architecture Decision Records
+    ├── archive/             # analize datate, păstrate ca dovadă
+    ├── design-system.md     # tokeni vizuali (sursă de design)
+    └── deploy-vps.md        # procedura de implementare
 ```
 
-Mută `plan.md`, `init.md`, `agents.md` în rădăcina repo-ului dacă nu sunt deja acolo.
+**Ce nu are voie să se amestece:**
+
+- `admin/` nu importă din `web/` și invers. Ce e cu adevărat comun urcă în `shared/`.
+- `shared/` conține doar ce folosesc *amândouă*. Un tip al unuia singur rămâne la el.
+- `web/`, `admin/` și `mobile/` nu conțin logică de joc, economie sau progres —
+  aceea trăiește exclusiv în `backend/`.
+- O reorganizare a structurii cere un ADR care o justifică.
+
+---
+
+## Pas 1b — Versionare obligatorie
+
+Fiecare componentă livrabilă are număr de versiune propriu, semantic:
+`backend/api`, `backend/realtime`, `shared/`, `web/`, `admin/` în `package.json`;
+`mobile/` în `pubspec.yaml`.
+
+`node scripts/check-versions.mjs` verifică regula și oprește build-ul dacă o
+componentă n-are versiune sau are una invalidă. Detalii în `agents.md` §4.
 
 ---
 

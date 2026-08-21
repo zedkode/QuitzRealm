@@ -1,0 +1,15 @@
+{
+  "name": "quizrealm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "check": "pnpm -r check",
+    "test": "pnpm -r test",
+    "dev:web": "pnpm --filter @quizrealm/web dev",
+    "dev:admin": "pnpm --filter @quizrealm/admin dev",
+    "versions": "node scripts/check-versions.mjs"
+  },
+  "packageManager": "pnpm@11.2.0"
+}

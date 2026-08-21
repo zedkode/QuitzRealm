@@ -10,7 +10,7 @@ export default function AdminPage({ group, title, subtitle, actions, children }:
       <header className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
           <div className="text-[9.5px] font-bold uppercase tracking-[.16em] text-[var(--admin-dim)]">{group}</div>
-          <h1 className="mt-1.5 font-display text-[26px] leading-none text-[#efe7ff]">{title}</h1>
+          <h1 className="mt-1.5 text-[23px] font-extrabold leading-none tracking-tight text-[#e8c56a]">{title}</h1>
           {subtitle && <p className="mt-1.5 text-[11.5px] text-[var(--admin-muted)]">{subtitle}</p>}
         </div>
         {actions}

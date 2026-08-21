@@ -1,6 +1,6 @@
 {
-  "name": "realtime",
-  "version": "0.0.1",
+  "name": "@quizrealm/server-core-realtime",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "private": true,

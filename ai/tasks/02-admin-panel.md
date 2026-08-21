@@ -1,6 +1,6 @@
 # Panoul de administrare — registru de task-uri
 
-**Componentă:** `web/client/src/admin` peste endpointurile `/admin/*` din `backend/api`.
+**Componentă:** `admin/src` peste endpointurile `/admin/*` din `backend/api`.
 **Prefix ID:** `ADM-`
 **Convenții:** [`00-README.md`](00-README.md)
 
@@ -20,7 +20,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Bara laterală cu toate cele 23 de secțiuni, bara de sus, cadru propriu separat de site-ul public.
 - **Implementare corectă:** Secțiuni pliabile cu starea în `localStorage`; secțiunea paginii curente se deschide singură fără să șteargă alegerile manuale. Bara laterală și conținutul derulează independent — cu o singură bară de derulare, meniul dispare exact când îl cauți.
 - **Finalizat:** 2026-08-17 · 01:15
-- **Sursă:** `web/client/src/admin/AdminShell.tsx`
+- **Sursă:** `admin/src/AdminShell.tsx`
 - **Commit:** `9eefa43`
 - **Depinde de:** SRV-014
 
@@ -38,14 +38,14 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Vederea de ansamblu: jucători, conținut, economie, campanii, sănătatea sistemului.
 - **Implementare corectă:** Șase indicatori cu sparkline, creșterea pe 30 de zile, coada de revizuire, harta campaniei, venit, economia de monede, alerte de moderare, sănătatea serviciilor, activitate recentă, acțiuni rapide. Panourile fără sursă de date întorc motivul, nu zero.
 - **Finalizat:** 2026-08-17 · 00:45
-- **Sursă:** `web/client/src/admin/Dashboard.tsx`
+- **Sursă:** `admin/src/Dashboard.tsx`
 - **Commit:** `badf918`
 - **Depinde de:** SRV-021
 
 #### ADM-004 · Panoul, în mai multe limbi
 - **Status:** ⬜ De făcut
 - **Descriere:** Panoul are azi cadrul în engleză și explicațiile în română, amestecate. Trebuie să treacă prin același sistem de traduceri ca restul produsului.
-- **Implementare corectă:** Toate șirurile din `web/client/src/admin` mută în fișiere de traducere, cu aceleași chei ca web-ul public unde textul e comun. Comutator de limbă în bara de sus, cu preferința salvată pe cont. Fără șiruri hardcodate — un administrator care nu vorbește româna trebuie să poată opera panoul.
+- **Implementare corectă:** Toate șirurile din `admin/src` mută în fișiere de traducere, cu aceleași chei ca web-ul public unde textul e comun. Comutator de limbă în bara de sus, cu preferința salvată pe cont. Fără șiruri hardcodate — un administrator care nu vorbește româna trebuie să poată opera panoul.
 - **Finalizat:** —
 - **Sursă:** `00-README.md`, regula 1
 - **Commit:** —
@@ -56,7 +56,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Câmpul de căutare din bara de sus arată bine dar nu caută nimic.
 - **Implementare corectă:** Un endpoint unic care caută simultan în conturi, întrebări, meciuri și tranzacții, cu rezultate grupate pe tip și navigare de la tastatură. `Ctrl K` duce deja focusul în câmp; lipsește partea care caută.
 - **Finalizat:** —
-- **Sursă:** `web/client/src/admin/AdminShell.tsx`
+- **Sursă:** `admin/src/AdminShell.tsx`
 - **Commit:** —
 - **Depinde de:** SRV-085
 
@@ -65,7 +65,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Fiecare rută din meniu duce undeva care spune ce va face ecranul și ce lipsește ca să existe.
 - **Implementare corectă:** Descriere, listă de capabilități, stadiu (Funcțional, Parțial, Backend gata, Planificat) și blocajul explicit. Un link care duce undeva unde scrie ce urmează e mai util decât unul care duce nicăieri.
 - **Finalizat:** 2026-08-17 · 00:50
-- **Sursă:** `web/client/src/admin/PlaceholderPage.tsx`
+- **Sursă:** `admin/src/PlaceholderPage.tsx`
 - **Commit:** `badf918`
 - **Depinde de:** ADM-001
 
@@ -78,7 +78,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Registrul de conturi cu filtre, sortare, paginare și acțiuni de disciplină.
 - **Implementare corectă:** Listarea e în SQL parametrizat, cu `LEFT JOIN LATERAL` peste sesiuni: prezența nu e o coloană, iar un control de sortare care afișează „Last Online" dar ordonează după altceva e mai rău decât unul absent. Coloana de acțiuni rămâne lipită la dreapta.
 - **Finalizat:** 2026-08-17 · 01:15
-- **Sursă:** `web/client/src/admin/pages/PlayersPage.tsx`
+- **Sursă:** `admin/src/pages/PlayersPage.tsx`
 - **Commit:** `9eefa43`
 - **Depinde de:** SRV-010
 
@@ -87,7 +87,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Identitate, țară, rol, stare, scor de încredere, dispozitive, progres.
 - **Implementare corectă:** Scorul de încredere afișează baza de calcul la hover — un indicator compus fără explicație e o cifră în care nu poți avea încredere. Dezvăluirea e-mailului e o acțiune separată, consemnată în audit.
 - **Finalizat:** 2026-08-17 · 01:15
-- **Sursă:** `web/client/src/admin/components/PlayerDetailPanel.tsx`
+- **Sursă:** `admin/src/components/PlayerDetailPanel.tsx`
 - **Commit:** `9eefa43`
 - **Depinde de:** ADM-007
 
@@ -105,7 +105,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Cine e administrator, moderator, editor de conținut sau suport, și ce deschide fiecare rol.
 - **Implementare corectă:** Atribuirea rolului, restrânsă la `ADMIN`, cu audit obligatoriu. Un administrator **nu-și poate retrage propriul rol** — s-ar bloca afară din panou. Matricea rol × rută se generează din metadatele `@AdminRoles` prin `DiscoveryService`, nu se scrie de mână: o matrice scrisă manual se dezacordă de gardă la prima rută nouă. Verificare automată că nicio rută `/admin/*` nu rămâne fără gardă.
 - **Finalizat:** —
-- **Sursă:** `web/client/src/admin/navigation.ts`, secțiunea System
+- **Sursă:** `admin/src/navigation.ts`, secțiunea System
 - **Commit:** —
 - **Depinde de:** ADM-002
 
@@ -172,7 +172,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Întrebările trimise de jucători, în așteptarea deciziei.
 - **Implementare corectă:** Aprobare sau respingere cu efect imediat în joc, cu textul complet și variantele vizibile înainte de decizie.
 - **Finalizat:** 2026-08-16
-- **Sursă:** `web/client/src/admin/pages/QuestionReviewPage.tsx`
+- **Sursă:** `admin/src/pages/QuestionReviewPage.tsx`
 - **Commit:** `9763e54`
 - **Depinde de:** SRV-051
 
@@ -417,7 +417,7 @@ Lipsurile deja identificate, cu migrarea și endpointurile necesare, sunt în
 - **Descriere:** Mesajele raportate și decizia asupra lor.
 - **Implementare corectă:** Coadă cu prioritate, rezolvare cu motiv, mut temporar sau shadow-ban pentru autor.
 - **Finalizat:** 2026-08-16
-- **Sursă:** `web/client/src/admin/pages/ChatModerationPage.tsx`
+- **Sursă:** `admin/src/pages/ChatModerationPage.tsx`
 - **Commit:** `9763e54`
 - **Depinde de:** SRV-079
 

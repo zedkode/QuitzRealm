@@ -1,0 +1,14 @@
+# Contextul de build al imaginii web e rădăcina depozitului, ca să cuprindă
+# workspace-ul (shared + web + admin). Restul proiectului n-are ce căuta acolo.
+.git
+node_modules
+**/node_modules
+**/dist
+mobile
+backend
+design-reference
+docs
+ai
+infra
+*.md
+.github

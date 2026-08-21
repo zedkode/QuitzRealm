@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Flag } from "lucide-react";
-import { quizRealmApi } from "@/lib/quizrealm";
+import { adminApi } from "@/lib/api";
 import AdminPage, { AdminNotice, usePanelAction } from "./AdminPage";
 
 interface ChatReport {
@@ -18,8 +18,8 @@ export default function ChatModerationPage() {
   const { notice, run, clearNotice } = usePanelAction();
 
   const load = useCallback(() => {
-    quizRealmApi
-      .adminChatReports()
+    adminApi
+      .chatReports()
       .then((rows) => setReports(Array.isArray(rows) ? (rows as ChatReport[]) : []))
       .catch((cause) => setError(cause instanceof Error ? cause.message : "Rapoartele sunt indisponibile"));
   }, []);
@@ -52,20 +52,20 @@ export default function ChatModerationPage() {
             </span>
             <span className="flex gap-1.5">
               <button
-                onClick={() => run("Sesizare respinsă", () => quizRealmApi.adminResolveChatReport(report.id, "DISMISSED"), load)}
+                onClick={() => run("Sesizare respinsă", () => adminApi.resolveChatReport(report.id, "DISMISSED"), load)}
                 className="rounded-md border border-[var(--admin-line)] px-2.5 py-1 text-[10px] text-[var(--admin-muted)] hover:text-[#d6c8ff]"
               >
                 Respinge
               </button>
               <button
-                onClick={() => run("Jucător amuțit", () => quizRealmApi.adminResolveChatReport(report.id, "MUTED"), load)}
+                onClick={() => run("Jucător amuțit", () => adminApi.resolveChatReport(report.id, "MUTED"), load)}
                 className="rounded-md border border-[#e0ba58]/30 px-2.5 py-1 text-[10px] text-[#e8c877] hover:border-[#e0ba58]/60"
               >
                 Amuțește
               </button>
               {report.reportedUserId && (
                 <button
-                  onClick={() => run("Sigiliu de umbră aplicat", () => quizRealmApi.adminShadowBan(report.reportedUserId!, 60), load)}
+                  onClick={() => run("Sigiliu de umbră aplicat", () => adminApi.shadowBan(report.reportedUserId!, 60), load)}
                   className="rounded-md border border-[#7c5cff]/30 px-2.5 py-1 text-[10px] text-[#b9a3ff] hover:border-[#7c5cff]/60"
                 >
                   Shadow-ban

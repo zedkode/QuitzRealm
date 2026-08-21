@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { Bell, ChevronDown, ChevronRight, Mail, ScrollText, Search } from "lucide-react";
-import type { UserIdentity } from "@/lib/quizrealm";
+import type { UserIdentity } from "@quizrealm/shared";
 import {
   ADMIN_AREAS, DASHBOARD_ITEM, entryHref, sectionKeyForPath,
   type AdminNavSection,
@@ -191,6 +191,8 @@ function SidebarFooter() {
       <div className="text-[9px] text-[#57506b]">
         {now.toLocaleDateString("ro-RO", { day: "numeric", month: "short", year: "numeric" })}
       </div>
+
+      <div className="mt-2 font-mono text-[8.5px] text-[#4a4460]">v{__ADMIN_VERSION__}</div>
 
       <div className="mt-3 text-[7.5px] font-bold uppercase tracking-[.18em] text-[#57506b]">
         Admin Access

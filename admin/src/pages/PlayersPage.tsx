@@ -5,7 +5,7 @@ import {
   Loader2, MessageSquare, MoreVertical, RefreshCw, RotateCcw, Search, Shield,
   ShieldAlert, Sparkles, Star, Timer, TrendingUp, UserPlus, UserRound, Users, X,
 } from "lucide-react";
-import { quizRealmApi } from "@/lib/quizrealm";
+import { adminApi } from "@/lib/api";
 import {
   DEFAULT_FILTERS, activeFilterCount, filtersToQuery,
   type PlayerFilters, type PlayerPage, type PlayerRow, type PlayerStats,
@@ -52,7 +52,7 @@ export default function PlayersPage() {
   const loadList = useCallback(async () => {
     setLoading(true);
     try {
-      const result = await quizRealmApi.adminPlayers(filtersToQuery(filters)) as PlayerPage;
+      const result = await adminApi.players(filtersToQuery(filters)) as PlayerPage;
       setPage(result);
       setError(null);
       setLoadedAt(new Date());
@@ -68,7 +68,7 @@ export default function PlayersPage() {
 
   const loadStats = useCallback(async () => {
     try {
-      setStats(await quizRealmApi.adminPlayerStats() as PlayerStats);
+      setStats(await adminApi.playerStats() as PlayerStats);
     } catch {
       /* cifrele de sus sunt secundare: lista rămâne utilizabilă fără ele */
     }
@@ -97,7 +97,7 @@ export default function PlayersPage() {
     if (ids.length === 0) return;
     setBusy(true);
     try {
-      const result = await quizRealmApi.adminPlayersBulk(action, ids) as {
+      const result = await adminApi.playersBulk(action, ids) as {
         succeeded: number; requested: number; skippedSelf: number;
       };
       const extra = result.skippedSelf > 0 ? ` (propriul cont a fost sărit)` : "";
@@ -117,7 +117,7 @@ export default function PlayersPage() {
   const rowAction = async (id: string, action: string, label: string) => {
     setBusy(true);
     try {
-      await quizRealmApi.adminPlayersBulk(action, [id]);
+      await adminApi.playersBulk(action, [id]);
       setNotice({ text: label, tone: "ok" });
       await Promise.all([loadList(), loadStats()]);
     } catch (cause) {
@@ -134,7 +134,7 @@ export default function PlayersPage() {
     try {
       const rows = scope === "page"
         ? page?.rows ?? []
-        : ((await quizRealmApi.adminPlayers(
+        : ((await adminApi.players(
             filtersToQuery({ ...filters, page: 1, pageSize: 100 }),
           ) as PlayerPage).rows);
       downloadCsv(rows);

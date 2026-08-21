@@ -5,7 +5,7 @@ import {
   MessageSquare, RefreshCw, RotateCw, Send, ShieldAlert, ShoppingBag, Smartphone,
   Swords, Trophy, Users,
 } from "lucide-react";
-import { quizRealmApi } from "@/lib/quizrealm";
+import { adminApi } from "@/lib/api";
 import type { AdminOverview, DerivedPct, NotInstrumented } from "@/lib/adminTypes";
 import Sparkline from "./components/Sparkline";
 import GrowthChart from "./components/GrowthChart";
@@ -29,7 +29,7 @@ export default function AdminDashboard({ onModerationCount }: { onModerationCoun
   const load = useCallback(async () => {
     setRefreshing(true);
     try {
-      const overview = await quizRealmApi.adminOverview(30) as AdminOverview;
+      const overview = await adminApi.overview(30) as AdminOverview;
       setData(overview);
       setError(null);
       setLoadedAt(new Date());

@@ -53,12 +53,19 @@ Codul se urcă prin arhivă (serverul nu clonează din GitHub):
 cd d:/Projects/Games/QuizRealm
 tar czf - --exclude=node_modules --exclude=dist --exclude=build \
   --exclude=.manus-logs --exclude=.env \
-  backend/api backend/realtime infra web \
+  backend/api backend/realtime infra \
+  shared web admin package.json pnpm-workspace.yaml pnpm-lock.yaml .npmrc .dockerignore \
   | ssh -i ~/.ssh/quizrealm_vps_ed25519 root@144.91.81.81 'tar xzf - -C /opt/quizrealm'
 ```
 
 `--exclude=.env` protejează `infra/.env.prod` de pe server; arhiva nu trebuie
 să conțină niciodată fișiere de mediu locale.
+
+Din 21 august 2026 imaginea web se construiește din **rădăcina** depozitului,
+nu din `web/`: workspace-ul cuprinde `shared/`, `web/` și `admin/`, iar panoul
+se servește sub `/admin` din același proces. De aceea arhiva trebuie să conțină
+și manifestele de la rădăcină — fără ele, `pnpm install` din Dockerfile nu
+găsește workspace-ul și build-ul cade.
 
 Legătura SSH pică intermitent; rulează comenzile printr-un wrapper cu
 reîncercare dacă dai peste `Connection timed out`.

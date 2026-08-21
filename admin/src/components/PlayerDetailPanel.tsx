@@ -3,7 +3,7 @@ import {
   BadgeCheck, ChevronRight, Eye, EyeOff, Gavel, Globe, Loader2, MessageSquare,
   MonitorSmartphone, ShieldCheck, StickyNote, UserRound, X,
 } from "lucide-react";
-import { quizRealmApi } from "@/lib/quizrealm";
+import { adminApi } from "@/lib/api";
 import type { PlayerDetail } from "@/lib/playerTypes";
 import Avatar from "./Avatar";
 import { countryName, relativeTime, statusTone } from "./playerFormat";
@@ -30,7 +30,7 @@ export default function PlayerDetailPanel({ id, onClose, onChanged, onNotice }: 
     setEmail(null);
     setError(null);
     setShowProfile(false);
-    quizRealmApi.adminPlayerDetail(id)
+    adminApi.playerDetail(id)
       .then((data) => { if (alive) setDetail(data as PlayerDetail); })
       .catch((cause) => { if (alive) setError(cause instanceof Error ? cause.message : "Contul nu a putut fi încărcat."); });
     return () => { alive = false; };
@@ -39,7 +39,7 @@ export default function PlayerDetailPanel({ id, onClose, onChanged, onNotice }: 
   const revealEmail = async () => {
     if (email) { setEmail(null); return; }
     try {
-      const result = await quizRealmApi.adminRevealEmail(id);
+      const result = await adminApi.revealEmail(id);
       setEmail(result.email);
       onNotice("E-mailul a fost dezvăluit; acțiunea a fost consemnată în audit.", "ok");
     } catch (cause) {
@@ -50,9 +50,9 @@ export default function PlayerDetailPanel({ id, onClose, onChanged, onNotice }: 
   const runAction = async (action: string, successText: string) => {
     setBusy(true);
     try {
-      await quizRealmApi.adminPlayersBulk(action, [id]);
+      await adminApi.playersBulk(action, [id]);
       onNotice(successText, "ok");
-      const fresh = await quizRealmApi.adminPlayerDetail(id);
+      const fresh = await adminApi.playerDetail(id);
       setDetail(fresh as PlayerDetail);
       onChanged();
     } catch (cause) {

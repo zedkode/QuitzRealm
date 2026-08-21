@@ -40,6 +40,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Regula de versionare din agents.md §4: fiecare componentă livrabilă are
+      # versiune semantică proprie. Un manifest fără ea oprește release-ul aici,
+      # nu la publicare.
+      - name: 🔢 Check component versions
+        run: node scripts/check-versions.mjs
+
       - name: 🔖 Get version from pubspec.yaml
         id: version
         shell: bash
