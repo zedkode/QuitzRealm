@@ -1253,3 +1253,58 @@ fie atinse; nu s-a făcut nicio operațiune externă în acest task.
 `SRV-004` local — interceptorul care rezolvă limba cererii și contractul global
 de erori `{ code, messageKey, params }`. Cloudflare, Raspberry Pi și producția
 rămân amânate până la o instrucțiune explicită a proprietarului.
+
+
+## 2026-08-21 · 22:36 — Codex — SRV-004, contractul localizat global
+
+### Obiectiv
+
+Aplicarea unui singur contract multilingv pe toate rutele API: limba se rezolvă
+din preferința opțională a contului, apoi `Accept-Language`, apoi engleză, iar
+orice eroare HTTP ajunge la client numai ca `{ code, messageKey, params }`.
+
+### Fișiere schimbate
+
+- `backend/api/src/localization/` — resolver cu limbile active din baza de date
+  și cache scurt, parser `Accept-Language`, interceptor global, filtru global,
+  contractul tipat, validarea DTO și lookup sigur cu fallback englez.
+- `backend/api/src/main.ts` și `app.module.ts` — conectarea globală a validării,
+  interceptorului și filtrului pentru toate rutele.
+- `backend/api/src/auth/auth-pages.controller.ts` — paginile HTML de verificare
+  și resetare nu mai au texte românești hardcodate; folosesc catalogul și
+  atributul `lang` rezolvat.
+- `backend/api/src/translations/translation-catalog.seed.ts` — cheile generice
+  de eroare și textele paginilor auth în engleză și română.
+- `backend/api/package.json` și lockfile — versiunea API ridicată la `1.3.0`.
+
+### Verificări efectuate
+
+- `npx prisma validate`, `npx tsc --noEmit`, `npm run build`, Prettier și ESLint
+  — trec.
+- `npx jest --runInBand` — 25 suite și 161 teste trec. Testul de contract
+  inventariază toate rutele Nest, interzice filtre locale care ar ocoli
+  frontiera globală și verifică existența în seed a tuturor cheilor `error.*`.
+- Docker local — API, PostgreSQL și Redis sunt healthy; seed-ul final are 562 de
+  rânduri, 281 de chei în două limbi, iar repetarea seed-ului inserează 0.
+- Cereri reale — `ro-RO` rezolvă `ro`, `fr` cade pe `en`; răspunsurile 400, 401
+  și 404 au doar `{ code, messageKey, params }`, cu `Content-Language` și
+  `Vary: Accept-Language`; paginile auth se redau corect în engleză și română.
+- `node scripts/check-versions.mjs` și `git diff --check` — trec.
+
+### Rezultat și blocaje
+
+Implementarea `SRV-004` este completă local în commitul `7f37835`; preferința
+reală a contului va alimenta seam-ul `languageIsoCode` când se livrează
+`SRV-002`. Nu s-a atins VPS-ul, Raspberry Pi, Cloudflare sau DNS.
+
+`npm audit --audit-level=high` rămâne roșu cu trei raportări ale aceleiași
+dependențe `deepmerge-ts 7.1.5`, adusă de Prisma. Prisma `7.9.1` este versiunea
+stabilă curentă și nu are încă remediul; `npm audit fix --force` ar coborî la
+Prisma 6.12. Situația este consemnată în `QA-009`, fără downgrade sau override
+major neverificat.
+
+### Următorul pas
+
+`SRV-002` exclusiv local — `language_id` și legătura țării pe cont, alegerea
+explicită și cooldown-ul regional. Producția și tunelurile rămân amânate până
+la instrucțiunea expresă a proprietarului.

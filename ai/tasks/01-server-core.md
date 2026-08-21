@@ -45,12 +45,12 @@ va trebui migrat după.
 - **Depinde de:** SRV-001
 
 #### SRV-004 · Contractul de răspuns localizat
-- **Status:** ⬜ De făcut
+- **Status:** 🟡 Parțial — implementat și verificat local; preferința salvată pe cont va fi populată de SRV-002, producția este amânată, iar auditul de dependențe are blocajul Prisma consemnat în QA-009.
 - **Descriere:** O regulă unică prin care orice endpoint știe în ce limbă răspunde și ce întoarce ca text.
 - **Implementare corectă:** Un interceptor NestJS citește limba în ordinea: preferința contului → antetul `Accept-Language` → engleză. O pune pe cerere ca `request.locale`. Erorile devin `{ code, messageKey, params }`, niciodată un șir în română. Regula se testează cu un test care parcurge toate rutele și cade dacă vreuna întoarce text liber destinat afișării.
 - **Finalizat:** —
 - **Sursă:** `00-README.md`, regula 1
-- **Commit:** —
+- **Commit:** `7f37835`
 - **Depinde de:** SRV-003
 
 #### SRV-005 · Banca de întrebări pe limbă, cu fallback anunțat

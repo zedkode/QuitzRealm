@@ -96,7 +96,7 @@ real și fluxurile de la un capăt la altul.
 #### QA-009 · Actualizarea dependențelor, controlat
 - **Status:** 🟡 Parțial
 - **Descriere:** Lecția din august: o actualizare poate rupe build-ul de Android fără ca analiza să pice.
-- **Implementare corectă:** Actualizări în loturi mici, cu **compilare reală**, nu doar analiză — `flutter analyze` trece cu un graf de dependențe rupt, pentru că nu intră în pub-cache. Familiile de pachete se actualizează împreună, pe aceeași linie de release. Actualizările de securitate au prioritate și termen.
+- **Implementare corectă:** Actualizări în loturi mici, cu **compilare reală**, nu doar analiză — `flutter analyze` trece cu un graf de dependențe rupt, pentru că nu intră în pub-cache. Familiile de pachete se actualizează împreună, pe aceeași linie de release. Actualizările de securitate au prioritate și termen. La 21.08.2026, `npm audit --audit-level=high --prefix backend/api` raportează `deepmerge-ts < 8` prin `@prisma/config`; Prisma `7.9.1` este ultima versiune stabilă și fixează încă `deepmerge-ts 7.1.5`, iar remediul automat propune downgrade incompatibil la Prisma 6.12. Nu se aplică `--force`; se urmărește o versiune Prisma stabilă care ridică tranzitiv dependența și se repetă buildul complet.
 - **Finalizat:** —
 - **Sursă:** `mobile/pubspec.yaml`
 - **Commit:** `c4963f4`
