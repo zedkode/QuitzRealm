@@ -1145,3 +1145,63 @@ aplicată.
 `SRV-003` — catalogul de traduceri în baza de date, apoi `SRV-004`, `SRV-002`,
 `SRV-005`. `SRV-021` împreună cu `DATA-005` se pot face în paralel și sunt
 urgente: o zi netrecută prin agregare e pierdută definitiv.
+
+
+## 2026-08-21 · 20:51 — Codex — INF-020, tunel Cloudflare local în Docker
+
+### Obiectiv
+
+Mutarea fluxului de lucru exclusiv pe calculatorul local și pregătirea accesului
+public printr-un conector Cloudflare local, fără copierea tokenului instalat pe
+VPS și fără ca tunelul să devină o condiție pentru dezvoltarea obișnuită.
+
+### Fișiere schimbate
+
+- `ai/tasks/09-infra-security.md` — adăugat task-ul `INF-020` înainte de cod și
+  înregistrat commitul de implementare `f423cd3`.
+- `infra/docker-compose.yml` — serviciu opțional `cloudflared`, profil `tunnel`,
+  imagine fixată la `2026.7.2`, plus URL-uri web și origini CORS configurabile.
+- `infra/.env.example` — variabilele publice și placeholderul pentru tokenul unui
+  tunel local nou; niciun secret real nu a intrat în depozit.
+- `scripts/start-local-tunnel.mjs` — validare fail-closed a tokenului, HTTPS și
+  originilor înainte de pornirea profilurilor Docker `full+tunnel`.
+- `package.json` și `docs/dev-local.md` — comenzile și procedura locală completă.
+
+### Verificări efectuate
+
+- `git fetch origin --prune` — `HEAD` și `origin/main` erau ambele `3dbb414`
+  înainte de commit.
+- `docker manifest inspect`, `docker pull` și execuție `version` — imaginea
+  oficială `cloudflare/cloudflared:2026.7.2` există și raportează versiunea
+  `2026.7.2`.
+- `docker compose ... --profile full config --quiet` și varianta
+  `--profile full --profile tunnel` — ambele modele sunt valide.
+- Scriptul refuză pornirea fără token și acceptă o configurație HTTPS sintetică
+  în modul `--check`, fără să afișeze tokenul.
+- `corepack pnpm dev:full` — rebuild local complet reușit în 106,5 secunde.
+- API `/health`: baza este `up`; realtime `/health`: Redis este `up`; web `/` și
+  `/admin/`: HTTP 200; CORS întoarce `Access-Control-Allow-Origin` pentru
+  `http://localhost:8080`.
+- Prisma: 17 migrări, schema locală la zi; `languages = 2`, `countries = 249`.
+- `corepack pnpm -r check`, `node --check scripts/start-local-tunnel.mjs`,
+  `node scripts/check-versions.mjs` și `git diff --check` — trec.
+
+### Rezultat și blocaje
+
+Stiva completă rulează local și nu există container `cloudflared` activ fără
+configurație. `INF-020` rămâne `🟡 Parțial`: pentru acces public lipsesc un tunel
+Cloudflare nou, tokenul lui păstrat în `infra/.env`, rutele celor trei hostname-uri
+și cutover-ul DNS din dashboard/API. Tokenul VPS nu se extrage și nu se mută.
+
+Înainte ca proprietarul să restrângă lucrul la local, Codex a făcut doar verificări
+read-only pe VPS și a creat un dump preventiv în `/opt/quizrealm/backups`; arhiva
+de cod nu a fost sincronizată, nicio migrare nu a fost aplicată și, după schimbarea
+cerinței, nu s-a mai executat nicio comandă pe VPS.
+
+### Următorul pas
+
+Proprietarul furnizează un API token Cloudflare cu permisiuni minime și confirmă
+hostname-urile/cutover-ul; apoi se creează automat tunelul local și DNS-ul, se
+salvează numai tokenul conectorului în `infra/.env`, se rulează `pnpm dev:tunnel`
+și se verifică public web, API, CORS și handshake-ul Socket.IO. Dezvoltarea de
+produs poate continua între timp, exclusiv local, cu `SRV-003`.

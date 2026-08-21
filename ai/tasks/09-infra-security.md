@@ -76,7 +76,7 @@ cad la primul vârf de trafic sau, mai rău, pierd date.
 - **Implementare corectă:** `cloudflared` rulează ca serviciu opțional în `infra/docker-compose.yml`, pe aceeași rețea cu `web`, `api` și `realtime`, cu o versiune stabilă fixată și fără porturi suplimentare publicate. Folosește un tunel nou, administrat de Cloudflare, și un token local separat păstrat numai în `infra/.env`; tokenul VPS nu se copiază și nu se reutilizează. Rutele publice indică spre `http://web:3000`, `http://api:3000` și `http://realtime:3001`, iar URL-urile incluse în bundle și originile CORS devin configurabile local. Stiva rămâne complet funcțională fără profilul de tunel.
 - **Finalizat:** —
 - **Sursă:** cererea proprietarului din 2026-08-21; `docs/dev-local.md`
-- **Commit:** —
+- **Commit:** `f423cd3`
 - **Produce:** INF-012
 
 ---
