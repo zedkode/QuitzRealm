@@ -52,14 +52,23 @@ cad la primul vârf de trafic sau, mai rău, pierd date.
 - **Commit:** —
 - **Produce:** LEG-010
 
-#### INF-005 · Mediu de testare separat de producție
-- **Status:** ⬜ De făcut
-- **Descriere:** Nu există azi. Orice verificare se face pe producție sau pe laptop.
-- **Implementare corectă:** O a doua stivă, cu date de test, pe care rulează migrările și testele automate înainte de producție. **Datele reale nu se copiază niciodată** în mediul de testare — dacă e nevoie de volum, se generează. Costul e mic, iar prima migrare care ar fi stricat producția îl acoperă.
-- **Finalizat:** —
-- **Sursă:** `docs/deploy-vps.md`
+#### INF-005 · Mediu de dezvoltare local, separat de producție
+- **Status:** ✅ Implementat
+- **Descriere:** Stivă completă pe calculatorul propriu, ca migrările și experimentele să nu atingă producția.
+- **Implementare corectă:** Două moduri, din același `infra/docker-compose.yml`. Implicit, doar serviciile cu stare în Docker și aplicațiile native — pe Windows, urmărirea fișierelor prin bind mount e lentă și scapă schimbări, iar `nest --watch` și Vite HMR native răspund instant. Profilul `full` rulează tot în Docker, cu aceeași imagine care ajunge pe VPS, pentru verificarea de dinaintea implementării. Comenzile din `package.json` trimit `-f` explicit către fișierul local, ca o operație distructivă să nu poată nimeri producția. **Datele reale nu se copiază niciodată** local — dacă e nevoie de volum, se generează. Procedura completă în `docs/dev-local.md`.
+- **Finalizat:** 2026-08-21 · 19:05
+- **Sursă:** `docs/dev-local.md`
 - **Commit:** —
 - **Produce:** QA-008
+
+#### INF-019 · Pornire fără credențiale externe
+- **Status:** ⬜ De făcut
+- **Descriere:** API-ul nu pornește fără `GOOGLE_CLIENT_ID`, chiar dacă nimeni nu folosește autentificarea Google local.
+- **Implementare corectă:** Strategia Google se construiește la pornire și cere cheile prin `getOrThrow`. Mediul local le trimite valori de rezervă ca aplicația să pornească, dar e un pansament: **strategiile de autentificare externe trebuie să se înregistreze doar când sunt configurate**, iar absența lor să fie un jurnal, nu o oprire. Un mediu nou care cere chei de la un furnizor terț ca să compileze e o barieră inutilă pentru orice agent sau colaborator nou. Aceeași regulă pentru orice furnizor adăugat ulterior — push, plăți, urmărirea erorilor.
+- **Finalizat:** —
+- **Sursă:** `docs/dev-local.md`, secțiunea de capcane
+- **Commit:** —
+- **Produce:** INF-005
 
 ---
 

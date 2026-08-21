@@ -9,7 +9,17 @@
     "test": "pnpm -r test",
     "dev:web": "pnpm --filter @quizrealm/web dev",
     "dev:admin": "pnpm --filter @quizrealm/admin dev",
-    "versions": "node scripts/check-versions.mjs"
+    "versions": "node scripts/check-versions.mjs",
+    "dev:data": "docker compose -f infra/docker-compose.yml --env-file infra/.env up -d",
+    "dev:full": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile full up -d --build",
+    "dev:migrate": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile migrate run --rm migrate",
+    "dev:seed": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile migrate run --rm --entrypoint sh migrate -c \"npx ts-node prisma/seed.ts\"",
+    "dev:down": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile full down",
+    "dev:reset": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile full down -v",
+    "dev:logs": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile full logs -f",
+    "dev:ps": "docker compose -f infra/docker-compose.yml --env-file infra/.env --profile full ps",
+    "dev:api": "npm --prefix backend/api run start:dev",
+    "dev:realtime": "npm --prefix backend/realtime run start:dev"
   },
   "packageManager": "pnpm@11.2.0"
 }

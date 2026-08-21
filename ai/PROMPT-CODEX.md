@@ -84,6 +84,37 @@ face independent de lanțul de mai sus.
 **Nu începe** `SRV-027`, `SRV-029`, `SRV-032` sau nimic din campanie: sunt
 blocate pe deciziile D2, D3 și D4, care nu sunt luate încă.
 
+## Lucrezi local, nu pe VPS
+
+**Tot ce faci rulează pe mașina ta.** Producția nu se atinge; implementarea o
+face proprietarul, după ce lucrarea a trecut local.
+
+```bash
+pnpm dev:data        # Postgres, Redis, MinIO în Docker
+pnpm dev:migrate     # aplică migrările pe baza locală
+pnpm dev:api         # API nativ, cu reîncărcare la salvare
+```
+
+Pentru verificarea că stiva se comportă ca în producție: `pnpm dev:full`
+(tot în Docker). Cele două moduri **nu pot rula simultan** — folosesc aceleași
+porturi.
+
+Procedura completă, datele de test și capcanele: **`docs/dev-local.md`**.
+
+Migrările se scriu și se probează local, niciodată direct pe producție:
+
+```bash
+cd backend/api
+npx prisma migrate dev --name descrie_ce_face
+npx prisma generate
+npm test
+```
+
+Migrările sunt **strict aditive**, cu clauze de existență. Una cu efect
+distructiv se face în doi pași separați de un release.
+
+---
+
 ## Cum închizi un task
 
 1. Verifică real: `npx tsc --noEmit` și `npx jest` în pachetul atins. Pentru
@@ -109,9 +140,12 @@ blocate pe deciziile D2, D3 și D4, care nu sunt luate încă.
 - **TypeScript rămâne pe 5.x pe cele două servere** — vezi
   `scripts/dependency-pins.json`. Nu-l urca.
 
-## Reguli de siguranță pe VPS
+## VPS — nu-l atingi
 
-VPS-ul e **partajat cu alte trei proiecte**. Limitează orice operație la stiva
+**Nu implementezi tu.** Lucrezi local, iar proprietarul urcă pe VPS ce a trecut.
+
+Dacă totuși ajungi acolo dintr-un motiv anume: VPS-ul e **partajat cu alte trei
+proiecte**. Limitează orice operație la stiva
 `quizrealm-*` și nu atinge `alvenqis-operator-*`, `sharedhouse-production-*` sau
 `vaultwarden`.
 

@@ -96,6 +96,11 @@ componentă n-are versiune sau are una invalidă. Detalii în `agents.md` §4.
 
 ## Pas 2 — Infra locală (docker-compose)
 
+> **Actualizat 21 august 2026.** Mediul local e construit și verificat.
+> Procedura completă — cele două moduri de lucru, datele de test, migrările și
+> capcanele de porturi — e în [`docs/dev-local.md`](docs/dev-local.md).
+> Pe scurt: `pnpm dev:data` pentru servicii, `pnpm dev:full` pentru tot în Docker.
+
 În `infra/docker-compose.yml`, definește servicii pentru:
 - `postgres` (versiune stabilă recentă, volum persistent, DB `quizrealm`)
 - `redis` (versiune stabilă recentă, volum persistent)

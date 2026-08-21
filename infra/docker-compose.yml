@@ -1,3 +1,28 @@
+# Stiva de dezvoltare locală.
+#
+# ATENȚIE: fișierul acesta e **local**. Producția e `docker-compose.prod.yml` și
+# rulează pe VPS. Comenzile din `package.json` trimit mereu `-f` explicit, ca o
+# operație distructivă să nu poată nimeri fișierul greșit.
+#
+# Două moduri de lucru:
+#
+#   1. Implicit — doar serviciile cu stare (Postgres, Redis, MinIO) în Docker,
+#      aplicațiile rulate nativ cu reîncărcare la salvare. E modul recomandat
+#      pentru lucrul zilnic: pe Windows, urmărirea fișierelor prin bind mount e
+#      lentă, iar `nest --watch` și Vite HMR native răspund instant.
+#
+#        pnpm dev:data      → pornește datele
+#        pnpm dev:migrate   → aplică migrările
+#        (apoi, în terminale separate: pnpm dev:api, dev:realtime, dev:web, dev:admin)
+#
+#   2. Profilul `full` — tot, inclusiv aplicațiile, în Docker. Pentru verificarea
+#      că stiva se comportă ca în producție înainte de a implementa.
+#
+#        pnpm dev:full
+#
+# Variabilele vin din `infra/.env` (necomis). Pornirea de la zero:
+#   cp infra/.env.example infra/.env  și completează valorile.
+
 name: quizrealm
 
 services:
@@ -70,6 +95,92 @@ services:
         mc alias set local http://minio:9000 "$${MINIO_ROOT_USER}" "$${MINIO_ROOT_PASSWORD}"
         mc mb --ignore-existing "local/$${MINIO_BUCKET}"
     restart: "no"
+
+  # --- migrări: se rulează o dată, apoi iese ---------------------------------
+  # Nu are profil: e nevoie de el în ambele moduri de lucru.
+  migrate:
+    build:
+      context: ../backend/api
+    command: ["npx", "prisma", "migrate", "deploy"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["migrate", "full"]
+    restart: "no"
+
+  # --- aplicațiile, doar sub profilul `full` --------------------------------
+  api:
+    build:
+      context: ../backend/api
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      REDIS_URL: redis://redis:6379/0
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
+      JWT_ACCESS_EXPIRES_IN: ${JWT_ACCESS_EXPIRES_IN:-15m}
+      JWT_REFRESH_EXPIRES_IN: ${JWT_REFRESH_EXPIRES_IN:-30d}
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY:-dezvoltare-locala}
+      # Strategia Google se construiește la pornire și cere cheile, chiar dacă
+      # nu le folosește nimeni local. Valorile de rezervă lasă aplicația să
+      # pornească; autentificarea cu Google nu va funcționa fără chei reale.
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-dezvoltare-locala}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-dezvoltare-locala}
+      GOOGLE_CALLBACK_URL: ${GOOGLE_CALLBACK_URL:-http://localhost:3000/auth/google/callback}
+      APP_PUBLIC_URL: http://localhost:3000
+      # Local nu pleacă niciun e-mail: `console` doar scrie în loguri.
+      MAIL_TRANSPORT: console
+      # Cele două aplicații web locale au voie să facă cereri către API.
+      WEB_APP_ORIGINS: http://localhost:5173,http://localhost:5174
+      CAPTCHA_REQUIRED: "false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "${API_HOST_PORT:-3000}:3000"
+    profiles: ["full"]
+    restart: unless-stopped
+
+  realtime:
+    build:
+      context: ../backend/realtime
+    environment:
+      PORT: 3001
+      REDIS_URL: redis://redis:6379/0
+      API_BASE_URL: http://api:3000
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY:-dezvoltare-locala}
+      WEB_APP_ORIGINS: http://localhost:5173,http://localhost:5174
+    depends_on:
+      redis:
+        condition: service_healthy
+      api:
+        condition: service_started
+    ports:
+      - "${REALTIME_HOST_PORT:-3001}:3001"
+    profiles: ["full"]
+    restart: unless-stopped
+
+  # Site public la `/`, panou la `/admin` — același proces, ca în producție.
+  web:
+    build:
+      context: ..
+      dockerfile: web/Dockerfile
+      args:
+        VITE_QUIZREALM_API_URL: http://localhost:${API_HOST_PORT:-3000}
+        VITE_QUIZREALM_SOCKET_URL: http://localhost:${REALTIME_HOST_PORT:-3001}
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    ports:
+      - "${WEB_HOST_PORT:-8080}:3000"
+    profiles: ["full"]
+    restart: unless-stopped
 
 volumes:
   postgres-data:
