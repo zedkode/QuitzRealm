@@ -4,6 +4,11 @@
 **Surse normative:** `plan.md` §0, §6, §8, §10 și `owner-plan.md` §5, §7.3, §9, §11.
 **Documente conexe:** `ai/needdesign.md` (lipsuri din panoul de admin), `docs/structura-joc.md` (divergența de structură), `docs/project-audit-2026-08-16.md`.
 
+> **Acesta e nivelul strategic** — faze, cronologie, decizii blocante, riscuri.
+> Nivelul de execuție, cu fiecare task în parte, stă în cele patru registre din
+> [`ai/tasks/`](tasks/00-README.md): server core, panou de administrare,
+> platforma web și aplicația. Statusul unui task se ține acolo, nu aici.
+
 Direcția a fost stabilită de proprietar pe 21 august 2026:
 
 | Întrebare | Răspuns |
