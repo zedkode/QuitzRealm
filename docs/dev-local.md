@@ -75,6 +75,46 @@ pnpm dev:logs        # jurnale, în flux
 E aceeași imagine care ajunge pe VPS, cu aceeași împărțire: site public la `/`,
 panou la `/admin`, dintr-un singur proces.
 
+## Acces public opțional prin Cloudflare Tunnel
+
+Tunelul local este profil separat și nu pornește cu `pnpm dev:full`. Nu se copiază
+tokenul de pe VPS: un token permite oricui îl deține să ruleze conectorul, iar
+două locații active pe același tunel ar putea primi trafic alternativ. Creează în
+Cloudflare un tunel administrat separat, de exemplu `quizrealm-local`, și păstrează
+tokenul numai în `infra/.env`:
+
+```dotenv
+CLOUDFLARE_TUNNEL_TOKEN=<tokenul tunelului local nou>
+WEB_API_URL=https://quizrealmapi.dohotstudio.com
+WEB_SOCKET_URL=https://quizrealmws.dohotstudio.com
+WEB_APP_ORIGINS=http://localhost:5173,http://localhost:5174,http://localhost:8080,https://quitzrealm.dohotstudio.com
+```
+
+În configurația tunelului din dashboard, publică exact aceste rute:
+
+| Hostname | Serviciu din rețeaua Docker |
+|---|---|
+| `quitzrealm.dohotstudio.com` | `http://web:3000` |
+| `quizrealmapi.dohotstudio.com` | `http://api:3000` |
+| `quizrealmws.dohotstudio.com` | `http://realtime:3001` |
+
+Pornește stiva și conectorul împreună:
+
+```bash
+pnpm dev:tunnel
+pnpm dev:ps
+```
+
+Comanda verifică înainte de build că tokenul există, că API-ul și Socket.IO au
+URL-uri HTTPS și că originile CORS includ un hostname public. Imaginea
+`cloudflare/cloudflared` este fixată la `2026.7.2`; containerul nu publică niciun
+port pe calculator și deschide doar conexiuni către Cloudflare.
+
+Mutarea traficului se încheie din dashboard-ul Cloudflare, atribuind hostname-urile
+noului tunel local. Până atunci, DNS-ul existent continuă să trimită traficul prin
+tunelul configurat anterior. Stiva locală obișnuită rămâne disponibilă fără token,
+prin `pnpm dev:full` și adresele `localhost`.
+
 ## Două capcane, întâlnite la prima pornire
 
 **Cele două moduri nu pot rula simultan.** Ambele folosesc porturile 3000 și
@@ -156,8 +196,9 @@ Cinstit, ca să nu te bazezi pe el mai mult decât merită:
 - **Nu are datele reale** și nici nu trebuie să le aibă. Dacă e nevoie de volum,
   se generează — o copie a producției pe laptop e o scurgere de date personale
   care așteaptă să se întâmple.
-- **Nu are tunelul Cloudflare**, deci nu poate reproduce nimic legat de anteturi
-  de proxy sau de originile permise așa cum le vede producția.
+- **Tunelul Cloudflare este opțional.** Fără `pnpm dev:tunnel`, mediul nu poate
+  reproduce anteturile de proxy sau originile permise așa cum le vede accesul
+  public.
 - **Nu trimite e-mailuri.** `MAIL_TRANSPORT=console` scrie mesajul în jurnal;
   linkul de verificare sau de resetare se copiază de acolo.
 - **Nu are captcha.** `CAPTCHA_REQUIRED=false` local, `true` în producție — deci

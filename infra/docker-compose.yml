@@ -133,7 +133,7 @@ services:
       # Local nu pleacă niciun e-mail: `console` doar scrie în loguri.
       MAIL_TRANSPORT: console
       # Cele două aplicații web locale au voie să facă cereri către API.
-      WEB_APP_ORIGINS: http://localhost:5173,http://localhost:5174
+      WEB_APP_ORIGINS: ${WEB_APP_ORIGINS:-http://localhost:5173,http://localhost:5174,http://localhost:8080}
       CAPTCHA_REQUIRED: "false"
     depends_on:
       postgres:
@@ -155,7 +155,7 @@ services:
       REDIS_URL: redis://redis:6379/0
       API_BASE_URL: http://api:3000
       INTERNAL_API_KEY: ${INTERNAL_API_KEY:-dezvoltare-locala}
-      WEB_APP_ORIGINS: http://localhost:5173,http://localhost:5174
+      WEB_APP_ORIGINS: ${WEB_APP_ORIGINS:-http://localhost:5173,http://localhost:5174,http://localhost:8080}
     depends_on:
       redis:
         condition: service_healthy
@@ -172,14 +172,31 @@ services:
       context: ..
       dockerfile: web/Dockerfile
       args:
-        VITE_QUIZREALM_API_URL: http://localhost:${API_HOST_PORT:-3000}
-        VITE_QUIZREALM_SOCKET_URL: http://localhost:${REALTIME_HOST_PORT:-3001}
+        VITE_QUIZREALM_API_URL: ${WEB_API_URL:-http://localhost:3000}
+        VITE_QUIZREALM_SOCKET_URL: ${WEB_SOCKET_URL:-http://localhost:3001}
     environment:
       NODE_ENV: production
       PORT: 3000
     ports:
       - "${WEB_HOST_PORT:-8080}:3000"
     profiles: ["full"]
+    restart: unless-stopped
+
+  # Acces public opțional pentru mediul local. Folosește un tunel Cloudflare
+  # separat de producție; tokenul rămâne numai în `infra/.env` (necomis).
+  cloudflared:
+    image: cloudflare/cloudflared:2026.7.2
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    depends_on:
+      api:
+        condition: service_healthy
+      realtime:
+        condition: service_started
+      web:
+        condition: service_healthy
+    profiles: ["tunnel"]
     restart: unless-stopped
 
 volumes:
